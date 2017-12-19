@@ -1,0 +1,1 @@
+[Learning Ally Web サイト](http://go.microsoft.com/fwlink/?LinkID=239)
