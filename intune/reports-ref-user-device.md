@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 4c47455b0139f7451796257a77859cbd9899a7dd
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="user-device-association"></a>ユーザー デバイスの関連付け
 

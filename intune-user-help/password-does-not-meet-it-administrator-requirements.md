@@ -15,10 +15,10 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>パスワードが会社のサポートの要件を満たしていない
 

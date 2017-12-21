@@ -16,10 +16,10 @@ ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: f31ad2226052b4a681bc79e366e7d1def01c3cc4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 

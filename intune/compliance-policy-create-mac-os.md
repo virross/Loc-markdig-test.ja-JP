@@ -16,10 +16,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを作成する
 

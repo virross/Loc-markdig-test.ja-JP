@@ -17,10 +17,10 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 5099e7e476477258267b2ae6c94f48693a6f0253
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 

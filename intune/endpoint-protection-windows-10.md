@@ -16,10 +16,10 @@ ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
-ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降用の Endpoint Protection 設定
 

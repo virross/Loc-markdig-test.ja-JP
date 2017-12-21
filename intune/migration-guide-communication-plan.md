@@ -14,10 +14,10 @@ ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -30,13 +30,13 @@ ms.lasthandoff: 10/31/2017
 -   **電子メール \#1:** 利点、見込み、スケジュールについて説明します。 この機会を利用して、Intune によって管理されるデバイスでアクセスが許可される他の新しいサービスを紹介します。<br/><br/>
 
 
-    -   [電子メール \#1 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [電子メールのダウンロード\#1 のテンプレート](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **電子メール \#2:** Intune からサービスにアクセスする準備が整ったことを発表します。 ユーザーに早速登録するよう伝えます。 移行の利点と戦略的な理由を再認識してもらいます。<br/><br/>
 
 
-    -   [電子メール \#2 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [電子メールのダウンロード\#2 のテンプレート](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **電子メール \#3:** アクセスが影響を受ける前にタイムラインをユーザーに提供します。 移行の利点と戦略的な理由を再認識してもらいます。 電子メールのタイミングには、フェーズに合わせたスライディング ウィンドウが必要です。 たとえば、6 月に電子メール \#1 をフェーズ 1 のユーザーに送信し、電子メール \#2 をフェーズ 2 のユーザー、電子メール \#3 をフェーズ 3 のユーザーに送信します。<br/><br/>

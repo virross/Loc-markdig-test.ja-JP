@@ -16,10 +16,10 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: cc45e57a3ef9e5c043073ee67a961832294eef48
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 

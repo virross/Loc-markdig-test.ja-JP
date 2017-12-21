@@ -15,10 +15,10 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: dfa94d11f978bbe4d23b6672423c849e1f061986
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Intune で管理するデバイスのパスコードをリセットして削除する
 

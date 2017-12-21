@@ -15,10 +15,10 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: d690dc82da56836e4bc338e77b9744f0ab690e87
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 

@@ -15,10 +15,10 @@ ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: f16d42406fa7961cc165adcbd1e7c4c7ab5d78b4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Intune を使用して共有の iOS デバイスからユーザーを削除する
 

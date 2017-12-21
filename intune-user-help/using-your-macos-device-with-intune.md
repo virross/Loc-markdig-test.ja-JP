@@ -17,10 +17,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 277eeee3f492cae868ade5eae13bdf8b8eb692e2
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-your-macos-device-with-intune"></a>macOS デバイスを Intune で使用する
 

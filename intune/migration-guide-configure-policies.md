@@ -14,10 +14,10 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: b75368bb8a1172444036b5bd695a4ec36cd9727c
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-device-compliance-and-app-management-policies"></a>デバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 

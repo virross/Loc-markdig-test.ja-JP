@@ -15,10 +15,10 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: f842c983dd06c00574ec660a11bdaef6f41c5aa8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC をインベントリから削除する
 

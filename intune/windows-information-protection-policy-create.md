@@ -16,10 +16,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 

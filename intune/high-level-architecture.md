@@ -11,10 +11,10 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 ms.openlocfilehash: 25bb0695c5f7ac3e8840f066cf3c70787ec08a2c
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="high-level-architecture-for-microsoft-intune"></a>Microsoft Intune のアーキテクチャの概要
 この参照アーキテクチャは、Azure 環境の Microsoft Intune を Azure Active Directory と統合するオプションを示しています。  

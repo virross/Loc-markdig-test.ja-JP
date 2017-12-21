@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: c883ab2b96618502be20583908a4caa52ac5432b
-ms.sourcegitcommit: 6004fe51e3cee6fb34514ed0d56e20587ecafeb4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する
 
@@ -86,7 +86,7 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 9. ルート証明書をクリックし、SCEP 証明書を選択します。 **[OK]**をクリックします。
 10. **[拡張キー使用法]** の **[名前]** に `Client Authentication` を入力します。
 11. **[オブジェクト識別子]** に `1.3.6.1.5.5.7.3.2`を入力します。
-12. [ **追加**] をクリックします。
+12. **[追加]** をクリックします。
 13. ***サーバーの URL*** を入力して、**[追加]** をクリックします。
 14. **[OK]**をクリックします。
 15. **[作成]** をクリックします。

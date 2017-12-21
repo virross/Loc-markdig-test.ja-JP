@@ -15,10 +15,10 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: f8706c34792720224624b6d430de791e5e98608a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク
 

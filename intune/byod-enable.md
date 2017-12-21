@@ -14,10 +14,10 @@ ms.assetid:
 ms.reviewer: vlpetros
 ms.suite: ems
 ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune で BYOD を有効にする
 

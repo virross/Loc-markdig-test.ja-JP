@@ -17,10 +17,10 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスの名前を変更する
 

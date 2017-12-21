@@ -15,10 +15,10 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 47bba6d9f65aa1e2ff8cc0255cd7fccfda417f92
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>展開の目標、目的、課題を判別する
 

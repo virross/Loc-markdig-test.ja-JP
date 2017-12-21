@@ -16,10 +16,10 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>デバイスを登録した場合に会社が確認できる情報
 

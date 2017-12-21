@@ -14,10 +14,10 @@ ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="phase-2-migration-campaign"></a>フェーズ 2: 移行のキャンペーン
 

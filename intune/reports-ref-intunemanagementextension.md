@@ -15,10 +15,10 @@ ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 30908e4dbb55e16db0e253330175f65fb127d523
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 管理拡張のリファレンス
 

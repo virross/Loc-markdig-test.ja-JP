@@ -17,10 +17,10 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>Intune にレガシ macOS デバイスを登録する
 

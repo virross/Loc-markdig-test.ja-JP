@@ -16,10 +16,10 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.openlocfilehash: 17d8fd46e46586510bed2f95c502f89ae67c95be
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows デバイスに関する一般的な問題を解決する
 

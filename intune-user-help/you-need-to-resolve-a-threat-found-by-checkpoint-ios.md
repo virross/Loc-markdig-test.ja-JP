@@ -15,10 +15,10 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 568bc0c0627e78ce4dd73cdfe8f74afa7f544b46
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect で検出された脅威は解決する必要があります
 

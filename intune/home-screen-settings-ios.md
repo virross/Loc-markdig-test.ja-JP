@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 0dcc8f5509afa5308f8ae91a3d60ee081d5daa0b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けのホーム画面のレイアウト設定
 

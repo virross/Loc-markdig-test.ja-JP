@@ -14,10 +14,10 @@ ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 34e748e16449a99bad4c1f3e96c22dda6d8f3018
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="typical-migration-cycle"></a>標準的な移行サイクル
 

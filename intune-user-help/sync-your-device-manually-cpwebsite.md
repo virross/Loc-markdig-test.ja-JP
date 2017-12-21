@@ -17,10 +17,10 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: ce2404fd5e26c00a6a9ced83bc6501e2074bffce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="sync-your-device-with-the-company-portal-website"></a>ポータル Web サイトを使用してデバイスを同期する
 

@@ -17,10 +17,10 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 3f575797a09fb4d74c2da2a7dc6b14a9723d3f4d
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 

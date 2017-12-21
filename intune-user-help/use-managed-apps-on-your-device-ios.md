@@ -17,10 +17,10 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 8c3d9285408f2cfa394ed31ec36fcaea47306eb5
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS デバイスで管理対象アプリを使用する
 

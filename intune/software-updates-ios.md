@@ -12,10 +12,10 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
 ms.openlocfilehash: 199760a60ee2290560ebdf933192de0eaf569e9e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-ios-update-policies"></a>iOS 更新ポリシーの構成
 iOS を対象にした更新ポリシーにより、監視対象の iOS デバイスに利用可能な最新のソフトウェア更新プログラムを強制的に自動インストールします。 デバイスに更新プログラムをインストールできないようにする日や時間を構成することもできます。

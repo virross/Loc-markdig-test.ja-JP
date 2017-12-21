@@ -14,10 +14,10 @@ ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 7ff1180275fddc7f0d6ef957c4680d7c34ad471e
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="special-migration-considerations"></a>移行において特に考慮すべき事項
 

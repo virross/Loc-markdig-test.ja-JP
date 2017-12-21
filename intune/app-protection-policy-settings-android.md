@@ -16,10 +16,10 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 466522364664726ef8dcb77590b8da23fe6c4845
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android アプリ保護ポリシー設定
 このトピックで説明するポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。

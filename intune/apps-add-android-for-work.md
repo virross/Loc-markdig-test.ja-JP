@@ -16,10 +16,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
@@ -41,9 +41,9 @@ Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワ
 1. [Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
 2. Intune を使用して割り当てるアプリをストアで検索します。
 3. 選択するアプリのページで、**[承認]** を選択します。 この例では、Microsoft Excel アプリを選択しました。<br>
-  ![アプリの承認例](media/approve.png)
+  ![アプリの例を承認します。](media/approve.png)
 4. 多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 続行するには、**[承認]** を選択します。<br>
-  ![アプリのアクセス許可の承認例](media/approve-app-permissions.png)
+  ![アプリのアクセス許可の例を承認します。](media/approve-app-permissions.png)
 5. アプリは承認され、IT 管理者コンソールに表示されます。
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work ストアから基幹業務アプリを公開し、同期する
@@ -52,7 +52,7 @@ Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワ
 2. Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。 初めてサインインする場合は、Google Developer プログラムに登録し、料金を払ってメンバーになる必要があります。
 3. コンソールで、**[Add new application]** (新しいアプリケーションの追加) を選択します。
 4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、**[Only make this application available to my organization (<*organization name*>)]\(このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする\) の設定を選択する必要があります**。<br>
-  ![組織のみがアプリを入手できるようにするためのオプション](media/restrict.png)<br>
+  ![アプリを組織に利用できるようにのみオプション](media/restrict.png)<br>
 この操作により、自分の組織のみがアプリを入手でき、公開されている Google Play ストアでは入手できないようになります。
 Android アプリのアップロードと公開の詳細については、[Google Developer Console のヘルプ](https://support.google.com/googleplay/android-developer/answer/113469)を参照してください。
 5. アプリを公開したら、[Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
