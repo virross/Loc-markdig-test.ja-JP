@@ -15,67 +15,67 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 4ef0f754980a9bc2823129c62f7100edbcdc7524
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin コンポーネント
+# <a name="microsoft-intune-app-sdk-xamarin-component"></a><span data-ttu-id="787a8-103">Microsoft Intune App SDK Xamarin コンポーネント</span><span class="sxs-lookup"><span data-stu-id="787a8-103">Microsoft Intune App SDK Xamarin Component</span></span>
 
 > [!NOTE]
-> 最初に、[Intune アプリ SDK の概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
+> <span data-ttu-id="787a8-104">最初に、[Intune アプリ SDK の概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="787a8-104">You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.</span></span>
 
 
 
-## <a name="overview"></a>概要
-[Intune App SDK Xamarin コンポーネント](https://components.xamarin.com/view/microsoft.intune.mam)を利用すると、Xamarin でビルドされた iOS アプリと Android アプリで [Intune アプリ SDK Xamarin コンポーネント](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)が有効になります。 このコンポーネントを利用すると、開発者は Intune のアプリ保護機能を Xamarin ベースのアプリに簡単に組み込むことができます。
+## <a name="overview"></a><span data-ttu-id="787a8-105">概要</span><span class="sxs-lookup"><span data-stu-id="787a8-105">Overview</span></span>
+<span data-ttu-id="787a8-106">[Intune App SDK Xamarin コンポーネント](https://components.xamarin.com/view/microsoft.intune.mam)を利用すると、Xamarin でビルドされた iOS アプリと Android アプリで [Intune アプリ SDK Xamarin コンポーネント](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)が有効になります。</span><span class="sxs-lookup"><span data-stu-id="787a8-106">The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin.</span></span> <span data-ttu-id="787a8-107">このコンポーネントを利用すると、開発者は Intune のアプリ保護機能を Xamarin ベースのアプリに簡単に組み込むことができます。</span><span class="sxs-lookup"><span data-stu-id="787a8-107">The component allows developers to easily build in Intune app protection features into their Xamarin-based app.</span></span>
 
 > [!NOTE]
-> Intune SDK for Xamarin のサポートは現在、プレビュー版で利用できます。 
+> <span data-ttu-id="787a8-108">Intune SDK for Xamarin のサポートは現在、プレビュー版で利用できます。</span><span class="sxs-lookup"><span data-stu-id="787a8-108">Support for the Intune SDK for Xamarin is currently available in preview.</span></span> 
 
-Microsoft Intune App SDK Xamarin コンポーネントを利用すると、Intune アプリ保護ポリシー (別名、APP または MAM ポリシー) を Xamarin で開発したアプリに組み込むことができます。 MAM 対応のアプリケーションが Intune App SDK に統合されています。 Intune で積極的にアプリを管理している場合、IT 管理者はモバイル アプリにアプリ保護ポリシーを展開できます。
+<span data-ttu-id="787a8-109">Microsoft Intune App SDK Xamarin コンポーネントを利用すると、Intune アプリ保護ポリシー (別名、APP または MAM ポリシー) を Xamarin で開発したアプリに組み込むことができます。</span><span class="sxs-lookup"><span data-stu-id="787a8-109">The Microsoft Intune App SDK Xamarin Component lets you incorporate Intune app protection policies (also known as APP or MAM policies) into your apps developed with Xamarin.</span></span> <span data-ttu-id="787a8-110">MAM 対応のアプリケーションが Intune App SDK に統合されています。</span><span class="sxs-lookup"><span data-stu-id="787a8-110">A MAM-enabled application is one that is integrated with the Intune App SDK.</span></span> <span data-ttu-id="787a8-111">Intune で積極的にアプリを管理している場合、IT 管理者はモバイル アプリにアプリ保護ポリシーを展開できます。</span><span class="sxs-lookup"><span data-stu-id="787a8-111">IT administrators can deploy app protection policies to your mobile app when Intune actively manages the app.</span></span>
 
-## <a name="whats-supported"></a>サポートされる内容
+## <a name="whats-supported"></a><span data-ttu-id="787a8-112">サポートされる内容</span><span class="sxs-lookup"><span data-stu-id="787a8-112">What's supported?</span></span>
 
-### <a name="developer-machines"></a>開発者のコンピューター
-* macOS
-
-
-### <a name="mobile-app-platforms"></a>モバイル アプリのプラットフォーム
-* Android
-* iOS
+### <a name="developer-machines"></a><span data-ttu-id="787a8-113">開発者のコンピューター</span><span class="sxs-lookup"><span data-stu-id="787a8-113">Developer machines</span></span>
+* <span data-ttu-id="787a8-114">macOS</span><span class="sxs-lookup"><span data-stu-id="787a8-114">macOS</span></span>
 
 
-### <a name="intune-mobile-application-management-scenarios"></a>Intune モバイル アプリケーション管理のシナリオ
-
-* Intune MDM 登録デバイス
-* サードパーティ製の EMM 登録デバイス
-* 管理されていないデバイス (MDM に登録されていない)
-
-Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリでは、モバイル デバイス管理 (MDM) に登録しているデバイスと登録していないデバイスの両方で、Intune アプリ保護ポリシーを受け取るようになりました。
-
-## <a name="prerequisites"></a>必要条件
-
-* **[Android のみ]** 最新の Microsoft Intune Company Portal アプリをデバイスにインストールする必要があります。
-
-## <a name="get-started"></a>作業開始
-
-1.  **Xamarin-component.exe** を[ここ](https://components.xamarin.com/submit/xpkg)からダウンロードし、抽出します。
-
-2. Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://components.xamarin.com/license/microsoft.intune.mam)を読みます。
-
-3.  [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 3 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
-
-4.  監理者として起動したコマンド ラインで、`Xamarin.Component.exe install <.xam> file` を実行します。
-
-5.  Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。
-
-6.  **[コンポーネントの編集]** を選択し、コンピューターにローカル ダウンロードした Intune App SDK コンポーネントを追加します。
+### <a name="mobile-app-platforms"></a><span data-ttu-id="787a8-115">モバイル アプリのプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="787a8-115">Mobile app platforms</span></span>
+* <span data-ttu-id="787a8-116">Android</span><span class="sxs-lookup"><span data-stu-id="787a8-116">Android</span></span>
+* <span data-ttu-id="787a8-117">iOS</span><span class="sxs-lookup"><span data-stu-id="787a8-117">iOS</span></span>
 
 
+### <a name="intune-mobile-application-management-scenarios"></a><span data-ttu-id="787a8-118">Intune モバイル アプリケーション管理のシナリオ</span><span class="sxs-lookup"><span data-stu-id="787a8-118">Intune Mobile Application Management scenarios</span></span>
 
-## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS モバイル アプリで Intune アプリ保護ポリシーを有効にする
-1.  Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 たとえば、
+* <span data-ttu-id="787a8-119">Intune MDM 登録デバイス</span><span class="sxs-lookup"><span data-stu-id="787a8-119">Intune MDM-enrolled devices</span></span>
+* <span data-ttu-id="787a8-120">サードパーティ製の EMM 登録デバイス</span><span class="sxs-lookup"><span data-stu-id="787a8-120">Third-party EMM-enrolled devices</span></span>
+* <span data-ttu-id="787a8-121">管理されていないデバイス (MDM に登録されていない)</span><span class="sxs-lookup"><span data-stu-id="787a8-121">Unmanaged devices (not enrolled with any MDM)</span></span>
+
+<span data-ttu-id="787a8-122">Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリでは、モバイル デバイス管理 (MDM) に登録しているデバイスと登録していないデバイスの両方で、Intune アプリ保護ポリシーを受け取るようになりました。</span><span class="sxs-lookup"><span data-stu-id="787a8-122">Xamarin apps built with the Intune App SDK Xamarin Component can now receive Intune app protection policies on both Intune mobile device management (MDM) enrolled devices and unenrolled devices.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="787a8-123">必要条件</span><span class="sxs-lookup"><span data-stu-id="787a8-123">Prerequisites</span></span>
+
+* <span data-ttu-id="787a8-124">**[Android のみ]** 最新の Microsoft Intune Company Portal アプリをデバイスにインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-124">**[Android only]** The latest Microsoft Intune Company Portal app must be installed on the device.</span></span>
+
+## <a name="get-started"></a><span data-ttu-id="787a8-125">作業開始</span><span class="sxs-lookup"><span data-stu-id="787a8-125">Get started</span></span>
+
+1.  <span data-ttu-id="787a8-126">**Xamarin-component.exe** を[ここ](https://components.xamarin.com/submit/xpkg)からダウンロードし、抽出します。</span><span class="sxs-lookup"><span data-stu-id="787a8-126">Download **Xamarin-component.exe** from [here](https://components.xamarin.com/submit/xpkg) and extract it.</span></span>
+
+2. <span data-ttu-id="787a8-127">Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://components.xamarin.com/license/microsoft.intune.mam)を読みます。</span><span class="sxs-lookup"><span data-stu-id="787a8-127">Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.</span></span>
+
+3.  <span data-ttu-id="787a8-128">[GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。</span><span class="sxs-lookup"><span data-stu-id="787a8-128">Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) and extract it.</span></span> <span data-ttu-id="787a8-129">手順 1 と手順 3 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-129">Both files downloaded from step 1 and step 3 should be in the same directory level.</span></span>
+
+4.  <span data-ttu-id="787a8-130">監理者として起動したコマンド ラインで、`Xamarin.Component.exe install <.xam> file` を実行します。</span><span class="sxs-lookup"><span data-stu-id="787a8-130">In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.</span></span>
+
+5.  <span data-ttu-id="787a8-131">Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。</span><span class="sxs-lookup"><span data-stu-id="787a8-131">In Visual Studio, right-click **components** in your previously created Xamarin project.</span></span>
+
+6.  <span data-ttu-id="787a8-132">**[コンポーネントの編集]** を選択し、コンピューターにローカル ダウンロードした Intune App SDK コンポーネントを追加します。</span><span class="sxs-lookup"><span data-stu-id="787a8-132">Select **Edit Components** and add the Intune App SDK component you’ve downloaded locally to your computer.</span></span>
+
+
+
+## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a><span data-ttu-id="787a8-133">iOS モバイル アプリで Intune アプリ保護ポリシーを有効にする</span><span class="sxs-lookup"><span data-stu-id="787a8-133">Enabling Intune app protection polices in your iOS mobile app</span></span>
+1.  <span data-ttu-id="787a8-134">Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-134">In order to initialize the Intune App SDK, you need to make a call for any API in the `AppDelegate.cs` class.</span></span> <span data-ttu-id="787a8-135">たとえば、</span><span class="sxs-lookup"><span data-stu-id="787a8-135">For example:</span></span>
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -86,8 +86,8 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
       ```
 
-2.  コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」にすべて記載されています。
-3. **重要**: Xamarin 基盤の iOS アプリに固有の変更がいくつかあります。 たとえば、キーチェーン グループを有効にするとき、以下を追加し、コンポーネントに含めた Xamarin サンプル アプリを含めます。 以下は、キーチェーン アクセス グループで利用されるようなグループの例です。
+2.  <span data-ttu-id="787a8-136">コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="787a8-136">Now that the component is added and initialized, you can follow the general steps required for building the App SDK into an iOS mobile app.</span></span> <span data-ttu-id="787a8-137">ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」にすべて記載されています。</span><span class="sxs-lookup"><span data-stu-id="787a8-137">You can find the full documentation for enabling native iOS apps in the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md).</span></span>
+3. <span data-ttu-id="787a8-138">**重要**: Xamarin 基盤の iOS アプリに固有の変更がいくつかあります。</span><span class="sxs-lookup"><span data-stu-id="787a8-138">**Important**: There are several modifications specific to Xamarin-based iOS apps.</span></span> <span data-ttu-id="787a8-139">たとえば、キーチェーン グループを有効にするとき、以下を追加し、コンポーネントに含めた Xamarin サンプル アプリを含めます。</span><span class="sxs-lookup"><span data-stu-id="787a8-139">For instance, when enabling keychain groups, you need to add the following to include the Xamarin sample app we included in the component.</span></span> <span data-ttu-id="787a8-140">以下は、キーチェーン アクセス グループで利用されるようなグループの例です。</span><span class="sxs-lookup"><span data-stu-id="787a8-140">Below is an example of the groups you would need to have in your Keychain Access groups:</span></span>
 
       ```xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -105,23 +105,23 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
       </plist>
       ```
 
-Xamarin 基盤の iOS アプリにコンポーネントを組み込むための手順が完了しました。 プロジェクトの開発に Xcode を利用している場合、`Intune App SDK Settings.bundle` を利用できます。 プロジェクトを開発するとき、テストやデバッグのために Intune ポリシー設定のオン/オフを切り替えることができます。 このバンドルを活用するには、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」の手順に従い、[Xcode デバッグ](app-sdk-ios.md#status-result-and-debug-notifications)に関するセクションをお読みください。
+<span data-ttu-id="787a8-141">Xamarin 基盤の iOS アプリにコンポーネントを組み込むための手順が完了しました。</span><span class="sxs-lookup"><span data-stu-id="787a8-141">You have completed the steps necessary to build the component into your Xamarin-based iOS app.</span></span> <span data-ttu-id="787a8-142">プロジェクトの開発に Xcode を利用している場合、`Intune App SDK Settings.bundle` を利用できます。</span><span class="sxs-lookup"><span data-stu-id="787a8-142">If you are utilizing Xcode for building your project, you can use the `Intune App SDK Settings.bundle`.</span></span> <span data-ttu-id="787a8-143">プロジェクトを開発するとき、テストやデバッグのために Intune ポリシー設定のオン/オフを切り替えることができます。</span><span class="sxs-lookup"><span data-stu-id="787a8-143">This allows you to toggle Intune policy settings on and off as you build your project to test and debug.</span></span> <span data-ttu-id="787a8-144">このバンドルを活用するには、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」の手順に従い、[Xcode デバッグ](app-sdk-ios.md#status-result-and-debug-notifications)に関するセクションをお読みください。</span><span class="sxs-lookup"><span data-stu-id="787a8-144">To take advantage of this bundle, follow the steps in the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md) and read the section on [debugging in Xcode](app-sdk-ios.md#status-result-and-debug-notifications).</span></span>
 
-## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Android モバイル アプリでアプリ保護ポリシーを有効にする
-UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)」をお読みいただき、それに沿う必要があります。 Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。 アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。
+## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a><span data-ttu-id="787a8-145">Android モバイル アプリでアプリ保護ポリシーを有効にする</span><span class="sxs-lookup"><span data-stu-id="787a8-145">Enabling app protection policies in your Android mobile app</span></span>
+<span data-ttu-id="787a8-146">UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)」をお読みいただき、それに沿う必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-146">For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md).</span></span> <span data-ttu-id="787a8-147">Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-147">For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide.</span></span> <span data-ttu-id="787a8-148">アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-148">If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`.</span></span>
 
-Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。 このツールは、ユーザーに代わってクラス置換を実行します。 ただし、次の手順を実行する必要があります。
+<span data-ttu-id="787a8-149">Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。</span><span class="sxs-lookup"><span data-stu-id="787a8-149">For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.Remapper`.</span></span> <span data-ttu-id="787a8-150">このツールは、ユーザーに代わってクラス置換を実行します。</span><span class="sxs-lookup"><span data-stu-id="787a8-150">The tool accomplishes the class replacement for you.</span></span> <span data-ttu-id="787a8-151">ただし、次の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="787a8-151">However, you need to do the following steps:</span></span>
 
-1.  `Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージ バージョン 0.1.0.0 以降の参照を追加します。
+1.  <span data-ttu-id="787a8-152">`Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージ バージョン 0.1.0.0 以降の参照を追加します。</span><span class="sxs-lookup"><span data-stu-id="787a8-152">Add a reference to the `Microsoft.Intune.MAM.Remapper.Tasks` NuGet package version 0.1.0.0 or greater.</span></span>
 
-2.  Android csproj に次の行を追加します。
+2.  <span data-ttu-id="787a8-153">Android csproj に次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="787a8-153">Add the following line to your Android csproj:</span></span>
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。
+3.  <span data-ttu-id="787a8-154">追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。</span><span class="sxs-lookup"><span data-stu-id="787a8-154">Set the build action of the added `remapping-config.json` file to **RemappingConfigFile**.</span></span> <span data-ttu-id="787a8-155">追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。</span><span class="sxs-lookup"><span data-stu-id="787a8-155">The included `remapping-config.json` only works with Xamarin.Forms.</span></span> <span data-ttu-id="787a8-156">その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。</span><span class="sxs-lookup"><span data-stu-id="787a8-156">For other UI frameworks, refer to the Readme included with the Remapper NuGet package.</span></span>
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="787a8-157">次のステップ</span><span class="sxs-lookup"><span data-stu-id="787a8-157">Next steps</span></span>
 
-コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。
+<span data-ttu-id="787a8-158">コンポーネントをアプリに組み込む基本的な手順を完了しました。</span><span class="sxs-lookup"><span data-stu-id="787a8-158">You have completed the basic steps of building the component into your app.</span></span> <span data-ttu-id="787a8-159">これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。</span><span class="sxs-lookup"><span data-stu-id="787a8-159">Now you can follow the steps included in the Xamarin Android sample app.</span></span> <span data-ttu-id="787a8-160">サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。</span><span class="sxs-lookup"><span data-stu-id="787a8-160">We have provided two samples, one for Xamarin.Forms and another for Android.</span></span>

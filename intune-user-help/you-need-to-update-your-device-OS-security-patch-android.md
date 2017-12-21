@@ -15,27 +15,27 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="you-need-to-update-your-android-devices-operating-system"></a>Android デバイスのオペレーティング システムを更新する必要がある
+# <a name="you-need-to-update-your-android-devices-operating-system"></a><span data-ttu-id="1dd26-102">Android デバイスのオペレーティング システムを更新する必要がある</span><span class="sxs-lookup"><span data-stu-id="1dd26-102">You need to update your Android device's operating system</span></span>
 
-"Minimum Android security patch level is not configured" (最低限の Android セキュリティ パッチ レベルが構成されていません) というメッセージが表示された場合は、更新プログラムをインストールしてデバイスの安全性を確保する必要があります。 _パッチ_は、ソフトウェアの円滑な動作と最新の状態を常に保つためにリリースされます。 会社のサポートから、このパッチをインストールして、デバイスで企業データが可能な限り保護されるようにすることが求められます。 必要なセキュリティ パッチの入手先は、特定の Samsung デバイスを使用しているかどうかで異なります。
+<span data-ttu-id="1dd26-103">"Minimum Android security patch level is not configured" (最低限の Android セキュリティ パッチ レベルが構成されていません) というメッセージが表示された場合は、更新プログラムをインストールしてデバイスの安全性を確保する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1dd26-103">If you've seen a message that says your “Minimum Android security patch level is not configured," you need to install an update to ensure that your device remains secure.</span></span> <span data-ttu-id="1dd26-104">_パッチ_は、ソフトウェアの円滑な動作と最新の状態を常に保つためにリリースされます。</span><span class="sxs-lookup"><span data-stu-id="1dd26-104">A _patch_ is released to maintain software to keep it running smoothly and up to date.</span></span> <span data-ttu-id="1dd26-105">会社のサポートから、このパッチをインストールして、デバイスで企業データが可能な限り保護されるようにすることが求められます。</span><span class="sxs-lookup"><span data-stu-id="1dd26-105">Your company support requires you to install this patch to make sure that corporate data is kept as protected as possible on your device.</span></span> <span data-ttu-id="1dd26-106">必要なセキュリティ パッチの入手先は、特定の Samsung デバイスを使用しているかどうかで異なります。</span><span class="sxs-lookup"><span data-stu-id="1dd26-106">The location of the security patch you need will vary depending on whether you have a specific type of Samsung device.</span></span>
 
-Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"KNOX" という単語が画面上に表示されるかを確認します。 表示される場合は、以下の Samsung KNOX の手順を実行します。
+<span data-ttu-id="1dd26-107">Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"KNOX" という単語が画面上に表示されるかを確認します。</span><span class="sxs-lookup"><span data-stu-id="1dd26-107">If you have a Samsung device, go to **Settings** > **About phone**, and check to see if the word "KNOX" is anywhere onscreen.</span></span> <span data-ttu-id="1dd26-108">表示される場合は、以下の Samsung KNOX の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="1dd26-108">If so, follow the Samsung KNOX directions below.</span></span>
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-## <a name="for-most-android-devices-non-samsung-knox"></a>ほとんどの Android デバイスの場合 (Samsung KNOX 以外)
+## <a name="for-most-android-devices-non-samsung-knox"></a><span data-ttu-id="1dd26-109">ほとんどの Android デバイスの場合 (Samsung KNOX 以外)</span><span class="sxs-lookup"><span data-stu-id="1dd26-109">For most Android devices (non-Samsung KNOX)</span></span>
 
-**[Settings]** > **[About]** > **[Software updates]** の順に移動します。 更新プログラムをインストールして、デバイスに適切なセキュリティ パッチがインストールされるようにします。
+<span data-ttu-id="1dd26-110">**[Settings]** > **[About]** > **[Software updates]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1dd26-110">Go to **Settings** > **About** > **Software updates**.</span></span> <span data-ttu-id="1dd26-111">更新プログラムをインストールして、デバイスに適切なセキュリティ パッチがインストールされるようにします。</span><span class="sxs-lookup"><span data-stu-id="1dd26-111">Install the update and your device should have the correct security patch installed.</span></span>
 
-## <a name="for-samsung-knox-android-devices"></a>Samsung KNOX Android デバイスの場合
+## <a name="for-samsung-knox-android-devices"></a><span data-ttu-id="1dd26-112">Samsung KNOX Android デバイスの場合</span><span class="sxs-lookup"><span data-stu-id="1dd26-112">For Samsung KNOX Android devices</span></span>
 
-**[Settings]** > **[System updates]** > **[Check for new system update]** の順に移動します。 更新プログラムをインストールして、Samsung KNOX デバイスに適切なセキュリティ パッチがインストールされるようにします。
+<span data-ttu-id="1dd26-113">**[Settings]** > **[System updates]** > **[Check for new system update]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1dd26-113">Go to **Settings** > **System updates** > **Check for new system update**.</span></span> <span data-ttu-id="1dd26-114">更新プログラムをインストールして、Samsung KNOX デバイスに適切なセキュリティ パッチがインストールされるようにします。</span><span class="sxs-lookup"><span data-stu-id="1dd26-114">Install the update and your Samsung KNOX device should have the correct security patch installed.</span></span>
 
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="1dd26-115">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="1dd26-115">Still need help?</span></span> <span data-ttu-id="1dd26-116">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="1dd26-116">Contact your company support.</span></span> <span data-ttu-id="1dd26-117">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="1dd26-117">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

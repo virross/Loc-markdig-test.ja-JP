@@ -15,79 +15,79 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
+# <a name="reference-for-policy-entities"></a><span data-ttu-id="477ae-104">ポリシー エンティティのリファレンス</span><span class="sxs-lookup"><span data-stu-id="477ae-104">Reference for policy entities</span></span>
 
-**ポリシー** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。
+<span data-ttu-id="477ae-105">**ポリシー** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="477ae-105">The **Policy** category contains entities for mobile devices that track information such as:</span></span>
 
-  -  デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーのインベントリ  
-  -  成功、保留中、失敗、またはエラー状態のデバイス数/日  
-  -  成功、保留中、失敗、またはエラー状態のユーザー数/日  
-  -  成功、保留中、失敗、またはエラー状態のデバイスの累積数  
+  -  <span data-ttu-id="477ae-106">デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーのインベントリ</span><span class="sxs-lookup"><span data-stu-id="477ae-106">Inventory of device configuration profiles, app configuration profiles, and compliance policies</span></span>  
+  -  <span data-ttu-id="477ae-107">成功、保留中、失敗、またはエラー状態のデバイス数/日</span><span class="sxs-lookup"><span data-stu-id="477ae-107">Number of devices in the succeeded, pending, failed, or error state per day</span></span>  
+  -  <span data-ttu-id="477ae-108">成功、保留中、失敗、またはエラー状態のユーザー数/日</span><span class="sxs-lookup"><span data-stu-id="477ae-108">Number of users in the succeeded, pending, failed, or error state per day</span></span>  
+  -  <span data-ttu-id="477ae-109">成功、保留中、失敗、またはエラー状態のデバイスの累積数</span><span class="sxs-lookup"><span data-stu-id="477ae-109">Cumulative number of devices in the succeeded, pending, failed, or error state</span></span>  
 
-## <a name="policy"></a>ポリシー
+## <a name="policy"></a><span data-ttu-id="477ae-110">ポリシー</span><span class="sxs-lookup"><span data-stu-id="477ae-110">Policy</span></span>
 
-**Policy** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーが表示されます。 モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。
+<span data-ttu-id="477ae-111">**Policy** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-111">The **Policy** entity lists device configuration profiles, app configuration profiles, and compliance policies.</span></span> <span data-ttu-id="477ae-112">モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="477ae-112">You can assign the policies with Mobile Device Management (MDM) to a group in your enterprise.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="477ae-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="477ae-113">Property</span></span>  | <span data-ttu-id="477ae-114">説明</span><span class="sxs-lookup"><span data-stu-id="477ae-114">Description</span></span> | <span data-ttu-id="477ae-115">例</span><span class="sxs-lookup"><span data-stu-id="477ae-115">Example</span></span> |
 |---------|------------|--------|
-| PolicyKey |データ ウェアハウス内のポリシーを表す一意のキー。 |123 |
-| PolicyId |データ ウェアハウス内のポリシーを示す一意識別子。 |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |ポリシーの名前。 |"Windows 10 Baseline" |
-| PolicyVersion |ポリシーのバージョン。 ポリシーを編集または変更すると、新しいバージョンが作成されます。 |1, 2, 3 |
-| IsDeleted |ポリシー レコードが更新されているかどうかを示します。  <br>True - ポリシーには、フィールドが更新された新しいレコードがあります。 <br>False - ポリシーの最新のレコードです。 |真/偽 |
-| StartDateInclusiveUTC |ポリシーがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |ポリシーがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| <span data-ttu-id="477ae-116">PolicyKey</span><span class="sxs-lookup"><span data-stu-id="477ae-116">PolicyKey</span></span> |<span data-ttu-id="477ae-117">データ ウェアハウス内のポリシーを表す一意のキー。</span><span class="sxs-lookup"><span data-stu-id="477ae-117">Unique Key to represent the policy in the data warehouse.</span></span> |<span data-ttu-id="477ae-118">123</span><span class="sxs-lookup"><span data-stu-id="477ae-118">123</span></span> |
+| <span data-ttu-id="477ae-119">PolicyId</span><span class="sxs-lookup"><span data-stu-id="477ae-119">PolicyId</span></span> |<span data-ttu-id="477ae-120">データ ウェアハウス内のポリシーを示す一意識別子。</span><span class="sxs-lookup"><span data-stu-id="477ae-120">Unique identifier of the Policy in the data warehouse.</span></span> |<span data-ttu-id="477ae-121">b66bc706-ffff-7437-0340-032819502773</span><span class="sxs-lookup"><span data-stu-id="477ae-121">b66bc706-ffff-7437-0340-032819502773</span></span> |
+| <span data-ttu-id="477ae-122">PolicyName</span><span class="sxs-lookup"><span data-stu-id="477ae-122">PolicyName</span></span> |<span data-ttu-id="477ae-123">ポリシーの名前。</span><span class="sxs-lookup"><span data-stu-id="477ae-123">Name of the Policy.</span></span> |<span data-ttu-id="477ae-124">"Windows 10 Baseline"</span><span class="sxs-lookup"><span data-stu-id="477ae-124">"Windows 10 Baseline"</span></span> |
+| <span data-ttu-id="477ae-125">PolicyVersion</span><span class="sxs-lookup"><span data-stu-id="477ae-125">PolicyVersion</span></span> |<span data-ttu-id="477ae-126">ポリシーのバージョン。</span><span class="sxs-lookup"><span data-stu-id="477ae-126">Version of the Policy.</span></span> <span data-ttu-id="477ae-127">ポリシーを編集または変更すると、新しいバージョンが作成されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-127">When the policy is edited or changed, a newer version is created.</span></span> |<span data-ttu-id="477ae-128">1, 2, 3</span><span class="sxs-lookup"><span data-stu-id="477ae-128">1, 2, 3</span></span> |
+| <span data-ttu-id="477ae-129">IsDeleted</span><span class="sxs-lookup"><span data-stu-id="477ae-129">IsDeleted</span></span> |<span data-ttu-id="477ae-130">ポリシー レコードが更新されているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="477ae-130">Indicates whether the Policy record has been updated.</span></span>  <br><span data-ttu-id="477ae-131">True - ポリシーには、フィールドが更新された新しいレコードがあります。</span><span class="sxs-lookup"><span data-stu-id="477ae-131">True- policy has a new record with updated fields.</span></span> <br><span data-ttu-id="477ae-132">False - ポリシーの最新のレコードです。</span><span class="sxs-lookup"><span data-stu-id="477ae-132">False- the latest record for the policy.</span></span> |<span data-ttu-id="477ae-133">真/偽</span><span class="sxs-lookup"><span data-stu-id="477ae-133">True/False</span></span> |
+| <span data-ttu-id="477ae-134">StartDateInclusiveUTC</span><span class="sxs-lookup"><span data-stu-id="477ae-134">StartDateInclusiveUTC</span></span> |<span data-ttu-id="477ae-135">ポリシーがデータ ウェアハウスで作成されたときの UTC 日時。</span><span class="sxs-lookup"><span data-stu-id="477ae-135">Date and time in UTC when the policy was created in the data warehouse.</span></span> |<span data-ttu-id="477ae-136">11/23/2016 12:00:00 AM</span><span class="sxs-lookup"><span data-stu-id="477ae-136">11/23/2016 12:00:00 AM</span></span> |
+| <span data-ttu-id="477ae-137">DeletedDateUTC</span><span class="sxs-lookup"><span data-stu-id="477ae-137">DeletedDateUTC</span></span> |<span data-ttu-id="477ae-138">IsDeleted が True に変更されたときの UTC 日時。</span><span class="sxs-lookup"><span data-stu-id="477ae-138">Date and time in UTC when IsDeleted changed to True.</span></span> |<span data-ttu-id="477ae-139">11/23/2016 12:00:00 AM</span><span class="sxs-lookup"><span data-stu-id="477ae-139">11/23/2016 12:00:00 AM</span></span> |
+| <span data-ttu-id="477ae-140">RowLastModifiedDateTimeUTC</span><span class="sxs-lookup"><span data-stu-id="477ae-140">RowLastModifiedDateTimeUTC</span></span> |<span data-ttu-id="477ae-141">ポリシーがデータ ウェアハウスで最後に変更されたときの UTC 日時。</span><span class="sxs-lookup"><span data-stu-id="477ae-141">Date and time in UTC when the policy was last modified in the data warehouse.</span></span> |<span data-ttu-id="477ae-142">11/23/2016 12:00:00 AM</span><span class="sxs-lookup"><span data-stu-id="477ae-142">11/23/2016 12:00:00 AM</span></span> |
 
-## <a name="policytype"></a>PolicyType
+## <a name="policytype"></a><span data-ttu-id="477ae-143">PolicyType</span><span class="sxs-lookup"><span data-stu-id="477ae-143">PolicyType</span></span>
 
-**PolicyType** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーの種類が表示されます。 モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。
+<span data-ttu-id="477ae-144">**PolicyType** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーの種類が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-144">The **PolicyType** entity lists types of device configuration profiles, app configuration profiles, and Compliance policies.</span></span> <span data-ttu-id="477ae-145">モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="477ae-145">You can assign the policies with Mobile Device Management (MDM) to a group in your enterprise.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="477ae-146">プロパティ</span><span class="sxs-lookup"><span data-stu-id="477ae-146">Property</span></span>  | <span data-ttu-id="477ae-147">説明</span><span class="sxs-lookup"><span data-stu-id="477ae-147">Description</span></span> | <span data-ttu-id="477ae-148">例</span><span class="sxs-lookup"><span data-stu-id="477ae-148">Example</span></span> |
 |---------|------------|--------|
-| PolicyTypeId |ソース システムのポリシーを示す一意識別子。 |123 |
-| PolicyTypeKey |データ ウェアハウス内のポリシーを示す一意識別子。 |1 |
-| PolicyTypeName |ポリシーの種類の名前 |Windows 10 のコンプライアンス ポリシー。 |
+| <span data-ttu-id="477ae-149">PolicyTypeId</span><span class="sxs-lookup"><span data-stu-id="477ae-149">PolicyTypeId</span></span> |<span data-ttu-id="477ae-150">ソース システムのポリシーを示す一意識別子。</span><span class="sxs-lookup"><span data-stu-id="477ae-150">Unique identifier of the policy in the source system.</span></span> |<span data-ttu-id="477ae-151">123</span><span class="sxs-lookup"><span data-stu-id="477ae-151">123</span></span> |
+| <span data-ttu-id="477ae-152">PolicyTypeKey</span><span class="sxs-lookup"><span data-stu-id="477ae-152">PolicyTypeKey</span></span> |<span data-ttu-id="477ae-153">データ ウェアハウス内のポリシーを示す一意識別子。</span><span class="sxs-lookup"><span data-stu-id="477ae-153">Unique identifier of the policy in the data warehouse.</span></span> |<span data-ttu-id="477ae-154">1</span><span class="sxs-lookup"><span data-stu-id="477ae-154">1</span></span> |
+| <span data-ttu-id="477ae-155">PolicyTypeName</span><span class="sxs-lookup"><span data-stu-id="477ae-155">PolicyTypeName</span></span> |<span data-ttu-id="477ae-156">ポリシーの種類の名前</span><span class="sxs-lookup"><span data-stu-id="477ae-156">Name of the policy type.</span></span> |<span data-ttu-id="477ae-157">Windows 10 のコンプライアンス ポリシー。</span><span class="sxs-lookup"><span data-stu-id="477ae-157">Windows 10 Compliance policy.</span></span> |
 
-## <a name="deviceconfiguration"></a>DeviceConfiguration
+## <a name="deviceconfiguration"></a><span data-ttu-id="477ae-158">DeviceConfiguration</span><span class="sxs-lookup"><span data-stu-id="477ae-158">DeviceConfiguration</span></span>
 
-**DeviceConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態のデバイス数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーでデバイスが成功状態の場合、その日の成功カウンターが 1 つ増えます。 成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがデバイスに割り当てられている場合、エンティティは成功カウンターを増やし、デバイスをエラー状態にします。 エンティティには、過去 30 日間の各状態のデバイス数/日が表示されます。
+<span data-ttu-id="477ae-159">**DeviceConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態のデバイス数/日が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-159">The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devices in the succeeded, pending, failed, or error state per day.</span></span> <span data-ttu-id="477ae-160">この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。</span><span class="sxs-lookup"><span data-stu-id="477ae-160">The number reflects the Device configuration profiles assigned to the entity.</span></span> <span data-ttu-id="477ae-161">たとえば、割り当てられているすべてのポリシーでデバイスが成功状態の場合、その日の成功カウンターが 1 つ増えます。</span><span class="sxs-lookup"><span data-stu-id="477ae-161">For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day.</span></span> <span data-ttu-id="477ae-162">成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがデバイスに割り当てられている場合、エンティティは成功カウンターを増やし、デバイスをエラー状態にします。</span><span class="sxs-lookup"><span data-stu-id="477ae-162">If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state.</span></span> <span data-ttu-id="477ae-163">エンティティには、過去 30 日間の各状態のデバイス数/日が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-163">The entity lists how many devices are in which state on a given day over the last 30 days.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="477ae-164">プロパティ</span><span class="sxs-lookup"><span data-stu-id="477ae-164">Property</span></span>  | <span data-ttu-id="477ae-165">説明</span><span class="sxs-lookup"><span data-stu-id="477ae-165">Description</span></span> | <span data-ttu-id="477ae-166">例</span><span class="sxs-lookup"><span data-stu-id="477ae-166">Example</span></span> |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
-| Pending |保留状態の一意のデバイス数。 |123 |
-| 成功 |成功状態の一意のデバイス数。 |12 |
-| エラー |エラー状態の一意のデバイス数。 |10 |
-| Failed |失敗状態の一意のデバイス数。 |2 |
+| <span data-ttu-id="477ae-167">DateKey</span><span class="sxs-lookup"><span data-stu-id="477ae-167">DateKey</span></span> |<span data-ttu-id="477ae-168">デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。</span><span class="sxs-lookup"><span data-stu-id="477ae-168">Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.</span></span> |<span data-ttu-id="477ae-169">20160703</span><span class="sxs-lookup"><span data-stu-id="477ae-169">20160703</span></span> |
+| <span data-ttu-id="477ae-170">Pending</span><span class="sxs-lookup"><span data-stu-id="477ae-170">Pending</span></span> |<span data-ttu-id="477ae-171">保留状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-171">Number of unique Devices in pending state.</span></span> |<span data-ttu-id="477ae-172">123</span><span class="sxs-lookup"><span data-stu-id="477ae-172">123</span></span> |
+| <span data-ttu-id="477ae-173">成功</span><span class="sxs-lookup"><span data-stu-id="477ae-173">Succeeded</span></span> |<span data-ttu-id="477ae-174">成功状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-174">Number of unique Devices in success state.</span></span> |<span data-ttu-id="477ae-175">12</span><span class="sxs-lookup"><span data-stu-id="477ae-175">12</span></span> |
+| <span data-ttu-id="477ae-176">エラー</span><span class="sxs-lookup"><span data-stu-id="477ae-176">Error</span></span> |<span data-ttu-id="477ae-177">エラー状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-177">Number of unique Devices in error state.</span></span> |<span data-ttu-id="477ae-178">10</span><span class="sxs-lookup"><span data-stu-id="477ae-178">10</span></span> |
+| <span data-ttu-id="477ae-179">Failed</span><span class="sxs-lookup"><span data-stu-id="477ae-179">Failed</span></span> |<span data-ttu-id="477ae-180">失敗状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-180">Number of unique Devices in failed state.</span></span> |<span data-ttu-id="477ae-181">2</span><span class="sxs-lookup"><span data-stu-id="477ae-181">2</span></span> |
 
-## <a name="userconfiguration"></a>UserConfiguration
+## <a name="userconfiguration"></a><span data-ttu-id="477ae-182">UserConfiguration</span><span class="sxs-lookup"><span data-stu-id="477ae-182">UserConfiguration</span></span>
 
-**UserConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態のユーザー数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーでユーザーが成功状態の場合、その日の成功カウンターが 1 つ増えます。 成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがユーザーにある場合、そのユーザーはエラー状態とカウントします。  **UserConfigurationProfileDeviceActivity** エンティティには、過去 30 日間の各状態のユーザー数/日が表示されます。
+<span data-ttu-id="477ae-183">**UserConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態のユーザー数/日が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-183">The **UserConfigurationProfileDeviceActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day.</span></span> <span data-ttu-id="477ae-184">この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。</span><span class="sxs-lookup"><span data-stu-id="477ae-184">The number reflects the Device configuration profiles assigned to the entity.</span></span> <span data-ttu-id="477ae-185">たとえば、割り当てられているすべてのポリシーでユーザーが成功状態の場合、その日の成功カウンターが 1 つ増えます。</span><span class="sxs-lookup"><span data-stu-id="477ae-185">For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day.</span></span> <span data-ttu-id="477ae-186">成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがユーザーにある場合、そのユーザーはエラー状態とカウントします。</span><span class="sxs-lookup"><span data-stu-id="477ae-186">If a user has two profiles assigned to them, one in the succeeded state while the other is in an error state, we count the user in the error state.</span></span>  <span data-ttu-id="477ae-187">**UserConfigurationProfileDeviceActivity** エンティティには、過去 30 日間の各状態のユーザー数/日が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-187">The **UserConfigurationProfileDeviceActivity** entity lists how many users are in which state on a given day over the last 30 days.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="477ae-188">プロパティ</span><span class="sxs-lookup"><span data-stu-id="477ae-188">Property</span></span>  | <span data-ttu-id="477ae-189">説明</span><span class="sxs-lookup"><span data-stu-id="477ae-189">Description</span></span> | <span data-ttu-id="477ae-190">例</span><span class="sxs-lookup"><span data-stu-id="477ae-190">Example</span></span> |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
-| Pending |保留状態の一意のユーザー数。 |123 |
-| 成功 |成功状態の一意のユーザー数。 |12 |
-| エラー |エラー状態の一意のユーザー数。 |10 |
-| Failed |失敗状態の一意のユーザー数。 |2 |
+| <span data-ttu-id="477ae-191">DateKey</span><span class="sxs-lookup"><span data-stu-id="477ae-191">DateKey</span></span> |<span data-ttu-id="477ae-192">デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。</span><span class="sxs-lookup"><span data-stu-id="477ae-192">Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.</span></span> |<span data-ttu-id="477ae-193">20160703</span><span class="sxs-lookup"><span data-stu-id="477ae-193">20160703</span></span> |
+| <span data-ttu-id="477ae-194">Pending</span><span class="sxs-lookup"><span data-stu-id="477ae-194">Pending</span></span> |<span data-ttu-id="477ae-195">保留状態の一意のユーザー数。</span><span class="sxs-lookup"><span data-stu-id="477ae-195">Number of unique Users in pending state.</span></span> |<span data-ttu-id="477ae-196">123</span><span class="sxs-lookup"><span data-stu-id="477ae-196">123</span></span> |
+| <span data-ttu-id="477ae-197">成功</span><span class="sxs-lookup"><span data-stu-id="477ae-197">Succeeded</span></span> |<span data-ttu-id="477ae-198">成功状態の一意のユーザー数。</span><span class="sxs-lookup"><span data-stu-id="477ae-198">Number of unique Users in success state.</span></span> |<span data-ttu-id="477ae-199">12</span><span class="sxs-lookup"><span data-stu-id="477ae-199">12</span></span> |
+| <span data-ttu-id="477ae-200">エラー</span><span class="sxs-lookup"><span data-stu-id="477ae-200">Error</span></span> |<span data-ttu-id="477ae-201">エラー状態の一意のユーザー数。</span><span class="sxs-lookup"><span data-stu-id="477ae-201">Number of unique Users in error state.</span></span> |<span data-ttu-id="477ae-202">10</span><span class="sxs-lookup"><span data-stu-id="477ae-202">10</span></span> |
+| <span data-ttu-id="477ae-203">Failed</span><span class="sxs-lookup"><span data-stu-id="477ae-203">Failed</span></span> |<span data-ttu-id="477ae-204">失敗状態の一意のユーザー数。</span><span class="sxs-lookup"><span data-stu-id="477ae-204">Number of unique Users in failed state.</span></span> |<span data-ttu-id="477ae-205">2</span><span class="sxs-lookup"><span data-stu-id="477ae-205">2</span></span> |
 
-## <a name="policytypeactivity"></a>PolicyTypeActivity
+## <a name="policytypeactivity"></a><span data-ttu-id="477ae-206">PolicyTypeActivity</span><span class="sxs-lookup"><span data-stu-id="477ae-206">PolicyTypeActivity</span></span>
 
-**PolicyTypeActivity** エンティティには、成功、保留中、失敗、またはエラー状態のデバイスの累積数が表示されます。 デバイス構成プロファイル、アプリ構成プロファイル、またはコンプライアンス ポリシーについて、これらの状態が 1 日単位で表示されます。
+<span data-ttu-id="477ae-207">**PolicyTypeActivity** エンティティには、成功、保留中、失敗、またはエラー状態のデバイスの累積数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-207">The **PolicyTypeActivity** entity lists the cumulative number of devices in the succeeded, pending, failed, or error state.</span></span> <span data-ttu-id="477ae-208">デバイス構成プロファイル、アプリ構成プロファイル、またはコンプライアンス ポリシーについて、これらの状態が 1 日単位で表示されます。</span><span class="sxs-lookup"><span data-stu-id="477ae-208">It lists these states with respect to a device configuration profile, app configuration profile, or compliance policy per day.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="477ae-209">プロパティ</span><span class="sxs-lookup"><span data-stu-id="477ae-209">Property</span></span>  | <span data-ttu-id="477ae-210">説明</span><span class="sxs-lookup"><span data-stu-id="477ae-210">Description</span></span> | <span data-ttu-id="477ae-211">例</span><span class="sxs-lookup"><span data-stu-id="477ae-211">Example</span></span> |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
-| PolicyKey |ポリシー キーとポリシーを結合して、policyName を取得できます。 |Windows 10 baseline |
-| PolicyTypeKey |ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます。 |Windows10 のコンプライアンス ポリシー |
-| Pending |保留状態の一意のデバイス数。 |123 |
-| 成功 |成功状態の一意のデバイス数。 |12 |
-| エラー |エラー状態の一意のデバイス数。 |10 |
-| Fail- |失敗状態の一意のデバイス数。 |2 |
+| <span data-ttu-id="477ae-212">DateKey</span><span class="sxs-lookup"><span data-stu-id="477ae-212">DateKey</span></span> |<span data-ttu-id="477ae-213">デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。</span><span class="sxs-lookup"><span data-stu-id="477ae-213">Date Key when the device Configuration profile check-in was recorded in the data warehouse.</span></span> |<span data-ttu-id="477ae-214">20160703</span><span class="sxs-lookup"><span data-stu-id="477ae-214">20160703</span></span> |
+| <span data-ttu-id="477ae-215">PolicyKey</span><span class="sxs-lookup"><span data-stu-id="477ae-215">PolicyKey</span></span> |<span data-ttu-id="477ae-216">ポリシー キーとポリシーを結合して、policyName を取得できます。</span><span class="sxs-lookup"><span data-stu-id="477ae-216">Policy Key, can be joined with Policy to get the policyName.</span></span> |<span data-ttu-id="477ae-217">Windows 10 baseline</span><span class="sxs-lookup"><span data-stu-id="477ae-217">Windows 10 baseline</span></span> |
+| <span data-ttu-id="477ae-218">PolicyTypeKey</span><span class="sxs-lookup"><span data-stu-id="477ae-218">PolicyTypeKey</span></span> |<span data-ttu-id="477ae-219">ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます。</span><span class="sxs-lookup"><span data-stu-id="477ae-219">Type of Policy Key,  can be joined with Policy Type to get the policy type name.</span></span> |<span data-ttu-id="477ae-220">Windows10 のコンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="477ae-220">Windows10 Compliance Policy</span></span> |
+| <span data-ttu-id="477ae-221">Pending</span><span class="sxs-lookup"><span data-stu-id="477ae-221">Pending</span></span> |<span data-ttu-id="477ae-222">保留状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-222">Number of unique devices in pending state.</span></span> |<span data-ttu-id="477ae-223">123</span><span class="sxs-lookup"><span data-stu-id="477ae-223">123</span></span> |
+| <span data-ttu-id="477ae-224">成功</span><span class="sxs-lookup"><span data-stu-id="477ae-224">Succeeded</span></span> |<span data-ttu-id="477ae-225">成功状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-225">Number of unique devices in success state.</span></span> |<span data-ttu-id="477ae-226">12</span><span class="sxs-lookup"><span data-stu-id="477ae-226">12</span></span> |
+| <span data-ttu-id="477ae-227">エラー</span><span class="sxs-lookup"><span data-stu-id="477ae-227">Error</span></span> |<span data-ttu-id="477ae-228">エラー状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-228">Number of unique devices in error state.</span></span> |<span data-ttu-id="477ae-229">10</span><span class="sxs-lookup"><span data-stu-id="477ae-229">10</span></span> |
+| <span data-ttu-id="477ae-230">Fail-</span><span class="sxs-lookup"><span data-stu-id="477ae-230">Fail-</span></span> |<span data-ttu-id="477ae-231">失敗状態の一意のデバイス数。</span><span class="sxs-lookup"><span data-stu-id="477ae-231">Number of unique devices in failed state.</span></span> |<span data-ttu-id="477ae-232">2</span><span class="sxs-lookup"><span data-stu-id="477ae-232">2</span></span> |

@@ -16,46 +16,46 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
+# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a><span data-ttu-id="6ffce-103">Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法</span><span class="sxs-lookup"><span data-stu-id="6ffce-103">How to create a device compliance policy for Windows devices in Intune</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
+<span data-ttu-id="6ffce-104">コンプライアンス ポリシーは、プラットフォームごとに作成されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-104">Compliance policies are created for each platform.</span></span>  <span data-ttu-id="6ffce-105">また、Azure Portal でコンプライアンス ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-105">You can create a compliance policy in the Azure portal.</span></span> <span data-ttu-id="6ffce-106">コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ffce-106">To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic.</span></span> <span data-ttu-id="6ffce-107">コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ffce-107">To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.</span></span>
 
-次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。
+<span data-ttu-id="6ffce-108">次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。</span><span class="sxs-lookup"><span data-stu-id="6ffce-108">The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.</span></span>
 
 ---------------------------
 
-| **ポリシー設定** | **Windows 8.1 以降** | **Windows Phone 8.1 以降** |
+| <span data-ttu-id="6ffce-109">**ポリシー設定**</span><span class="sxs-lookup"><span data-stu-id="6ffce-109">**Policy setting**</span></span> | <span data-ttu-id="6ffce-110">**Windows 8.1 以降**</span><span class="sxs-lookup"><span data-stu-id="6ffce-110">**Windows 8.1 and later**</span></span> | <span data-ttu-id="6ffce-111">**Windows Phone 8.1 以降**</span><span class="sxs-lookup"><span data-stu-id="6ffce-111">**Windows Phone 8.1 and later**</span></span> |
 |----| ----| --- |
-| **PIN またはパスワードの構成** | 修復 | 修復 |   
-| **デバイスの暗号化** | 該当なし | 修復 |   
-| **脱獄またはルート化されたデバイス** | 該当なし | 該当なし |  
-| **電子メールのプロファイル** | 該当なし | 該当なし |   
-| **最小 OS バージョン** | 検疫済み | 検疫済み |   
-| **最大 OS バージョン** | 検疫済み | 検疫済み |   
-| **Windows 正常性構成証明書** | 検疫済み: Windows 10 および Windows 10 Mobile|該当なし: Windows 8.1 |
+| <span data-ttu-id="6ffce-112">**PIN またはパスワードの構成**</span><span class="sxs-lookup"><span data-stu-id="6ffce-112">**PIN or password configuration**</span></span> | <span data-ttu-id="6ffce-113">修復</span><span class="sxs-lookup"><span data-stu-id="6ffce-113">Remediated</span></span> | <span data-ttu-id="6ffce-114">修復</span><span class="sxs-lookup"><span data-stu-id="6ffce-114">Remediated</span></span> |   
+| <span data-ttu-id="6ffce-115">**デバイスの暗号化**</span><span class="sxs-lookup"><span data-stu-id="6ffce-115">**Device encryption**</span></span> | <span data-ttu-id="6ffce-116">該当なし</span><span class="sxs-lookup"><span data-stu-id="6ffce-116">Not applicable</span></span> | <span data-ttu-id="6ffce-117">修復</span><span class="sxs-lookup"><span data-stu-id="6ffce-117">Remediated</span></span> |   
+| <span data-ttu-id="6ffce-118">**脱獄またはルート化されたデバイス**</span><span class="sxs-lookup"><span data-stu-id="6ffce-118">**Jailbroken or rooted device**</span></span> | <span data-ttu-id="6ffce-119">該当なし</span><span class="sxs-lookup"><span data-stu-id="6ffce-119">Not applicable</span></span> | <span data-ttu-id="6ffce-120">該当なし</span><span class="sxs-lookup"><span data-stu-id="6ffce-120">Not applicable</span></span> |  
+| <span data-ttu-id="6ffce-121">**電子メールのプロファイル**</span><span class="sxs-lookup"><span data-stu-id="6ffce-121">**Email profile**</span></span> | <span data-ttu-id="6ffce-122">該当なし</span><span class="sxs-lookup"><span data-stu-id="6ffce-122">Not applicable</span></span> | <span data-ttu-id="6ffce-123">該当なし</span><span class="sxs-lookup"><span data-stu-id="6ffce-123">Not applicable</span></span> |   
+| <span data-ttu-id="6ffce-124">**最小 OS バージョン**</span><span class="sxs-lookup"><span data-stu-id="6ffce-124">**Minimum OS version**</span></span> | <span data-ttu-id="6ffce-125">検疫済み</span><span class="sxs-lookup"><span data-stu-id="6ffce-125">Quarantined</span></span> | <span data-ttu-id="6ffce-126">検疫済み</span><span class="sxs-lookup"><span data-stu-id="6ffce-126">Quarantined</span></span> |   
+| <span data-ttu-id="6ffce-127">**最大 OS バージョン**</span><span class="sxs-lookup"><span data-stu-id="6ffce-127">**Maximum OS version**</span></span> | <span data-ttu-id="6ffce-128">検疫済み</span><span class="sxs-lookup"><span data-stu-id="6ffce-128">Quarantined</span></span> | <span data-ttu-id="6ffce-129">検疫済み</span><span class="sxs-lookup"><span data-stu-id="6ffce-129">Quarantined</span></span> |   
+| <span data-ttu-id="6ffce-130">**Windows 正常性構成証明書**</span><span class="sxs-lookup"><span data-stu-id="6ffce-130">**Windows health attestation**</span></span> | <span data-ttu-id="6ffce-131">検疫済み: Windows 10 および Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="6ffce-131">Quarantined: Windows 10 and Windows 10 Mobile</span></span>|<span data-ttu-id="6ffce-132">該当なし: Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="6ffce-132">Not applicable: Windows 8.1</span></span> |
 
 -------------------------------
 
-**修復** = デバイス オペレーティング システムによって準拠が強制されます  (たとえば、ユーザーは PIN を設定するように強制されます)。+
+<span data-ttu-id="6ffce-133">**修復** = デバイス オペレーティング システムによって準拠が強制されます </span><span class="sxs-lookup"><span data-stu-id="6ffce-133">**Remediated** = The device operating system enforces compliance.</span></span> <span data-ttu-id="6ffce-134">(たとえば、ユーザーは PIN を設定するように強制されます)。+</span><span class="sxs-lookup"><span data-stu-id="6ffce-134">(For example, the user is forced to set a PIN.)+</span></span>
 
-**検疫済み** = デバイス オペレーティング システムによって準拠が強制されません  (たとえば、Android デバイスでは、ユーザーはデバイスの暗号化を強制されません)。デバイスが準拠していない場合、次のアクションが行われます。+
+<span data-ttu-id="6ffce-135">**検疫済み** = デバイス オペレーティング システムによって準拠が強制されません </span><span class="sxs-lookup"><span data-stu-id="6ffce-135">**Quarantined** = The device operating system does not enforce compliance.</span></span> <span data-ttu-id="6ffce-136">(たとえば、Android デバイスでは、ユーザーはデバイスの暗号化を強制されません)。デバイスが準拠していない場合、次のアクションが行われます。+</span><span class="sxs-lookup"><span data-stu-id="6ffce-136">(For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+</span></span>
 
-- ユーザーに条件付きアクセス ポリシーを適用すると、デバイスがブロックされます。
-- ポータル サイトは、コンプライアンスの問題をユーザーに通知します。
+- <span data-ttu-id="6ffce-137">ユーザーに条件付きアクセス ポリシーを適用すると、デバイスがブロックされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-137">The device is blocked if a conditional access policy applies to the user.</span></span>
+- <span data-ttu-id="6ffce-138">ポータル サイトは、コンプライアンスの問題をユーザーに通知します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-138">The company portal notifies the user about any compliance problems.</span></span>
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal でコンプライアンス ポリシーを作成する
+## <a name="create-a-compliance-policy-in-the-azure-portal"></a><span data-ttu-id="6ffce-139">Azure Portal でコンプライアンス ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="6ffce-139">Create a compliance policy in the Azure portal</span></span>
 
-1. **[Intune]** ブレードで、**[デバイス コンプライアンスの設定]** を選択します。 **[管理]** で **[All device compliance policies (すべてのデバイス コンプライアンス ポリシー)]**、**[作成]** の順に選択します。
-2. 名前と説明を入力し、このポリシーを適用するプラットフォームを選択します。
-3. **[コンプライアンス要件]** を選択して、[コンプライアンス要件] ブレードを開きます。  ここで **[セキュリティ]**、**[デバイスのヘルス]**、**[デバイスのプロパティ]** の設定を指定します。終了したら、**[OK]** を選択します。
+1. <span data-ttu-id="6ffce-140">**[Intune]** ブレードで、**[デバイス コンプライアンスの設定]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-140">From the **Intune** blade, choose **Set Device compliance**.</span></span> <span data-ttu-id="6ffce-141">**[管理]** で **[All device compliance policies (すべてのデバイス コンプライアンス ポリシー)]**、**[作成]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-141">Under **Manage**, choose **All device compliance policies** and choose **Create**.</span></span>
+2. <span data-ttu-id="6ffce-142">名前と説明を入力し、このポリシーを適用するプラットフォームを選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-142">Type a name, description and choose the platform that you want this policy to apply to.</span></span>
+3. <span data-ttu-id="6ffce-143">**[コンプライアンス要件]** を選択して、[コンプライアンス要件] ブレードを開きます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-143">Choose **Compliance requirements** to open the compliance requirements blade.</span></span>  <span data-ttu-id="6ffce-144">ここで **[セキュリティ]**、**[デバイスのヘルス]**、**[デバイスのプロパティ]** の設定を指定します。終了したら、**[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-144">You can specify the **Security**, **Device health**, and **Device property** settings here, When you are done, choose **Ok**.</span></span>
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -64,131 +64,131 @@ ms.lasthandoff: 09/09/2017
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
+## <a name="assign-user-groups"></a><span data-ttu-id="6ffce-145">ユーザー グループを割り当てる</span><span class="sxs-lookup"><span data-stu-id="6ffce-145">Assign user groups</span></span>
 
-コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[コンプライアンス ポリシー]** ブレードで確認できます。
+<span data-ttu-id="6ffce-146">コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-146">To assign a compliance policy to users, choose a policy that you have configured.</span></span> <span data-ttu-id="6ffce-147">既存のポリシーは、**[コンプライアンス ポリシー]** ブレードで確認できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-147">Existing policies can be found in the **Compliance –policies** blade.</span></span>
 
-1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 これにより表示されたブレードで、**[Azure Active Directory セキュリティ グループ]** を選択し、ポリシーに割り当てることができます。
-2. **[グループの選択]** を選択すると、ブレードが開き、Azure AD セキュリティ グループが表示されます。  **[選択]** を選択すると、ポリシーがユーザーに展開されます。
+1. <span data-ttu-id="6ffce-148">ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-148">Choose the policy you want to assign to users and choose **Assignments**.</span></span> <span data-ttu-id="6ffce-149">これにより表示されたブレードで、**[Azure Active Directory セキュリティ グループ]** を選択し、ポリシーに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-149">This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.</span></span>
+2. <span data-ttu-id="6ffce-150">**[グループの選択]** を選択すると、ブレードが開き、Azure AD セキュリティ グループが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-150">Choose **Select groups** to open the blade that displays the Azure AD security groups.</span></span>  <span data-ttu-id="6ffce-151">**[選択]** を選択すると、ポリシーがユーザーに展開されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-151">Choosing **Select**  deploys the policy to users.</span></span>
 
-ポリシーがユーザーに適用されました。  ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスについて評価されます。
+<span data-ttu-id="6ffce-152">ポリシーがユーザーに適用されました。</span><span class="sxs-lookup"><span data-stu-id="6ffce-152">You have applied the policy to users.</span></span>  <span data-ttu-id="6ffce-153">ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスについて評価されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-153">The devices used by the users who are targeted by the policy will be evaluated for compliance.</span></span>
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>システム セキュリティ設定
+## <a name="system-security-settings"></a><span data-ttu-id="6ffce-154">システム セキュリティ設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-154">System security settings</span></span>
 
-### <a name="password"></a>パスワード
+### <a name="password"></a><span data-ttu-id="6ffce-155">パスワード</span><span class="sxs-lookup"><span data-stu-id="6ffce-155">Password</span></span>
 
-- **モバイル デバイスのロック解除にパスワードを必要とする:** デバイスにアクセスするユーザーにパスワードを入力するよう求める場合は、**[はい]** に設定します。
-- **[単純なパスワードを許可する]:** これを **[はい]** に設定すると、ユーザーは単純なパスワード (**1234**、**1111** など) を作成できます。
-- **[パスワードの最小文字数]:** ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。
-- **[必要なパスワードの種類]:** ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。
+- <span data-ttu-id="6ffce-156">**モバイル デバイスのロック解除にパスワードを必要とする:** デバイスにアクセスするユーザーにパスワードを入力するよう求める場合は、**[はい]** に設定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-156">**Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.</span></span>
+- <span data-ttu-id="6ffce-157">**[単純なパスワードを許可する]:** これを **[はい]** に設定すると、ユーザーは単純なパスワード (**1234**、**1111** など) を作成できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-157">**Allow simple passwords:** Set this to **Yes** to let users create simple passwords such as &#39; '**1234**'; or ' **1111**'.</span></span>
+- <span data-ttu-id="6ffce-158">**[パスワードの最小文字数]:** ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-158">**Minimum password length:** Specify the minimum number of digits or characters that the user&#39;s password must contain.</span></span>
+- <span data-ttu-id="6ffce-159">**[必要なパスワードの種類]:** ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-159">**Required password type:** Specify whether users must create an **Alphanumeric** , or a **Numeric** password.</span></span>
 
-Windows を実行し Microsoft アカウントでアクセスされるデバイスについては、[パスワードの最小文字数] が 8 文字より長い場合、または [文字セットの最小数] が 2 よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。
+<span data-ttu-id="6ffce-160">Windows を実行し Microsoft アカウントでアクセスされるデバイスについては、[パスワードの最小文字数] が 8 文字より長い場合、または [文字セットの最小数] が 2 よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-160">For devices that run Windows and accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.</span></span>
 
-- **[文字セットの最小数]:** **[必要なパスワードの種類]** が **[英数字]** に設定されている場合、この設定ではパスワードに含める必要がある、文字セットの最小数を指定します。 次の 4 つの文字セットがあります。
-  - 小文字
-  - 大文字
-  - 記号
-  - 数字
+- <span data-ttu-id="6ffce-161">**[文字セットの最小数]:** **[必要なパスワードの種類]** が **[英数字]** に設定されている場合、この設定ではパスワードに含める必要がある、文字セットの最小数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-161">**Minimum number of character sets:** If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain.</span></span> <span data-ttu-id="6ffce-162">次の 4 つの文字セットがあります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-162">The four character sets are:</span></span>
+  - <span data-ttu-id="6ffce-163">小文字</span><span class="sxs-lookup"><span data-stu-id="6ffce-163">Lowercase letters</span></span>
+  - <span data-ttu-id="6ffce-164">大文字</span><span class="sxs-lookup"><span data-stu-id="6ffce-164">Uppercase letters</span></span>
+  - <span data-ttu-id="6ffce-165">記号</span><span class="sxs-lookup"><span data-stu-id="6ffce-165">Symbols</span></span>
+  - <span data-ttu-id="6ffce-166">数字</span><span class="sxs-lookup"><span data-stu-id="6ffce-166">Numbers</span></span>
 
-この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。 Windows を実行し Microsoft アカウントでアクセスされるデバイスについては、[パスワードの最小文字数] が 8 文字より長い場合、または [文字セットの最小数] が 2 よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。
+<span data-ttu-id="6ffce-167">この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-167">Setting a higher number for this setting will require users to create passwords that are more complex.</span></span> <span data-ttu-id="6ffce-168">Windows を実行し Microsoft アカウントでアクセスされるデバイスについては、[パスワードの最小文字数] が 8 文字より長い場合、または [文字セットの最小数] が 2 よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-168">For devices that run Windows and accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.</span></span>
 
-- **[デバイスの画面がロックされるまでの非アクティブな時間 (分)]:** ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を指定します。
-- **[パスワードの有効期限 (日数)]:** 新しいパスワードの作成が必要となるまでのユーザーのパスワードの有効日数を選択します。
-- **パスワードの履歴を記憶する:** この設定を **[前のパスワードの再利用を防止]** と組み合わせて使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。
-- **前のパスワードの再利用を防止:** **[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。
-- **デバイスがアイドル状態から戻るときにパスワードを必須とする:**この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と組み合わせて使用する必要があります。 エンドユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
+- <span data-ttu-id="6ffce-169">**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]:** ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-169">**Minutes of inactivity before password is required:** Specifies the idle time before the user must re-enter their password.</span></span>
+- <span data-ttu-id="6ffce-170">**[パスワードの有効期限 (日数)]:** 新しいパスワードの作成が必要となるまでのユーザーのパスワードの有効日数を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-170">**Password expiration (days):** Select the number of days before the user&#39;s password expires and they must create a new one.</span></span>
+- <span data-ttu-id="6ffce-171">**パスワードの履歴を記憶する:** この設定を **[前のパスワードの再利用を防止]** と組み合わせて使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-171">**Remember password history:** Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.</span></span>
+- <span data-ttu-id="6ffce-172">**前のパスワードの再利用を防止:** **[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-172">**Prevent reuse of previous passwords:** If **Remember password history** is selected, specify the number of previously used passwords that cannot be re-used.</span></span>
+- <span data-ttu-id="6ffce-173">**デバイスがアイドル状態から戻るときにパスワードを必須とする:**この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と組み合わせて使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-173">**Require a password when the device returns from an idle state:** This setting should be used together with the **Minutes of inactivity before password is required** setting.</span></span> <span data-ttu-id="6ffce-174">エンドユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-174">The end users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.</span></span>
 
-**この設定の対象は Windows 10 Mobile デバイスに限られます。**
+<span data-ttu-id="6ffce-175">**この設定の対象は Windows 10 Mobile デバイスに限られます。**</span><span class="sxs-lookup"><span data-stu-id="6ffce-175">**This setting only applies to Windows 10 Mobile devices.**</span></span>
 
-### <a name="encryption"></a>暗号化
+### <a name="encryption"></a><span data-ttu-id="6ffce-176">暗号化</span><span class="sxs-lookup"><span data-stu-id="6ffce-176">Encryption</span></span>
 
-- **モバイル デバイスで暗号化を必要とする:** リソースに接続するためにデバイスの暗号化を必要とする場合は、**[はい]** に設定します。
+- <span data-ttu-id="6ffce-177">**モバイル デバイスで暗号化を必要とする:** リソースに接続するためにデバイスの暗号化を必要とする場合は、**[はい]** に設定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-177">**Require encryption on mobile device:** Set this to **Yes** to require the device to be encrypted in order to connect to resources.</span></span>
 
 
 
-## <a name="device-health-settings"></a>デバイスのヘルスの設定
+## <a name="device-health-settings"></a><span data-ttu-id="6ffce-178">デバイスのヘルスの設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-178">Device health settings</span></span>
 
-- **デバイスが正常として報告されることを必須とします:** 新規または既存のコンプライアンス ポリシーに、**Windows 10 Mobile** デバイスが正常と報告されることを要求する規則を設定できます。 この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。
-  - **BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。
-  - **コードの整合性が有効になっている:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。 コードの整合性は、署名されていないドライバーまたはシステム ファイルがカーネルに読み込まれているかどうか、あるいは管理者特権を持つユーザー アカウントによって実行される悪意のあるソフトウェアによってシステム ファイルが変更されたかどうかを検出します。
-  - **セキュア ブートが有効になっている:** セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。 また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。 これは、コンピューターが起動する前に UEFI ファームウェアによって確認されます。 ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。
+- <span data-ttu-id="6ffce-179">**デバイスが正常として報告されることを必須とします:** 新規または既存のコンプライアンス ポリシーに、**Windows 10 Mobile** デバイスが正常と報告されることを要求する規則を設定できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-179">**Require devices to be reported as healthy:** You can set a rule to require that **Windows 10 Mobile** devices must be reported as healthy in new or existing Compliance Policies.</span></span> <span data-ttu-id="6ffce-180">この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-180">If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for the following data points:</span></span>
+  - <span data-ttu-id="6ffce-181">**BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-181">**BitLocker is enabled:** When BitLocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</span></span> <span data-ttu-id="6ffce-182">Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-182">Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume.</span></span> <span data-ttu-id="6ffce-183">BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-183">BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</span></span> <span data-ttu-id="6ffce-184">コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。</span><span class="sxs-lookup"><span data-stu-id="6ffce-184">If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data.</span></span> <span data-ttu-id="6ffce-185">その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-185">As a result, the keys cannot be accessed until the TPM has verified the state of the computer</span></span>
+  - <span data-ttu-id="6ffce-186">**コードの整合性が有効になっている:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。</span><span class="sxs-lookup"><span data-stu-id="6ffce-186">**Code integrity is enabled:** Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory.</span></span> <span data-ttu-id="6ffce-187">コードの整合性は、署名されていないドライバーまたはシステム ファイルがカーネルに読み込まれているかどうか、あるいは管理者特権を持つユーザー アカウントによって実行される悪意のあるソフトウェアによってシステム ファイルが変更されたかどうかを検出します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-187">Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.</span></span>
+  - <span data-ttu-id="6ffce-188">**セキュア ブートが有効になっている:** セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-188">**Secure Boot is enabled:** When Secure Boot is enabled, the system is forced to boot to a factory trusted state.</span></span> <span data-ttu-id="6ffce-189">また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-189">Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device.</span></span> <span data-ttu-id="6ffce-190">これは、コンピューターが起動する前に UEFI ファームウェアによって確認されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-190">The UEFI firmware verifies this before it lets the machine start.</span></span> <span data-ttu-id="6ffce-191">ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-191">If any files have been tampered with, breaking their signature, the system will not boot.</span></span>
 
-HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。
+<span data-ttu-id="6ffce-192">HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="6ffce-192">For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).</span></span>
 
-## <a name="device-property-settings"></a>デバイスのプロパティの設定
+## <a name="device-property-settings"></a><span data-ttu-id="6ffce-193">デバイスのプロパティの設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-193">Device property settings</span></span>
 
-- **必要な最小 OS バージョン:** デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
-- **許可される最大 OS バージョン:** ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
+- <span data-ttu-id="6ffce-194">**必要な最小 OS バージョン:** デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-194">**Minimum OS required:** When a device does not meet the minimum OS version requirement, it is reported as noncompliant.</span></span> <span data-ttu-id="6ffce-195">アップグレード方法に関する情報のリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-195">A link with information on how to upgrade is displayed.</span></span> <span data-ttu-id="6ffce-196">エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-196">The end user can choose to upgrade their device after which they can access company resources.</span></span>
+- <span data-ttu-id="6ffce-197">**許可される最大 OS バージョン:** ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-197">**Maximum OS version allowed:** When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.</span></span>
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## <a name="system-security-settings"></a>システム セキュリティ設定
+## <a name="system-security-settings"></a><span data-ttu-id="6ffce-198">システム セキュリティ設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-198">System security settings</span></span>
 
-### <a name="password"></a>パスワード
+### <a name="password"></a><span data-ttu-id="6ffce-199">パスワード</span><span class="sxs-lookup"><span data-stu-id="6ffce-199">Password</span></span>
 
-- **パスワードの最小の長さ:** - Windows 8.1 でサポートされます。
+- <span data-ttu-id="6ffce-200">**パスワードの最小の長さ:** - Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-200">**Minimum password length:** - Supported on Windows 8.1.</span></span>
 
-ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。
+<span data-ttu-id="6ffce-201">ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-201">Specify the minimum number of digits or characters that the user&#39;s password must contain.</span></span>
 
-Microsoft アカウントでアクセスされるデバイスについては、**[パスワードの最小文字数]** が 8 文字より長い場合、または **[文字セットの最小数]** が 2 文字よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。
+<span data-ttu-id="6ffce-202">Microsoft アカウントでアクセスされるデバイスについては、**[パスワードの最小文字数]** が 8 文字より長い場合、または **[文字セットの最小数]** が 2 文字よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-202">For devices that are accessed with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than two characters.</span></span>
 
-- **[必要なパスワードの種類]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます
+- <span data-ttu-id="6ffce-203">**[必要なパスワードの種類]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます</span><span class="sxs-lookup"><span data-stu-id="6ffce-203">**Required password type:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1</span></span>
 
-ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。
+<span data-ttu-id="6ffce-204">ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-204">Specify whether users must create an **Alphanumeric** , or a **Numeric** password.</span></span>
 
-- **[文字セットの最小数]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。 **[必要なパスワードの種類]** が **[英数字]** に設定されている場合、この設定ではパスワードに含める必要がある、文字セットの最小数を指定します。 次の 4 つの文字セットがあります。
-  - 小文字
-  - 大文字
-  - 記号
-  - [数字]: この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。
+- <span data-ttu-id="6ffce-205">**[文字セットの最小数]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-205">**Minimum number of character sets:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1.</span></span> <span data-ttu-id="6ffce-206">**[必要なパスワードの種類]** が **[英数字]** に設定されている場合、この設定ではパスワードに含める必要がある、文字セットの最小数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-206">If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain.</span></span> <span data-ttu-id="6ffce-207">次の 4 つの文字セットがあります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-207">The four character sets are:</span></span>
+  - <span data-ttu-id="6ffce-208">小文字</span><span class="sxs-lookup"><span data-stu-id="6ffce-208">Lowercase letters</span></span>
+  - <span data-ttu-id="6ffce-209">大文字</span><span class="sxs-lookup"><span data-stu-id="6ffce-209">Uppercase letters</span></span>
+  - <span data-ttu-id="6ffce-210">記号</span><span class="sxs-lookup"><span data-stu-id="6ffce-210">Symbols</span></span>
+  - <span data-ttu-id="6ffce-211">[数字]: この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-211">Numbers: Setting a higher number for this setting will require users to create passwords that are more complex.</span></span>
 
-Microsoft アカウントでアクセスされるデバイスについては、**[パスワードの最小文字数]** が 8 文字より長い場合、または **[文字セットの最小数]** が 2 文字よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。
+<span data-ttu-id="6ffce-212">Microsoft アカウントでアクセスされるデバイスについては、**[パスワードの最小文字数]** が 8 文字より長い場合、または **[文字セットの最小数]** が 2 文字よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-212">For devices that are accessed with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than 2 characters.</span></span>
 
-- **デバイスの画面がロックされるまでの非アクティブな時間 (分):** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。
+- <span data-ttu-id="6ffce-213">**デバイスの画面がロックされるまでの非アクティブな時間 (分):** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-213">**Minutes of inactivity before password is required:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1</span></span>
 
-ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を指定します。
+<span data-ttu-id="6ffce-214">ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-214">Specify the idle time before the user must re-enter their password.</span></span>
 
-- **[パスワードの有効期限 (日数)]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。
+- <span data-ttu-id="6ffce-215">**[パスワードの有効期限 (日数)]:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-215">**Password expiration (days):** -Supported on Windows RT, Windows RT 8.1, and Windows 8.1.</span></span>
 
-新しいパスワードの作成が必要となるまでのユーザーのパスワードの有効日数を選択します。
+<span data-ttu-id="6ffce-216">新しいパスワードの作成が必要となるまでのユーザーのパスワードの有効日数を選択します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-216">Select the number of days before the user&#39;s password expires and they must create a new one.</span></span>
 
-- **パスワードの履歴を保存する:** - Windows RT、Windows RT、Windows 8.1 でサポートされます。
+- <span data-ttu-id="6ffce-217">**パスワードの履歴を保存する:** - Windows RT、Windows RT、Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-217">**Remember password history:** - Supported on Windows RT, Windows RT, and Windows 8.1.</span></span>
 
-この設定を **[前のパスワードの再利用を防止]** と組み合わせて使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。
+<span data-ttu-id="6ffce-218">この設定を **[前のパスワードの再利用を防止]** と組み合わせて使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-218">Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.</span></span>
 
-- **以前のパスワードを再利用できないようにする:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。
+- <span data-ttu-id="6ffce-219">**以前のパスワードを再利用できないようにする:** - Windows RT、Windows RT 8.1、Windows 8.1 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-219">**Prevent reuse of previous passwords:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1</span></span>
 
-**[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。
+<span data-ttu-id="6ffce-220">**[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-220">If **Remember password history:** is selected, specify the number of previously used passwords that cannot be re-used.</span></span>
 
 
-## <a name="device-health-settings"></a>デバイスのヘルスの設定
+## <a name="device-health-settings"></a><span data-ttu-id="6ffce-221">デバイスのヘルスの設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-221">Device health settings</span></span>
 
-- **デバイスが正常として報告されることを必須とします:** - Windows 10 デバイスでサポートされます。 新規または既存のコンプライアンス ポリシーに、Windows 10 デバイスが正常と報告されることを要求する規則を設定できます。 この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。
-  - **BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。
-  - **コードの整合性が有効になっている:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。 コードの整合性は、署名されていないドライバーまたはシステム ファイルがカーネルに読み込まれているかどうか、あるいは管理者特権を持つユーザー アカウントによって実行される悪意のあるソフトウェアによってシステム ファイルが変更されたかどうかを検出します。
-  - **セキュア ブートが有効になっている:** セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。 また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。 これは、コンピューターが起動する前に UEFI ファームウェアによって確認されます。 ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。
-  - **起動時マルウェア対策が有効になっている:** 起動時マルウェア対策 (ELAM) は、ネットワーク内のコンピューターが起動してからサードパーティ製のドライバーが初期化されるまでの間、そのコンピューターを保護します。
+- <span data-ttu-id="6ffce-222">**デバイスが正常として報告されることを必須とします:** - Windows 10 デバイスでサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-222">**Require devices to be reported as healthy:** - Supported on Windows 10 devices.</span></span> <span data-ttu-id="6ffce-223">新規または既存のコンプライアンス ポリシーに、Windows 10 デバイスが正常と報告されることを要求する規則を設定できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-223">You can set a rule to require that Windows 10 devices must be reported as healthy in new or existing Compliance Policies.</span></span> <span data-ttu-id="6ffce-224">この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-224">If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for the following data points:</span></span>
+  - <span data-ttu-id="6ffce-225">**BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-225">**BitLocker is enabled:** When BitLocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</span></span> <span data-ttu-id="6ffce-226">Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-226">Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume.</span></span> <span data-ttu-id="6ffce-227">BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-227">BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</span></span> <span data-ttu-id="6ffce-228">コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。</span><span class="sxs-lookup"><span data-stu-id="6ffce-228">If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data.</span></span> <span data-ttu-id="6ffce-229">その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-229">As a result, the keys cannot be accessed until the TPM has verified the state of the computer</span></span>
+  - <span data-ttu-id="6ffce-230">**コードの整合性が有効になっている:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。</span><span class="sxs-lookup"><span data-stu-id="6ffce-230">**Code integrity is enabled:** Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory.</span></span> <span data-ttu-id="6ffce-231">コードの整合性は、署名されていないドライバーまたはシステム ファイルがカーネルに読み込まれているかどうか、あるいは管理者特権を持つユーザー アカウントによって実行される悪意のあるソフトウェアによってシステム ファイルが変更されたかどうかを検出します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-231">Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.</span></span>
+  - <span data-ttu-id="6ffce-232">**セキュア ブートが有効になっている:** セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-232">**Secure Boot is enabled:** When Secure Boot is enabled, the system is forced to boot to a factory trusted state.</span></span> <span data-ttu-id="6ffce-233">また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-233">Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device.</span></span> <span data-ttu-id="6ffce-234">これは、コンピューターが起動する前に UEFI ファームウェアによって確認されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-234">The UEFI firmware verifies this before it lets the machine start.</span></span> <span data-ttu-id="6ffce-235">ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-235">If any files have been tampered with, breaking their signature, the system will not boot.</span></span>
+  - <span data-ttu-id="6ffce-236">**起動時マルウェア対策が有効になっている:** 起動時マルウェア対策 (ELAM) は、ネットワーク内のコンピューターが起動してからサードパーティ製のドライバーが初期化されるまでの間、そのコンピューターを保護します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-236">**Early-launch antimalware is enabled:** Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third party drivers initialize.</span></span>
 
-HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。
+<span data-ttu-id="6ffce-237">HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="6ffce-237">For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).</span></span>
 
-## <a name="device-property-settings"></a>デバイスのプロパティの設定
+## <a name="device-property-settings"></a><span data-ttu-id="6ffce-238">デバイスのプロパティの設定</span><span class="sxs-lookup"><span data-stu-id="6ffce-238">Device property settings</span></span>
 
-- **Minimum OS required (必要な最小 OS バージョン):** - Windows 8.1 と Windows 10 でサポートされます。
+- <span data-ttu-id="6ffce-239">**Minimum OS required (必要な最小 OS バージョン):** - Windows 8.1 と Windows 10 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-239">**Minimum OS required:** - Supported on Windows 8.1, and Windows 10.</span></span>
 
-ここには、major.minor.build 番号を指定します。 バージョン番号は、```winver``` コマンドによって返されるバージョンと対応する必要があります。
+<span data-ttu-id="6ffce-240">ここには、major.minor.build 番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ffce-240">Specify the major.minor.build number here.</span></span> <span data-ttu-id="6ffce-241">バージョン番号は、```winver``` コマンドによって返されるバージョンと対応する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-241">The version number must correspond to the version returned by the ```winver``` command.</span></span>
 
-指定された OS バージョンよりデバイスのバージョンが低い場合、非準拠としてレポートされます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
+<span data-ttu-id="6ffce-242">指定された OS バージョンよりデバイスのバージョンが低い場合、非準拠としてレポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-242">When a device has a earlier version that the specified OS version, it is reported as noncompliant.</span></span> <span data-ttu-id="6ffce-243">アップグレード方法に関する情報のリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-243">A link with information on how to upgrade is displayed.</span></span> <span data-ttu-id="6ffce-244">エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-244">The end user can choose to upgrade their device after which they can access company resources.</span></span>
 
-- **Maximum OS version allowed (許可される最大 OS バージョン):** Windows 8.1 と Windows 10 でサポートされます。
+- <span data-ttu-id="6ffce-245">**Maximum OS version allowed (許可される最大 OS バージョン):** Windows 8.1 と Windows 10 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-245">**Maximum OS version allowed:** - Supported on Windows 8.1, and Windows 10.</span></span>
 
-ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
+<span data-ttu-id="6ffce-246">ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。</span><span class="sxs-lookup"><span data-stu-id="6ffce-246">When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.</span></span>
 
-**[Minimum OS required (必要な最小 OS バージョン)]** と **[Maximum OS version allowed (許可される最大 OS バージョン)]** の設定に使用する OS バージョンは、コマンド プロンプトから **winver** コマンドを実行して確認してください。 winver コマンドから返されるのは、内部的な OS バージョンです。+
+<span data-ttu-id="6ffce-247">**[Minimum OS required (必要な最小 OS バージョン)]** と **[Maximum OS version allowed (許可される最大 OS バージョン)]** の設定に使用する OS バージョンは、コマンド プロンプトから **winver** コマンドを実行して確認してください。</span><span class="sxs-lookup"><span data-stu-id="6ffce-247">To find the OS version to use for the **Minimum OS required** , and **Maximum OS version allowed** settings, run the **winver** command from the command prompt.</span></span> <span data-ttu-id="6ffce-248">winver コマンドから返されるのは、内部的な OS バージョンです。+</span><span class="sxs-lookup"><span data-stu-id="6ffce-248">The winver command returns the reported version of the OS.+</span></span>
 
-- Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows に関して OS バージョンのルールを Windows 8.1 に設定した場合、デバイスに Windows 8.1 がインストールされていても、そのデバイスは非準拠として報告されます。
-- Windows 10 を実行する PC の場合は、&quot;10.0&quot;+ に続けて、winver コマンドから返される OS ビルド番号を指定する必要があります。
+- <span data-ttu-id="6ffce-249">Windows 8.1 PC の場合、バージョン **3** が返されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-249">Windows 8.1 PCs return a version of **3**.</span></span> <span data-ttu-id="6ffce-250">Windows に関して OS バージョンのルールを Windows 8.1 に設定した場合、デバイスに Windows 8.1 がインストールされていても、そのデバイスは非準拠として報告されます。</span><span class="sxs-lookup"><span data-stu-id="6ffce-250">If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.</span></span>
+- <span data-ttu-id="6ffce-251">Windows 10 を実行する PC の場合は、&quot;10.0&quot;+ に続けて、winver コマンドから返される OS ビルド番号を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ffce-251">PCs running Windows 10, the version should be set as &quot;10.0&quot;+ the OS Build number returned by the winver command.</span></span>
 
 <!--- ## Next steps
 

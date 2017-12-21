@@ -16,151 +16,151 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
+# <a name="enroll-ios-devices-with-apple-configurator"></a><span data-ttu-id="3ef08-103">Apple Configurator による iOS デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="3ef08-103">Enroll iOS devices with Apple Configurator</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) を使用した iOS デバイスの登録をサポートします。 Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。 Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。
-- **セットアップ アシスタントを使用した登録** - デバイスを出荷時の設定にリセットし、セットアップ アシスタント実行時に登録するように準備します。
-- **直接登録** - デバイスを出荷時の設定にリセットせず、iOS 設定を通してデバイスを登録します。 この方法は、**ユーザー アフィニティなし**のデバイスのみに使用できます。
+<span data-ttu-id="3ef08-104">Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) を使用した iOS デバイスの登録をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-104">Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) running on a Mac computer.</span></span> <span data-ttu-id="3ef08-105">Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-105">Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment.</span></span> <span data-ttu-id="3ef08-106">Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-106">You can enroll devices into Intune with Apple Configurator in two ways:</span></span>
+- <span data-ttu-id="3ef08-107">**セットアップ アシスタントを使用した登録** - デバイスを出荷時の設定にリセットし、セットアップ アシスタント実行時に登録するように準備します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-107">**Setup Assistant enrollment** - Factory resets the device and prepares it to enroll during Setup Assistant.</span></span>
+- <span data-ttu-id="3ef08-108">**直接登録** - デバイスを出荷時の設定にリセットせず、iOS 設定を通してデバイスを登録します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-108">**Direct enrollment** - Does not factory reset the device and enrolls the device through iOS settings.</span></span> <span data-ttu-id="3ef08-109">この方法は、**ユーザー アフィニティなし**のデバイスのみに使用できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-109">This method only supports devices with **no user affinity**.</span></span>
 
-Apple Configurator の登録方法は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md)と同時に使用することはできません。
+<span data-ttu-id="3ef08-110">Apple Configurator の登録方法は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md)と同時に使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-110">Apple Configurator enrollment methods can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).</span></span>
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a><span data-ttu-id="3ef08-111">必要条件</span><span class="sxs-lookup"><span data-stu-id="3ef08-111">Prerequisites</span></span>
 
-- iOS デバイスへの物理的なアクセス
-- [MDM 機関の設定](mdm-authority-set.md)
-- [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
-- デバイスのシリアル番号 (セットアップ アシスタントでの登録時のみ)
-- USB 接続ケーブル
-- [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) が実行されている macOS コンピューター
+- <span data-ttu-id="3ef08-112">iOS デバイスへの物理的なアクセス</span><span class="sxs-lookup"><span data-stu-id="3ef08-112">Physical access to iOS devices</span></span>
+- [<span data-ttu-id="3ef08-113">MDM 機関の設定</span><span class="sxs-lookup"><span data-stu-id="3ef08-113">Set MDM authority</span></span>](mdm-authority-set.md)
+- [<span data-ttu-id="3ef08-114">Apple MDM プッシュ証明書</span><span class="sxs-lookup"><span data-stu-id="3ef08-114">An Apple MDM push certificate</span></span>](apple-mdm-push-certificate-get.md)
+- <span data-ttu-id="3ef08-115">デバイスのシリアル番号 (セットアップ アシスタントでの登録時のみ)</span><span class="sxs-lookup"><span data-stu-id="3ef08-115">Device serial numbers (Setup Assistant enrollment only)</span></span>
+- <span data-ttu-id="3ef08-116">USB 接続ケーブル</span><span class="sxs-lookup"><span data-stu-id="3ef08-116">USB connection cables</span></span>
+- <span data-ttu-id="3ef08-117">[Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) が実行されている macOS コンピューター</span><span class="sxs-lookup"><span data-stu-id="3ef08-117">macOS computer running [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)</span></span>
 
-## <a name="create-an-apple-configurator-profile-for-devices"></a>デバイスの Apple Configurator プロファイルを作成する
+## <a name="create-an-apple-configurator-profile-for-devices"></a><span data-ttu-id="3ef08-118">デバイスの Apple Configurator プロファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="3ef08-118">Create an Apple Configurator profile for devices</span></span>
 
-デバイス登録プロファイルで、登録時に適用する設定を定義します。 これらの設定は、1 回だけ適用されます。 Apple Configurator を使用して iOS デバイスを登録するための登録プロファイルを作成するには、以下の手順に従います。
+<span data-ttu-id="3ef08-119">デバイス登録プロファイルで、登録時に適用する設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-119">A device enrollment profile defines the settings applied during enrollment.</span></span> <span data-ttu-id="3ef08-120">これらの設定は、1 回だけ適用されます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-120">These settings are applied only once.</span></span> <span data-ttu-id="3ef08-121">Apple Configurator を使用して iOS デバイスを登録するための登録プロファイルを作成するには、以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="3ef08-121">Follow these steps to create an enrollment profile to enroll iOS devices with Apple Configurator.</span></span>
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[デバイスの登録]** > **[Apple の登録]** を選択します。
-4. **[Apple Configurator 登録設定の管理]** で **[AC プロファイル]** を選択します。
-5. **[Apple Configurator の登録プロファイル]** で、**[作成]** を選択します。
-6. 管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーにはこれらの詳細は表示されません。 この [名前] フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細についてはこちらを参照してください。
+1. <span data-ttu-id="3ef08-122">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-122">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="3ef08-123">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-123">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="3ef08-124">**[デバイスの登録]** > **[Apple の登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-124">Choose **Device enrollment** > **Apple Enrollment**.</span></span>
+4. <span data-ttu-id="3ef08-125">**[Apple Configurator 登録設定の管理]** で **[AC プロファイル]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-125">In **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.</span></span>
+5. <span data-ttu-id="3ef08-126">**[Apple Configurator の登録プロファイル]** で、**[作成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-126">Under **Apple Configurator Enrollment Profiles**, select **Create**.</span></span>
+6. <span data-ttu-id="3ef08-127">管理用にプロファイルの **[名前]** と **[説明]** を入力します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-127">Type a **Name** and **Description** for the profile for administrative purposes.</span></span> <span data-ttu-id="3ef08-128">ユーザーにはこれらの詳細は表示されません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-128">Users do not see these details.</span></span> <span data-ttu-id="3ef08-129">この [名前] フィールドを使用して、Azure Active Directory で動的グループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-129">You can use this Name field to create a dynamic group in Azure Active Directory.</span></span> <span data-ttu-id="3ef08-130">この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-130">Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile.</span></span> <span data-ttu-id="3ef08-131">Azure Active Directory の動的グループの詳細についてはこちらを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3ef08-131">Learn more about Azure Active Directory dynamic groups.</span></span>
 
   ![[ユーザー アフィニティとともに登録する] が選択されているプロファイル作成画面のスクリーン ショット](./media/apple-configurator-profile-create.png)
 
-7. **[ユーザー アフィニティ]** を指定します。
-   - **[ユーザー アフィニティとともに登録する]** -セットアップ アシスタントを使用してデバイスをユーザーに関連付ける必要があります。その後、デバイスは会社のデータや電子メールにアクセスできます。 ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要がある管理対象のデバイスの場合、ユーザー アフィニティを選択する必要があります。 セットアップ アシスタントでの登録でのみサポートされています。 ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
+7. <span data-ttu-id="3ef08-133">**[ユーザー アフィニティ]** を指定します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-133">Specify **User Affinity**:</span></span>
+   - <span data-ttu-id="3ef08-134">**[ユーザー アフィニティとともに登録する]** -セットアップ アシスタントを使用してデバイスをユーザーに関連付ける必要があります。その後、デバイスは会社のデータや電子メールにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-134">**Enroll with user affinity** - The device must be affiliated with a user with Setup Assistant and can then access company data and email.</span></span> <span data-ttu-id="3ef08-135">ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要がある管理対象のデバイスの場合、ユーザー アフィニティを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-135">User affinity is required for managed devices that belong to users and that need to use the Company Portal for services like installing apps.</span></span> <span data-ttu-id="3ef08-136">セットアップ アシスタントでの登録でのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="3ef08-136">Only supported for Setup Assistant enrollment.</span></span> <span data-ttu-id="3ef08-137">ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。</span><span class="sxs-lookup"><span data-stu-id="3ef08-137">User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints).</span></span> <span data-ttu-id="3ef08-138">[詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。</span><span class="sxs-lookup"><span data-stu-id="3ef08-138">[Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).</span></span>
 
    > [!NOTE]
-   > 多要素認証 (MFA) は、ユーザー アフィニティによる登録セットアップ中は動作しません。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
+   > <span data-ttu-id="3ef08-139">多要素認証 (MFA) は、ユーザー アフィニティによる登録セットアップ中は動作しません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-139">Multifactor authentication (MFA) doesn't work during enrollment set up with user affinity.</span></span> <span data-ttu-id="3ef08-140">登録後、MFA はデバイスで期待どおりに動作します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-140">After enrollment, MFA works as expected on devices.</span></span> <span data-ttu-id="3ef08-141">デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-141">Devices can't prompt users who need to change their password when they first sign in.</span></span> <span data-ttu-id="3ef08-142">さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-142">Additionally, users with expired passwords aren't prompted to reset their password during enrollment.</span></span> <span data-ttu-id="3ef08-143">ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-143">Users must use a different device to reset the password.</span></span>
 
-   - **[ユーザー アフィニティなしで登録する]** - デバイスは、ユーザーと関連付けられません。 このデバイス関連付け情報を使用すると、ローカルのユーザー データにアクセスしなくてもタスクを実行できます。 ユーザー アフィリエーションが必要なアプリ (基幹業務アプリのインストールに使用されるポータル サイト アプリを含む) は機能しません。 直接登録の場合は必須です。
+   - <span data-ttu-id="3ef08-144">**[ユーザー アフィニティなしで登録する]** - デバイスは、ユーザーと関連付けられません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-144">**Enroll without user affinity** - The device is not affiliated with a user.</span></span> <span data-ttu-id="3ef08-145">このデバイス関連付け情報を使用すると、ローカルのユーザー データにアクセスしなくてもタスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-145">Use this affiliation for devices that perform tasks without accessing local user data.</span></span> <span data-ttu-id="3ef08-146">ユーザー アフィリエーションが必要なアプリ (基幹業務アプリのインストールに使用されるポータル サイト アプリを含む) は機能しません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-146">Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.</span></span> <span data-ttu-id="3ef08-147">直接登録の場合は必須です。</span><span class="sxs-lookup"><span data-stu-id="3ef08-147">Required for direct enrollment.</span></span>
 
-6. **[作成]** を選択してプロファイルを保存します。
+6. <span data-ttu-id="3ef08-148">**[作成]** を選択してプロファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-148">Select **Create** to save the profile.</span></span>
 
-## <a name="setup-assistant-enrollment"></a>Setup Assistant の登録
+## <a name="setup-assistant-enrollment"></a><span data-ttu-id="3ef08-149">Setup Assistant の登録</span><span class="sxs-lookup"><span data-stu-id="3ef08-149">Setup Assistant enrollment</span></span>
 
-### <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator のシリアル番号を追加する
+### <a name="add-apple-configurator-serial-numbers"></a><span data-ttu-id="3ef08-150">Apple Configurator のシリアル番号を追加する</span><span class="sxs-lookup"><span data-stu-id="3ef08-150">Add Apple Configurator serial numbers</span></span>
 
-**Apple Configurator のシリアル番号を Intune に追加するには**
+<span data-ttu-id="3ef08-151">**Apple Configurator のシリアル番号を Intune に追加するには**</span><span class="sxs-lookup"><span data-stu-id="3ef08-151">**To add Apple Configurator serial numbers to Intune**</span></span>
 
-1. ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。 シリアル番号を左側の列に、詳細を右側の列に追加します。 リストで許可されている現在の最大行数は 5,000 行です。 この .csv リストをテキスト エディターで表示すると次のようになります。
+1. <span data-ttu-id="3ef08-152">ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-152">Create a two-column, comma-separated value (.csv) list without a header.</span></span> <span data-ttu-id="3ef08-153">シリアル番号を左側の列に、詳細を右側の列に追加します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-153">Add the serial number in the left column, and the details in the right column.</span></span> <span data-ttu-id="3ef08-154">リストで許可されている現在の最大行数は 5,000 行です。</span><span class="sxs-lookup"><span data-stu-id="3ef08-154">The current maximum for the list is 5,000 rows.</span></span> <span data-ttu-id="3ef08-155">この .csv リストをテキスト エディターで表示すると次のようになります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-155">In a text editor, the .csv list looks like this:</span></span>
 
-    F7TLWCLBX196,デバイスの詳細</br>
-    DLXQPCWVGHMJ,デバイスの詳細
+    <span data-ttu-id="3ef08-156">F7TLWCLBX196,デバイスの詳細</span><span class="sxs-lookup"><span data-stu-id="3ef08-156">F7TLWCLBX196,device details</span></span></br>
+    <span data-ttu-id="3ef08-157">DLXQPCWVGHMJ,デバイスの詳細</span><span class="sxs-lookup"><span data-stu-id="3ef08-157">DLXQPCWVGHMJ,device details</span></span>
 
-   [iOS デバイスのシリアル番号の見つけ方については、こちらをご覧ください](https://support.apple.com/HT204073)。
-2. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
-3. **[Apple Configurator 登録設定の管理]** で **[Apple Configurator デバイス]** を選択します。
-4. **[追加]** を選択します。
-5. インポートするシリアル番号に適用する**登録プロファイル**を選択します。 既存の詳細を上書きする新しい詳細を含むファイルをインポートする場合は、**[既存の ID の詳細を上書きします]**を選択します。
-6. シリアル番号の csv ファイルに移動して、**[追加]** を選択します。
+   <span data-ttu-id="3ef08-158">[iOS デバイスのシリアル番号の見つけ方については、こちらをご覧ください](https://support.apple.com/HT204073)。</span><span class="sxs-lookup"><span data-stu-id="3ef08-158">Learn [how to find an iOS device serial number](https://support.apple.com/HT204073).</span></span>
+2. <span data-ttu-id="3ef08-159">Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-159">In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.</span></span>
+3. <span data-ttu-id="3ef08-160">**[Apple Configurator 登録設定の管理]** で **[Apple Configurator デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-160">Under **Manage Apple Configurator Enrollment Settings**, select **Apple Configurator Devices**.</span></span>
+4. <span data-ttu-id="3ef08-161">**[追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-161">Select **Add**.</span></span>
+5. <span data-ttu-id="3ef08-162">インポートするシリアル番号に適用する**登録プロファイル**を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-162">Select an **Enrollment profile** to apply to the serial numbers you're importing.</span></span> <span data-ttu-id="3ef08-163">既存の詳細を上書きする新しい詳細を含むファイルをインポートする場合は、**[既存の ID の詳細を上書きします]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-163">If you import a file with new details that overwrites existing details, select **Overwrite details for existing identifiers**.</span></span>
+6. <span data-ttu-id="3ef08-164">シリアル番号の csv ファイルに移動して、**[追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-164">Navigate to the csv file of serial numbers, and select **Add**.</span></span>
 
-### <a name="reassign-a-profile-to-device-serial-numbers"></a>デバイス シリアル番号へのプロファイルの再割り当て
+### <a name="reassign-a-profile-to-device-serial-numbers"></a><span data-ttu-id="3ef08-165">デバイス シリアル番号へのプロファイルの再割り当て</span><span class="sxs-lookup"><span data-stu-id="3ef08-165">Reassign a profile to device serial numbers</span></span>
 
-Apple Configurator 登録用の iOS シリアル番号をインポートするときに、登録プロファイルを割り当てます。 Intune を使用すると、Azure Portal の 2 つの場所からプロファイルを割り当てることができます。
-- **Apple Configurator デバイス**
-- **AC プロファイル**
+<span data-ttu-id="3ef08-166">Apple Configurator 登録用の iOS シリアル番号をインポートするときに、登録プロファイルを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-166">You assign an enrollment profile when you import iOS serial numbers for Apple Configurator enrollment.</span></span> <span data-ttu-id="3ef08-167">Intune を使用すると、Azure Portal の 2 つの場所からプロファイルを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-167">Intune also lets you assign profiles from two places in the Azure portal:</span></span>
+- <span data-ttu-id="3ef08-168">**Apple Configurator デバイス**</span><span class="sxs-lookup"><span data-stu-id="3ef08-168">**Apple Configurator devices**</span></span>
+- <span data-ttu-id="3ef08-169">**AC プロファイル**</span><span class="sxs-lookup"><span data-stu-id="3ef08-169">**AC profiles**</span></span>
 
-#### <a name="assign-from-apple-configurator-devices"></a>Apple Configurator デバイスからの割り当て
-1. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
-3. **[Apple Configurator デバイス]** で、プロファイルの割り当て先シリアル番号を選択し、**[プロファイルの割り当て]** を選択します。
-4. **[プロファイルの割り当て]** で、割り当てる**新しいプロファイル**を選択し、**[割り当て]** を選択します。
+#### <a name="assign-from-apple-configurator-devices"></a><span data-ttu-id="3ef08-170">Apple Configurator デバイスからの割り当て</span><span class="sxs-lookup"><span data-stu-id="3ef08-170">Assign from Apple Configurator devices</span></span>
+1. <span data-ttu-id="3ef08-171">Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-171">In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.</span></span>
+3. <span data-ttu-id="3ef08-172">**[Apple Configurator デバイス]** で、プロファイルの割り当て先シリアル番号を選択し、**[プロファイルの割り当て]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-172">Under **Apple Configurator Devices**, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.</span></span>
+4. <span data-ttu-id="3ef08-173">**[プロファイルの割り当て]** で、割り当てる**新しいプロファイル**を選択し、**[割り当て]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-173">Under **Assign Profile**, select the **New profile** you want to assign, and then select **Assign**.</span></span>
 
-#### <a name="assign-from-profiles"></a>プロファイルからの割り当て
-1. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
-2. **[AC プロファイル]** を選択し、シリアル番号に割り当てるプロファイルを選択します。
-3. プロファイルで **[割り当てられたデバイス]** を選択し、次に **[割り当て]** を選択します。
-4. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]**を選択します。
+#### <a name="assign-from-profiles"></a><span data-ttu-id="3ef08-174">プロファイルからの割り当て</span><span class="sxs-lookup"><span data-stu-id="3ef08-174">Assign from profiles</span></span>
+1. <span data-ttu-id="3ef08-175">Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-175">In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.</span></span>
+2. <span data-ttu-id="3ef08-176">**[AC プロファイル]** を選択し、シリアル番号に割り当てるプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-176">Choose **AC Profiles**, and select the profile that you want to assign to serial numbers.</span></span>
+3. <span data-ttu-id="3ef08-177">プロファイルで **[割り当てられたデバイス]** を選択し、次に **[割り当て]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-177">In the profile, choose **Assigned devices**, and then choose **Assign**.</span></span>
+4. <span data-ttu-id="3ef08-178">フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]**を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-178">Filter to find device serial numbers you want to assign to the profile, select the devices, and then choose **Assign**.</span></span>
 
-### <a name="export-the-profile"></a>プロファイルのエクスポート
-プロファイルを作成してシリアル番号を割り当てた後、Intune からプロファイルを URL としてエクスポートする必要があります。 エクスポートしたプロファイルは、Mac の Apple Configurator にインポートしてデバイスに展開します。
+### <a name="export-the-profile"></a><span data-ttu-id="3ef08-179">プロファイルのエクスポート</span><span class="sxs-lookup"><span data-stu-id="3ef08-179">Export the profile</span></span>
+<span data-ttu-id="3ef08-180">プロファイルを作成してシリアル番号を割り当てた後、Intune からプロファイルを URL としてエクスポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-180">After you create the profile and assign serial numbers, you must export the profile from Intune as a URL.</span></span> <span data-ttu-id="3ef08-181">エクスポートしたプロファイルは、Mac の Apple Configurator にインポートしてデバイスに展開します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-181">You then import it into Apple Configurator on a Mac for deployment to devices.</span></span>
 
-1. Azure Portal の Intune で **[デバイスの登録]** > **[Apple の登録]** > **[AC プロファイル]** を選択し、エクスポートするプロファイルを選択します。
-2. プロファイルで、**[プロファイルのエクスポート]** を選択します。
+1. <span data-ttu-id="3ef08-182">Azure Portal の Intune で **[デバイスの登録]** > **[Apple の登録]** > **[AC プロファイル]** を選択し、エクスポートするプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-182">In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **AC Profiles**, and then choose the profile to export.</span></span>
+2. <span data-ttu-id="3ef08-183">プロファイルで、**[プロファイルのエクスポート]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-183">On the profile, select **Export Profile**.</span></span>
 
   ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録] のスクリーンショット](./media/ios-apple-configurator-expor-sat.png)
-3. プロファイルの URL をコピーします。 Apple Configurator を使用してこれを後で追加して、iOS デバイスで使用する Intune プロファイルを定義できます。
+3. <span data-ttu-id="3ef08-185">プロファイルの URL をコピーします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-185">Copy the profile URL.</span></span> <span data-ttu-id="3ef08-186">Apple Configurator を使用してこれを後で追加して、iOS デバイスで使用する Intune プロファイルを定義できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-186">You can then add it in Apple Configurator later to define the Intune profile used by iOS devices.</span></span>
 
-  次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。
+  <span data-ttu-id="3ef08-187">次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-187">Next you import this profile to Apple Configurator in the following procedure to define the Intune profile used by iOS devices.</span></span>
 
-### <a name="enroll-devices-with-setup-assistant"></a>セットアップ アシスタントを使用したデバイスの登録
+### <a name="enroll-devices-with-setup-assistant"></a><span data-ttu-id="3ef08-188">セットアップ アシスタントを使用したデバイスの登録</span><span class="sxs-lookup"><span data-stu-id="3ef08-188">Enroll devices with Setup Assistant</span></span>
 
-1.  Mac コンピューターで **Apple Configurator 2** を開きます。 メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。
+1.  <span data-ttu-id="3ef08-189">Mac コンピューターで **Apple Configurator 2** を開きます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-189">On a Mac computer, open **Apple Configurator 2**.</span></span> <span data-ttu-id="3ef08-190">メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-190">In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.</span></span>
   > [!WARNING]
-  > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。
+  > <span data-ttu-id="3ef08-191">デバイスは、登録プロセス中に、出荷時の構成にリセットされます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-191">Devices are reset to factory configurations during the enrollment process.</span></span> <span data-ttu-id="3ef08-192">ベスト プラクティスとして、デバイスをリセットし、オンにします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-192">As a best practice, reset the device and turn it on.</span></span> <span data-ttu-id="3ef08-193">デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-193">Devices should be at the **Hello** screen when you connect the device.</span></span>
 
-2. **基本設定**ウィンドウで **[サーバー]** を選択し、プラス記号 (+) を選択して MDM サーバー ウィザードを起動します。 **[次へ]** を選択します。
-3. 「Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録」の MDM サーバーの**ホスト名または URL** と**登録 URL** を入力します。 登録 URL には、Intune からエクスポートされた登録プロファイル URL を入力します。 **[次へ]** を選択します。  
+2. <span data-ttu-id="3ef08-194">**基本設定**ウィンドウで **[サーバー]** を選択し、プラス記号 (+) を選択して MDM サーバー ウィザードを起動します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-194">In the **preferences** pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard.</span></span> <span data-ttu-id="3ef08-195">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-195">Choose **Next**.</span></span>
+3. <span data-ttu-id="3ef08-196">「Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録」の MDM サーバーの**ホスト名または URL** と**登録 URL** を入力します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-196">Enter the **Host name or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune.</span></span> <span data-ttu-id="3ef08-197">登録 URL には、Intune からエクスポートされた登録プロファイル URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-197">For the Enrollment URL, enter the enrollment profile URL exported from Intune.</span></span> <span data-ttu-id="3ef08-198">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-198">Choose **Next**.</span></span>  
 
-  "サーバー URL が検証されていない" ことを示す警告は、無視して構いません。 操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。
-4.  USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。
-5.  管理する iOS デバイスを選択し、**[準備]** を選択します。 **[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。
-6. **[MDM サーバーに登録]** ウィンドウで、作成したサーバーの名前を選択してから **[次へ]** を選択します。
-7. **[デバイスを監視]** ウィンドウで、監視レベルを選択してから **[次へ]** を選択します。
-8. **[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して **[次へ]** を選択します。
-9. **[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。 メッセージが表示されたら、認証して信頼の設定を更新します。  
-10. iOS デバイスの準備が完了したら、USB ケーブルを取り外します。  
+  <span data-ttu-id="3ef08-199">"サーバー URL が検証されていない" ことを示す警告は、無視して構いません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-199">You can safely disregard a warning stating "server URL is not verified."</span></span> <span data-ttu-id="3ef08-200">操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-200">To continue, choose **Next** until the wizard is finished.</span></span>
+4.  <span data-ttu-id="3ef08-201">USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-201">Connect the iOS mobile devices to the Mac computer with a USB adapter.</span></span>
+5.  <span data-ttu-id="3ef08-202">管理する iOS デバイスを選択し、**[準備]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-202">Select the iOS devices you want to manage, and then choose **Prepare**.</span></span> <span data-ttu-id="3ef08-203">**[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-203">On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.</span></span>
+6. <span data-ttu-id="3ef08-204">**[MDM サーバーに登録]** ウィンドウで、作成したサーバーの名前を選択してから **[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-204">On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.</span></span>
+7. <span data-ttu-id="3ef08-205">**[デバイスを監視]** ウィンドウで、監視レベルを選択してから **[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-205">On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.</span></span>
+8. <span data-ttu-id="3ef08-206">**[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して **[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-206">On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.</span></span>
+9. <span data-ttu-id="3ef08-207">**[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-207">On the **Configure iOS Setup Assistant** pane, choose the steps to be presented to the user, and then choose **Prepare**.</span></span> <span data-ttu-id="3ef08-208">メッセージが表示されたら、認証して信頼の設定を更新します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-208">If prompted, authenticate to update trust settings.</span></span>  
+10. <span data-ttu-id="3ef08-209">iOS デバイスの準備が完了したら、USB ケーブルを取り外します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-209">When the iOS device finishes preparing, disconnect the USB cable.</span></span>  
 
-### <a name="distribute-devices"></a>デバイスを配布する
-これで、デバイスを企業登録できるようになりました。 デバイスをオフにし、ユーザーにデバイスを配布します。 ユーザーがデバイスをオンにすると、セットアップ アシスタントが開始されます。
+### <a name="distribute-devices"></a><span data-ttu-id="3ef08-210">デバイスを配布する</span><span class="sxs-lookup"><span data-stu-id="3ef08-210">Distribute devices</span></span>
+<span data-ttu-id="3ef08-211">これで、デバイスを企業登録できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="3ef08-211">The devices are now ready for corporate enrollment.</span></span> <span data-ttu-id="3ef08-212">デバイスをオフにし、ユーザーにデバイスを配布します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-212">Turn off the devices and distribute them to users.</span></span> <span data-ttu-id="3ef08-213">ユーザーがデバイスをオンにすると、セットアップ アシスタントが開始されます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-213">When users turn on their devices, Setup Assistant starts.</span></span>
 
-ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了する必要があります。 ユーザー アフィニティが構成されているデバイスは、会社のポータル アプリをインストールして実行することにより、アプリをダウンロードしてデバイスを管理できるようになります。
+<span data-ttu-id="3ef08-214">ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-214">After users receive their devices, they must complete Setup Assistant.</span></span> <span data-ttu-id="3ef08-215">ユーザー アフィニティが構成されているデバイスは、会社のポータル アプリをインストールして実行することにより、アプリをダウンロードしてデバイスを管理できるようになります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-215">Devices configured with user affinity can install and run the Company Portal app to download apps and manage devices.</span></span>
 
-## <a name="direct-enrollment"></a>直接登録
-iOS デバイスを Apple Configurator で直接登録する場合は、デバイスのシリアル番号を取得しなくてもデバイスを登録できます。 登録時に Intune がデバイス名をキャプチャする前に、デバイスを識別するための名前を指定することもできます。 会社のポータル アプリは、直接登録されているデバイスではサポートされていません。 この方法では、デバイスの工場出荷時の設定へのリセットは行われません。
+## <a name="direct-enrollment"></a><span data-ttu-id="3ef08-216">直接登録</span><span class="sxs-lookup"><span data-stu-id="3ef08-216">Direct enrollment</span></span>
+<span data-ttu-id="3ef08-217">iOS デバイスを Apple Configurator で直接登録する場合は、デバイスのシリアル番号を取得しなくてもデバイスを登録できます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-217">When you directly enroll iOS devices with Apple Configurator, you can enroll a device without acquiring the device's serial number.</span></span> <span data-ttu-id="3ef08-218">登録時に Intune がデバイス名をキャプチャする前に、デバイスを識別するための名前を指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-218">You can also name the device for identification purposes before Intune captures the device name during enrollment.</span></span> <span data-ttu-id="3ef08-219">会社のポータル アプリは、直接登録されているデバイスではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-219">The Company Portal app is not supported for directly enrolled devices.</span></span> <span data-ttu-id="3ef08-220">この方法では、デバイスの工場出荷時の設定へのリセットは行われません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-220">This method does not do a factory reset of the device.</span></span>
 
-ユーザー アフィリエーションが必要なアプリ (基幹業務アプリのインストールに使用されるポータル サイト アプリを含む) はインストールできません。
+<span data-ttu-id="3ef08-221">ユーザー アフィリエーションが必要なアプリ (基幹業務アプリのインストールに使用されるポータル サイト アプリを含む) はインストールできません。</span><span class="sxs-lookup"><span data-stu-id="3ef08-221">Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, cannot be installed.</span></span>
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>プロファイルを .mobileconfig として iOS デバイスにエクスポートする
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[プロファイルのエクスポート]** で、**[プロファイルのダウンロード]** を選択して登録プロファイルをダウンロードします。
+### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a><span data-ttu-id="3ef08-222">プロファイルを .mobileconfig として iOS デバイスにエクスポートする</span><span class="sxs-lookup"><span data-stu-id="3ef08-222">Export the profile as .mobileconfig to iOS devices</span></span>
+1. <span data-ttu-id="3ef08-223">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-223">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="3ef08-224">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-224">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="3ef08-225">**[プロファイルのエクスポート]** で、**[プロファイルのダウンロード]** を選択して登録プロファイルをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-225">Under **Export Profile**, choose **Download profile** to download the enrollment profile.</span></span>
 
   ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録] のスクリーンショット](./media/ios-apple-configurator-expor-de.png)
 
-4. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を実行している Mac コンピューターにファイルを転送し、管理プロファイルとして iOS デバイスに直接プッシュします。
-5. 次の手順に従って、Apple Configurator を使用してデバイスを準備します。
-  1. Mac コンピューターで Apple Configurator 2.0 を開きます。
-  2. iOS デバイスを USB ケーブルで Mac コンピューターに接続します。 デバイスの検出時にそのデバイス用に開かれた写真、iTunes、その他のアプリを閉じます。
-  3. Apple Configurator で、接続された iOS デバイスを選択し、**[追加]** ボタンを選択します。 デバイスに追加できるオプションがドロップダウン リストに表示されます。 **[プロファイル]** を選択します。
+4. <span data-ttu-id="3ef08-227">[Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を実行している Mac コンピューターにファイルを転送し、管理プロファイルとして iOS デバイスに直接プッシュします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-227">Transfer the file to a Mac computer running [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to iOS devices.</span></span>
+5. <span data-ttu-id="3ef08-228">次の手順に従って、Apple Configurator を使用してデバイスを準備します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-228">Prepare the device with Apple Configurator by using the following steps.</span></span>
+  1. <span data-ttu-id="3ef08-229">Mac コンピューターで Apple Configurator 2.0 を開きます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-229">On a Mac computer, open Apple Configurator 2.0.</span></span>
+  2. <span data-ttu-id="3ef08-230">iOS デバイスを USB ケーブルで Mac コンピューターに接続します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-230">Connect the iOS device to the Mac computer with a USB cord.</span></span> <span data-ttu-id="3ef08-231">デバイスの検出時にそのデバイス用に開かれた写真、iTunes、その他のアプリを閉じます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-231">Close Photos, iTunes, and other apps that open for the device when the device is detected.</span></span>
+  3. <span data-ttu-id="3ef08-232">Apple Configurator で、接続された iOS デバイスを選択し、**[追加]** ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-232">In Apple Configurator, choose the connected iOS device, and then choose the **Add** button.</span></span> <span data-ttu-id="3ef08-233">デバイスに追加できるオプションがドロップダウン リストに表示されます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-233">Options that can be added to the device appear in the drop-down list.</span></span> <span data-ttu-id="3ef08-234">**[プロファイル]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-234">Choose **Profiles**.</span></span>
 
     ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録] のスクリーンショット](./media/ios-apple-configurator-add-profile.png)
 
-  4. ファイル ピッカーを使用して、Intune からエクスポートした .mobileconfig ファイルを選択し、**[追加]** を選択します。 プロファイルがデバイスに追加されます。 デバイスが "監視対象外" の場合は、インストール時にデバイスの承認が必要です。
-6. 次の手順を使用して、iOS デバイスにプロファイルをインストールします。 デバイスでセットアップ アシスタントが既に完了し、使用する準備ができている必要があります。 登録のためにアプリの展開が必要な場合は、アプリの展開時に Apple ID で App Store にサインインする必要があるため、デバイスに Apple ID が設定されている必要があります。
-   1. iOS デバイスのロックを解除します。
-   2. **[管理プロファイル]** の **[プロファイルのインストール]** ダイアログ ボックスで、**[インストール]** を選択します。
-   3. 必要に応じて、デバイスのパスコードまたは Apple ID を入力します。
-   4. **[警告]** を受け入れ、**[インストール]** を選択します。
-   5. **[リモート警告]** を受け入れ、**[信頼]** を選択します。
-   6. **[インストール完了]** ボックスでプロファイルがインストール済みであることを確認したら、**[完了]** を選択します。
+  4. <span data-ttu-id="3ef08-236">ファイル ピッカーを使用して、Intune からエクスポートした .mobileconfig ファイルを選択し、**[追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-236">Use the file picker to select the .mobileconfig file that you exported from Intune, and then choose **Add**.</span></span> <span data-ttu-id="3ef08-237">プロファイルがデバイスに追加されます。</span><span class="sxs-lookup"><span data-stu-id="3ef08-237">The profile is added to the device.</span></span> <span data-ttu-id="3ef08-238">デバイスが "監視対象外" の場合は、インストール時にデバイスの承認が必要です。</span><span class="sxs-lookup"><span data-stu-id="3ef08-238">If the device is Unsupervised, the installation requires acceptance on the device.</span></span>
+6. <span data-ttu-id="3ef08-239">次の手順を使用して、iOS デバイスにプロファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="3ef08-239">Use the following steps to install the profile on the iOS device.</span></span> <span data-ttu-id="3ef08-240">デバイスでセットアップ アシスタントが既に完了し、使用する準備ができている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-240">The device must have already completed the Setup Assistant and be ready to use.</span></span> <span data-ttu-id="3ef08-241">登録のためにアプリの展開が必要な場合は、アプリの展開時に Apple ID で App Store にサインインする必要があるため、デバイスに Apple ID が設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-241">If enrollment entails app deployments, the device should have an Apple ID set up because the app deployment requires that you have an Apple ID signed in for the App Store.</span></span>
+   1. <span data-ttu-id="3ef08-242">iOS デバイスのロックを解除します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-242">Unlock the iOS device.</span></span>
+   2. <span data-ttu-id="3ef08-243">**[管理プロファイル]** の **[プロファイルのインストール]** ダイアログ ボックスで、**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-243">In the **Install profile** dialog box for **Management profile**, choose **Install**.</span></span>
+   3. <span data-ttu-id="3ef08-244">必要に応じて、デバイスのパスコードまたは Apple ID を入力します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-244">Provide the Device Passcode or Apple ID, if necessary.</span></span>
+   4. <span data-ttu-id="3ef08-245">**[警告]** を受け入れ、**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-245">Accept the **Warning**, and choose **Install**.</span></span>
+   5. <span data-ttu-id="3ef08-246">**[リモート警告]** を受け入れ、**[信頼]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-246">Accept the **Remote Warning**, and choose **Trust**.</span></span>
+   6. <span data-ttu-id="3ef08-247">**[インストール完了]** ボックスでプロファイルがインストール済みであることを確認したら、**[完了]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-247">When the **Profile Installed** box confirms the profile as Installed, choose **Done**.</span></span>
 
-7. iOS デバイスで、**[設定]** を開き、**[全般]** > **[デバイス管理]** > **[管理プロファイル]** に移動します。 プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。 ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。
+7. <span data-ttu-id="3ef08-248">iOS デバイスで、**[設定]** を開き、**[全般]** > **[デバイス管理]** > **[管理プロファイル]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-248">On the iOS device, open **Settings** and go to **General** > **Device Management** > **Management Profile**.</span></span> <span data-ttu-id="3ef08-249">プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-249">Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps.</span></span> <span data-ttu-id="3ef08-250">ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。</span><span class="sxs-lookup"><span data-stu-id="3ef08-250">Policy restrictions and apps might take up to 10 minutes to appear on the device.</span></span>
 
-8. デバイスを配布します。 これで、iOS デバイスが Intune に登録され、管理対象になりました。
+8. <span data-ttu-id="3ef08-251">デバイスを配布します。</span><span class="sxs-lookup"><span data-stu-id="3ef08-251">Distribute devices.</span></span> <span data-ttu-id="3ef08-252">これで、iOS デバイスが Intune に登録され、管理対象になりました。</span><span class="sxs-lookup"><span data-stu-id="3ef08-252">The iOS device is now enrolled in Intune and managed.</span></span>

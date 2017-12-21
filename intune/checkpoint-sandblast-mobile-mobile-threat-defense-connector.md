@@ -16,22 +16,22 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: fa56aa58e8c5945a298aa52785761a627e56992b
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune との Check Point SandBlast Mobile Threat Defense コネクタ
+# <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a><span data-ttu-id="97959-103">Intune との Check Point SandBlast Mobile Threat Defense コネクタ</span><span class="sxs-lookup"><span data-stu-id="97959-103">Check Point SandBlast Mobile Threat Defense connector with Intune</span></span>
 
-Microsoft Intune に統合された Mobile Threat Defense ソリューションであるチェック ポイントの SandBlast Mobile によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、チェック ポイントの SandBlast Mobile アプリを実行するデバイスから収集される製品利用統計情報に基づいて評価されます。
+<span data-ttu-id="97959-104">Microsoft Intune に統合された Mobile Threat Defense ソリューションであるチェック ポイントの SandBlast Mobile によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。</span><span class="sxs-lookup"><span data-stu-id="97959-104">You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Check Point SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.</span></span> <span data-ttu-id="97959-105">リスクは、チェック ポイントの SandBlast Mobile アプリを実行するデバイスから収集される製品利用統計情報に基づいて評価されます。</span><span class="sxs-lookup"><span data-stu-id="97959-105">Risk is assessed based on telemetry collected from devices running the Check Point SandBlast Mobile app.</span></span>
 
-Intune デバイス コンプライアンス ポリシーで有効にした Check Point SandBlast Mobile リスク評価に基づき、条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。
+<span data-ttu-id="97959-106">Intune デバイス コンプライアンス ポリシーで有効にした Check Point SandBlast Mobile リスク評価に基づき、条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。</span><span class="sxs-lookup"><span data-stu-id="97959-106">You can configure conditional access policies based on Check Point SandBlast Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.</span></span>
 
-## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune と Check Point SandBlast Mobile を利用し、会社のリソースをどのように保護しますか?
+## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a><span data-ttu-id="97959-107">Intune と Check Point SandBlast Mobile を利用し、会社のリソースをどのように保護しますか?</span><span class="sxs-lookup"><span data-stu-id="97959-107">How do Intune and Check Point SandBlast Mobile help protect your company resources?</span></span>
 
-Android および iOS 向け Check Point Sandblast Mobile アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Check Point SandBlast クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。
+<span data-ttu-id="97959-108">Android および iOS 向け Check Point Sandblast Mobile アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Check Point SandBlast クラウド サービスにテレメトリ データを送信し、モバイル デバイスの脅威に対するリスクを評価します。</span><span class="sxs-lookup"><span data-stu-id="97959-108">Check Point Sandblast Mobile app for Android and iOS captures file system, network stack, device and application telemetry where available, then sends the telemetry data to the Check Point SandBlast cloud service to assess the device's risk for mobile threats.</span></span>
 
-Intune デバイス コンプライアンス ポリシーには、Check Point SandBlast リスク評価に基づく、Check Point SandBlast Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Check Point SandBlast Mobile アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。
+<span data-ttu-id="97959-109">Intune デバイス コンプライアンス ポリシーには、Check Point SandBlast リスク評価に基づく、Check Point SandBlast Mobile Threat Defense のルールが含まれています。</span><span class="sxs-lookup"><span data-stu-id="97959-109">The Intune device compliance policy includes a rule for Check Point SandBlast Mobile Threat Defense, which is based on the Check Point SandBlast risk assessment.</span></span> <span data-ttu-id="97959-110">このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。</span><span class="sxs-lookup"><span data-stu-id="97959-110">When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.</span></span> <span data-ttu-id="97959-111">デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。</span><span class="sxs-lookup"><span data-stu-id="97959-111">If the device is found non-compliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online.</span></span> <span data-ttu-id="97959-112">また、ユーザーは、デバイスにインストールされている Check Point SandBlast Mobile アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="97959-112">Users also receive guidance from the Check Point SandBlast mobile app installed in their devices to resolve the issue and regain access to corporate resources.</span></span>
 
 <!-- ## Sample scenarios
 

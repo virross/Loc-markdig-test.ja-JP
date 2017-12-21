@@ -1,1 +1,1 @@
-[Learning Ally Web サイト](http://go.microsoft.com/fwlink/?LinkID=239)
+[<span data-ttu-id="cbaa5-101">Learning Ally Web サイト</span><span class="sxs-lookup"><span data-stu-id="cbaa5-101">Learning Ally website</span></span>](http://go.microsoft.com/fwlink/?LinkID=239)

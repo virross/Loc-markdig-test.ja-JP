@@ -17,15 +17,15 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: df408217e8c9264921a60cb46fa3af7ecd434a24
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>iOS デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない
+# <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a><span data-ttu-id="53a5a-102">iOS デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない</span><span class="sxs-lookup"><span data-stu-id="53a5a-102">Your iOS device doesn't have the required minimum operating system version</span></span>
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-**[設定]** > **[一般]** > **[ソフトウェアアップデート]** の順にタップして、iOS デバイスを更新します。
+<span data-ttu-id="53a5a-103">**[設定]** > **[一般]** > **[ソフトウェアアップデート]** の順にタップして、iOS デバイスを更新します。</span><span class="sxs-lookup"><span data-stu-id="53a5a-103">Update your iOS device by tapping **Settings** > **General** > **Software Update**.</span></span>
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="53a5a-104">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="53a5a-104">Still need help?</span></span> <span data-ttu-id="53a5a-105">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="53a5a-105">Contact your company support.</span></span> <span data-ttu-id="53a5a-106">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="53a5a-106">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

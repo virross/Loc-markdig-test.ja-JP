@@ -14,65 +14,65 @@ ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>フェーズ 1: モバイル デバイス管理 (MDM) に Intune を準備する
+# <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a><span data-ttu-id="ea6fd-103">フェーズ 1: モバイル デバイス管理 (MDM) に Intune を準備する</span><span class="sxs-lookup"><span data-stu-id="ea6fd-103">Phase 1: Prepare Intune for mobile device management (MDM)</span></span>
 
-Intune の設定の詳細について説明する前に、組織のモバイル デバイス管理の要件を確認しておきましょう。 現在の MDM プロバイダーでアクティブなユーザーのレポートを実行して重要なユーザー グループを識別すると役立つ場合があります。 その後、「[MDM 要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)」セクションの質問に答えることができます。
+<span data-ttu-id="ea6fd-104">Intune の設定の詳細について説明する前に、組織のモバイル デバイス管理の要件を確認しておきましょう。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-104">Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization.</span></span> <span data-ttu-id="ea6fd-105">現在の MDM プロバイダーでアクティブなユーザーのレポートを実行して重要なユーザー グループを識別すると役立つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-105">It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups.</span></span> <span data-ttu-id="ea6fd-106">その後、「[MDM 要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)」セクションの質問に答えることができます。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-106">Then you can begin addressing the questions in the [Assess MDM requirements ](migration-guide-prepare.md#assess-mdm-requirements) section.</span></span>
 
-## <a name="assess-mdm-requirements"></a>MDM 要件を評価する
+## <a name="assess-mdm-requirements"></a><span data-ttu-id="ea6fd-107">MDM 要件を評価する</span><span class="sxs-lookup"><span data-stu-id="ea6fd-107">Assess MDM requirements</span></span>
 
-### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>管理が必要なデバイスの種類について
+### <a name="what-kinds-of-devices-do-you-need-to-manage"></a><span data-ttu-id="ea6fd-108">管理が必要なデバイスの種類について</span><span class="sxs-lookup"><span data-stu-id="ea6fd-108">What kinds of devices do you need to manage?</span></span>
 
--   どの[プラットフォーム](supported-devices-browsers.md)をサポートする必要がありますか。
+-   <span data-ttu-id="ea6fd-109">どの[プラットフォーム](supported-devices-browsers.md)をサポートする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-109">Which [platforms](supported-devices-browsers.md) do you need to support?</span></span>
 
--   サポートする必要があるのは、企業所有デバイスですか個人のデバイスですか。
+-   <span data-ttu-id="ea6fd-110">サポートする必要があるのは、企業所有デバイスですか個人のデバイスですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-110">Are the devices you need to support corporate-owned or personal devices?</span></span>
 
--   どのような種類の接続を使用しますか。 Wi-Fi、移動体通信、VPN ですか。
+-   <span data-ttu-id="ea6fd-111">どのような種類の接続を使用しますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-111">What kind of connectivity do you use?</span></span> <span data-ttu-id="ea6fd-112">Wi-Fi、移動体通信、VPN ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-112">Wi-Fi, cellular, VPN?</span></span>
 
-### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>管理対象デバイスでユーザーが行う作業
+### <a name="what-do-your-users-need-to-do-on-managed-devices"></a><span data-ttu-id="ea6fd-113">管理対象デバイスでユーザーが行う作業</span><span class="sxs-lookup"><span data-stu-id="ea6fd-113">What do your users need to do on managed devices?</span></span>
 
--   エンド ユーザーにアプリをプロビジョニングする必要がありますか。
+-   <span data-ttu-id="ea6fd-114">エンド ユーザーにアプリをプロビジョニングする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-114">Do you need to provision apps to your end-users?</span></span>
 
--   カスタムの基幹業務アプリを使用しますか。 それともパブリックなストア アプリのみ必要ですか。
+-   <span data-ttu-id="ea6fd-115">カスタムの基幹業務アプリを使用しますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-115">Do you use custom line-of-business apps?</span></span> <span data-ttu-id="ea6fd-116">それともパブリックなストア アプリのみ必要ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-116">Or do you only need public store apps?</span></span>
 
--   電子メール アカウントをプロビジョニングする必要がありますか。
+-   <span data-ttu-id="ea6fd-117">電子メール アカウントをプロビジョニングする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-117">Do you need to provision email accounts?</span></span>
 
-### <a name="what-kinds-of-users"></a>ユーザーの種類について
+### <a name="what-kinds-of-users"></a><span data-ttu-id="ea6fd-118">ユーザーの種類について</span><span class="sxs-lookup"><span data-stu-id="ea6fd-118">What kinds of users?</span></span>
 
--   1 つのデバイスを使用するユーザー数は何人ですか。
+-   <span data-ttu-id="ea6fd-119">1 つのデバイスを使用するユーザー数は何人ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-119">How many users will use a single device?</span></span>
 
--   どのような使用条件が必要ですか。
+-   <span data-ttu-id="ea6fd-120">どのような使用条件が必要ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-120">What terms of use do you need?</span></span>
 
-    -   これについては早い段階で法務部門が関与するようにします。
-    -   どのようなローカライズが必要ですか。
+    -   <span data-ttu-id="ea6fd-121">これについては早い段階で法務部門が関与するようにします。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-121">Make sure to involve your legal department early in this.</span></span>
+    -   <span data-ttu-id="ea6fd-122">どのようなローカライズが必要ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-122">What localization is required?</span></span>
 
--   一般的に、ユーザーは技術と IT についてよく理解していますか。
+-   <span data-ttu-id="ea6fd-123">一般的に、ユーザーは技術と IT についてよく理解していますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-123">Are the users familiar with technology and IT in general?</span></span>
 
-### <a name="what-is-your-device-security-policy"></a>デバイスのセキュリティ ポリシーについて
+### <a name="what-is-your-device-security-policy"></a><span data-ttu-id="ea6fd-124">デバイスのセキュリティ ポリシーについて</span><span class="sxs-lookup"><span data-stu-id="ea6fd-124">What is your device security policy?</span></span>
 
--   デバイス レベルの暗号化が必要ですか。
+-   <span data-ttu-id="ea6fd-125">デバイス レベルの暗号化が必要ですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-125">Do you need device-level encryption?</span></span>
 
--   現在のデバイスのパスコード/PIN コードはどれくらいの長さですか。
+-   <span data-ttu-id="ea6fd-126">現在のデバイスのパスコード/PIN コードはどれくらいの長さですか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-126">What are your current device passcode/pin code lengths?</span></span>
 
--   デバイスの機能を無効にしたり、特定のデバイスの動作を制限する必要がありますか。 デバイス構成プロファイルを使用して、プラットフォーム固有のさまざまな設定を制御することができます。
-      - カメラの無効化
-      - 単一アプリ モードにロック<br/>
+-   <span data-ttu-id="ea6fd-127">デバイスの機能を無効にしたり、特定のデバイスの動作を制限する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-127">Do you need to disable device features, or restrict certain device behaviors?</span></span> <span data-ttu-id="ea6fd-128">デバイス構成プロファイルを使用して、プラットフォーム固有のさまざまな設定を制御することができます。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-128">You can control a variety of platform-specific settings with device configuration profiles, for example:</span></span>
+      - <span data-ttu-id="ea6fd-129">カメラの無効化</span><span class="sxs-lookup"><span data-stu-id="ea6fd-129">Disable camera</span></span>
+      - <span data-ttu-id="ea6fd-130">単一アプリ モードにロック</span><span class="sxs-lookup"><span data-stu-id="ea6fd-130">Lock to single-app mode</span></span><br/>
 
--   どのような種類の認証をサポートする必要がありますか。 証明書ベースの認証が必要な場合、どのような種類の証明書をプロビジョニングする必要がありますか。
-  - Intune では、リソース アクセス プロファイルを使用して、登録されたデバイスに証明書をプロビジョニングします。
-    -   どのような種類の公開キー基盤 (PKI) インフラをサポートする必要がありますか。
+-   <span data-ttu-id="ea6fd-131">どのような種類の認証をサポートする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-131">What kinds of authentication must you support?</span></span> <span data-ttu-id="ea6fd-132">証明書ベースの認証が必要な場合、どのような種類の証明書をプロビジョニングする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-132">If you need certificate-based authentication, what kinds of certificates must be provisioned?</span></span>
+  - <span data-ttu-id="ea6fd-133">Intune では、リソース アクセス プロファイルを使用して、登録されたデバイスに証明書をプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-133">Intune can provision certificates with resource access profiles for enrolled devices.</span></span>
+    -   <span data-ttu-id="ea6fd-134">どのような種類の公開キー基盤 (PKI) インフラをサポートする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-134">What kind of Public Key Infrastructure (PKI) infra do you need to support?</span></span>
 <br></br>
--   デバイスまたはアプリケーション レベルで、仮想プライベート ネットワーク (VPN) をサポートする必要がありますか。
+-   <span data-ttu-id="ea6fd-135">デバイスまたはアプリケーション レベルで、仮想プライベート ネットワーク (VPN) をサポートする必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-135">Do you need to support Virtual Private Network (VPN) at the device or app level?</span></span>
 
-    -   Intune では、サードパーティ VPN プロバイダー向けの VPN 構成をプロビジョニングします。
+    -   <span data-ttu-id="ea6fd-136">Intune では、サードパーティ VPN プロバイダー向けの VPN 構成をプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-136">Intune can provision VPN configurations for third-party VPN providers.</span></span>
 <br/><br/>
--   ダウンタイムを回避するために、特定の要件に対して一時的な例外を設定できますか。 それともアクセスが許可されたデバイスは、常にすべてのセキュリティ要件を遵守する必要がありますか。
+-   <span data-ttu-id="ea6fd-137">ダウンタイムを回避するために、特定の要件に対して一時的な例外を設定できますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-137">Can temporary exceptions be made for certain requirements to avoid downtime?</span></span> <span data-ttu-id="ea6fd-138">それともアクセスが許可されたデバイスは、常にすべてのセキュリティ要件を遵守する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-138">Or must devices with access always comply with all security requirements?</span></span>
 
-## <a name="next-steps"></a>次のステップ
-さまざまな業界セクターの[ケース スタディ](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)を参照して、モバイル デバイス管理の要件をどのように評価したかを確認してください。
+## <a name="next-steps"></a><span data-ttu-id="ea6fd-139">次のステップ</span><span class="sxs-lookup"><span data-stu-id="ea6fd-139">Next steps</span></span>
+<span data-ttu-id="ea6fd-140">さまざまな業界セクターの[ケース スタディ](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)を参照して、モバイル デバイス管理の要件をどのように評価したかを確認してください。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-140">Read these [case studies](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) from different industry sectors to see how organizations assessed their requirements for mobile device management.</span></span>
 
-[Intune の基本的なセットアップ](migration-guide-setup.md)を確認してください。
+<span data-ttu-id="ea6fd-141">[Intune の基本的なセットアップ](migration-guide-setup.md)を確認してください。</span><span class="sxs-lookup"><span data-stu-id="ea6fd-141">Review the [basic Intune setup](migration-guide-setup.md).</span></span>

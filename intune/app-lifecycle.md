@@ -1,0 +1,53 @@
+---
+title: "Intune でのアプリのライフサイクルの概要"
+description: "追加から最終的な提供終了までの、Intune 管理対象アプリのライフサイクルについて説明します。"
+keywords: 
+author: erikre
+ms.author: erikre
+manager: angrobe
+ms.date: 06/07/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: a08ff917de1029abefa1598a69dd668f1bf4dafe
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/19/2017
+---
+# <a name="overview-of-the-app-lifecycle"></a><span data-ttu-id="f5a07-103">アプリのライフサイクルの概要</span><span class="sxs-lookup"><span data-stu-id="f5a07-103">Overview of the app lifecycle</span></span>
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+
+<span data-ttu-id="f5a07-104">Intune のアプリのライフサイクルは、アプリが追加されると開始し、アプリを削除するまで以降のフェーズに従って進行します。</span><span class="sxs-lookup"><span data-stu-id="f5a07-104">The Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app.</span></span>
+
+<span data-ttu-id="f5a07-105">![アプリのライフサイクル](./media/app-lifecycle.png "Intune アプリのライフサイクル")</span><span class="sxs-lookup"><span data-stu-id="f5a07-105">![The app lifecycle](./media/app-lifecycle.png "the Intune app lifecycle")</span></span>
+
+## <a name="add"></a><span data-ttu-id="f5a07-106">追加</span><span class="sxs-lookup"><span data-stu-id="f5a07-106">Add</span></span>
+
+<span data-ttu-id="f5a07-107">アプリ展開の最初のステップは、管理と割り当てを行うアプリを Intune に追加することです。</span><span class="sxs-lookup"><span data-stu-id="f5a07-107">The first step in app deployment is to add the apps, which you want to manage and assign, to Intune.</span></span> <span data-ttu-id="f5a07-108">使用できるアプリの種類はさまざまですが、基本的な手順は同じです。</span><span class="sxs-lookup"><span data-stu-id="f5a07-108">While you can work with many different app types, the basic procedures are the same.</span></span> <span data-ttu-id="f5a07-109">Intune では、[登録されたデバイス](apps-add.md) ([クラシック ポータル](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)) と、[Intune クライアント ソフトウェアで管理する Windows PC](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune) の両方に、アプリを追加できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-109">With Intune, you can add apps for both [enrolled devices](apps-add.md) ([Classic portal](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)) and [Windows PCs you manage with the Intune client software](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune).</span></span>
+
+## <a name="deploy"></a><span data-ttu-id="f5a07-110">デプロイ</span><span class="sxs-lookup"><span data-stu-id="f5a07-110">Deploy</span></span>
+
+<span data-ttu-id="f5a07-111">Intune にアプリを追加したら、[それを管理対象のユーザーとデバイスに割り当てる](apps-deploy.md)ことができます ([クラシック ポータル](/intune-classic/deploy-use/deploy-apps))。</span><span class="sxs-lookup"><span data-stu-id="f5a07-111">After you've added the app to Intune, you can then [assign it to users and devices that you manage](apps-deploy.md) ([Classic portal](/intune-classic/deploy-use/deploy-apps)).</span></span> <span data-ttu-id="f5a07-112">Intune を使用すればこのプロセスは簡単になり、アプリを展開した後は、Intune 管理コンソールから展開が[成功したことを監視](apps-monitor.md) ([クラシック ポータル](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)) できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-112">Intune makes this process easy, and after the app is deployed, you can [monitor the success](apps-monitor.md) ([Classic portal](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)) of the deployment from the Intune administration console.</span></span> <span data-ttu-id="f5a07-113">さらに、[Apple](vpp-apps-ios.md) ([クラシック ポータル](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)) や [Windows](windows-store-for-business.md) ([クラシック ポータル](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)) アプリ ストアといった一部のアプリ ストアでは、会社用にアプリのライセンスを一括購入できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-113">Additionally, in some app stores, like the  [Apple](vpp-apps-ios.md) ([Classic portal](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)) and [Windows](windows-store-for-business.md) ([Classic portal](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)) app stores, you can purchase app licenses in bulk for your company.</span></span> <span data-ttu-id="f5a07-114">Intune では、これらのストアとデータを同期して、Intune 管理コンソールからこの種のアプリのライセンスを展開して使用状況を追跡できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-114">Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.</span></span>
+
+## <a name="configure"></a><span data-ttu-id="f5a07-115">構成</span><span class="sxs-lookup"><span data-stu-id="f5a07-115">Configure</span></span>
+
+<span data-ttu-id="f5a07-116">アプリのライフサイクルの一環として、アプリの新しいバージョンが定期的にリリースされます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-116">As part of the app lifecycle, new versions of apps are regularly released.</span></span> <span data-ttu-id="f5a07-117">Intune には、展開した[アプリを新しいバージョンに簡単に更新](apps-add.md) ([クラシック ポータル](/intune-classic/deploy-use/update-apps-using-microsoft-intune)) できるツールがあります。</span><span class="sxs-lookup"><span data-stu-id="f5a07-117">Intune provides tools to easily [update apps](apps-add.md) ([Classic portal](/intune-classic/deploy-use/update-apps-using-microsoft-intune)) that you have deployed to a newer version.</span></span> <span data-ttu-id="f5a07-118">さらに、一部のアプリでは次のような追加機能を構成できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-118">Additionally, you can configure extra functionality for some apps, for example:</span></span>
+- <span data-ttu-id="f5a07-119">[iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md) ([クラシック ポータル](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)) には、互換性のある iOS アプリの設定があり、そのアプリの実行時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-119">[iOS app configuration policies](app-configuration-policies-use-ios.md) ([Classic portal](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)) supply settings for compatible iOS apps that are used when the app is run.</span></span> <span data-ttu-id="f5a07-120">たとえば、アプリには特定のブランド設定や、接続するサーバーの名前が必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="f5a07-120">For example, an app might require specific branding settings or the name of a server to connect to.</span></span>
+- <span data-ttu-id="f5a07-121">[管理対象ブラウザー ポリシー](app-configuration-managed-browser.md) ([クラシック ポータル](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)) では、Intune 管理ブラウザーの設定を構成して、デバイスの既定ブラウザーを置き換えたりユーザーがアクセスできる Web サイトを制限したりできます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-121">[Managed browser policies](app-configuration-managed-browser.md) ([Classic portal](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)) help you to configure settings for the Intune managed browser, which replaces the default device browser and lets you restrict the websites that your users can visit.</span></span>
+
+## <a name="protect"></a><span data-ttu-id="f5a07-122">保護</span><span class="sxs-lookup"><span data-stu-id="f5a07-122">Protect</span></span>
+
+<span data-ttu-id="f5a07-123">Intune では、さまざまな方法でアプリのデータを保護できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-123">Intune gives you many ways to help protect the data in your apps.</span></span> <span data-ttu-id="f5a07-124">主な方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f5a07-124">The main methods are:</span></span>
+- <span data-ttu-id="f5a07-125">[条件付きアクセス](conditional-access.md) ([クラシック ポータル](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) は、指定した条件に基づいてメールと他のサービスへのアクセスを制御します。</span><span class="sxs-lookup"><span data-stu-id="f5a07-125">[Conditional access](conditional-access.md) ([Classic portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) controls access to email and other services based on conditions that you specify.</span></span> <span data-ttu-id="f5a07-126">条件としては、デバイスの種類や、展開した[デバイス コンプライアンス ポリシー](device-compliance.md) ([クラシック ポータル](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)) へのコンプライアンスなどがあります。</span><span class="sxs-lookup"><span data-stu-id="f5a07-126">Conditions include device types or compliance with a [device compliance policy](device-compliance.md) ([Classic portal](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)) that you deployed.</span></span>
+- <span data-ttu-id="f5a07-127">[アプリ保護ポリシー](app-protection-policy.md) ([クラシック ポータル](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)) は、個々のアプリと連携して、アプリが使用する会社のデータを保護します。</span><span class="sxs-lookup"><span data-stu-id="f5a07-127">[App protection policies](app-protection-policy.md) ([Classic portal](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)) works with individual apps to help protect the company data that they use.</span></span> <span data-ttu-id="f5a07-128">たとえば、管理対象外アプリと管理対象アプリの間でのデータのコピーを制限したり、脱獄またはルート化されたデバイスでのアプリの実行を禁止したりできます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-128">For example, you can restrict copying data between unmanaged apps and apps that you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.</span></span>
+
+## <a name="retire"></a><span data-ttu-id="f5a07-129">インベントリから削除</span><span class="sxs-lookup"><span data-stu-id="f5a07-129">Retire</span></span>
+
+<span data-ttu-id="f5a07-130">通常は、最終的に、展開したアプリは古くなり、削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f5a07-130">Eventually, it's likely that apps that you deployed become outdated and need to be removed.</span></span> <span data-ttu-id="f5a07-131">Intune では、簡単に[サービスからアプリを削除](device-management.md) ([クラシック ポータル](/intune-classic/deploy-use/retire-apps-using-microsoft-intune)) できます。</span><span class="sxs-lookup"><span data-stu-id="f5a07-131">Intune makes it easy to [retire apps from service](device-management.md) ([Classic portal](/intune-classic/deploy-use/retire-apps-using-microsoft-intune)).</span></span>

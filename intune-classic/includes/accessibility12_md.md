@@ -1,1 +1,1 @@
-Web アドレスは変更される場合があるので、ここに示した Web サイトに接続できないこともあります。
+<span data-ttu-id="e03aa-101">Web アドレスは変更される場合があるので、ここに示した Web サイトに接続できないこともあります。</span><span class="sxs-lookup"><span data-stu-id="e03aa-101">Web addresses can change, so you might be unable to connect to the website or sites mentioned here.</span></span>

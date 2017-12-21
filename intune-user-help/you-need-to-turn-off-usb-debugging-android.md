@@ -15,17 +15,17 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 72f187bed4524e344cf19e68cadfc8a5fc739c56
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="you-need-to-turn-off-usb-debugging"></a>USB デバッグを無効にする必要がある
+# <a name="you-need-to-turn-off-usb-debugging"></a><span data-ttu-id="0b29f-102">USB デバッグを無効にする必要がある</span><span class="sxs-lookup"><span data-stu-id="0b29f-102">You need to turn off USB debugging</span></span>
 
-_USB デバッグ_は、開発者が Android アプリをより簡単に作成する目的で Android デバイスをコンピューターと通信させることができるモードです。 それにより、ほとんどの人が定期的にやり取りする必要がない電話の特殊な領域に一定のアクセスができるようになります。 便利である一方、このアクセスを有効にすると、コンピューターに接続されているデバイスに対して情報セキュリティが侵害されるリスクが増大します。 会社のサポートは、デバイス上の会社のデータの保護を強化するために、この設定を無効にすることを必須にしています。
+<span data-ttu-id="0b29f-103">_USB デバッグ_は、開発者が Android アプリをより簡単に作成する目的で Android デバイスをコンピューターと通信させることができるモードです。</span><span class="sxs-lookup"><span data-stu-id="0b29f-103">_USB debugging_ is a mode that lets Android devices communicate to computers with the purpose of making Android apps easier for developers.</span></span> <span data-ttu-id="0b29f-104">それにより、ほとんどの人が定期的にやり取りする必要がない電話の特殊な領域に一定のアクセスができるようになります。</span><span class="sxs-lookup"><span data-stu-id="0b29f-104">It allows certain access to specialized areas of the phone that most people don't need to interact with regularly.</span></span> <span data-ttu-id="0b29f-105">便利である一方、このアクセスを有効にすると、コンピューターに接続されているデバイスに対して情報セキュリティが侵害されるリスクが増大します。</span><span class="sxs-lookup"><span data-stu-id="0b29f-105">While useful, having this access turned on can place your device at additional risk of information being compromised when it is connected to a computer.</span></span> <span data-ttu-id="0b29f-106">会社のサポートは、デバイス上の会社のデータの保護を強化するために、この設定を無効にすることを必須にしています。</span><span class="sxs-lookup"><span data-stu-id="0b29f-106">Your company support has required this setting to be turned off to better protect the corporate data on your device.</span></span>
 
-USB デバッグを無効にするには、**[設定]** > **[開発者オプション]** を選択し、**[USB デバッグ]** を無効にします。
+<span data-ttu-id="0b29f-107">USB デバッグを無効にするには、**[設定]** > **[開発者オプション]** を選択し、**[USB デバッグ]** を無効にします。</span><span class="sxs-lookup"><span data-stu-id="0b29f-107">You can turn off USB debugging by going to **Settings** > **Developer options**, and turn off **USB debugging**.</span></span>
 
-**[USB デバッグ]** を無効にしてから数分間待機すると、Android デバイスで会社や学校のデータにアクセスできるようになります。
+<span data-ttu-id="0b29f-108">**[USB デバッグ]** を無効にしてから数分間待機すると、Android デバイスで会社や学校のデータにアクセスできるようになります。</span><span class="sxs-lookup"><span data-stu-id="0b29f-108">After you turn off **USB debugging**, wait a few minutes, then you should be able to to use your Android device to access company or school data as usual.</span></span>
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="0b29f-109">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="0b29f-109">Still need help?</span></span> <span data-ttu-id="0b29f-110">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="0b29f-110">Contact your company support.</span></span> <span data-ttu-id="0b29f-111">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="0b29f-111">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

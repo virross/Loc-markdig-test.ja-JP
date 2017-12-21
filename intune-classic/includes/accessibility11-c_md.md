@@ -1,1 +1,1 @@
-米国内からの電話連絡先: (800) 221-4792
+<span data-ttu-id="c5528-101">米国内からの電話連絡先: (800) 221-4792</span><span class="sxs-lookup"><span data-stu-id="c5528-101">Telephone number from within the United States: (800) 221-4792</span></span>

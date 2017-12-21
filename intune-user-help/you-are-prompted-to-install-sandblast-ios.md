@@ -15,33 +15,33 @@ searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
 ms.openlocfilehash: 2335f92bd4755152aaae88f057f6b92481eacbdc
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS デバイスに SandBlast Mobile Protect をインストールする必要がある
+# <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a><span data-ttu-id="8ef8d-103">iOS デバイスに SandBlast Mobile Protect をインストールする必要がある</span><span class="sxs-lookup"><span data-stu-id="8ef8d-103">You need to install SandBlast Mobile Protect on your iOS device</span></span>
 
-作業内容にアクセスする前に、潜在的なセキュリティ脅威を検出してデバイスを保護することができる、SandBlast Mobile Protect アプリをインストールするように会社のサポートから求められます。 会社の設定によって、SandBlast Mobile Protect で表示されるプロンプトは異なります。
+<span data-ttu-id="8ef8d-104">作業内容にアクセスする前に、潜在的なセキュリティ脅威を検出してデバイスを保護することができる、SandBlast Mobile Protect アプリをインストールするように会社のサポートから求められます。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-104">Before you can access your work, your company support needs you to install the SandBlast Mobile Protect app, which helps to protect your device by finding potential security threats.</span></span> <span data-ttu-id="8ef8d-105">会社の設定によって、SandBlast Mobile Protect で表示されるプロンプトは異なります。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-105">You might see different prompts on your device, depending on how your company set up SandBlast Mobile Protect.</span></span>
 
-**必要な操作**
+<span data-ttu-id="8ef8d-106">**必要な操作**</span><span class="sxs-lookup"><span data-stu-id="8ef8d-106">**What you need to do:**</span></span>
 
-1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの SandBlast Mobile Protect のインストールを許可します。
+1.  <span data-ttu-id="8ef8d-107">次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの SandBlast Mobile Protect のインストールを許可します。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-107">If you see a following prompt, tap **Install** to allow SandBlast Mobile Protect to be installed on your device.</span></span>
 
-2. 次のメッセージが表示されたら**[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. <span data-ttu-id="8ef8d-108">次のメッセージが表示されたら**[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-108">When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.</span></span>
 
-3. SandBlast Mobile Protect に必要なアクセス許可を確認し、**[続行]** をタップします。
+3. <span data-ttu-id="8ef8d-109">SandBlast Mobile Protect に必要なアクセス許可を確認し、**[続行]** をタップします。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-109">Review the permissions that SandBlast Mobile Protect needs, and tap **Continue**.</span></span>
 
-4. SandBlast Mobile Protect に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。
+4. <span data-ttu-id="8ef8d-110">SandBlast Mobile Protect に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-110">At the prompt asking you to allow SandBlast Mobile Protect to send you notifications, tap **Allow**.</span></span>
 
-5. SandBlast Mobile Protect のインストールが完了し、ようこそ画面が表示されます。
+5. <span data-ttu-id="8ef8d-111">SandBlast Mobile Protect のインストールが完了し、ようこそ画面が表示されます。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-111">SandBlast Mobile Protect finishes installing and shows you the welcome screen.</span></span>
 
-6. セットアップが完了すると、デバイスでセキュリティ上の脅威が検出されない場合、次の画面が表示されます。
+6. <span data-ttu-id="8ef8d-112">セットアップが完了すると、デバイスでセキュリティ上の脅威が検出されない場合、次の画面が表示されます。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-112">Once you've completed setup, you see the following screen if no security threats are found on your device.</span></span>
 
-SandBlast Mobile Protect によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
+<span data-ttu-id="8ef8d-113">SandBlast Mobile Protect によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-113">If SandBlast Mobile Protect finds a security threat on your device, you will see instructions on how to fix the issue.</span></span>
 
-**インストールが機能しない場合**
+<span data-ttu-id="8ef8d-114">**インストールが機能しない場合**</span><span class="sxs-lookup"><span data-stu-id="8ef8d-114">**If the installation doesn't work**</span></span>
 
-ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、SandBlast Mobile Protect を[アプリ ストアから手動で](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797)インストールします。
+<span data-ttu-id="8ef8d-115">ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-115">Sometimes installations can fail due to technical issues beyond your control.</span></span> <span data-ttu-id="8ef8d-116">このような場合は、SandBlast Mobile Protect を[アプリ ストアから手動で](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797)インストールします。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-116">If this happens, try installing SandBlast Mobile Protect [manually from the App Store](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797).</span></span>
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="8ef8d-117">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="8ef8d-117">Still need help?</span></span> <span data-ttu-id="8ef8d-118">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-118">Contact your company support.</span></span> <span data-ttu-id="8ef8d-119">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="8ef8d-119">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

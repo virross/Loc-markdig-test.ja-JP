@@ -11,77 +11,77 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 ms.openlocfilehash: c1b49619e07c4381f7bc5314ff9e25c063ad3e1d
-ms.sourcegitcommit: 6daa83bdaf9186cb2e5f59ba81add4cf297ee1cd
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="manage-operating-system-versions-with-intune"></a>Intune を使用したオペレーティング システムのバージョン管理
-最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。 Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。  Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。
+# <a name="manage-operating-system-versions-with-intune"></a><span data-ttu-id="742e8-103">Intune を使用したオペレーティング システムのバージョン管理</span><span class="sxs-lookup"><span data-stu-id="742e8-103">Manage operating system versions with Intune</span></span>
+<span data-ttu-id="742e8-104">最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。</span><span class="sxs-lookup"><span data-stu-id="742e8-104">On modern mobile and desktop platforms, major updates, patches, and new versions release at a rapid pace.</span></span> <span data-ttu-id="742e8-105">Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。</span><span class="sxs-lookup"><span data-stu-id="742e8-105">You have controls to fully manage updates and patches on Windows, but other platforms like iOS and Android require your end users to participate in the process.</span></span>  <span data-ttu-id="742e8-106">Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。</span><span class="sxs-lookup"><span data-stu-id="742e8-106">Microsoft Intune has the capabilities to help you structure your operating system version management across different platforms.</span></span>
 
-Intune は、次のような一般的なシナリオに対処するのに役立ちます。 
-- エンド ユーザー デバイスのオペレーティング システムのバージョンを判断する
-- 新しいオペレーティング システムのリリースを検証している間、デバイス上の組織のデータへのアクセスを制御する
-- 組織で承認されたオペレーティング システムの最新バージョンにアップグレードするようにエンドユーザーに奨励または要求する
-- 組織全体のオペレーティング システムの新しいバージョンへのロールアウトを管理する
+<span data-ttu-id="742e8-107">Intune は、次のような一般的なシナリオに対処するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="742e8-107">Intune can help you address these common scenarios:</span></span> 
+- <span data-ttu-id="742e8-108">エンド ユーザー デバイスのオペレーティング システムのバージョンを判断する</span><span class="sxs-lookup"><span data-stu-id="742e8-108">Determine which operating system versions are on your end-user devices</span></span>
+- <span data-ttu-id="742e8-109">新しいオペレーティング システムのリリースを検証している間、デバイス上の組織のデータへのアクセスを制御する</span><span class="sxs-lookup"><span data-stu-id="742e8-109">Control access to organizational data on devices while you validate a new operating system release</span></span>
+- <span data-ttu-id="742e8-110">組織で承認されたオペレーティング システムの最新バージョンにアップグレードするようにエンドユーザーに奨励または要求する</span><span class="sxs-lookup"><span data-stu-id="742e8-110">Encourage/require end users to upgrade to the latest operating system version approved by your organization</span></span>
+- <span data-ttu-id="742e8-111">組織全体のオペレーティング システムの新しいバージョンへのロールアウトを管理する</span><span class="sxs-lookup"><span data-stu-id="742e8-111">Manage an organization-wide rollout to a new operating system version</span></span>
   
-## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>Intune モバイル デバイス管理 (MDM) の登録制限を使用したオペレーティング システムのバージョン管理
-Intune MDM の登録制限を使用すると、クライアント デバイスの登録を許可する前に、デバイスの要件を定義できます。 この目的は、組織のリソースへのアクセス権を得る前に、エンド ユーザーに準拠しているデバイスのみを登録することを義務付けることです。 デバイスの要件には、サポートされているプラットフォームで許可されるオペレーティング システムの最小バージョンと最大バージョンの両方が含まれます。
+## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a><span data-ttu-id="742e8-112">Intune モバイル デバイス管理 (MDM) の登録制限を使用したオペレーティング システムのバージョン管理</span><span class="sxs-lookup"><span data-stu-id="742e8-112">Operating system version control using Intune mobile device management (MDM) enrollment restrictions</span></span>
+<span data-ttu-id="742e8-113">Intune MDM の登録制限を使用すると、クライアント デバイスの登録を許可する前に、デバイスの要件を定義できます。</span><span class="sxs-lookup"><span data-stu-id="742e8-113">Intune MDM enrollment restrictions let you define the client device requirements before you allow enrollment of the device.</span></span> <span data-ttu-id="742e8-114">この目的は、組織のリソースへのアクセス権を得る前に、エンド ユーザーに準拠しているデバイスのみを登録することを義務付けることです。</span><span class="sxs-lookup"><span data-stu-id="742e8-114">The goal is to require that your end users enroll only compliant devices before gaining access organizational resources.</span></span> <span data-ttu-id="742e8-115">デバイスの要件には、サポートされているプラットフォームで許可されるオペレーティング システムの最小バージョンと最大バージョンの両方が含まれます。</span><span class="sxs-lookup"><span data-stu-id="742e8-115">Device requirements include both minimum and maximum allowed operating system versions for supported platforms.</span></span>
  
 ![プラットフォーム構成の制限ブレード](./media/os-version-platform-configurations.png) 
  
-### <a name="in-practice"></a>実際
-組織はデバイスの種類の制限を使用して、組織のリソースへのアクセスを制御しています。次の設定を使用します。 
-1. オペレーティング システムの最小バージョンを使用して、組織内のエンド ユーザーのプラットフォームを最新かつサポートされた状態に保ちます。 
-2. オペレーティング システムの最大バージョンを指定しない (制限なし) ままにするか、組織内で検証済みの最新バージョンに設定して、オペレーティング システムの新しいリリースを内部テストするための時間を確保します。
+### <a name="in-practice"></a><span data-ttu-id="742e8-117">実際</span><span class="sxs-lookup"><span data-stu-id="742e8-117">In practice</span></span>
+<span data-ttu-id="742e8-118">組織はデバイスの種類の制限を使用して、組織のリソースへのアクセスを制御しています。次の設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="742e8-118">Organizations are using device type restrictions to control access to organizational resources by using the following settings:</span></span> 
+1. <span data-ttu-id="742e8-119">オペレーティング システムの最小バージョンを使用して、組織内のエンド ユーザーのプラットフォームを最新かつサポートされた状態に保ちます。</span><span class="sxs-lookup"><span data-stu-id="742e8-119">Use minimum operating system version to keep end users on current and supported platforms in your organization.</span></span> 
+2. <span data-ttu-id="742e8-120">オペレーティング システムの最大バージョンを指定しない (制限なし) ままにするか、組織内で検証済みの最新バージョンに設定して、オペレーティング システムの新しいリリースを内部テストするための時間を確保します。</span><span class="sxs-lookup"><span data-stu-id="742e8-120">Leave maximum operating system unspecified (no limit) or set it to the last validated version in your organization to allow time for internal testing of new operating system releases.</span></span>
 
-詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)」を参照してください。
+<span data-ttu-id="742e8-121">詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="742e8-121">For details, see [Set device type restrictions](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions).</span></span>
  
-## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>オペレーティング システム バージョンのレポートと Intune MDM デバイス コンプライアンス ポリシーの順守
-Intune MDM デバイス コンプライアンス ポリシーでは、次のツールが提供されています。 
-- コンプライアンス規則の指定
-- レポートを通じたコンプライアンスの状態の表示
-- デバイスの検疫と条件付きアクセスによるコンプライアンス非対応に対するアクション
+## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a><span data-ttu-id="742e8-122">オペレーティング システム バージョンのレポートと Intune MDM デバイス コンプライアンス ポリシーの順守</span><span class="sxs-lookup"><span data-stu-id="742e8-122">Operating system version reporting and compliance with Intune MDM device compliance policies</span></span>
+<span data-ttu-id="742e8-123">Intune MDM デバイス コンプライアンス ポリシーでは、次のツールが提供されています。</span><span class="sxs-lookup"><span data-stu-id="742e8-123">Intune MDM device compliance policies provide you the following tools:</span></span> 
+- <span data-ttu-id="742e8-124">コンプライアンス規則の指定</span><span class="sxs-lookup"><span data-stu-id="742e8-124">Specify compliance rules</span></span>
+- <span data-ttu-id="742e8-125">レポートを通じたコンプライアンスの状態の表示</span><span class="sxs-lookup"><span data-stu-id="742e8-125">View compliance status via reporting</span></span>
+- <span data-ttu-id="742e8-126">デバイスの検疫と条件付きアクセスによるコンプライアンス非対応に対するアクション</span><span class="sxs-lookup"><span data-stu-id="742e8-126">Act on non-compliance via device quarantine and conditional access</span></span>
 
-登録制限と同じく、デバイス コンプライアンス ポリシーには、オペレーティング システムの最小バージョンと最大バージョンの両方が含まれています。 ポリシーには、準拠するための猶予期間をユーザーに与えるためのコンプライアンス タイムラインもあります。 デバイス コンプライアンス ポリシーは、登録済みのエンド ユーザー デバイスを組織のポリシーに準拠するように維持します。
+<span data-ttu-id="742e8-127">登録制限と同じく、デバイス コンプライアンス ポリシーには、オペレーティング システムの最小バージョンと最大バージョンの両方が含まれています。</span><span class="sxs-lookup"><span data-stu-id="742e8-127">Like enrollment restrictions, device compliance policies include both minimum and maximum operating system versions.</span></span> <span data-ttu-id="742e8-128">ポリシーには、準拠するための猶予期間をユーザーに与えるためのコンプライアンス タイムラインもあります。</span><span class="sxs-lookup"><span data-stu-id="742e8-128">Policies also have a compliance timeline to provide your users a grace period to get compliant.</span></span> <span data-ttu-id="742e8-129">デバイス コンプライアンス ポリシーは、登録済みのエンド ユーザー デバイスを組織のポリシーに準拠するように維持します。</span><span class="sxs-lookup"><span data-stu-id="742e8-129">Device compliance policies keep your enrolled end-user devices compliant with organizational policy.</span></span>
 
 ![デバイス コンプライアンス - コンプライアンス非対応に対するアクション](./media/os-version-actions-noncompliance.png) 
 
-### <a name="in-practice"></a>実際
-組織は、登録制限と同じシナリオにデバイス コンプライアンス ポリシーを使用しています。 これらのポリシーは、組織内のユーザーのオペレーティング システムのバージョンを最新かつ検証済みの状態に維持します。 エンド ユーザーのデバイスが準拠していない状態になった場合に、エンド ユーザーのオペレーティング システムが組織でサポートされる範囲になるまで、条件付きアクセスを使用して組織のリソースへのアクセスをブロックすることができます。 エンド ユーザーには、非対応になっていることが通知され、アクセスを回復する手順が提供されます。   
+### <a name="in-practice"></a><span data-ttu-id="742e8-131">実際</span><span class="sxs-lookup"><span data-stu-id="742e8-131">In practice</span></span>
+<span data-ttu-id="742e8-132">組織は、登録制限と同じシナリオにデバイス コンプライアンス ポリシーを使用しています。</span><span class="sxs-lookup"><span data-stu-id="742e8-132">Organizations are using device compliance policies for the same scenarios as enrollment restrictions.</span></span> <span data-ttu-id="742e8-133">これらのポリシーは、組織内のユーザーのオペレーティング システムのバージョンを最新かつ検証済みの状態に維持します。</span><span class="sxs-lookup"><span data-stu-id="742e8-133">These policies keep users on current, validated operating system versions in your organization.</span></span> <span data-ttu-id="742e8-134">エンド ユーザーのデバイスが準拠していない状態になった場合に、エンド ユーザーのオペレーティング システムが組織でサポートされる範囲になるまで、条件付きアクセスを使用して組織のリソースへのアクセスをブロックすることができます。</span><span class="sxs-lookup"><span data-stu-id="742e8-134">When end-user devices fall out of compliance, access to organizational resources can be blocked via conditional access until end users are within the supported operating system range for your organization.</span></span> <span data-ttu-id="742e8-135">エンド ユーザーには、非対応になっていることが通知され、アクセスを回復する手順が提供されます。</span><span class="sxs-lookup"><span data-stu-id="742e8-135">End users are notified that they are out of compliance and they are provided the steps to regain access.</span></span>   
 
-詳細については、「[Intune でのデバイス コンプライアンスの概要](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)」を参照してください。
+<span data-ttu-id="742e8-136">詳細については、「[Intune でのデバイス コンプライアンスの概要](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="742e8-136">For details, see [Get started with device compliance](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).</span></span>
  
-## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Intune アプリの保護ポリシーを使用したオペレーティング システムのバージョン管理    
-Intune アプリの保護ポリシーとモバイル アプリケーション管理 (MAM) のアクセス設定では、アプリ層でのオペレーティング システムの最小バージョンを指定できます。 これにより、オペレーティング システムを指定した最小バージョンに更新するようにエンド ユーザーに通知、推奨、または要求することができます。
+## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a><span data-ttu-id="742e8-137">Intune アプリの保護ポリシーを使用したオペレーティング システムのバージョン管理</span><span class="sxs-lookup"><span data-stu-id="742e8-137">Operating system version controls using Intune app protection policies</span></span>    
+<span data-ttu-id="742e8-138">Intune アプリの保護ポリシーとモバイル アプリケーション管理 (MAM) のアクセス設定では、アプリ層でのオペレーティング システムの最小バージョンを指定できます。</span><span class="sxs-lookup"><span data-stu-id="742e8-138">Intune app protection policies and mobile application management (MAM) access settings let you to specify the minimum operating system version at the app layer.</span></span> <span data-ttu-id="742e8-139">これにより、オペレーティング システムを指定した最小バージョンに更新するようにエンド ユーザーに通知、推奨、または要求することができます。</span><span class="sxs-lookup"><span data-stu-id="742e8-139">This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.</span></span>
  
-2 つのオプションがあります。 
+<span data-ttu-id="742e8-140">2 つのオプションがあります。</span><span class="sxs-lookup"><span data-stu-id="742e8-140">You have two different options:</span></span> 
 
-|警告  |ブロック  |
+|<span data-ttu-id="742e8-141">警告</span><span class="sxs-lookup"><span data-stu-id="742e8-141">Warn</span></span>  |<span data-ttu-id="742e8-142">ブロック</span><span class="sxs-lookup"><span data-stu-id="742e8-142">Block</span></span>  |
 |---------|---------|
-|警告は、エンド ユーザーがアプリケーションの保護ポリシーまたは MAM のアクセス設定がされたアプリを、指定されたバージョンより古いオペレーティング システムのバージョンで開いた場合に、アップグレードする必要があることをエンド ユーザーに通知します。 アプリと組織のデータへのアクセスが許可されます。|ブロックは、エンド ユーザーがアプリケーションの保護ポリシーまたは MAM のアクセス設定がされたアプリを、指定されたバージョンより古いオペレーティング システムのバージョンで開いたときに、アップグレードする必要があることをエンド ユーザーに通知します。 アプリと組織のデータへのアクセスは許可されません。|
+|<span data-ttu-id="742e8-143">警告は、エンド ユーザーがアプリケーションの保護ポリシーまたは MAM のアクセス設定がされたアプリを、指定されたバージョンより古いオペレーティング システムのバージョンで開いた場合に、アップグレードする必要があることをエンド ユーザーに通知します。</span><span class="sxs-lookup"><span data-stu-id="742e8-143">Warn informs the end user that they should upgrade if they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version.</span></span> <span data-ttu-id="742e8-144">アプリと組織のデータへのアクセスが許可されます。</span><span class="sxs-lookup"><span data-stu-id="742e8-144">Access is allowed for the app and organizational data.</span></span>|<span data-ttu-id="742e8-145">ブロックは、エンド ユーザーがアプリケーションの保護ポリシーまたは MAM のアクセス設定がされたアプリを、指定されたバージョンより古いオペレーティング システムのバージョンで開いたときに、アップグレードする必要があることをエンド ユーザーに通知します。</span><span class="sxs-lookup"><span data-stu-id="742e8-145">Block informs the end user that they must upgrade when they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version.</span></span> <span data-ttu-id="742e8-146">アプリと組織のデータへのアクセスは許可されません。</span><span class="sxs-lookup"><span data-stu-id="742e8-146">Access is not allowed for app and organizational data.</span></span>|
 |![Android の更新の警告ダイアログ](./media/os-version-update-warning.png)    |![アプリのアクセスのブロック ダイアログ](./media/os-version-access-blocked.png)          |
 
  
-### <a name="in-practice"></a>実際
-現在、組織は、アプリを開いたときまたは再開したときに、アプリを最新に保つ必要性についてエンド ユーザーを教育する方法として、アプリの保護ポリシー設定を使用しています。 構成例では、エンド ユーザーは最新バージョン -1 で警告され、最新バージョン -2 でブロックされます。
+### <a name="in-practice"></a><span data-ttu-id="742e8-149">実際</span><span class="sxs-lookup"><span data-stu-id="742e8-149">In practice</span></span>
+<span data-ttu-id="742e8-150">現在、組織は、アプリを開いたときまたは再開したときに、アプリを最新に保つ必要性についてエンド ユーザーを教育する方法として、アプリの保護ポリシー設定を使用しています。</span><span class="sxs-lookup"><span data-stu-id="742e8-150">Organizations are using app protection policy settings today when apps are opened or resumed as a way to educate end users about the need to keep their apps current.</span></span> <span data-ttu-id="742e8-151">構成例では、エンド ユーザーは最新バージョン -1 で警告され、最新バージョン -2 でブロックされます。</span><span class="sxs-lookup"><span data-stu-id="742e8-151">An example configuration is that end users are warned on current version minus one and blocked on current version minus two.</span></span>
  
-詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](https://docs.microsoft.com/intune/app-protection-policies)」を参照してください。
+<span data-ttu-id="742e8-152">詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](https://docs.microsoft.com/intune/app-protection-policies)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="742e8-152">For details, see [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies).</span></span>
 
-## <a name="managing-a-new-operating-system-version-rollout"></a>新しいオペレーティング システム バージョンのロールアウトの管理
-この記事で説明されている Intune 機能を使用すると、定義したタイムライン内で、組織を新しいオペレーティング システム バージョンに移行することができます。 次の手順では、サンプルの展開モデルを提供し、ユーザーをオペレーティング システム v1 からオペレーティング システム v2 に 7 日間で移行します。
-- **手順 1**: 登録制限を使用して、デバイスを登録する最小バージョンとしてオペレーティング システム v2 を要求します。 これにより、登録時に新しいエンド ユーザーのデバイスを確実に準拠させます。
-- **手順 2a**: Intune アプリの保護ポリシーを使用して、アプリを開いたときまたは再開したときに、オペレーティング システム v2 が必要なことをユーザーに警告します。
-- **手順 2b**: デバイス コンプライアンス ポリシーを使用して、デバイスを準拠させるための最小バージョンとしてオペレーティング システム v2 を要求します。 コンプライアンス非対応の**アクション**を使用して、猶予期間として 7 日間を与え、タイムラインと要件と共にエンド ユーザーにメールで通知を送信します。
-  -  これらのポリシーは、エンド ユーザーに既存のデバイスを更新する必要があることを通知します。通知は、電子メール、Intune ポータル サイトを通じて、およびアプリの保護ポリシーが有効になっているアプリを開いたときに行われます。
-  - コンプライアンス レポートを実行して、非コンプライアンスになっているユーザーを特定することができます。 
-- **手順 3a**: Intune アプリの保護ポリシーを使用して、デバイスがオペレーティング システム v2 を実行していない場合、アプリを開いたときまたは再開したときにユーザーをブロックします。
-- **手順 3b**: デバイス コンプライアンス ポリシーを使用して、デバイスを準拠させるための最小バージョンとしてオペレーティング システム v2 を要求します。
-  - これらのポリシーでは、組織のデータに引き続きアクセスするために、デバイスを更新することが求められます。 デバイスの条件付きアクセスと共に使用すると、保護されたサービスがブロックされます。 アプリの保護ポリシーが有効になっているアプリは、開いたとき、または組織のデータにアクセスするときにブロックされます。
+## <a name="managing-a-new-operating-system-version-rollout"></a><span data-ttu-id="742e8-153">新しいオペレーティング システム バージョンのロールアウトの管理</span><span class="sxs-lookup"><span data-stu-id="742e8-153">Managing a new operating system version rollout</span></span>
+<span data-ttu-id="742e8-154">この記事で説明されている Intune 機能を使用すると、定義したタイムライン内で、組織を新しいオペレーティング システム バージョンに移行することができます。</span><span class="sxs-lookup"><span data-stu-id="742e8-154">You can use the Intune capabilities described in this article to help you move your organization to a new operating system version within the timeline you define.</span></span> <span data-ttu-id="742e8-155">次の手順では、サンプルの展開モデルを提供し、ユーザーをオペレーティング システム v1 からオペレーティング システム v2 に 7 日間で移行します。</span><span class="sxs-lookup"><span data-stu-id="742e8-155">The following steps provide a sample deployment model to move your users from operating system v1 to operating system v2 in seven days.</span></span>
+- <span data-ttu-id="742e8-156">**手順 1**: 登録制限を使用して、デバイスを登録する最小バージョンとしてオペレーティング システム v2 を要求します。</span><span class="sxs-lookup"><span data-stu-id="742e8-156">**Step 1**: Use enrollment restrictions to require operating system v2 as the minimum version to enroll the device.</span></span> <span data-ttu-id="742e8-157">これにより、登録時に新しいエンド ユーザーのデバイスを確実に準拠させます。</span><span class="sxs-lookup"><span data-stu-id="742e8-157">This ensures new end-user devices are compliant at enrollment time.</span></span>
+- <span data-ttu-id="742e8-158">**手順 2a**: Intune アプリの保護ポリシーを使用して、アプリを開いたときまたは再開したときに、オペレーティング システム v2 が必要なことをユーザーに警告します。</span><span class="sxs-lookup"><span data-stu-id="742e8-158">**Step 2a**: Use Intune app protection policies to warn users when the app opens or resumes that operating system v2 is required.</span></span>
+- <span data-ttu-id="742e8-159">**手順 2b**:</span><span class="sxs-lookup"><span data-stu-id="742e8-159">**Step 2b**.</span></span> <span data-ttu-id="742e8-160">デバイス コンプライアンス ポリシーを使用して、デバイスを準拠させるための最小バージョンとしてオペレーティング システム v2 を要求します。</span><span class="sxs-lookup"><span data-stu-id="742e8-160">Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant.</span></span> <span data-ttu-id="742e8-161">コンプライアンス非対応の**アクション**を使用して、猶予期間として 7 日間を与え、タイムラインと要件と共にエンド ユーザーにメールで通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="742e8-161">Use **Actions** for non-compliance to allow a seven-day grace period and to send end users an email notification with your timeline and requirements.</span></span>
+  -  <span data-ttu-id="742e8-162">これらのポリシーは、エンド ユーザーに既存のデバイスを更新する必要があることを通知します。通知は、電子メール、Intune ポータル サイトを通じて、およびアプリの保護ポリシーが有効になっているアプリを開いたときに行われます。</span><span class="sxs-lookup"><span data-stu-id="742e8-162">These policies will inform end users that existing devices need to be updated through email, the Intune Company Portal, and when the app is opened for apps enabled with an app protection policy.</span></span>
+  - <span data-ttu-id="742e8-163">コンプライアンス レポートを実行して、非コンプライアンスになっているユーザーを特定することができます。</span><span class="sxs-lookup"><span data-stu-id="742e8-163">You can run a compliance report to identify users that are out of compliance.</span></span> 
+- <span data-ttu-id="742e8-164">**手順 3a**: Intune アプリの保護ポリシーを使用して、デバイスがオペレーティング システム v2 を実行していない場合、アプリを開いたときまたは再開したときにユーザーをブロックします。</span><span class="sxs-lookup"><span data-stu-id="742e8-164">**Step 3a**: Use Intune app protection policies to block users when an app opens or resumes if the device is not running operating system v2.</span></span>
+- <span data-ttu-id="742e8-165">**手順 3b**: デバイス コンプライアンス ポリシーを使用して、デバイスを準拠させるための最小バージョンとしてオペレーティング システム v2 を要求します。</span><span class="sxs-lookup"><span data-stu-id="742e8-165">**Step 3b**: Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant.</span></span>
+  - <span data-ttu-id="742e8-166">これらのポリシーでは、組織のデータに引き続きアクセスするために、デバイスを更新することが求められます。</span><span class="sxs-lookup"><span data-stu-id="742e8-166">These policies require devices to be updated for them to continue to access organizational data.</span></span> <span data-ttu-id="742e8-167">デバイスの条件付きアクセスと共に使用すると、保護されたサービスがブロックされます。</span><span class="sxs-lookup"><span data-stu-id="742e8-167">Protected services are blocked when used with device conditional access.</span></span> <span data-ttu-id="742e8-168">アプリの保護ポリシーが有効になっているアプリは、開いたとき、または組織のデータにアクセスするときにブロックされます。</span><span class="sxs-lookup"><span data-stu-id="742e8-168">Apps enabled with an app protection policy are blocked when opened or when they access organizational data.</span></span>
 
-## <a name="next-steps"></a>次のステップ
-次のリソースを使用して、組織内のオペレーティング システムのバージョンを管理します。 
+## <a name="next-steps"></a><span data-ttu-id="742e8-169">次のステップ</span><span class="sxs-lookup"><span data-stu-id="742e8-169">Next steps</span></span>
+<span data-ttu-id="742e8-170">次のリソースを使用して、組織内のオペレーティング システムのバージョンを管理します。</span><span class="sxs-lookup"><span data-stu-id="742e8-170">Use the following resources to manage operating system versions in your organization:</span></span> 
 
-- [デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Intune のデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
-- [アプリ保護ポリシーを作成して割り当てる方法](https://docs.microsoft.com/intune/app-protection-policies)
+- [<span data-ttu-id="742e8-171">デバイスの種類の制限を設定する</span><span class="sxs-lookup"><span data-stu-id="742e8-171">Set device type restrictions</span></span>](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [<span data-ttu-id="742e8-172">Intune のデバイス コンプライアンス ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="742e8-172">Get started with device compliance</span></span>](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [<span data-ttu-id="742e8-173">アプリ保護ポリシーを作成して割り当てる方法</span><span class="sxs-lookup"><span data-stu-id="742e8-173">How to create and assign app protection policies</span></span>](https://docs.microsoft.com/intune/app-protection-policies)

@@ -17,15 +17,15 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 3d16c46305ce373f30254c69cb10de08382c98b2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="you-need-to-update-your-android-device"></a>Android デバイスを更新する必要がある
+# <a name="you-need-to-update-your-android-device"></a><span data-ttu-id="1201d-102">Android デバイスを更新する必要がある</span><span class="sxs-lookup"><span data-stu-id="1201d-102">You need to update your Android device</span></span>
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
-**[設定]** > **[タブレット情報]** の順にタップして、Android デバイスを更新します。 __[設定]__ セクションで、__[更新プログラムの確認]__ をタップし、利用可能な更新プログラムをインストールします。
+<span data-ttu-id="1201d-103">**[設定]** > **[タブレット情報]** の順にタップして、Android デバイスを更新します。</span><span class="sxs-lookup"><span data-stu-id="1201d-103">Update your Android device by tapping **Settings** > **About phone**.</span></span> <span data-ttu-id="1201d-104">__[設定]__ セクションで、__[更新プログラムの確認]__ をタップし、利用可能な更新プログラムをインストールします。</span><span class="sxs-lookup"><span data-stu-id="1201d-104">In the __Settings__ section, tap __Check for Updates__ and install the available update.</span></span>
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="1201d-105">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="1201d-105">Still need help?</span></span> <span data-ttu-id="1201d-106">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="1201d-106">Contact your company support.</span></span> <span data-ttu-id="1201d-107">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="1201d-107">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

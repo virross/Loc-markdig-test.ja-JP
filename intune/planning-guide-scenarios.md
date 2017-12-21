@@ -15,75 +15,75 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
+# <a name="identify-mobile-device-management-use-case-scenarios"></a><span data-ttu-id="efeb4-103">モバイル デバイス管理のユース ケース シナリオを特定する</span><span class="sxs-lookup"><span data-stu-id="efeb4-103">Identify mobile device management use-case scenarios</span></span>
 
-ユース ケース シナリオの特定は、正常な Intune 展開のための計画プロセスにおいて重要な部分です。 ユース ケース シナリオが役立つのは、ユーザーの種類またはロール、ユーザーのデバイス (たとえば、会社または個人) の所有権によって、ユーザーを管理しやすいグループに分割できるからです。
+<span data-ttu-id="efeb4-104">ユース ケース シナリオの特定は、正常な Intune 展開のための計画プロセスにおいて重要な部分です。</span><span class="sxs-lookup"><span data-stu-id="efeb4-104">Identifying your use-case scenarios is an important part of the planning process for a successful Intune deployment.</span></span> <span data-ttu-id="efeb4-105">ユース ケース シナリオが役立つのは、ユーザーの種類またはロール、ユーザーのデバイス (たとえば、会社または個人) の所有権によって、ユーザーを管理しやすいグループに分割できるからです。</span><span class="sxs-lookup"><span data-stu-id="efeb4-105">Use-case scenarios are helpful because they let you segment your users into manageable groups by user type or role, and the ownership of the user's device (for example, company or personal).</span></span>
 
-組織が Intune ユース ケース シナリオ、組織グループ、そして各ユース ケースに関連付けられるモバイル デバイス プラットフォームなどを特定するのに役立つ、いくつかの例について説明します。
+<span data-ttu-id="efeb4-106">組織が Intune ユース ケース シナリオ、組織グループ、そして各ユース ケースに関連付けられるモバイル デバイス プラットフォームなどを特定するのに役立つ、いくつかの例について説明します。</span><span class="sxs-lookup"><span data-stu-id="efeb4-106">Let’s discuss a few examples to help your organization identify Intune use-case scenarios, as well as organizational groups, and mobile device platforms associated with each use case.</span></span>
 
-## <a name="device-ownership"></a>デバイスの所有権
-お客様の展開向けの主なユース ケース シナリオを特定するには、組織の Intune 展開の目標と目的を確認することから始めます。 Intune 展開計画の範囲内で、以下の質問にお答えください。
+## <a name="device-ownership"></a><span data-ttu-id="efeb4-107">デバイスの所有権</span><span class="sxs-lookup"><span data-stu-id="efeb4-107">Device ownership</span></span>
+<span data-ttu-id="efeb4-108">お客様の展開向けの主なユース ケース シナリオを特定するには、組織の Intune 展開の目標と目的を確認することから始めます。</span><span class="sxs-lookup"><span data-stu-id="efeb4-108">You can begin by referring to your organization's Intune deployment goals and objectives to help identity the main use-case scenarios for your deployment.</span></span> <span data-ttu-id="efeb4-109">Intune 展開計画の範囲内で、以下の質問にお答えください。</span><span class="sxs-lookup"><span data-stu-id="efeb4-109">Within the scope of your Intune deployment plan, answer the following questions:</span></span>
 
--   会社所有のデバイスをサポートする予定ですか。
+-   <span data-ttu-id="efeb4-110">会社所有のデバイスをサポートする予定ですか。</span><span class="sxs-lookup"><span data-stu-id="efeb4-110">Are you planning to support corporate owned devices?</span></span>
 
--   個人所有のデバイス (BYOD) をサポートする予定ですか。
+-   <span data-ttu-id="efeb4-111">個人所有のデバイス (BYOD) をサポートする予定ですか。</span><span class="sxs-lookup"><span data-stu-id="efeb4-111">Are you planning to support personally owned devices (BYOD)?</span></span>
 
-これらの質問はどちらか 1 つを選択する類のものではありません。 両方の形式のデバイス所有権をサポートして組織の目標を果たす必要があると気付く場合があります。 サブ ユース ケースは、異なるデバイス管理ポリシーを適用する場所を明らかにするのに役立ちます。
+<span data-ttu-id="efeb4-112">これらの質問はどちらか 1 つを選択する類のものではありません。</span><span class="sxs-lookup"><span data-stu-id="efeb4-112">These are not either/or options.</span></span> <span data-ttu-id="efeb4-113">両方の形式のデバイス所有権をサポートして組織の目標を果たす必要があると気付く場合があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-113">You may find you need to support both forms of device ownership to meet your organizational goals.</span></span> <span data-ttu-id="efeb4-114">サブ ユース ケースは、異なるデバイス管理ポリシーを適用する場所を明らかにするのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="efeb4-114">The sub-use-cases will help clarify where to apply the different device management policies.</span></span>
 
-### <a name="user-type-or-device-role"></a>ユーザーの種類またはデバイスのロール
+### <a name="user-type-or-device-role"></a><span data-ttu-id="efeb4-115">ユーザーの種類またはデバイスのロール</span><span class="sxs-lookup"><span data-stu-id="efeb4-115">User type or device role</span></span>
 
-各ユース ケース シナリオにサブ ユース ケースが含まれるかどうかを判断します。 たとえば、組織が会社のユース ケース シナリオをサポートするための要件を特定していて、そのシナリオに、以下のようなユーザーの種類またはデバイスのロールに基づいた追加のサブ ユース ケースが含まれている場合があります。
+<span data-ttu-id="efeb4-116">各ユース ケース シナリオにサブ ユース ケースが含まれるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="efeb4-116">Determine if each use-case scenario also includes sub-use-cases.</span></span> <span data-ttu-id="efeb4-117">たとえば、組織が会社のユース ケース シナリオをサポートするための要件を特定していて、そのシナリオに、以下のようなユーザーの種類またはデバイスのロールに基づいた追加のサブ ユース ケースが含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-117">For example, your organization may have identified requirements to support a corporate use-case scenario that includes additional sub-use-cases based on user type or device role, such as:</span></span>
 
--   インフォメーション ワーカー
+-   <span data-ttu-id="efeb4-118">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-118">Information worker</span></span>
 
--   役員
+-   <span data-ttu-id="efeb4-119">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-119">Executive</span></span>
 
--   キオスク
+-   <span data-ttu-id="efeb4-120">キオスク</span><span class="sxs-lookup"><span data-stu-id="efeb4-120">Kiosk</span></span>
 
-ユース ケース シナリオとサブ ユース ケース シナリオのいくつかの例を次に示します。
+<span data-ttu-id="efeb4-121">ユース ケース シナリオとサブ ユース ケース シナリオのいくつかの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="efeb4-121">Here are a few examples of use-case and sub-use-case scenarios:</span></span>
 
-| **ユース ケース** | **サブ ユース ケース** |
+| <span data-ttu-id="efeb4-122">**ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-122">**Use cases**</span></span> | <span data-ttu-id="efeb4-123">**サブ ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-123">**Sub-use cases**</span></span> |
 |:---:|:---:|
-| 企業 | インフォメーション ワーカー |              
-| 企業 | 役員 |           
-| 企業 | キオスク |
-| BYOD | インフォメーション ワーカー |           
-| BYOD | 役員 |
+| <span data-ttu-id="efeb4-124">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-124">Corporate</span></span> | <span data-ttu-id="efeb4-125">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-125">Information worker</span></span> |              
+| <span data-ttu-id="efeb4-126">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-126">Corporate</span></span> | <span data-ttu-id="efeb4-127">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-127">Executives</span></span> |           
+| <span data-ttu-id="efeb4-128">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-128">Corporate</span></span> | <span data-ttu-id="efeb4-129">キオスク</span><span class="sxs-lookup"><span data-stu-id="efeb4-129">Kiosk</span></span> |
+| <span data-ttu-id="efeb4-130">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-130">BYOD</span></span> | <span data-ttu-id="efeb4-131">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-131">Information worker</span></span> |           
+| <span data-ttu-id="efeb4-132">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-132">BYOD</span></span> | <span data-ttu-id="efeb4-133">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-133">Executives</span></span> |
 
-[上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、お客様の組織のユース ケース シナリオとサブ ユース ケース シナリオを入力できます。
+<span data-ttu-id="efeb4-134">[上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、お客様の組織のユース ケース シナリオとサブ ユース ケース シナリオを入力できます。</span><span class="sxs-lookup"><span data-stu-id="efeb4-134">You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to enter your organization’s use-case and sub-use-case scenarios.</span></span>
 
-## <a name="organizational-groups-for-your-scenarios"></a>シナリオ用の組織のグループ
+## <a name="organizational-groups-for-your-scenarios"></a><span data-ttu-id="efeb4-135">シナリオ用の組織のグループ</span><span class="sxs-lookup"><span data-stu-id="efeb4-135">Organizational groups for your scenarios</span></span>
 
-次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 たとえば、
+<span data-ttu-id="efeb4-136">次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-136">Now you need to identify the organizational groups that are associated with each use-case and sub-use-case scenario.</span></span> <span data-ttu-id="efeb4-137">たとえば、</span><span class="sxs-lookup"><span data-stu-id="efeb4-137">For example:</span></span>
 
-| **ユース ケース** | **サブ ユース ケース** | **組織グループ** |
+| <span data-ttu-id="efeb4-138">**ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-138">**Use cases**</span></span> | <span data-ttu-id="efeb4-139">**サブ ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-139">**Sub-use cases**</span></span> | <span data-ttu-id="efeb4-140">**組織グループ**</span><span class="sxs-lookup"><span data-stu-id="efeb4-140">**Organizational groups**</span></span> |
 |:---:|:---:|:---:|
-| 企業 | インフォメーション ワーカー | 人事、財務 |               
-| 企業 | 役員 | 人事、財務 |            
-| 企業 | キオスク | 小売 |
-| BYOD | インフォメーション ワーカー | マーケティング、営業 |            
-| BYOD | 役員 | マーケティング、営業 |
+| <span data-ttu-id="efeb4-141">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-141">Corporate</span></span> | <span data-ttu-id="efeb4-142">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-142">Information worker</span></span> | <span data-ttu-id="efeb4-143">人事、財務</span><span class="sxs-lookup"><span data-stu-id="efeb4-143">HR, Finance</span></span> |               
+| <span data-ttu-id="efeb4-144">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-144">Corporate</span></span> | <span data-ttu-id="efeb4-145">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-145">Executive</span></span> | <span data-ttu-id="efeb4-146">人事、財務</span><span class="sxs-lookup"><span data-stu-id="efeb4-146">HR, Finance</span></span> |            
+| <span data-ttu-id="efeb4-147">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-147">Corporate</span></span> | <span data-ttu-id="efeb4-148">キオスク</span><span class="sxs-lookup"><span data-stu-id="efeb4-148">Kiosk</span></span> | <span data-ttu-id="efeb4-149">小売</span><span class="sxs-lookup"><span data-stu-id="efeb4-149">Retail</span></span> |
+| <span data-ttu-id="efeb4-150">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-150">BYOD</span></span> | <span data-ttu-id="efeb4-151">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-151">Information worker</span></span> | <span data-ttu-id="efeb4-152">マーケティング、営業</span><span class="sxs-lookup"><span data-stu-id="efeb4-152">Marketing, Sales</span></span> |            
+| <span data-ttu-id="efeb4-153">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-153">BYOD</span></span> | <span data-ttu-id="efeb4-154">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-154">Executive</span></span> | <span data-ttu-id="efeb4-155">マーケティング、営業</span><span class="sxs-lookup"><span data-stu-id="efeb4-155">Marketing, Sales</span></span> |
 
 
-## <a name="mobile-device-platforms-for-your-scenarios"></a>シナリオに合ったモバイル デバイス プラットフォーム
+## <a name="mobile-device-platforms-for-your-scenarios"></a><span data-ttu-id="efeb4-156">シナリオに合ったモバイル デバイス プラットフォーム</span><span class="sxs-lookup"><span data-stu-id="efeb4-156">Mobile device platforms for your scenarios</span></span>
 
-次に、各ユース ケース シナリオに関連付けられているモバイル デバイス プラットフォームを特定します。 候補が複数存在する場合があります。
+<span data-ttu-id="efeb4-157">次に、各ユース ケース シナリオに関連付けられているモバイル デバイス プラットフォームを特定します。</span><span class="sxs-lookup"><span data-stu-id="efeb4-157">The next step is to identify the mobile device platforms associated with each use-case scenario.</span></span> <span data-ttu-id="efeb4-158">候補が複数存在する場合があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-158">There may be more than one.</span></span>
 
-たとえば、会社のユース ケース シナリオでは、iOS と Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。 BYOD ポリシーには、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。 前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。
+<span data-ttu-id="efeb4-159">たとえば、会社のユース ケース シナリオでは、iOS と Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-159">For example, your corporate use-case scenario may support iOS and Android Samsung KNOX device platforms.</span></span> <span data-ttu-id="efeb4-160">BYOD ポリシーには、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。</span><span class="sxs-lookup"><span data-stu-id="efeb4-160">Your BYOD policy may include support for additional mobile device platforms like Android (non-Samsung KNOX) and Windows 10 Mobile.</span></span> <span data-ttu-id="efeb4-161">前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。</span><span class="sxs-lookup"><span data-stu-id="efeb4-161">Building on the preceding examples, we've associated mobile device platforms with each use-case scenario.</span></span>
 
-| **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** |   
+| <span data-ttu-id="efeb4-162">**ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-162">**Use cases**</span></span> | <span data-ttu-id="efeb4-163">**サブ ユース ケース**</span><span class="sxs-lookup"><span data-stu-id="efeb4-163">**Sub-use cases**</span></span> | <span data-ttu-id="efeb4-164">**グループ**</span><span class="sxs-lookup"><span data-stu-id="efeb4-164">**Groups**</span></span> | <span data-ttu-id="efeb4-165">**デバイス プラットフォーム**</span><span class="sxs-lookup"><span data-stu-id="efeb4-165">**Device platforms**</span></span> |   
 |:---:|:---:|:---:|:---:|
-| 企業 | インフォメーション ワーカー | 人事、財務 | iOS |                                                           
-| 企業 | 役員 | 人事、財務 | iOS |                                                           
-| 企業 | キオスク | 小売 | Android |
-| BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS |                                                           
-| BYOD | 役員 | マーケティング、営業 | iOS |
+| <span data-ttu-id="efeb4-166">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-166">Corporate</span></span> | <span data-ttu-id="efeb4-167">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-167">Information worker</span></span> | <span data-ttu-id="efeb4-168">人事、財務</span><span class="sxs-lookup"><span data-stu-id="efeb4-168">HR, Finance</span></span> | <span data-ttu-id="efeb4-169">iOS</span><span class="sxs-lookup"><span data-stu-id="efeb4-169">iOS</span></span> |                                                           
+| <span data-ttu-id="efeb4-170">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-170">Corporate</span></span> | <span data-ttu-id="efeb4-171">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-171">Executives</span></span> | <span data-ttu-id="efeb4-172">人事、財務</span><span class="sxs-lookup"><span data-stu-id="efeb4-172">HR, Finance</span></span> | <span data-ttu-id="efeb4-173">iOS</span><span class="sxs-lookup"><span data-stu-id="efeb4-173">iOS</span></span> |                                                           
+| <span data-ttu-id="efeb4-174">企業</span><span class="sxs-lookup"><span data-stu-id="efeb4-174">Corporate</span></span> | <span data-ttu-id="efeb4-175">キオスク</span><span class="sxs-lookup"><span data-stu-id="efeb4-175">Kiosk</span></span> | <span data-ttu-id="efeb4-176">小売</span><span class="sxs-lookup"><span data-stu-id="efeb4-176">Retail</span></span> | <span data-ttu-id="efeb4-177">Android</span><span class="sxs-lookup"><span data-stu-id="efeb4-177">Android</span></span> |
+| <span data-ttu-id="efeb4-178">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-178">BYOD</span></span> | <span data-ttu-id="efeb4-179">インフォメーション ワーカー</span><span class="sxs-lookup"><span data-stu-id="efeb4-179">Information worker</span></span> | <span data-ttu-id="efeb4-180">マーケティング、営業</span><span class="sxs-lookup"><span data-stu-id="efeb4-180">Marketing, Sales</span></span> | <span data-ttu-id="efeb4-181">iOS</span><span class="sxs-lookup"><span data-stu-id="efeb4-181">iOS</span></span> |                                                           
+| <span data-ttu-id="efeb4-182">BYOD</span><span class="sxs-lookup"><span data-stu-id="efeb4-182">BYOD</span></span> | <span data-ttu-id="efeb4-183">役員</span><span class="sxs-lookup"><span data-stu-id="efeb4-183">Executives</span></span> | <span data-ttu-id="efeb4-184">マーケティング、営業</span><span class="sxs-lookup"><span data-stu-id="efeb4-184">Marketing, Sales</span></span> | <span data-ttu-id="efeb4-185">iOS</span><span class="sxs-lookup"><span data-stu-id="efeb4-185">iOS</span></span> |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="efeb4-186">次のステップ</span><span class="sxs-lookup"><span data-stu-id="efeb4-186">Next steps</span></span>
 
-次のセクションでは、[各ユース ケース シナリオの Intune 要件を特定する方法](planning-guide-requirements.md)についてのガイダンスを提供します。
+<span data-ttu-id="efeb4-187">次のセクションでは、[各ユース ケース シナリオの Intune 要件を特定する方法](planning-guide-requirements.md)についてのガイダンスを提供します。</span><span class="sxs-lookup"><span data-stu-id="efeb4-187">The next section provides guidance on [how to identify the Intune requirements for each use case scenario](planning-guide-requirements.md).</span></span>

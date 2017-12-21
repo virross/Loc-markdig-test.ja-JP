@@ -12,95 +12,95 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Windows AutoPilot Deployment プログラムを使用して Windows デバイスを登録する
-Windows AutoPilot Deployment プログラムにより、デバイスのプロビジョニングが簡略化されます。 現在、カスタマイズされたオペレーティング システム イメージのビルドおよび維持には多くの時間がかかります。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも多くの時間を費やすことがあります。 Microsoft Intune と AutoPilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して AutoPilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)」 (Windows AutoPilot の概要) を参照してください。
+# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a><span data-ttu-id="0ba06-103">Windows AutoPilot Deployment プログラムを使用して Windows デバイスを登録する</span><span class="sxs-lookup"><span data-stu-id="0ba06-103">Enroll Windows devices using Windows AutoPilot Deployment Program</span></span>
+<span data-ttu-id="0ba06-104">Windows AutoPilot Deployment プログラムにより、デバイスのプロビジョニングが簡略化されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-104">The Windows AutoPilot Deployment Program simplifies device provisioning.</span></span> <span data-ttu-id="0ba06-105">現在、カスタマイズされたオペレーティング システム イメージのビルドおよび維持には多くの時間がかかります。</span><span class="sxs-lookup"><span data-stu-id="0ba06-105">Today, it takes a lot of time building and maintaining customized operating system images.</span></span> <span data-ttu-id="0ba06-106">また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも多くの時間を費やすことがあります。</span><span class="sxs-lookup"><span data-stu-id="0ba06-106">You might also spend a lot of time applying these custom operating system images to new devices to prepare them for use before giving them to your end users.</span></span> <span data-ttu-id="0ba06-107">Microsoft Intune と AutoPilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-107">With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices.</span></span> <span data-ttu-id="0ba06-108">Intune を使用して AutoPilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-108">When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled.</span></span> <span data-ttu-id="0ba06-109">利点、シナリオ、および前提条件の概要については、「[Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot)」 (Windows AutoPilot の概要) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0ba06-109">For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).</span></span>
 
-## <a name="prerequisites"></a>必要条件
-- [組織へのデバイスの登録が必要](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot#registering-devices-to-your-organization)
-- [Windows の自動登録が有効である](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
-- [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+## <a name="prerequisites"></a><span data-ttu-id="0ba06-110">必要条件</span><span class="sxs-lookup"><span data-stu-id="0ba06-110">Prerequisites</span></span>
+- [<span data-ttu-id="0ba06-111">組織へのデバイスの登録が必要</span><span class="sxs-lookup"><span data-stu-id="0ba06-111">Devices must be registered to your organization</span></span>](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot#registering-devices-to-your-organization)
+- [<span data-ttu-id="0ba06-112">Windows の自動登録が有効である</span><span class="sxs-lookup"><span data-stu-id="0ba06-112">Windows automatic enrollment enabled</span></span>](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- <span data-ttu-id="0ba06-113">[Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;--></span><span class="sxs-lookup"><span data-stu-id="0ba06-113">[Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;--></span></span>
 
-## <a name="synchronize-devices"></a>デバイスを同期する
-登録済みデバイスを Intune と同期して、構成できるようにします。
+## <a name="synchronize-devices"></a><span data-ttu-id="0ba06-114">デバイスを同期する</span><span class="sxs-lookup"><span data-stu-id="0ba06-114">Synchronize devices</span></span>
+<span data-ttu-id="0ba06-115">登録済みデバイスを Intune と同期して、構成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-115">Synchronize your registered devices into Intune so that you can configure them.</span></span>
 
-1. [Azure](https://portal.azure.com/) にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-4. **[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
-5. **[同期]** をクリックして、登録済みデバイスをインポートします。 同期が進行中であることを示すメッセージが表示されます。
-6. ビューを更新して、新しいデバイスを表示します。 同期されているデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。  
+1. <span data-ttu-id="0ba06-116">[Azure](https://portal.azure.com/) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-116">Sign into [Azure](https://portal.azure.com/).</span></span>
+2. <span data-ttu-id="0ba06-117">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-117">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="0ba06-118">**[Intune]** ブレードで、**[デバイスの登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-118">On the **Intune** blade, choose **Device enrollment**.</span></span>
+4. <span data-ttu-id="0ba06-119">**[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-119">On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.</span></span>
+5. <span data-ttu-id="0ba06-120">**[同期]** をクリックして、登録済みデバイスをインポートします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-120">Click **Sync** to import your registered devices.</span></span> <span data-ttu-id="0ba06-121">同期が進行中であることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-121">A message displays that the synchronization is in progress.</span></span>
+6. <span data-ttu-id="0ba06-122">ビューを更新して、新しいデバイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-122">Refresh the view to see the new devices.</span></span> <span data-ttu-id="0ba06-123">同期されているデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="0ba06-123">The process might take a few minutes to complete, depending on how many devices are being synchronized.</span></span>  
 
-## <a name="create-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成する
-AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成する場合に使用されます。
-1. [Azure](https://portal.azure.com/) にサインインします。 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-4. **[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
-5. **[プロファイルの作成]** をクリックして、名前と説明 (オプション) を選択します。 
-6. **[結合の種類]** では、**[Azure AD 参加済み]** を選択します。
-7. **[Out-of-box experience (OOBE)]** では、次のオプションを構成して **[OK]** をクリックします。 
-   - **プライバシーの設定**: プライバシーの設定をユーザーに表示するかどうかを選択します。 
-   - **使用許諾契約書 (EULA)**: EULA をユーザーに表示するかどうかを選択します。
-   - **ユーザー アカウントの種類**: ユーザーのアカウントの種類を**管理者**ユーザーと**標準**ユーザーのどちらにするかを選択します。
+## <a name="create-an-autopilot-deployment-profile"></a><span data-ttu-id="0ba06-124">AutoPilot Deployment プロファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="0ba06-124">Create an AutoPilot deployment profile</span></span>
+<span data-ttu-id="0ba06-125">AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成する場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-125">AutoPilot deployment profiles are used to configure the AutoPilot devices.</span></span>
+1. <span data-ttu-id="0ba06-126">[Azure](https://portal.azure.com/) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-126">Sign into the [Azure](https://portal.azure.com/).</span></span> 
+2. <span data-ttu-id="0ba06-127">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-127">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="0ba06-128">**[Intune]** ブレードで、**[デバイスの登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-128">On the **Intune** blade, choose **Device enrollment**.</span></span>
+4. <span data-ttu-id="0ba06-129">**[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-129">On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**.</span></span>
+5. <span data-ttu-id="0ba06-130">**[プロファイルの作成]** をクリックして、名前と説明 (オプション) を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-130">Click **Create Profile**, and choose a name and optional description.</span></span> 
+6. <span data-ttu-id="0ba06-131">**[結合の種類]** では、**[Azure AD 参加済み]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-131">For **Join type**, select **Azure AD joined**.</span></span>
+7. <span data-ttu-id="0ba06-132">**[Out-of-box experience (OOBE)]** では、次のオプションを構成して **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-132">For **Out-of-box experience (OOBE)**, configure the following options, and then click **OK**:</span></span> 
+   - <span data-ttu-id="0ba06-133">**プライバシーの設定**: プライバシーの設定をユーザーに表示するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-133">**Privacy settings**: Choose whether to show privacy settings to users.</span></span> 
+   - <span data-ttu-id="0ba06-134">**使用許諾契約書 (EULA)**: EULA をユーザーに表示するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-134">**End-user license agreement (EULA)**: Choose whether to show the EULA to users.</span></span>
+   - <span data-ttu-id="0ba06-135">**ユーザー アカウントの種類**: ユーザーのアカウントの種類を**管理者**ユーザーと**標準**ユーザーのどちらにするかを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-135">**User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.</span></span>
 
      > [!Note]    
-     > この設定は、グローバル管理者アカウントや会社の管理者アカウントには適用されません。 これらのアカウントは、Azure AD のすべての管理機能にアクセスできるため、標準ユーザーにすることはできません。
-8. **[作成]** をクリックして、プロファイルを作成します。 これで、AutoPilot Deployment プロファイルをデバイスに割り当てられるようになりました。
+     > <span data-ttu-id="0ba06-136">この設定は、グローバル管理者アカウントや会社の管理者アカウントには適用されません。</span><span class="sxs-lookup"><span data-stu-id="0ba06-136">This setting does not apply to Global Administrator or Company Administrator accounts.</span></span> <span data-ttu-id="0ba06-137">これらのアカウントは、Azure AD のすべての管理機能にアクセスできるため、標準ユーザーにすることはできません。</span><span class="sxs-lookup"><span data-stu-id="0ba06-137">These accounts cannot be standard users because they have access to all administrative features in Azure AD.</span></span>
+8. <span data-ttu-id="0ba06-138">**[作成]** をクリックして、プロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-138">Click **Create** to create the profile.</span></span> <span data-ttu-id="0ba06-139">これで、AutoPilot Deployment プロファイルをデバイスに割り当てられるようになりました。</span><span class="sxs-lookup"><span data-stu-id="0ba06-139">The AutoPilot deployment profile is now available to assign to devices.</span></span>
      
 > [!Note]    
-> 次の設定は、すべての AutoPilot Deployment プロファイルで構成されます。
-> - [Skip Cortana, OneDrive, and OEM registration setup pages]\(Cortana、OneDrive、および OEM の登録セットアップ ページのスキップ\)
-> - [Automatically set up for work or school]\(職場または学校の自動セットアップ\)
-> - [Sign in experience with company or school brand]\(職場または学校のブランドを使用するサインイン エクスペリエンス\)    
+> <span data-ttu-id="0ba06-140">次の設定は、すべての AutoPilot Deployment プロファイルで構成されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-140">The following settings are configured with all AutoPilot deployment profiles:</span></span>
+> - <span data-ttu-id="0ba06-141">[Skip Cortana, OneDrive, and OEM registration setup pages]\(Cortana、OneDrive、および OEM の登録セットアップ ページのスキップ\)</span><span class="sxs-lookup"><span data-stu-id="0ba06-141">Skip Cortana, OneDrive, and OEM registration setup pages</span></span>
+> - <span data-ttu-id="0ba06-142">[Automatically set up for work or school]\(職場または学校の自動セットアップ\)</span><span class="sxs-lookup"><span data-stu-id="0ba06-142">Automatically set up for work or school</span></span>
+> - <span data-ttu-id="0ba06-143">[Sign in experience with company or school brand]\(職場または学校のブランドを使用するサインイン エクスペリエンス\)</span><span class="sxs-lookup"><span data-stu-id="0ba06-143">Sign in experience with company or school brand</span></span>    
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot の未割り当てデバイスのアラート <!-- 163236 -->
-Windows AutoPilot の未割り当てデバイスのアラートを表示し、AutoPilot プログラムからのデバイスで、AutoPilot 展開プロファイルが割り当てられていないデバイスの数を確認できます。 アラート内の情報を利用してプロファイルを作成し、未割り当てデバイスに割り当てます。 アラートをクリックすると、Windows AutoPilot の完全一覧とそれらに関する詳細が表示されます。 
-1. [Azure](https://portal.azure.com/) にサインインします。 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-4. **[概要]** を選択し、アラートを表示します。 アラートをクリックすると、AutoPilot デバイスの一覧が表示されます。  
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a><span data-ttu-id="0ba06-144">Windows AutoPilot の未割り当てデバイスのアラート <!-- 163236 --></span><span class="sxs-lookup"><span data-stu-id="0ba06-144">Alerts for Windows AutoPilot unassigned devices  <!-- 163236 --></span></span>
+<span data-ttu-id="0ba06-145">Windows AutoPilot の未割り当てデバイスのアラートを表示し、AutoPilot プログラムからのデバイスで、AutoPilot 展開プロファイルが割り当てられていないデバイスの数を確認できます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-145">You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned.</span></span> <span data-ttu-id="0ba06-146">アラート内の情報を利用してプロファイルを作成し、未割り当てデバイスに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-146">Use the information in the alert to create profiles and assign them to the unassigned devices.</span></span> <span data-ttu-id="0ba06-147">アラートをクリックすると、Windows AutoPilot の完全一覧とそれらに関する詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-147">When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them.</span></span> 
+1. <span data-ttu-id="0ba06-148">[Azure](https://portal.azure.com/) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-148">Sign into the [Azure](https://portal.azure.com/).</span></span> 
+2. <span data-ttu-id="0ba06-149">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-149">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="0ba06-150">**[Intune]** ブレードで、**[デバイスの登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-150">On the **Intune** blade, choose **Device enrollment**.</span></span>
+4. <span data-ttu-id="0ba06-151">**[概要]** を選択し、アラートを表示します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-151">Choose **Overview** to see the alert.</span></span> <span data-ttu-id="0ba06-152">アラートをクリックすると、AutoPilot デバイスの一覧が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-152">Click the alert to see a list of AutoPilot devices.</span></span>  
 
-## <a name="assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを割り当てる
-AutoPilot Deployment プロファイルを作成したら、それを選択したデバイスに割り当てることができます。
+## <a name="assign-an-autopilot-deployment-profile"></a><span data-ttu-id="0ba06-153">AutoPilot Deployment プロファイルを割り当てる</span><span class="sxs-lookup"><span data-stu-id="0ba06-153">Assign an AutoPilot deployment profile</span></span>
+<span data-ttu-id="0ba06-154">AutoPilot Deployment プロファイルを作成したら、それを選択したデバイスに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-154">After you create AutoPilot deployment profiles, you can assign them to selected devices.</span></span>
 
-1. [Azure](https://portal.azure.com/) にサインインします。 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-4. **[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
-5. デプロイ プロファイルを割り当てるデバイスを選択します。 **[状態]** 列をフィルターすることで、割り当てられているプロファイルのないデバイスを簡単に見つけることができます。 
-6. **[プロファイルの割り当て]** をクリックし、AutoPilot Deployment プロファイルを選択してから **[割り当て]** をクリックします。 割り当てが進行中であることを示すメッセージが表示されます。
-7. ビューを更新し、プロファイルがデバイスに割り当てられていることを確認します。 選択したデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。 
+1. <span data-ttu-id="0ba06-155">[Azure](https://portal.azure.com/) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-155">Sign into the [Azure](https://portal.azure.com/).</span></span> 
+2. <span data-ttu-id="0ba06-156">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-156">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="0ba06-157">**[Intune]** ブレードで、**[デバイスの登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-157">On the **Intune** blade, choose **Device enrollment**.</span></span>
+4. <span data-ttu-id="0ba06-158">**[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-158">On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.</span></span>
+5. <span data-ttu-id="0ba06-159">デプロイ プロファイルを割り当てるデバイスを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-159">Select the devices to which you want to assign the deployment profile.</span></span> <span data-ttu-id="0ba06-160">**[状態]** 列をフィルターすることで、割り当てられているプロファイルのないデバイスを簡単に見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-160">You can filter on the **Status** column to easily find devices without an assigned profile.</span></span> 
+6. <span data-ttu-id="0ba06-161">**[プロファイルの割り当て]** をクリックし、AutoPilot Deployment プロファイルを選択してから **[割り当て]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-161">Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**.</span></span> <span data-ttu-id="0ba06-162">割り当てが進行中であることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-162">A message displays that the assignment is in progress.</span></span>
+7. <span data-ttu-id="0ba06-163">ビューを更新し、プロファイルがデバイスに割り当てられていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-163">Refresh the view to see that the profile has been assigned to the devices.</span></span> <span data-ttu-id="0ba06-164">選択したデバイスの数に応じて、プロセスが完了するまで数分かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="0ba06-164">The process might take a few minutes to complete, depending on how many devices you selected.</span></span> 
 
 > [!Note]
-> 新しいプロファイルがデバイスに割り当てられます。 ただし、デバイスがリセットされ、再登録されるまで、Intune に既に登録されているデバイスにはプロファイルは適用されません。
+> <span data-ttu-id="0ba06-165">新しいプロファイルがデバイスに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-165">The new profile is assigned to the device.</span></span> <span data-ttu-id="0ba06-166">ただし、デバイスがリセットされ、再登録されるまで、Intune に既に登録されているデバイスにはプロファイルは適用されません。</span><span class="sxs-lookup"><span data-stu-id="0ba06-166">However, the profile won’t be applied to devices that have already enrolled in Intune until after the device has been reset and reenrolled.</span></span>
 
-### <a name="assign-a-different-autopilot-deployment-profile"></a>別の AutoPilot Deployment プロファイルを割り当てる
-AutoPilot Deployment プロファイルをデバイスに割り当てた後で、別のプロファイルを割り当てる場合は、新しいプロファイルをデバイスに割り当てます。  
+### <a name="assign-a-different-autopilot-deployment-profile"></a><span data-ttu-id="0ba06-167">別の AutoPilot Deployment プロファイルを割り当てる</span><span class="sxs-lookup"><span data-stu-id="0ba06-167">Assign a different AutoPilot deployment profile</span></span>
+<span data-ttu-id="0ba06-168">AutoPilot Deployment プロファイルをデバイスに割り当てた後で、別のプロファイルを割り当てる場合は、新しいプロファイルをデバイスに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-168">After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.</span></span>  
 
-## <a name="edit-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを編集する 
-AutoPilot Deployment プロファイルを作成したら、デプロイ プロファイルの特定の部分を編集することができます。   
-1. [Azure](https://portal.azure.com/) にサインインします。 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-4. **[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。 
-5. 編集するプロファイルを選択します。 
-6. 左側の **[プロパティ]** をクリックして、デプロイ プロファイルの名前または説明を変更します。 変更したら、**[保存]** をクリックします。 
-7. **[設定]** をクリックして、OOBE 設定を変更します。 変更したら、**[保存]** をクリックします。 
+## <a name="edit-an-autopilot-deployment-profile"></a><span data-ttu-id="0ba06-169">AutoPilot Deployment プロファイルを編集する</span><span class="sxs-lookup"><span data-stu-id="0ba06-169">Edit an AutoPilot deployment profile</span></span> 
+<span data-ttu-id="0ba06-170">AutoPilot Deployment プロファイルを作成したら、デプロイ プロファイルの特定の部分を編集することができます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-170">After you've created an AutoPilot deployment profile, you can edit certain parts of the deployment profile.</span></span>   
+1. <span data-ttu-id="0ba06-171">[Azure](https://portal.azure.com/) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-171">Sign into the [Azure](https://portal.azure.com/).</span></span> 
+2. <span data-ttu-id="0ba06-172">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-172">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="0ba06-173">**[Intune]** ブレードで、**[デバイスの登録]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-173">On the **Intune** blade, choose **Device enrollment**.</span></span>
+4. <span data-ttu-id="0ba06-174">**[Windows の登録]** ブレードの **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-174">On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**.</span></span> 
+5. <span data-ttu-id="0ba06-175">編集するプロファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-175">Select the profile you would like to edit.</span></span> 
+6. <span data-ttu-id="0ba06-176">左側の **[プロパティ]** をクリックして、デプロイ プロファイルの名前または説明を変更します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-176">Click **Properties** on the left to change the name or description of the deployment profile.</span></span> <span data-ttu-id="0ba06-177">変更したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-177">Click **Save** after you make changes.</span></span> 
+7. <span data-ttu-id="0ba06-178">**[設定]** をクリックして、OOBE 設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-178">Click **Settings** to make changes to the OOBE settings.</span></span> <span data-ttu-id="0ba06-179">変更したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-179">Click **Save** after you make changes.</span></span> 
 
 > [!NOTE]
-> 更新されたプロファイルがデバイスに割り当てられます。 ただし、更新されたプロファイルは、デバイスがリセットされ、再登録されるまで、Intune に既に登録されているデバイスには適用されません。 
+> <span data-ttu-id="0ba06-180">更新されたプロファイルがデバイスに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-180">The updated profile is assigned to devices.</span></span> <span data-ttu-id="0ba06-181">ただし、更新されたプロファイルは、デバイスがリセットされ、再登録されるまで、Intune に既に登録されているデバイスには適用されません。</span><span class="sxs-lookup"><span data-stu-id="0ba06-181">However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled.</span></span> 
 
-## <a name="using-autopilot-in-other-portals"></a>他のポータルでの AutoPilot の使用
-モバイル デバイス管理が不要な場合は、ビジネス向け Microsoft ストアなどで AutoPilot を使用できます。 他のポータルの使用はオプションですが、AutoPilot Deployment を管理する場合には Intune のみを使用することをお勧めします。 Intune と別のポータルを使用する場合、Intune では以下の操作を行うことはできません。
-- Intune で作成されたが、別のポータルで編集されたプロファイルの変更を表示する
-- 別のポータルで作成されたプロファイルを同期する
-- 別のポータルで行われたプロファイル割り当ての変更を表示する
-- 別のポータルで行われたプロファイル割り当てを同期する
+## <a name="using-autopilot-in-other-portals"></a><span data-ttu-id="0ba06-182">他のポータルでの AutoPilot の使用</span><span class="sxs-lookup"><span data-stu-id="0ba06-182">Using AutoPilot in other portals</span></span>
+<span data-ttu-id="0ba06-183">モバイル デバイス管理が不要な場合は、ビジネス向け Microsoft ストアなどで AutoPilot を使用できます。</span><span class="sxs-lookup"><span data-stu-id="0ba06-183">If you are not interested in mobile device management, you have the ability to use AutoPilot in Microsoft Store for Business, for example.</span></span> <span data-ttu-id="0ba06-184">他のポータルの使用はオプションですが、AutoPilot Deployment を管理する場合には Intune のみを使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0ba06-184">While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments.</span></span> <span data-ttu-id="0ba06-185">Intune と別のポータルを使用する場合、Intune では以下の操作を行うことはできません。</span><span class="sxs-lookup"><span data-stu-id="0ba06-185">If you use Intune and another portal, Intune isn't able to:</span></span>
+- <span data-ttu-id="0ba06-186">Intune で作成されたが、別のポータルで編集されたプロファイルの変更を表示する</span><span class="sxs-lookup"><span data-stu-id="0ba06-186">Display changes to profiles created in Intune, but edited in another portal</span></span>
+- <span data-ttu-id="0ba06-187">別のポータルで作成されたプロファイルを同期する</span><span class="sxs-lookup"><span data-stu-id="0ba06-187">Synchronize profiles created in another portal</span></span>
+- <span data-ttu-id="0ba06-188">別のポータルで行われたプロファイル割り当ての変更を表示する</span><span class="sxs-lookup"><span data-stu-id="0ba06-188">Display changes to profile assignments done in another portal</span></span>
+- <span data-ttu-id="0ba06-189">別のポータルで行われたプロファイル割り当てを同期する</span><span class="sxs-lookup"><span data-stu-id="0ba06-189">Synchronize profile assignments done in another portal</span></span>
 
-## <a name="next-steps"></a>次のステップ
-登録済み Windows 10 デバイス用に Windows AutoPilot を構成したら、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](https://docs.microsoft.com/intune/device-management)」を参照してください。
+## <a name="next-steps"></a><span data-ttu-id="0ba06-190">次のステップ</span><span class="sxs-lookup"><span data-stu-id="0ba06-190">Next steps</span></span>
+<span data-ttu-id="0ba06-191">登録済み Windows 10 デバイス用に Windows AutoPilot を構成したら、これらのデバイスを管理する方法を学習します。</span><span class="sxs-lookup"><span data-stu-id="0ba06-191">After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices.</span></span> <span data-ttu-id="0ba06-192">詳細については、「[Microsoft Intune デバイスの管理とは](https://docs.microsoft.com/intune/device-management)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0ba06-192">For details, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)</span></span>

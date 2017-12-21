@@ -15,37 +15,37 @@ ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 8905b97a5912010a2516788a8da66441fc6f89ae
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="remotely-lock-managed-devices-with-intune"></a>管理されたデバイスを Intune でリモートからロックする
+# <a name="remotely-lock-managed-devices-with-intune"></a><span data-ttu-id="b8cde-103">管理されたデバイスを Intune でリモートからロックする</span><span class="sxs-lookup"><span data-stu-id="b8cde-103">Remotely lock managed devices with Intune</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**リモート ロック**を使用して、選択したデバイスをロックできます。 デバイスの所有者は、ロックを解除するためにパスコードを使用する必要があります。 PIN またはパスワードが設定されているデバイスに限り、リモートでロックできます。
+<span data-ttu-id="b8cde-104">**リモート ロック**を使用して、選択したデバイスをロックできます。</span><span class="sxs-lookup"><span data-stu-id="b8cde-104">The **Remote lock** device locks the selected device.</span></span> <span data-ttu-id="b8cde-105">デバイスの所有者は、ロックを解除するためにパスコードを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8cde-105">The device owner must use their passcode to unlock it.</span></span> <span data-ttu-id="b8cde-106">PIN またはパスワードが設定されているデバイスに限り、リモートでロックできます。</span><span class="sxs-lookup"><span data-stu-id="b8cde-106">You can only remotely lock a device that has a PIN or password set.</span></span>
 
-## <a name="supported-platforms"></a>サポートされているプラットフォーム
+## <a name="supported-platforms"></a><span data-ttu-id="b8cde-107">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="b8cde-107">Supported platforms</span></span>
 
-- Windows - サポートされていません
-- Windows Phone - Windows Phone 8.1 以降でサポートされています
-- iOS - サポートされています
-- macOS - サポートされています
+- <span data-ttu-id="b8cde-108">Windows - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="b8cde-108">Windows - Not supported</span></span>
+- <span data-ttu-id="b8cde-109">Windows Phone - Windows Phone 8.1 以降でサポートされています</span><span class="sxs-lookup"><span data-stu-id="b8cde-109">Windows Phone - Supported on Windows Phone 8.1 and later</span></span>
+- <span data-ttu-id="b8cde-110">iOS - サポートされています</span><span class="sxs-lookup"><span data-stu-id="b8cde-110">iOS - Supported</span></span>
+- <span data-ttu-id="b8cde-111">macOS - サポートされています</span><span class="sxs-lookup"><span data-stu-id="b8cde-111">macOS - Supported</span></span>
 
     > [!Note]  
-    > 6 桁の回復用 PIN を設定します。 ロックされているとき、別のデバイス アクションが送信されるまで、**デバイス概要**ブレードにその PIN が表示されます。
-- Android - サポートされています
+    > <span data-ttu-id="b8cde-112">6 桁の回復用 PIN を設定します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-112">Set a 6-digit recovery PIN.</span></span> <span data-ttu-id="b8cde-113">ロックされているとき、別のデバイス アクションが送信されるまで、**デバイス概要**ブレードにその PIN が表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8cde-113">When locked, the **Device overview** blade displays the PIN until another device action is sent.</span></span>
+- <span data-ttu-id="b8cde-114">Android - サポートされています</span><span class="sxs-lookup"><span data-stu-id="b8cde-114">Android - Supported</span></span>
 
-## <a name="how-to-remote-lock-a-device"></a>デバイスをリモート ロックする方法
+## <a name="how-to-remote-lock-a-device"></a><span data-ttu-id="b8cde-115">デバイスをリモート ロックする方法</span><span class="sxs-lookup"><span data-stu-id="b8cde-115">How to remote lock a device</span></span>
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧からデバイスを選択し、その後 **[リモート ロック]** デバイス リモート アクションを選択します。
+1. <span data-ttu-id="b8cde-116">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="b8cde-116">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="b8cde-117">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-117">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="b8cde-118">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-118">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="b8cde-119">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-119">On the **Devices and groups** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="b8cde-120">管理するデバイスの一覧からデバイスを選択し、その後 **[リモート ロック]** デバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-120">From the list of devices you manage, choose a device, and then choose the **Remote lock** device remote action.</span></span>
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="b8cde-121">次のステップ</span><span class="sxs-lookup"><span data-stu-id="b8cde-121">Next steps</span></span>
 
-実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。
+<span data-ttu-id="b8cde-122">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="b8cde-122">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

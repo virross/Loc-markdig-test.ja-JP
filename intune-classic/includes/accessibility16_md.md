@@ -1,1 +1,1 @@
-Microsoft サポート サービスは、サービス利用時点での価格と利用条件に従います。
+<span data-ttu-id="af61b-101">Microsoft サポート サービスは、サービス利用時点での価格と利用条件に従います。</span><span class="sxs-lookup"><span data-stu-id="af61b-101">Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used.</span></span>

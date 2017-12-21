@@ -14,22 +14,22 @@ ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.openlocfilehash: 7ff1180275fddc7f0d6ef957c4680d7c34ad471e
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="special-migration-considerations"></a>移行において特に考慮すべき事項
+# <a name="special-migration-considerations"></a><span data-ttu-id="bb4b9-103">移行において特に考慮すべき事項</span><span class="sxs-lookup"><span data-stu-id="bb4b9-103">Special migration considerations</span></span>
 
-既存の MDM プロバイダー環境に応じて該当する可能性のある、移行において特に考慮すべき事項があります。
+<span data-ttu-id="bb4b9-104">既存の MDM プロバイダー環境に応じて該当する可能性のある、移行において特に考慮すべき事項があります。</span><span class="sxs-lookup"><span data-stu-id="bb4b9-104">There are special migration considerations which may apply depending on your existing MDM provider environment.</span></span>
 
-## <a name="factory-reset-for-apples-device-enrollment-program-dep"></a>Apple の Device Enrollment Program (DEP) を出荷時の設定に戻す
+## <a name="factory-reset-for-apples-device-enrollment-program-dep"></a><span data-ttu-id="bb4b9-105">Apple の Device Enrollment Program (DEP) を出荷時の設定に戻す</span><span class="sxs-lookup"><span data-stu-id="bb4b9-105">Factory reset for Apple’s Device Enrollment Program (DEP)</span></span>
 
-Apple の Device Enrollment Program (DEP) のデバイス構成は、エンド ユーザーが削除できない設定になっています。 DEP の高度な管理機能を保持するには、デバイスを出荷時の設定にリセットして既定の (新品の) 状態に戻してから、Intune に登録する必要があります。
+<span data-ttu-id="bb4b9-106">Apple の Device Enrollment Program (DEP) のデバイス構成は、エンド ユーザーが削除できない設定になっています。</span><span class="sxs-lookup"><span data-stu-id="bb4b9-106">The Apple Device Enrollment Program (DEP) sets device configurations that cannot be removed by the end user.</span></span> <span data-ttu-id="bb4b9-107">DEP の高度な管理機能を保持するには、デバイスを出荷時の設定にリセットして既定の (新品の) 状態に戻してから、Intune に登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bb4b9-107">To retain the advanced management features of DEP, the device must be returned to the out-of-box (new) state by a factory reset to enroll it into Intune.</span></span>
 
-DEP の使用を続行して Intune でデバイスを管理するには、[Device Enrollment Program で iOS デバイスの登録をセットアップします](device-enrollment-program-enroll-ios.md)。
+<span data-ttu-id="bb4b9-108">DEP の使用を続行して Intune でデバイスを管理するには、[Device Enrollment Program で iOS デバイスの登録をセットアップします](device-enrollment-program-enroll-ios.md)。</span><span class="sxs-lookup"><span data-stu-id="bb4b9-108">To continue using DEP to manage the devices in Intune, [set up iOS device enrollment with Device Enrollment Program](device-enrollment-program-enroll-ios.md).</span></span>
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="bb4b9-109">次のステップ</span><span class="sxs-lookup"><span data-stu-id="bb4b9-109">Next steps</span></span>
 
-[フェーズ 2: 移行のキャンペーン](migration-guide-campaign.md)
+[<span data-ttu-id="bb4b9-110">フェーズ 2: 移行のキャンペーン</span><span class="sxs-lookup"><span data-stu-id="bb4b9-110">Phase 2: Migration campaign</span></span>](migration-guide-campaign.md)

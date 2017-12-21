@@ -1,1 +1,1 @@
-米国外およびカナダからの電話連絡先: (609) 452-0606
+<span data-ttu-id="9f674-101">米国外およびカナダからの電話連絡先: (609) 452-0606</span><span class="sxs-lookup"><span data-stu-id="9f674-101">Telephone number from outside the United States and Canada: (609) 452-0606</span></span>

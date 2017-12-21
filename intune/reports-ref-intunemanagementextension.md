@@ -15,45 +15,45 @@ ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 30908e4dbb55e16db0e253330175f65fb127d523
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="reference-for-intune-management-extension"></a>Intune 管理拡張のリファレンス
+# <a name="reference-for-intune-management-extension"></a><span data-ttu-id="02609-104">Intune 管理拡張のリファレンス</span><span class="sxs-lookup"><span data-stu-id="02609-104">Reference for Intune Management Extension</span></span>
 
-**IntuneManagementExtension** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。
+<span data-ttu-id="02609-105">**IntuneManagementExtension** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="02609-105">The **IntuneManagementExtension** category contains entities for mobile devices that track information such as:</span></span>
 
-  -  IntuneManagementExtension のバージョン
-  -  IntuneManagementExtension のインストール状態
+  -  <span data-ttu-id="02609-106">IntuneManagementExtension のバージョン</span><span class="sxs-lookup"><span data-stu-id="02609-106">Versions of an IntuneManagementExtension</span></span>
+  -  <span data-ttu-id="02609-107">IntuneManagementExtension のインストール状態</span><span class="sxs-lookup"><span data-stu-id="02609-107">Installation status of an IntuneManagementExtension</span></span>
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversion"></a><span data-ttu-id="02609-108">IntuneManagementExtensionVersion</span><span class="sxs-lookup"><span data-stu-id="02609-108">IntuneManagementExtensionVersion</span></span>
 
-**IntuneManagementExtensionVersion** エンティティは、IntuneManagementExtension で使用されるすべてのバージョンを一覧表示します。
+<span data-ttu-id="02609-109">**IntuneManagementExtensionVersion** エンティティは、IntuneManagementExtension で使用されるすべてのバージョンを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="02609-109">The **IntuneManagementExtensionVersion** entity lists all the versions used by IntuneManagementExtension.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="02609-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="02609-110">Property</span></span>  | <span data-ttu-id="02609-111">説明</span><span class="sxs-lookup"><span data-stu-id="02609-111">Description</span></span> | <span data-ttu-id="02609-112">例</span><span class="sxs-lookup"><span data-stu-id="02609-112">Example</span></span> |
 |---------|------------|--------|
-| ExtensionVersionKey |IntuneManagementExtension バージョンの一意識別子。 | 1 |
-| ExtensionVersion |4 桁のバージョン番号。 |1.0.2.0 |
+| <span data-ttu-id="02609-113">ExtensionVersionKey</span><span class="sxs-lookup"><span data-stu-id="02609-113">ExtensionVersionKey</span></span> |<span data-ttu-id="02609-114">IntuneManagementExtension バージョンの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-114">Unique identifier of the IntuneManagementExtension version.</span></span> | <span data-ttu-id="02609-115">1</span><span class="sxs-lookup"><span data-stu-id="02609-115">1</span></span> |
+| <span data-ttu-id="02609-116">ExtensionVersion</span><span class="sxs-lookup"><span data-stu-id="02609-116">ExtensionVersion</span></span> |<span data-ttu-id="02609-117">4 桁のバージョン番号。</span><span class="sxs-lookup"><span data-stu-id="02609-117">The 4 digit version number.</span></span> |<span data-ttu-id="02609-118">1.0.2.0</span><span class="sxs-lookup"><span data-stu-id="02609-118">1.0.2.0</span></span> |
 
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
+## <a name="intunemanagementextensionhealthstate"></a><span data-ttu-id="02609-119">IntuneManagementExtensionHealthState</span><span class="sxs-lookup"><span data-stu-id="02609-119">IntuneManagementExtensionHealthState</span></span>
 
-**IntuneManagementExtensionHealthState** は、IntuneManagementExtension の考えられるすべてのヘルス状態を一覧表示します。
+<span data-ttu-id="02609-120">**IntuneManagementExtensionHealthState** は、IntuneManagementExtension の考えられるすべてのヘルス状態を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="02609-120">The **IntuneManagementExtensionHealthState** lists all possible health states of the IntuneManagementExtension.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="02609-121">プロパティ</span><span class="sxs-lookup"><span data-stu-id="02609-121">Property</span></span>  | <span data-ttu-id="02609-122">説明</span><span class="sxs-lookup"><span data-stu-id="02609-122">Description</span></span> | <span data-ttu-id="02609-123">例</span><span class="sxs-lookup"><span data-stu-id="02609-123">Example</span></span> |
 |---------|------------|--------|
-| ExtensionStateKey |ヘルス状態の一意識別子。 | 2 |
-| ExtensionState |IntuneManagementExtension のヘルス状態。 | Healthy |
+| <span data-ttu-id="02609-124">ExtensionStateKey</span><span class="sxs-lookup"><span data-stu-id="02609-124">ExtensionStateKey</span></span> |<span data-ttu-id="02609-125">ヘルス状態の一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-125">Unique identifier of health state.</span></span> | <span data-ttu-id="02609-126">2</span><span class="sxs-lookup"><span data-stu-id="02609-126">2</span></span> |
+| <span data-ttu-id="02609-127">ExtensionState</span><span class="sxs-lookup"><span data-stu-id="02609-127">ExtensionState</span></span> |<span data-ttu-id="02609-128">IntuneManagementExtension のヘルス状態。</span><span class="sxs-lookup"><span data-stu-id="02609-128">Health state of a IntuneManagementExtension.</span></span> | <span data-ttu-id="02609-129">Healthy</span><span class="sxs-lookup"><span data-stu-id="02609-129">Healthy</span></span> |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextension"></a><span data-ttu-id="02609-130">IntuneManagementExtension</span><span class="sxs-lookup"><span data-stu-id="02609-130">IntuneManagementExtension</span></span>
 
-**IntuneManagementExtension** は、1 日あたりの各 Windows 10 デバイスでの IntuneManagementExtension ヘルスを一覧表示します。
-過去 60 日間のデータが保持されます。 
+<span data-ttu-id="02609-131">**IntuneManagementExtension** は、1 日あたりの各 Windows 10 デバイスでの IntuneManagementExtension ヘルスを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="02609-131">The **IntuneManagementExtension** lists the IntuneManagementExtension health on each Windows 10 device per day.</span></span>
+<span data-ttu-id="02609-132">過去 60 日間のデータが保持されます。</span><span class="sxs-lookup"><span data-stu-id="02609-132">The data is retained for the last 60 days.</span></span> 
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="02609-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="02609-133">Property</span></span>  | <span data-ttu-id="02609-134">説明</span><span class="sxs-lookup"><span data-stu-id="02609-134">Description</span></span> | <span data-ttu-id="02609-135">例</span><span class="sxs-lookup"><span data-stu-id="02609-135">Example</span></span> |
 |---------|------------|--------|
-| DateKey |日付の一意識別子。 | 123 |
-| TenantKey |テナントの一意識別子。 | 456 |
-| DeviceKey |デバイスの一意識別子。 | 789 |
-| ExtensionVersionKey |IntuneManagementExtension バージョンの一意識別子。 | 1 |
-| ExtensionStateKey|ヘルス状態の一意識別子。 | 2 |
+| <span data-ttu-id="02609-136">DateKey</span><span class="sxs-lookup"><span data-stu-id="02609-136">DateKey</span></span> |<span data-ttu-id="02609-137">日付の一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-137">Unique identifier of the Date.</span></span> | <span data-ttu-id="02609-138">123</span><span class="sxs-lookup"><span data-stu-id="02609-138">123</span></span> |
+| <span data-ttu-id="02609-139">TenantKey</span><span class="sxs-lookup"><span data-stu-id="02609-139">TenantKey</span></span> |<span data-ttu-id="02609-140">テナントの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-140">Unique identifier of the Tenant.</span></span> | <span data-ttu-id="02609-141">456</span><span class="sxs-lookup"><span data-stu-id="02609-141">456</span></span> |
+| <span data-ttu-id="02609-142">DeviceKey</span><span class="sxs-lookup"><span data-stu-id="02609-142">DeviceKey</span></span> |<span data-ttu-id="02609-143">デバイスの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-143">Unique identifier of the Device.</span></span> | <span data-ttu-id="02609-144">789</span><span class="sxs-lookup"><span data-stu-id="02609-144">789</span></span> |
+| <span data-ttu-id="02609-145">ExtensionVersionKey</span><span class="sxs-lookup"><span data-stu-id="02609-145">ExtensionVersionKey</span></span> |<span data-ttu-id="02609-146">IntuneManagementExtension バージョンの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-146">Unique identifier of the IntuneManagementExtension version.</span></span> | <span data-ttu-id="02609-147">1</span><span class="sxs-lookup"><span data-stu-id="02609-147">1</span></span> |
+| <span data-ttu-id="02609-148">ExtensionStateKey</span><span class="sxs-lookup"><span data-stu-id="02609-148">ExtensionStateKey</span></span>|<span data-ttu-id="02609-149">ヘルス状態の一意識別子。</span><span class="sxs-lookup"><span data-stu-id="02609-149">Unique identifier of health state.</span></span> | <span data-ttu-id="02609-150">2</span><span class="sxs-lookup"><span data-stu-id="02609-150">2</span></span> |

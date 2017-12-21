@@ -1,1 +1,1 @@
-聴覚に障碍がある方は、文字電話 (TTY/TDD) サービスを通して Microsoft 製品サポート サービスおよびカスタマー サービスのすべての情報を利用できます。
+<span data-ttu-id="bc9ce-101">聴覚に障碍がある方は、文字電話 (TTY/TDD) サービスを通して Microsoft 製品サポート サービスおよびカスタマー サービスのすべての情報を利用できます。</span><span class="sxs-lookup"><span data-stu-id="bc9ce-101">If you are deaf or hard-of-hearing, complete access to Microsoft product and customer services is available through a text telephone (TTY/TDD) service:</span></span>

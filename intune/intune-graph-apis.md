@@ -14,290 +14,290 @@ ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Azure AD を使用して Intune Graph API にアクセスする方法
+# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a><span data-ttu-id="4c43b-104">Azure AD を使用して Intune Graph API にアクセスする方法</span><span class="sxs-lookup"><span data-stu-id="4c43b-104">How to use Azure AD to access the Intune Graph API</span></span>
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。  Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。  
-Intune Graph API へのアクセスには以下が必要です。
+<span data-ttu-id="4c43b-105">[Microsoft Graph API](https://developer.microsoft.com/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="4c43b-105">The [Microsoft Graph API](https://developer.microsoft.com/graph/) now supports Microsoft Intune with specific APIs and permission roles.</span></span>  <span data-ttu-id="4c43b-106">Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-106">The Graph API uses Azure Active Directory (Azure AD) for authentication and access control.</span></span>  
+<span data-ttu-id="4c43b-107">Intune Graph API へのアクセスには以下が必要です。</span><span class="sxs-lookup"><span data-stu-id="4c43b-107">Access to the Intune Graph API requires:</span></span>
 
-- アプリケーション ID と、
+- <span data-ttu-id="4c43b-108">アプリケーション ID と、</span><span class="sxs-lookup"><span data-stu-id="4c43b-108">An application ID with:</span></span>
 
-    - Azure AD および Graph API を呼び出すアクセス許可。
-    - 特定のアプリケーション タスクに関連したアクセス許可スコープ。
+    - <span data-ttu-id="4c43b-109">Azure AD および Graph API を呼び出すアクセス許可。</span><span class="sxs-lookup"><span data-stu-id="4c43b-109">Permission to call Azure AD and Graph APIs.</span></span>
+    - <span data-ttu-id="4c43b-110">特定のアプリケーション タスクに関連したアクセス許可スコープ。</span><span class="sxs-lookup"><span data-stu-id="4c43b-110">Permission scopes relevant to the specific application tasks.</span></span>
 
-- ユーザー資格情報と、
+- <span data-ttu-id="4c43b-111">ユーザー資格情報と、</span><span class="sxs-lookup"><span data-stu-id="4c43b-111">User credentials with:</span></span>
 
-    - アプリケーションに関連付けられている Azure AD テナントへのアクセス許可。
-    - アプリケーションのアクセス許可スコープをサポートするために必要な役割のアクセス許可。
+    - <span data-ttu-id="4c43b-112">アプリケーションに関連付けられている Azure AD テナントへのアクセス許可。</span><span class="sxs-lookup"><span data-stu-id="4c43b-112">Permission to access the Azure AD tenant associated with the application.</span></span>
+    - <span data-ttu-id="4c43b-113">アプリケーションのアクセス許可スコープをサポートするために必要な役割のアクセス許可。</span><span class="sxs-lookup"><span data-stu-id="4c43b-113">Role permissions required to support the application permission scopes.</span></span>
 
-- Azure テナントのアプリケーション タスク実行に必要なアクセス許可をアプリに付与するエンド ユーザー。
+- <span data-ttu-id="4c43b-114">Azure テナントのアプリケーション タスク実行に必要なアクセス許可をアプリに付与するエンド ユーザー。</span><span class="sxs-lookup"><span data-stu-id="4c43b-114">The end user to grant permission to the app to perform applications tasks for their Azure tenant.</span></span>
 
-この記事の内容:
+<span data-ttu-id="4c43b-115">この記事の内容:</span><span class="sxs-lookup"><span data-stu-id="4c43b-115">This article:</span></span>
 
-- Graph API と関連するアクセス許可の役割にアクセスできるアプリケーションを登録する方法について説明します。
+- <span data-ttu-id="4c43b-116">Graph API と関連するアクセス許可の役割にアクセスできるアプリケーションを登録する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-116">Shows how to register an application with access to the Graph API and relevant permission roles.</span></span>
 
-- Intune Graph API のアクセス許可の役割について説明します。
+- <span data-ttu-id="4c43b-117">Intune Graph API のアクセス許可の役割について説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-117">Describes the Intune Graph API permission roles.</span></span>
 
-- C# および PowerShell の Intune Graph API 認証例を提供します。
+- <span data-ttu-id="4c43b-118">C# および PowerShell の Intune Graph API 認証例を提供します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-118">Provides Intune Graph API authentication examples for C# and PowerShell.</span></span>
 
-- 複数のテナントをサポートする方法について説明します。
+- <span data-ttu-id="4c43b-119">複数のテナントをサポートする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-119">Describes how to support multiple tenants</span></span>
 
-詳細については、次を参照してください。
+<span data-ttu-id="4c43b-120">詳細については、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-120">To learn more, see:</span></span>
 
-- [OAuth 2.0 と Azure Active Directory を使用した Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
-- [Azure AD 認証の概要](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
-- [Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
-- [OAuth 2.0 について知る](https://oauth.net/2/)
+- [<span data-ttu-id="4c43b-121">OAuth 2.0 と Azure Active Directory を使用した Web アプリケーションへのアクセスの承認</span><span class="sxs-lookup"><span data-stu-id="4c43b-121">Authorize access to web applications using OAuth 2.0 and Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
+- [<span data-ttu-id="4c43b-122">Azure AD 認証の概要</span><span class="sxs-lookup"><span data-stu-id="4c43b-122">Getting start with Azure AD authentication</span></span>](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
+- [<span data-ttu-id="4c43b-123">Azure Active Directory とアプリケーションの統合</span><span class="sxs-lookup"><span data-stu-id="4c43b-123">Integrating applications with Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
+- [<span data-ttu-id="4c43b-124">OAuth 2.0 について知る</span><span class="sxs-lookup"><span data-stu-id="4c43b-124">Understand OAuth 2.0</span></span>](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Graph API を使用するアプリを登録する
+## <a name="register-apps-to-use-graph-api"></a><span data-ttu-id="4c43b-125">Graph API を使用するアプリを登録する</span><span class="sxs-lookup"><span data-stu-id="4c43b-125">Register apps to use Graph API</span></span>
 
-Graph API を使用するアプリを登録するには、次の作業を行います。
+<span data-ttu-id="4c43b-126">Graph API を使用するアプリを登録するには、次の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="4c43b-126">To register an app to use Graph API:</span></span>
 
-1.  管理者資格情報を使って、[Azure Portal](https://portal.azure.com) にサインインします。
+1.  <span data-ttu-id="4c43b-127">管理者資格情報を使って、[Azure Portal](https://portal.azure.com) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-127">Sign into [the Azure portal](https://portal.azure.com) using administrative credentials.</span></span>
 
-    必要に応じて、次を使用することができます。
-    - テナントの管理者アカウント。
-    - **[ユーザーはアプリケーションを登録できる]** の設定が有効になっている、テナントのユーザー アカウント。
+    <span data-ttu-id="4c43b-128">必要に応じて、次を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-128">As appropriate, you may use:</span></span>
+    - <span data-ttu-id="4c43b-129">テナントの管理者アカウント。</span><span class="sxs-lookup"><span data-stu-id="4c43b-129">The tenant admin account.</span></span>
+    - <span data-ttu-id="4c43b-130">**[ユーザーはアプリケーションを登録できる]** の設定が有効になっている、テナントのユーザー アカウント。</span><span class="sxs-lookup"><span data-stu-id="4c43b-130">A tenant user account with the **Users can register applications** setting enabled.</span></span>
 
-2.  メニューで、**[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
+2.  <span data-ttu-id="4c43b-131">メニューで、**[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-131">From the menu, choose **Azure Active Directory** &gt; **App Registrations**.</span></span>
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  **[新しいアプリケーションの登録]** を選択して新しいアプリケーションを作成するか、または既存のアプリケーションを選択します。  (既存のアプリケーションを選択した場合は、次の手順をスキップします。)
+3.  <span data-ttu-id="4c43b-132">**[新しいアプリケーションの登録]** を選択して新しいアプリケーションを作成するか、または既存のアプリケーションを選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-132">Either choose **New application registration** to create a new application or choose an existing application.</span></span>  <span data-ttu-id="4c43b-133">(既存のアプリケーションを選択した場合は、次の手順をスキップします。)</span><span class="sxs-lookup"><span data-stu-id="4c43b-133">(If you choose an existing application, skip the next step.)</span></span>
 
-4.  **[作成]** ブレードで、次を指定します。
+4.  <span data-ttu-id="4c43b-134">**[作成]** ブレードで、次を指定します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-134">On the **Create** blade, specify the following:</span></span>
 
-    1.  アプリケーションの **[名前]**\(ユーザーがサインインするときに表示されます\)。
+    1.  <span data-ttu-id="4c43b-135">アプリケーションの **[名前]**\(ユーザーがサインインするときに表示されます\)。</span><span class="sxs-lookup"><span data-stu-id="4c43b-135">A **Name** for the application (displayed when users sign in).</span></span>
 
-    2.  **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
+    2.  <span data-ttu-id="4c43b-136">**[アプリケーションの種類]** と **[リダイレクト URI]** の値。</span><span class="sxs-lookup"><span data-stu-id="4c43b-136">The **Application type** and **Redirect URI** values.</span></span>
 
-        これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、**[アプリケーションの種類]** は `Native` に、**[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
+        <span data-ttu-id="4c43b-137">これらは要件によって異なります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-137">These vary according to your requirements.</span></span> <span data-ttu-id="4c43b-138">たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、**[アプリケーションの種類]** は `Native` に、**[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-138">For example, if you're using an Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), set **Application Type** to `Native` and **Redirect URI** to `urn:ietf:wg:oauth:2.0:oob`.</span></span>
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        詳細については、「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」をご覧ください。
+        <span data-ttu-id="4c43b-139">詳細については、「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-139">To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).</span></span>
 
-5.  [アプリケーション] ブレードで、次の作業を行います。
+5.  <span data-ttu-id="4c43b-140">[アプリケーション] ブレードで、次の作業を行います。</span><span class="sxs-lookup"><span data-stu-id="4c43b-140">From the application blade:</span></span>
 
-    1.  **[アプリケーション ID]** の値をメモします。
+    1.  <span data-ttu-id="4c43b-141">**[アプリケーション ID]** の値をメモします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-141">Note the **Application ID** value.</span></span>
 
-    2.  **[設定]** &gt; **[API アクセス]** &gt; **[必要なアクセス許可]** の順に選択します。
+    2.  <span data-ttu-id="4c43b-142">**[設定]** &gt; **[API アクセス]** &gt; **[必要なアクセス許可]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-142">Choose **Settings** &gt; **API access** &gt; **Required permissions**.</span></span>
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  **[必要なアクセス許可]** ブレードで、**[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
+6.  <span data-ttu-id="4c43b-143">**[必要なアクセス許可]** ブレードで、**[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-143">From the **Required Permissions** blade, choose **Add** &gt; **Add API access** &gt; **Select an API**.</span></span>
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **[API を選択します]** ブレードで、**[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
+7.  <span data-ttu-id="4c43b-144">**[API を選択します]** ブレードで、**[Microsoft Graph]** &gt; **[選択]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-144">From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.</span></span>  <span data-ttu-id="4c43b-145">**[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-145">The **Enable access** blade opens and lists permission scopes available to your application.</span></span>
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。  Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#user-content-intune-permission-scopes)」をご覧ください。  Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」をご覧ください。
+    <span data-ttu-id="4c43b-146">関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-146">Choose the roles required for your app by placing a checkmark to the left of the relevant names.</span></span>  <span data-ttu-id="4c43b-147">Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#user-content-intune-permission-scopes)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-147">To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).</span></span>  <span data-ttu-id="4c43b-148">Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-148">To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-    最善の結果を得るには、アプリケーションの実装に必要な最小限の役割を選択します。
+    <span data-ttu-id="4c43b-149">最善の結果を得るには、アプリケーションの実装に必要な最小限の役割を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-149">For best results, choose the fewest roles needed to implement your application.</span></span>
 
-    完了したら、**[選択]** と **[完了]** を選択して変更を保存します。
+    <span data-ttu-id="4c43b-150">完了したら、**[選択]** と **[完了]** を選択して変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-150">When finished, choose **Select** and **Done** to save you changes.</span></span>
 
-この時点で、次も実行できます。
+<span data-ttu-id="4c43b-151">この時点で、次も実行できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-151">At this point, you may also:</span></span>
 
-- すべてのテナント アカウントに、資格情報を入力せずにアプリを使用するアクセス許可を付与することを選択します。  
+- <span data-ttu-id="4c43b-152">すべてのテナント アカウントに、資格情報を入力せずにアプリを使用するアクセス許可を付与することを選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-152">Choose to grant permission for all tenant accounts to use the app without providing credentials.</span></span>  
 
-    これを実行するには、**[アクセス許可の付与]** を選択し、確認プロンプトに同意します。
+    <span data-ttu-id="4c43b-153">これを実行するには、**[アクセス許可の付与]** を選択し、確認プロンプトに同意します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-153">To do so, choose **Grant permissions** and accept the confirmation prompt.</span></span>
 
-    初めてアプリケーションを実行すると、選択した役割を実行できるアクセス許可をアプリに付与するように求められます。
+    <span data-ttu-id="4c43b-154">初めてアプリケーションを実行すると、選択した役割を実行できるアクセス許可をアプリに付与するように求められます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-154">When you run the application for the first time, you're prompted to grant the app permission to perform the selected roles.</span></span>
 
     <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
-- テナントの外部ユーザーがアプリを使用できるようにします。  (これは通常、複数のテナント/組織をサポートするパートナーにのみ必要です。)  
+- <span data-ttu-id="4c43b-155">テナントの外部ユーザーがアプリを使用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-155">Make the app available to users outside your tenant.</span></span>  <span data-ttu-id="4c43b-156">(これは通常、複数のテナント/組織をサポートするパートナーにのみ必要です。)</span><span class="sxs-lookup"><span data-stu-id="4c43b-156">(This is typically only required for partners supporting multiple tenants/organizations.)</span></span>  
 
-    これを実行するには、次のようにします。
+    <span data-ttu-id="4c43b-157">これを実行するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-157">To do so:</span></span>
 
-    1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
+    1. <span data-ttu-id="4c43b-158">[アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-158">Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.</span></span>
 
     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. `availableToOtherTenants` 設定の値を `true` に変更します。
+    2. <span data-ttu-id="4c43b-159">`availableToOtherTenants` 設定の値を `true` に変更します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-159">Change the value of the `availableToOtherTenants` setting to `true`.</span></span>
 
-    3. 変更を保存します。
+    3. <span data-ttu-id="4c43b-160">変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-160">Save your changes.</span></span>
 
-## <a name="intune-permission-scopes"></a>Intune のアクセス許可スコープ
+## <a name="intune-permission-scopes"></a><span data-ttu-id="4c43b-161">Intune のアクセス許可スコープ</span><span class="sxs-lookup"><span data-stu-id="4c43b-161">Intune permission scopes</span></span>
 
-Azure AD と Graph API では、アクセス許可スコープを使用して企業リソースへのアクセスを制御します。  
+<span data-ttu-id="4c43b-162">Azure AD と Graph API では、アクセス許可スコープを使用して企業リソースへのアクセスを制御します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-162">Azure AD and the Graph API use permission scopes to control access to corporate resources.</span></span>  
 
-アクセス許可スコープ (_OAuth スコープ_とも呼ばれます) は、特定の Intune エンティティとそのプロパティへのアクセスを制御します。 このセクションでは、Intune Graph API の機能に対するアクセス許可スコープの概要について説明します。
+<span data-ttu-id="4c43b-163">アクセス許可スコープ (_OAuth スコープ_とも呼ばれます) は、特定の Intune エンティティとそのプロパティへのアクセスを制御します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-163">Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties.</span></span> <span data-ttu-id="4c43b-164">このセクションでは、Intune Graph API の機能に対するアクセス許可スコープの概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-164">This section summarizes the permission scopes for Intune Graph API features.</span></span>
 
-詳細については、次をご覧ください。
-- [Azure AD 認証](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
-- [アプリケーションのアクセス許可スコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
+<span data-ttu-id="4c43b-165">詳細については、次をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-165">To learn more:</span></span>
+- [<span data-ttu-id="4c43b-166">Azure AD 認証</span><span class="sxs-lookup"><span data-stu-id="4c43b-166">Azure AD authentication</span></span>](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [<span data-ttu-id="4c43b-167">アプリケーションのアクセス許可スコープ</span><span class="sxs-lookup"><span data-stu-id="4c43b-167">Application permission scopes</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Graph API へのアクセス許可を付与する場合は、次のスコープを指定して Intune の機能へのアクセスを制御できます。次の表に、Intune Graph API のアクセス許可スコープをまとめています。  1 番目の列には Azure Portal に表示される機能名を示し、2 番目の列にはアクセス許可スコープ名を掲載しています。
+<span data-ttu-id="4c43b-168">Graph API へのアクセス許可を付与する場合は、次のスコープを指定して Intune の機能へのアクセスを制御できます。次の表に、Intune Graph API のアクセス許可スコープをまとめています。</span><span class="sxs-lookup"><span data-stu-id="4c43b-168">When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features: The following table summarizes the Intune Graph API permission scopes.</span></span>  <span data-ttu-id="4c43b-169">1 番目の列には Azure Portal に表示される機能名を示し、2 番目の列にはアクセス許可スコープ名を掲載しています。</span><span class="sxs-lookup"><span data-stu-id="4c43b-169">The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.</span></span>
 
-_[アクセスを有効にする]_ 設定 | スコープ名
+<span data-ttu-id="4c43b-170">_[アクセスを有効にする]_ 設定</span><span class="sxs-lookup"><span data-stu-id="4c43b-170">_Enable Access_ setting</span></span> | <span data-ttu-id="4c43b-171">スコープ名</span><span class="sxs-lookup"><span data-stu-id="4c43b-171">Scope name</span></span>
 :--|:--
-__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
-__Microsoft Intune デバイスの読み取りおよび書き込み__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
-__Microsoft Intune デバイスの読み取り__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
-__Microsoft Intune RBAC の設定の読み取りおよび書き込み__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC の設定の読み取り__ | [DeviceManagementRBAC.Read.All](#rac=ro)
-__Microsoft Intune アプリの読み取りおよび書き込み__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
-__Microsoft Intune アプリの読み取り__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
-__Microsoft Intune のデバイスの構成とポリシーの読み取り__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
-__Microsoft Intune の構成の読み取りおよび書き込み__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+<span data-ttu-id="4c43b-172">__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__</span><span class="sxs-lookup"><span data-stu-id="4c43b-172">__Perform user-impacting remote actions on Microsoft Intune devices__</span></span> | [<span data-ttu-id="4c43b-173">DeviceManagementManagedDevices.PrivilegedOperations.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-173">DeviceManagementManagedDevices.PrivilegedOperations.All</span></span>](#user-content-mgd-po)
+<span data-ttu-id="4c43b-174">__Microsoft Intune デバイスの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-174">__Read and write Microsoft Intune devices__</span></span> | [<span data-ttu-id="4c43b-175">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-175">DeviceManagementManagedDevices.ReadWrite.All</span></span>](#mgd-rw)
+<span data-ttu-id="4c43b-176">__Microsoft Intune デバイスの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-176">__Read Microsoft Intune devices__</span></span> | [<span data-ttu-id="4c43b-177">DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-177">DeviceManagementManagedDevices.Read.All</span></span>](#mgd-ro)
+<span data-ttu-id="4c43b-178">__Microsoft Intune RBAC の設定の読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-178">__Read and write Microsoft Intune RBAC settings__</span></span> | [<span data-ttu-id="4c43b-179">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-179">DeviceManagementRBAC.ReadWrite.All</span></span>](#rac-rw)
+<span data-ttu-id="4c43b-180">__Microsoft Intune RBAC の設定の読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-180">__Read Microsoft Intune RBAC settings__</span></span> | [<span data-ttu-id="4c43b-181">DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-181">DeviceManagementRBAC.Read.All</span></span>](#rac=ro)
+<span data-ttu-id="4c43b-182">__Microsoft Intune アプリの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-182">__Read and write Microsoft Intune apps__</span></span> | [<span data-ttu-id="4c43b-183">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-183">DeviceManagementApps.ReadWrite.All</span></span>](#app-rw)
+<span data-ttu-id="4c43b-184">__Microsoft Intune アプリの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-184">__Read Microsoft Intune apps__</span></span> | [<span data-ttu-id="4c43b-185">DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-185">DeviceManagementApps.Read.All</span></span>](#app-ro)
+<span data-ttu-id="4c43b-186">__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-186">__Read and write Microsoft Intune Device Configuration and Policies__</span></span> | [<span data-ttu-id="4c43b-187">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-187">DeviceManagementConfiguration.ReadWrite.All</span></span>](#cfg-rw)
+<span data-ttu-id="4c43b-188">__Microsoft Intune のデバイスの構成とポリシーの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-188">__Read Microsoft Intune Device Configuration and Policies__</span></span> | [<span data-ttu-id="4c43b-189">DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-189">DeviceManagementConfiguration.Read.All</span></span>](#cfg-ro)
+<span data-ttu-id="4c43b-190">__Microsoft Intune の構成の読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-190">__Read and write Microsoft Intune configuration__</span></span> | [<span data-ttu-id="4c43b-191">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-191">DeviceManagementServiceConfig.ReadWrite.All</span></span>](#svc-rw)
+<span data-ttu-id="4c43b-192">__Microsoft Intune の構成の読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-192">__Read Microsoft Intune configuration__</span></span> | [<span data-ttu-id="4c43b-193">DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-193">DeviceManagementServiceConfig.Read.All</span></span>](#svc-ra)
 
-表は、Azure Portal に表示される順序で設定を一覧表示しています。 次のセクションでは、スコープについてアルファベット順に説明します。
+<span data-ttu-id="4c43b-194">表は、Azure Portal に表示される順序で設定を一覧表示しています。</span><span class="sxs-lookup"><span data-stu-id="4c43b-194">The table lists the settings as they appear in the Azure portal.</span></span> <span data-ttu-id="4c43b-195">次のセクションでは、スコープについてアルファベット順に説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-195">The following sections describe the scopes in alphabetical order.</span></span>
 
-この時点では、Intune のすべてのアクセス許可スコープに管理者のアクセス権が必要です。  つまり、Intune Graph API のリソースにアクセスするアプリまたはスクリプトを実行する場合は、対応する資格情報が必要になります。
+<span data-ttu-id="4c43b-196">この時点では、Intune のすべてのアクセス許可スコープに管理者のアクセス権が必要です。</span><span class="sxs-lookup"><span data-stu-id="4c43b-196">At this time, all Intune permission scopes require administrator access.</span></span>  <span data-ttu-id="4c43b-197">つまり、Intune Graph API のリソースにアクセスするアプリまたはスクリプトを実行する場合は、対応する資格情報が必要になります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-197">This means you need corresponding credentials when running apps or scripts that access Intune Graph API resources.</span></span>
 
-### <a name="app-ro"></a>DeviceManagementApps.Read.All
+### <a name="app-ro"></a><span data-ttu-id="4c43b-198">DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-198">DeviceManagementApps.Read.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り__
+- <span data-ttu-id="4c43b-199">**[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-199">**Enable Access** setting: __Read Microsoft Intune apps__</span></span>
 
-- 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - モバイル アプリ
-    - モバイル アプリ カテゴリ
-    - アプリ保護ポリシー
-    - アプリの構成
+- <span data-ttu-id="4c43b-200">次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-200">Permits read access to the following entity properties and status:</span></span>
+    - <span data-ttu-id="4c43b-201">モバイル アプリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-201">Mobile Apps</span></span>
+    - <span data-ttu-id="4c43b-202">モバイル アプリ カテゴリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-202">Mobile App Categories</span></span>
+    - <span data-ttu-id="4c43b-203">アプリ保護ポリシー</span><span class="sxs-lookup"><span data-stu-id="4c43b-203">App Protection Policies</span></span>
+    - <span data-ttu-id="4c43b-204">アプリの構成</span><span class="sxs-lookup"><span data-stu-id="4c43b-204">App Configurations</span></span>
 
-### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
+### <a name="app-rw"></a><span data-ttu-id="4c43b-205">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-205">DeviceManagementApps.ReadWrite.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取りおよび書き込み__
+- <span data-ttu-id="4c43b-206">**[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-206">**Enable Access** setting: __Read and write Microsoft Intune apps__</span></span>
 
-- __DeviceManagementApps.Read.All__ と同じ操作を許可します。
+- <span data-ttu-id="4c43b-207">__DeviceManagementApps.Read.All__ と同じ操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-207">Allows the same operations as __DeviceManagementApps.Read.All__</span></span>
 
-- また、次のエンティティに対する変更を許可します。
+- <span data-ttu-id="4c43b-208">また、次のエンティティに対する変更を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-208">Also permits changes to the following entities:</span></span>
 
-    - モバイル アプリ
-    - モバイル アプリ カテゴリ
-    - アプリ保護ポリシー
-    - アプリの構成
+    - <span data-ttu-id="4c43b-209">モバイル アプリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-209">Mobile Apps</span></span>
+    - <span data-ttu-id="4c43b-210">モバイル アプリ カテゴリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-210">Mobile App Categories</span></span>
+    - <span data-ttu-id="4c43b-211">アプリ保護ポリシー</span><span class="sxs-lookup"><span data-stu-id="4c43b-211">App Protection Policies</span></span>
+    - <span data-ttu-id="4c43b-212">アプリの構成</span><span class="sxs-lookup"><span data-stu-id="4c43b-212">App Configurations</span></span>
 
-### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
+### <a name="cfg-ro"></a><span data-ttu-id="4c43b-213">DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-213">DeviceManagementConfiguration.Read.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取り__
+- <span data-ttu-id="4c43b-214">**[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-214">**Enable Access** setting: __Read Microsoft Intune device configuration and policies__</span></span>
 
-- 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - デバイス構成
-    - デバイス コンプライアンス ポリシー
-    - 通知メッセージ
+- <span data-ttu-id="4c43b-215">次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-215">Permits read access to the following entity properties and status:</span></span>
+    - <span data-ttu-id="4c43b-216">デバイス構成</span><span class="sxs-lookup"><span data-stu-id="4c43b-216">Device Configuration</span></span>
+    - <span data-ttu-id="4c43b-217">デバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="4c43b-217">Device Compliance Policy</span></span>
+    - <span data-ttu-id="4c43b-218">通知メッセージ</span><span class="sxs-lookup"><span data-stu-id="4c43b-218">Notification Messages</span></span>
 
-### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
+### <a name="cfg-ra"></a><span data-ttu-id="4c43b-219">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-219">DeviceManagementConfiguration.ReadWrite.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__
+- <span data-ttu-id="4c43b-220">**[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-220">**Enable Access** setting: __Read and write Microsoft Intune device configuration and policies__</span></span>
 
-- __DeviceManagementConfiguration.Read.All__ と同じ操作を許可します。
+- <span data-ttu-id="4c43b-221">__DeviceManagementConfiguration.Read.All__ と同じ操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-221">Allows the same operations as __DeviceManagementConfiguration.Read.All__</span></span>
 
-- また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。
-    - デバイス構成
-    - デバイス コンプライアンス ポリシー
-    - 通知メッセージ
+- <span data-ttu-id="4c43b-222">また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-222">Apps can also create, assign, delete, and change the following entities:</span></span>
+    - <span data-ttu-id="4c43b-223">デバイス構成</span><span class="sxs-lookup"><span data-stu-id="4c43b-223">Device Configuration</span></span>
+    - <span data-ttu-id="4c43b-224">デバイス コンプライアンス ポリシー</span><span class="sxs-lookup"><span data-stu-id="4c43b-224">Device Compliance Policy</span></span>
+    - <span data-ttu-id="4c43b-225">通知メッセージ</span><span class="sxs-lookup"><span data-stu-id="4c43b-225">Notification Messages</span></span>
 
-### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
+### <a name="mgd-po"></a><span data-ttu-id="4c43b-226">DeviceManagementManagedDevices.PrivilegedOperations.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-226">DeviceManagementManagedDevices.PrivilegedOperations.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__
+- <span data-ttu-id="4c43b-227">**[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__</span><span class="sxs-lookup"><span data-stu-id="4c43b-227">**Enable Access** setting: __Perform user-impacting remote actions on Microsoft Intune devices__</span></span>
 
-- 管理されたデバイスへの次のリモート操作を許可します。
-    - インベントリから削除
-    - ワイプ
-    - パスコードのリセット/復旧
-    - リモート ロック
-    - 紛失モードの有効/無効
-    - PC のクリーンアップ
-    - 再起動
-    - 共有デバイスからのユーザーの削除
+- <span data-ttu-id="4c43b-228">管理されたデバイスへの次のリモート操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-228">Permits the following remote actions on a managed device:</span></span>
+    - <span data-ttu-id="4c43b-229">インベントリから削除</span><span class="sxs-lookup"><span data-stu-id="4c43b-229">Retire</span></span>
+    - <span data-ttu-id="4c43b-230">ワイプ</span><span class="sxs-lookup"><span data-stu-id="4c43b-230">Wipe</span></span>
+    - <span data-ttu-id="4c43b-231">パスコードのリセット/復旧</span><span class="sxs-lookup"><span data-stu-id="4c43b-231">Reset/Recover Passcode</span></span>
+    - <span data-ttu-id="4c43b-232">リモート ロック</span><span class="sxs-lookup"><span data-stu-id="4c43b-232">Remote Lock</span></span>
+    - <span data-ttu-id="4c43b-233">紛失モードの有効/無効</span><span class="sxs-lookup"><span data-stu-id="4c43b-233">Enable/Disable Lost Mode</span></span>
+    - <span data-ttu-id="4c43b-234">PC のクリーンアップ</span><span class="sxs-lookup"><span data-stu-id="4c43b-234">Clean PC</span></span>
+    - <span data-ttu-id="4c43b-235">再起動</span><span class="sxs-lookup"><span data-stu-id="4c43b-235">Reboot</span></span>
+    - <span data-ttu-id="4c43b-236">共有デバイスからのユーザーの削除</span><span class="sxs-lookup"><span data-stu-id="4c43b-236">Delete User from Shared Device</span></span>
 
-### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
+### <a name="mgd-ro"></a><span data-ttu-id="4c43b-237">DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-237">DeviceManagementManagedDevices.Read.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取り__
+- <span data-ttu-id="4c43b-238">**[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-238">**Enable Access** setting: __Read Microsoft Intune devices__</span></span>
 
-- 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - 管理されたデバイス
-    - デバイスのカテゴリ
-    - 検出されたアプリ
-    - リモート操作
-    - マルウェア情報
+- <span data-ttu-id="4c43b-239">次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-239">Permits read access to the following entity properties and status:</span></span>
+    - <span data-ttu-id="4c43b-240">管理されたデバイス</span><span class="sxs-lookup"><span data-stu-id="4c43b-240">Managed Device</span></span>
+    - <span data-ttu-id="4c43b-241">デバイスのカテゴリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-241">Device Category</span></span>
+    - <span data-ttu-id="4c43b-242">検出されたアプリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-242">Detected App</span></span>
+    - <span data-ttu-id="4c43b-243">リモート操作</span><span class="sxs-lookup"><span data-stu-id="4c43b-243">Remote actions</span></span>
+    - <span data-ttu-id="4c43b-244">マルウェア情報</span><span class="sxs-lookup"><span data-stu-id="4c43b-244">Malware information</span></span>
 
-### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
+### <a name="mgd-rw"></a><span data-ttu-id="4c43b-245">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-245">DeviceManagementManagedDevices.ReadWrite.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取りおよび書き込み__
+- <span data-ttu-id="4c43b-246">**[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-246">**Enable Access** setting: __Read and write Microsoft Intune devices__</span></span>
 
-- __DeviceManagementManagedDevices.Read.All__ と同じ操作を許可します。
+- <span data-ttu-id="4c43b-247">__DeviceManagementManagedDevices.Read.All__ と同じ操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-247">Allows the same operations as __DeviceManagementManagedDevices.Read.All__</span></span>
 
-- また、アプリでは次のエンティティを作成、削除、変更できます。
-    - 管理されたデバイス
-    - デバイスのカテゴリ
+- <span data-ttu-id="4c43b-248">また、アプリでは次のエンティティを作成、削除、変更できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-248">Apps can also create, delete, and change the following entities:</span></span>
+    - <span data-ttu-id="4c43b-249">管理されたデバイス</span><span class="sxs-lookup"><span data-stu-id="4c43b-249">Managed Device</span></span>
+    - <span data-ttu-id="4c43b-250">デバイスのカテゴリ</span><span class="sxs-lookup"><span data-stu-id="4c43b-250">Device Category</span></span>
 
-- 次のリモート操作も実行できます。
-    - デバイスの検索
-    - アクティベーション ロックのバイパス
-    - リモート アシスタンスの要求
+- <span data-ttu-id="4c43b-251">次のリモート操作も実行できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-251">The following remote actions are also allowed:</span></span>
+    - <span data-ttu-id="4c43b-252">デバイスの検索</span><span class="sxs-lookup"><span data-stu-id="4c43b-252">Locate devices</span></span>
+    - <span data-ttu-id="4c43b-253">アクティベーション ロックのバイパス</span><span class="sxs-lookup"><span data-stu-id="4c43b-253">Bypass activation lock</span></span>
+    - <span data-ttu-id="4c43b-254">リモート アシスタンスの要求</span><span class="sxs-lookup"><span data-stu-id="4c43b-254">Request remote assistance</span></span>
 
-### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
+### <a name="rac-ro"></a><span data-ttu-id="4c43b-255">DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-255">DeviceManagementRBAC.Read.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取り__
+- <span data-ttu-id="4c43b-256">**[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-256">**Enable Access** setting: __Read Microsoft Intune RBAC settings__</span></span>
 
-- 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - ロールの割り当て
-    - ロールの定義
-    - リソースの操作
+- <span data-ttu-id="4c43b-257">次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-257">Permits read access to the following entity properties and status:</span></span>
+    - <span data-ttu-id="4c43b-258">ロールの割り当て</span><span class="sxs-lookup"><span data-stu-id="4c43b-258">Role Assignments</span></span>
+    - <span data-ttu-id="4c43b-259">ロールの定義</span><span class="sxs-lookup"><span data-stu-id="4c43b-259">Role Definitions</span></span>
+    - <span data-ttu-id="4c43b-260">リソースの操作</span><span class="sxs-lookup"><span data-stu-id="4c43b-260">Resource Operations</span></span>
 
-### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
+### <a name="rac-rw"></a><span data-ttu-id="4c43b-261">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-261">DeviceManagementRBAC.ReadWrite.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取りおよび書き込み__
+- <span data-ttu-id="4c43b-262">**[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-262">**Enable Access** setting: __Read and write Microsoft Intune RBAC settings__</span></span>
 
-- __DeviceManagementRBAC.Read.All__ と同じ操作を許可します。
+- <span data-ttu-id="4c43b-263">__DeviceManagementRBAC.Read.All__ と同じ操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-263">Allows the same operations as __DeviceManagementRBAC.Read.All__</span></span>
 
-- また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。
-    - ロールの割り当て
-    - ロールの定義
+- <span data-ttu-id="4c43b-264">また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-264">Apps can also create, assign, delete, and change the following entities:</span></span>
+    - <span data-ttu-id="4c43b-265">ロールの割り当て</span><span class="sxs-lookup"><span data-stu-id="4c43b-265">Role Assignments</span></span>
+    - <span data-ttu-id="4c43b-266">ロールの定義</span><span class="sxs-lookup"><span data-stu-id="4c43b-266">Role Definitions</span></span>
 
-### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
+### <a name="svc-ro"></a><span data-ttu-id="4c43b-267">DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-267">DeviceManagementServiceConfig.Read.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取り__
+- <span data-ttu-id="4c43b-268">**[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取り__</span><span class="sxs-lookup"><span data-stu-id="4c43b-268">**Enable Access** setting: __Read Microsoft Intune configuration__</span></span>
 
-- 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - デバイスの登録
-    - Apple Push Notification 証明書
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 使用条件
-    - 通信経費管理
-    - クラウド PKI
-    - ブランド化
-    - Mobile Threat Defense
+- <span data-ttu-id="4c43b-269">次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-269">Permits read access to the following entity properties and status:</span></span>
+    - <span data-ttu-id="4c43b-270">デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="4c43b-270">Device Enrollment</span></span>
+    - <span data-ttu-id="4c43b-271">Apple Push Notification 証明書</span><span class="sxs-lookup"><span data-stu-id="4c43b-271">Apple Push Notification Certificate</span></span>
+    - <span data-ttu-id="4c43b-272">Apple Device Enrollment Program</span><span class="sxs-lookup"><span data-stu-id="4c43b-272">Apple Device Enrollment Program</span></span>
+    - <span data-ttu-id="4c43b-273">Apple Volume Purchase Program</span><span class="sxs-lookup"><span data-stu-id="4c43b-273">Apple Volume Purchase Program</span></span>
+    - <span data-ttu-id="4c43b-274">Exchange Connector</span><span class="sxs-lookup"><span data-stu-id="4c43b-274">Exchange Connector</span></span>
+    - <span data-ttu-id="4c43b-275">使用条件</span><span class="sxs-lookup"><span data-stu-id="4c43b-275">Terms and Conditions</span></span>
+    - <span data-ttu-id="4c43b-276">通信経費管理</span><span class="sxs-lookup"><span data-stu-id="4c43b-276">Telecoms Expense Management</span></span>
+    - <span data-ttu-id="4c43b-277">クラウド PKI</span><span class="sxs-lookup"><span data-stu-id="4c43b-277">Cloud PKI</span></span>
+    - <span data-ttu-id="4c43b-278">ブランド化</span><span class="sxs-lookup"><span data-stu-id="4c43b-278">Branding</span></span>
+    - <span data-ttu-id="4c43b-279">Mobile Threat Defense</span><span class="sxs-lookup"><span data-stu-id="4c43b-279">Mobile Threat Defense</span></span>
 
-### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
+### <a name="svc-rw"></a><span data-ttu-id="4c43b-280">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c43b-280">DeviceManagementServiceConfig.ReadWrite.All</span></span>
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取りおよび書き込み__
+- <span data-ttu-id="4c43b-281">**[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取りおよび書き込み__</span><span class="sxs-lookup"><span data-stu-id="4c43b-281">**Enable Access** setting: __Read and write Microsoft Intune configuration__</span></span>
 
-- DeviceManagementServiceConfig.Read.All と同じ操作を許可します。
+- <span data-ttu-id="4c43b-282">DeviceManagementServiceConfig.Read.All と同じ操作を許可します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-282">Allows the same operations as DeviceManagementServiceConfig.Read.All_</span></span>
 
-- また、アプリでは Intune の次の機能を構成できます。
-    - デバイスの登録
-    - Apple Push Notification 証明書
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 使用条件
-    - 通信経費管理
-    - クラウド PKI
-    - ブランド化
-    - Mobile Threat Defense
+- <span data-ttu-id="4c43b-283">また、アプリでは Intune の次の機能を構成できます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-283">Apps can also configure the following Intune features:</span></span>
+    - <span data-ttu-id="4c43b-284">デバイスの登録</span><span class="sxs-lookup"><span data-stu-id="4c43b-284">Device Enrollment</span></span>
+    - <span data-ttu-id="4c43b-285">Apple Push Notification 証明書</span><span class="sxs-lookup"><span data-stu-id="4c43b-285">Apple Push Notification Certificate</span></span>
+    - <span data-ttu-id="4c43b-286">Apple Device Enrollment Program</span><span class="sxs-lookup"><span data-stu-id="4c43b-286">Apple Device Enrollment Program</span></span>
+    - <span data-ttu-id="4c43b-287">Apple Volume Purchase Program</span><span class="sxs-lookup"><span data-stu-id="4c43b-287">Apple Volume Purchase Program</span></span>
+    - <span data-ttu-id="4c43b-288">Exchange Connector</span><span class="sxs-lookup"><span data-stu-id="4c43b-288">Exchange Connector</span></span>
+    - <span data-ttu-id="4c43b-289">使用条件</span><span class="sxs-lookup"><span data-stu-id="4c43b-289">Terms and Conditions</span></span>
+    - <span data-ttu-id="4c43b-290">通信経費管理</span><span class="sxs-lookup"><span data-stu-id="4c43b-290">Telecoms Expense Management</span></span>
+    - <span data-ttu-id="4c43b-291">クラウド PKI</span><span class="sxs-lookup"><span data-stu-id="4c43b-291">Cloud PKI</span></span>
+    - <span data-ttu-id="4c43b-292">ブランド化</span><span class="sxs-lookup"><span data-stu-id="4c43b-292">Branding</span></span>
+    - <span data-ttu-id="4c43b-293">Mobile Threat Defense</span><span class="sxs-lookup"><span data-stu-id="4c43b-293">Mobile Threat Defense</span></span>
 
-## <a name="azure-ad-authentication-examples"></a>Azure AD 認証の例
+## <a name="azure-ad-authentication-examples"></a><span data-ttu-id="4c43b-294">Azure AD 認証の例</span><span class="sxs-lookup"><span data-stu-id="4c43b-294">Azure AD authentication examples</span></span>
 
-このセクションでは、Azure AD を C# プロジェクトや PowerShell プロジェクトに組み込む方法について説明します。
+<span data-ttu-id="4c43b-295">このセクションでは、Azure AD を C# プロジェクトや PowerShell プロジェクトに組み込む方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-295">This section shows how to incorporate Azure AD into your C# and PowerShell projects.</span></span>
 
-それぞれの例で、少なくとも前述のアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` を持つアプリケーション ID を指定する必要があります。
+<span data-ttu-id="4c43b-296">それぞれの例で、少なくとも前述のアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` を持つアプリケーション ID を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-296">In each example, you'll need to specify an application ID that has at least the `DeviceManagementManagedDevices.Read.All` permission scope (discussed earlier).</span></span>
 
-いずれかの例をテストすると、次のような HTTP ステータス 403 (禁止されています) のエラーが表示されることがあります。
+<span data-ttu-id="4c43b-297">いずれかの例をテストすると、次のような HTTP ステータス 403 (禁止されています) のエラーが表示されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-297">When testing either example, you may receive HTTP status 403 (Forbidden) errors similar to the following:</span></span>
 
 ``` javascript
 {
@@ -317,41 +317,41 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 }
 ```
 
-この場合は、次の点を確認します。
+<span data-ttu-id="4c43b-298">この場合は、次の点を確認します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-298">If this happens, verify that:</span></span>
 
-- Graph API とアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` の使用が承認されたアプリケーション ID に更新している。
+- <span data-ttu-id="4c43b-299">Graph API とアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` の使用が承認されたアプリケーション ID に更新している。</span><span class="sxs-lookup"><span data-stu-id="4c43b-299">You've updated the application ID to one authorized to use the Graph API and the `DeviceManagementManagedDevices.Read.All` permission scope.</span></span>
 
-- テナントの資格情報は、管理機能をサポートしている。
+- <span data-ttu-id="4c43b-300">テナントの資格情報は、管理機能をサポートしている。</span><span class="sxs-lookup"><span data-stu-id="4c43b-300">Your tenant credentials support administrative functions.</span></span>
 
-- 表示されているサンプルと同様のコードを使用している。
+- <span data-ttu-id="4c43b-301">表示されているサンプルと同様のコードを使用している。</span><span class="sxs-lookup"><span data-stu-id="4c43b-301">Your code is similar to the displayed samples.</span></span>
 
 
-### <a name="authenticate-azure-ad-in-c"></a>Azure AD の認証 (C\#)
+### <a name="authenticate-azure-ad-in-c"></a><span data-ttu-id="4c43b-302">Azure AD の認証 (C\#)</span><span class="sxs-lookup"><span data-stu-id="4c43b-302">Authenticate Azure AD in C\#</span></span>
 
-この例では、C# を使用して、Intune アカウントに関連付けられているデバイスの一覧を取得する方法を説明します。
+<span data-ttu-id="4c43b-303">この例では、C# を使用して、Intune アカウントに関連付けられているデバイスの一覧を取得する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-303">This example shows how to use C# to retrieve a list of devices associated with your Intune account.</span></span>
 
-1.  Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。
+1.  <span data-ttu-id="4c43b-304">Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-304">Start Visual Studio and then create a new Visual C# Console app (.NET Framework) project.</span></span>
 
-2.  プロジェクトの名前を入力し、必要に応じて他の詳細情報を入力します。
+2.  <span data-ttu-id="4c43b-305">プロジェクトの名前を入力し、必要に応じて他の詳細情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-305">Enter a name for your project and provide other details as desired.</span></span>
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。
+3.  <span data-ttu-id="4c43b-306">ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-306">Use the Solution Explorer to add the Microsoft ADAL NuGet package to the project.</span></span>
 
-    1.  ソリューション エクスプローラーを右クリックします。
-    2.  **[NuGet パッケージの管理...]**  &gt; **[参照]** を選択します。
-    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、**[インストール]** を選択します。
+    1.  <span data-ttu-id="4c43b-307">ソリューション エクスプローラーを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-307">Right-click the Solution Explorer.</span></span>
+    2.  <span data-ttu-id="4c43b-308">**[NuGet パッケージの管理...]** </span><span class="sxs-lookup"><span data-stu-id="4c43b-308">Choose **Manage NuGet Packages…**</span></span> <span data-ttu-id="4c43b-309">&gt; **[参照]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-309">&gt; **Browse**.</span></span>
+    3.  <span data-ttu-id="4c43b-310">`Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、**[インストール]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-310">Select `Microsoft.IdentityModel.Clients.ActiveDirectory` and then choose **Install**.</span></span>
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  **Program.cs** の先頭に、次のステートメントを追加します。
+4.  <span data-ttu-id="4c43b-311">**Program.cs** の先頭に、次のステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-311">Add the following statements to the top of **Program.cs**:</span></span>
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  Authorization ヘッダーを作成するメソッドを追加します。
+5.  <span data-ttu-id="4c43b-312">Authorization ヘッダーを作成するメソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-312">Add a method to create the authorization header:</span></span>
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -367,9 +367,9 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
         return result.CreateAuthorizationHeader();
     ```
 
-    前述のとおり、`application_ID` の値を、少なくともアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` が付与されたものと一致するように変更してください。
+    <span data-ttu-id="4c43b-313">前述のとおり、`application_ID` の値を、少なくともアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` が付与されたものと一致するように変更してください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-313">Remember to change the value of `application_ID` to match one granted at least the `DeviceManagementManagedDevices.Read.All` permission scope, as described earlier.</span></span>
 
-6. デバイスの一覧を取得するメソッドを追加します。
+6. <span data-ttu-id="4c43b-314">デバイスの一覧を取得するメソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-314">Add a method to retrieve the list of devices:</span></span>
 
     ``` csharp
     private static async Task<string> GetMyManagedDevices()
@@ -382,18 +382,18 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
     }
     ```
 
-7.  **Main** を **GetMyManagedDevices** を呼び出すように更新します。
+7.  <span data-ttu-id="4c43b-315">**Main** を **GetMyManagedDevices** を呼び出すように更新します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-315">Update **Main** to call **GetMyManagedDevices**:</span></span>
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  プログラムをコンパイルし、実行します。  
+8.  <span data-ttu-id="4c43b-316">プログラムをコンパイルし、実行します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-316">Compile and run your program.</span></span>  
 
-初めてプログラムを実行すると、2 つのプロンプトが表示されます。  1 つ目は資格情報を要求し、2 つ目は `managedDevices` 要求に対するアクセス許可を付与します。  
+<span data-ttu-id="4c43b-317">初めてプログラムを実行すると、2 つのプロンプトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-317">When you first run your program, you should receive two prompts.</span></span>  <span data-ttu-id="4c43b-318">1 つ目は資格情報を要求し、2 つ目は `managedDevices` 要求に対するアクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-318">The first requests your credentials and the second grants permissions for the `managedDevices` request.</span></span>  
 
-参考までに、完成したプログラムを次に示します。
+<span data-ttu-id="4c43b-319">参考までに、完成したプログラムを次に示します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-319">For reference, here's the completed program:</span></span>
 
 ``` csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -432,11 +432,11 @@ namespace IntuneGraphExample
 }
 ```
 
-### <a name="authenticate-azure-ad-powershell"></a>Azure AD の認証 (PowerShell)
+### <a name="authenticate-azure-ad-powershell"></a><span data-ttu-id="4c43b-320">Azure AD の認証 (PowerShell)</span><span class="sxs-lookup"><span data-stu-id="4c43b-320">Authenticate Azure AD (PowerShell)</span></span>
 
-次の PowerShell スクリプトでは、認証のために AzureAD PowerShell モジュールを使用します。  詳細については、「[Azure Active Directory PowerShell Version 2 (Azure Active Directory PowerShell バージョン 2)](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0)」と「[Intune PowerShell examples (Intune PowerShell の例)](https://github.com/microsoftgraph/powershell-intune-samples)」をご覧ください。
+<span data-ttu-id="4c43b-321">次の PowerShell スクリプトでは、認証のために AzureAD PowerShell モジュールを使用します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-321">The following PowerShell script uses the AzureAD PowerShell module for authentication.</span></span>  <span data-ttu-id="4c43b-322">詳細については、「[Azure Active Directory PowerShell Version 2 (Azure Active Directory PowerShell バージョン 2)](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0)」と「[Intune PowerShell examples (Intune PowerShell の例)](https://github.com/microsoftgraph/powershell-intune-samples)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c43b-322">To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).</span></span>
 
-この例では、`$clientID` の値を、有効なアプリケーション ID と一致するように更新します。
+<span data-ttu-id="4c43b-323">この例では、`$clientID` の値を、有効なアプリケーション ID と一致するように更新します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-323">In this example, update the value of `$clientID` to match a valid application ID.</span></span>
 
 ``` powershell
 function Get-AuthToken {
@@ -543,61 +543,61 @@ catch {
 }
 ```
 
-## <a name="support-multiple-tenants-and-partners"></a>複数のテナントとパートナーのサポート
+## <a name="support-multiple-tenants-and-partners"></a><span data-ttu-id="4c43b-324">複数のテナントとパートナーのサポート</span><span class="sxs-lookup"><span data-stu-id="4c43b-324">Support multiple tenants and partners</span></span>
 
-独自の Azure AD テナントがある組織をサポートする組織の場合、それぞれのテナントでアプリケーションを使用するようにクライアントを許可する必要があることがあります。
+<span data-ttu-id="4c43b-325">独自の Azure AD テナントがある組織をサポートする組織の場合、それぞれのテナントでアプリケーションを使用するようにクライアントを許可する必要があることがあります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-325">If your organization supports organizations with their own Azure AD tenants, you may want to permit your clients to use your application with their respective tenants.</span></span>
 
-これを実行するには、次のようにします。
+<span data-ttu-id="4c43b-326">これを実行するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-326">To do so:</span></span>
 
-1.  対象の Azure AD テナントに、クライアントのアカウントが存在することを確認します。
+1.  <span data-ttu-id="4c43b-327">対象の Azure AD テナントに、クライアントのアカウントが存在することを確認します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-327">Verify that the client account exists in the target Azure AD tenant.</span></span>
 
-2.  テナント アカウントが、ユーザーによるアプリケーションの登録を許可していることを確認します (**ユーザー設定** をご覧ください)。
+2.  <span data-ttu-id="4c43b-328">テナント アカウントが、ユーザーによるアプリケーションの登録を許可していることを確認します (**ユーザー設定** をご覧ください)。</span><span class="sxs-lookup"><span data-stu-id="4c43b-328">Verify that your tenant account allows users to register applications (see **User settings**).</span></span>
 
-3.  各テナント間のリレーションシップを確立します。  
+3.  <span data-ttu-id="4c43b-329">各テナント間のリレーションシップを確立します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-329">Establish a relationship between each tenant.</span></span>  
 
-    そのためには、次のいずれかを実行します。
+    <span data-ttu-id="4c43b-330">そのためには、次のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-330">To do so, either:</span></span>
 
-    a. [Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。
+    <span data-ttu-id="4c43b-331">a.</span><span class="sxs-lookup"><span data-stu-id="4c43b-331">a.</span></span> <span data-ttu-id="4c43b-332">[Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-332">Use the [Microsoft Partner Center](https://partnercenter.microsoft.com/) to define a relationship with your client and their email address.</span></span>
 
-    b. ユーザーを招待して、テナントのゲストにします。
+    <span data-ttu-id="4c43b-333">b.</span><span class="sxs-lookup"><span data-stu-id="4c43b-333">b.</span></span> <span data-ttu-id="4c43b-334">ユーザーを招待して、テナントのゲストにします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-334">Invite the user to become a guest of your tenant.</span></span>
 
-ユーザーを招待してテナントのゲストにするには、次を実行します。
+<span data-ttu-id="4c43b-335">ユーザーを招待してテナントのゲストにするには、次を実行します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-335">To invite the user to be a guest of your tenant:</span></span>
 
-1.  **[クイック タスク]** パネルで、**[ゲスト ユーザーの追加]** を選択します。
+1.  <span data-ttu-id="4c43b-336">**[クイック タスク]** パネルで、**[ゲスト ユーザーの追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-336">Choose **Add a guest user** from the **Quick tasks** panel.</span></span>
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  クライアントのメール アドレスを入力し、(必要に応じて) 招待状に個人的なメッセージを追加します。
+2.  <span data-ttu-id="4c43b-337">クライアントのメール アドレスを入力し、(必要に応じて) 招待状に個人的なメッセージを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-337">Enter the client's email address and (optionally) add a personalized message for the invite.</span></span>
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  **[招待する]** を選択します。
+3.  <span data-ttu-id="4c43b-338">**[招待する]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-338">Choose **Invite**.</span></span>
 
-これにより、ユーザーに招待状が送信されます。
+<span data-ttu-id="4c43b-339">これにより、ユーザーに招待状が送信されます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-339">This sends an invite to the user.</span></span>
 
    <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
-   ユーザーは **[開始]** リンクを選択して、招待を承諾する必要があります。
+   <span data-ttu-id="4c43b-340">ユーザーは **[開始]** リンクを選択して、招待を承諾する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-340">The user needs to choose the **Get Started** link to accept your invitation.</span></span>
 
-リレーションシップが確立されると (または招待が承諾されると)、**[ディレクトリ ロール]** にユーザー アカウントが追加されます。
+<span data-ttu-id="4c43b-341">リレーションシップが確立されると (または招待が承諾されると)、**[ディレクトリ ロール]** にユーザー アカウントが追加されます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-341">When the relationship is established (or your invitation has been accepted), add the user account to the **Directory role**.</span></span>
 
-必要に応じて、そのほかのロールにユーザーを追加するようにします。 たとえば、ユーザーに Intune の設定の管理を許可する場合、ユーザーは **[グローバル管理者]** または **[Intune サービス管理者]** のいずれかである必要があります。
+<span data-ttu-id="4c43b-342">必要に応じて、そのほかのロールにユーザーを追加するようにします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-342">Remember to add the user to other roles as needed.</span></span> <span data-ttu-id="4c43b-343">たとえば、ユーザーに Intune の設定の管理を許可する場合、ユーザーは **[グローバル管理者]** または **[Intune サービス管理者]** のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c43b-343">For example, to allow the user to manage Intune settings, they need to be either a **Global Administrator** or an **Intune Service administrator**.</span></span>
 
-また、
+<span data-ttu-id="4c43b-344">また、</span><span class="sxs-lookup"><span data-stu-id="4c43b-344">Also:</span></span>
 
-- http://portal.office.com を使用して、ユーザー アカウントに Intune のライセンスを割り当てます。
+- <span data-ttu-id="4c43b-345">http://portal.office.com を使用して、ユーザー アカウントに Intune のライセンスを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="4c43b-345">Use http://portal.office.com to assign an Intune license to your user account.</span></span>
 
-- 自身ではなく、クライアントの Azure AD テナントのドメインに対する認証のためにアプリケーション コードを更新します。
+- <span data-ttu-id="4c43b-346">自身ではなく、クライアントの Azure AD テナントのドメインに対する認証のためにアプリケーション コードを更新します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-346">Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.</span></span>
 
-    たとえば、自身のテナントのドメインが `contosopartner.onmicrosoft.com`、クライアントのテナントのドメインが `northwind.onmicrosoft.com` で、クライアントのテナントを認証するためにコードを更新するとします。
+    <span data-ttu-id="4c43b-347">たとえば、自身のテナントのドメインが `contosopartner.onmicrosoft.com`、クライアントのテナントのドメインが `northwind.onmicrosoft.com` で、クライアントのテナントを認証するためにコードを更新するとします。</span><span class="sxs-lookup"><span data-stu-id="4c43b-347">For example, suppose your tenant domain is `contosopartner.onmicrosoft.com` and your client's tenant domain is `northwind.onmicrosoft.com`, you would update your code to authenticate to your client's tenant.</span></span>
 
-    先ほどの例に基づき C# アプリケーションでこれを実行するには、変数 `authority` の値を変更します。
+    <span data-ttu-id="4c43b-348">先ほどの例に基づき C# アプリケーションでこれを実行するには、変数 `authority` の値を変更します。</span><span class="sxs-lookup"><span data-stu-id="4c43b-348">To do so in a C# application based on the earlier example, you'd change the value of the `authority` variable:</span></span>
 
     ``` csharp
     string authority = "https://login.microsoftonline.com/common/";
     ```
 
-    を
+    <span data-ttu-id="4c43b-349">を</span><span class="sxs-lookup"><span data-stu-id="4c43b-349">to</span></span>
 
     ``` csharp
     string authority = "https://login.microsoftonline.com/northwind.onmicrosoft.com/";

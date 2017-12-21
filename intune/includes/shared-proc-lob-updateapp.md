@@ -1,9 +1,9 @@
 
-1. Azure ポータルにサインインします。  
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。  
-3. **[モバイル アプリ]**、**[アプリ]** の順に選択します。
-4. アプリの一覧からアプリを見つけ、選択します。
-5. **[概要]** ブレードで **[プロパティ]** を選択します。
-5. **[アプリのパッケージ ファイル]** を選択します。
-6. フォルダー アイコンをクリックし、更新したアプリ ファイルの場所を参照します。 **[開く]** をクリックします。 アプリ情報がパッケージ情報で更新されます。 
-8. **[アプリ バージョン]** に更新後のアプリ パッケージが反映されていることを確認します。
+1. <span data-ttu-id="3a400-101">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="3a400-101">Sign in to the Azure portal.</span></span>  
+2. <span data-ttu-id="3a400-102">**[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="3a400-102">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>  
+3. <span data-ttu-id="3a400-103">**[モバイル アプリ]**、**[アプリ]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="3a400-103">Choose **Mobile Apps** > **Apps**.</span></span>
+4. <span data-ttu-id="3a400-104">アプリの一覧からアプリを見つけ、選択します。</span><span class="sxs-lookup"><span data-stu-id="3a400-104">Find and select your app in the list of apps.</span></span>
+5. <span data-ttu-id="3a400-105">**[概要]** ブレードで **[プロパティ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a400-105">Choose **Properties** in the **Overview** blade.</span></span>
+5. <span data-ttu-id="3a400-106">**[アプリのパッケージ ファイル]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="3a400-106">Select **App package file**.</span></span>
+6. <span data-ttu-id="3a400-107">フォルダー アイコンをクリックし、更新したアプリ ファイルの場所を参照します。</span><span class="sxs-lookup"><span data-stu-id="3a400-107">Click the folder icon and browse to the location of your updated app file.</span></span> <span data-ttu-id="3a400-108">**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3a400-108">Click **Open**.</span></span> <span data-ttu-id="3a400-109">アプリ情報がパッケージ情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="3a400-109">The app information will update with the package information.</span></span> 
+8. <span data-ttu-id="3a400-110">**[アプリ バージョン]** に更新後のアプリ パッケージが反映されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="3a400-110">Verify that the **App version** reflects the updated app package.</span></span>

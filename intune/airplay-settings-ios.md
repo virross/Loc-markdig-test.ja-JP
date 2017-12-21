@@ -16,43 +16,43 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 9a1472d86a0a25e35ef26be1c579ff491437676b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="intune-airplay-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けの AirPlay 設定
+# <a name="intune-airplay-settings-for-ios-devices"></a><span data-ttu-id="4c4a7-103">Intune を使用した iOS デバイス向けの AirPlay 設定</span><span class="sxs-lookup"><span data-stu-id="4c4a7-103">Intune AirPlay settings for iOS devices</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-これらの設定を使用すると、管理する iOS デバイスをネットワーク上の AirPlay 対応デバイス (Apple TV など) に接続することができます。
-この機能を使用して、次のことができます。
+<span data-ttu-id="4c4a7-104">これらの設定を使用すると、管理する iOS デバイスをネットワーク上の AirPlay 対応デバイス (Apple TV など) に接続することができます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-104">Use these settings to help connect iOS devices you manage to AirPlay compatible devices (like Apple TVs) on your network.</span></span>
+<span data-ttu-id="4c4a7-105">この機能を使用して、次のことができます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-105">With this capability you can:</span></span>
 
-- **デバイスとパスワードの一覧の構成** - ユーザーが、範囲内にある AirPlay デバイスに自動的に接続できるようにします。 AirPlay デバイスの名前とパスワードを使用して、AirPlay デバイスをプロビジョニングします。これにより、ユーザーが接続するときに、AirPlay デバイスの名前とパスワードを指定する必要がなくなります。
-- **許可された出力先の構成** - AirPlay デバイスの一覧を (デバイス ID を使用して) 構成します。 エンド ユーザーには一覧を作成したデバイスだけ(監視対象のデバイスのみ) が表示され、そのデバイスにのみ接続できます。
+- <span data-ttu-id="4c4a7-106">**デバイスとパスワードの一覧の構成** - ユーザーが、範囲内にある AirPlay デバイスに自動的に接続できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-106">**Configure a device and password list** - Let users automatically connect to AirPlay devices that are in range.</span></span> <span data-ttu-id="4c4a7-107">AirPlay デバイスの名前とパスワードを使用して、AirPlay デバイスをプロビジョニングします。これにより、ユーザーが接続するときに、AirPlay デバイスの名前とパスワードを指定する必要がなくなります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-107">Provision them with the name and password of AirPlay devices so that they don't need to supply it when they connect.</span></span>
+- <span data-ttu-id="4c4a7-108">**許可された出力先の構成** - AirPlay デバイスの一覧を (デバイス ID を使用して) 構成します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-108">**Configure allowed destinations** - Configure a list of AirPlay devices (by device ID).</span></span> <span data-ttu-id="4c4a7-109">エンド ユーザーには一覧を作成したデバイスだけ(監視対象のデバイスのみ) が表示され、そのデバイスにのみ接続できます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-109">End users can only see and connect to the devices you list (for supervised devices only).</span></span>
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a><span data-ttu-id="4c4a7-110">作業開始</span><span class="sxs-lookup"><span data-stu-id="4c4a7-110">Get started</span></span>
 
-1. **[デバイス機能]** ブレードで **[AirPlay]** を選択します。
-2. **[AirPlay]** ブレードで、次の操作の一方または両方を選択します。
+1. <span data-ttu-id="4c4a7-111">**[デバイス機能]** ブレードで **[AirPlay]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-111">On the **Device features** blade, choose **AirPlay**.</span></span>
+2. <span data-ttu-id="4c4a7-112">**[AirPlay]** ブレードで、次の操作の一方または両方を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-112">On the **AirPlay** blade, choose one or both of the following actions:</span></span>
 
-## <a name="configure-a-device-and-password-list"></a>デバイスとパスワードの一覧を構成する
+## <a name="configure-a-device-and-password-list"></a><span data-ttu-id="4c4a7-113">デバイスとパスワードの一覧を構成する</span><span class="sxs-lookup"><span data-stu-id="4c4a7-113">Configure a device and password list</span></span>
 
-1. **[パスワード]** ブレードで、Airplay デバイス (例: **Contoso Apple TV**) の**デバイス名**と**パスワード**を入力します。
-2. デバイスの詳細を入力したら、**[追加]** をクリックします。 **[デバイス名]** の一覧にデバイスが表示されます。
-3. デバイスの追加を続けます。 終了したら **[OK]** を選択します。
-
-
-## <a name="configure-allowed-destinations"></a>許可された出力先を構成する
-
-1. **[Allowed destinations (supervised only)]\(許可された出力先 (監視のみ)\)** ブレードで、AirPlay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。
-2. デバイス ID を入力したら、**[追加]** をクリックします。 **[デバイス ID]** 一覧に ID が表示されます。
-3. デバイスの追加を続けます。 終了したら **[OK]** を選択します。
-
-コンマ区切り値 (csv) ファイルから、デバイスとパスワード、および許可された出力先をインポートすることもできます。
+1. <span data-ttu-id="4c4a7-114">**[パスワード]** ブレードで、Airplay デバイス (例: **Contoso Apple TV**) の**デバイス名**と**パスワード**を入力します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-114">On the **Passwords** blade, enter the **Device Name** and **Password** of an AirPlay device, for example **Contoso Apple TV**.</span></span>
+2. <span data-ttu-id="4c4a7-115">デバイスの詳細を入力したら、**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-115">After entering the device details, click **Add**.</span></span> <span data-ttu-id="4c4a7-116">**[デバイス名]** の一覧にデバイスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-116">The device appears in the **Device Name** list.</span></span>
+3. <span data-ttu-id="4c4a7-117">デバイスの追加を続けます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-117">Continue to add devices.</span></span> <span data-ttu-id="4c4a7-118">終了したら **[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-118">When you are finished, choose **OK**.</span></span>
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="configure-allowed-destinations"></a><span data-ttu-id="4c4a7-119">許可された出力先を構成する</span><span class="sxs-lookup"><span data-stu-id="4c4a7-119">Configure allowed destinations</span></span>
 
-選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。
+1. <span data-ttu-id="4c4a7-120">**[Allowed destinations (supervised only)]\(許可された出力先 (監視のみ)\)** ブレードで、AirPlay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-120">On the **Allowed destinations (supervised only)** blade, enter the **Device ID** of an AirPlay device, for example 52:46:CD:51:83:4C.</span></span>
+2. <span data-ttu-id="4c4a7-121">デバイス ID を入力したら、**[追加]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-121">After entering the device ID, click **Add**.</span></span> <span data-ttu-id="4c4a7-122">**[デバイス ID]** 一覧に ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-122">The ID appears in the **Device ID** list.</span></span>
+3. <span data-ttu-id="4c4a7-123">デバイスの追加を続けます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-123">Continue to add devices.</span></span> <span data-ttu-id="4c4a7-124">終了したら **[OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-124">When you are finished, choose **OK**.</span></span>
+
+<span data-ttu-id="4c4a7-125">コンマ区切り値 (csv) ファイルから、デバイスとパスワード、および許可された出力先をインポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-125">You can also import device and passwords, and allowed destinations from a comma-separated values (csv) file.</span></span>
+
+
+## <a name="next-steps"></a><span data-ttu-id="4c4a7-126">次のステップ</span><span class="sxs-lookup"><span data-stu-id="4c4a7-126">Next steps</span></span>
+
+<span data-ttu-id="4c4a7-127">選択したグループにデバイス プロファイルを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-127">You can now assign the device profile to the groups you choose.</span></span> <span data-ttu-id="4c4a7-128">詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-128">For details, see [How to assign device profiles](device-profile-assign.md).</span></span>
 

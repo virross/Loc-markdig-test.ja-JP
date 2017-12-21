@@ -16,96 +16,96 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる方法
+# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a><span data-ttu-id="58ae9-103">Microsoft Intune を使用してアプリをグループに割り当てる方法</span><span class="sxs-lookup"><span data-stu-id="58ae9-103">How to assign apps to groups with Microsoft Intune</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-アプリを Intune に追加したら、そのアプリをユーザーとデバイスに割り当てることができます。
+<span data-ttu-id="58ae9-104">アプリを Intune に追加したら、そのアプリをユーザーとデバイスに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-104">Once you've added an app to Intune, you can assign it to users and devices.</span></span>
 
-アプリは Intune で管理されているかどうかに関係なく、デバイスに割り当てることができます。 アプリをユーザーとデバイスに割り当てるためのさまざまなオプションについては、次の表を参照してください。
+<span data-ttu-id="58ae9-105">アプリは Intune で管理されているかどうかに関係なく、デバイスに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-105">Apps can be assigned to devices whether or not they are managed by Intune.</span></span> <span data-ttu-id="58ae9-106">アプリをユーザーとデバイスに割り当てるためのさまざまなオプションについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58ae9-106">Use the following table to help you understand the various options for assigning apps to users and devices:</span></span>
 
 ||||
 |-|-|-|-|
-|&nbsp;|Intune に登録されているデバイス|Intune に登録されていないデバイス|
-|ユーザーへの割り当て|[はい]|[はい]|
-|デバイスへの割り当て|Yes|いいえ|
-|ラップされたアプリ、または Intune SDK が組み込まれたアプリの割り当て (アプリ保護ポリシー用)|Yes|Yes|
-|"使用可能" として割り当て|Yes|[はい]|
-|"必須" として割り当て|Yes|いいえ|
-|アプリのアンインストール|Yes|いいえ|
-|エンドユーザーによるポータル サイト アプリからの使用可能なアプリのインストール|Yes|いいえ|
-|エンドユーザーによる Web ベースのポータル サイトからの使用可能なアプリのインストール|Yes|Yes|
+|&nbsp;|<span data-ttu-id="58ae9-107">Intune に登録されているデバイス</span><span class="sxs-lookup"><span data-stu-id="58ae9-107">Devices enrolled with Intune</span></span>|<span data-ttu-id="58ae9-108">Intune に登録されていないデバイス</span><span class="sxs-lookup"><span data-stu-id="58ae9-108">Devices not enrolled with Intune</span></span>|
+|<span data-ttu-id="58ae9-109">ユーザーへの割り当て</span><span class="sxs-lookup"><span data-stu-id="58ae9-109">Assign to users</span></span>|<span data-ttu-id="58ae9-110">[はい]</span><span class="sxs-lookup"><span data-stu-id="58ae9-110">Yes</span></span>|<span data-ttu-id="58ae9-111">[はい]</span><span class="sxs-lookup"><span data-stu-id="58ae9-111">Yes</span></span>|
+|<span data-ttu-id="58ae9-112">デバイスへの割り当て</span><span class="sxs-lookup"><span data-stu-id="58ae9-112">Assign to devices</span></span>|<span data-ttu-id="58ae9-113">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-113">Yes</span></span>|<span data-ttu-id="58ae9-114">いいえ</span><span class="sxs-lookup"><span data-stu-id="58ae9-114">No</span></span>|
+|<span data-ttu-id="58ae9-115">ラップされたアプリ、または Intune SDK が組み込まれたアプリの割り当て (アプリ保護ポリシー用)</span><span class="sxs-lookup"><span data-stu-id="58ae9-115">Assign wrapped apps, or apps incorporating the Intune SDK (for app protection policies)</span></span>|<span data-ttu-id="58ae9-116">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-116">Yes</span></span>|<span data-ttu-id="58ae9-117">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-117">Yes</span></span>|
+|<span data-ttu-id="58ae9-118">"使用可能" として割り当て</span><span class="sxs-lookup"><span data-stu-id="58ae9-118">Assign apps as Available</span></span>|<span data-ttu-id="58ae9-119">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-119">Yes</span></span>|<span data-ttu-id="58ae9-120">[はい]</span><span class="sxs-lookup"><span data-stu-id="58ae9-120">Yes</span></span>|
+|<span data-ttu-id="58ae9-121">"必須" として割り当て</span><span class="sxs-lookup"><span data-stu-id="58ae9-121">Assign apps as Required</span></span>|<span data-ttu-id="58ae9-122">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-122">Yes</span></span>|<span data-ttu-id="58ae9-123">いいえ</span><span class="sxs-lookup"><span data-stu-id="58ae9-123">No</span></span>|
+|<span data-ttu-id="58ae9-124">アプリのアンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-124">Uninstall apps</span></span>|<span data-ttu-id="58ae9-125">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-125">Yes</span></span>|<span data-ttu-id="58ae9-126">いいえ</span><span class="sxs-lookup"><span data-stu-id="58ae9-126">No</span></span>|
+|<span data-ttu-id="58ae9-127">エンドユーザーによるポータル サイト アプリからの使用可能なアプリのインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-127">End users install available apps from Company Portal app</span></span>|<span data-ttu-id="58ae9-128">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-128">Yes</span></span>|<span data-ttu-id="58ae9-129">いいえ</span><span class="sxs-lookup"><span data-stu-id="58ae9-129">No</span></span>|
+|<span data-ttu-id="58ae9-130">エンドユーザーによる Web ベースのポータル サイトからの使用可能なアプリのインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-130">End users install available apps from web-based Company Portal</span></span>|<span data-ttu-id="58ae9-131">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-131">Yes</span></span>|<span data-ttu-id="58ae9-132">Yes</span><span class="sxs-lookup"><span data-stu-id="58ae9-132">Yes</span></span>|
 
 > [!NOTE]
-> 現時点では、iOS アプリと Android アプリ (基幹業務アプリとストアで購入したアプリの両方) を、Intune に登録されていないデバイスに割り当てることができます。
+> <span data-ttu-id="58ae9-133">現時点では、iOS アプリと Android アプリ (基幹業務アプリとストアで購入したアプリの両方) を、Intune に登録されていないデバイスに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-133">Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.</span></span>
 
-## <a name="how-to-assign-an-app"></a>アプリを割り当てる方法
+## <a name="how-to-assign-an-app"></a><span data-ttu-id="58ae9-134">アプリを割り当てる方法</span><span class="sxs-lookup"><span data-stu-id="58ae9-134">How to assign an app</span></span>
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-1. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
-2. アプリの一覧ブレードで、割り当てるアプリをクリックします。
-3. **[<*アプリ名*> - 概要]** ブレードで、**[管理]** > **[割り当て]** の順に選択します。
-4. **[グループの選択]** を選択し、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD グループを選択します。
-5. 選択したアプリごとに、アプリの **[割り当ての種類]** として次のいずれかを選択します。
-    - **[使用可能]** - ユーザーがポータル サイト アプリまたは Web サイトからアプリをインストールします。
-    - **[該当なし]** - アプリはポータル サイトにインストールまたは表示されません。
-    - **[必須]** - アプリは選択したグループのデバイスにインストールされます。
-    - **[アンインストール]** - アプリは選択したグループのデバイスからアンインストールされます。
-    - **[登録せずに使用可能]** - このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。
-6. **iOS アプリの場合のみ** - アプリごとの VPN 設定を含む iOS VPN プロファイルを作成した場合は、**[VPN]** で選ぶことができます。 アプリが実行されると、VPN 接続が開かれます。 詳細については、「[iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。
-6. 完了したら、**[保存]** を選択します。
+1. <span data-ttu-id="58ae9-135">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="58ae9-135">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="58ae9-136">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-136">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="58ae9-137">**[Intune]** ブレードで、**[モバイル アプリ]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-137">On the **Intune** blade, choose **Mobile apps**.</span></span>
+1. <span data-ttu-id="58ae9-138">**[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-138">In the **Mobile Apps** workload, choose **Manage** > **Apps**.</span></span>
+2. <span data-ttu-id="58ae9-139">アプリの一覧ブレードで、割り当てるアプリをクリックします。</span><span class="sxs-lookup"><span data-stu-id="58ae9-139">On the list of apps blade, click the app you want to assign.</span></span>
+3. <span data-ttu-id="58ae9-140">**[<*アプリ名*> - 概要]** ブレードで、**[管理]** > **[割り当て]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-140">On the <*app name*> - **Overview** blade, choose **Manage** > **Assignments**.</span></span>
+4. <span data-ttu-id="58ae9-141">**[グループの選択]** を選択し、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-141">Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.</span></span>
+5. <span data-ttu-id="58ae9-142">選択したアプリごとに、アプリの **[割り当ての種類]** として次のいずれかを選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-142">For each app you choose, choose an **assignment type** for the app from:</span></span>
+    - <span data-ttu-id="58ae9-143">**[使用可能]** - ユーザーがポータル サイト アプリまたは Web サイトからアプリをインストールします。</span><span class="sxs-lookup"><span data-stu-id="58ae9-143">**Available** - Users install the app from the Company Portal app or website.</span></span>
+    - <span data-ttu-id="58ae9-144">**[該当なし]** - アプリはポータル サイトにインストールまたは表示されません。</span><span class="sxs-lookup"><span data-stu-id="58ae9-144">**Not Applicable** - The app is not installed or shown in the Company Portal.</span></span>
+    - <span data-ttu-id="58ae9-145">**[必須]** - アプリは選択したグループのデバイスにインストールされます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-145">**Required** - The app is installed on devices in the selected groups.</span></span>
+    - <span data-ttu-id="58ae9-146">**[アンインストール]** - アプリは選択したグループのデバイスからアンインストールされます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-146">**Uninstall** - The app is uninstalled from devices in the selected groups.</span></span>
+    - <span data-ttu-id="58ae9-147">**[登録せずに使用可能]** - このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-147">**Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.</span></span>
+6. <span data-ttu-id="58ae9-148">**iOS アプリの場合のみ** - アプリごとの VPN 設定を含む iOS VPN プロファイルを作成した場合は、**[VPN]** で選ぶことができます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-148">**For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**.</span></span> <span data-ttu-id="58ae9-149">アプリが実行されると、VPN 接続が開かれます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-149">When the app is   run, the VPN connection is opened.</span></span> <span data-ttu-id="58ae9-150">詳細については、「[iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58ae9-150">For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).</span></span>
+6. <span data-ttu-id="58ae9-151">完了したら、**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="58ae9-151">Once you are done, choose **Save**.</span></span>
 
-これで、選択したグループにアプリが割り当てられました。
+<span data-ttu-id="58ae9-152">これで、選択したグループにアプリが割り当てられました。</span><span class="sxs-lookup"><span data-stu-id="58ae9-152">The app is now assigned to the groups you selected.</span></span>
 
-## <a name="how-conflicts-between-app-intents-are-resolved"></a>アプリのインテントの競合を解決する方法
+## <a name="how-conflicts-between-app-intents-are-resolved"></a><span data-ttu-id="58ae9-153">アプリのインテントの競合を解決する方法</span><span class="sxs-lookup"><span data-stu-id="58ae9-153">How conflicts between app intents are resolved</span></span>
 
-インテントが異なる同じアプリが複数のグループに割り当てられることがあります。 このような場合は、次の表で、結果として得られるインテントを確認してください。
+<span data-ttu-id="58ae9-154">インテントが異なる同じアプリが複数のグループに割り当てられることがあります。</span><span class="sxs-lookup"><span data-stu-id="58ae9-154">Sometimes, the same app is assigned to multiple groups, but with different intents.</span></span> <span data-ttu-id="58ae9-155">このような場合は、次の表で、結果として得られるインテントを確認してください。</span><span class="sxs-lookup"><span data-stu-id="58ae9-155">In these cases, use this table to understand the resulting intent.</span></span>
 
 ||||
 |-|-|-|
-|グループ 1 のインテント|グループ 2 のインテント|結果として得られるインテント|
-|ユーザー必須|ユーザー利用可能|必須で利用可能|
-|ユーザー必須|ユーザー利用不可|必須|
-|ユーザー必須|ユーザー アンインストール|必須|
-|ユーザー利用可能|ユーザー利用不可|利用不可|
-|ユーザー利用可能|ユーザー アンインストール|アンインストール|
-|ユーザー利用不可|ユーザー アンインストール|アンインストール
-|ユーザー必須|デバイス必須|両方存在。ゲートウェイは必須と見なす 
-|ユーザー必須|デバイス アンインストール|両方存在。ゲートウェイは必須と解決する 
-|ユーザー利用可能|デバイス必須|両方存在。ゲートウェイは必須と解決する (必須で利用可能)
-|ユーザー利用可能|デバイス アンインストール|両方存在。ゲートウェイは利用可能と解決する。<br>アプリはポータル サイトに表示される。<br>アプリが既に (以前のインテントで必要なアプリとして) インストールされている場合、アプリはアンインストールされる。<br>ただし、ユーザーがポータル サイトからインストールをクリックした場合、アプリはインストールされ、アンインストール インテントは無視される。|
-|ユーザー利用不可|デバイス必須|必須|
-|ユーザー利用不可|デバイス アンインストール|アンインストール|
-|ユーザー アンインストール|デバイス必須|両方存在。ゲートウェイは必須と解決する|
-|ユーザー アンインストール|デバイス アンインストール|両方存在。ゲートウェイはアンインストールと解決する|
-|デバイス必須|デバイス アンインストール|必須|
-|ユーザー必須で利用可能|ユーザー利用可能|必須で利用可能|
-|ユーザー必須で利用可能|ユーザー アンインストール|必須で利用可能|
-|ユーザー必須で利用可能|ユーザー利用不可|必須で利用可能|
-|ユーザー必須で利用可能|デバイス必須|両方存在。必須で利用可能
-|ユーザー必須で利用可能|デバイス利用不可|必須で利用可能|
-|ユーザー必須で利用可能|デバイス アンインストール|両方存在。ゲートウェイは必須と解決する。 必須で利用可能
-|ユーザー利用不可|デバイス利用不可|利用不可|
-|ユーザー利用可能|デバイス利用不可|利用可能|
-|ユーザー必須|デバイス利用不可|必須|
-|ユーザー登録なしで利用可能|ユーザー必須で利用可能|必須で利用可能
-|ユーザー登録なしで利用可能|ユーザー必須|必須
-|ユーザー登録なしで利用可能|ユーザー利用不可|利用不可
-|ユーザー登録なしで利用可能|ユーザー利用可能|利用可能|
-|ユーザー登録なしで利用可能|デバイス必須|必須および登録なしで利用可能|
-|ユーザー登録なしで利用可能|デバイス利用不可|登録なしで利用可能|
-|ユーザー登録なしで利用可能|デバイス アンインストール|アンインストールおよび登録なしで利用可能。<br>ユーザーがポータル サイトからアプリをインストールしなかった場合は、アンインストールが受け入れられる。<br>ユーザーがポータル サイトからアプリをインストールした場合、インストールはアンインストールよりも優先される。|
+|<span data-ttu-id="58ae9-156">グループ 1 のインテント</span><span class="sxs-lookup"><span data-stu-id="58ae9-156">Group 1 intent</span></span>|<span data-ttu-id="58ae9-157">グループ 2 のインテント</span><span class="sxs-lookup"><span data-stu-id="58ae9-157">Group 2 intent</span></span>|<span data-ttu-id="58ae9-158">結果として得られるインテント</span><span class="sxs-lookup"><span data-stu-id="58ae9-158">Resulting intent</span></span>|
+|<span data-ttu-id="58ae9-159">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-159">User Required</span></span>|<span data-ttu-id="58ae9-160">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-160">User Available</span></span>|<span data-ttu-id="58ae9-161">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-161">Required and Available</span></span>|
+|<span data-ttu-id="58ae9-162">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-162">User Required</span></span>|<span data-ttu-id="58ae9-163">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-163">User Not Available</span></span>|<span data-ttu-id="58ae9-164">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-164">Required</span></span>|
+|<span data-ttu-id="58ae9-165">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-165">User Required</span></span>|<span data-ttu-id="58ae9-166">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-166">User Uninstall</span></span>|<span data-ttu-id="58ae9-167">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-167">Required</span></span>|
+|<span data-ttu-id="58ae9-168">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-168">User Available</span></span>|<span data-ttu-id="58ae9-169">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-169">User Not Available</span></span>|<span data-ttu-id="58ae9-170">利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-170">Not Available</span></span>|
+|<span data-ttu-id="58ae9-171">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-171">User Available</span></span>|<span data-ttu-id="58ae9-172">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-172">User Uninstall</span></span>|<span data-ttu-id="58ae9-173">アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-173">Uninstall</span></span>|
+|<span data-ttu-id="58ae9-174">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-174">User Not Available</span></span>|<span data-ttu-id="58ae9-175">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-175">User Uninstall</span></span>|<span data-ttu-id="58ae9-176">アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-176">Uninstall</span></span>
+|<span data-ttu-id="58ae9-177">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-177">User Required</span></span>|<span data-ttu-id="58ae9-178">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-178">Device Required</span></span>|<span data-ttu-id="58ae9-179">両方存在。ゲートウェイは必須と見なす</span><span class="sxs-lookup"><span data-stu-id="58ae9-179">Both exists, Gateway treats required</span></span> 
+|<span data-ttu-id="58ae9-180">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-180">User Required</span></span>|<span data-ttu-id="58ae9-181">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-181">Device Uninstall</span></span>|<span data-ttu-id="58ae9-182">両方存在。ゲートウェイは必須と解決する</span><span class="sxs-lookup"><span data-stu-id="58ae9-182">Both exists, Gateway resolves required</span></span> 
+|<span data-ttu-id="58ae9-183">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-183">User Available</span></span>|<span data-ttu-id="58ae9-184">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-184">Device Required</span></span>|<span data-ttu-id="58ae9-185">両方存在。ゲートウェイは必須と解決する (必須で利用可能)</span><span class="sxs-lookup"><span data-stu-id="58ae9-185">Both exists, Gateway resolves required (Required and Available)</span></span>
+|<span data-ttu-id="58ae9-186">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-186">User Available</span></span>|<span data-ttu-id="58ae9-187">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-187">Device Uninstall</span></span>|<span data-ttu-id="58ae9-188">両方存在。ゲートウェイは利用可能と解決する。</span><span class="sxs-lookup"><span data-stu-id="58ae9-188">Both exists, Gateway resolves Available.</span></span><br><span data-ttu-id="58ae9-189">アプリはポータル サイトに表示される。</span><span class="sxs-lookup"><span data-stu-id="58ae9-189">App shows up in Company Portal.</span></span><br><span data-ttu-id="58ae9-190">アプリが既に (以前のインテントで必要なアプリとして) インストールされている場合、アプリはアンインストールされる。</span><span class="sxs-lookup"><span data-stu-id="58ae9-190">In case if the app is already installed(as required app with previous intent) then the app gets uninstalled.</span></span><br><span data-ttu-id="58ae9-191">ただし、ユーザーがポータル サイトからインストールをクリックした場合、アプリはインストールされ、アンインストール インテントは無視される。</span><span class="sxs-lookup"><span data-stu-id="58ae9-191">But if the user clicks install from the company portal then the app gets installed and uninstall intent is not honored.</span></span>|
+|<span data-ttu-id="58ae9-192">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-192">User Not Available</span></span>|<span data-ttu-id="58ae9-193">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-193">Device Required</span></span>|<span data-ttu-id="58ae9-194">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-194">Required</span></span>|
+|<span data-ttu-id="58ae9-195">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-195">User Not Available</span></span>|<span data-ttu-id="58ae9-196">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-196">Device Uninstall</span></span>|<span data-ttu-id="58ae9-197">アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-197">Uninstall</span></span>|
+|<span data-ttu-id="58ae9-198">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-198">User Uninstall</span></span>|<span data-ttu-id="58ae9-199">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-199">Device Required</span></span>|<span data-ttu-id="58ae9-200">両方存在。ゲートウェイは必須と解決する</span><span class="sxs-lookup"><span data-stu-id="58ae9-200">Both exists, Gateway resolves Required</span></span>|
+|<span data-ttu-id="58ae9-201">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-201">User Uninstall</span></span>|<span data-ttu-id="58ae9-202">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-202">Device Uninstall</span></span>|<span data-ttu-id="58ae9-203">両方存在。ゲートウェイはアンインストールと解決する</span><span class="sxs-lookup"><span data-stu-id="58ae9-203">Both exist, Gateway resolves Uninstall</span></span>|
+|<span data-ttu-id="58ae9-204">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-204">Device Required</span></span>|<span data-ttu-id="58ae9-205">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-205">Device Uninstall</span></span>|<span data-ttu-id="58ae9-206">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-206">Required</span></span>|
+|<span data-ttu-id="58ae9-207">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-207">User Required And Available</span></span>|<span data-ttu-id="58ae9-208">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-208">User Available</span></span>|<span data-ttu-id="58ae9-209">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-209">Required and Available</span></span>|
+|<span data-ttu-id="58ae9-210">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-210">User Required And Available</span></span>|<span data-ttu-id="58ae9-211">ユーザー アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-211">User Uninstall</span></span>|<span data-ttu-id="58ae9-212">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-212">Required and Available</span></span>|
+|<span data-ttu-id="58ae9-213">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-213">User Required And Available</span></span>|<span data-ttu-id="58ae9-214">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-214">User Not Available</span></span>|<span data-ttu-id="58ae9-215">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-215">Required and Available</span></span>|
+|<span data-ttu-id="58ae9-216">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-216">User Required And Available</span></span>|<span data-ttu-id="58ae9-217">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-217">Device Required</span></span>|<span data-ttu-id="58ae9-218">両方存在。必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-218">Both exists Required and Available</span></span>
+|<span data-ttu-id="58ae9-219">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-219">User Required And Available</span></span>|<span data-ttu-id="58ae9-220">デバイス利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-220">Device Not Available</span></span>|<span data-ttu-id="58ae9-221">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-221">Required and Available</span></span>|
+|<span data-ttu-id="58ae9-222">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-222">User Required And Available</span></span>|<span data-ttu-id="58ae9-223">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-223">Device Uninstall</span></span>|<span data-ttu-id="58ae9-224">両方存在。ゲートウェイは必須と解決する。</span><span class="sxs-lookup"><span data-stu-id="58ae9-224">Both exists, gateway resolves required.</span></span> <span data-ttu-id="58ae9-225">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-225">Required + Available</span></span>
+|<span data-ttu-id="58ae9-226">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-226">User Not Available</span></span>|<span data-ttu-id="58ae9-227">デバイス利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-227">Device Not Available</span></span>|<span data-ttu-id="58ae9-228">利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-228">Not Available</span></span>|
+|<span data-ttu-id="58ae9-229">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-229">User Available</span></span>|<span data-ttu-id="58ae9-230">デバイス利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-230">Device Not Available</span></span>|<span data-ttu-id="58ae9-231">利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-231">Available</span></span>|
+|<span data-ttu-id="58ae9-232">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-232">User Required</span></span>|<span data-ttu-id="58ae9-233">デバイス利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-233">Device Not Available</span></span>|<span data-ttu-id="58ae9-234">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-234">Required</span></span>|
+|<span data-ttu-id="58ae9-235">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-235">User Available Without enrollment</span></span>|<span data-ttu-id="58ae9-236">ユーザー必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-236">User Required and Available</span></span>|<span data-ttu-id="58ae9-237">必須で利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-237">Required and Available</span></span>
+|<span data-ttu-id="58ae9-238">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-238">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-239">ユーザー必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-239">User Required</span></span>|<span data-ttu-id="58ae9-240">必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-240">Required</span></span>
+|<span data-ttu-id="58ae9-241">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-241">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-242">ユーザー利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-242">User Not available</span></span>|<span data-ttu-id="58ae9-243">利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-243">Not Available</span></span>
+|<span data-ttu-id="58ae9-244">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-244">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-245">ユーザー利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-245">User Available</span></span>|<span data-ttu-id="58ae9-246">利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-246">Available</span></span>|
+|<span data-ttu-id="58ae9-247">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-247">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-248">デバイス必須</span><span class="sxs-lookup"><span data-stu-id="58ae9-248">Device Required</span></span>|<span data-ttu-id="58ae9-249">必須および登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-249">Required and Available without enrollment</span></span>|
+|<span data-ttu-id="58ae9-250">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-250">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-251">デバイス利用不可</span><span class="sxs-lookup"><span data-stu-id="58ae9-251">Device Not Available</span></span>|<span data-ttu-id="58ae9-252">登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-252">Available without enrollment</span></span>|
+|<span data-ttu-id="58ae9-253">ユーザー登録なしで利用可能</span><span class="sxs-lookup"><span data-stu-id="58ae9-253">User Available without enrollment</span></span>|<span data-ttu-id="58ae9-254">デバイス アンインストール</span><span class="sxs-lookup"><span data-stu-id="58ae9-254">Device Uninstall</span></span>|<span data-ttu-id="58ae9-255">アンインストールおよび登録なしで利用可能。</span><span class="sxs-lookup"><span data-stu-id="58ae9-255">Uninstall and Available without enrollment.</span></span><br><span data-ttu-id="58ae9-256">ユーザーがポータル サイトからアプリをインストールしなかった場合は、アンインストールが受け入れられる。</span><span class="sxs-lookup"><span data-stu-id="58ae9-256">If the user didn’t install the app from the company portal, then the uninstall is honored.</span></span><br><span data-ttu-id="58ae9-257">ユーザーがポータル サイトからアプリをインストールした場合、インストールはアンインストールよりも優先される。</span><span class="sxs-lookup"><span data-stu-id="58ae9-257">If the user installs the app from the company portal, then the install is prioritized over the uninstall.</span></span>|
 
 >[!NOTE]
->管理対象の iOS ストア アプリの場合のみ、これらを Intune に追加し、必須として割り当てるとき、必須インテントと利用可能インテントの両方で自動的に作成されます。
+><span data-ttu-id="58ae9-258">管理対象の iOS ストア アプリの場合のみ、これらを Intune に追加し、必須として割り当てるとき、必須インテントと利用可能インテントの両方で自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="58ae9-258">For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.</span></span>
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="58ae9-259">次のステップ</span><span class="sxs-lookup"><span data-stu-id="58ae9-259">Next steps</span></span>
 
-アプリの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事を参照してください。
+<span data-ttu-id="58ae9-260">アプリの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58ae9-260">See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.</span></span>

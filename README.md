@@ -1,8 +1,8 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定
+## <a name="microsoft-open-source-code-of-conduct"></a><span data-ttu-id="95c21-101">Microsoft オープン ソース コード倫理規定</span><span class="sxs-lookup"><span data-stu-id="95c21-101">Microsoft Open Source Code of Conduct</span></span>
 
-このプロジェクトは、[Microsoft オープン ソース コード倫理規定](https://opensource.microsoft.com/codeofconduct/)を採用しています。
-詳細については、次を参照してください[倫理規定に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/)にお問い合わせいただくか、追加の質問またはコメントについて [opencode@microsoft.com](mailto:opencode@microsoft.com) までお問い合わせ下さい。
+<span data-ttu-id="95c21-102">このプロジェクトは、[Microsoft オープン ソース コード倫理規定](https://opensource.microsoft.com/codeofconduct/)を採用しています。</span><span class="sxs-lookup"><span data-stu-id="95c21-102">This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span></span>
+<span data-ttu-id="95c21-103">詳細については、次を参照してください[倫理規定に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/)にお問い合わせいただくか、追加の質問またはコメントについて [opencode@microsoft.com](mailto:opencode@microsoft.com) までお問い合わせ下さい。</span><span class="sxs-lookup"><span data-stu-id="95c21-103">For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.</span></span>
 
-# <a name="docsmicrosoftcom-github-repository"></a>Docs.microsoft.com Github リポジトリ
+# <a name="docsmicrosoftcom-github-repository"></a><span data-ttu-id="95c21-104">Docs.microsoft.com Github リポジトリ</span><span class="sxs-lookup"><span data-stu-id="95c21-104">Docs.microsoft.com Github repository</span></span>
 
-GitHub リポジトリの 1 つです。このリポジトリには、Microsoft のクラウドおよび企業部門向けのすべての技術コンテンツのホームである [https://docs.microsoft.com](https://docs.microsoft.com/.) に公開されているコンテンツのソースが格納されています。
+<span data-ttu-id="95c21-105">GitHub リポジトリの 1 つです。このリポジトリには、Microsoft のクラウドおよび企業部門向けのすべての技術コンテンツのホームである [https://docs.microsoft.com](https://docs.microsoft.com/.) に公開されているコンテンツのソースが格納されています。</span><span class="sxs-lookup"><span data-stu-id="95c21-105">You've found one of the GitHub repositories that houses the source for content published to [https://docs.microsoft.com](https://docs.microsoft.com/.), home of all technical content for Microsoft's Cloud and Enterprise Division.</span></span>

@@ -15,58 +15,58 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
-Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
+# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a><span data-ttu-id="497a3-103">Windows 10 デバイスの Intune で PowerShell スクリプトを管理する</span><span class="sxs-lookup"><span data-stu-id="497a3-103">Manage PowerShell scripts in Intune for Windows 10 devices</span></span>
+<span data-ttu-id="497a3-104">Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。</span><span class="sxs-lookup"><span data-stu-id="497a3-104">The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices.</span></span> <span data-ttu-id="497a3-105">この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-105">The management extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management.</span></span>
 
-## <a name="moving-to-modern-management"></a>最新の管理への移行
-エンドユーザーのコンピューティングはデジタル変換を経ています。 従来の IT 担当者は、単一のデバイス プラットフォーム、企業所有のデバイス、オフィスで働くユーザー、および手動で事後対応型の多様な IT プロセスに重点を置きます。 一方、最近の職場では、ユーザーと企業の両方が所有する複数のデバイス プラットフォームに対応し、ユーザーがどこからでも作業できるようにして、自動化された事前対応型の IT プロセスを提供しています。 
+## <a name="moving-to-modern-management"></a><span data-ttu-id="497a3-106">最新の管理への移行</span><span class="sxs-lookup"><span data-stu-id="497a3-106">Moving to modern management</span></span>
+<span data-ttu-id="497a3-107">エンドユーザーのコンピューティングはデジタル変換を経ています。</span><span class="sxs-lookup"><span data-stu-id="497a3-107">End-user computing is going through a digital transformation.</span></span> <span data-ttu-id="497a3-108">従来の IT 担当者は、単一のデバイス プラットフォーム、企業所有のデバイス、オフィスで働くユーザー、および手動で事後対応型の多様な IT プロセスに重点を置きます。</span><span class="sxs-lookup"><span data-stu-id="497a3-108">Classic, traditional IT focuses on a single device platform, business-owned devices, users that work from the office, and a variety of manual, reactive IT processes.</span></span> <span data-ttu-id="497a3-109">一方、最近の職場では、ユーザーと企業の両方が所有する複数のデバイス プラットフォームに対応し、ユーザーがどこからでも作業できるようにして、自動化された事前対応型の IT プロセスを提供しています。</span><span class="sxs-lookup"><span data-stu-id="497a3-109">The modern workplace, however, enables multiple device platforms that are both user and business owned, allow users to work from anywhere, and provide automated and proactive IT processes.</span></span> 
 
-Microsoft Intune などの MDM サービスは、MDM プロトコルを使用して Windows 10 デバイスを管理できます。 組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行できます。 そのため、Windows 10 デバイスで最新の管理に移行できます。 ただし、高度なデバイスの構成、トラブルシューティング、Windows 10 MDM では現在使用できないレガシ Win32 アプリ管理など、特定の機能が必要な場合があります。 このような機能のために、Windows 10 デバイスで Intune ソフトウェア クライアントを実行することができます。 その場合は、Windows 10 MDM が提供する新しい機能を使用できません。 [Intune ソフトウェア クライアントと Windows 10 MDM の違いを比較してください](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)。
+<span data-ttu-id="497a3-110">Microsoft Intune などの MDM サービスは、MDM プロトコルを使用して Windows 10 デバイスを管理できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-110">MDM services, such as Microsoft Intune, can manage Windows 10 devices by using the MDM protocol.</span></span> <span data-ttu-id="497a3-111">組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-111">The built-in Windows 10 management client is able to communicate with Intune to perform enterprise management tasks.</span></span> <span data-ttu-id="497a3-112">そのため、Windows 10 デバイスで最新の管理に移行できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-112">It helps you drive toward modern management on Windows 10 devices.</span></span> <span data-ttu-id="497a3-113">ただし、高度なデバイスの構成、トラブルシューティング、Windows 10 MDM では現在使用できないレガシ Win32 アプリ管理など、特定の機能が必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="497a3-113">However, there are certain capabilities that you might need, such as advanced device configuration, troubleshooting, and legacy Win32 app management that currently isn't available in Windows 10 MDM.</span></span> <span data-ttu-id="497a3-114">このような機能のために、Windows 10 デバイスで Intune ソフトウェア クライアントを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="497a3-114">For these capabilities, you might run the Intune software client on your Windows 10 devices.</span></span> <span data-ttu-id="497a3-115">その場合は、Windows 10 MDM が提供する新しい機能を使用できません。</span><span class="sxs-lookup"><span data-stu-id="497a3-115">As a result, you are not able to use the new capabilities that Windows 10 MDM provides.</span></span> <span data-ttu-id="497a3-116">[Intune ソフトウェア クライアントと Windows 10 MDM の違いを比較してください](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)。</span><span class="sxs-lookup"><span data-stu-id="497a3-116">[Compare the differences between the Intune software client and Windows 10 MDM](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).</span></span>
 
-Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完するものです。 必要な機能を提供する PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 たとえば、Windows 10 デバイスにレガシ Win32 アプリをインストールする PowerShell スクリプトを作成し、スクリプトを Intune にアップロードし、スクリプトを Azure Active Directory (AD) グループに割り当て、Windows 10 デバイスでスクリプトを実行することができます。 Windows 10 デバイスでスクリプトの実行状態を最初から完了まで監視できます。
+<span data-ttu-id="497a3-117">Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完するものです。</span><span class="sxs-lookup"><span data-stu-id="497a3-117">The Intune management extension supplements the in-box Windows 10 MDM capabilities.</span></span> <span data-ttu-id="497a3-118">必要な機能を提供する PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。</span><span class="sxs-lookup"><span data-stu-id="497a3-118">You can create PowerShell scripts to run on the Windows 10 devices that provide the capabilities you need.</span></span> <span data-ttu-id="497a3-119">たとえば、Windows 10 デバイスにレガシ Win32 アプリをインストールする PowerShell スクリプトを作成し、スクリプトを Intune にアップロードし、スクリプトを Azure Active Directory (AD) グループに割り当て、Windows 10 デバイスでスクリプトを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="497a3-119">For example, you can create a PowerShell script that installs a legacy Win32 app on your Windows 10 devices, upload the script to Intune, assign the script to an Azure Active Directory (AD) group, and run the script on Windows 10 devices.</span></span> <span data-ttu-id="497a3-120">Windows 10 デバイスでスクリプトの実行状態を最初から完了まで監視できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-120">You can then monitor the run status of the script on Windows 10 devices from start to finish.</span></span>
 
-## <a name="prerequisites"></a>必要条件
-Intune 管理拡張機能には次の前提条件があります。
-- デバイスを Azure AD に参加させる必要があります
-- デバイスは Windows 10 バージョン 1607 以降を実行している必要があります
+## <a name="prerequisites"></a><span data-ttu-id="497a3-121">必要条件</span><span class="sxs-lookup"><span data-stu-id="497a3-121">Prerequisites</span></span>
+<span data-ttu-id="497a3-122">Intune 管理拡張機能には次の前提条件があります。</span><span class="sxs-lookup"><span data-stu-id="497a3-122">The Intune management extension has the following prerequisites:</span></span>
+- <span data-ttu-id="497a3-123">デバイスを Azure AD に参加させる必要があります</span><span class="sxs-lookup"><span data-stu-id="497a3-123">Devices must be joined to Azure AD</span></span>
+- <span data-ttu-id="497a3-124">デバイスは Windows 10 バージョン 1607 以降を実行している必要があります</span><span class="sxs-lookup"><span data-stu-id="497a3-124">Devices must run Windows 10, version 1607 or later</span></span>
 
-## <a name="create-a-powershell-script-policy"></a>PowerShell スクリプト ポリシーを作成する 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで **[スクリプトの追加]** を選択します。
-6. **[PowerShell スクリプトの追加]** ブレードで、PowerShell スクリプトの **[名前]** と **[説明]** を入力します。
-7. **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトは 10 KB (ASCII) または 5 KB (Unicode) 未満である必要があります。
-8. **[構成]** を選択し、デバイスでのスクリプトの実行にユーザーの資格情報を使用するか (**[はい]**) またはシステム コンテキストを使用するか (**[いいえ]**) を選択します。 既定で、スクリプトはシステム コンテキストで実行されます。 システム コンテキストでスクリプトを実行する必要がある場合以外は、**[はい]** を選択してください。 
-  ![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-add-script.png)
-9. 信頼された発行者がスクリプトに署名する必要がある (**[はい]**) かどうかを選択します。 既定で、スクリプトに署名する要件はありません。 
-10. **[OK]** をクリックし、**[作成]** をクリックしてスクリプトを保存します。
+## <a name="create-a-powershell-script-policy"></a><span data-ttu-id="497a3-125">PowerShell スクリプト ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="497a3-125">Create a PowerShell script policy</span></span> 
+1. <span data-ttu-id="497a3-126">サインイン、 [Azure ポータル](https://portal.azure.com)します。</span><span class="sxs-lookup"><span data-stu-id="497a3-126">Sign into the [Azure portal](https://portal.azure.com).</span></span>
+2. <span data-ttu-id="497a3-127">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-127">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="497a3-128">**[Intune]** ブレードで、**[デバイス構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-128">On the **Intune** blade, choose **Device configuration**.</span></span>
+4. <span data-ttu-id="497a3-129">**[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-129">On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.</span></span>
+5. <span data-ttu-id="497a3-130">**[PowerShell スクリプト]** ブレードで **[スクリプトの追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-130">On the **PowerShell scripts** blade, choose **Add script**.</span></span>
+6. <span data-ttu-id="497a3-131">**[PowerShell スクリプトの追加]** ブレードで、PowerShell スクリプトの **[名前]** と **[説明]** を入力します。</span><span class="sxs-lookup"><span data-stu-id="497a3-131">On the **Add PowerShell Script** blade, enter a **Name** and **Description** for the PowerShell script.</span></span>
+7. <span data-ttu-id="497a3-132">**[スクリプトの場所]** で、PowerShell スクリプトを参照します。</span><span class="sxs-lookup"><span data-stu-id="497a3-132">For **Script location**, browse for the PowerShell script.</span></span> <span data-ttu-id="497a3-133">スクリプトは 10 KB (ASCII) または 5 KB (Unicode) 未満である必要があります。</span><span class="sxs-lookup"><span data-stu-id="497a3-133">The script must be less than 10 KB (ASCII) or 5 KB (Unicode).</span></span>
+8. <span data-ttu-id="497a3-134">**[構成]** を選択し、デバイスでのスクリプトの実行にユーザーの資格情報を使用するか (**[はい]**) またはシステム コンテキストを使用するか (**[いいえ]**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-134">Choose **Configure**, and then choose whether to run the script with the user's credentials on the device (**Yes**) or system context(**No**).</span></span> <span data-ttu-id="497a3-135">既定で、スクリプトはシステム コンテキストで実行されます。</span><span class="sxs-lookup"><span data-stu-id="497a3-135">By default, the script runs in the system context.</span></span> <span data-ttu-id="497a3-136">システム コンテキストでスクリプトを実行する必要がある場合以外は、**[はい]** を選択してください。</span><span class="sxs-lookup"><span data-stu-id="497a3-136">Select **Yes** unless the script is required to run in the system context.</span></span> 
+  <span data-ttu-id="497a3-137">![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-add-script.png)</span><span class="sxs-lookup"><span data-stu-id="497a3-137">![Add PowerShell script blade](./media/mgmt-extension-add-script.png)</span></span>
+9. <span data-ttu-id="497a3-138">信頼された発行者がスクリプトに署名する必要がある (**[はい]**) かどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-138">Choose whether the script must be signed by a trusted publisher (**Yes**).</span></span> <span data-ttu-id="497a3-139">既定で、スクリプトに署名する要件はありません。</span><span class="sxs-lookup"><span data-stu-id="497a3-139">By default, there is no requirement for the script to be signed.</span></span> 
+10. <span data-ttu-id="497a3-140">**[OK]** をクリックし、**[作成]** をクリックしてスクリプトを保存します。</span><span class="sxs-lookup"><span data-stu-id="497a3-140">Click **OK** and then click **Create** to save the script.</span></span>
 
-## <a name="assign-a-powershell-script-policy"></a>PowerShell スクリプト ポリシーを割り当てる
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで、割り当てるスクリプトを選択し、**[管理]** > **[割り当て]** を選択します。
-  ![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-assignments.png)
+## <a name="assign-a-powershell-script-policy"></a><span data-ttu-id="497a3-141">PowerShell スクリプト ポリシーを割り当てる</span><span class="sxs-lookup"><span data-stu-id="497a3-141">Assign a PowerShell script policy</span></span>
+1. <span data-ttu-id="497a3-142">サインイン、 [Azure ポータル](https://portal.azure.com)します。</span><span class="sxs-lookup"><span data-stu-id="497a3-142">Sign into the [Azure portal](https://portal.azure.com).</span></span>
+2. <span data-ttu-id="497a3-143">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-143">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="497a3-144">**[Intune]** ブレードで、**[デバイス構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-144">On the **Intune** blade, choose **Device configuration**.</span></span>
+4. <span data-ttu-id="497a3-145">**[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-145">On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.</span></span>
+5. <span data-ttu-id="497a3-146">**[PowerShell スクリプト]** ブレードで、割り当てるスクリプトを選択し、**[管理]** > **[割り当て]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-146">On the **PowerShell scripts** blade, select the script to assign, and then choose **Manage** > **Assignments**.</span></span>
+  <span data-ttu-id="497a3-147">![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-assignments.png)</span><span class="sxs-lookup"><span data-stu-id="497a3-147">![Add PowerShell script blade](./media/mgmt-extension-assignments.png)</span></span>
  
-6. **[グループの選択]** を選択して、使用できる Azure AD グループの一覧を表示します。 
-7. グループを選択し、**[選択]** をクリックして、選択したグループにポリシーを割り当てます。
+6. <span data-ttu-id="497a3-148">**[グループの選択]** を選択して、使用できる Azure AD グループの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="497a3-148">Choose **Select Groups** to list available Azure AD groups.</span></span> 
+7. <span data-ttu-id="497a3-149">グループを選択し、**[選択]** をクリックして、選択したグループにポリシーを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="497a3-149">Select the groups, and then click **Select** to assign the policy to the selected groups.</span></span>
 
-Intune 管理拡張機能は、1 時間に 1 回 Intune と同期します。 ポリシーを Azure AD グループに割り当てた後に、PowerShell スクリプトを実行すると、実行結果がレポートされます。 
+<span data-ttu-id="497a3-150">Intune 管理拡張機能は、1 時間に 1 回 Intune と同期します。</span><span class="sxs-lookup"><span data-stu-id="497a3-150">The Intune management extension synchronizes to Intune once every hour.</span></span> <span data-ttu-id="497a3-151">ポリシーを Azure AD グループに割り当てた後に、PowerShell スクリプトを実行すると、実行結果がレポートされます。</span><span class="sxs-lookup"><span data-stu-id="497a3-151">After you assign the policy to the Azure AD groups, the PowerShell script is run and the run results are reported.</span></span> 
  
-## <a name="monitor-run-status-for-powershell-scripts"></a>PowerShell スクリプトの実行ステータスを監視する
-Azure Portal でユーザーとデバイスの PowerShell スクリプトの実行状態を監視できます。
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで、監視するスクリプトを選択し、**[監視]** を選択し、次のいずれかのレポートを選択します。
-   - **デバイスの状態**
-   - **ユーザーの状態**
+## <a name="monitor-run-status-for-powershell-scripts"></a><span data-ttu-id="497a3-152">PowerShell スクリプトの実行ステータスを監視する</span><span class="sxs-lookup"><span data-stu-id="497a3-152">Monitor run status for PowerShell scripts</span></span>
+<span data-ttu-id="497a3-153">Azure Portal でユーザーとデバイスの PowerShell スクリプトの実行状態を監視できます。</span><span class="sxs-lookup"><span data-stu-id="497a3-153">You can monitor the run status of PowerShell scripts for users and devices in the Azure portal.</span></span>
+1. <span data-ttu-id="497a3-154">サインイン、 [Azure ポータル](https://portal.azure.com)します。</span><span class="sxs-lookup"><span data-stu-id="497a3-154">Sign into the [Azure portal](https://portal.azure.com).</span></span>
+2. <span data-ttu-id="497a3-155">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-155">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="497a3-156">**[Intune]** ブレードで、**[デバイス構成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-156">On the **Intune** blade, choose **Device configuration**.</span></span>
+4. <span data-ttu-id="497a3-157">**[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-157">On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.</span></span>
+5. <span data-ttu-id="497a3-158">**[PowerShell スクリプト]** ブレードで、監視するスクリプトを選択し、**[監視]** を選択し、次のいずれかのレポートを選択します。</span><span class="sxs-lookup"><span data-stu-id="497a3-158">On the **PowerShell scripts** blade, select the script to monitor, and then choose **Monitor**, and then one of the following reports:</span></span>
+   - <span data-ttu-id="497a3-159">**デバイスの状態**</span><span class="sxs-lookup"><span data-stu-id="497a3-159">**Device status**</span></span>
+   - <span data-ttu-id="497a3-160">**ユーザーの状態**</span><span class="sxs-lookup"><span data-stu-id="497a3-160">**User status**</span></span>

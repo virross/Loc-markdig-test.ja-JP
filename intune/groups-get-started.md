@@ -14,74 +14,74 @@ ms.technology:
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
 ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="intune-classic-groups-in-the-azure-portal"></a>Azure Portal での Intune クラシック グループ
+# <a name="intune-classic-groups-in-the-azure-portal"></a><span data-ttu-id="b73fe-103">Azure Portal での Intune クラシック グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-103">Intune classic groups in the Azure portal</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-ユーザーからのフィードバックに対応して、Microsoft Intune でグループを操作する方法が変更されています。
-Azure Portal から Intune を使用している場合、Intune グループが Azure Active Directory セキュリティ グループに移行されています。
+<span data-ttu-id="b73fe-104">ユーザーからのフィードバックに対応して、Microsoft Intune でグループを操作する方法が変更されています。</span><span class="sxs-lookup"><span data-stu-id="b73fe-104">We've heard your feedback and have made changes to how you work with groups in Microsoft Intune.</span></span>
+<span data-ttu-id="b73fe-105">Azure Portal から Intune を使用している場合、Intune グループが Azure Active Directory セキュリティ グループに移行されています。</span><span class="sxs-lookup"><span data-stu-id="b73fe-105">If you are using Intune from the Azure portal, your Intune groups have been migrated to Azure Active Directory security groups.</span></span>
 
-お客様にとってのメリットは、すべての Enterprise Mobility + Security と Azure AD アプリで同じグループ エクスペリエンスを使えるようになったことです。 さらに、PowerShell と Graph API を使って、この新しい機能を拡張およびカスタマイズすることができます。
+<span data-ttu-id="b73fe-106">お客様にとってのメリットは、すべての Enterprise Mobility + Security と Azure AD アプリで同じグループ エクスペリエンスを使えるようになったことです。</span><span class="sxs-lookup"><span data-stu-id="b73fe-106">The benefit to you is that you now use the same groups experience across all of your Enterprise Mobility + Security, and Azure AD apps.</span></span> <span data-ttu-id="b73fe-107">さらに、PowerShell と Graph API を使って、この新しい機能を拡張およびカスタマイズすることができます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-107">Additionally, you can use PowerShell and Graph API to extend and customize this new functionality.</span></span>
 
-Azure AD セキュリティ グループは、ユーザーとデバイスの両方に対するあらゆる種類の Intune 展開をサポートします。 さらに、ユーザーが指定した属性に基づいて自動的に更新する Azure AD の動的グループを使用できます。 たとえば、iOS 9 搭載デバイスのグループを作成できます。 iOS 9 を実行しているデバイスを登録するたびに、デバイスに動的なグループが自動的に表示されます。
+<span data-ttu-id="b73fe-108">Azure AD セキュリティ グループは、ユーザーとデバイスの両方に対するあらゆる種類の Intune 展開をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b73fe-108">Azure AD security groups support all types of Intune deployments to both users and devices.</span></span> <span data-ttu-id="b73fe-109">さらに、ユーザーが指定した属性に基づいて自動的に更新する Azure AD の動的グループを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-109">Additionally, you can use Azure AD dynamic groups that automatically update based on the attributes you supply.</span></span> <span data-ttu-id="b73fe-110">たとえば、iOS 9 搭載デバイスのグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-110">For example, you could create a group of devices that run iOS 9.</span></span> <span data-ttu-id="b73fe-111">iOS 9 を実行しているデバイスを登録するたびに、デバイスに動的なグループが自動的に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-111">Whenever a device running iOS 9 enrolls, the device automatically appears in the dynamic group.</span></span>
 
-## <a name="what-is-not-available"></a>利用できない機能
+## <a name="what-is-not-available"></a><span data-ttu-id="b73fe-112">利用できない機能</span><span class="sxs-lookup"><span data-stu-id="b73fe-112">What is not available?</span></span>
 
-以前に使用できた Intune グループの機能は一部 Azure AD では利用できません。
+<span data-ttu-id="b73fe-113">以前に使用できた Intune グループの機能は一部 Azure AD では利用できません。</span><span class="sxs-lookup"><span data-stu-id="b73fe-113">Some of the Intune groups capabilities you previously might have used are not available in Azure AD:</span></span>
 
-- Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは利用できなくなります。
-- グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。 たとえば、肩書きに "Assistant" が付いているグループを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。
+- <span data-ttu-id="b73fe-114">Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは利用できなくなります。</span><span class="sxs-lookup"><span data-stu-id="b73fe-114">The **Ungrouped Users** and **Ungrouped Devices** Intune groups are no longer available.</span></span>
+- <span data-ttu-id="b73fe-115">グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。</span><span class="sxs-lookup"><span data-stu-id="b73fe-115">The option to **Exclude specific members** from a group does not exist in the Azure portal.</span></span> <span data-ttu-id="b73fe-116">ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-116">You can, however, use an Azure AD security group with advanced rules to replicate this behavior.</span></span> <span data-ttu-id="b73fe-117">たとえば、肩書きに "Assistant" が付いているグループを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-117">For example, to create an advanced rule that includes all people in your Sales department in a security group, but excludes those groups with the word "Assistant" in their title, you could use this advanced rule:</span></span>
 
-  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`
-- Intune クラシック コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。 ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。
+  <span data-ttu-id="b73fe-118">`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`</span><span class="sxs-lookup"><span data-stu-id="b73fe-118">`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.</span></span>
+- <span data-ttu-id="b73fe-119">Intune クラシック コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。</span><span class="sxs-lookup"><span data-stu-id="b73fe-119">The **All Exchange ActiveSync Managed Devices** group in the Intune classic console was not migrated to Azure AD.</span></span> <span data-ttu-id="b73fe-120">ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-120">You can, however, still access information about EAS-managed devices from the Azure portal.</span></span>
 
-## <a name="how-to-get-started"></a>開始する方法
+## <a name="how-to-get-started"></a><span data-ttu-id="b73fe-121">開始する方法</span><span class="sxs-lookup"><span data-stu-id="b73fe-121">How to get started?</span></span>
 
-- Azure AD のセキュリティ グループとそのしくみの詳細については、次のトピックを参照してください。
-    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
-    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
-    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
--  グループを作成する必要がある管理者が、**Intune サービス管理者** Azure AD ロールに追加されていることを確認します。 Azure AD サービス管理者ロールには**グループの管理**アクセス許可がありません。
--  Intune グループで **[特定のメンバーを除外]** オプションを使用している場合は、除外を必要としないようにグループを再設計できるかどうか、またはビジネス ニーズを満たすために高度なルールが必要かどうかを判断してください。
+- <span data-ttu-id="b73fe-122">Azure AD のセキュリティ グループとそのしくみの詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b73fe-122">Read the following topics to learn about Azure AD security groups and how they work:</span></span>
+    -  <span data-ttu-id="b73fe-123">[Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)</span><span class="sxs-lookup"><span data-stu-id="b73fe-123">[Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).</span></span>
+    -  <span data-ttu-id="b73fe-124">[Azure Active Directory でのグループの管理](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)</span><span class="sxs-lookup"><span data-stu-id="b73fe-124">[Managing groups in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).</span></span>
+    -  <span data-ttu-id="b73fe-125">[属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)</span><span class="sxs-lookup"><span data-stu-id="b73fe-125">[Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).</span></span>
+-  <span data-ttu-id="b73fe-126">グループを作成する必要がある管理者が、**Intune サービス管理者** Azure AD ロールに追加されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b73fe-126">Ensure that admins who need to create groups are added to the **Intune Service Administrator** Azure AD role.</span></span> <span data-ttu-id="b73fe-127">Azure AD サービス管理者ロールには**グループの管理**アクセス許可がありません。</span><span class="sxs-lookup"><span data-stu-id="b73fe-127">The Azure AD Service Admin role does not have **Manage Group** permissions.</span></span>
+-  <span data-ttu-id="b73fe-128">Intune グループで **[特定のメンバーを除外]** オプションを使用している場合は、除外を必要としないようにグループを再設計できるかどうか、またはビジネス ニーズを満たすために高度なルールが必要かどうかを判断してください。</span><span class="sxs-lookup"><span data-stu-id="b73fe-128">If your Intune groups used the **Exclude specific members**  option, decide whether you can redesign these groups without exclusions, or if you need advanced rules to meet business needs.</span></span>
 
 
-## <a name="what-happened-to-intune-groups"></a>Intune グループに対する移行処理の内容
-グループを Azure Portal から Azure Portal の Intune に移行すると、次のルールが適用されます。
+## <a name="what-happened-to-intune-groups"></a><span data-ttu-id="b73fe-129">Intune グループに対する移行処理の内容</span><span class="sxs-lookup"><span data-stu-id="b73fe-129">What happened to Intune groups?</span></span>
+<span data-ttu-id="b73fe-130">グループを Azure Portal から Azure Portal の Intune に移行すると、次のルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-130">When groups are migrated from the Azure portal to Intune in the Azure portal, the following rules are applied:</span></span>
 
-| Intune のグループ|Azure AD でのグループ|
+| <span data-ttu-id="b73fe-131">Intune のグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-131">Groups in Intune</span></span>|<span data-ttu-id="b73fe-132">Azure AD でのグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-132">Groups in Azure AD</span></span>|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|静的なユーザー グループ|静的な Azure AD セキュリティ グループ|
-|動的なユーザー グループ|Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ|
-|静的なデバイス グループ|静的な Azure AD セキュリティ グループ|
-|動的なデバイス グループ|静的な Azure AD セキュリティ グループ|
-|"含める条件" 付きのグループ|Intune の "含める条件" のすべての静的メンバーまたは動的メンバーを含む静的な Azure AD セキュリティ グループ|
-|"除外条件" 付きのグループ|移行されません|
-|組み込みグループ:<br>- **すべてのユーザー**<br>- **グループに属していないユーザー**<br>- **すべてのデバイス**<br>- **グループに属していないデバイス**<br>- **すべてのコンピューター**<br>- **すべてのモバイル デバイス**<br>- **MDM で管理されているすべてのデバイス**<br>- **EAS で管理されているすべてのデバイス**|Azure AD セキュリティ グループ|
+|<span data-ttu-id="b73fe-133">静的なユーザー グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-133">Static user group</span></span>|<span data-ttu-id="b73fe-134">静的な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-134">Static Azure AD security group</span></span>|
+|<span data-ttu-id="b73fe-135">動的なユーザー グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-135">Dynamic user group</span></span>|<span data-ttu-id="b73fe-136">Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-136">Static Azure AD security groups with an Azure AD security group hierarchy</span></span>|
+|<span data-ttu-id="b73fe-137">静的なデバイス グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-137">Static device group</span></span>|<span data-ttu-id="b73fe-138">静的な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-138">Static Azure AD security group</span></span>|
+|<span data-ttu-id="b73fe-139">動的なデバイス グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-139">Dynamic device group</span></span>|<span data-ttu-id="b73fe-140">静的な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-140">Dynamic Azure AD security group</span></span>|
+|<span data-ttu-id="b73fe-141">"含める条件" 付きのグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-141">A group with an include condition</span></span>|<span data-ttu-id="b73fe-142">Intune の "含める条件" のすべての静的メンバーまたは動的メンバーを含む静的な Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-142">Static Azure AD security group containing any static or dynamic members from the include condition in Intune</span></span>|
+|<span data-ttu-id="b73fe-143">"除外条件" 付きのグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-143">A group with an exclude condition</span></span>|<span data-ttu-id="b73fe-144">移行されません</span><span class="sxs-lookup"><span data-stu-id="b73fe-144">Not migrated</span></span>|
+|<span data-ttu-id="b73fe-145">組み込みグループ:</span><span class="sxs-lookup"><span data-stu-id="b73fe-145">The built-in groups:</span></span><br><span data-ttu-id="b73fe-146">- **すべてのユーザー**</span><span class="sxs-lookup"><span data-stu-id="b73fe-146">- **All Users**</span></span><br><span data-ttu-id="b73fe-147">- **グループに属していないユーザー**</span><span class="sxs-lookup"><span data-stu-id="b73fe-147">- **Ungrouped Users**</span></span><br><span data-ttu-id="b73fe-148">- **すべてのデバイス**</span><span class="sxs-lookup"><span data-stu-id="b73fe-148">- **All Devices**</span></span><br><span data-ttu-id="b73fe-149">- **グループに属していないデバイス**</span><span class="sxs-lookup"><span data-stu-id="b73fe-149">- **Ungrouped devices**</span></span><br><span data-ttu-id="b73fe-150">- **すべてのコンピューター**</span><span class="sxs-lookup"><span data-stu-id="b73fe-150">- **All Computers**</span></span><br><span data-ttu-id="b73fe-151">- **すべてのモバイル デバイス**</span><span class="sxs-lookup"><span data-stu-id="b73fe-151">- **All Mobile Devices**</span></span><br><span data-ttu-id="b73fe-152">- **MDM で管理されているすべてのデバイス**</span><span class="sxs-lookup"><span data-stu-id="b73fe-152">- **All-MDM managed devices**</span></span><br><span data-ttu-id="b73fe-153">- **EAS で管理されているすべてのデバイス**</span><span class="sxs-lookup"><span data-stu-id="b73fe-153">- **All EAS-managed devices**</span></span>|<span data-ttu-id="b73fe-154">Azure AD セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-154">Azure AD security groups</span></span>|
 
-## <a name="group-hierarchy"></a>グループ階層
+## <a name="group-hierarchy"></a><span data-ttu-id="b73fe-155">グループ階層</span><span class="sxs-lookup"><span data-stu-id="b73fe-155">Group hierarchy</span></span>
 
-Intune コンソールでは、すべてのグループに親グループがありました。 グループには、親グループのメンバーのみを含めることができました。 Azure AD の子グループには、親グループに含まれないメンバーを含めることができます。
+<span data-ttu-id="b73fe-156">Intune コンソールでは、すべてのグループに親グループがありました。</span><span class="sxs-lookup"><span data-stu-id="b73fe-156">In the Intune console, all groups had a parent group.</span></span> <span data-ttu-id="b73fe-157">グループには、親グループのメンバーのみを含めることができました。</span><span class="sxs-lookup"><span data-stu-id="b73fe-157">Groups could only contain members of their parent group.</span></span> <span data-ttu-id="b73fe-158">Azure AD の子グループには、親グループに含まれないメンバーを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-158">In Azure AD, child groups can contain members not in their parent group.</span></span>
 
-## <a name="group-attributes"></a>グループの属性
-属性は、グループの定義時に使用できるデバイス プロパティです。 次の表では、条件を Azure AD セキュリティ グループに移行する方法について説明します。
+## <a name="group-attributes"></a><span data-ttu-id="b73fe-159">グループの属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-159">Group attributes</span></span>
+<span data-ttu-id="b73fe-160">属性は、グループの定義時に使用できるデバイス プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b73fe-160">Attributes are device properties that may be used in defining groups.</span></span> <span data-ttu-id="b73fe-161">次の表では、条件を Azure AD セキュリティ グループに移行する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b73fe-161">This table describes how those criteria migrate to Azure AD security groups.</span></span>
 
-| Intune での属性|Azure AD での属性|
+| <span data-ttu-id="b73fe-162">Intune での属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-162">Attribute in Intune</span></span>|<span data-ttu-id="b73fe-163">Azure AD での属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-163">Attribute in Azure AD</span></span>|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|デバイス グループの組織単位 (OU) 属性|動的なグループの OU 属性。|
-|デバイス グループのドメイン名属性|動的なグループのドメイン名属性。|
-|ユーザー グループの属性としてセキュリティ グループ|Azure AD の動的クエリで属性を使用することはできません。 動的なグループには、ユーザーまたはデバイス固有の属性のみを含めることができます。|
-|ユーザー グループに対するマネージャー属性|動的グループの *manager* 属性に対する高度なルール|
-|親ユーザー グループのすべてのユーザー|そのグループをメンバーとして含む静的なグループ|
-|親デバイス グループのすべてのモバイル デバイス|そのグループをメンバーとして含む静的なグループ|
-|Intune によって管理されているすべてのモバイル デバイス|動的なグループの値として 'MDM' が使用される Management Type 属性|
-|静的なグループ内で入れ子になったグループ |静的なグループ内で入れ子になったグループ|
-|動的なグループ内で入れ子になったグループ|入れ子のレベルが 1 である動的なグループ|
+|<span data-ttu-id="b73fe-164">デバイス グループの組織単位 (OU) 属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-164">Organizational Unit (OU) attribute for device groups</span></span>|<span data-ttu-id="b73fe-165">動的なグループの OU 属性。</span><span class="sxs-lookup"><span data-stu-id="b73fe-165">OU attribute for dynamic groups.</span></span>|
+|<span data-ttu-id="b73fe-166">デバイス グループのドメイン名属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-166">Domain name attribute for device groups</span></span>|<span data-ttu-id="b73fe-167">動的なグループのドメイン名属性。</span><span class="sxs-lookup"><span data-stu-id="b73fe-167">Domain Name attribute for dynamic groups.</span></span>|
+|<span data-ttu-id="b73fe-168">ユーザー グループの属性としてセキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-168">Security group as an attribute for user groups</span></span>|<span data-ttu-id="b73fe-169">Azure AD の動的クエリで属性を使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="b73fe-169">Groups cannot be attributes in Azure AD dynamic queries.</span></span> <span data-ttu-id="b73fe-170">動的なグループには、ユーザーまたはデバイス固有の属性のみを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-170">Dynamic groups can only contain user or device-specific attributes.</span></span>|
+|<span data-ttu-id="b73fe-171">ユーザー グループに対するマネージャー属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-171">Manager attribute for user groups</span></span>|<span data-ttu-id="b73fe-172">動的グループの *manager* 属性に対する高度なルール</span><span class="sxs-lookup"><span data-stu-id="b73fe-172">Advanced Rule for *manager* attribute in dynamic groups</span></span>|
+|<span data-ttu-id="b73fe-173">親ユーザー グループのすべてのユーザー</span><span class="sxs-lookup"><span data-stu-id="b73fe-173">All users from the parent user group</span></span>|<span data-ttu-id="b73fe-174">そのグループをメンバーとして含む静的なグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-174">Static group with that group as a member</span></span>|
+|<span data-ttu-id="b73fe-175">親デバイス グループのすべてのモバイル デバイス</span><span class="sxs-lookup"><span data-stu-id="b73fe-175">All mobile devices from the parent device group</span></span>|<span data-ttu-id="b73fe-176">そのグループをメンバーとして含む静的なグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-176">Static group with that group as a member</span></span>|
+|<span data-ttu-id="b73fe-177">Intune によって管理されているすべてのモバイル デバイス</span><span class="sxs-lookup"><span data-stu-id="b73fe-177">All mobile devices managed by Intune</span></span>|<span data-ttu-id="b73fe-178">動的なグループの値として 'MDM' が使用される Management Type 属性</span><span class="sxs-lookup"><span data-stu-id="b73fe-178">Management Type attribute with ‘MDM’ as value for dynamic group</span></span>|
+|<span data-ttu-id="b73fe-179">静的なグループ内で入れ子になったグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-179">Nested groups within static groups</span></span> |<span data-ttu-id="b73fe-180">静的なグループ内で入れ子になったグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-180">Nested groups within static groups</span></span>|
+|<span data-ttu-id="b73fe-181">動的なグループ内で入れ子になったグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-181">Nested groups within dynamic groups</span></span>|<span data-ttu-id="b73fe-182">入れ子のレベルが 1 である動的なグループ</span><span class="sxs-lookup"><span data-stu-id="b73fe-182">Dynamic group with one level of nesting</span></span>|
 
-## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>以前に展開されているポリシーおよびアプリに対する処理
+## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a><span data-ttu-id="b73fe-183">以前に展開されているポリシーおよびアプリに対する処理</span><span class="sxs-lookup"><span data-stu-id="b73fe-183">What happens to policies and apps you previously deployed?</span></span>
 
-ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、Intune コンソールではなく、Azure Portal から行うようになります。
+<span data-ttu-id="b73fe-184">ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。</span><span class="sxs-lookup"><span data-stu-id="b73fe-184">Policies and apps continue to be deployed to groups, just like before.</span></span> <span data-ttu-id="b73fe-185">ただし、これらのグループの管理は、Intune コンソールではなく、Azure Portal から行うようになります。</span><span class="sxs-lookup"><span data-stu-id="b73fe-185">However, you now manage these groups from the Azure portal, instead of the Intune console.</span></span>

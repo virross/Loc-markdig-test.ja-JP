@@ -15,56 +15,56 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: c711152d8afb75d688f5f820f6c50bbe6465efb7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
-iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の大半は、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
+# <a name="intune-app-sdk-overview"></a><span data-ttu-id="98697-103">Intune App SDK の概要</span><span class="sxs-lookup"><span data-stu-id="98697-103">Intune App SDK overview</span></span>
+<span data-ttu-id="98697-104">iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="98697-104">The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies.</span></span> <span data-ttu-id="98697-105">アプリの開発者が必要なコード変更が最小限に抑えられます。</span><span class="sxs-lookup"><span data-stu-id="98697-105">It strives to minimize the amount of code changes required from the app developer.</span></span> <span data-ttu-id="98697-106">SDK の機能の大半は、アプリの動作を変更せずに利用できます。</span><span class="sxs-lookup"><span data-stu-id="98697-106">You will find that you can enable most of the SDK's features without changing your app’s behavior.</span></span> <span data-ttu-id="98697-107">エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。</span><span class="sxs-lookup"><span data-stu-id="98697-107">For enhanced end-user and IT administrator experience, you can utilize our APIs to customize your app behavior for features that require your app participation.</span></span>
 
-アプリ保護ポリシーに対してアプリを有効にしたら、IT 管理者はそのポリシーを展開し、アプリ内の会社のデータを保護することができます。
+<span data-ttu-id="98697-108">アプリ保護ポリシーに対してアプリを有効にしたら、IT 管理者はそのポリシーを展開し、アプリ内の会社のデータを保護することができます。</span><span class="sxs-lookup"><span data-stu-id="98697-108">Once you have enabled your app for app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.</span></span>
 
-## <a name="app-protection-features"></a>アプリ保護機能
+## <a name="app-protection-features"></a><span data-ttu-id="98697-109">アプリ保護機能</span><span class="sxs-lookup"><span data-stu-id="98697-109">App protection features</span></span>
 
-SDK で有効にできる Intune アプリ保護機能の例を以下に示します。
+<span data-ttu-id="98697-110">SDK で有効にできる Intune アプリ保護機能の例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="98697-110">The following are examples of Intune app protection features that can be enabled with the SDK.</span></span>
 
-### <a name="control-users-ability-to-move-corporate-files"></a>ユーザーに会社のファイルの移動を許すかどうかを制御
-IT 管理者は、アプリ内の職場または学校のデータを移動できる場所を制御できます。 たとえば、アプリで会社のデータをクラウドにバックアップできないようにするポリシーを展開できます。
+### <a name="control-users-ability-to-move-corporate-files"></a><span data-ttu-id="98697-111">ユーザーに会社のファイルの移動を許すかどうかを制御</span><span class="sxs-lookup"><span data-stu-id="98697-111">Control users’ ability to move corporate files</span></span>
+<span data-ttu-id="98697-112">IT 管理者は、アプリ内の職場または学校のデータを移動できる場所を制御できます。</span><span class="sxs-lookup"><span data-stu-id="98697-112">IT administrators can control where work or school data in the app can be moved.</span></span> <span data-ttu-id="98697-113">たとえば、アプリで会社のデータをクラウドにバックアップできないようにするポリシーを展開できます。</span><span class="sxs-lookup"><span data-stu-id="98697-113">For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.</span></span>
 
-### <a name="configure-clipboard-restrictions"></a>クリップボードの制限の構成
-IT 管理者は、Intune の管理対象アプリにおけるクリップボードの動作を構成できます。 たとえば、エンド ユーザーがアプリからデータを切り取るかコピーして、管理されていない個人アプリに貼り付けられないようにするポリシーを展開できます。
+### <a name="configure-clipboard-restrictions"></a><span data-ttu-id="98697-114">クリップボードの制限の構成</span><span class="sxs-lookup"><span data-stu-id="98697-114">Configure clipboard restrictions</span></span>
+<span data-ttu-id="98697-115">IT 管理者は、Intune の管理対象アプリにおけるクリップボードの動作を構成できます。</span><span class="sxs-lookup"><span data-stu-id="98697-115">IT administrators can configure the clipboard behavior in Intune-managed apps.</span></span> <span data-ttu-id="98697-116">たとえば、エンド ユーザーがアプリからデータを切り取るかコピーして、管理されていない個人アプリに貼り付けられないようにするポリシーを展開できます。</span><span class="sxs-lookup"><span data-stu-id="98697-116">For instance, they can deploy a policy to prevent end users from cutting or copying data from the app and pasting into an unmanaged, personal app.</span></span>
 
-### <a name="enforce-encryption-on-saved-data"></a>保存データへの暗号化の適用
-IT 管理者は、アプリによってデバイスに保存されたデータを確実に暗号化するポリシーを適用できます。
+### <a name="enforce-encryption-on-saved-data"></a><span data-ttu-id="98697-117">保存データへの暗号化の適用</span><span class="sxs-lookup"><span data-stu-id="98697-117">Enforce encryption on saved data</span></span>
+<span data-ttu-id="98697-118">IT 管理者は、アプリによってデバイスに保存されたデータを確実に暗号化するポリシーを適用できます。</span><span class="sxs-lookup"><span data-stu-id="98697-118">IT administrators can enforce a policy that ensures that data saved to the device by the app is encrypted.</span></span>
 
-### <a name="remotely-wipe-corporate-data"></a>会社のデータのリモート ワイプ
-IT 管理者は、Intune で管理されたアプリから会社のデータをリモートでワイプできます。 これは ID ベースの機能で、エンドユーザーの社内 ID に関連付けられたファイルのみが削除されます。 この機能を実行するには、アプリによる処理が必要です。 アプリは、ワイプする必要のある ID を、ユーザー設定を基に指定できます。 指定されたユーザー設定がアプリにない場合、既定の動作では、アプリケーションのディレクトリがワイプされ、エンド ユーザーにアクセスが削除されたことが通知されます。
+### <a name="remotely-wipe-corporate-data"></a><span data-ttu-id="98697-119">会社のデータのリモート ワイプ</span><span class="sxs-lookup"><span data-stu-id="98697-119">Remotely wipe corporate data</span></span>
+<span data-ttu-id="98697-120">IT 管理者は、Intune で管理されたアプリから会社のデータをリモートでワイプできます。</span><span class="sxs-lookup"><span data-stu-id="98697-120">IT administrators can remotely wipe corporate data from an Intune-managed app.</span></span> <span data-ttu-id="98697-121">これは ID ベースの機能で、エンドユーザーの社内 ID に関連付けられたファイルのみが削除されます。</span><span class="sxs-lookup"><span data-stu-id="98697-121">This feature is identity-based and will only delete the files associated with the corporate identity of the end user.</span></span> <span data-ttu-id="98697-122">この機能を実行するには、アプリによる処理が必要です。</span><span class="sxs-lookup"><span data-stu-id="98697-122">To do that, the feature requires the app’s participation.</span></span> <span data-ttu-id="98697-123">アプリは、ワイプする必要のある ID を、ユーザー設定を基に指定できます。</span><span class="sxs-lookup"><span data-stu-id="98697-123">The app can specify the identity for which the wipe should occur based on user settings.</span></span> <span data-ttu-id="98697-124">指定されたユーザー設定がアプリにない場合、既定の動作では、アプリケーションのディレクトリがワイプされ、エンド ユーザーにアクセスが削除されたことが通知されます。</span><span class="sxs-lookup"><span data-stu-id="98697-124">In the absence of these specified user settings from the app, the default behavior is to wipe the application directory and notify the end user that access has been removed.</span></span>
 
-### <a name="enforce-the-use-of-a-managed-browser"></a>管理対象ブラウザーの使用を強制
-IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)の使用を強制することができます。 これにより、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。
+### <a name="enforce-the-use-of-a-managed-browser"></a><span data-ttu-id="98697-125">管理対象ブラウザーの使用を強制</span><span class="sxs-lookup"><span data-stu-id="98697-125">Enforce the use of a managed browser</span></span>
+<span data-ttu-id="98697-126">IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)の使用を強制することができます。</span><span class="sxs-lookup"><span data-stu-id="98697-126">IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies).</span></span> <span data-ttu-id="98697-127">これにより、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="98697-127">This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.</span></span>
 
-### <a name="enforce-a-pin-policy"></a>暗証番号 (PIN) ポリシーの適用
-IT 管理者は、エンド ユーザーがアプリ内の企業データにアクセスする前に PIN の入力を求めることができます。 これにより、アプリを使用するユーザーが、職場または学校のアカウントで最初にサインインしたユーザーであることが保証されます。 エンド ユーザーが自分の PIN を構成するときに、Intune App SDK は Azure Active Directory を使用して、エンド ユーザーの資格情報を登録されている Intune アカウントに照らして確認します。
+### <a name="enforce-a-pin-policy"></a><span data-ttu-id="98697-128">暗証番号 (PIN) ポリシーの適用</span><span class="sxs-lookup"><span data-stu-id="98697-128">Enforce a PIN policy</span></span>
+<span data-ttu-id="98697-129">IT 管理者は、エンド ユーザーがアプリ内の企業データにアクセスする前に PIN の入力を求めることができます。</span><span class="sxs-lookup"><span data-stu-id="98697-129">IT administrators can require the end-user to enter a PIN before accessing corporate data in the app.</span></span> <span data-ttu-id="98697-130">これにより、アプリを使用するユーザーが、職場または学校のアカウントで最初にサインインしたユーザーであることが保証されます。</span><span class="sxs-lookup"><span data-stu-id="98697-130">This ensures that the person using the app is the same person who initially signed in with their work or school account.</span></span> <span data-ttu-id="98697-131">エンド ユーザーが自分の PIN を構成するときに、Intune App SDK は Azure Active Directory を使用して、エンド ユーザーの資格情報を登録されている Intune アカウントに照らして確認します。</span><span class="sxs-lookup"><span data-stu-id="98697-131">When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end-users against the enrolled Intune account.</span></span>
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>ユーザーはアプリにアクセスするために職場または学校のアカウントでサインインする必要がある
-IT 管理者は、アプリへのアクセスに、職場または学校のアカウントを使用してサインインすることをユーザーに求めることができます。 Intune App SDK は Azure Active Directory を使用してシングル サインオン エクスペリエンスを提供します。1 回入力した資格情報が、それ以降のログインで再利用されます。 Azure Active Directory とフェデレーションしている ID 管理ソリューションの認証もサポートしています。
+### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a><span data-ttu-id="98697-132">ユーザーはアプリにアクセスするために職場または学校のアカウントでサインインする必要がある</span><span class="sxs-lookup"><span data-stu-id="98697-132">Require users to sign in with work or school account for app access</span></span>
+<span data-ttu-id="98697-133">IT 管理者は、アプリへのアクセスに、職場または学校のアカウントを使用してサインインすることをユーザーに求めることができます。</span><span class="sxs-lookup"><span data-stu-id="98697-133">IT administrators can require users to sign in with their work or school account to access the app.</span></span> <span data-ttu-id="98697-134">Intune App SDK は Azure Active Directory を使用してシングル サインオン エクスペリエンスを提供します。1 回入力した資格情報が、それ以降のログインで再利用されます。</span><span class="sxs-lookup"><span data-stu-id="98697-134">The Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins.</span></span> <span data-ttu-id="98697-135">Azure Active Directory とフェデレーションしている ID 管理ソリューションの認証もサポートしています。</span><span class="sxs-lookup"><span data-stu-id="98697-135">We also support authentication of identity management solutions federated with Azure Active Directory.</span></span>
 
-### <a name="check-device-health-and-compliance"></a>デバイスのヘルスとコンプライアンスの確認
-エンド ユーザーがアプリにアクセスする前に、IT 管理者は、デバイスのヘルスと Intune ポリシーに対するコンプライアンスを確認できます。 iOS では、このポリシーにより、デバイスがジェイルブレイクされているかどうかを確認できます。 Android では、このポリシーにより、デバイスがルート化されているかどうかを確認できます。
+### <a name="check-device-health-and-compliance"></a><span data-ttu-id="98697-136">デバイスのヘルスとコンプライアンスの確認</span><span class="sxs-lookup"><span data-stu-id="98697-136">Check device health and compliance</span></span>
+<span data-ttu-id="98697-137">エンド ユーザーがアプリにアクセスする前に、IT 管理者は、デバイスのヘルスと Intune ポリシーに対するコンプライアンスを確認できます。</span><span class="sxs-lookup"><span data-stu-id="98697-137">IT administrators can a check the health of the device and its compliance with Intune policies before end-users access the app.</span></span> <span data-ttu-id="98697-138">iOS では、このポリシーにより、デバイスがジェイルブレイクされているかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="98697-138">On iOS, this policy checks if the device has been jailbroken.</span></span> <span data-ttu-id="98697-139">Android では、このポリシーにより、デバイスがルート化されているかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="98697-139">On Android, this policy checks if the device has been rooted.</span></span>
 
-### <a name="multi-identity-support"></a>複数 ID のサポート
-複数 ID のサポートは、ポリシーで管理された (会社) アカウントと、管理されていない (個人) アカウントとが 1 つのアプリに共存できるようにする SDK の機能です。
+### <a name="multi-identity-support"></a><span data-ttu-id="98697-140">複数 ID のサポート</span><span class="sxs-lookup"><span data-stu-id="98697-140">Multi-identity support</span></span>
+<span data-ttu-id="98697-141">複数 ID のサポートは、ポリシーで管理された (会社) アカウントと、管理されていない (個人) アカウントとが 1 つのアプリに共存できるようにする SDK の機能です。</span><span class="sxs-lookup"><span data-stu-id="98697-141">Multi-identity support is a feature of the SDK that enables coexistence of policy-managed (corporate) and unmanaged (personal) accounts in a single app.</span></span>
 
-たとえば、多くのユーザーは、iOS 用および Android 用の Office モバイル アプリで、会社と個人の両方のメール アカウントを構成しています。 ユーザーが会社のアカウントでデータにアクセスする場合、IT 管理者はアプリ保護ポリシーが確実に適用されるようにする必要があります。 一方、ユーザーが個人用のメール アカウントにアクセスする場合、データは IT 管理者の管理下にありません。 Intune App SDK では、アプリの会社 ID **のみ**をアプリ保護ポリシーの対象として、これを実現します。
+<span data-ttu-id="98697-142">たとえば、多くのユーザーは、iOS 用および Android 用の Office モバイル アプリで、会社と個人の両方のメール アカウントを構成しています。</span><span class="sxs-lookup"><span data-stu-id="98697-142">For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android.</span></span> <span data-ttu-id="98697-143">ユーザーが会社のアカウントでデータにアクセスする場合、IT 管理者はアプリ保護ポリシーが確実に適用されるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="98697-143">When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied.</span></span> <span data-ttu-id="98697-144">一方、ユーザーが個人用のメール アカウントにアクセスする場合、データは IT 管理者の管理下にありません。</span><span class="sxs-lookup"><span data-stu-id="98697-144">However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control.</span></span> <span data-ttu-id="98697-145">Intune App SDK では、アプリの会社 ID **のみ**をアプリ保護ポリシーの対象として、これを実現します。</span><span class="sxs-lookup"><span data-stu-id="98697-145">The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.</span></span>
 
-複数 ID 機能は、個人と職場の両方のアカウントをサポートするストア アプリを使用することで組織が直面しているデータ保護の問題を解決するのに役立ちます。
+<span data-ttu-id="98697-146">複数 ID 機能は、個人と職場の両方のアカウントをサポートするストア アプリを使用することで組織が直面しているデータ保護の問題を解決するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="98697-146">The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.</span></span>
  
-### <a name="app-protection-without-device-enrollment"></a>デバイス登録が不要なアプリの保護
+### <a name="app-protection-without-device-enrollment"></a><span data-ttu-id="98697-147">デバイス登録が不要なアプリの保護</span><span class="sxs-lookup"><span data-stu-id="98697-147">App protection without device enrollment</span></span>
 
 >[!IMPORTANT]
->デバイス登録のない Intune アプリ保護は、Intune App ラッピング ツール、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin コンポーネント、SDK Cordova プラグインで利用できます。
+><span data-ttu-id="98697-148">デバイス登録のない Intune アプリ保護は、Intune App ラッピング ツール、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin コンポーネント、SDK Cordova プラグインで利用できます。</span><span class="sxs-lookup"><span data-stu-id="98697-148">Intune app protection without device enrollment is available with the Intune App Wrapping Tools, Intune App SDK for Android, Intune App SDK for iOS, SDK Xamarin Component and SDK Cordova Plugin.</span></span>
 
-個人用デバイスを使用するユーザーの多くは、モバイル デバイス管理 (MDM) プロバイダーを使用して自分の個人用デバイスを登録せずに、会社のデータにアクセスしたいと考えます。 MDM 登録にはデバイスのグローバル制御が必要になるため、多くの場合、ユーザーは自分の個人用デバイスの制御を会社に任せることをためらいます。
+<span data-ttu-id="98697-149">個人用デバイスを使用するユーザーの多くは、モバイル デバイス管理 (MDM) プロバイダーを使用して自分の個人用デバイスを登録せずに、会社のデータにアクセスしたいと考えます。</span><span class="sxs-lookup"><span data-stu-id="98697-149">Many users with personal devices want to access corporate data without enrolling their personal device with a Mobile Device Management (MDM) provider.</span></span> <span data-ttu-id="98697-150">MDM 登録にはデバイスのグローバル制御が必要になるため、多くの場合、ユーザーは自分の個人用デバイスの制御を会社に任せることをためらいます。</span><span class="sxs-lookup"><span data-stu-id="98697-150">Since MDM enrollment requires global control of the device, users are often hesitant to give control of their personal device over to their company.</span></span>
 
-デバイス登録が不要なアプリの保護を使用すると、Microsoft Intune サービスでアプリ保護ポリシーを直接アプリに展開することができ、ポリシーの展開でデバイス管理チャネルに依存する必要がなくなります。
+<span data-ttu-id="98697-151">デバイス登録が不要なアプリの保護を使用すると、Microsoft Intune サービスでアプリ保護ポリシーを直接アプリに展開することができ、ポリシーの展開でデバイス管理チャネルに依存する必要がなくなります。</span><span class="sxs-lookup"><span data-stu-id="98697-151">App protection without device enrollment allows the Microsoft Intune service to deploy app protection policy to an app directly, without relying on a device management channel to deploy the policy.</span></span>

@@ -1,1 +1,1 @@
-別形式のドキュメント
+<span data-ttu-id="32bad-101">別形式のドキュメント</span><span class="sxs-lookup"><span data-stu-id="32bad-101">Documentation in Alternative Formats</span></span>

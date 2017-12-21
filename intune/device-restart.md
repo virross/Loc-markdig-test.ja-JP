@@ -15,37 +15,37 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: dde251482dd951200e5c1a7f19749ee863cd71b4
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
+# <a name="remotely-restart-devices-with-intune"></a><span data-ttu-id="25b01-103">Intune でデバイスをリモートで再起動する</span><span class="sxs-lookup"><span data-stu-id="25b01-103">Remotely restart devices with Intune</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**[再起動]** デバイス アクションでは、選択したデバイスが再起動されます。 デバイスの所有者には再起動の自動通知が行われないため、作業内容が失われる可能性があります。
+<span data-ttu-id="25b01-104">**[再起動]** デバイス アクションでは、選択したデバイスが再起動されます。</span><span class="sxs-lookup"><span data-stu-id="25b01-104">The **Restart** device action causes the device you choose to be restarted.</span></span> <span data-ttu-id="25b01-105">デバイスの所有者には再起動の自動通知が行われないため、作業内容が失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="25b01-105">The device owner is not automatically notified of the restart, therefore might lose work.</span></span>
 
-## <a name="supported-platforms"></a>サポートされているプラットフォーム
+## <a name="supported-platforms"></a><span data-ttu-id="25b01-106">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="25b01-106">Supported platforms</span></span>
 
-- Windows - Windows 8.1 以降でサポートされています
-- Windows Phone - Windows Phone 8.1 以降でサポートされています
-- iOS - サポートされています
+- <span data-ttu-id="25b01-107">Windows - Windows 8.1 以降でサポートされています</span><span class="sxs-lookup"><span data-stu-id="25b01-107">Windows - Supported on Windows 8.1 and later</span></span>
+- <span data-ttu-id="25b01-108">Windows Phone - Windows Phone 8.1 以降でサポートされています</span><span class="sxs-lookup"><span data-stu-id="25b01-108">Windows Phone - Supported on Windows Phone 8.1 and later</span></span>
+- <span data-ttu-id="25b01-109">iOS - サポートされています</span><span class="sxs-lookup"><span data-stu-id="25b01-109">iOS - Supported</span></span>
 
     > [!Note]  
-    > このコマンドは、監視されているデバイスと**デバイス ロック** アクセス権を要求します。 デバイスがすぐに再起動します。 パスコードでロックされている iOS デバイスが再起動後に Wi-Fi ネットワークに再び参加することはありません。再起動後、サーバーと通信できないことがあります。
-- macOS - サポートされていません
-- Android - サポートされていません
+    > <span data-ttu-id="25b01-110">このコマンドは、監視されているデバイスと**デバイス ロック** アクセス権を要求します。</span><span class="sxs-lookup"><span data-stu-id="25b01-110">This command requires a supervised devices and the **Device Lock** access right.</span></span> <span data-ttu-id="25b01-111">デバイスがすぐに再起動します。</span><span class="sxs-lookup"><span data-stu-id="25b01-111">The device restarts immediately.</span></span> <span data-ttu-id="25b01-112">パスコードでロックされている iOS デバイスが再起動後に Wi-Fi ネットワークに再び参加することはありません。再起動後、サーバーと通信できないことがあります。</span><span class="sxs-lookup"><span data-stu-id="25b01-112">Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.</span></span>
+- <span data-ttu-id="25b01-113">macOS - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="25b01-113">macOS - Not supported</span></span>
+- <span data-ttu-id="25b01-114">Android - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="25b01-114">Android - Not supported</span></span>
 
-## <a name="how-to-restart-a-device"></a>デバイスを再起動する方法
+## <a name="how-to-restart-a-device"></a><span data-ttu-id="25b01-115">デバイスを再起動する方法</span><span class="sxs-lookup"><span data-stu-id="25b01-115">How to restart a device</span></span>
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧からデバイスを選択し、その後**[再起動]** デバイス リモート アクションを選択します。
+1. <span data-ttu-id="25b01-116">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="25b01-116">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="25b01-117">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="25b01-117">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="25b01-118">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25b01-118">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="25b01-119">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25b01-119">on the **Devices and groups** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="25b01-120">管理するデバイスの一覧からデバイスを選択し、その後**[再起動]** デバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="25b01-120">From the list of devices you manage, choose a device, and then choose the **Restart** device remote action.</span></span>
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="25b01-121">次のステップ</span><span class="sxs-lookup"><span data-stu-id="25b01-121">Next steps</span></span>
 
-実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。
+<span data-ttu-id="25b01-122">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25b01-122">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

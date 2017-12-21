@@ -1,2 +1,2 @@
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
+1. <span data-ttu-id="70f85-101">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="70f85-101">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="70f85-102">**[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="70f85-102">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>

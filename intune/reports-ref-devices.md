@@ -15,407 +15,407 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
+# <a name="reference-for-devices-entities"></a><span data-ttu-id="c66cc-104">デバイス エンティティの参照</span><span class="sxs-lookup"><span data-stu-id="c66cc-104">Reference for devices entities</span></span>
 
-**デバイス** カテゴリには、次のような情報を追跡記録するモバイル デバイスのエンティティが含まれています。
+<span data-ttu-id="c66cc-105">**デバイス** カテゴリには、次のような情報を追跡記録するモバイル デバイスのエンティティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-105">The **Devices** category contains entities for mobile devices that track information such as:</span></span>
 
-  -  デバイスの種類
-  -  デバイスの登録と登録状況
-  -  デバイスの所有権
-  -  デバイスの管理状態
-  -  デバイスの Azure AD メンバーシップ状況
-  -  登録ステータス
-  -  デバイスに関する過去の情報
-  -  デバイス上のアプリ目録
+  -  <span data-ttu-id="c66cc-106">デバイスの種類</span><span class="sxs-lookup"><span data-stu-id="c66cc-106">Device type</span></span>
+  -  <span data-ttu-id="c66cc-107">デバイスの登録と登録状況</span><span class="sxs-lookup"><span data-stu-id="c66cc-107">Device enrollment and registration status</span></span>
+  -  <span data-ttu-id="c66cc-108">デバイスの所有権</span><span class="sxs-lookup"><span data-stu-id="c66cc-108">Device ownership</span></span>
+  -  <span data-ttu-id="c66cc-109">デバイスの管理状態</span><span class="sxs-lookup"><span data-stu-id="c66cc-109">Device management state</span></span>
+  -  <span data-ttu-id="c66cc-110">デバイスの Azure AD メンバーシップ状況</span><span class="sxs-lookup"><span data-stu-id="c66cc-110">Device membership to Azure AD status</span></span>
+  -  <span data-ttu-id="c66cc-111">登録ステータス</span><span class="sxs-lookup"><span data-stu-id="c66cc-111">Enrollment status</span></span>
+  -  <span data-ttu-id="c66cc-112">デバイスに関する過去の情報</span><span class="sxs-lookup"><span data-stu-id="c66cc-112">Historic information about the device</span></span>
+  -  <span data-ttu-id="c66cc-113">デバイス上のアプリ目録</span><span class="sxs-lookup"><span data-stu-id="c66cc-113">Inventory of apps on the device</span></span>
 
-## <a name="devicetypes"></a>DeviceTypes
+## <a name="devicetypes"></a><span data-ttu-id="c66cc-114">DeviceTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-114">DeviceTypes</span></span>
 
-**DeviceTypes** エンティティは、他のデータ ウェアハウス エンティティによって参照されるデバイスの種類を表します。 デバイスの種類により、一般的に、デバイスのモデル、メーカー、あるいは両方の組み合わせが説明されます。
+<span data-ttu-id="c66cc-115">**DeviceTypes** エンティティは、他のデータ ウェアハウス エンティティによって参照されるデバイスの種類を表します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-115">The **DeviceTypes** entity represents the device type referenced by other data warehouse entities.</span></span> <span data-ttu-id="c66cc-116">デバイスの種類により、一般的に、デバイスのモデル、メーカー、あるいは両方の組み合わせが説明されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-116">The device type typically describes either the device model, manufacturer, or a combination of both.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-117">Property</span></span>  | <span data-ttu-id="c66cc-118">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-118">Description</span></span> |
 |---------|------------|
-| DeviceTypeID |デバイスの種類を示す一意識別子 |
-| DeviceTypeKey |データ ウェアハウスにおけるデバイスの種類を示す一意識別子 - 代理キー |
-| DeviceTypeName |デバイスの種類 |
+| <span data-ttu-id="c66cc-119">DeviceTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-119">DeviceTypeID</span></span> |<span data-ttu-id="c66cc-120">デバイスの種類を示す一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-120">Unique identifier of the device type</span></span> |
+| <span data-ttu-id="c66cc-121">DeviceTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-121">DeviceTypeKey</span></span> |<span data-ttu-id="c66cc-122">データ ウェアハウスにおけるデバイスの種類を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-122">Unique identifier of the device type in the data warehouse - surrogate key</span></span> |
+| <span data-ttu-id="c66cc-123">DeviceTypeName</span><span class="sxs-lookup"><span data-stu-id="c66cc-123">DeviceTypeName</span></span> |<span data-ttu-id="c66cc-124">デバイスの種類</span><span class="sxs-lookup"><span data-stu-id="c66cc-124">Device type</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-125">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-125">Example</span></span>
 
-| deviceTypeID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-126">deviceTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-126">deviceTypeID</span></span>  | <span data-ttu-id="c66cc-127">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-127">Name</span></span> | <span data-ttu-id="c66cc-128">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-128">Description</span></span> |
 |---------|------------|--------|
-| 0 |デスクトップ |Windows デスクトップ デバイス |
-| 1 |Windows RT |WindowsRT デバイス |
-| 2 |WinMO6 |Windows Mobile 6.0 デバイス |
-| 3 |Nokia |Nokia デバイス |
-| 4 |WindowsPhone |Windows Phone デバイス |
-| 5 |Mac |Mac デバイス |
-| 6 |WinCE |Windows CE デバイス |
-| 7 |WinEmbedded |Windows Embedded デバイス |
-| 8 |IPhone |iPhone デバイス |
-| 9 |IPad |iPad デバイス |
-| 10 |IPod |iPod デバイス |
-| 11 |Android |Android デバイス - デバイス管理者により管理 |
-| 12 |ISocConsumer |iSoc Consumer デバイス |
-| 14 |MacMDM |Mac OS X デバイス - 組み込み MDM エージェントにより管理 |
-| 15 |HoloLens |Holo Lens デバイス |
-| 16 |SurfaceHub |Surface Hub デバイス |
-| 17 |AndroidForWork |Android デバイス - Android for Work Profile Owner により管理 |
-| 100 |Blackberry |Blackberry デバイス |
-| 101 |Palm |Palm デバイス |
-| 255 |不明 |デバイスの種類が不明 |
+| <span data-ttu-id="c66cc-129">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-129">0</span></span> |<span data-ttu-id="c66cc-130">デスクトップ</span><span class="sxs-lookup"><span data-stu-id="c66cc-130">Desktop</span></span> |<span data-ttu-id="c66cc-131">Windows デスクトップ デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-131">Windows Desktop device</span></span> |
+| <span data-ttu-id="c66cc-132">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-132">1</span></span> |<span data-ttu-id="c66cc-133">Windows RT</span><span class="sxs-lookup"><span data-stu-id="c66cc-133">WindowsRT</span></span> |<span data-ttu-id="c66cc-134">WindowsRT デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-134">WindowsRT device</span></span> |
+| <span data-ttu-id="c66cc-135">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-135">2</span></span> |<span data-ttu-id="c66cc-136">WinMO6</span><span class="sxs-lookup"><span data-stu-id="c66cc-136">WinMO6</span></span> |<span data-ttu-id="c66cc-137">Windows Mobile 6.0 デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-137">Windows Mobile 6.0 device</span></span> |
+| <span data-ttu-id="c66cc-138">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-138">3</span></span> |<span data-ttu-id="c66cc-139">Nokia</span><span class="sxs-lookup"><span data-stu-id="c66cc-139">Nokia</span></span> |<span data-ttu-id="c66cc-140">Nokia デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-140">Nokia device</span></span> |
+| <span data-ttu-id="c66cc-141">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-141">4</span></span> |<span data-ttu-id="c66cc-142">WindowsPhone</span><span class="sxs-lookup"><span data-stu-id="c66cc-142">WindowsPhone</span></span> |<span data-ttu-id="c66cc-143">Windows Phone デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-143">Windows Phone device</span></span> |
+| <span data-ttu-id="c66cc-144">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-144">5</span></span> |<span data-ttu-id="c66cc-145">Mac</span><span class="sxs-lookup"><span data-stu-id="c66cc-145">Mac</span></span> |<span data-ttu-id="c66cc-146">Mac デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-146">Mac device</span></span> |
+| <span data-ttu-id="c66cc-147">6</span><span class="sxs-lookup"><span data-stu-id="c66cc-147">6</span></span> |<span data-ttu-id="c66cc-148">WinCE</span><span class="sxs-lookup"><span data-stu-id="c66cc-148">WinCE</span></span> |<span data-ttu-id="c66cc-149">Windows CE デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-149">Windows CE device</span></span> |
+| <span data-ttu-id="c66cc-150">7</span><span class="sxs-lookup"><span data-stu-id="c66cc-150">7</span></span> |<span data-ttu-id="c66cc-151">WinEmbedded</span><span class="sxs-lookup"><span data-stu-id="c66cc-151">WinEmbedded</span></span> |<span data-ttu-id="c66cc-152">Windows Embedded デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-152">Windows Embedded device</span></span> |
+| <span data-ttu-id="c66cc-153">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-153">8</span></span> |<span data-ttu-id="c66cc-154">IPhone</span><span class="sxs-lookup"><span data-stu-id="c66cc-154">IPhone</span></span> |<span data-ttu-id="c66cc-155">iPhone デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-155">iPhone device</span></span> |
+| <span data-ttu-id="c66cc-156">9</span><span class="sxs-lookup"><span data-stu-id="c66cc-156">9</span></span> |<span data-ttu-id="c66cc-157">IPad</span><span class="sxs-lookup"><span data-stu-id="c66cc-157">IPad</span></span> |<span data-ttu-id="c66cc-158">iPad デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-158">iPad device</span></span> |
+| <span data-ttu-id="c66cc-159">10</span><span class="sxs-lookup"><span data-stu-id="c66cc-159">10</span></span> |<span data-ttu-id="c66cc-160">IPod</span><span class="sxs-lookup"><span data-stu-id="c66cc-160">IPod</span></span> |<span data-ttu-id="c66cc-161">iPod デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-161">iPod device</span></span> |
+| <span data-ttu-id="c66cc-162">11</span><span class="sxs-lookup"><span data-stu-id="c66cc-162">11</span></span> |<span data-ttu-id="c66cc-163">Android</span><span class="sxs-lookup"><span data-stu-id="c66cc-163">Android</span></span> |<span data-ttu-id="c66cc-164">Android デバイス - デバイス管理者により管理</span><span class="sxs-lookup"><span data-stu-id="c66cc-164">Android device-managed using Device Administrator</span></span> |
+| <span data-ttu-id="c66cc-165">12</span><span class="sxs-lookup"><span data-stu-id="c66cc-165">12</span></span> |<span data-ttu-id="c66cc-166">ISocConsumer</span><span class="sxs-lookup"><span data-stu-id="c66cc-166">ISocConsumer</span></span> |<span data-ttu-id="c66cc-167">iSoc Consumer デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-167">iSoc Consumer device</span></span> |
+| <span data-ttu-id="c66cc-168">14</span><span class="sxs-lookup"><span data-stu-id="c66cc-168">14</span></span> |<span data-ttu-id="c66cc-169">MacMDM</span><span class="sxs-lookup"><span data-stu-id="c66cc-169">MacMDM</span></span> |<span data-ttu-id="c66cc-170">Mac OS X デバイス - 組み込み MDM エージェントにより管理</span><span class="sxs-lookup"><span data-stu-id="c66cc-170">Mac OS X device managed with the built-in MDM agent</span></span> |
+| <span data-ttu-id="c66cc-171">15</span><span class="sxs-lookup"><span data-stu-id="c66cc-171">15</span></span> |<span data-ttu-id="c66cc-172">HoloLens</span><span class="sxs-lookup"><span data-stu-id="c66cc-172">HoloLens</span></span> |<span data-ttu-id="c66cc-173">Holo Lens デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-173">Holo Lens device</span></span> |
+| <span data-ttu-id="c66cc-174">16</span><span class="sxs-lookup"><span data-stu-id="c66cc-174">16</span></span> |<span data-ttu-id="c66cc-175">SurfaceHub</span><span class="sxs-lookup"><span data-stu-id="c66cc-175">SurfaceHub</span></span> |<span data-ttu-id="c66cc-176">Surface Hub デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-176">Surface Hub device</span></span> |
+| <span data-ttu-id="c66cc-177">17</span><span class="sxs-lookup"><span data-stu-id="c66cc-177">17</span></span> |<span data-ttu-id="c66cc-178">AndroidForWork</span><span class="sxs-lookup"><span data-stu-id="c66cc-178">AndroidForWork</span></span> |<span data-ttu-id="c66cc-179">Android デバイス - Android for Work Profile Owner により管理</span><span class="sxs-lookup"><span data-stu-id="c66cc-179">Android device-managed using Android for Work Profile Owner</span></span> |
+| <span data-ttu-id="c66cc-180">100</span><span class="sxs-lookup"><span data-stu-id="c66cc-180">100</span></span> |<span data-ttu-id="c66cc-181">Blackberry</span><span class="sxs-lookup"><span data-stu-id="c66cc-181">Blackberry</span></span> |<span data-ttu-id="c66cc-182">Blackberry デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-182">Blackberry Device</span></span> |
+| <span data-ttu-id="c66cc-183">101</span><span class="sxs-lookup"><span data-stu-id="c66cc-183">101</span></span> |<span data-ttu-id="c66cc-184">Palm</span><span class="sxs-lookup"><span data-stu-id="c66cc-184">Palm</span></span> |<span data-ttu-id="c66cc-185">Palm デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-185">Palm device</span></span> |
+| <span data-ttu-id="c66cc-186">255</span><span class="sxs-lookup"><span data-stu-id="c66cc-186">255</span></span> |<span data-ttu-id="c66cc-187">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-187">Unknown</span></span> |<span data-ttu-id="c66cc-188">デバイスの種類が不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-188">Unknown device type</span></span> |
 
-## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
+## <a name="clientregistrationstatetypes"></a><span data-ttu-id="c66cc-189">ClientRegistrationStateTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-189">ClientRegistrationStateTypes</span></span>
 
-**ClientRegistrationStateTypes** エンティティは、他のデータ ウェアハウス テーブルにより参照される登録の種類を表します。
+<span data-ttu-id="c66cc-190">**ClientRegistrationStateTypes** エンティティは、他のデータ ウェアハウス テーブルにより参照される登録の種類を表します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-190">The **ClientRegistrationStateTypes** entity represents the registration type referenced by other data warehouse tables.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-191">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-191">Property</span></span>  | <span data-ttu-id="c66cc-192">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-192">Description</span></span> |
 |---------|------------|
-| clientRegisterationStateID |登録状況の一意識別子 |
-| clientRegisterationStateKey |データ ウェアハウスにおける登録状況を示す一意識別子 - 代理キー |
-| clientRegisterationStateName |登録状況 |
+| <span data-ttu-id="c66cc-193">clientRegisterationStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-193">clientRegisterationStateID</span></span> |<span data-ttu-id="c66cc-194">登録状況の一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-194">Unique identifier for registration state</span></span> |
+| <span data-ttu-id="c66cc-195">clientRegisterationStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-195">clientRegisterationStateKey</span></span> |<span data-ttu-id="c66cc-196">データ ウェアハウスにおける登録状況を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-196">Unique identifier of the registration state in the data warehouse - surrogate key</span></span> |
+| <span data-ttu-id="c66cc-197">clientRegisterationStateName</span><span class="sxs-lookup"><span data-stu-id="c66cc-197">clientRegisterationStateName</span></span> |<span data-ttu-id="c66cc-198">登録状況</span><span class="sxs-lookup"><span data-stu-id="c66cc-198">Registration state</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-199">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-199">Example</span></span>
 
-| ClientRegisterationStateID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-200">ClientRegisterationStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-200">ClientRegisterationStateID</span></span>  | <span data-ttu-id="c66cc-201">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-201">Name</span></span> | <span data-ttu-id="c66cc-202">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-202">Description</span></span> |
 |---------|------------|--------|
-| 0 |NotRegistered |未登録 |
-| 1 |SMSIDConflict |SMS ID 競合 |
-| 2 |登録済み |登録済み |
-| 3 |取り消し済み |状態は IT 管理者がクライアントをブロックしたことを意味します。クライアントのブロックを解除できます。 デバイスは、ワイプした後やインベントリから削除した後にも取り消し済み状態になります。 |
-| 4 |KeyConflict |キー競合 |
-| 5 |ApprovalPending |承認保留中 |
-| 6 |ResetCert |証明書のリセット |
-| 7 |NotRegisteredPendingEnrollment |未登録で登録保留中 |
-| 8 |不明 |状態が不明 |
+| <span data-ttu-id="c66cc-203">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-203">0</span></span> |<span data-ttu-id="c66cc-204">NotRegistered</span><span class="sxs-lookup"><span data-stu-id="c66cc-204">NotRegistered</span></span> |<span data-ttu-id="c66cc-205">未登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-205">Not registered</span></span> |
+| <span data-ttu-id="c66cc-206">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-206">1</span></span> |<span data-ttu-id="c66cc-207">SMSIDConflict</span><span class="sxs-lookup"><span data-stu-id="c66cc-207">SMSIDConflict</span></span> |<span data-ttu-id="c66cc-208">SMS ID 競合</span><span class="sxs-lookup"><span data-stu-id="c66cc-208">SMS ID conflict</span></span> |
+| <span data-ttu-id="c66cc-209">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-209">2</span></span> |<span data-ttu-id="c66cc-210">登録済み</span><span class="sxs-lookup"><span data-stu-id="c66cc-210">Registered</span></span> |<span data-ttu-id="c66cc-211">登録済み</span><span class="sxs-lookup"><span data-stu-id="c66cc-211">Registered</span></span> |
+| <span data-ttu-id="c66cc-212">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-212">3</span></span> |<span data-ttu-id="c66cc-213">取り消し済み</span><span class="sxs-lookup"><span data-stu-id="c66cc-213">Revoked</span></span> |<span data-ttu-id="c66cc-214">状態は IT 管理者がクライアントをブロックしたことを意味します。クライアントのブロックを解除できます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-214">State means the IT administrator has blocked the client, and the client can be unblocked.</span></span> <span data-ttu-id="c66cc-215">デバイスは、ワイプした後やインベントリから削除した後にも取り消し済み状態になります。</span><span class="sxs-lookup"><span data-stu-id="c66cc-215">A device can also be in the Revoked state after it is wiped or retired.</span></span> |
+| <span data-ttu-id="c66cc-216">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-216">4</span></span> |<span data-ttu-id="c66cc-217">KeyConflict</span><span class="sxs-lookup"><span data-stu-id="c66cc-217">KeyConflict</span></span> |<span data-ttu-id="c66cc-218">キー競合</span><span class="sxs-lookup"><span data-stu-id="c66cc-218">Key conflict</span></span> |
+| <span data-ttu-id="c66cc-219">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-219">5</span></span> |<span data-ttu-id="c66cc-220">ApprovalPending</span><span class="sxs-lookup"><span data-stu-id="c66cc-220">ApprovalPending</span></span> |<span data-ttu-id="c66cc-221">承認保留中</span><span class="sxs-lookup"><span data-stu-id="c66cc-221">Approval pending</span></span> |
+| <span data-ttu-id="c66cc-222">6</span><span class="sxs-lookup"><span data-stu-id="c66cc-222">6</span></span> |<span data-ttu-id="c66cc-223">ResetCert</span><span class="sxs-lookup"><span data-stu-id="c66cc-223">ResetCert</span></span> |<span data-ttu-id="c66cc-224">証明書のリセット</span><span class="sxs-lookup"><span data-stu-id="c66cc-224">Reset certificate</span></span> |
+| <span data-ttu-id="c66cc-225">7</span><span class="sxs-lookup"><span data-stu-id="c66cc-225">7</span></span> |<span data-ttu-id="c66cc-226">NotRegisteredPendingEnrollment</span><span class="sxs-lookup"><span data-stu-id="c66cc-226">NotRegisteredPendingEnrollment</span></span> |<span data-ttu-id="c66cc-227">未登録で登録保留中</span><span class="sxs-lookup"><span data-stu-id="c66cc-227">Not registered pending enrollment</span></span> |
+| <span data-ttu-id="c66cc-228">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-228">8</span></span> |<span data-ttu-id="c66cc-229">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-229">Unknown</span></span> |<span data-ttu-id="c66cc-230">状態が不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-230">Unknown state</span></span> |
 
-## <a name="enrollmenttypes"></a>EnrollmentTypes
+## <a name="enrollmenttypes"></a><span data-ttu-id="c66cc-231">EnrollmentTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-231">EnrollmentTypes</span></span>
 
-**EnrollmentTypes** エンティティは、デバイスの登録方法を示します。 登録の種類により、登録の方法が保存されます。 例には、登録のさまざまな種類とその意味が一覧表示されています。
+<span data-ttu-id="c66cc-232">**EnrollmentTypes** エンティティは、デバイスの登録方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-232">The **EnrollmentTypes** entity indicates how a device was enrolled.</span></span> <span data-ttu-id="c66cc-233">登録の種類により、登録の方法が保存されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-233">The enrollment type captures the method of enrollment.</span></span> <span data-ttu-id="c66cc-234">例には、登録のさまざまな種類とその意味が一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-234">Examples list the different enrollment types and what they mean.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-235">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-235">Property</span></span>  | <span data-ttu-id="c66cc-236">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-236">Description</span></span> |
 |---------|------------|
-| managementStateID |管理状態を示す一意識別子 |
-| managementStateKey |データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー |
-| managementStateName |このデバイスに適用されるリモート アクションの状態を示します。 |
+| <span data-ttu-id="c66cc-237">managementStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-237">managementStateID</span></span> |<span data-ttu-id="c66cc-238">管理状態を示す一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-238">Unique identifier of the management state.</span></span> |
+| <span data-ttu-id="c66cc-239">managementStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-239">managementStateKey</span></span> |<span data-ttu-id="c66cc-240">データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-240">Unique identifier of the management state in the data warehouse - surrogate key.</span></span> |
+| <span data-ttu-id="c66cc-241">managementStateName</span><span class="sxs-lookup"><span data-stu-id="c66cc-241">managementStateName</span></span> |<span data-ttu-id="c66cc-242">このデバイスに適用されるリモート アクションの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-242">Indicates the state of the remote action applied to this device.</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-243">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-243">Example</span></span>
 
-| enrollmentTypeID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-244">enrollmentTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-244">enrollmentTypeID</span></span>  | <span data-ttu-id="c66cc-245">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-245">Name</span></span> | <span data-ttu-id="c66cc-246">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-246">Description</span></span> |
 |---------|------------|--------|
-| 0 |不明 |登録の種類が収集されませんでした |
-| 1 |UserEnrollment |ユーザーが開始した登録 |
-| 2 |DeviceEnrollment |ユーザーなしのプロファイルによるデバイス登録 |
-| 3 |DeviceEnrollmentWithUDA |UDA プロファイルによるデバイス登録 |
-| 4 |AzureDomainJoined |ユーザーが Azure Active Directory を利用して開始したデバイス登録 |
-| 5 |UserEnrollmentWithServiceAccount |ユーザーがサービス アカウントを利用して開始した登録 |
-| 6 |DepDeviceEnrollment |ユーザーなしのプロファイルによる DEP デバイス登録 |
-| 7 |DepDeviceEnrollmentWithUDA |UDA プロファイルによる DEP デバイス登録 |
-| 8 |AutoEnrollment |BYOD シナリオのための DRS と MDM を組み合わせた登録 |
+| <span data-ttu-id="c66cc-247">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-247">0</span></span> |<span data-ttu-id="c66cc-248">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-248">Unknown</span></span> |<span data-ttu-id="c66cc-249">登録の種類が収集されませんでした</span><span class="sxs-lookup"><span data-stu-id="c66cc-249">Enrollment type was not collected</span></span> |
+| <span data-ttu-id="c66cc-250">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-250">1</span></span> |<span data-ttu-id="c66cc-251">UserEnrollment</span><span class="sxs-lookup"><span data-stu-id="c66cc-251">UserEnrollment</span></span> |<span data-ttu-id="c66cc-252">ユーザーが開始した登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-252">User initiated enrollment</span></span> |
+| <span data-ttu-id="c66cc-253">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-253">2</span></span> |<span data-ttu-id="c66cc-254">DeviceEnrollment</span><span class="sxs-lookup"><span data-stu-id="c66cc-254">DeviceEnrollment</span></span> |<span data-ttu-id="c66cc-255">ユーザーなしのプロファイルによるデバイス登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-255">Device enrollment with user-less profile</span></span> |
+| <span data-ttu-id="c66cc-256">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-256">3</span></span> |<span data-ttu-id="c66cc-257">DeviceEnrollmentWithUDA</span><span class="sxs-lookup"><span data-stu-id="c66cc-257">DeviceEnrollmentWithUDA</span></span> |<span data-ttu-id="c66cc-258">UDA プロファイルによるデバイス登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-258">Device enrollment with UDA profile.</span></span> |
+| <span data-ttu-id="c66cc-259">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-259">4</span></span> |<span data-ttu-id="c66cc-260">AzureDomainJoined</span><span class="sxs-lookup"><span data-stu-id="c66cc-260">AzureDomainJoined</span></span> |<span data-ttu-id="c66cc-261">ユーザーが Azure Active Directory を利用して開始したデバイス登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-261">User initiated device enrollment through Azure Active Directory</span></span> |
+| <span data-ttu-id="c66cc-262">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-262">5</span></span> |<span data-ttu-id="c66cc-263">UserEnrollmentWithServiceAccount</span><span class="sxs-lookup"><span data-stu-id="c66cc-263">UserEnrollmentWithServiceAccount</span></span> |<span data-ttu-id="c66cc-264">ユーザーがサービス アカウントを利用して開始した登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-264">User initiated enrollment through service account</span></span> |
+| <span data-ttu-id="c66cc-265">6</span><span class="sxs-lookup"><span data-stu-id="c66cc-265">6</span></span> |<span data-ttu-id="c66cc-266">DepDeviceEnrollment</span><span class="sxs-lookup"><span data-stu-id="c66cc-266">DepDeviceEnrollment</span></span> |<span data-ttu-id="c66cc-267">ユーザーなしのプロファイルによる DEP デバイス登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-267">DEP Device enrollment with user-less profile</span></span> |
+| <span data-ttu-id="c66cc-268">7</span><span class="sxs-lookup"><span data-stu-id="c66cc-268">7</span></span> |<span data-ttu-id="c66cc-269">DepDeviceEnrollmentWithUDA</span><span class="sxs-lookup"><span data-stu-id="c66cc-269">DepDeviceEnrollmentWithUDA</span></span> |<span data-ttu-id="c66cc-270">UDA プロファイルによる DEP デバイス登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-270">DEP Device enrollment with UDA profile</span></span> |
+| <span data-ttu-id="c66cc-271">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-271">8</span></span> |<span data-ttu-id="c66cc-272">AutoEnrollment</span><span class="sxs-lookup"><span data-stu-id="c66cc-272">AutoEnrollment</span></span> |<span data-ttu-id="c66cc-273">BYOD シナリオのための DRS と MDM を組み合わせた登録</span><span class="sxs-lookup"><span data-stu-id="c66cc-273">Combined DRS and MDM Enrollment for BYOD scenario</span></span> |
 
-## <a name="ownertypes"></a>OwnerTypes
+## <a name="ownertypes"></a><span data-ttu-id="c66cc-274">OwnerTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-274">OwnerTypes</span></span>
 
-**EnrollmentTypes** エンティティは、デバイスの種類として企業所有、個人所有、不明のいずれかを示します。
+<span data-ttu-id="c66cc-275">**EnrollmentTypes** エンティティは、デバイスの種類として企業所有、個人所有、不明のいずれかを示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-275">The **EnrollmentTypes** entity indicates whether a device is corporate, personally owned, or unknown.</span></span>
 
-| プロパティ  | 説明 | 例 |
+| <span data-ttu-id="c66cc-276">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-276">Property</span></span>  | <span data-ttu-id="c66cc-277">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-277">Description</span></span> | <span data-ttu-id="c66cc-278">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-278">Example</span></span> |
 |---------|------------|--------|
-| ownerTypeID |所有者の種類を示す一意識別子。 | |
-| ownerTypeKey |データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。 | |
-| ownerTypeName |デバイスの所有者の種類を表します。  <br>[会社] - 会社が所有するデバイスです。 <br>[個人] - 個人が所有するデバイスです (BYOD)。  <br>[不明] - このデバイスの情報はありません。 |会社、個人、不明 |
+| <span data-ttu-id="c66cc-279">ownerTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-279">ownerTypeID</span></span> |<span data-ttu-id="c66cc-280">所有者の種類を示す一意識別子。</span><span class="sxs-lookup"><span data-stu-id="c66cc-280">Unique identifier of the owner type.</span></span> | |
+| <span data-ttu-id="c66cc-281">ownerTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-281">ownerTypeKey</span></span> |<span data-ttu-id="c66cc-282">データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-282">Unique identifier of the owner type in the data warehouse - surrogate key.</span></span> | |
+| <span data-ttu-id="c66cc-283">ownerTypeName</span><span class="sxs-lookup"><span data-stu-id="c66cc-283">ownerTypeName</span></span> |<span data-ttu-id="c66cc-284">デバイスの所有者の種類を表します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-284">Represents the owner type of the devices:</span></span>  <br><span data-ttu-id="c66cc-285">[会社] - 会社が所有するデバイスです。</span><span class="sxs-lookup"><span data-stu-id="c66cc-285">Company - device is enterprise owned.</span></span> <br><span data-ttu-id="c66cc-286">[個人] - 個人が所有するデバイスです (BYOD)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-286">Personal - device is personally owned (BYOD).</span></span>  <br><span data-ttu-id="c66cc-287">[不明] - このデバイスの情報はありません。</span><span class="sxs-lookup"><span data-stu-id="c66cc-287">Unknown - no information on this device.</span></span> |<span data-ttu-id="c66cc-288">会社、個人、不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-288">Company Personal Unknown</span></span> |
 
-## <a name="mdmstatuses"></a>MdmStatuses
+## <a name="mdmstatuses"></a><span data-ttu-id="c66cc-289">MdmStatuses</span><span class="sxs-lookup"><span data-stu-id="c66cc-289">MdmStatuses</span></span>
 
-**MdmStatuses** エンティティは、デバイスのコンプライアンス対応状態を示します。
+<span data-ttu-id="c66cc-290">**MdmStatuses** エンティティは、デバイスのコンプライアンス対応状態を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-290">The **MdmStatuses** entity indicates compliance state of the device.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-291">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-291">Property</span></span>  | <span data-ttu-id="c66cc-292">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-292">Description</span></span> |
 |---------|------------|
-| MdmStatusID |コンプライアンスの状態を示す一意識別子 |
-| MdmStatusKey |データ ウェアハウスにおけるコンプライアンス対応状態を示す一意識別子 - 代理キー | 
-| ComplianceStatus |デバイスのコンプライアンスの状態。以下の表のいずれかの値が表示されます | 
+| <span data-ttu-id="c66cc-293">MdmStatusID</span><span class="sxs-lookup"><span data-stu-id="c66cc-293">MdmStatusID</span></span> |<span data-ttu-id="c66cc-294">コンプライアンスの状態を示す一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-294">Unique identifier of the compliance state</span></span> |
+| <span data-ttu-id="c66cc-295">MdmStatusKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-295">MdmStatusKey</span></span> |<span data-ttu-id="c66cc-296">データ ウェアハウスにおけるコンプライアンス対応状態を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-296">Unique identifier of compliance state in the data warehouse - surrogate key</span></span> | 
+| <span data-ttu-id="c66cc-297">ComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="c66cc-297">ComplianceStatus</span></span> |<span data-ttu-id="c66cc-298">デバイスのコンプライアンスの状態。以下の表のいずれかの値が表示されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-298">Compliance state of the device, Should have one of the values from the table below</span></span> | 
 
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-299">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-299">Example</span></span>
 
-| MdmStatusID  | ComplianceStatus | 説明 |
+| <span data-ttu-id="c66cc-300">MdmStatusID</span><span class="sxs-lookup"><span data-stu-id="c66cc-300">MdmStatusID</span></span>  | <span data-ttu-id="c66cc-301">ComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="c66cc-301">ComplianceStatus</span></span> | <span data-ttu-id="c66cc-302">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-302">Description</span></span> |
 |---------|------------|--------|
-| 0 |不明 |デバイスのコンプライアンスの状態は不明です。 |
-| 1 |準拠 |デバイスは準拠しています。 |
-| 2 |非準拠 |デバイスは準拠していません。 |
-| 3 |競合 |デバイスのコンプライアンスで競合が発生しました。 |
-| 4 |エラー |デバイスのコンプライアンスの状態の読み取りでエラーが発生しました。 |
+| <span data-ttu-id="c66cc-303">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-303">0</span></span> |<span data-ttu-id="c66cc-304">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-304">Unknown</span></span> |<span data-ttu-id="c66cc-305">デバイスのコンプライアンスの状態は不明です。</span><span class="sxs-lookup"><span data-stu-id="c66cc-305">Device's compliance state is unknown.</span></span> |
+| <span data-ttu-id="c66cc-306">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-306">1</span></span> |<span data-ttu-id="c66cc-307">準拠</span><span class="sxs-lookup"><span data-stu-id="c66cc-307">Compliant</span></span> |<span data-ttu-id="c66cc-308">デバイスは準拠しています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-308">The device is compliant.</span></span> |
+| <span data-ttu-id="c66cc-309">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-309">2</span></span> |<span data-ttu-id="c66cc-310">非準拠</span><span class="sxs-lookup"><span data-stu-id="c66cc-310">Noncompliant</span></span> |<span data-ttu-id="c66cc-311">デバイスは準拠していません。</span><span class="sxs-lookup"><span data-stu-id="c66cc-311">The device is non-compliant.</span></span> |
+| <span data-ttu-id="c66cc-312">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-312">3</span></span> |<span data-ttu-id="c66cc-313">競合</span><span class="sxs-lookup"><span data-stu-id="c66cc-313">Conflict</span></span> |<span data-ttu-id="c66cc-314">デバイスのコンプライアンスで競合が発生しました。</span><span class="sxs-lookup"><span data-stu-id="c66cc-314">The device's compliance resulted in s conflict.</span></span> |
+| <span data-ttu-id="c66cc-315">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-315">4</span></span> |<span data-ttu-id="c66cc-316">エラー</span><span class="sxs-lookup"><span data-stu-id="c66cc-316">Error</span></span> |<span data-ttu-id="c66cc-317">デバイスのコンプライアンスの状態の読み取りでエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="c66cc-317">There was error in readign the device's compliance state.</span></span> |
 
 
-## <a name="managementstates"></a>ManagementStates
+## <a name="managementstates"></a><span data-ttu-id="c66cc-318">ManagementStates</span><span class="sxs-lookup"><span data-stu-id="c66cc-318">ManagementStates</span></span>
 
-**ManagementStates** エンティティは、デバイスの状態に関する詳細を提供します。 リモート アクションが適用され、デバイスが脱獄またはルート化されているとき、詳細が役立ちます。
+<span data-ttu-id="c66cc-319">**ManagementStates** エンティティは、デバイスの状態に関する詳細を提供します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-319">The **ManagementStates** entity provides details on the state of the device.</span></span> <span data-ttu-id="c66cc-320">リモート アクションが適用され、デバイスが脱獄またはルート化されているとき、詳細が役立ちます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-320">Detail can be useful in the cases where remote actions are applied, the device is jailbroken, or rooted.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-321">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-321">Property</span></span>  | <span data-ttu-id="c66cc-322">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-322">Description</span></span> |
 |---------|------------|
-| managementStateID | 管理状態を示す一意識別子 |
-| managementStateKey | データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー |
-| managementStateName | このデバイスに適用されるリモート アクションの状態を示します。 |
+| <span data-ttu-id="c66cc-323">managementStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-323">managementStateID</span></span> | <span data-ttu-id="c66cc-324">管理状態を示す一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-324">Unique identifier of the management state.</span></span> |
+| <span data-ttu-id="c66cc-325">managementStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-325">managementStateKey</span></span> | <span data-ttu-id="c66cc-326">データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-326">Unique identifier of the management state in the data warehouse - surrogate key.</span></span> |
+| <span data-ttu-id="c66cc-327">managementStateName</span><span class="sxs-lookup"><span data-stu-id="c66cc-327">managementStateName</span></span> | <span data-ttu-id="c66cc-328">このデバイスに適用されるリモート アクションの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-328">Indicates the state of the remote action applied to this device.</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-329">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-329">Example</span></span>
 
-| managementStateID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-330">managementStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-330">managementStateID</span></span>  | <span data-ttu-id="c66cc-331">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-331">Name</span></span> | <span data-ttu-id="c66cc-332">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-332">Description</span></span> |
 |---------|------------|--------|
-| 0 |管理対象 | 保留なしのリモート アクションにより管理 |
-| 1 |RetirePending | インベントリから削除するコマンドがデバイスに対して保留になっています。 |
-| 2 |RetireFailed | インベントリから削除するコマンドをデバイスに実行したところ、失敗しました。 |
-| 3 |WipePending | ワイプ コマンドがデバイスに対して保留になっています。 |
-| 4 |WipeFailed | ワイプ コマンドをデバイスに実行したところ、失敗しました。 |
-| 5 |Unhealthy | 正常ではない状態。 |
-| 6 |DeletePending | 削除コマンドがデバイスに対して保留になっています。 |
-| 7 |RetireIssued | インベントリから削除するコマンドがデバイスに発行されています。 |
-| 8 |WipeIssued | ワイプ コマンドが発行されています。 |
-| 9 |WipeCanceled | ワイプ コマンドが取り消されています。 |
-| 10 |RetireCanceled | インベントリから削除するコマンドが取り消されています。 |
-| 11 |Discovered | Intune がデバイスを新たに検出しました。最初のチェックイン後、状態が [Managed] に変更されます。 |
+| <span data-ttu-id="c66cc-333">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-333">0</span></span> |<span data-ttu-id="c66cc-334">管理対象</span><span class="sxs-lookup"><span data-stu-id="c66cc-334">Managed</span></span> | <span data-ttu-id="c66cc-335">保留なしのリモート アクションにより管理</span><span class="sxs-lookup"><span data-stu-id="c66cc-335">Managed with no pending remote actions.</span></span> |
+| <span data-ttu-id="c66cc-336">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-336">1</span></span> |<span data-ttu-id="c66cc-337">RetirePending</span><span class="sxs-lookup"><span data-stu-id="c66cc-337">RetirePending</span></span> | <span data-ttu-id="c66cc-338">インベントリから削除するコマンドがデバイスに対して保留になっています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-338">There is a retire command pending for the device.</span></span> |
+| <span data-ttu-id="c66cc-339">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-339">2</span></span> |<span data-ttu-id="c66cc-340">RetireFailed</span><span class="sxs-lookup"><span data-stu-id="c66cc-340">RetireFailed</span></span> | <span data-ttu-id="c66cc-341">インベントリから削除するコマンドをデバイスに実行したところ、失敗しました。</span><span class="sxs-lookup"><span data-stu-id="c66cc-341">The retire command failed on the device.</span></span> |
+| <span data-ttu-id="c66cc-342">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-342">3</span></span> |<span data-ttu-id="c66cc-343">WipePending</span><span class="sxs-lookup"><span data-stu-id="c66cc-343">WipePending</span></span> | <span data-ttu-id="c66cc-344">ワイプ コマンドがデバイスに対して保留になっています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-344">There is a wipe command pending for the device.</span></span> |
+| <span data-ttu-id="c66cc-345">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-345">4</span></span> |<span data-ttu-id="c66cc-346">WipeFailed</span><span class="sxs-lookup"><span data-stu-id="c66cc-346">WipeFailed</span></span> | <span data-ttu-id="c66cc-347">ワイプ コマンドをデバイスに実行したところ、失敗しました。</span><span class="sxs-lookup"><span data-stu-id="c66cc-347">The wipe command failed on the device.</span></span> |
+| <span data-ttu-id="c66cc-348">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-348">5</span></span> |<span data-ttu-id="c66cc-349">Unhealthy</span><span class="sxs-lookup"><span data-stu-id="c66cc-349">Unhealthy</span></span> | <span data-ttu-id="c66cc-350">正常ではない状態。</span><span class="sxs-lookup"><span data-stu-id="c66cc-350">Unhealthy state.</span></span> |
+| <span data-ttu-id="c66cc-351">6</span><span class="sxs-lookup"><span data-stu-id="c66cc-351">6</span></span> |<span data-ttu-id="c66cc-352">DeletePending</span><span class="sxs-lookup"><span data-stu-id="c66cc-352">DeletePending</span></span> | <span data-ttu-id="c66cc-353">削除コマンドがデバイスに対して保留になっています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-353">There is a delete command pending for the device.</span></span> |
+| <span data-ttu-id="c66cc-354">7</span><span class="sxs-lookup"><span data-stu-id="c66cc-354">7</span></span> |<span data-ttu-id="c66cc-355">RetireIssued</span><span class="sxs-lookup"><span data-stu-id="c66cc-355">RetireIssued</span></span> | <span data-ttu-id="c66cc-356">インベントリから削除するコマンドがデバイスに発行されています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-356">A retire command has been issued to the device.</span></span> |
+| <span data-ttu-id="c66cc-357">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-357">8</span></span> |<span data-ttu-id="c66cc-358">WipeIssued</span><span class="sxs-lookup"><span data-stu-id="c66cc-358">WipeIssued</span></span> | <span data-ttu-id="c66cc-359">ワイプ コマンドが発行されています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-359">A wipe command has been issued.</span></span> |
+| <span data-ttu-id="c66cc-360">9</span><span class="sxs-lookup"><span data-stu-id="c66cc-360">9</span></span> |<span data-ttu-id="c66cc-361">WipeCanceled</span><span class="sxs-lookup"><span data-stu-id="c66cc-361">WipeCanceled</span></span> | <span data-ttu-id="c66cc-362">ワイプ コマンドが取り消されています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-362">Wipe command has been canceled.</span></span> |
+| <span data-ttu-id="c66cc-363">10</span><span class="sxs-lookup"><span data-stu-id="c66cc-363">10</span></span> |<span data-ttu-id="c66cc-364">RetireCanceled</span><span class="sxs-lookup"><span data-stu-id="c66cc-364">RetireCanceled</span></span> | <span data-ttu-id="c66cc-365">インベントリから削除するコマンドが取り消されています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-365">Retire command has been canceled.</span></span> |
+| <span data-ttu-id="c66cc-366">11</span><span class="sxs-lookup"><span data-stu-id="c66cc-366">11</span></span> |<span data-ttu-id="c66cc-367">Discovered</span><span class="sxs-lookup"><span data-stu-id="c66cc-367">Discovered</span></span> | <span data-ttu-id="c66cc-368">Intune がデバイスを新たに検出しました。最初のチェックイン後、状態が [Managed] に変更されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-368">The device is newly discovered by Intune, once it checks in for the first time it moves to -Managed- state.</span></span> |
 
-## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
+## <a name="workplacejoinstatetypes"></a><span data-ttu-id="c66cc-369">WorkPlaceJoinStateTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-369">WorkPlaceJoinStateTypes</span></span>
 
-**WorkPlaceJoinStateTypes** エンティティは、デバイスの Azure Active Directory の社内参加の状況を表します。  登録ワークフローでは、検証または認証に 1 つまたは複数の証明書を利用できます。 デバイスをワークプレース登録するとき、証明書でデバイスとユーザーを検証します。 証明書は SCEP (Simple Certificate Enrollment Point) サーバーから発行されます。 エンティティの値は、デバイスがこのプロセスを通過するときのさまざまな状態を示します。 このような状態の中に、(SCEP サーバーから) 必要な証明書が発行されなかったため、社内参加ができなかったという状態があります。 デバイスがこのワークフローを通過しなかった場合、値は [不明] に設定されます。
+<span data-ttu-id="c66cc-370">**WorkPlaceJoinStateTypes** エンティティは、デバイスの Azure Active Directory の社内参加の状況を表します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-370">The **WorkPlaceJoinStateTypes** entity represents the Azure Active Directory Workplace Join state of the device.</span></span>  <span data-ttu-id="c66cc-371">登録ワークフローでは、検証または認証に 1 つまたは複数の証明書を利用できます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-371">The enrollment workflow can use one or more certificates to verify or authenticate.</span></span> <span data-ttu-id="c66cc-372">デバイスをワークプレース登録するとき、証明書でデバイスとユーザーを検証します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-372">When a device WorkPlace enrolls, these certificates  are used to validate the device and the user.</span></span> <span data-ttu-id="c66cc-373">証明書は SCEP (Simple Certificate Enrollment Point) サーバーから発行されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-373">The issuance of certificates is provided through a SCEP (Simple Certificate Enrollment Point) server.</span></span> <span data-ttu-id="c66cc-374">エンティティの値は、デバイスがこのプロセスを通過するときのさまざまな状態を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-374">The values in The entity indicate various states that a device could be in as it goes through this process.</span></span> <span data-ttu-id="c66cc-375">このような状態の中に、(SCEP サーバーから) 必要な証明書が発行されなかったため、社内参加ができなかったという状態があります。</span><span class="sxs-lookup"><span data-stu-id="c66cc-375">Some of these states include WorkPlace join failing due to the issuance of a required certificate (from a SCEP server) failing.</span></span> <span data-ttu-id="c66cc-376">デバイスがこのワークフローを通過しなかった場合、値は [不明] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-376">If a device never went through this workflow, the value is set to Unknown.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-377">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-377">Property</span></span>  | <span data-ttu-id="c66cc-378">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-378">Description</span></span> |
 |---------|------------|
-| WorkPlaceJoinStateID | ワークプレース参加状態を示す一意識別子 |
-| WorkPlaceJoinStateKey | データ ウェアハウスにおけるワークプレース参加状態を示す一意識別子 - 代理キー |
-| WorkPlaceJoinStateName | ワークプレース参加状態 |
+| <span data-ttu-id="c66cc-379">WorkPlaceJoinStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-379">WorkPlaceJoinStateID</span></span> | <span data-ttu-id="c66cc-380">ワークプレース参加状態を示す一意識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-380">Unique identifier of the work place join state</span></span> |
+| <span data-ttu-id="c66cc-381">WorkPlaceJoinStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-381">WorkPlaceJoinStateKey</span></span> | <span data-ttu-id="c66cc-382">データ ウェアハウスにおけるワークプレース参加状態を示す一意識別子 - 代理キー</span><span class="sxs-lookup"><span data-stu-id="c66cc-382">Unique identifier of the work place join state in the data warehouse - surrogate key</span></span> |
+| <span data-ttu-id="c66cc-383">WorkPlaceJoinStateName</span><span class="sxs-lookup"><span data-stu-id="c66cc-383">WorkPlaceJoinStateName</span></span> | <span data-ttu-id="c66cc-384">ワークプレース参加状態</span><span class="sxs-lookup"><span data-stu-id="c66cc-384">Work place join state</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-385">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-385">Example</span></span>
 
-| workPlaceJoinStateID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-386">workPlaceJoinStateID</span><span class="sxs-lookup"><span data-stu-id="c66cc-386">workPlaceJoinStateID</span></span>  | <span data-ttu-id="c66cc-387">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-387">Name</span></span> | <span data-ttu-id="c66cc-388">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-388">Description</span></span> |
 |---------|------------|--------|
-| 0 |不明 |デバイスが社内参加していない場合、状態は不明となります。 |
-| 1 |成功 |社内参加に成功しました |
-| 2 |FailureToGetScepMetadata |SCEP メタデータを取得できませんでした |
-| 3 |FailureToGetScepChallenge |SCEP チャレンジを取得できませんでした |
-| 4 |DeviceFailureToInstallScepCommand |デバイスに SCEP コマンドをインストールしようとしましたが失敗しました |
-| 5 |DeviceFailureToGetCertificate |デバイスが SCEP 経由で証明書を取得しようとしましたが失敗しました |
-| 6 |DeviceScepPending |保留状態であり、デバイスは SCEP を継続しています |
-| 7 |DeviceScepFailed |デバイスが SCEP 経由で証明書をインストールしようとしましたが失敗しました |
-| 8 |AADValidationFailed |AAD にデバイスが存在するか検証しようとしましたが失敗しました |
+| <span data-ttu-id="c66cc-389">0</span><span class="sxs-lookup"><span data-stu-id="c66cc-389">0</span></span> |<span data-ttu-id="c66cc-390">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-390">Unknown</span></span> |<span data-ttu-id="c66cc-391">デバイスが社内参加していない場合、状態は不明となります。</span><span class="sxs-lookup"><span data-stu-id="c66cc-391">If a device is not workplace joined, it is in the Unknown state</span></span> |
+| <span data-ttu-id="c66cc-392">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-392">1</span></span> |<span data-ttu-id="c66cc-393">成功</span><span class="sxs-lookup"><span data-stu-id="c66cc-393">Succeeded</span></span> |<span data-ttu-id="c66cc-394">社内参加に成功しました</span><span class="sxs-lookup"><span data-stu-id="c66cc-394">Successfully workplace joined</span></span> |
+| <span data-ttu-id="c66cc-395">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-395">2</span></span> |<span data-ttu-id="c66cc-396">FailureToGetScepMetadata</span><span class="sxs-lookup"><span data-stu-id="c66cc-396">FailureToGetScepMetadata</span></span> |<span data-ttu-id="c66cc-397">SCEP メタデータを取得できませんでした</span><span class="sxs-lookup"><span data-stu-id="c66cc-397">Failure to get SCEP metadata</span></span> |
+| <span data-ttu-id="c66cc-398">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-398">3</span></span> |<span data-ttu-id="c66cc-399">FailureToGetScepChallenge</span><span class="sxs-lookup"><span data-stu-id="c66cc-399">FailureToGetScepChallenge</span></span> |<span data-ttu-id="c66cc-400">SCEP チャレンジを取得できませんでした</span><span class="sxs-lookup"><span data-stu-id="c66cc-400">Failure to get SCEP challenge</span></span> |
+| <span data-ttu-id="c66cc-401">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-401">4</span></span> |<span data-ttu-id="c66cc-402">DeviceFailureToInstallScepCommand</span><span class="sxs-lookup"><span data-stu-id="c66cc-402">DeviceFailureToInstallScepCommand</span></span> |<span data-ttu-id="c66cc-403">デバイスに SCEP コマンドをインストールしようとしましたが失敗しました</span><span class="sxs-lookup"><span data-stu-id="c66cc-403">Failure to install SCEP command on device</span></span> |
+| <span data-ttu-id="c66cc-404">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-404">5</span></span> |<span data-ttu-id="c66cc-405">DeviceFailureToGetCertificate</span><span class="sxs-lookup"><span data-stu-id="c66cc-405">DeviceFailureToGetCertificate</span></span> |<span data-ttu-id="c66cc-406">デバイスが SCEP 経由で証明書を取得しようとしましたが失敗しました</span><span class="sxs-lookup"><span data-stu-id="c66cc-406">Device failed to get certificate through SCEP</span></span> |
+| <span data-ttu-id="c66cc-407">6</span><span class="sxs-lookup"><span data-stu-id="c66cc-407">6</span></span> |<span data-ttu-id="c66cc-408">DeviceScepPending</span><span class="sxs-lookup"><span data-stu-id="c66cc-408">DeviceScepPending</span></span> |<span data-ttu-id="c66cc-409">保留状態であり、デバイスは SCEP を継続しています</span><span class="sxs-lookup"><span data-stu-id="c66cc-409">Pending state; device is still doing SCEP</span></span> |
+| <span data-ttu-id="c66cc-410">7</span><span class="sxs-lookup"><span data-stu-id="c66cc-410">7</span></span> |<span data-ttu-id="c66cc-411">DeviceScepFailed</span><span class="sxs-lookup"><span data-stu-id="c66cc-411">DeviceScepFailed</span></span> |<span data-ttu-id="c66cc-412">デバイスが SCEP 経由で証明書をインストールしようとしましたが失敗しました</span><span class="sxs-lookup"><span data-stu-id="c66cc-412">Device failed to install certificate through SCEP</span></span> |
+| <span data-ttu-id="c66cc-413">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-413">8</span></span> |<span data-ttu-id="c66cc-414">AADValidationFailed</span><span class="sxs-lookup"><span data-stu-id="c66cc-414">AADValidationFailed</span></span> |<span data-ttu-id="c66cc-415">AAD にデバイスが存在するか検証しようとしましたが失敗しました</span><span class="sxs-lookup"><span data-stu-id="c66cc-415">Failed to validate device exists on AAD</span></span> |
 
-## <a name="managementagenttypes"></a>ManagementAgentTypes
+## <a name="managementagenttypes"></a><span data-ttu-id="c66cc-416">ManagementAgentTypes</span><span class="sxs-lookup"><span data-stu-id="c66cc-416">ManagementAgentTypes</span></span>
 
-**ManagementAgentTypes** エンティティは、デバイスの管理に使用されるエージェントを表します。
+<span data-ttu-id="c66cc-417">**ManagementAgentTypes** エンティティは、デバイスの管理に使用されるエージェントを表します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-417">The **ManagementAgentTypes** entity represents the agents used to manage a device.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-418">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-418">Property</span></span>  | <span data-ttu-id="c66cc-419">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-419">Description</span></span> |
 |---------|------------|
-| ManagementAgentTypeID | 管理エージェントの種類を示す一意識別子。 |
-| ManagementAgentTypeKey | データ ウェアハウスにおける管理エージェントの種類を示す一意識別子 - 代理キー。 |
-| ManagementAgentTypeName |デバイスの管理に利用されているエージェントの種類を示します。 |
+| <span data-ttu-id="c66cc-420">ManagementAgentTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-420">ManagementAgentTypeID</span></span> | <span data-ttu-id="c66cc-421">管理エージェントの種類を示す一意識別子。</span><span class="sxs-lookup"><span data-stu-id="c66cc-421">Unique identifier of the management agent type.</span></span> |
+| <span data-ttu-id="c66cc-422">ManagementAgentTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-422">ManagementAgentTypeKey</span></span> | <span data-ttu-id="c66cc-423">データ ウェアハウスにおける管理エージェントの種類を示す一意識別子 - 代理キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-423">Unique identifier of the management agent type in the data warehouse - surrogate key.</span></span> |
+| <span data-ttu-id="c66cc-424">ManagementAgentTypeName</span><span class="sxs-lookup"><span data-stu-id="c66cc-424">ManagementAgentTypeName</span></span> |<span data-ttu-id="c66cc-425">デバイスの管理に利用されているエージェントの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-425">Indicates what kind of agent is used to manage the device.</span></span> |
 
-## <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="c66cc-426">例</span><span class="sxs-lookup"><span data-stu-id="c66cc-426">Example</span></span>
 
-| ManagementAgentTypeID  | 名前 | 説明 |
+| <span data-ttu-id="c66cc-427">ManagementAgentTypeID</span><span class="sxs-lookup"><span data-stu-id="c66cc-427">ManagementAgentTypeID</span></span>  | <span data-ttu-id="c66cc-428">名前</span><span class="sxs-lookup"><span data-stu-id="c66cc-428">Name</span></span> | <span data-ttu-id="c66cc-429">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-429">Description</span></span> |
 |---------|------------|--------|
-| 1 |EAS | デバイスが Exchange Active Sync で管理されます |
-| 2 |MDM | デバイスが MDM エージェントで管理されます |
-| 3 |EasMdm | デバイスが Exchange Active Sync と MDM エージェントの両方で管理されます |
-| 4 |IntuneClient | デバイスが Intune PC エージェントで管理されます |
-| 5 |EasIntuneClient | デバイスが Exchange Active Sync と Intune PC エージェントの両方で管理されます |
-| 8 |ConfigManagerClient | デバイスが System Center Configuration Manager エージェントで管理されます |
-| 16 |不明 | 管理エージェントの種類が不明です |
+| <span data-ttu-id="c66cc-430">1</span><span class="sxs-lookup"><span data-stu-id="c66cc-430">1</span></span> |<span data-ttu-id="c66cc-431">EAS</span><span class="sxs-lookup"><span data-stu-id="c66cc-431">EAS</span></span> | <span data-ttu-id="c66cc-432">デバイスが Exchange Active Sync で管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-432">The device is managed through Exchange Active Sync</span></span> |
+| <span data-ttu-id="c66cc-433">2</span><span class="sxs-lookup"><span data-stu-id="c66cc-433">2</span></span> |<span data-ttu-id="c66cc-434">MDM</span><span class="sxs-lookup"><span data-stu-id="c66cc-434">MDM</span></span> | <span data-ttu-id="c66cc-435">デバイスが MDM エージェントで管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-435">The device is managed using an MDM agent</span></span> |
+| <span data-ttu-id="c66cc-436">3</span><span class="sxs-lookup"><span data-stu-id="c66cc-436">3</span></span> |<span data-ttu-id="c66cc-437">EasMdm</span><span class="sxs-lookup"><span data-stu-id="c66cc-437">EasMdm</span></span> | <span data-ttu-id="c66cc-438">デバイスが Exchange Active Sync と MDM エージェントの両方で管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-438">The device is managed by both Exchange Active Sync and an MDM agent</span></span> |
+| <span data-ttu-id="c66cc-439">4</span><span class="sxs-lookup"><span data-stu-id="c66cc-439">4</span></span> |<span data-ttu-id="c66cc-440">IntuneClient</span><span class="sxs-lookup"><span data-stu-id="c66cc-440">IntuneClient</span></span> | <span data-ttu-id="c66cc-441">デバイスが Intune PC エージェントで管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-441">The device is managed by the Intune PC agent</span></span> |
+| <span data-ttu-id="c66cc-442">5</span><span class="sxs-lookup"><span data-stu-id="c66cc-442">5</span></span> |<span data-ttu-id="c66cc-443">EasIntuneClient</span><span class="sxs-lookup"><span data-stu-id="c66cc-443">EasIntuneClient</span></span> | <span data-ttu-id="c66cc-444">デバイスが Exchange Active Sync と Intune PC エージェントの両方で管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-444">The device is managed by both Exchange Active Sync and the Intune PC agent</span></span> |
+| <span data-ttu-id="c66cc-445">8</span><span class="sxs-lookup"><span data-stu-id="c66cc-445">8</span></span> |<span data-ttu-id="c66cc-446">ConfigManagerClient</span><span class="sxs-lookup"><span data-stu-id="c66cc-446">ConfigManagerClient</span></span> | <span data-ttu-id="c66cc-447">デバイスが System Center Configuration Manager エージェントで管理されます</span><span class="sxs-lookup"><span data-stu-id="c66cc-447">The device is managed by the System Center Configuration Manager agent</span></span> |
+| <span data-ttu-id="c66cc-448">16</span><span class="sxs-lookup"><span data-stu-id="c66cc-448">16</span></span> |<span data-ttu-id="c66cc-449">不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-449">Unknown</span></span> | <span data-ttu-id="c66cc-450">管理エージェントの種類が不明です</span><span class="sxs-lookup"><span data-stu-id="c66cc-450">Unknown management agent type</span></span> |
 
-## <a name="devices"></a>[デバイス]
+## <a name="devices"></a><span data-ttu-id="c66cc-451">[デバイス]</span><span class="sxs-lookup"><span data-stu-id="c66cc-451">Devices</span></span>
 
-**Devices** エンティティには、管理中のすべての登録済みデバイスとそれに対応するプロパティが一覧表示されます。
+<span data-ttu-id="c66cc-452">**Devices** エンティティには、管理中のすべての登録済みデバイスとそれに対応するプロパティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-452">The **Devices** entity lists all enrolled devices under management and their corresponding properties.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-453">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-453">Property</span></span>  | <span data-ttu-id="c66cc-454">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-454">Description</span></span> |
 |---------|------------|
-| DeviceKey | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 |
-| DeviceId | デバイスの一意識別子。 |
-| DeviceName | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| DeviceTypeKey | このデバイスの種類属性のキー。 |
-| ClientRegisterationStateKey | このデバイスのクライアント登録状態属性のキー。 |
-| OwnerTypeKey | このデバイスの所有者の種類属性のキー (会社、個人、不明) |
-| objectSourceKey | この列は無視してください。 |
-| CreatedDate | デバイスが登録された日付。 |
-| LastContact | Intune によるデバイス チェックインで最後に確認されているもの。 |
-| LastContactNotification | Intune によるチェックインを Intune がデバイスに通知した最後の時刻。 |
-| LastContactWorkplaceJoin | このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ |
-| ManagementAgentKey | このデバイスに関連付けられている管理エージェントのキー |
-| ManagementStateKey | このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| ReferenceId | Azure Active Directory のデバイス ID。 |
-| WorkPlaceJoinStateKey | このデバイスに関連付けられている社内参加の状態を示すキー |
-| CategoryId | この列は無視してください。 |
-| EnrollmentTypeKey | このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します |
-| CertExpirationDate | MDM 管理証明書の有効期限日 |
-| MdmStatusKey | MdmStatus キー。 |
-| OSFamily | OS 製品群 (Windows、iOS、Android など) |
-| OSVersion | OS のバージョン |
-| OSMajorVersion | OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSMinorVersion | OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSBuildNumber | OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
-| OSRevisionNumber | OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。 |
-| EasID | デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID |
-| GraphDeviceIsManaged | Intune により Azure AD で最後に設定された管理状態。 |
-| GraphDeviceIsCompliant | Intune により Azure AD で最後に設定されたコンプライアンス対応状態。 |
-| SerialNumber | デバイスのシリアル番号 (使用可能な場合)。 |
-| EnrolledByUser | このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します |
-| RowLastModifiedDateTimeUTC | このレコードが変更された最後の時刻 |
-| ProcessorArchitecture | プロセッサ アーキテクチャ。 |
-| DeviceAction | 最後に発行されたデバイス アクション (今回は無視してください) |
-| 製造元 | デバイスの製造元。 |
-| モデル | デバイスのモデル。 |
-| LastPolicyUpdateUtc | デバイスでポリシーが更新された最後の時刻。 |
-| LastExchangeStatusUtc | デバイスと Exchange が同期を行った最後の時刻 |
-| IsDeleted | Intune によるデバイスの管理が終了している場合、True に設定されます。 最後に確認されている状態が保存されます。 |
+| <span data-ttu-id="c66cc-455">DeviceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-455">DeviceKey</span></span> | <span data-ttu-id="c66cc-456">データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-456">Unique identifier of the device in the data warehouse - surrogate key.</span></span> |
+| <span data-ttu-id="c66cc-457">DeviceId</span><span class="sxs-lookup"><span data-stu-id="c66cc-457">DeviceId</span></span> | <span data-ttu-id="c66cc-458">デバイスの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="c66cc-458">Unique identifier of the device.</span></span> |
+| <span data-ttu-id="c66cc-459">DeviceName</span><span class="sxs-lookup"><span data-stu-id="c66cc-459">DeviceName</span></span> | <span data-ttu-id="c66cc-460">デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。</span><span class="sxs-lookup"><span data-stu-id="c66cc-460">Name of the device on platforms that allow naming a device.</span></span> <span data-ttu-id="c66cc-461">その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-461">On other platforms, Intune creates a name from other properties.</span></span> <span data-ttu-id="c66cc-462">この属性は一部のデバイスで利用できません。</span><span class="sxs-lookup"><span data-stu-id="c66cc-462">This attribute cannot be available for all devices.</span></span> |
+| <span data-ttu-id="c66cc-463">DeviceTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-463">DeviceTypeKey</span></span> | <span data-ttu-id="c66cc-464">このデバイスの種類属性のキー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-464">Key of the device type attribute for this device.</span></span> |
+| <span data-ttu-id="c66cc-465">ClientRegisterationStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-465">ClientRegisterationStateKey</span></span> | <span data-ttu-id="c66cc-466">このデバイスのクライアント登録状態属性のキー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-466">Key of the client registration state attribute for this device.</span></span> |
+| <span data-ttu-id="c66cc-467">OwnerTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-467">OwnerTypeKey</span></span> | <span data-ttu-id="c66cc-468">このデバイスの所有者の種類属性のキー (会社、個人、不明)</span><span class="sxs-lookup"><span data-stu-id="c66cc-468">Key of the owner type attribute for this device: corporate, personal, or unknown.</span></span> |
+| <span data-ttu-id="c66cc-469">objectSourceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-469">objectSourceKey</span></span> | <span data-ttu-id="c66cc-470">この列は無視してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-470">Ignore this column.</span></span> |
+| <span data-ttu-id="c66cc-471">CreatedDate</span><span class="sxs-lookup"><span data-stu-id="c66cc-471">CreatedDate</span></span> | <span data-ttu-id="c66cc-472">デバイスが登録された日付。</span><span class="sxs-lookup"><span data-stu-id="c66cc-472">Date the device was enrolled on.</span></span> |
+| <span data-ttu-id="c66cc-473">LastContact</span><span class="sxs-lookup"><span data-stu-id="c66cc-473">LastContact</span></span> | <span data-ttu-id="c66cc-474">Intune によるデバイス チェックインで最後に確認されているもの。</span><span class="sxs-lookup"><span data-stu-id="c66cc-474">Last known device check-in with Intune.</span></span> |
+| <span data-ttu-id="c66cc-475">LastContactNotification</span><span class="sxs-lookup"><span data-stu-id="c66cc-475">LastContactNotification</span></span> | <span data-ttu-id="c66cc-476">Intune によるチェックインを Intune がデバイスに通知した最後の時刻。</span><span class="sxs-lookup"><span data-stu-id="c66cc-476">Last time Intune notified the device to check in with Intune.</span></span> |
+| <span data-ttu-id="c66cc-477">LastContactWorkplaceJoin</span><span class="sxs-lookup"><span data-stu-id="c66cc-477">LastContactWorkplaceJoin</span></span> | <span data-ttu-id="c66cc-478">このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ</span><span class="sxs-lookup"><span data-stu-id="c66cc-478">The timestamp indicating last known Workplace Join state for this device.</span></span> |
+| <span data-ttu-id="c66cc-479">ManagementAgentKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-479">ManagementAgentKey</span></span> | <span data-ttu-id="c66cc-480">このデバイスに関連付けられている管理エージェントのキー</span><span class="sxs-lookup"><span data-stu-id="c66cc-480">Key of the management agent associated with this device.</span></span> |
+| <span data-ttu-id="c66cc-481">ManagementStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-481">ManagementStateKey</span></span> | <span data-ttu-id="c66cc-482">このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します</span><span class="sxs-lookup"><span data-stu-id="c66cc-482">Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted.</span></span> |
+| <span data-ttu-id="c66cc-483">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="c66cc-483">ReferenceId</span></span> | <span data-ttu-id="c66cc-484">Azure Active Directory のデバイス ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-484">The device-s ID in Azure Active Directory.</span></span> |
+| <span data-ttu-id="c66cc-485">WorkPlaceJoinStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-485">WorkPlaceJoinStateKey</span></span> | <span data-ttu-id="c66cc-486">このデバイスに関連付けられている社内参加の状態を示すキー</span><span class="sxs-lookup"><span data-stu-id="c66cc-486">Key of the workplace join state associated with this device.</span></span> |
+| <span data-ttu-id="c66cc-487">CategoryId</span><span class="sxs-lookup"><span data-stu-id="c66cc-487">CategoryId</span></span> | <span data-ttu-id="c66cc-488">この列は無視してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-488">Ignore this column.</span></span> |
+| <span data-ttu-id="c66cc-489">EnrollmentTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-489">EnrollmentTypeKey</span></span> | <span data-ttu-id="c66cc-490">このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します</span><span class="sxs-lookup"><span data-stu-id="c66cc-490">Key of the enrollment type associated with this device, indicating method of enrollment.</span></span> |
+| <span data-ttu-id="c66cc-491">CertExpirationDate</span><span class="sxs-lookup"><span data-stu-id="c66cc-491">CertExpirationDate</span></span> | <span data-ttu-id="c66cc-492">MDM 管理証明書の有効期限日</span><span class="sxs-lookup"><span data-stu-id="c66cc-492">Expiry date of the MDM management certificate.</span></span> |
+| <span data-ttu-id="c66cc-493">MdmStatusKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-493">MdmStatusKey</span></span> | <span data-ttu-id="c66cc-494">MdmStatus キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-494">A key to MdmStatus.</span></span> |
+| <span data-ttu-id="c66cc-495">OSFamily</span><span class="sxs-lookup"><span data-stu-id="c66cc-495">OSFamily</span></span> | <span data-ttu-id="c66cc-496">OS 製品群 (Windows、iOS、Android など)</span><span class="sxs-lookup"><span data-stu-id="c66cc-496">OS Family (Windows, iOS, Android, etc.)</span></span> |
+| <span data-ttu-id="c66cc-497">OSVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-497">OSVersion</span></span> | <span data-ttu-id="c66cc-498">OS のバージョン</span><span class="sxs-lookup"><span data-stu-id="c66cc-498">OS version</span></span> |
+| <span data-ttu-id="c66cc-499">OSMajorVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-499">OSMajorVersion</span></span> | <span data-ttu-id="c66cc-500">OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-500">Major version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-501">OSMinorVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-501">OSMinorVersion</span></span> | <span data-ttu-id="c66cc-502">OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-502">Minor version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-503">OSBuildNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-503">OSBuildNumber</span></span> | <span data-ttu-id="c66cc-504">OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-504">Build version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-505">OSRevisionNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-505">OSRevisionNumber</span></span> | <span data-ttu-id="c66cc-506">OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-506">Revision version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-507">EasID</span><span class="sxs-lookup"><span data-stu-id="c66cc-507">EasID</span></span> | <span data-ttu-id="c66cc-508">デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID</span><span class="sxs-lookup"><span data-stu-id="c66cc-508">This devices EAS ID, if the device is managed by Exchange Active Sync.</span></span> |
+| <span data-ttu-id="c66cc-509">GraphDeviceIsManaged</span><span class="sxs-lookup"><span data-stu-id="c66cc-509">GraphDeviceIsManaged</span></span> | <span data-ttu-id="c66cc-510">Intune により Azure AD で最後に設定された管理状態。</span><span class="sxs-lookup"><span data-stu-id="c66cc-510">The last management status that Intune set in Azure AD.</span></span> |
+| <span data-ttu-id="c66cc-511">GraphDeviceIsCompliant</span><span class="sxs-lookup"><span data-stu-id="c66cc-511">GraphDeviceIsCompliant</span></span> | <span data-ttu-id="c66cc-512">Intune により Azure AD で最後に設定されたコンプライアンス対応状態。</span><span class="sxs-lookup"><span data-stu-id="c66cc-512">The last compliance state that Intune set in Azure AD.</span></span> |
+| <span data-ttu-id="c66cc-513">SerialNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-513">SerialNumber</span></span> | <span data-ttu-id="c66cc-514">デバイスのシリアル番号 (使用可能な場合)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-514">Serial number of the device, if available.</span></span> |
+| <span data-ttu-id="c66cc-515">EnrolledByUser</span><span class="sxs-lookup"><span data-stu-id="c66cc-515">EnrolledByUser</span></span> | <span data-ttu-id="c66cc-516">このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します</span><span class="sxs-lookup"><span data-stu-id="c66cc-516">The ID of user who enrolled this device that references the userId column in User table.</span></span> |
+| <span data-ttu-id="c66cc-517">RowLastModifiedDateTimeUTC</span><span class="sxs-lookup"><span data-stu-id="c66cc-517">RowLastModifiedDateTimeUTC</span></span> | <span data-ttu-id="c66cc-518">このレコードが変更された最後の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-518">Last time this record was modified.</span></span> |
+| <span data-ttu-id="c66cc-519">ProcessorArchitecture</span><span class="sxs-lookup"><span data-stu-id="c66cc-519">ProcessorArchitecture</span></span> | <span data-ttu-id="c66cc-520">プロセッサ アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="c66cc-520">Processor architecture.</span></span> |
+| <span data-ttu-id="c66cc-521">DeviceAction</span><span class="sxs-lookup"><span data-stu-id="c66cc-521">DeviceAction</span></span> | <span data-ttu-id="c66cc-522">最後に発行されたデバイス アクション (今回は無視してください)</span><span class="sxs-lookup"><span data-stu-id="c66cc-522">Last device action issued, Ignore for now.</span></span> |
+| <span data-ttu-id="c66cc-523">製造元</span><span class="sxs-lookup"><span data-stu-id="c66cc-523">Manufacturer</span></span> | <span data-ttu-id="c66cc-524">デバイスの製造元。</span><span class="sxs-lookup"><span data-stu-id="c66cc-524">Manufacturer of the device.</span></span> |
+| <span data-ttu-id="c66cc-525">モデル</span><span class="sxs-lookup"><span data-stu-id="c66cc-525">Model</span></span> | <span data-ttu-id="c66cc-526">デバイスのモデル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-526">Model of the device.</span></span> |
+| <span data-ttu-id="c66cc-527">LastPolicyUpdateUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-527">LastPolicyUpdateUtc</span></span> | <span data-ttu-id="c66cc-528">デバイスでポリシーが更新された最後の時刻。</span><span class="sxs-lookup"><span data-stu-id="c66cc-528">Latest time when policy was updated on the device.</span></span> |
+| <span data-ttu-id="c66cc-529">LastExchangeStatusUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-529">LastExchangeStatusUtc</span></span> | <span data-ttu-id="c66cc-530">デバイスと Exchange が同期を行った最後の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-530">Last time the device synced with exchange.</span></span> |
+| <span data-ttu-id="c66cc-531">IsDeleted</span><span class="sxs-lookup"><span data-stu-id="c66cc-531">IsDeleted</span></span> | <span data-ttu-id="c66cc-532">Intune によるデバイスの管理が終了している場合、True に設定されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-532">Set to True if the device is not managed by Intune anymore.</span></span> <span data-ttu-id="c66cc-533">最後に確認されている状態が保存されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-533">Preserves the last known state.</span></span> |
 
-## <a name="devicepropertyhistory"></a>DevicePropertyHistory
+## <a name="devicepropertyhistory"></a><span data-ttu-id="c66cc-534">DevicePropertyHistory</span><span class="sxs-lookup"><span data-stu-id="c66cc-534">DevicePropertyHistory</span></span>
 
-**DevicePropertyHistory** エンティティには、デバイス テーブルと過去 90 日間の各デバイス レコードの日次スナップショットと同じプロパティが与えられます。 DateKey 列は、各行の日を示します。
+<span data-ttu-id="c66cc-535">**DevicePropertyHistory** エンティティには、デバイス テーブルと過去 90 日間の各デバイス レコードの日次スナップショットと同じプロパティが与えられます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-535">The **DevicePropertyHistory** entity has the same properties as the devices table and daily snapshots of each device record per day for the past 90 days.</span></span> <span data-ttu-id="c66cc-536">DateKey 列は、各行の日を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-536">The DateKey column indicates the day for each row.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-537">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-537">Property</span></span>  | <span data-ttu-id="c66cc-538">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-538">Description</span></span> |
 |---------|------------|
-| DateKey |日付テーブルの参照であり、日を示します。 |
-| DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| DeviceTypeKey |このデバイスの種類属性のキー。 |
-| ClientRegisterationStateKey |このデバイスのクライアント登録状態属性のキー。 |
-| OwnerTypeKey |このデバイスの所有者の種類属性のキー (会社、個人、不明) |
-| objectSourceKey |この列は無視してください。 |
-| CreatedDate |デバイスが登録された日付。 |
-| LastContact |Intune によるデバイス チェックインで最後に確認されているもの。 |
-| LastContactNotification |Intune によるチェックインを Intune がデバイスに通知した最後の時刻。 |
-| LastContactWorkplaceJoin |このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ |
-| ManagementAgentKey |このデバイスに関連付けられている管理エージェントのキー |
-| ManagementStateKey |このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| ReferenceId |Azure Active Directory のデバイス ID。 |
-| WorkPlaceJoinStateKey |このデバイスに関連付けられている社内参加の状態を示すキー |
-| CategoryId |この列は無視してください。 |
-| EnrollmentTypeKey |このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します |
-| CertExpirationDate |MDM 管理証明書の有効期限日 |
-| MdmStatusKey |MdmStatus キー。 |
-| OSFamily |OS 製品群 (Windows、iOS、Android など) |
-| OSVersion |OS のバージョン。 |
-| OSMajorVersion |OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSMinorVersion |OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSBuildNumber |OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
-| OSRevisionNumber |OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。 |
-| EasID |デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID |
-| GraphDeviceIsManaged |Intune により Azure AD で最後に設定された管理状態。 |
-| GraphDeviceIsCompliant |Intune により Azure AD で最後に設定されたコンプライアンス対応状態。 |
-| SerialNumber |デバイスのシリアル番号 (使用可能な場合)。 |
-| EnrolledByUser |このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します |
-| RowLastModifiedDateTimeUTC |このレコードが変更された最後の時刻 |
-| ProcessorArchitecture |プロセッサ アーキテクチャ。 |
-| DeviceAction |最後に発行されたデバイス アクション (今回は無視してください) |
-| 製造元 |デバイスの製造元。 |
-| モデル |デバイスのモデル。 |
-| LastPolicyUpdateUtc |デバイスでポリシーが更新された最後の時刻。 |
-| LastExchangeStatusUtc |デバイスと Exchange が同期を行った最後の時刻 |
+| <span data-ttu-id="c66cc-539">DateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-539">DateKey</span></span> |<span data-ttu-id="c66cc-540">日付テーブルの参照であり、日を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-540">Reference to date table indicating the day.</span></span> |
+| <span data-ttu-id="c66cc-541">DeviceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-541">DeviceKey</span></span> |<span data-ttu-id="c66cc-542">データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-542">Unique identifier of the device in the data warehouse - surrogate key.</span></span> <span data-ttu-id="c66cc-543">これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。</span><span class="sxs-lookup"><span data-stu-id="c66cc-543">This is a reference to the Device table that contains the Intune device ID.</span></span> |
+| <span data-ttu-id="c66cc-544">DeviceName</span><span class="sxs-lookup"><span data-stu-id="c66cc-544">DeviceName</span></span> |<span data-ttu-id="c66cc-545">デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。</span><span class="sxs-lookup"><span data-stu-id="c66cc-545">Name of the device on platforms that allow naming a device.</span></span> <span data-ttu-id="c66cc-546">その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-546">On other platforms, Intune creates a name from other properties.</span></span> <span data-ttu-id="c66cc-547">この属性は一部のデバイスで利用できません。</span><span class="sxs-lookup"><span data-stu-id="c66cc-547">This attribute cannot be available for all devices.</span></span> |
+| <span data-ttu-id="c66cc-548">DeviceTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-548">DeviceTypeKey</span></span> |<span data-ttu-id="c66cc-549">このデバイスの種類属性のキー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-549">Key of the device type attribute for this device.</span></span> |
+| <span data-ttu-id="c66cc-550">ClientRegisterationStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-550">ClientRegisterationStateKey</span></span> |<span data-ttu-id="c66cc-551">このデバイスのクライアント登録状態属性のキー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-551">Key of the client registration state attribute for this device.</span></span> |
+| <span data-ttu-id="c66cc-552">OwnerTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-552">OwnerTypeKey</span></span> |<span data-ttu-id="c66cc-553">このデバイスの所有者の種類属性のキー (会社、個人、不明)</span><span class="sxs-lookup"><span data-stu-id="c66cc-553">Key of the owner type attribute for this device: corporate, personal, or unknown.</span></span> |
+| <span data-ttu-id="c66cc-554">objectSourceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-554">objectSourceKey</span></span> |<span data-ttu-id="c66cc-555">この列は無視してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-555">Ignore this column.</span></span> |
+| <span data-ttu-id="c66cc-556">CreatedDate</span><span class="sxs-lookup"><span data-stu-id="c66cc-556">CreatedDate</span></span> |<span data-ttu-id="c66cc-557">デバイスが登録された日付。</span><span class="sxs-lookup"><span data-stu-id="c66cc-557">Date the device was enrolled on.</span></span> |
+| <span data-ttu-id="c66cc-558">LastContact</span><span class="sxs-lookup"><span data-stu-id="c66cc-558">LastContact</span></span> |<span data-ttu-id="c66cc-559">Intune によるデバイス チェックインで最後に確認されているもの。</span><span class="sxs-lookup"><span data-stu-id="c66cc-559">Last known device check-in with Intune.</span></span> |
+| <span data-ttu-id="c66cc-560">LastContactNotification</span><span class="sxs-lookup"><span data-stu-id="c66cc-560">LastContactNotification</span></span> |<span data-ttu-id="c66cc-561">Intune によるチェックインを Intune がデバイスに通知した最後の時刻。</span><span class="sxs-lookup"><span data-stu-id="c66cc-561">Last time Intune notified the device to check in with Intune.</span></span> |
+| <span data-ttu-id="c66cc-562">LastContactWorkplaceJoin</span><span class="sxs-lookup"><span data-stu-id="c66cc-562">LastContactWorkplaceJoin</span></span> |<span data-ttu-id="c66cc-563">このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ</span><span class="sxs-lookup"><span data-stu-id="c66cc-563">The timestamp indicating last known Workplace Join state for this device.</span></span> |
+| <span data-ttu-id="c66cc-564">ManagementAgentKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-564">ManagementAgentKey</span></span> |<span data-ttu-id="c66cc-565">このデバイスに関連付けられている管理エージェントのキー</span><span class="sxs-lookup"><span data-stu-id="c66cc-565">Key of the management agent associated with this device.</span></span> |
+| <span data-ttu-id="c66cc-566">ManagementStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-566">ManagementStateKey</span></span> |<span data-ttu-id="c66cc-567">このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します</span><span class="sxs-lookup"><span data-stu-id="c66cc-567">Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted.</span></span> |
+| <span data-ttu-id="c66cc-568">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="c66cc-568">ReferenceId</span></span> |<span data-ttu-id="c66cc-569">Azure Active Directory のデバイス ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-569">The device-s ID in Azure Active Directory.</span></span> |
+| <span data-ttu-id="c66cc-570">WorkPlaceJoinStateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-570">WorkPlaceJoinStateKey</span></span> |<span data-ttu-id="c66cc-571">このデバイスに関連付けられている社内参加の状態を示すキー</span><span class="sxs-lookup"><span data-stu-id="c66cc-571">Key of the workplace join state associated with this device.</span></span> |
+| <span data-ttu-id="c66cc-572">CategoryId</span><span class="sxs-lookup"><span data-stu-id="c66cc-572">CategoryId</span></span> |<span data-ttu-id="c66cc-573">この列は無視してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-573">Ignore this column.</span></span> |
+| <span data-ttu-id="c66cc-574">EnrollmentTypeKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-574">EnrollmentTypeKey</span></span> |<span data-ttu-id="c66cc-575">このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します</span><span class="sxs-lookup"><span data-stu-id="c66cc-575">Key of the enrollment type associated with this device, indicating method of enrollment.</span></span> |
+| <span data-ttu-id="c66cc-576">CertExpirationDate</span><span class="sxs-lookup"><span data-stu-id="c66cc-576">CertExpirationDate</span></span> |<span data-ttu-id="c66cc-577">MDM 管理証明書の有効期限日</span><span class="sxs-lookup"><span data-stu-id="c66cc-577">Expiry date of the MDM management certificate.</span></span> |
+| <span data-ttu-id="c66cc-578">MdmStatusKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-578">MdmStatusKey</span></span> |<span data-ttu-id="c66cc-579">MdmStatus キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-579">A key to MdmStatus.</span></span> |
+| <span data-ttu-id="c66cc-580">OSFamily</span><span class="sxs-lookup"><span data-stu-id="c66cc-580">OSFamily</span></span> |<span data-ttu-id="c66cc-581">OS 製品群 (Windows、iOS、Android など)</span><span class="sxs-lookup"><span data-stu-id="c66cc-581">OS Family (Windows, iOS, Android, etc.)</span></span> |
+| <span data-ttu-id="c66cc-582">OSVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-582">OSVersion</span></span> |<span data-ttu-id="c66cc-583">OS のバージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-583">OS version.</span></span> |
+| <span data-ttu-id="c66cc-584">OSMajorVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-584">OSMajorVersion</span></span> |<span data-ttu-id="c66cc-585">OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-585">Major version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-586">OSMinorVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-586">OSMinorVersion</span></span> |<span data-ttu-id="c66cc-587">OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-587">Minor version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-588">OSBuildNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-588">OSBuildNumber</span></span> |<span data-ttu-id="c66cc-589">OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-589">Build version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-590">OSRevisionNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-590">OSRevisionNumber</span></span> |<span data-ttu-id="c66cc-591">OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-591">Revision version component of the OS version (major.minor.build.revision).</span></span> |
+| <span data-ttu-id="c66cc-592">EasID</span><span class="sxs-lookup"><span data-stu-id="c66cc-592">EasID</span></span> |<span data-ttu-id="c66cc-593">デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID</span><span class="sxs-lookup"><span data-stu-id="c66cc-593">This devices EAS ID, if the device is managed by Exchange Active Sync.</span></span> |
+| <span data-ttu-id="c66cc-594">GraphDeviceIsManaged</span><span class="sxs-lookup"><span data-stu-id="c66cc-594">GraphDeviceIsManaged</span></span> |<span data-ttu-id="c66cc-595">Intune により Azure AD で最後に設定された管理状態。</span><span class="sxs-lookup"><span data-stu-id="c66cc-595">The last management status that Intune set in Azure AD.</span></span> |
+| <span data-ttu-id="c66cc-596">GraphDeviceIsCompliant</span><span class="sxs-lookup"><span data-stu-id="c66cc-596">GraphDeviceIsCompliant</span></span> |<span data-ttu-id="c66cc-597">Intune により Azure AD で最後に設定されたコンプライアンス対応状態。</span><span class="sxs-lookup"><span data-stu-id="c66cc-597">The last compliance state that Intune set in Azure AD.</span></span> |
+| <span data-ttu-id="c66cc-598">SerialNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-598">SerialNumber</span></span> |<span data-ttu-id="c66cc-599">デバイスのシリアル番号 (使用可能な場合)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-599">Serial number of the device, if available.</span></span> |
+| <span data-ttu-id="c66cc-600">EnrolledByUser</span><span class="sxs-lookup"><span data-stu-id="c66cc-600">EnrolledByUser</span></span> |<span data-ttu-id="c66cc-601">このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します</span><span class="sxs-lookup"><span data-stu-id="c66cc-601">The ID of user who enrolled this device that references the userId column in User table.</span></span> |
+| <span data-ttu-id="c66cc-602">RowLastModifiedDateTimeUTC</span><span class="sxs-lookup"><span data-stu-id="c66cc-602">RowLastModifiedDateTimeUTC</span></span> |<span data-ttu-id="c66cc-603">このレコードが変更された最後の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-603">Last time this record was modified.</span></span> |
+| <span data-ttu-id="c66cc-604">ProcessorArchitecture</span><span class="sxs-lookup"><span data-stu-id="c66cc-604">ProcessorArchitecture</span></span> |<span data-ttu-id="c66cc-605">プロセッサ アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="c66cc-605">Processor architecture.</span></span> |
+| <span data-ttu-id="c66cc-606">DeviceAction</span><span class="sxs-lookup"><span data-stu-id="c66cc-606">DeviceAction</span></span> |<span data-ttu-id="c66cc-607">最後に発行されたデバイス アクション (今回は無視してください)</span><span class="sxs-lookup"><span data-stu-id="c66cc-607">Last device action issued, Ignore for now.</span></span> |
+| <span data-ttu-id="c66cc-608">製造元</span><span class="sxs-lookup"><span data-stu-id="c66cc-608">Manufacturer</span></span> |<span data-ttu-id="c66cc-609">デバイスの製造元。</span><span class="sxs-lookup"><span data-stu-id="c66cc-609">Manufacturer of the device.</span></span> |
+| <span data-ttu-id="c66cc-610">モデル</span><span class="sxs-lookup"><span data-stu-id="c66cc-610">Model</span></span> |<span data-ttu-id="c66cc-611">デバイスのモデル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-611">Model of the device.</span></span> |
+| <span data-ttu-id="c66cc-612">LastPolicyUpdateUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-612">LastPolicyUpdateUtc</span></span> |<span data-ttu-id="c66cc-613">デバイスでポリシーが更新された最後の時刻。</span><span class="sxs-lookup"><span data-stu-id="c66cc-613">Latest time when policy was updated on the device.</span></span> |
+| <span data-ttu-id="c66cc-614">LastExchangeStatusUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-614">LastExchangeStatusUtc</span></span> |<span data-ttu-id="c66cc-615">デバイスと Exchange が同期を行った最後の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-615">Last time the device synced with exchange.</span></span> |
 
-## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
+## <a name="mdmdeviceinventoryhistories"></a><span data-ttu-id="c66cc-616">MdmDeviceInventoryHistories</span><span class="sxs-lookup"><span data-stu-id="c66cc-616">MdmDeviceInventoryHistories</span></span>
 
-**MdmDeviceInventoryHistories** エンティティには、過去 90 日間、MDM で管理しているデバイスのインベントリ データを対象に毎日作成されたスナップショットが含まれています。 DateKey 列は行の日を示します。 デバイスによっては適用または入力されないプロパティがあります。詳しくは、このページを参照してください。 詳細については、「[Microsoft Intune でインベントリを使用してデバイスを把握する](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)」を参照してください。
+<span data-ttu-id="c66cc-617">**MdmDeviceInventoryHistories** エンティティには、過去 90 日間、MDM で管理しているデバイスのインベントリ データを対象に毎日作成されたスナップショットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c66cc-617">The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days.</span></span> <span data-ttu-id="c66cc-618">DateKey 列は行の日を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-618">The column DateKey indicates the day for the row.</span></span> <span data-ttu-id="c66cc-619">デバイスによっては適用または入力されないプロパティがあります。詳しくは、このページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-619">Some properties might not be applicable or populated for all devices so consult this page for further details.</span></span> <span data-ttu-id="c66cc-620">詳細については、「[Microsoft Intune でインベントリを使用してデバイスを把握する](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c66cc-620">For more information see [Understand your devices with inventory in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-621">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-621">Property</span></span>  | <span data-ttu-id="c66cc-622">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-622">Description</span></span> |
 |---------|------------|
-| DateKey | 日付テーブルの参照であり、日を示します。 |
-| DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DeviceModel |デバイスのモデル。 |
-| OS |デバイスの OS。 |
-| DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| SoftwareVersion |多くの場合、OS バージョンとは異なる Apple プラットフォームを除き、これは OS バージョンになります。 |
-| Imei |IMEI 番号 |
-| HardwareInventoryTimeUtc |このデバイスのインベントリが報告された最初の時刻 |
-| InventoryModifiedTimeUtc |このスナップショットが作成されたときにインベントリが保存された最後の時刻。 |
-| InventoryReportingTimeUtc |このデバイスのインベントリが回収された最後の時刻 |
-| ExchangeActiveSyncId |Exchange ActiveSync デバイス ID。 |
-| ComputerSystemDescription |システムの説明。 |
-| ComputerSystemName |システム名。 |
-| ComputerSystemManufacturer |システムの製造元。 |
-| ComputerSystemModel |システムのモデル。 |
-| UserName |ユーザー名。 |
-| OSType |OS の種類。 |
-| OSCaption |OS キャプション。 |
-| OSName |OS の名前。 |
-| OSManufacturer |OS の製造元。 |
-| OSProductSuite |OS 製品スイート。 |
-| OSProductType |OS 製品の種類。 |
-| ロケール |OS ロケール。 |
-| PhysicalMemoryCapacity |物理メモリ容量 (バイト単位)。 |
-| PhysicalMemoryRemovable |物理リムーバブル メモリ (バイト単位)。 |
-| SystemEnclosureChassisTypesInnerText |このデバイスのシステム シャーシの種類を定義します。 数字は次の値を示します。  <br>0 または空白 = 不明   <br>1 = デスクトップ   <br>2 = ノート PC  <br>3 = ワークステーション  <br>4 = エンタープライズ サーバー  <br>100 = 電話  <br>101 = タブレット  <br>102/103 = 別の不明な種類のモバイル デバイス |
-| SystemEnclosureModel |システム格納装置のモデル。 |
-| SystemEnclosureSerialNumber |システム格納装置のシリアル番号。 |
-| NetworkAdapterConfigurationText |ネットワーク アダプターからの構成テキスト。 |
-| MacAddress |MAC アドレス。 |
-| SmsID |Intune デバイス ID。 |
-| CertExpiry |MDM 管理証明書の有効期限日 |
-| DeviceClientAgentVersion |クライアント エージェントのバージョン。 |
-| DeviceClientID |デバイスのクライアント ID。 |
-| SerialNumber |シリアル番号。 |
-| DeviceManufacturer |デバイスの製造元。 |
-| DMVersion |DM バージョン。 |
-| FirmwareVersion |ファームウェアのバージョン。 |
-| HardwareVersion |ハードウェアのバージョン。 |
-| PlatformType |プラットフォームの種類。 |
-| ProcessorLevel |プロセッサのレベル。 |
-| ProcessorRevision |プロセッサのリビジョン。 |
-| 製品 |製品。 |
-| ProductVersion |製品のバージョン。 |
-| OEM |相手先ブランド供給。 |
-| DeviceBuildVersion |デバイスのビルド バージョン。 |
-| Meid |モバイル機器の識別子 |
-| PhoneNumber |電話番号。 |
-| SubscriberCarrierNetwork |電話通信事業者のネットワーク名。 |
-| CellularTechnology |電話通信事業者のネットワークの種類 (CDMA/GSM)。 |
-| Imsi |IMSI 番号。 |
-| JailBroken |デバイスが脱獄またはルート化されている場合は True |
-| IsActivationLockEnabled |アクティベーション ロックが有効な場合は True |
-| DeviceType |デバイスの種類 |
-| IsSupervised |監督対象モードになっています |
-| DeviceDisplayNumberOfColors |デバイスのディスプレイの色数 |
-| HorizontalResolution |デバイスの水平画面解像度 |
-| VerticalResolution |デバイスの垂直画面解像度 |
-| StorageFree |記憶域の空き容量 (バイト単位) |
-| StorageTotal |記憶域の合計容量 (バイト単位) |
-| ProgramFree |プログラム実行用メモリの空き容量 (バイト単位) |
-| ProgramTotal |プログラム実行用メモリの合計容量 (バイト単位) |
-| RemovableStorageFree |リムーバブル記憶域の空き容量 (バイト単位) |
-| RemovableStorageTotal |リムーバブル記憶域の合計容量 (バイト単位) |
-| DeviceMemoryDeviceCapacity |デバイス メモリの容量 |
-| DeviceMemoryAvailableDeviceCapacity |デバイス メモリの空き容量 |
-| DeviceOSVersion |OS のバージョン |
-| DeviceOSPlatform |OS のプラットフォーム |
-| DeviceOSLanguage |OS の言語 |
-| PasswordMaxAttemptsBeforeWipe |パスワードの最大試行回数であり、これを超えるとデバイスがワイプされます |
-| PasswordMinComplexChars |パスワードに必要な複合文字の最小数 |
-| PasswordMinLength |パスワードの必要な長さの最小値 |
-| PasswordHistory |パスワードを記録し、過去に使った中で最も新しい n 個までのパスワードを使用禁止とするとき、その最小数をここで指定します |
-| PasswordEnabled |パスワードが有効かどうか |
-| PasswordExpiration |パスワード - 有効期限。 |
-| AllowRecoveryPassword |パスワードの復元を許可する。 |
-| PasswordAutoLockTimeout |パスワード - 自動ロック タイムアウト。 |
-| PasswordType |パスワードの種類。 |
-| BacklightACTimeout |電源利用時のバックライトのタイムアウト。 |
-| BacklightBatTimeout |バッテリー利用時のバックライトのタイムアウト。 |
-| PowerBackupPercent |電源バックアップ パーセント。 |
-| BatteryPercent |残りのバッテリーのパーセント |
-| PlatformID |プラットフォーム ID。 |
-| ExchangeDeviceID |Exchange デバイス ID。 |
-| SmsProcessorDescription |プロセッサの説明。 |
-| OwnerEmailAddress |所有者の電子メール アドレス。 |
-| DeviceOSName |OS の名前。 |
-| WifiMac |WiFi Mac アドレス。 |
-| EthernetMac |イーサネット MAC アドレス。 |
-| RequireEncryption |デバイスが暗号化されているかどうかを示します |
-| ActivationLockBypassCode |アクティベーション ロックのバイパス コード。 |
+| <span data-ttu-id="c66cc-623">DateKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-623">DateKey</span></span> | <span data-ttu-id="c66cc-624">日付テーブルの参照であり、日を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-624">Reference to date table indicating the day.</span></span> |
+| <span data-ttu-id="c66cc-625">DeviceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-625">DeviceKey</span></span> |<span data-ttu-id="c66cc-626">データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。</span><span class="sxs-lookup"><span data-stu-id="c66cc-626">Unique identifier of the device in the data warehouse - surrogate key.</span></span> <span data-ttu-id="c66cc-627">これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。</span><span class="sxs-lookup"><span data-stu-id="c66cc-627">This is a reference to the Device table that contains the Intune device ID.</span></span> |
+| <span data-ttu-id="c66cc-628">DeviceModel</span><span class="sxs-lookup"><span data-stu-id="c66cc-628">DeviceModel</span></span> |<span data-ttu-id="c66cc-629">デバイスのモデル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-629">Model of the device.</span></span> |
+| <span data-ttu-id="c66cc-630">OS</span><span class="sxs-lookup"><span data-stu-id="c66cc-630">OS</span></span> |<span data-ttu-id="c66cc-631">デバイスの OS。</span><span class="sxs-lookup"><span data-stu-id="c66cc-631">OS of the device.</span></span> |
+| <span data-ttu-id="c66cc-632">DeviceName</span><span class="sxs-lookup"><span data-stu-id="c66cc-632">DeviceName</span></span> |<span data-ttu-id="c66cc-633">デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。</span><span class="sxs-lookup"><span data-stu-id="c66cc-633">Name of the device on platforms that allow naming a device.</span></span> <span data-ttu-id="c66cc-634">その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-634">On other platforms, Intune creates a name from other properties.</span></span> <span data-ttu-id="c66cc-635">この属性は一部のデバイスで利用できません。</span><span class="sxs-lookup"><span data-stu-id="c66cc-635">This attribute cannot be available for all devices.</span></span> |
+| <span data-ttu-id="c66cc-636">SoftwareVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-636">SoftwareVersion</span></span> |<span data-ttu-id="c66cc-637">多くの場合、OS バージョンとは異なる Apple プラットフォームを除き、これは OS バージョンになります。</span><span class="sxs-lookup"><span data-stu-id="c66cc-637">In most cases this is the OS version except in Apple platforms where it differs from OS version.</span></span> |
+| <span data-ttu-id="c66cc-638">Imei</span><span class="sxs-lookup"><span data-stu-id="c66cc-638">Imei</span></span> |<span data-ttu-id="c66cc-639">IMEI 番号</span><span class="sxs-lookup"><span data-stu-id="c66cc-639">IMEI number</span></span> |
+| <span data-ttu-id="c66cc-640">HardwareInventoryTimeUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-640">HardwareInventoryTimeUtc</span></span> |<span data-ttu-id="c66cc-641">このデバイスのインベントリが報告された最初の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-641">The first time inventory was reported for this device.</span></span> |
+| <span data-ttu-id="c66cc-642">InventoryModifiedTimeUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-642">InventoryModifiedTimeUtc</span></span> |<span data-ttu-id="c66cc-643">このスナップショットが作成されたときにインベントリが保存された最後の時刻。</span><span class="sxs-lookup"><span data-stu-id="c66cc-643">The last time inventory was stored when this snapshot was taken.</span></span> |
+| <span data-ttu-id="c66cc-644">InventoryReportingTimeUtc</span><span class="sxs-lookup"><span data-stu-id="c66cc-644">InventoryReportingTimeUtc</span></span> |<span data-ttu-id="c66cc-645">このデバイスのインベントリが回収された最後の時刻</span><span class="sxs-lookup"><span data-stu-id="c66cc-645">The last time inventory was collected for this device.</span></span> |
+| <span data-ttu-id="c66cc-646">ExchangeActiveSyncId</span><span class="sxs-lookup"><span data-stu-id="c66cc-646">ExchangeActiveSyncId</span></span> |<span data-ttu-id="c66cc-647">Exchange ActiveSync デバイス ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-647">Exchange ActiveSync Device ID.</span></span> |
+| <span data-ttu-id="c66cc-648">ComputerSystemDescription</span><span class="sxs-lookup"><span data-stu-id="c66cc-648">ComputerSystemDescription</span></span> |<span data-ttu-id="c66cc-649">システムの説明。</span><span class="sxs-lookup"><span data-stu-id="c66cc-649">System description.</span></span> |
+| <span data-ttu-id="c66cc-650">ComputerSystemName</span><span class="sxs-lookup"><span data-stu-id="c66cc-650">ComputerSystemName</span></span> |<span data-ttu-id="c66cc-651">システム名。</span><span class="sxs-lookup"><span data-stu-id="c66cc-651">System Name.</span></span> |
+| <span data-ttu-id="c66cc-652">ComputerSystemManufacturer</span><span class="sxs-lookup"><span data-stu-id="c66cc-652">ComputerSystemManufacturer</span></span> |<span data-ttu-id="c66cc-653">システムの製造元。</span><span class="sxs-lookup"><span data-stu-id="c66cc-653">System Manufacturer.</span></span> |
+| <span data-ttu-id="c66cc-654">ComputerSystemModel</span><span class="sxs-lookup"><span data-stu-id="c66cc-654">ComputerSystemModel</span></span> |<span data-ttu-id="c66cc-655">システムのモデル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-655">System Model.</span></span> |
+| <span data-ttu-id="c66cc-656">UserName</span><span class="sxs-lookup"><span data-stu-id="c66cc-656">UserName</span></span> |<span data-ttu-id="c66cc-657">ユーザー名。</span><span class="sxs-lookup"><span data-stu-id="c66cc-657">User name.</span></span> |
+| <span data-ttu-id="c66cc-658">OSType</span><span class="sxs-lookup"><span data-stu-id="c66cc-658">OSType</span></span> |<span data-ttu-id="c66cc-659">OS の種類。</span><span class="sxs-lookup"><span data-stu-id="c66cc-659">OS Type.</span></span> |
+| <span data-ttu-id="c66cc-660">OSCaption</span><span class="sxs-lookup"><span data-stu-id="c66cc-660">OSCaption</span></span> |<span data-ttu-id="c66cc-661">OS キャプション。</span><span class="sxs-lookup"><span data-stu-id="c66cc-661">OS Caption.</span></span> |
+| <span data-ttu-id="c66cc-662">OSName</span><span class="sxs-lookup"><span data-stu-id="c66cc-662">OSName</span></span> |<span data-ttu-id="c66cc-663">OS の名前。</span><span class="sxs-lookup"><span data-stu-id="c66cc-663">OS Name.</span></span> |
+| <span data-ttu-id="c66cc-664">OSManufacturer</span><span class="sxs-lookup"><span data-stu-id="c66cc-664">OSManufacturer</span></span> |<span data-ttu-id="c66cc-665">OS の製造元。</span><span class="sxs-lookup"><span data-stu-id="c66cc-665">OS Manufacturer.</span></span> |
+| <span data-ttu-id="c66cc-666">OSProductSuite</span><span class="sxs-lookup"><span data-stu-id="c66cc-666">OSProductSuite</span></span> |<span data-ttu-id="c66cc-667">OS 製品スイート。</span><span class="sxs-lookup"><span data-stu-id="c66cc-667">OS Product Suite.</span></span> |
+| <span data-ttu-id="c66cc-668">OSProductType</span><span class="sxs-lookup"><span data-stu-id="c66cc-668">OSProductType</span></span> |<span data-ttu-id="c66cc-669">OS 製品の種類。</span><span class="sxs-lookup"><span data-stu-id="c66cc-669">OS Product Type.</span></span> |
+| <span data-ttu-id="c66cc-670">ロケール</span><span class="sxs-lookup"><span data-stu-id="c66cc-670">Locale</span></span> |<span data-ttu-id="c66cc-671">OS ロケール。</span><span class="sxs-lookup"><span data-stu-id="c66cc-671">OS Locale.</span></span> |
+| <span data-ttu-id="c66cc-672">PhysicalMemoryCapacity</span><span class="sxs-lookup"><span data-stu-id="c66cc-672">PhysicalMemoryCapacity</span></span> |<span data-ttu-id="c66cc-673">物理メモリ容量 (バイト単位)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-673">Physical Memory Capacity (in bytes).</span></span> |
+| <span data-ttu-id="c66cc-674">PhysicalMemoryRemovable</span><span class="sxs-lookup"><span data-stu-id="c66cc-674">PhysicalMemoryRemovable</span></span> |<span data-ttu-id="c66cc-675">物理リムーバブル メモリ (バイト単位)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-675">Physical Removable Memory (in bytes).</span></span> |
+| <span data-ttu-id="c66cc-676">SystemEnclosureChassisTypesInnerText</span><span class="sxs-lookup"><span data-stu-id="c66cc-676">SystemEnclosureChassisTypesInnerText</span></span> |<span data-ttu-id="c66cc-677">このデバイスのシステム シャーシの種類を定義します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-677">Defines the system chassis type for this device.</span></span> <span data-ttu-id="c66cc-678">数字は次の値を示します。</span><span class="sxs-lookup"><span data-stu-id="c66cc-678">The numbers indicate the following values:</span></span>  <br><span data-ttu-id="c66cc-679">0 または空白 = 不明</span><span class="sxs-lookup"><span data-stu-id="c66cc-679">0 or Empty = Unknown</span></span>   <br><span data-ttu-id="c66cc-680">1 = デスクトップ</span><span class="sxs-lookup"><span data-stu-id="c66cc-680">1 = It is a Desktop</span></span>   <br><span data-ttu-id="c66cc-681">2 = ノート PC</span><span class="sxs-lookup"><span data-stu-id="c66cc-681">2 = It is a Laptop</span></span>  <br><span data-ttu-id="c66cc-682">3 = ワークステーション</span><span class="sxs-lookup"><span data-stu-id="c66cc-682">3 = It is a Workstation</span></span>  <br><span data-ttu-id="c66cc-683">4 = エンタープライズ サーバー</span><span class="sxs-lookup"><span data-stu-id="c66cc-683">4 = It is an Enterprise Server</span></span>  <br><span data-ttu-id="c66cc-684">100 = 電話</span><span class="sxs-lookup"><span data-stu-id="c66cc-684">100 = It is a Phone</span></span>  <br><span data-ttu-id="c66cc-685">101 = タブレット</span><span class="sxs-lookup"><span data-stu-id="c66cc-685">101 = It is a Tablet</span></span>  <br><span data-ttu-id="c66cc-686">102/103 = 別の不明な種類のモバイル デバイス</span><span class="sxs-lookup"><span data-stu-id="c66cc-686">102/103 = Another unknown type of Mobile device</span></span> |
+| <span data-ttu-id="c66cc-687">SystemEnclosureModel</span><span class="sxs-lookup"><span data-stu-id="c66cc-687">SystemEnclosureModel</span></span> |<span data-ttu-id="c66cc-688">システム格納装置のモデル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-688">System Enclosure model.</span></span> |
+| <span data-ttu-id="c66cc-689">SystemEnclosureSerialNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-689">SystemEnclosureSerialNumber</span></span> |<span data-ttu-id="c66cc-690">システム格納装置のシリアル番号。</span><span class="sxs-lookup"><span data-stu-id="c66cc-690">System Enclosure Serial number.</span></span> |
+| <span data-ttu-id="c66cc-691">NetworkAdapterConfigurationText</span><span class="sxs-lookup"><span data-stu-id="c66cc-691">NetworkAdapterConfigurationText</span></span> |<span data-ttu-id="c66cc-692">ネットワーク アダプターからの構成テキスト。</span><span class="sxs-lookup"><span data-stu-id="c66cc-692">Configuration text from network adapter.</span></span> |
+| <span data-ttu-id="c66cc-693">MacAddress</span><span class="sxs-lookup"><span data-stu-id="c66cc-693">MacAddress</span></span> |<span data-ttu-id="c66cc-694">MAC アドレス。</span><span class="sxs-lookup"><span data-stu-id="c66cc-694">MAC address.</span></span> |
+| <span data-ttu-id="c66cc-695">SmsID</span><span class="sxs-lookup"><span data-stu-id="c66cc-695">SmsID</span></span> |<span data-ttu-id="c66cc-696">Intune デバイス ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-696">Intune device ID.</span></span> |
+| <span data-ttu-id="c66cc-697">CertExpiry</span><span class="sxs-lookup"><span data-stu-id="c66cc-697">CertExpiry</span></span> |<span data-ttu-id="c66cc-698">MDM 管理証明書の有効期限日</span><span class="sxs-lookup"><span data-stu-id="c66cc-698">Expiry date of the MDM management certificate.</span></span> |
+| <span data-ttu-id="c66cc-699">DeviceClientAgentVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-699">DeviceClientAgentVersion</span></span> |<span data-ttu-id="c66cc-700">クライアント エージェントのバージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-700">Client Agent Version.</span></span> |
+| <span data-ttu-id="c66cc-701">DeviceClientID</span><span class="sxs-lookup"><span data-stu-id="c66cc-701">DeviceClientID</span></span> |<span data-ttu-id="c66cc-702">デバイスのクライアント ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-702">Device Client ID.</span></span> |
+| <span data-ttu-id="c66cc-703">SerialNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-703">SerialNumber</span></span> |<span data-ttu-id="c66cc-704">シリアル番号。</span><span class="sxs-lookup"><span data-stu-id="c66cc-704">Serial Number.</span></span> |
+| <span data-ttu-id="c66cc-705">DeviceManufacturer</span><span class="sxs-lookup"><span data-stu-id="c66cc-705">DeviceManufacturer</span></span> |<span data-ttu-id="c66cc-706">デバイスの製造元。</span><span class="sxs-lookup"><span data-stu-id="c66cc-706">Device Manufacturer.</span></span> |
+| <span data-ttu-id="c66cc-707">DMVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-707">DMVersion</span></span> |<span data-ttu-id="c66cc-708">DM バージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-708">DM version.</span></span> |
+| <span data-ttu-id="c66cc-709">FirmwareVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-709">FirmwareVersion</span></span> |<span data-ttu-id="c66cc-710">ファームウェアのバージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-710">Firmware Version.</span></span> |
+| <span data-ttu-id="c66cc-711">HardwareVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-711">HardwareVersion</span></span> |<span data-ttu-id="c66cc-712">ハードウェアのバージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-712">Hardware Version.</span></span> |
+| <span data-ttu-id="c66cc-713">PlatformType</span><span class="sxs-lookup"><span data-stu-id="c66cc-713">PlatformType</span></span> |<span data-ttu-id="c66cc-714">プラットフォームの種類。</span><span class="sxs-lookup"><span data-stu-id="c66cc-714">Platform Type.</span></span> |
+| <span data-ttu-id="c66cc-715">ProcessorLevel</span><span class="sxs-lookup"><span data-stu-id="c66cc-715">ProcessorLevel</span></span> |<span data-ttu-id="c66cc-716">プロセッサのレベル。</span><span class="sxs-lookup"><span data-stu-id="c66cc-716">Processor level.</span></span> |
+| <span data-ttu-id="c66cc-717">ProcessorRevision</span><span class="sxs-lookup"><span data-stu-id="c66cc-717">ProcessorRevision</span></span> |<span data-ttu-id="c66cc-718">プロセッサのリビジョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-718">Processor Revision.</span></span> |
+| <span data-ttu-id="c66cc-719">製品</span><span class="sxs-lookup"><span data-stu-id="c66cc-719">Product</span></span> |<span data-ttu-id="c66cc-720">製品。</span><span class="sxs-lookup"><span data-stu-id="c66cc-720">Product.</span></span> |
+| <span data-ttu-id="c66cc-721">ProductVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-721">ProductVersion</span></span> |<span data-ttu-id="c66cc-722">製品のバージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-722">Product version.</span></span> |
+| <span data-ttu-id="c66cc-723">OEM</span><span class="sxs-lookup"><span data-stu-id="c66cc-723">OEM</span></span> |<span data-ttu-id="c66cc-724">相手先ブランド供給。</span><span class="sxs-lookup"><span data-stu-id="c66cc-724">Original Equipment manufacturer.</span></span> |
+| <span data-ttu-id="c66cc-725">DeviceBuildVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-725">DeviceBuildVersion</span></span> |<span data-ttu-id="c66cc-726">デバイスのビルド バージョン。</span><span class="sxs-lookup"><span data-stu-id="c66cc-726">Device Build version.</span></span> |
+| <span data-ttu-id="c66cc-727">Meid</span><span class="sxs-lookup"><span data-stu-id="c66cc-727">Meid</span></span> |<span data-ttu-id="c66cc-728">モバイル機器の識別子</span><span class="sxs-lookup"><span data-stu-id="c66cc-728">Mobile equipment identifier.</span></span> |
+| <span data-ttu-id="c66cc-729">PhoneNumber</span><span class="sxs-lookup"><span data-stu-id="c66cc-729">PhoneNumber</span></span> |<span data-ttu-id="c66cc-730">電話番号。</span><span class="sxs-lookup"><span data-stu-id="c66cc-730">Phone number.</span></span> |
+| <span data-ttu-id="c66cc-731">SubscriberCarrierNetwork</span><span class="sxs-lookup"><span data-stu-id="c66cc-731">SubscriberCarrierNetwork</span></span> |<span data-ttu-id="c66cc-732">電話通信事業者のネットワーク名。</span><span class="sxs-lookup"><span data-stu-id="c66cc-732">Phone Carrier Network Name.</span></span> |
+| <span data-ttu-id="c66cc-733">CellularTechnology</span><span class="sxs-lookup"><span data-stu-id="c66cc-733">CellularTechnology</span></span> |<span data-ttu-id="c66cc-734">電話通信事業者のネットワークの種類 (CDMA/GSM)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-734">Phone Carrier Network Type (CDMA/GSM).</span></span> |
+| <span data-ttu-id="c66cc-735">Imsi</span><span class="sxs-lookup"><span data-stu-id="c66cc-735">Imsi</span></span> |<span data-ttu-id="c66cc-736">IMSI 番号。</span><span class="sxs-lookup"><span data-stu-id="c66cc-736">IMSI number.</span></span> |
+| <span data-ttu-id="c66cc-737">JailBroken</span><span class="sxs-lookup"><span data-stu-id="c66cc-737">JailBroken</span></span> |<span data-ttu-id="c66cc-738">デバイスが脱獄またはルート化されている場合は True</span><span class="sxs-lookup"><span data-stu-id="c66cc-738">True if the device is Jail Broken or Rooted.</span></span> |
+| <span data-ttu-id="c66cc-739">IsActivationLockEnabled</span><span class="sxs-lookup"><span data-stu-id="c66cc-739">IsActivationLockEnabled</span></span> |<span data-ttu-id="c66cc-740">アクティベーション ロックが有効な場合は True</span><span class="sxs-lookup"><span data-stu-id="c66cc-740">True Is Activation Lock is Enabled</span></span> |
+| <span data-ttu-id="c66cc-741">DeviceType</span><span class="sxs-lookup"><span data-stu-id="c66cc-741">DeviceType</span></span> |<span data-ttu-id="c66cc-742">デバイスの種類</span><span class="sxs-lookup"><span data-stu-id="c66cc-742">Device Type</span></span> |
+| <span data-ttu-id="c66cc-743">IsSupervised</span><span class="sxs-lookup"><span data-stu-id="c66cc-743">IsSupervised</span></span> |<span data-ttu-id="c66cc-744">監督対象モードになっています</span><span class="sxs-lookup"><span data-stu-id="c66cc-744">Is supervised</span></span> |
+| <span data-ttu-id="c66cc-745">DeviceDisplayNumberOfColors</span><span class="sxs-lookup"><span data-stu-id="c66cc-745">DeviceDisplayNumberOfColors</span></span> |<span data-ttu-id="c66cc-746">デバイスのディスプレイの色数</span><span class="sxs-lookup"><span data-stu-id="c66cc-746">Device display Number Of Colors</span></span> |
+| <span data-ttu-id="c66cc-747">HorizontalResolution</span><span class="sxs-lookup"><span data-stu-id="c66cc-747">HorizontalResolution</span></span> |<span data-ttu-id="c66cc-748">デバイスの水平画面解像度</span><span class="sxs-lookup"><span data-stu-id="c66cc-748">Device horizontal screen resolution</span></span> |
+| <span data-ttu-id="c66cc-749">VerticalResolution</span><span class="sxs-lookup"><span data-stu-id="c66cc-749">VerticalResolution</span></span> |<span data-ttu-id="c66cc-750">デバイスの垂直画面解像度</span><span class="sxs-lookup"><span data-stu-id="c66cc-750">Device vertical screen resolution</span></span> |
+| <span data-ttu-id="c66cc-751">StorageFree</span><span class="sxs-lookup"><span data-stu-id="c66cc-751">StorageFree</span></span> |<span data-ttu-id="c66cc-752">記憶域の空き容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-752">Free storage (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-753">StorageTotal</span><span class="sxs-lookup"><span data-stu-id="c66cc-753">StorageTotal</span></span> |<span data-ttu-id="c66cc-754">記憶域の合計容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-754">Total storage (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-755">ProgramFree</span><span class="sxs-lookup"><span data-stu-id="c66cc-755">ProgramFree</span></span> |<span data-ttu-id="c66cc-756">プログラム実行用メモリの空き容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-756">Free Program memory (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-757">ProgramTotal</span><span class="sxs-lookup"><span data-stu-id="c66cc-757">ProgramTotal</span></span> |<span data-ttu-id="c66cc-758">プログラム実行用メモリの合計容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-758">Total Program memory (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-759">RemovableStorageFree</span><span class="sxs-lookup"><span data-stu-id="c66cc-759">RemovableStorageFree</span></span> |<span data-ttu-id="c66cc-760">リムーバブル記憶域の空き容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-760">Free removable storage (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-761">RemovableStorageTotal</span><span class="sxs-lookup"><span data-stu-id="c66cc-761">RemovableStorageTotal</span></span> |<span data-ttu-id="c66cc-762">リムーバブル記憶域の合計容量 (バイト単位)</span><span class="sxs-lookup"><span data-stu-id="c66cc-762">Total removable storage (in bytes)</span></span> |
+| <span data-ttu-id="c66cc-763">DeviceMemoryDeviceCapacity</span><span class="sxs-lookup"><span data-stu-id="c66cc-763">DeviceMemoryDeviceCapacity</span></span> |<span data-ttu-id="c66cc-764">デバイス メモリの容量</span><span class="sxs-lookup"><span data-stu-id="c66cc-764">Device memory capacity</span></span> |
+| <span data-ttu-id="c66cc-765">DeviceMemoryAvailableDeviceCapacity</span><span class="sxs-lookup"><span data-stu-id="c66cc-765">DeviceMemoryAvailableDeviceCapacity</span></span> |<span data-ttu-id="c66cc-766">デバイス メモリの空き容量</span><span class="sxs-lookup"><span data-stu-id="c66cc-766">Device memory available capacity</span></span> |
+| <span data-ttu-id="c66cc-767">DeviceOSVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-767">DeviceOSVersion</span></span> |<span data-ttu-id="c66cc-768">OS のバージョン</span><span class="sxs-lookup"><span data-stu-id="c66cc-768">OS Version</span></span> |
+| <span data-ttu-id="c66cc-769">DeviceOSPlatform</span><span class="sxs-lookup"><span data-stu-id="c66cc-769">DeviceOSPlatform</span></span> |<span data-ttu-id="c66cc-770">OS のプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="c66cc-770">OS platform</span></span> |
+| <span data-ttu-id="c66cc-771">DeviceOSLanguage</span><span class="sxs-lookup"><span data-stu-id="c66cc-771">DeviceOSLanguage</span></span> |<span data-ttu-id="c66cc-772">OS の言語</span><span class="sxs-lookup"><span data-stu-id="c66cc-772">OS language</span></span> |
+| <span data-ttu-id="c66cc-773">PasswordMaxAttemptsBeforeWipe</span><span class="sxs-lookup"><span data-stu-id="c66cc-773">PasswordMaxAttemptsBeforeWipe</span></span> |<span data-ttu-id="c66cc-774">パスワードの最大試行回数であり、これを超えるとデバイスがワイプされます</span><span class="sxs-lookup"><span data-stu-id="c66cc-774">Maximum allowed password attempts allowed before device wipe</span></span> |
+| <span data-ttu-id="c66cc-775">PasswordMinComplexChars</span><span class="sxs-lookup"><span data-stu-id="c66cc-775">PasswordMinComplexChars</span></span> |<span data-ttu-id="c66cc-776">パスワードに必要な複合文字の最小数</span><span class="sxs-lookup"><span data-stu-id="c66cc-776">Minimum number of complex characters required in the password</span></span> |
+| <span data-ttu-id="c66cc-777">PasswordMinLength</span><span class="sxs-lookup"><span data-stu-id="c66cc-777">PasswordMinLength</span></span> |<span data-ttu-id="c66cc-778">パスワードの必要な長さの最小値</span><span class="sxs-lookup"><span data-stu-id="c66cc-778">Minimum required length of password</span></span> |
+| <span data-ttu-id="c66cc-779">PasswordHistory</span><span class="sxs-lookup"><span data-stu-id="c66cc-779">PasswordHistory</span></span> |<span data-ttu-id="c66cc-780">パスワードを記録し、過去に使った中で最も新しい n 個までのパスワードを使用禁止とするとき、その最小数をここで指定します</span><span class="sxs-lookup"><span data-stu-id="c66cc-780">Password - Minimum historic passwords unaccepted</span></span> |
+| <span data-ttu-id="c66cc-781">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="c66cc-781">PasswordEnabled</span></span> |<span data-ttu-id="c66cc-782">パスワードが有効かどうか</span><span class="sxs-lookup"><span data-stu-id="c66cc-782">Password - Enabled?</span></span> |
+| <span data-ttu-id="c66cc-783">PasswordExpiration</span><span class="sxs-lookup"><span data-stu-id="c66cc-783">PasswordExpiration</span></span> |<span data-ttu-id="c66cc-784">パスワード - 有効期限。</span><span class="sxs-lookup"><span data-stu-id="c66cc-784">Password - Expiration date.</span></span> |
+| <span data-ttu-id="c66cc-785">AllowRecoveryPassword</span><span class="sxs-lookup"><span data-stu-id="c66cc-785">AllowRecoveryPassword</span></span> |<span data-ttu-id="c66cc-786">パスワードの復元を許可する。</span><span class="sxs-lookup"><span data-stu-id="c66cc-786">Allow password recovery.</span></span> |
+| <span data-ttu-id="c66cc-787">PasswordAutoLockTimeout</span><span class="sxs-lookup"><span data-stu-id="c66cc-787">PasswordAutoLockTimeout</span></span> |<span data-ttu-id="c66cc-788">パスワード - 自動ロック タイムアウト。</span><span class="sxs-lookup"><span data-stu-id="c66cc-788">Password - Auto lock timeout.</span></span> |
+| <span data-ttu-id="c66cc-789">PasswordType</span><span class="sxs-lookup"><span data-stu-id="c66cc-789">PasswordType</span></span> |<span data-ttu-id="c66cc-790">パスワードの種類。</span><span class="sxs-lookup"><span data-stu-id="c66cc-790">Password Type.</span></span> |
+| <span data-ttu-id="c66cc-791">BacklightACTimeout</span><span class="sxs-lookup"><span data-stu-id="c66cc-791">BacklightACTimeout</span></span> |<span data-ttu-id="c66cc-792">電源利用時のバックライトのタイムアウト。</span><span class="sxs-lookup"><span data-stu-id="c66cc-792">Backlight time out when plugged into power source.</span></span> |
+| <span data-ttu-id="c66cc-793">BacklightBatTimeout</span><span class="sxs-lookup"><span data-stu-id="c66cc-793">BacklightBatTimeout</span></span> |<span data-ttu-id="c66cc-794">バッテリー利用時のバックライトのタイムアウト。</span><span class="sxs-lookup"><span data-stu-id="c66cc-794">Backlight timeout on battery.</span></span> |
+| <span data-ttu-id="c66cc-795">PowerBackupPercent</span><span class="sxs-lookup"><span data-stu-id="c66cc-795">PowerBackupPercent</span></span> |<span data-ttu-id="c66cc-796">電源バックアップ パーセント。</span><span class="sxs-lookup"><span data-stu-id="c66cc-796">Power backup percent.</span></span> |
+| <span data-ttu-id="c66cc-797">BatteryPercent</span><span class="sxs-lookup"><span data-stu-id="c66cc-797">BatteryPercent</span></span> |<span data-ttu-id="c66cc-798">残りのバッテリーのパーセント</span><span class="sxs-lookup"><span data-stu-id="c66cc-798">Remaining battery percent.</span></span> |
+| <span data-ttu-id="c66cc-799">PlatformID</span><span class="sxs-lookup"><span data-stu-id="c66cc-799">PlatformID</span></span> |<span data-ttu-id="c66cc-800">プラットフォーム ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-800">Platform ID.</span></span> |
+| <span data-ttu-id="c66cc-801">ExchangeDeviceID</span><span class="sxs-lookup"><span data-stu-id="c66cc-801">ExchangeDeviceID</span></span> |<span data-ttu-id="c66cc-802">Exchange デバイス ID。</span><span class="sxs-lookup"><span data-stu-id="c66cc-802">Exchange Device ID.</span></span> |
+| <span data-ttu-id="c66cc-803">SmsProcessorDescription</span><span class="sxs-lookup"><span data-stu-id="c66cc-803">SmsProcessorDescription</span></span> |<span data-ttu-id="c66cc-804">プロセッサの説明。</span><span class="sxs-lookup"><span data-stu-id="c66cc-804">Processor description.</span></span> |
+| <span data-ttu-id="c66cc-805">OwnerEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c66cc-805">OwnerEmailAddress</span></span> |<span data-ttu-id="c66cc-806">所有者の電子メール アドレス。</span><span class="sxs-lookup"><span data-stu-id="c66cc-806">Owner-s email address.</span></span> |
+| <span data-ttu-id="c66cc-807">DeviceOSName</span><span class="sxs-lookup"><span data-stu-id="c66cc-807">DeviceOSName</span></span> |<span data-ttu-id="c66cc-808">OS の名前。</span><span class="sxs-lookup"><span data-stu-id="c66cc-808">OS Name.</span></span> |
+| <span data-ttu-id="c66cc-809">WifiMac</span><span class="sxs-lookup"><span data-stu-id="c66cc-809">WifiMac</span></span> |<span data-ttu-id="c66cc-810">WiFi Mac アドレス。</span><span class="sxs-lookup"><span data-stu-id="c66cc-810">WIFI Mac address.</span></span> |
+| <span data-ttu-id="c66cc-811">EthernetMac</span><span class="sxs-lookup"><span data-stu-id="c66cc-811">EthernetMac</span></span> |<span data-ttu-id="c66cc-812">イーサネット MAC アドレス。</span><span class="sxs-lookup"><span data-stu-id="c66cc-812">Ethernet MAC address.</span></span> |
+| <span data-ttu-id="c66cc-813">RequireEncryption</span><span class="sxs-lookup"><span data-stu-id="c66cc-813">RequireEncryption</span></span> |<span data-ttu-id="c66cc-814">デバイスが暗号化されているかどうかを示します</span><span class="sxs-lookup"><span data-stu-id="c66cc-814">Indicates whether device is encrypted or not.</span></span> |
+| <span data-ttu-id="c66cc-815">ActivationLockBypassCode</span><span class="sxs-lookup"><span data-stu-id="c66cc-815">ActivationLockBypassCode</span></span> |<span data-ttu-id="c66cc-816">アクティベーション ロックのバイパス コード。</span><span class="sxs-lookup"><span data-stu-id="c66cc-816">Activation lock Bypass code.</span></span> |
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventory"></a><span data-ttu-id="c66cc-817">ApplicationInventory</span><span class="sxs-lookup"><span data-stu-id="c66cc-817">ApplicationInventory</span></span>
 
-**ApplicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリが一覧表示されます。
+<span data-ttu-id="c66cc-818">**ApplicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="c66cc-818">The **ApplicationInventory** entity lists the apps found on the device at the time of inventory collection.</span></span>
 
-| プロパティ  | 説明 |
+| <span data-ttu-id="c66cc-819">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c66cc-819">Property</span></span>  | <span data-ttu-id="c66cc-820">説明</span><span class="sxs-lookup"><span data-stu-id="c66cc-820">Description</span></span> |
 |---------|------------|
-| DeviceKey |デバイス テーブルの参照。 |
-| ApplicationKey |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
-| ApplicationName |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
-| ApplicationVersion |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
-| BundleSize |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
+| <span data-ttu-id="c66cc-821">DeviceKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-821">DeviceKey</span></span> |<span data-ttu-id="c66cc-822">デバイス テーブルの参照。</span><span class="sxs-lookup"><span data-stu-id="c66cc-822">A reference to devices table.</span></span> |
+| <span data-ttu-id="c66cc-823">ApplicationKey</span><span class="sxs-lookup"><span data-stu-id="c66cc-823">ApplicationKey</span></span> |<span data-ttu-id="c66cc-824">?</span><span class="sxs-lookup"><span data-stu-id="c66cc-824">?</span></span> <span data-ttu-id="c66cc-825">(ExchangeDeviceService\DeviceApplication からコピーされます)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-825">(copied from ExchangeDeviceService\DeviceApplication).</span></span> |
+| <span data-ttu-id="c66cc-826">ApplicationName</span><span class="sxs-lookup"><span data-stu-id="c66cc-826">ApplicationName</span></span> |<span data-ttu-id="c66cc-827">?</span><span class="sxs-lookup"><span data-stu-id="c66cc-827">?</span></span> <span data-ttu-id="c66cc-828">(ExchangeDeviceService\DeviceApplication からコピーされます)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-828">(copied from ExchangeDeviceService\DeviceApplication).</span></span> |
+| <span data-ttu-id="c66cc-829">ApplicationVersion</span><span class="sxs-lookup"><span data-stu-id="c66cc-829">ApplicationVersion</span></span> |<span data-ttu-id="c66cc-830">?</span><span class="sxs-lookup"><span data-stu-id="c66cc-830">?</span></span> <span data-ttu-id="c66cc-831">(ExchangeDeviceService\DeviceApplication からコピーされます)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-831">(copied from ExchangeDeviceService\DeviceApplication).</span></span> |
+| <span data-ttu-id="c66cc-832">BundleSize</span><span class="sxs-lookup"><span data-stu-id="c66cc-832">BundleSize</span></span> |<span data-ttu-id="c66cc-833">?</span><span class="sxs-lookup"><span data-stu-id="c66cc-833">?</span></span> <span data-ttu-id="c66cc-834">(ExchangeDeviceService\DeviceApplication からコピーされます)。</span><span class="sxs-lookup"><span data-stu-id="c66cc-834">(copied from ExchangeDeviceService\DeviceApplication).</span></span> |

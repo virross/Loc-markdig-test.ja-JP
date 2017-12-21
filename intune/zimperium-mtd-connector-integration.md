@@ -16,69 +16,69 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 1b4adb2db14c2e1c83be8e7b3644944c1910cb97
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
+# <a name="integrate-zimperium-with-intune"></a><span data-ttu-id="409db-103">Zimperium を Intune と統合する</span><span class="sxs-lookup"><span data-stu-id="409db-103">Integrate Zimperium with Intune</span></span>
 
-Zimperium Mobile Threat Defense ソリューションを Intune と統合するには、以下の手順に従う必要があります。
+<span data-ttu-id="409db-104">Zimperium Mobile Threat Defense ソリューションを Intune と統合するには、以下の手順に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="409db-104">You need to follow the steps below to integrate the Zimperium Mobile Threat Defense solution with Intune.</span></span>
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a><span data-ttu-id="409db-105">始める前に</span><span class="sxs-lookup"><span data-stu-id="409db-105">Before you begin</span></span>
 
 > [!NOTE]
-> [Zimperium MTD コンソール](https://staging2-console.zimperium.com)で、以下の手順を実行する必要があります。
+> <span data-ttu-id="409db-106">[Zimperium MTD コンソール](https://staging2-console.zimperium.com)で、以下の手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="409db-106">The steps below need to be taken in the [Zimperium MTD console](https://staging2-console.zimperium.com).</span></span>
 
-Zimperium と Intune の統合を始める前に、次のものがあることを確認します。
+<span data-ttu-id="409db-107">Zimperium と Intune の統合を始める前に、次のものがあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="409db-107">Before starting the process of integrating Zimperium with Intune, make sure you have the following:</span></span>
 
--   Microsoft Intune サブスクリプション
+-   <span data-ttu-id="409db-108">Microsoft Intune サブスクリプション</span><span class="sxs-lookup"><span data-stu-id="409db-108">Microsoft Intune subscription</span></span>
 
--   次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
+-   <span data-ttu-id="409db-109">次のアクセス許可を付与する Azure Active Directory 管理者資格情報:</span><span class="sxs-lookup"><span data-stu-id="409db-109">Azure Active Directory admin credentials to grant the following permissions:</span></span>
 
-    -   サインインしてユーザー プロファイルを読み取る
+    -   <span data-ttu-id="409db-110">サインインしてユーザー プロファイルを読み取る</span><span class="sxs-lookup"><span data-stu-id="409db-110">Sign in and read user profile</span></span>
 
-    -   サインインしたユーザーとしてディレクトリにアクセスする
+    -   <span data-ttu-id="409db-111">サインインしたユーザーとしてディレクトリにアクセスする</span><span class="sxs-lookup"><span data-stu-id="409db-111">Access the directory as the signed-in user</span></span>
 
-    -   ディレクトリ データの読み込み
+    -   <span data-ttu-id="409db-112">ディレクトリ データの読み込み</span><span class="sxs-lookup"><span data-stu-id="409db-112">Read directory data</span></span>
 
-    -   Intune にデバイス情報を送信する
+    -   <span data-ttu-id="409db-113">Intune にデバイス情報を送信する</span><span class="sxs-lookup"><span data-stu-id="409db-113">Send device information to Intune</span></span>
 
--   Zimperium MTD コンソールにアクセスするための管理者資格情報。
+-   <span data-ttu-id="409db-114">Zimperium MTD コンソールにアクセスするための管理者資格情報。</span><span class="sxs-lookup"><span data-stu-id="409db-114">Admin credentials to access Zimperium MTD console.</span></span>
 
-### <a name="zimperium-app-authorization"></a>Zimperium アプリの承認
+### <a name="zimperium-app-authorization"></a><span data-ttu-id="409db-115">Zimperium アプリの承認</span><span class="sxs-lookup"><span data-stu-id="409db-115">Zimperium app authorization</span></span>
 
-Zimperium アプリ承認プロセスは以下で構成されます。
+<span data-ttu-id="409db-116">Zimperium アプリ承認プロセスは以下で構成されます。</span><span class="sxs-lookup"><span data-stu-id="409db-116">The Zimperium app authorization process consists of the following:</span></span>
 
--   Zimperium サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。
+-   <span data-ttu-id="409db-117">Zimperium サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。</span><span class="sxs-lookup"><span data-stu-id="409db-117">Allow the Zimperium service to communicate information related to device health state back to Intune.</span></span>
 
--   Zimperium は、Azure AD 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
+-   <span data-ttu-id="409db-118">Zimperium は、Azure AD 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。</span><span class="sxs-lookup"><span data-stu-id="409db-118">Zimperium syncs with Azure AD Enrollment Group membership to populate its device’s database.</span></span>
 
--   Zimperium 管理者コンソールが Azure AD シングル サインオン (SSO) を使用できるようにします。
+-   <span data-ttu-id="409db-119">Zimperium 管理者コンソールが Azure AD シングル サインオン (SSO) を使用できるようにします。</span><span class="sxs-lookup"><span data-stu-id="409db-119">Allow Zimperium admin console to use Azure AD Single Sign On (SSO).</span></span>
 
--   Zimperium アプリが Azure AD SSO を使用してサインインできるようにします。
+-   <span data-ttu-id="409db-120">Zimperium アプリが Azure AD SSO を使用してサインインできるようにします。</span><span class="sxs-lookup"><span data-stu-id="409db-120">Allow the Zimperium app to sign in using Azure AD SSO.</span></span>
 
-## <a name="to-set-up-zimperium-integration"></a>Zimperium の統合を設定するには
+## <a name="to-set-up-zimperium-integration"></a><span data-ttu-id="409db-121">Zimperium の統合を設定するには</span><span class="sxs-lookup"><span data-stu-id="409db-121">To set up Zimperium integration</span></span>
 
-1.  [Zimperium MTD コンソール](https://staging2-console.zimperium.com)に移動し、資格情報を使用してサインインします。
+1.  <span data-ttu-id="409db-122">[Zimperium MTD コンソール](https://staging2-console.zimperium.com)に移動し、資格情報を使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="409db-122">Go to [Zimperium MTD console](https://staging2-console.zimperium.com) and sign in with your credentials.</span></span>
 
-2.  左のメニューから **[Management]\(管理\)** を選択します。
+2.  <span data-ttu-id="409db-123">左のメニューから **[Management]\(管理\)** を選択します。</span><span class="sxs-lookup"><span data-stu-id="409db-123">Choose **Management** from the left menu.</span></span>
 
-3.  **[MDM settings]\(MDM の設定\)** タブを選択します。
+3.  <span data-ttu-id="409db-124">**[MDM settings]\(MDM の設定\)** タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="409db-124">Choose the **MDM settings** tab.</span></span>
 
-4.  **[Add MDM]\(MDM の追加\)** を選択し、**[MDM provider]\(MDM プロバイダー\)** 一覧から **[Microsoft Intune]** を選択します。
+4.  <span data-ttu-id="409db-125">**[Add MDM]\(MDM の追加\)** を選択し、**[MDM provider]\(MDM プロバイダー\)** 一覧から **[Microsoft Intune]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="409db-125">Choose **Add MDM,** then select **Microsoft Intune** from the **MDM provider** list.</span></span>
 
-5.  Microsoft Intune を MDM サービスとして設定すると、**[Microsoft Intune Configuration]\(Microsoft Intune 構成\)** ウィンドウが開くので、**[Zimperium zConsole]** と **[zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\)** オプションのそれぞれに **[Add Azure Active Directory]\(Azure Active Directory 追加\)** を選択します。これらのオプションは Zimperium が Azure AD シングル サインオンを使用して Intune および Azure AD と通信することを承認するものです。
+5.  <span data-ttu-id="409db-126">Microsoft Intune を MDM サービスとして設定すると、**[Microsoft Intune Configuration]\(Microsoft Intune 構成\)** ウィンドウが開くので、**[Zimperium zConsole]** と **[zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\)** オプションのそれぞれに **[Add Azure Active Directory]\(Azure Active Directory 追加\)** を選択します。これらのオプションは Zimperium が Azure AD シングル サインオンを使用して Intune および Azure AD と通信することを承認するものです。</span><span class="sxs-lookup"><span data-stu-id="409db-126">Once you set Microsoft Intune as the MDM service, the **Microsoft Intune Configuration** window pops up, choose the **Add Azure Active Directory** for each option: **Zimperium zConsole**, **zIPS iOS and Android apps** to authorize Zimperium to communicate with Intune and Azure AD through Azure AD Single Sign-On.</span></span>
 
     > [!IMPORTANT]
-    > Intune との統合プロセスを完了するには、Zimperium zConsole、zIPS iOS および Android アプリを追加する必要があります。
+    > <span data-ttu-id="409db-127">Intune との統合プロセスを完了するには、Zimperium zConsole、zIPS iOS および Android アプリを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="409db-127">You must add the Zimperium zConsole, zIPS iOS and Android apps to complete to the integration process with Intune.</span></span>
 
-6.  **[Accept\(承認\)]** を選択して、Zimperium アプリが Intune および Azure Active Directory と通信することを承認します。
+6.  <span data-ttu-id="409db-128">**[Accept\(承認\)]** を選択して、Zimperium アプリが Intune および Azure Active Directory と通信することを承認します。</span><span class="sxs-lookup"><span data-stu-id="409db-128">Choose **Accept** to authorize the Zimperium app to communicate with Intune and Azure Active Directory.</span></span>
 
-7.  **[Zimperium zConsole]** および **[zIPS iOS and Android]\(zIPS および Android\)** アプリを Azure AD に追加したら、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるように Azure AD セキュリティ グループを追加する必要があります。
+7.  <span data-ttu-id="409db-129">**[Zimperium zConsole]** および **[zIPS iOS and Android]\(zIPS および Android\)** アプリを Azure AD に追加したら、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるように Azure AD セキュリティ グループを追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="409db-129">Once you added the **Zimperium zConsole** and the **zIPS iOS and Android** apps to Azure AD, you need to add the Azure AD security groups so Zimperium can synchronize the Azure AD security group with its service.</span></span>
 
-8.  **[Finish]\(完了\)** を選択して構成を保存し、最初の Azure AD セキュリティ グループの同期を開始します。
+8.  <span data-ttu-id="409db-130">**[Finish]\(完了\)** を選択して構成を保存し、最初の Azure AD セキュリティ グループの同期を開始します。</span><span class="sxs-lookup"><span data-stu-id="409db-130">Choose **Finish** to save the configuration and start the first Azure AD security group synchronization.</span></span>
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a><span data-ttu-id="409db-131">次のステップ</span><span class="sxs-lookup"><span data-stu-id="409db-131">Next steps</span></span>
 
--   [Zimperium アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)
+-   [<span data-ttu-id="409db-132">Zimperium アプリを設定する</span><span class="sxs-lookup"><span data-stu-id="409db-132">Set up Zimperium apps</span></span>](mtd-apps-ios-app-configuration-policy-add-assign.md)

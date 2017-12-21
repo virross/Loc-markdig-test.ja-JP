@@ -1,1 +1,1 @@
-カスタマー サービスについては、休日を除く月曜日から金曜日、太平洋標準時の午前 6:30 から午後 5:30 までの間に Microsoft Sales Information Center、(800) 892-5234 までご連絡ください。
+<span data-ttu-id="254cd-101">カスタマー サービスについては、休日を除く月曜日から金曜日、太平洋標準時の午前 6:30 から午後 5:30 までの間に Microsoft Sales Information Center、(800) 892-5234 までご連絡ください。</span><span class="sxs-lookup"><span data-stu-id="254cd-101">For customer service, contact Microsoft Sales Information Center at (800) 892-5234 between 6:30 AM and 5:30 PM Pacific Time, Monday through Friday, excluding holidays.</span></span>

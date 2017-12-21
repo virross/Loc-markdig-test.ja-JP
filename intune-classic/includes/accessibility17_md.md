@@ -1,1 +1,1 @@
-障碍のある方の生活にコンピューターの支援技術がどのように役立つかについては、「[Microsoft アクセシビリティ Web サイト](http://go.microsoft.com/fwlink/?LinkId=8431)」を参照してください。
+<span data-ttu-id="89bfd-101">障碍のある方の生活にコンピューターの支援技術がどのように役立つかについては、「[Microsoft アクセシビリティ Web サイト](http://go.microsoft.com/fwlink/?LinkId=8431)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="89bfd-101">For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](http://go.microsoft.com/fwlink/?LinkId=8431).</span></span>

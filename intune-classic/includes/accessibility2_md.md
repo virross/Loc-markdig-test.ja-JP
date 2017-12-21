@@ -1,1 +1,1 @@
-Windows のアクセシビリティ機能
+<span data-ttu-id="821fa-101">Windows のアクセシビリティ機能</span><span class="sxs-lookup"><span data-stu-id="821fa-101">Accessibility Features of Windows</span></span>

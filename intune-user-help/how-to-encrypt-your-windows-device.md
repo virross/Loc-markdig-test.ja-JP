@@ -17,19 +17,19 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: a5c747dd4691e20c680547d4fcd74cc8288eb50d
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
-# <a name="how-to-encrypt-your-windows-device"></a>Windows デバイスを暗号化する方法
+# <a name="how-to-encrypt-your-windows-device"></a><span data-ttu-id="6c738-102">Windows デバイスを暗号化する方法</span><span class="sxs-lookup"><span data-stu-id="6c738-102">How to encrypt your Windows device</span></span>
 
-会社や学校のデータを保護するために、会社のサポートが Windows デバイスの暗号化を要求することがあります。 所有している Windows Phone を登録しているとき、暗号化が要求された場合、デバイスは自動的に暗号化されます。
+<span data-ttu-id="6c738-103">会社や学校のデータを保護するために、会社のサポートが Windows デバイスの暗号化を要求することがあります。</span><span class="sxs-lookup"><span data-stu-id="6c738-103">To protect your company or school data, your company support might require you to encrypt your Windows device.</span></span> <span data-ttu-id="6c738-104">所有している Windows Phone を登録しているとき、暗号化が要求された場合、デバイスは自動的に暗号化されます。</span><span class="sxs-lookup"><span data-stu-id="6c738-104">If you have a Windows Phone, and you have enrolled it, your device will be encrypted automatically if encryption is required.</span></span>
 
-デスクトップ デバイスの場合、以下の指示に従い、暗号化します。
+<span data-ttu-id="6c738-105">デスクトップ デバイスの場合、以下の指示に従い、暗号化します。</span><span class="sxs-lookup"><span data-stu-id="6c738-105">If you have a desktop device, follow the instructions below to encrypt it.</span></span>
 
-1.  **BitLocker の管理**アプリを検索して起動します。
+1.  <span data-ttu-id="6c738-106">**BitLocker の管理**アプリを検索して起動します。</span><span class="sxs-lookup"><span data-stu-id="6c738-106">Search for, and then start, the **Manage BitLocker** app.</span></span>
 
-2.  **[BitLocker をオンにする]** をクリックし、表示される指示に従って、各ドライブを暗号化します。
+2.  <span data-ttu-id="6c738-107">**[BitLocker をオンにする]** をクリックし、表示される指示に従って、各ドライブを暗号化します。</span><span class="sxs-lookup"><span data-stu-id="6c738-107">Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.</span></span>
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+<span data-ttu-id="6c738-108">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="6c738-108">Still need help?</span></span> <span data-ttu-id="6c738-109">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="6c738-109">Contact your company support.</span></span> <span data-ttu-id="6c738-110">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="6c738-110">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
