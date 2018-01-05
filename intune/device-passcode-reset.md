@@ -20,31 +20,31 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/19/2017
 ---
-# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a><span data-ttu-id="25f84-103">Intune で管理するデバイスのパスコードをリセットして削除する</span><span class="sxs-lookup"><span data-stu-id="25f84-103">Reset and remove the passcode on Intune-managed devices</span></span>
+# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a><span data-ttu-id="52cb1-103">Intune で管理するデバイスのパスコードをリセットして削除する</span><span class="sxs-lookup"><span data-stu-id="52cb1-103">Reset and remove the passcode on Intune-managed devices</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-<span data-ttu-id="25f84-104">この記事では、*削除*と*リセット*という用語は同じ意味で使用されます。</span><span class="sxs-lookup"><span data-stu-id="25f84-104">The terms *remove* and *reset* are used interchangeably in this article.</span></span>
+<span data-ttu-id="52cb1-104">この記事では、*削除*と*リセット*という用語は同じ意味で使用されます。</span><span class="sxs-lookup"><span data-stu-id="52cb1-104">The terms *remove* and *reset* are used interchangeably in this article.</span></span>
 
-<span data-ttu-id="25f84-105">**[パスコードの削除]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。</span><span class="sxs-lookup"><span data-stu-id="25f84-105">The **Remove passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.</span></span>
+<span data-ttu-id="52cb1-105">**[パスコードの削除]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。</span><span class="sxs-lookup"><span data-stu-id="52cb1-105">The **Remove passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.</span></span>
 
-## <a name="supported-platforms"></a><span data-ttu-id="25f84-106">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="25f84-106">Supported platforms</span></span>
+## <a name="supported-platforms"></a><span data-ttu-id="52cb1-106">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="52cb1-106">Supported platforms</span></span>
 
-- <span data-ttu-id="25f84-107">Windows - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="25f84-107">Windows - Not supported</span></span>
-- <span data-ttu-id="25f84-108">Windows Phone - Windows Phone 8.1 から Azure AD に参加していない Windows 10 Creators Update まで、Windows 10 Creators Update 以降でサポートされています</span><span class="sxs-lookup"><span data-stu-id="25f84-108">Windows Phone - Supported on Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later</span></span>
-- <span data-ttu-id="25f84-109">iOS - サポートされています</span><span class="sxs-lookup"><span data-stu-id="25f84-109">iOS - Supported</span></span>
-- <span data-ttu-id="25f84-110">macOS - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="25f84-110">macOS - Not supported</span></span>
-- <span data-ttu-id="25f84-111">Android - Android 7 より前の Android バージョンでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="25f84-111">Android - Supported on Android versions earlier than Android 7.</span></span> <span data-ttu-id="25f84-112">Android for Work はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="25f84-112">Android for Work is not supported.</span></span>
+- <span data-ttu-id="52cb1-107">Windows - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="52cb1-107">Windows - Not supported</span></span>
+- <span data-ttu-id="52cb1-108">Windows Phone - Windows Phone 8.1 から Azure AD に参加していない Windows 10 Creators Update まで、Windows 10 Creators Update 以降でサポートされています</span><span class="sxs-lookup"><span data-stu-id="52cb1-108">Windows Phone - Supported on Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later</span></span>
+- <span data-ttu-id="52cb1-109">iOS - サポートされています</span><span class="sxs-lookup"><span data-stu-id="52cb1-109">iOS - Supported</span></span>
+- <span data-ttu-id="52cb1-110">macOS - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="52cb1-110">macOS - Not supported</span></span>
+- <span data-ttu-id="52cb1-111">Android - Android 7 より前の Android バージョンでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="52cb1-111">Android - Supported on Android versions earlier than Android 7.</span></span> <span data-ttu-id="52cb1-112">Android for Work はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52cb1-112">Android for Work is not supported.</span></span>
 
-## <a name="how-to-reset-a-passcode"></a><span data-ttu-id="25f84-113">パスコードをリセットする方法</span><span class="sxs-lookup"><span data-stu-id="25f84-113">How to reset a passcode</span></span>
+## <a name="how-to-reset-a-passcode"></a><span data-ttu-id="52cb1-113">パスコードをリセットする方法</span><span class="sxs-lookup"><span data-stu-id="52cb1-113">How to reset a passcode</span></span>
 
-1. <span data-ttu-id="25f84-114">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="25f84-114">Sign into the Azure portal.</span></span>
-2. <span data-ttu-id="25f84-115">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="25f84-115">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
-3. <span data-ttu-id="25f84-116">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25f84-116">On the **Intune** blade, choose **Devices**.</span></span>
-4. <span data-ttu-id="25f84-117">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25f84-117">On the **Devices and groups** blade, choose **All devices**.</span></span>
-5. <span data-ttu-id="25f84-118">管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードの削除]** デバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="25f84-118">From the list of devices you manage, choose a device, and then choose the **Remove passcode** device remote action.</span></span>
+1. <span data-ttu-id="52cb1-114">Azure Portal にサインインします。</span><span class="sxs-lookup"><span data-stu-id="52cb1-114">Sign into the Azure portal.</span></span>
+2. <span data-ttu-id="52cb1-115">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="52cb1-115">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3. <span data-ttu-id="52cb1-116">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="52cb1-116">On the **Intune** blade, choose **Devices**.</span></span>
+4. <span data-ttu-id="52cb1-117">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="52cb1-117">On the **Devices and groups** blade, choose **All devices**.</span></span>
+5. <span data-ttu-id="52cb1-118">管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードの削除]** デバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="52cb1-118">From the list of devices you manage, choose a device, and then choose the **Remove passcode** device remote action.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="25f84-119">次のステップ</span><span class="sxs-lookup"><span data-stu-id="25f84-119">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="52cb1-119">次の手順</span><span class="sxs-lookup"><span data-stu-id="52cb1-119">Next steps</span></span>
 
-<span data-ttu-id="25f84-120">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="25f84-120">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>
+<span data-ttu-id="52cb1-120">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="52cb1-120">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

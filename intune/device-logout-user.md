@@ -20,30 +20,30 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/19/2017
 ---
-# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a><span data-ttu-id="f47ae-103">Intune で管理される iOS デバイスの現在のユーザーをログアウトする</span><span class="sxs-lookup"><span data-stu-id="f47ae-103">Logout the current user on Intune-managed iOS devices</span></span>
+# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a><span data-ttu-id="41ca4-103">Intune で管理される iOS デバイスの現在のユーザーをログアウトする</span><span class="sxs-lookup"><span data-stu-id="41ca4-103">Logout the current user on Intune-managed iOS devices</span></span>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-<span data-ttu-id="f47ae-104">**[現在のユーザーのログアウト]** アクションにより、[iOS 教育プロファイル](education-settings-configure-ios.md)を使用して iOS Classroom アプリを管理するように構成されている共有の iPad デバイスから現在のユーザーがログアウトします。</span><span class="sxs-lookup"><span data-stu-id="f47ae-104">The **Logout current user** action logs out the current user on a shared iPad device that is configured to manage the iOS Classroom app using an [iOS education profile](education-settings-configure-ios.md).</span></span> 
+<span data-ttu-id="41ca4-104">**[現在のユーザーのログアウト]** アクションにより、[iOS 教育プロファイル](education-settings-configure-ios.md)を使用して iOS Classroom アプリを管理するように構成されている共有の iPad デバイスから現在のユーザーがログアウトします。</span><span class="sxs-lookup"><span data-stu-id="41ca4-104">The **Logout current user** action logs out the current user on a shared iPad device that is configured to manage the iOS Classroom app using an [iOS education profile](education-settings-configure-ios.md).</span></span> 
 
-## <a name="supported-platforms"></a><span data-ttu-id="f47ae-105">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="f47ae-105">Supported platforms</span></span>
+## <a name="supported-platforms"></a><span data-ttu-id="41ca4-105">サポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="41ca4-105">Supported platforms</span></span>
 
-- <span data-ttu-id="f47ae-106">Windows - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="f47ae-106">Windows - Not supported</span></span>
-- <span data-ttu-id="f47ae-107">Windows Phone - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="f47ae-107">Windows Phone - Not supported</span></span>
-- <span data-ttu-id="f47ae-108">iOS - iOS 9.3 以降 (共有 iPad デバイスのみ) でサポートされています</span><span class="sxs-lookup"><span data-stu-id="f47ae-108">iOS - Supported on iOS 9.3 and later (shared iPad devices only)</span></span>
-- <span data-ttu-id="f47ae-109">macOS - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="f47ae-109">macOS - Not supported</span></span>
-- <span data-ttu-id="f47ae-110">Android - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="f47ae-110">Android - Not supported</span></span>
+- <span data-ttu-id="41ca4-106">Windows - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="41ca4-106">Windows - Not supported</span></span>
+- <span data-ttu-id="41ca4-107">Windows Phone - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="41ca4-107">Windows Phone - Not supported</span></span>
+- <span data-ttu-id="41ca4-108">iOS - iOS 9.3 以降 (共有 iPad デバイスのみ) でサポートされています</span><span class="sxs-lookup"><span data-stu-id="41ca4-108">iOS - Supported on iOS 9.3 and later (shared iPad devices only)</span></span>
+- <span data-ttu-id="41ca4-109">macOS - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="41ca4-109">macOS - Not supported</span></span>
+- <span data-ttu-id="41ca4-110">Android - サポートされていません</span><span class="sxs-lookup"><span data-stu-id="41ca4-110">Android - Not supported</span></span>
 
-## <a name="how-to-logout-the-current-user"></a><span data-ttu-id="f47ae-111">現在のユーザーをログアウトする方法</span><span class="sxs-lookup"><span data-stu-id="f47ae-111">How to logout the current user</span></span>
+## <a name="how-to-logout-the-current-user"></a><span data-ttu-id="41ca4-111">現在のユーザーをログアウトする方法</span><span class="sxs-lookup"><span data-stu-id="41ca4-111">How to logout the current user</span></span>
 
-1.  <span data-ttu-id="f47ae-112">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="f47ae-112">Sign into the Azure portal.</span></span>
-2.  <span data-ttu-id="f47ae-113">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="f47ae-113">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
-3.  <span data-ttu-id="f47ae-114">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f47ae-114">On the **Intune** blade, choose **Devices**.</span></span>
-4.  <span data-ttu-id="f47ae-115">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f47ae-115">On the **Devices and groups** blade, choose **All devices**.</span></span>
-5.  <span data-ttu-id="f47ae-116">管理するデバイスの一覧から iOS デバイスを選択して、**[現在のユーザーのログアウト]** のデバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f47ae-116">From the list of devices you manage, choose an iOS device, and then choose the **Logout current user** device remote action.</span></span>
+1.  <span data-ttu-id="41ca4-112">Azure Portal にサインインします。</span><span class="sxs-lookup"><span data-stu-id="41ca4-112">Sign into the Azure portal.</span></span>
+2.  <span data-ttu-id="41ca4-113">**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="41ca4-113">Choose **More Services** > **Monitoring + Management** > **Intune**.</span></span>
+3.  <span data-ttu-id="41ca4-114">**[Intune]** ブレードで、**[デバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="41ca4-114">On the **Intune** blade, choose **Devices**.</span></span>
+4.  <span data-ttu-id="41ca4-115">**[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="41ca4-115">On the **Devices and groups** blade, choose **All devices**.</span></span>
+5.  <span data-ttu-id="41ca4-116">管理するデバイスの一覧から iOS デバイスを選択して、**[現在のユーザーのログアウト]** のデバイス リモート アクションを選択します。</span><span class="sxs-lookup"><span data-stu-id="41ca4-116">From the list of devices you manage, choose an iOS device, and then choose the **Logout current user** device remote action.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="f47ae-117">次のステップ</span><span class="sxs-lookup"><span data-stu-id="f47ae-117">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="41ca4-117">次の手順</span><span class="sxs-lookup"><span data-stu-id="41ca4-117">Next steps</span></span>
 
-<span data-ttu-id="f47ae-118">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f47ae-118">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>
+<span data-ttu-id="41ca4-118">実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="41ca4-118">To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.</span></span>

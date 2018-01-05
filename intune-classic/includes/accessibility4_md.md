@@ -1,1 +1,1 @@
-<span data-ttu-id="1aa7d-101">聴覚障碍のある方向けの顧客サービス</span><span class="sxs-lookup"><span data-stu-id="1aa7d-101">Customer Service for People with Hearing Impairments</span></span>
+<span data-ttu-id="5a90c-101">聴覚に障碍 (しょうがい) のある方のためのカスタマー サービス</span><span class="sxs-lookup"><span data-stu-id="5a90c-101">Customer Service for People with Hearing Impairments</span></span>

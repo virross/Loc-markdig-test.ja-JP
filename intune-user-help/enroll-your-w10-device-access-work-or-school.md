@@ -16,46 +16,46 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3f575797a09fb4d74c2da2a7dc6b14a9723d3f4d
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 47d46b199f6219671c8829028368f7fe82b2ef05
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="enroll-your-windows-10-device-in-intune"></a><span data-ttu-id="0c854-103">Intune に Windows 10 デバイスを登録する</span><span class="sxs-lookup"><span data-stu-id="0c854-103">Enroll your Windows 10 device in Intune</span></span>
+# <a name="enroll-your-windows-10-device-in-intune"></a><span data-ttu-id="ec05e-103">Intune に Windows 10 デバイスを登録する</span><span class="sxs-lookup"><span data-stu-id="ec05e-103">Enroll your Windows 10 device in Intune</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0c854-104">Windows 10 はあらゆる種類のデバイスで動作します。</span><span class="sxs-lookup"><span data-stu-id="0c854-104">Windows 10 works across all types of devices.</span></span> <span data-ttu-id="0c854-105">デスクトップ、スマートフォン、タブレットのいずれを使用している場合でも、このページの画像とは少し違う部分があるかもしれませんが、手順は同じです。</span><span class="sxs-lookup"><span data-stu-id="0c854-105">Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.</span></span>
+> <span data-ttu-id="ec05e-104">Windows 10 はあらゆる種類のデバイスで動作します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-104">Windows 10 works across all types of devices.</span></span> <span data-ttu-id="ec05e-105">デスクトップ、スマートフォン、タブレットのいずれを使用している場合でも、このページの画像とは少し違う部分があるかもしれませんが、手順は同じです。</span><span class="sxs-lookup"><span data-stu-id="ec05e-105">Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.</span></span>
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]
 
-1. <span data-ttu-id="0c854-106">**[スタート]** メニューに移動します。</span><span class="sxs-lookup"><span data-stu-id="0c854-106">Go to **Start**.</span></span>
+1. <span data-ttu-id="ec05e-106">**[スタート]** メニューに移動します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-106">Go to **Start**.</span></span>
 
-  - <span data-ttu-id="0c854-107">**Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。</span><span class="sxs-lookup"><span data-stu-id="0c854-107">If you are on a **Windows 10 desktop** device, go to the **Start menu**.</span></span>
-  - <span data-ttu-id="0c854-108">**Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。</span><span class="sxs-lookup"><span data-stu-id="0c854-108">If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.</span></span>
+   - <span data-ttu-id="ec05e-107">**Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-107">If you are on a **Windows 10 desktop** device, go to the **Start menu**.</span></span>
+   - <span data-ttu-id="ec05e-108">**Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-108">If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.</span></span>
 
-2.  <span data-ttu-id="0c854-109">検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。</span><span class="sxs-lookup"><span data-stu-id="0c854-109">Open the Windows **Settings** app by searching for "settings" in the search bar.</span></span>
+2. <span data-ttu-id="ec05e-109">検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。</span><span class="sxs-lookup"><span data-stu-id="ec05e-109">Open the Windows **Settings** app by searching for "settings" in the search bar.</span></span>
 
-3. <span data-ttu-id="0c854-110">**[アカウント]** > **[職場または学校にアクセスする]** > **[接続]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="0c854-110">Select **Accounts** > **Access work or school** > **Connect**.</span></span>
+3. <span data-ttu-id="ec05e-110">**[アカウント]** > **[職場または学校にアクセスする]** > **[接続]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-110">Select **Accounts** > **Access work or school** > **Connect**.</span></span>
 
     ![[職場または学校にアクセスする] アカウントの選択](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-3.  <span data-ttu-id="0c854-112">職場または学校の電子メール アドレスを入力し、**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0c854-112">Enter your work or school email address, and then select **Next**.</span></span>
+4. <span data-ttu-id="ec05e-112">職場または学校の電子メール アドレスを入力し、**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-112">Enter your work or school email address, and then select **Next**.</span></span>
 
-    ![職場または学校のアカウントを入力します。](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+   ![職場または学校のアカウントを入力します。](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-4. <span data-ttu-id="0c854-114">職場または学校のアカウントで Intune にサインインします。</span><span class="sxs-lookup"><span data-stu-id="0c854-114">Sign in to Intune with your work or school account.</span></span>
+5. <span data-ttu-id="ec05e-114">職場または学校のアカウントで Intune にサインインします。</span><span class="sxs-lookup"><span data-stu-id="ec05e-114">Sign in to Intune with your work or school account.</span></span>
 
     ![職場または学校のアカウントを追加する](./media/w10-enroll-rs1-enter-your-credentials.png)
 
-    <span data-ttu-id="0c854-116">会社または学校がデバイスを登録していることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0c854-116">You’ll see a message indicating that your company or school is registering your device.</span></span>
+    <span data-ttu-id="ec05e-116">会社または学校がデバイスを登録していることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ec05e-116">You’ll see a message indicating that your company or school is registering your device.</span></span>
 
-5. <span data-ttu-id="0c854-117">「**準備が完了しました!**」という画面が表示されたら、</span><span class="sxs-lookup"><span data-stu-id="0c854-117">When you see the **You’re all set!**</span></span> <span data-ttu-id="0c854-118">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="0c854-118">screen, select **Close**.</span></span> <span data-ttu-id="0c854-119">以上で完了です。</span><span class="sxs-lookup"><span data-stu-id="0c854-119">You’re done.</span></span>
+6. <span data-ttu-id="ec05e-117">「**準備が完了しました!**」という画面が表示されたら、</span><span class="sxs-lookup"><span data-stu-id="ec05e-117">When you see the **You’re all set!**</span></span> <span data-ttu-id="ec05e-118">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="ec05e-118">screen, select **Close**.</span></span> <span data-ttu-id="ec05e-119">以上で完了です。</span><span class="sxs-lookup"><span data-stu-id="ec05e-119">You’re done.</span></span>
 
-  !["準備が完了しました" という画面で [閉じる] を](./media/w10-enroll-rs1-youre-all-set.png)
+   !["準備が完了しました" という画面で [閉じる] を](./media/w10-enroll-rs1-youre-all-set.png)
 
-6. <span data-ttu-id="0c854-122">接続が適切なことを再確認する場合は、**[設定]** に戻ります。すると、職場または学校のアカウントが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0c854-122">If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.</span></span>
+7. <span data-ttu-id="ec05e-122">接続が適切なことを再確認する場合は、**[設定]** に戻ります。すると、職場または学校のアカウントが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ec05e-122">If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.</span></span>
 
     ![接続が正しくセットアップされたことを確認する](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-<span data-ttu-id="0c854-124">前の手順を実行しても職場または学校の電子メール アカウントとファイルにまだアクセスできない場合は、「[[職場または学校にアクセスする] が表示されている場合のトラブルシューティング手順](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)」に従ってください。</span><span class="sxs-lookup"><span data-stu-id="0c854-124">If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).</span></span>
+<span data-ttu-id="ec05e-124">前の手順を実行しても職場または学校の電子メール アカウントとファイルにまだアクセスできない場合は、「[[職場または学校にアクセスする] が表示されている場合のトラブルシューティング手順](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)」に従ってください。</span><span class="sxs-lookup"><span data-stu-id="ec05e-124">If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).</span></span>

@@ -16,38 +16,38 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 18e0608c28a6a292da7fc766fb50edfd27e5a138
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3dd1afe5175e6e40adf3672950965b2eae10af90
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="using-your-android-device-with-intune"></a><span data-ttu-id="93f50-103">Android デバイスを Intune で使用する</span><span class="sxs-lookup"><span data-stu-id="93f50-103">Using your Android device with Intune</span></span>
+# <a name="using-your-android-device-with-intune"></a><span data-ttu-id="2fb59-103">Android デバイスを Intune で使用する</span><span class="sxs-lookup"><span data-stu-id="2fb59-103">Using your Android device with Intune</span></span>
 
-<span data-ttu-id="93f50-104">仕事を効率化するために Intune でできることは数多くあります。</span><span class="sxs-lookup"><span data-stu-id="93f50-104">There are a number of things you can do with Intune to make your work life easier.</span></span> <span data-ttu-id="93f50-105">会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。</span><span class="sxs-lookup"><span data-stu-id="93f50-105">Here's a list of the most common things you might be asked to do by your company.</span></span>
+<span data-ttu-id="2fb59-104">仕事を効率化するために Intune でできることは数多くあります。</span><span class="sxs-lookup"><span data-stu-id="2fb59-104">There are a number of things you can do with Intune to make your work life easier.</span></span> <span data-ttu-id="2fb59-105">会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。</span><span class="sxs-lookup"><span data-stu-id="2fb59-105">Here's a list of the most common things you might be asked to do by your company.</span></span>
 
-## <a name="supported-versions"></a><span data-ttu-id="93f50-106">サポートされているバージョン</span><span class="sxs-lookup"><span data-stu-id="93f50-106">Supported versions</span></span>
+## <a name="supported-versions"></a><span data-ttu-id="2fb59-106">サポートされているバージョン</span><span class="sxs-lookup"><span data-stu-id="2fb59-106">Supported versions</span></span>
 
-<span data-ttu-id="93f50-107">現在、Intune は Android 4.4 以降をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="93f50-107">Intune currently supports Android 4.4 and later.</span></span> <span data-ttu-id="93f50-108">サポート対象には、Samsung KNOX 4.4 以降のデバイスも含まれています。</span><span class="sxs-lookup"><span data-stu-id="93f50-108">This includes Samsung KNOX 4.4 and later devices.</span></span>
+<span data-ttu-id="2fb59-107">現在、Intune は Android 4.4 以降をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="2fb59-107">Intune currently supports Android 4.4 and later.</span></span> <span data-ttu-id="2fb59-108">サポート対象には、Samsung KNOX 4.4 以降のデバイスも含まれています。</span><span class="sxs-lookup"><span data-stu-id="2fb59-108">This includes Samsung KNOX 4.4 and later devices.</span></span>
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a><span data-ttu-id="93f50-109">Intune に登録して、ポータル サイトをインストールする</span><span class="sxs-lookup"><span data-stu-id="93f50-109">Enrolling into Intune and installing the Company Portal</span></span>
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a><span data-ttu-id="2fb59-109">Intune に登録して、ポータル サイトをインストールする</span><span class="sxs-lookup"><span data-stu-id="2fb59-109">Enrolling into Intune and installing the Company Portal</span></span>
 
-- [<span data-ttu-id="93f50-110">Intune にデバイスを登録する</span><span class="sxs-lookup"><span data-stu-id="93f50-110">Enroll your device in Intune</span></span>](enroll-your-device-in-Intune-android.md)
-- [<span data-ttu-id="93f50-111">Intune での仕事用プロファイルの作成とデバイスの登録</span><span class="sxs-lookup"><span data-stu-id="93f50-111">Create a work profile and enroll your device in Intune</span></span>](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
-- [<span data-ttu-id="93f50-112">ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか</span><span class="sxs-lookup"><span data-stu-id="93f50-112">What happens if you install the Company Portal app and enroll your device in Intune?</span></span>](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [<span data-ttu-id="2fb59-110">Intune にデバイスを登録する</span><span class="sxs-lookup"><span data-stu-id="2fb59-110">Enroll your device in Intune</span></span>](enroll-your-device-in-Intune-android.md)
+- [<span data-ttu-id="2fb59-111">Intune での仕事用プロファイルの作成とデバイスの登録</span><span class="sxs-lookup"><span data-stu-id="2fb59-111">Create a work profile and enroll your device in Intune</span></span>](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+- [<span data-ttu-id="2fb59-112">ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか</span><span class="sxs-lookup"><span data-stu-id="2fb59-112">What happens if you install the Company Portal app and enroll your device in Intune?</span></span>](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a><span data-ttu-id="93f50-113">Intune にデバイスを登録する際に実行できること</span><span class="sxs-lookup"><span data-stu-id="93f50-113">Things you can do when your device is enrolled in Intune</span></span>
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a><span data-ttu-id="2fb59-113">Intune にデバイスを登録する際に実行できること</span><span class="sxs-lookup"><span data-stu-id="2fb59-113">Things you can do when your device is enrolled in Intune</span></span>
 
-- [<span data-ttu-id="93f50-114">デバイスで管理対象アプリを使用する</span><span class="sxs-lookup"><span data-stu-id="93f50-114">Use managed apps on your device</span></span>](use-managed-apps-on-your-device-android.md)
-- [<span data-ttu-id="93f50-115">デバイスを暗号化する</span><span class="sxs-lookup"><span data-stu-id="93f50-115">Encrypt your device</span></span>](encrypt-your-device-android.md)
-- [<span data-ttu-id="93f50-116">PIN またはパスワードを設定する</span><span class="sxs-lookup"><span data-stu-id="93f50-116">Set your PIN or password</span></span>](set-your-pin-or-password-android.md)
-- [<span data-ttu-id="93f50-117">会社の仮想プライベート ネットワーク (VPN) をインストールする</span><span class="sxs-lookup"><span data-stu-id="93f50-117">Install your company's Virtual Private Network (VPN)</span></span>](install-your-companys-virtual-private-network-VPN-android.md)
-- [<span data-ttu-id="93f50-118">デバイスがロックされるまでの時間を設定する</span><span class="sxs-lookup"><span data-stu-id="93f50-118">Set the amount of time before your device is locked</span></span>](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
-- [<span data-ttu-id="93f50-119">紛失したまたは盗難にあったデバイスをリセット (消去) する</span><span class="sxs-lookup"><span data-stu-id="93f50-119">Reset (erase) your lost or stolen device</span></span>](reset-erase-your-device-cpwebsite.md)
-- [<span data-ttu-id="93f50-120">Microsoft による使用状況データの収集を無効にする</span><span class="sxs-lookup"><span data-stu-id="93f50-120">Turn off Microsoft usage data collection</span></span>](turn-off-microsoft-usage-data-collection-android.md)
-- [<span data-ttu-id="93f50-121">Intune からデバイスの登録を解除する</span><span class="sxs-lookup"><span data-stu-id="93f50-121">Unenroll your device from Intune</span></span>](unenroll-your-device-from-intune-android.md)
-- [<span data-ttu-id="93f50-122">利用規約を拒否した場合にデバイスの登録を解除する</span><span class="sxs-lookup"><span data-stu-id="93f50-122">Unenroll your device if you declined Terms of Use</span></span>](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- [<span data-ttu-id="93f50-123">Intune からデバイスの登録を解除するとどうなるか</span><span class="sxs-lookup"><span data-stu-id="93f50-123">What happens if you unenroll your device from Intune?</span></span>](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [<span data-ttu-id="93f50-124">ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか</span><span class="sxs-lookup"><span data-stu-id="93f50-124">What happens if you reset your Android device using the Company Portal app?</span></span>](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+- [<span data-ttu-id="2fb59-114">デバイスで管理対象アプリを使用する</span><span class="sxs-lookup"><span data-stu-id="2fb59-114">Use managed apps on your device</span></span>](use-managed-apps-on-your-device-android.md)
+- [<span data-ttu-id="2fb59-115">デバイスを暗号化する</span><span class="sxs-lookup"><span data-stu-id="2fb59-115">Encrypt your device</span></span>](encrypt-your-device-android.md)
+- [<span data-ttu-id="2fb59-116">PIN またはパスワードを設定する</span><span class="sxs-lookup"><span data-stu-id="2fb59-116">Set your PIN or password</span></span>](set-your-pin-or-password-android.md)
+- [<span data-ttu-id="2fb59-117">会社の仮想プライベート ネットワーク (VPN) をインストールする</span><span class="sxs-lookup"><span data-stu-id="2fb59-117">Install your company's Virtual Private Network (VPN)</span></span>](install-your-companys-virtual-private-network-VPN-android.md)
+- [<span data-ttu-id="2fb59-118">デバイスがロックされるまでの時間を設定する</span><span class="sxs-lookup"><span data-stu-id="2fb59-118">Set the amount of time before your device is locked</span></span>](set-the-amount-of-time-before-your-device-is-locked-android.md)
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+- [<span data-ttu-id="2fb59-119">紛失したまたは盗難にあったデバイスをリセット (消去) する</span><span class="sxs-lookup"><span data-stu-id="2fb59-119">Reset (erase) your lost or stolen device</span></span>](reset-erase-your-device-cpwebsite.md)
+- [<span data-ttu-id="2fb59-120">Microsoft による使用状況データの収集を無効にする</span><span class="sxs-lookup"><span data-stu-id="2fb59-120">Turn off Microsoft usage data collection</span></span>](turn-off-microsoft-usage-data-collection-android.md)
+- [<span data-ttu-id="2fb59-121">Intune からデバイスの登録を解除する</span><span class="sxs-lookup"><span data-stu-id="2fb59-121">Unenroll your device from Intune</span></span>](unenroll-your-device-from-intune-android.md)
+- [<span data-ttu-id="2fb59-122">利用規約を拒否した場合にデバイスの登録を解除する</span><span class="sxs-lookup"><span data-stu-id="2fb59-122">Unenroll your device if you declined Terms of Use</span></span>](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- [<span data-ttu-id="2fb59-123">Intune からデバイスの登録を解除するとどうなるか</span><span class="sxs-lookup"><span data-stu-id="2fb59-123">What happens if you unenroll your device from Intune?</span></span>](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+- [<span data-ttu-id="2fb59-124">ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか</span><span class="sxs-lookup"><span data-stu-id="2fb59-124">What happens if you reset your Android device using the Company Portal app?</span></span>](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

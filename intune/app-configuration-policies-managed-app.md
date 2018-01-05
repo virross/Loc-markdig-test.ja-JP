@@ -21,47 +21,47 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/19/2017
 ---
-# <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a><span data-ttu-id="2004b-103">デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する</span><span class="sxs-lookup"><span data-stu-id="2004b-103">Add app configuration policies for managed apps without device enrollment</span></span>
+# <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a><span data-ttu-id="951f2-103">デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する</span><span class="sxs-lookup"><span data-stu-id="951f2-103">Add app configuration policies for managed apps without device enrollment</span></span>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-<span data-ttu-id="2004b-104">登録されていないデバイスでも、Intune App SDK をサポートする管理対象アプリにアプリ構成ポリシーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2004b-104">You can use app configuration policies with managed apps that support the Intune App SDK, even on devices that are not enrolled.</span></span> 
+<span data-ttu-id="951f2-104">登録されていないデバイスでも、Intune App SDK をサポートする管理対象アプリにアプリ構成ポリシーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="951f2-104">You can use app configuration policies with managed apps that support the Intune App SDK, even on devices that are not enrolled.</span></span> 
 
-1. <span data-ttu-id="2004b-105">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="2004b-105">Sign in to the Azure portal.</span></span>
-2. <span data-ttu-id="2004b-106">**[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-106">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>
-3. <span data-ttu-id="2004b-107">**[モバイル アプリ]** ワークロードを選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-107">Choose the **Mobile apps** workload.</span></span>
-4. <span data-ttu-id="2004b-108">**[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-108">Choose **App configuration policies** in the **Manage** group, and then choose **Add**.</span></span>
-5. <span data-ttu-id="2004b-109">次の詳細を設定します。</span><span class="sxs-lookup"><span data-stu-id="2004b-109">Set the following details:</span></span>
-    - <span data-ttu-id="2004b-110">**名前**</span><span class="sxs-lookup"><span data-stu-id="2004b-110">**Name**</span></span>  
-      <span data-ttu-id="2004b-111">Azure Portal に表示されるプロファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="2004b-111">The name of the profile that will appear in the Azure portal.</span></span>
-    - <span data-ttu-id="2004b-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="2004b-112">**Description**</span></span>  
-      <span data-ttu-id="2004b-113">Azure Portal に表示されるプロファイルの説明。</span><span class="sxs-lookup"><span data-stu-id="2004b-113">The  description of the profile that will appear in the Azure portal.</span></span>
-    - <span data-ttu-id="2004b-114">**デバイス登録の種類**</span><span class="sxs-lookup"><span data-stu-id="2004b-114">**Device enrollment type**</span></span>  
-      <span data-ttu-id="2004b-115">**[アプリの管理]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-115">Choose **Manage apps**.</span></span>
-6. <span data-ttu-id="2004b-116">**[関連アプリ]** を選択して、構成するアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-116">Select **Associated app** to choose the app that you are going to configure.</span></span> <span data-ttu-id="2004b-117">承認して Intune に同期したアプリの一覧からアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-117">Select the app from the list of apps that you have approved and synchronized with Intune.</span></span>
-7. <span data-ttu-id="2004b-118">アプリでサポートする構成設定ごとに、**[名前]** と **[値]** を入力し、省略記号 (**[...]**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-118">For each configuration setting that the app supports, type the **Name** and **Value**, and choose the ellipsis (**…**).</span></span>  
-    <span data-ttu-id="2004b-119">構成を削除するには、省略記号 (**[...]**) を選択し、**[削除]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2004b-119">To delete a configuration, choose the ellipsis (**…**) and select **Delete**.</span></span>  
-    <span data-ttu-id="2004b-120">Intune App SDK 対応のアプリでは、キー/値のペアの構成がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="2004b-120">Intune App SDK-enabled apps support configurations in key/value pairs.</span></span> <span data-ttu-id="2004b-121">サポートされるキーと値の構成の詳細については、各アプリのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2004b-121">To learn more about which key-value configurations are supported, consult the documentation for each app.</span></span>  
-    <span data-ttu-id="2004b-122">さらに、アプリケーションから生成されるデータが動的に設定されるトークンを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2004b-122">In addition, you can use tokens that will be dynamically populated with data generated by the application.</span></span>
+1. <span data-ttu-id="951f2-105">Azure ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="951f2-105">Sign in to the Azure portal.</span></span>
+2. <span data-ttu-id="951f2-106">**[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-106">Choose **More Services** > **Monitoring + Management** + **Intune**.</span></span>
+3. <span data-ttu-id="951f2-107">**[モバイル アプリ]** ワークロードを選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-107">Choose the **Mobile apps** workload.</span></span>
+4. <span data-ttu-id="951f2-108">**[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-108">Choose **App configuration policies** in the **Manage** group, and then choose **Add**.</span></span>
+5. <span data-ttu-id="951f2-109">次の詳細を設定します。</span><span class="sxs-lookup"><span data-stu-id="951f2-109">Set the following details:</span></span>
+    - <span data-ttu-id="951f2-110">**名前**</span><span class="sxs-lookup"><span data-stu-id="951f2-110">**Name**</span></span>  
+      <span data-ttu-id="951f2-111">Azure Portal に表示されるプロファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="951f2-111">The name of the profile that will appear in the Azure portal.</span></span>
+    - <span data-ttu-id="951f2-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="951f2-112">**Description**</span></span>  
+      <span data-ttu-id="951f2-113">Azure Portal に表示されるプロファイルの説明。</span><span class="sxs-lookup"><span data-stu-id="951f2-113">The  description of the profile that will appear in the Azure portal.</span></span>
+    - <span data-ttu-id="951f2-114">**デバイス登録の種類**</span><span class="sxs-lookup"><span data-stu-id="951f2-114">**Device enrollment type**</span></span>  
+      <span data-ttu-id="951f2-115">**[アプリの管理]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-115">Choose **Manage apps**.</span></span>
+6. <span data-ttu-id="951f2-116">**[関連アプリ]** を選択して、構成するアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-116">Select **Associated app** to choose the app that you are going to configure.</span></span> <span data-ttu-id="951f2-117">承認して Intune に同期したアプリの一覧からアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-117">Select the app from the list of apps that you have approved and synchronized with Intune.</span></span>
+7. <span data-ttu-id="951f2-118">アプリでサポートする構成設定ごとに、**[名前]** と **[値]** を入力し、省略記号 (**[...]**) を選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-118">For each configuration setting that the app supports, type the **Name** and **Value**, and choose the ellipsis (**…**).</span></span>  
+    <span data-ttu-id="951f2-119">構成を削除するには、省略記号 (**[...]**) を選択し、**[削除]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="951f2-119">To delete a configuration, choose the ellipsis (**…**) and select **Delete**.</span></span>  
+    <span data-ttu-id="951f2-120">Intune App SDK 対応のアプリでは、キー/値のペアの構成がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="951f2-120">Intune App SDK-enabled apps support configurations in key/value pairs.</span></span> <span data-ttu-id="951f2-121">サポートされるキーと値の構成の詳細については、各アプリのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="951f2-121">To learn more about which key-value configurations are supported, consult the documentation for each app.</span></span>  
+    <span data-ttu-id="951f2-122">さらに、アプリケーションから生成されるデータが動的に設定されるトークンを使用できます。</span><span class="sxs-lookup"><span data-stu-id="951f2-122">In addition, you can use tokens that will be dynamically populated with data generated by the application.</span></span>
 
-## <a name="configuration-values-for-using-tokens"></a><span data-ttu-id="2004b-123">トークンを使用する場合の構成値</span><span class="sxs-lookup"><span data-stu-id="2004b-123">Configuration values for using tokens</span></span>
+## <a name="configuration-values-for-using-tokens"></a><span data-ttu-id="951f2-123">トークンを使用する場合の構成値</span><span class="sxs-lookup"><span data-stu-id="951f2-123">Configuration values for using tokens</span></span>
 
-<span data-ttu-id="2004b-124">Intune では特定のトークンを生成して、マネージ アプリケーションに送信することができます。</span><span class="sxs-lookup"><span data-stu-id="2004b-124">Intune can generate certain tokens and send them to the managed application.</span></span> <span data-ttu-id="2004b-125">たとえば、アプリ構成で電子メール設定を使用できる場合、トークンを使用して動的電子メールを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="2004b-125">For example, if your app configuration can use an email setting, you can add a dynamic email by using a token.</span></span> <span data-ttu-id="2004b-126">アプリに予期されている名前を **[名前]** フィールドに入力し、`\{\{mail\}\}` を **[値]** フィールドに入力します。</span><span class="sxs-lookup"><span data-stu-id="2004b-126">Type the name expected by the app in the **Name** field, and then type `\{\{mail\}\}` in the **Value** field.</span></span>
+<span data-ttu-id="951f2-124">Intune では特定のトークンを生成して、マネージ アプリケーションに送信することができます。</span><span class="sxs-lookup"><span data-stu-id="951f2-124">Intune can generate certain tokens and send them to the managed application.</span></span> <span data-ttu-id="951f2-125">たとえば、アプリ構成で電子メール設定を使用できる場合、トークンを使用して動的電子メールを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="951f2-125">For example, if your app configuration can use an email setting, you can add a dynamic email by using a token.</span></span> <span data-ttu-id="951f2-126">アプリに予期されている名前を **[名前]** フィールドに入力し、`\{\{mail\}\}` を **[値]** フィールドに入力します。</span><span class="sxs-lookup"><span data-stu-id="951f2-126">Type the name expected by the app in the **Name** field, and then type `\{\{mail\}\}` in the **Value** field.</span></span>
 
-<span data-ttu-id="2004b-127">Intune は、構成設定で次のトークンの種類をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="2004b-127">Intune supports the following token types in the configuration settings:</span></span>
+<span data-ttu-id="951f2-127">Intune は、構成設定で次のトークンの種類をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="951f2-127">Intune supports the following token types in the configuration settings:</span></span>
 
-- <span data-ttu-id="2004b-128">\{\{userprincipalname\}\} — たとえば、**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="2004b-128">\{\{userprincipalname\}\}—for example, **John@contoso.com**</span></span>
-- <span data-ttu-id="2004b-129">\{\{mail\}\} — たとえば、**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="2004b-129">\{\{mail\}\}—for example, **John@contoso.com**</span></span>
-- <span data-ttu-id="2004b-130">\{\{partialupn\}\} — たとえば、**John**</span><span class="sxs-lookup"><span data-stu-id="2004b-130">\{\{partialupn\}\}—for example, **John**</span></span>
-- <span data-ttu-id="2004b-131">\{\{accountid\}\} — たとえば、**fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span><span class="sxs-lookup"><span data-stu-id="2004b-131">\{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span></span>
-- <span data-ttu-id="2004b-132">\{\{userid\}\} — たとえば、**3ec2c00f-b125-4519-acf0-302ac3761822**</span><span class="sxs-lookup"><span data-stu-id="2004b-132">\{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**</span></span>
-- <span data-ttu-id="2004b-133">\{\{username\}\} — たとえば、**John Doe**</span><span class="sxs-lookup"><span data-stu-id="2004b-133">\{\{username\}\}—for example, **John Doe**</span></span>
-- <span data-ttu-id="2004b-134">\{\{PrimarySMTPAddress\}\} — たとえば、**testuser@ad.domain.com**</span><span class="sxs-lookup"><span data-stu-id="2004b-134">\{\{PrimarySMTPAddress\}\}—for example, **testuser@ad.domain.com**</span></span> 
+- <span data-ttu-id="951f2-128">\{\{userprincipalname\}\} — たとえば、**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="951f2-128">\{\{userprincipalname\}\}—for example, **John@contoso.com**</span></span>
+- <span data-ttu-id="951f2-129">\{\{mail\}\} — たとえば、**John@contoso.com**</span><span class="sxs-lookup"><span data-stu-id="951f2-129">\{\{mail\}\}—for example, **John@contoso.com**</span></span>
+- <span data-ttu-id="951f2-130">\{\{partialupn\}\} — たとえば、**John**</span><span class="sxs-lookup"><span data-stu-id="951f2-130">\{\{partialupn\}\}—for example, **John**</span></span>
+- <span data-ttu-id="951f2-131">\{\{accountid\}\} — たとえば、**fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span><span class="sxs-lookup"><span data-stu-id="951f2-131">\{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**</span></span>
+- <span data-ttu-id="951f2-132">\{\{userid\}\} — たとえば、**3ec2c00f-b125-4519-acf0-302ac3761822**</span><span class="sxs-lookup"><span data-stu-id="951f2-132">\{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**</span></span>
+- <span data-ttu-id="951f2-133">\{\{username\}\} — たとえば、**John Doe**</span><span class="sxs-lookup"><span data-stu-id="951f2-133">\{\{username\}\}—for example, **John Doe**</span></span>
+- <span data-ttu-id="951f2-134">\{\{PrimarySMTPAddress\}\} — たとえば、**testuser@ad.domain.com**</span><span class="sxs-lookup"><span data-stu-id="951f2-134">\{\{PrimarySMTPAddress\}\}—for example, **testuser@ad.domain.com**</span></span> 
 
 
 > [!Note]  
-> <span data-ttu-id="2004b-135">\{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="2004b-135">The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.</span></span>
+> <span data-ttu-id="951f2-135">\{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="951f2-135">The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="2004b-136">次のステップ</span><span class="sxs-lookup"><span data-stu-id="2004b-136">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="951f2-136">次の手順</span><span class="sxs-lookup"><span data-stu-id="951f2-136">Next steps</span></span>
 
-<span data-ttu-id="2004b-137">通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。</span><span class="sxs-lookup"><span data-stu-id="2004b-137">Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.</span></span>
+<span data-ttu-id="951f2-137">通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。</span><span class="sxs-lookup"><span data-stu-id="951f2-137">Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.</span></span>

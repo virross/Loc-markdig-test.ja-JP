@@ -1,4 +1,5 @@
-|<span data-ttu-id="478ca-101">現在はパブリック プレビューの状態</span><span class="sxs-lookup"><span data-stu-id="478ca-101">Currently in Public Preview</span></span>|
+|<span data-ttu-id="62d44-101">現在はパブリック プレビューの状態</span><span class="sxs-lookup"><span data-stu-id="62d44-101">Currently in Public Preview</span></span>|
 |--|
-|<span data-ttu-id="478ca-102">このトピックで説明する機能は、現在のところ、プレビューでのみお客様に提供されます。</span><span class="sxs-lookup"><span data-stu-id="478ca-102">The features described in this topic are only available to customers currently in preview.</span></span> <span data-ttu-id="478ca-103">このメッセージはすべてのお客様に配信された後に削除されます。</span><span class="sxs-lookup"><span data-stu-id="478ca-103">This message will be removed when it has been released for all customers.</span></span>|
+|<span data-ttu-id="62d44-102">このトピックで説明する機能は、現在のところ、プレビューでのみお客様に提供されます。</span><span class="sxs-lookup"><span data-stu-id="62d44-102">The features described in this topic are only available to customers currently in preview.</span></span> <span data-ttu-id="62d44-103">このメッセージはすべてのお客様に配信された後に削除されます。</span><span class="sxs-lookup"><span data-stu-id="62d44-103">This message will be removed when it has been released for all customers.</span></span>|
 | |
+
