@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f920f6eb65c395fe43cdf925ef00e930481add05
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 201fe732153a1ff2958b2139b416f89d67826aad
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune の構成ポリシー リファレンス
 
@@ -106,8 +106,9 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 |---------------|------------------------|
 |**Exchange ActiveSync ポリシー**|Exchange ActiveSync で管理されているデバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Exchange ActiveSync ポリシー設定](exchange-activesync-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**モバイル デバイスのセキュリティ ポリシー**|<ul><li>モバイル デバイス (すべてのプラットフォーム) の設定を構成します。次の項目が含まれます。<br /><br /><ul><li>セキュリティ</li><li>暗号化</li><li>システム</li><li>電子メール</li><li>アプリケーション</li></ul></li></ul>
+
 > [!IMPORTANT]
-Microsoft Intune では、デバイス プラットフォームごとに**構成ポリシー**が分割されました。それらのポリシーには、使用可能な最新の設定が含まれています。 引き続きモバイル デバイスのセキュリティ ポリシーを使用でき、既存の展開も機能します。ただし、できるだけ早く新しい構成ポリシーに移行することを計画してください。<br />詳細については、「[Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定](mobile-device-security-policy-settings-in-microsoft-intune.md)」を参照してください。
+> Microsoft Intune では、デバイス プラットフォームごとに**構成ポリシー**が分割されました。それらのポリシーには、使用可能な最新の設定が含まれています。 引き続きモバイル デバイスのセキュリティ ポリシーを使用でき、既存の展開も機能します。ただし、できるだけ早く新しい構成ポリシーに移行することを計画してください。<br />詳細については、「[Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定](mobile-device-security-policy-settings-in-microsoft-intune.md)」を参照してください。
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Intune ソフトウェア クライアントによって管理されている Windows PC のポリシー
 

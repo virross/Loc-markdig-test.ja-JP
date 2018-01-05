@@ -63,7 +63,7 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 
 9.  接続が正常に確立されて、デバイスは会社のリソースにアクセスできるようになります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 -   [Cisco ISE と Intune を統合する](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 

@@ -56,5 +56,5 @@ Intune では、iPad、iPhone、および macOS デバイスのモバイル デ�
 
 会社または組織でユーザーのために iOS デバイスを購入した場合は、それらのデバイスも[会社所有の iOS デバイス](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)として管理対象に登録できます。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 [Microsoft Intune で登録するための前提条件](prerequisites-for-enrollment.md)

@@ -129,7 +129,7 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 
 - Intune で [MAM と複数の ID](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) をサポートするアプリについての詳細を参照してください。
 
-##  <a name="next-steps"></a>次のステップ
+##  <a name="next-steps"></a>次の手順
 - [アプリ保護ポリシーを構成する準備をする](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Microsoft Intune でのアプリ保護ポリシーの作成と展開](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

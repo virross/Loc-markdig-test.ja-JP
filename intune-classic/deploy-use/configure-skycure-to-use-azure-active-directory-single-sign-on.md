@@ -81,6 +81,6 @@ Skycure を実行しているユーザーを含む専用ユーザー グルー�
 > [!IMPORTANT] 
 > Skycure は Azure AD に問い合わせ、Azure AD テナント ID が存在するかどうかを確認します。存在することがわかると、管理者は次の手順である基本セットアップに進むことができます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure iOS アプリ構成ポリシーをダウンロードする](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)

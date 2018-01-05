@@ -39,7 +39,7 @@ Microsoft Intune は Azure Active Directory (Azure AD) を利用し、会社の�
 
 グループが作成されたら、**[すべてのグループ]** の一覧に表示されるはずです。 表示されない場合、別のグループを作成してみてください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーの概要](get-started-policies.md) - ユーザーが自分のデバイスで許可のない操作を行うことを禁止する目的でポリシーを作成します。
 

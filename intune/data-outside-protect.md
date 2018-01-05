@@ -40,7 +40,7 @@ Office 365 のドキュメントと電子メールを分類し、ラベル付け
 
 [機密情報が含まれるドキュメントおよび電子メールを保護する方法とタイミング](https://docs.microsoft.com/information-protection/deploy-use/help-users)について詳細を共有できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 

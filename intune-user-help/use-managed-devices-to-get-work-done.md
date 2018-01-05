@@ -68,7 +68,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 -   iOS (iPhone や iPad など) および macOS (MacBook や iMac など) を使用する Apple デバイス
 -   Android デバイス
 -   Windows デバイス
-    -   [Windows] 10 Mobile
+    -   Windows 10 Mobile
     -   [Windows] 10 Desktop
     -   Windows Phone 8。1
     -   Windows 8.1

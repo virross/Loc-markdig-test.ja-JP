@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a0a0de0de44f88058904eb41c18176440835b3bc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d5c2411d685b6dbe4ad8825fd73394a0fbf5c796
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
@@ -34,13 +34,13 @@ ms.lasthandoff: 12/19/2017
 
 2. __検索バー__に「PC 情報」と入力し、__[PC 情報]__ を選択します。
 
- ![PC 情報の検索設定](media/searching_for_about_your_pc.png)
+   ![PC 情報の検索設定](media/searching_for_about_your_pc.png)
 
-3.  __[設定]__ には、PC にインストールされている Windows 10 のバージョンに関する情報の一覧が表示されます。 一覧の __[バージョン]__ を確認します。
+3. __[設定]__ には、PC にインストールされている Windows 10 のバージョンに関する情報の一覧が表示されます。 一覧の __[バージョン]__ を確認します。
 
- ![Windows 10 Desktop の PC 情報](media/settings_about_pc.png)
+   ![Windows 10 Desktop の PC 情報](media/settings_about_pc.png)
 
-4.  バージョンが __1607 以降__の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
+4. バージョンが __1607 以降__の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile デバイス        
 

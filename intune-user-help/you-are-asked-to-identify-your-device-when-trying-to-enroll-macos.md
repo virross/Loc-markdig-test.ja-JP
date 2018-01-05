@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 550fc8b1cbb3996299187709d7bcb47cf34e6ab9
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 16624d5c7bcf8f1e1f428c4dd0bfdd9a5382eee4
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>登録試行時にデバイスを識別する必要がある
 

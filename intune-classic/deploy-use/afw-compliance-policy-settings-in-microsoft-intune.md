@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9efcd3a0637c70397be1808d095a5c958f7b597
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7bfbb14ae632a735a51da3b079af9bbb3ec7ba89
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイス向けのコンプライアンス ポリシー設定
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 12/19/2017
 
 その他のプラットフォームに関する情報を探している場合は、次のいずれかを選択します。
 > [!div class="op_single_selector"]
-- [Android 向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android 向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 ### <a name="password"></a>パスワード

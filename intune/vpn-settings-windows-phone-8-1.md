@@ -15,11 +15,11 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d91ede811036c18ef4a561cc6f40623a74a7cdc4
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 2ac89492be4ab1dc0a2a45338883105bcf23ce6e
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの VPN 設定
 
@@ -63,7 +63,6 @@ ms.lasthandoff: 12/19/2017
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **CheckPoint Mobile VPN の例:**
@@ -75,13 +74,11 @@ ms.lasthandoff: 12/19/2017
 **Dell SonicWALL Mobile Connect の例:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **F5 Edge Client の例:**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。

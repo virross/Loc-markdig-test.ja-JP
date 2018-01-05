@@ -15,11 +15,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 828cdccc92203b97b3b89c37cdf18c36a18128b3
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -41,7 +41,8 @@ ms.lasthandoff: 12/19/2017
 | **電子メールのプロファイル** | 検疫済み |
 |**最小 OS バージョン** | 検疫済み |
 | **最大 OS バージョン** | 検疫済み |  
-| **Windows 正常性構成証明書** | 該当なし |  
+| **Windows 正常性構成証明書** | 適用できません |  
+
 ----------------------------
 
 

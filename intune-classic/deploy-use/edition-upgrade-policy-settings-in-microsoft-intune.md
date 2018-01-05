@@ -28,7 +28,7 @@ ms.lasthandoff: 12/19/2017
 Microsoft Intune の**エディションのアップグレード ポリシー**を使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に別のエディションにアップグレードできます。
 * [Windows] 10 Desktop
 * Windows 10 Holographic
-* [Windows] 10 Mobile
+* Windows 10 Mobile
 
 次のアップグレード パスがサポートされます。
 - Windows 10 Pro から Windows 10 Enterprise へのアップグレード パス
@@ -36,7 +36,7 @@ Microsoft Intune の**エディションのアップグレード ポリシー**�
 - Windows 10 Mobile から Windows 10 Mobile Enterprise へのアップグレード パス
 - Windows 10 Holographic Pro から Windows 10 Holographic Enterprise へのアップグレード パス
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 デバイスを最新バージョンにアップグレードし始める前に、次のいずれかを用意する必要があります。
 * ポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするための有効なプロダクト キー (Windows 10 Desktop エディションの場合)。 マルチ ライセンス認証キー (MAK) またはキー マネジメント サーバー (KMS) キーのどちらかを使用できます。
 **または、**ポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするためのライセンス情報を含む、Microsoft からのライセンス ファイル (Windows 10 Mobile エディションと Windows 10 Holographic エディションの場合)。

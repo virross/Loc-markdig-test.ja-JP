@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed5be15f84cf34660c8684ce61322cad9013fae3
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 399cb382acfe0594d06a6b8d6ef4317c22f66e4f
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Mac OS X 構成ポリシー設定
 
@@ -67,6 +67,7 @@ Mac OS X の **[準拠アプリ&amp;非準拠アプリ]** 一覧で、**[デバ�
 |**アプリをインポートする**|コンマ区切り値ファイルで指定したアプリの一覧をインポートします。 ファイルで使用する形式: アプリ名、発行者、アプリのバンドル ID。|
 |**編集**|選択したアプリの名前、発行者、およびアプリのバンドル ID を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
+
 > [!TIP]
 > Intune レポートの詳細については、「[レポートの使用に関する Microsoft Intune 操作について](understand-microsoft-intune-operations-by-using-reports.md)」を参照してください。
 
@@ -112,7 +113,7 @@ Microsoft Intune の **Mac OS X カスタム構成ポリシー**を使用して�
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>構成プロファイル ファイルを作成する方法
-カスタム ポリシーで使用される構成プロファイル ファイルは、次の 2 つの方法で作成することができます。
+カスタム ポリシーで使用される構成プロファイル ファイルは、次の 2 つの方法で作成できます。
 
 -   Apple Configurator ツールからファイル (拡張子が **.mobileconfig**) をエクスポートします。
 

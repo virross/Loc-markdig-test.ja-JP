@@ -79,6 +79,6 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 8.  **[Finish]\(完了\)** を選択して構成を保存し、最初の Azure AD セキュリティ グループの同期を開始します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 -   [Zimperium アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)

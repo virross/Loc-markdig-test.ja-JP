@@ -57,6 +57,6 @@ Android プラットフォーム用に新しいコンプライアンス ポリ�
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune のデバイス コンプライアンス ポリシーの詳細については、「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。

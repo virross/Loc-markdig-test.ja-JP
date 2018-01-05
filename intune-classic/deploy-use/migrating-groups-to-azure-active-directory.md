@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e1c9350819019282c80e92e14cc5b6c679d69664
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b4716a542c7bfb4b735a1bad68a1cbb226f5b1f7
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Intune でグループを使う新しい方法
 
@@ -45,7 +45,7 @@ Intune グループの既存機能の一部は、Azure AD では利用できま�
 - 現在 Intune コンソールに存在する、グループから**特定のメンバーを除外**するオプションは、Azure ポータルにはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使って、この動作を複製できます。 たとえば、次の高度なルールを使うことで、肩書に "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含めることが可能です`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
 - Intune コンソールに組み込まれている **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD には移行されません。 ただし、EAS で管理されたデバイスに関する情報には、Azure ポータルからもアクセスできます。
 - 従来の Intune コンソールでグループによりレポートをフィルター処理することはできなくなります。
-<!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
+  <!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
 
 ## <a name="how-to-get-ready"></a>準備する方法
 

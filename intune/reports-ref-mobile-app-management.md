@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 6cb642af77515ff6ae16989a1e1537ea55cb0310
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>モバイル アプリ管理 (MAM) エンティティのリファレンス
 
@@ -49,6 +49,7 @@ ms.lasthandoff: 12/19/2017
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
 **MamApplicationInstance** エンティティは、デバイス別ユーザー別の単一インスタンスとして、管理されているモバイル アプリケーション管理 (MAM) アプリを一覧表示します。 エンティティ内に一覧表示されているユーザーとデバイスはすべて、少なくとも 1 つの MAM ポリシーが割り当てられ、保護されます。
+
 
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
@@ -111,6 +112,7 @@ ms.lasthandoff: 12/19/2017
 
 **MamGlobalApplication** エンティティは、企業内登録なしで、モバイル アプリケーション管理 (MAM) 経由で管理されるストア アプリを一覧表示します。
 
+
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
 | ApplicationKey |データ ウェアハウスにおけるストア アプリを示す一意識別子で代理キー。 |123 |
@@ -122,9 +124,11 @@ ms.lasthandoff: 12/19/2017
 
 **MamPlatform** エンティティは、モバイル アプリケーション管理 (MAM) アプリがインストールされたプラットフォームの名前と種類を一覧表示します。
 
+
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
 | PlatformKey |データ ウェアハウスにおけるプラットフォームを示す一意識別子 - 代理キー。 |123 |
 | プラットフォーム |プラットフォームを示す一意識別子 - PlatformKey に似ていますが、ナチュラル キーです。 |123 |
-| PlatformName |プラットフォームの名前 |利用不可 <br>None <br>Windows <br>iOS <br>Android。 |
+| PlatformName |プラットフォームの名前 |利用不可 <br>なし <br>Windows <br>iOS <br>Android。 |
 | RowLastModifiedDateTimeUtc |このプラットフォームがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+

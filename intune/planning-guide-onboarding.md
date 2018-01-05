@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aab3c202272d91f9e1596eae6f740f68f049a657
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 6286a0a844cf1d9e665ed29d1eba7fb25876a8e6
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="implement-your-intune-plan"></a>Intune の計画を実装する
 
@@ -66,8 +66,8 @@ Intune の展開の実装に関しては、13 の個別タスクが識別され�
 Intune 展開のユース ケース シナリオや要件によっては、Active Directory または Azure Active Directory にユーザーやセキュリティのグループを追加する必要があります。 Active Directory または Azure Active Directory で現在のユーザー グループとセキュリティ グループを確認し、ニーズが完全に満たされているかどうか判断します。 新しいユーザーとセキュリティ グループを追加するときは、Active Directory で追加し、Azure AD Connect を使って Azure Active Directory と同期することをお勧めします。
 
 
--   Intune にユーザーまたはグループを追加する方法については、[ここ](users-permissions-add.md)をご覧ください。
-<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
+- Intune にユーザーまたはグループを追加する方法については、[ここ](users-permissions-add.md)をご覧ください。
+  <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
 
 
 
@@ -132,7 +132,7 @@ Intune は、iOS、Mac OS、Android、Windows デスクトップ、Windows モ�
 -   デバイスの登録方法については[ここ](device-enrollment.md)をご覧ください。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune 実装プロセスの詳細については、この [Microsoft Virtual Academy Intune セッション モジュール](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)をご覧ください。
 

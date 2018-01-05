@@ -79,7 +79,7 @@ Intune 1708 リリース以降、IT 管理者は Azure AD ワークロードか�
 
 5. **[承認されたクライアント アプリが必要です]** を選択し、**[選択]** を選択し、**[OK]** を選択して新しいポリシーを保存します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>関連項目

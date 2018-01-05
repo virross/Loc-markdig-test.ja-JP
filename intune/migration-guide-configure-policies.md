@@ -90,6 +90,6 @@ Intune MDM を使用する場合は、アプリの自動インストールを要
 
 デバイスを管理するには、デバイスを登録する必要があります。 企業所有およびユーザー個人のデバイスの登録を準備する方法については、[こちら](device-enrollment.md)を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [アプリ保護ポリシーを構成する (省略可能)](migration-guide-app-protection-policies.md)。

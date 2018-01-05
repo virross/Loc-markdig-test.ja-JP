@@ -15,22 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89f7446f52911ec754e567ea187b73953c96c901
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d67ebc48ea7357a74e64a72f5403393ce57eaeea
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft が提供するユーザー補助製品およびサービス
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
--   [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
+- [!INCLUDE[accessibility2](./includes/accessibility2_md.md)]
 
--   [!INCLUDE[accessibility3](./includes/accessibility3_md.md)]
+- [!INCLUDE[accessibility3](./includes/accessibility3_md.md)]
 
--   [!INCLUDE[accessibility4](./includes/accessibility4_md.md)]
+- [!INCLUDE[accessibility4](./includes/accessibility4_md.md)]
 
--   [!INCLUDE[accessibility5](./includes/accessibility5_md.md)]
+- [!INCLUDE[accessibility5](./includes/accessibility5_md.md)]
 
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
@@ -60,9 +60,9 @@ ms.lasthandoff: 12/19/2017
 ## <a name="customer-service-for-people-with-hearing-impairments"></a>聴覚障碍のある方向けの顧客サービス
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
--   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
+- [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
 
--   [!INCLUDE[accessibility15](./includes/accessibility15_md.md)]
+- [!INCLUDE[accessibility15](./includes/accessibility15_md.md)]
 
 [!INCLUDE[accessibility16](./includes/accessibility16_md.md)]
 

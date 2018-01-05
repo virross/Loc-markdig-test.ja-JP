@@ -99,7 +99,7 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
 4.  次の設定を確認してください。
 
-    a.  デバイスの健全性とリスクを Intune に報告する
+    」を参照します。  デバイスの健全性とリスクを Intune に報告する
 
     b.  セキュリティ インシデントも Intune に報告する
 
@@ -107,6 +107,6 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
     ![Skycure の完全統合の完了](../media/mtp/skycure-setup-6.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Intune で Skycure Mobile Threat Defense を有効にする](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)

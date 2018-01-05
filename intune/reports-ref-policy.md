@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 72a65fa2dfd3785f6c5ee913f1d29352a8fbeaf0
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
 
@@ -81,6 +81,7 @@ ms.lasthandoff: 12/19/2017
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
 **PolicyTypeActivity** エンティティには、成功、保留中、失敗、またはエラー状態のデバイスの累積数が表示されます。 デバイス構成プロファイル、アプリ構成プロファイル、またはコンプライアンス ポリシーについて、これらの状態が 1 日単位で表示されます。
+
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|

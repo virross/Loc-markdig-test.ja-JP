@@ -102,5 +102,5 @@ AutoPilot Deployment プロファイルを作成したら、デプロイ プロ�
 - 別のポータルで行われたプロファイル割り当ての変更を表示する
 - 別のポータルで行われたプロファイル割り当てを同期する
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 登録済み Windows 10 デバイス用に Windows AutoPilot を構成したら、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](https://docs.microsoft.com/intune/device-management)」を参照してください。

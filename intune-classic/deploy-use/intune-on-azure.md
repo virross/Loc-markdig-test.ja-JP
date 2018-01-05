@@ -60,7 +60,7 @@ Intune PC クライアントでの Windows 10 デバイス管理から MDM で�
   ![](media/intune_on_azure/image02.png)
 2. [MDM (および/または Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) を使用してデバイスを再登録します。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Windows デバイスの登録](https://docs.microsoft.com/intune/windows-enroll)
 
  

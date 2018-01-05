@@ -73,7 +73,7 @@ IT 管理者の検証テストを実行し、あるデバイスまたはユー�
 
 ![セクション 9 表 3](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune の動作とユース ケース シナリオをテストし、確認しました。これで [Intune 運用のロールアウト](planning-guide-rollout-plan.md)に移ることができます。
 

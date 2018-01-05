@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf0246948126fd86146d6f713df49c83a9b2b0ef
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f1125f10510a7309513e7daf57cd7274c5989177
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune でのモバイル デバイス管理の前提条件
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/19/2017
 
 Configuration Manager で Intune を管理するには
 > [!div class="button"]
-[SCCM のドキュメントを見る >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [SCCM のドキュメントを見る >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>手順 1: 接続を有効にする
 
@@ -79,6 +79,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 ### <a name="company-contact-information-and-privacy-statement"></a>会社の連絡先情報とプライバシーに関する声明
 
 会社名は、ポータル サイトのタイトルとして表示されます。 連絡先情報と詳細は、ポータル サイトの [IT に連絡] 画面でユーザーに対して表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。
+
 
 |フィールド名|最大長|詳細情報|
     |----------|------------------------|----------------|

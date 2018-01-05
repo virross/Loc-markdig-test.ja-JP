@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f662b83e5f8d32aff679d17f4954389e37d6e975
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fc8dd1c9d549d2ecbd7eabb7c34589c02ac327e4
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>ポータル サイト アプリにサインインするには <!--User Story 1132123-->
 
@@ -35,21 +35,21 @@ ms.lasthandoff: 12/19/2017
 
 1. お使いのデバイスでポータル サイト アプリを開いて、**[サインイン]** をタップします。
 
-  ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune/media/cp_ios_aad_signin_after_1704_001.png)
+   ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune/media/cp_ios_aad_signin_after_1704_001.png)
 
-  ポータル サイト アプリがない場合は、 [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) または [Android](install-the-company-portal-app-android.md) でのインストールおよびダウンロード方法を確認してください。
+   ポータル サイト アプリがない場合は、 [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) または [Android](install-the-company-portal-app-android.md) でのインストールおよびダウンロード方法を確認してください。
 
 2. **職場または学校アカウント**を入力します。
 
-  ![画面は同じですが電子メールとパスワードではなく、電子メールのみを入力するように要求されます。](/intune/media/cp_ios_aad_signin_after_1704_002.png)
+   ![画面は同じですが電子メールとパスワードではなく、電子メールのみを入力するように要求されます。](/intune/media/cp_ios_aad_signin_after_1704_002.png)
 
 3. 電子メール アドレスが承認されるまで待ってから、パスワードを入力します。
 
-  ![電子メールが承認されると、パスワードの入力が要求されます。](/intune/media/cp_ios_aad_signin_after_1704_003.png)
+   ![電子メールが承認されると、パスワードの入力が要求されます。](/intune/media/cp_ios_aad_signin_after_1704_003.png)
 
 4. ポータル サイトでログインが承認されたら、サインインし、会社のリソースにアクセスできるようになります。   
 
-  ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="signing-in-with-certificate-based-authentication"></a>証明書ベースの認証によるサインイン
 
@@ -67,26 +67,26 @@ ms.lasthandoff: 12/19/2017
 
 1. 電子メール アドレスを入力する代わりに、電子メールのテキスト ボックスの下にある **[別のデバイスからサインインする]** を選択します。
 
-  ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+   ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 2. ポータル サイトにサインインするための、一意のワンタイム コードを受け取ります。
 
-  ![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+   ![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
 3. 他のデバイスでブラウザーを開き、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) に移動して、コードを入力します。
 
-  ![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+   ![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
 4. **[デバイス ログイン]** ページでコードが確認されたら、__[続行]__ を選択して、別のデバイスでのポータル サイトのサインインを許可します。
 
-  ![固有のコードをフィールドに入力すると、[デバイス ログイン] サイトから、Intune ポータル サイトがサインインを許可してよい適切なアプリであることを確認されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+   ![固有のコードをフィールドに入力すると、[デバイス ログイン] サイトから、Intune ポータル サイトがサインインを許可してよい適切なアプリであることを確認されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
 5. コードが確認されたら、ウィンドウを閉じることができます。
 
-  ![デバイスでポータル サイト アプリへのログインが完了したことと、このページを閉じることができることを示す確認ページ。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+   ![デバイスでポータル サイト アプリへのログインが完了したことと、このページを閉じることができることを示す確認ページ。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
 6. 元のデバイスで、ポータル サイト アプリのサインインが開始します。
 
-  ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、進捗を示す読み込みバーが表示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、進捗を示す読み込みバーが表示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

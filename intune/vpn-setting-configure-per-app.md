@@ -83,12 +83,12 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 6. **[サブジェクトの別名]** に **[ユーザー プリンシパル名 (UPN)]** を選択します。
 7. **[キー使用法]** に **[デジタル署名]** および **[キーの暗号化]** を選択します。
 8. **[キー サイズ (ビット)]** に **[2048]** を選択します。
-9. ルート証明書をクリックし、SCEP 証明書を選択します。 **[OK]**をクリックします。
+9. ルート証明書をクリックし、SCEP 証明書を選択します。 **[OK]** をクリックします。
 10. **[拡張キー使用法]** の **[名前]** に `Client Authentication` を入力します。
 11. **[オブジェクト識別子]** に `1.3.6.1.5.5.7.3.2`を入力します。
-12. **[追加]** をクリックします。
+12. **[追加]**をクリックします。
 13. ***サーバーの URL*** を入力して、**[追加]** をクリックします。
-14. **[OK]**をクリックします。
+14. **[OK]** をクリックします。
 15. **[作成]** をクリックします。
 
     ![SCEP 証明書プロファイルを作成する](media\vpn-per-app-create-scep-cert.png)
@@ -115,8 +115,8 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 5. **[自動 VPN]** をクリックします。 **[自動 VPN]** で、次の操作を実行します。
     1. **[自動 VPN の種類]** に **[アプリごとの VPN]** を選択します。
     2. VPN の URL を入力して、**[追加]** をクリックします。
-    3. **[OK]**をクリックします。
-6. **[OK]**をクリックします。
+    3. **[OK]** をクリックします。
+6. **[OK]** をクリックします。
 7. **[作成]** をクリックします。
 
     ![アプリごとの VPN プロファイルを作成する](media\vpn-per-app-create-vpn-profile.png)
@@ -182,7 +182,7 @@ To review event logs:
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
 3. Review the logs. -->
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - iOS 設定を確認するには、「[Microsoft Intune での iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。
 -  VPN の設定と Intune の詳細については、「[Microsoft Intune で VPN の設定を構成する方法](vpn-settings-configure.md)」を参照してください。

@@ -58,7 +58,7 @@ ms.lasthandoff: 12/19/2017
 | SimplePINAllowed            | 0 = いいえ<br>1 = はい                                                                                                                                                                                                                                                                                           | [アクセス] 単純な PIN を許可する。                                                                                                                                                               |
 | TouchIDEnabled              | 0 = いいえ<br>1 = はい                                                                                                                                                                                                                                                                                           | [アクセス] PIN の代わりに指紋を許可する (iOS 8 以降)。                                                                                                                                      |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
  - アプリ保護ポリシーの詳細については、「[アプリの保護ポリシーとは](app-protection-policy.md)」をご覧ください。
  - Intune では、環境内の問題のトラブルシューティングに役立つ多数のツールが提供されています。 詳細については、「[トラブルシューティング ポータルを使用してユーザーをサポートする](help-desk-operators.md)」をご覧ください。

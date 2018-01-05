@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 331b7fb8cce93abca1f87dda11b2d39465470dd8
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4c06820553244920cd3cbd7f8e1addda07fa2c6f
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -99,48 +99,48 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 4. **[Certificates, IDs & Profiles]** (証明書、ID、プロファイル) をクリックします。
 
-  ![Azure Developer ポータル](./media/iOS-signing-cert-1.png)
+   ![Azure Developer ポータル](./media/iOS-signing-cert-1.png)
 
 5. をクリックして ![右上隅の Apple Developer ポータルのプラス記号をクリックして、](./media/iOS-signing-cert-2.png) iOS 証明書を追加します。
 
 6. **[Production]** (運用) の下にある **[In-House and Ad Hoc]** (社内およびアドホック) 証明書の作成を選択します。
 
-  ![社内およびアドホック証明書を選択する](./media/iOS-signing-cert-3.png)
+   ![社内およびアドホック証明書を選択する](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >アプリを配布する予定がなく、内部でテストのみ行いたい場合、本番用の証明書の代わりに iOS アプリ開発用の証明書を使用できます。 開発用の証明書を使用する場合、モバイルのプロビジョニング プロファイルがアプリをインストールするデバイスを参照するようにしてください。
+   >[!NOTE]
+   >アプリを配布する予定がなく、内部でテストのみ行いたい場合、本番用の証明書の代わりに iOS アプリ開発用の証明書を使用できます。 開発用の証明書を使用する場合、モバイルのプロビジョニング プロファイルがアプリをインストールするデバイスを参照するようにしてください。
 
 7. ページの下部にある **[Next]** (次へ) をクリックします。
 
 8. macOS コンピューターでキーチェーン アクセス アプリケーションを使用して**証明書署名要求 (CSR)** を作成する方法を確認します。
 
-  ![CSR を作成する方法を確認する](./media/iOS-signing-cert-4.png)
+   ![CSR を作成する方法を確認する](./media/iOS-signing-cert-4.png)
 
 9. 上記の手順に従い、証明書署名要求を作成します。 macOS コンピューターで、**キーチェーン アクセス** アプリケーションを起動します。
 
 10. 画面の上部にある macOS メニューで **[キーチェーン アクセス] > [証明書アシスタント] > [Request a Certificate From a Certificate Authority]\(証明機関から証明書を要求する)** の順に移動します。  
 
-  ![キーチェーン アクセスで証明機関から証明書を要求する](./media/iOS-signing-cert-5.png)
+    ![キーチェーン アクセスで証明機関から証明書を要求する](./media/iOS-signing-cert-5.png)
 
 11. 上記の Apple Developer サイトの指示に従い、CSR ファイルを作成します。 macOS コンピューターに CSR ファイルを保存します。
 
-  ![キーチェーン アクセスで証明機関から証明書を要求する](./media/iOS-signing-cert-6.png)
+    ![キーチェーン アクセスで証明機関から証明書を要求する](./media/iOS-signing-cert-6.png)
 
 12. Apple Developer サイトに戻ります。 **[続行]** をクリックします。 それから、CSR ファイルをアップロードします。
 
 13. Apple から署名証明書が生成されます。 これをダウンロードして、macOS コンピューター上の覚えやすい場所に保存します。
 
-  ![署名証明書をダウンロードする](./media/iOS-signing-cert-7.png)
+    ![署名証明書をダウンロードする](./media/iOS-signing-cert-7.png)
 
 14. ダウンロードした証明書ファイルをダブルクリックして、証明書をキーチェーンに追加します。
 
 15. もう一度、**キーチェーン アクセス**を開きます。 右上の検索バーに証明書の名前を入力して探します。 項目を右クリックして開いたメニューから、**[Get Info]** (情報を取得する) をクリックします。 例の画面では、本番用の証明書の代わりに開発用の証明書を使用しています。
 
-  ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-8.png)
+    ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-8.png)
 
 16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの "-c" 引数として使用するため、**[SHA1]** 文字列 (図ではぼかしています) をコピーします。
 
-  ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-9.png)
+    ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-9.png)
 
 
 
@@ -154,7 +154,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 4. **[Distribution]** (配布) の下にある**[In House]** (社内) プロビジョニング ファイルの作成を選択します。
 
-  ![社内プロビジョニング プロファイルを選択する](./media/iOS-provisioning-profile-1.png)
+   ![社内プロビジョニング プロファイルを選択する](./media/iOS-provisioning-profile-1.png)
 
 5. **[続行]** をクリックします。 以前に生成された署名証明書をこのプロビジョニング プロファイルにリンクさせてください。
 
@@ -198,7 +198,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 
 |プロパティ|使用方法|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>` ファイル名は .app または .ipa で終わる必要があります。 |
+|**-i**|`<Path of the input native iOS application file>`。 ファイル名は .app または .ipa で終わる必要があります。 |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -215,7 +215,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 
 [IntuneMAMPackager/Contents/MacOS] フォルダーで、`Parameters.plist` (空白の plist テンプレート) をテキスト エディターまたは Xcode で開きます。 次のキーの引数を入力します。
 
-| Plist キー |  既定値| メモ |
+| Plist キー |  既定値| 注 |
 |------------------|--------------|-----|
 | 入力アプリケーション パッケージのパス  |空| -i と同じ|
 | 出力アプリケーション パッケージのパス |空| -o と同じ|
@@ -251,7 +251,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 ### <a name="error-messages"></a>エラー メッセージ
 アプリ ラッピング ツールが正常に完了できない場合、次のエラー メッセージのいずれかがコンソールに表示されます。
 
-|エラー メッセージ|説明|
+|エラー メッセージ|詳細情報|
 |-----------------|--------------------|
 |有効な iOS プロビジョニング プロファイルを指定する必要があります。|プロビジョニング プロファイルが有効ではない可能性があります。 デバイスのアクセス許可が与えられていることとプロファイルの目標が開発または配布であることを確認します。 プロビジョニング プロファイルが期限切れになっている可能性もあります。|
 |有効な入力アプリケーション名を指定します。|指定した入力アプリケーション名が正しいことを確認します。|
@@ -322,7 +322,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 1.  アプリで機能を有効にします。
 
-    a.  Xcode で、アプリのターゲットに移動し、**[Capabilities]** をクリックします。
+    」を参照します。  Xcode で、アプリのターゲットに移動し、**[Capabilities]** をクリックします。
 
     b.  目的の機能を有効にします。 各機能の詳細と正しい値の指定方法については、iOS 開発者ライブラリの「[Adding Capabilities (機能の追加)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)」を参照してください。
 
@@ -332,7 +332,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 2.  プロビジョニング プロファイルで権利を有効にします。
 
-    a.  Apple Developer Member Center にサインインします。
+    」を参照します。  Apple Developer Member Center にサインインします。
 
     b.  アプリのプロビジョニング プロファイルを作成します。 手順については、「[iOS 用 Intune アプリ ラッピング ツールの前提条件を取得する方法](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)」を参照してください。
 
@@ -345,7 +345,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>権利に関する一般的なエラーのトラブルシューティング
 iOS 用アプリ ラッピング ツールで権利のエラーが表示される場合は、次のトラブルシューティング手順を実行します。
 
-|問題|原因|解決方法|
+|問題|原因|解決策|
 |---------|---------|--------------|
 |入力アプリケーションから生成された権利を解析できませんでした。|アプリ ラッピング ツールは、アプリから抽出された権利ファイルを読み取れません。 権利ファイルは、形式が正しくない可能性があります。|アプリの権利ファイルを調査します。 次の手順でこの方法について説明します。 権利ファイルを調査する場合、形式が正しくない構文がないかを確認します。 権利ファイルは、XML 形式である必要があります。|
 |プロビジョニング プロファイルに足りない権利があります (不足している権利が表示されます)。 不足している権利を含むプロビジョニング プロファイルを使用してアプリを再パッケージします。|プロビジョニング プロファイルで有効な権利と、アプリで有効な機能が一致していません。 この不一致は、一部の機能 (アプリ グループ、キーチェーンのアクセスなど) に関連付けられた ID にも適用されます。|通常、アプリと同じ機能を有効にした新しいプロビジョニング プロファイルを作成できます。 プロファイルとアプリ間で ID が一致しない場合、アプリ ラッピング ツールは可能であれば ID を置き換えます。 新しいプロビジョニング プロファイルを作成した後もこのエラーが発生する場合、–e パラメーターを使用して権利を削除できます (以下の「–e パラメーターを使用してアプリから権利を削除する」セクションを参照してください)。|

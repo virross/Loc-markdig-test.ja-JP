@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93fb9090a4d10e10163e9d94d23ea6bca23922ff
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ce07a0c9ac2d7ad32e31248aa97a967843862a21
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Exchange ActiveSync ポリシー設定
 
@@ -48,6 +48,7 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 |----------------|---|
 |**モバイル デバイスの暗号化を要求する**<sup>1</sup>|サポートされている場合にデバイス上のデータの暗号化を要求します。<br><br>Windows Phone 8 デバイスの場合、これを **[はい]**に設定する必要があります。<br /><br />iOS デバイスでの暗号化を有効にするには、**[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を有効にします。|
 |**メモリ カードの暗号化を必要とする**|(サポートされているデバイス上で) SD カードなどの外部ストレージに保存されたデータの暗号化を要求します。
+
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
 
 -   Windows 8.1 搭載デバイスで暗号化を適用する場合は、[Windows の 2014 年 12 月付け MDM クライアント更新プログラム](https://support.microsoft.com/kb/3013816)を各デバイスにインストールする必要があります。

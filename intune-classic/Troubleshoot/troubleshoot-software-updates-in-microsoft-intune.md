@@ -264,5 +264,5 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 
 さらに、Windows 7 を実行している場合は、次の更新プログラムがインストールされていることを確認します。[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

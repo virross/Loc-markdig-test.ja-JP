@@ -98,6 +98,6 @@ Azure AD でのユーザーの名前。
 ユーザーがインストールしていないアプリの数。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune データの操作の詳細については、「[Intune データ ウェアハウスを使用する](reports-nav-create-intune-reports.md)」を参照してください。

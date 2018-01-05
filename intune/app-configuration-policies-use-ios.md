@@ -141,6 +141,6 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 - \{\{serialnumber\}\} — たとえば、**F4KN99ZUG5V2** (iOS デバイスの場合)
 - \{\{serialnumberlast4digits\}\} — たとえば、**G5V2** (iOS デバイスの場合)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。

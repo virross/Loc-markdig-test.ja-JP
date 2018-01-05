@@ -51,6 +51,6 @@ Intune では移行中の企業データの保護が提供されるため、デ�
 2. [ポリシーの展開](app-protection-policies.md#deploy-a-policy-to-users)
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [特殊な移行に関する考慮事項](migration-guide-considerations.md)

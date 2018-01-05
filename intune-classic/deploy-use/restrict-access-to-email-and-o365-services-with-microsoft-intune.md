@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f84d7dcbea516f11430e8ff570f4d700f4a4c1a6
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ba8b8517abbf778d787177ac170a3ce58ac7ec0a
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを保護する
 
@@ -67,17 +67,17 @@ Microsoft Intune と Azure Active Directory (Azure AD) Premium はシームレ�
 他の Intune ポリシーとは異なり、条件付きアクセス ポリシーは展開しません。 代わりに、ポリシーを構成して、そのポリシーが必要なユーザーを選択すると、ポリシーがすべての対象ユーザーに適用されます。 ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスがリソースにアクセスするには、ポリシーを遵守している必要があります。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 
 2. [デバイス コンプライアンス ポリシーの作成](create-a-device-compliance-policy-in-microsoft-intune.md)。
 
-2.  次の Microsoft クラウド サービス/製品のいずれかの条件付きアクセス ポリシーを作成します。
+3. 次の Microsoft クラウド サービス/製品のいずれかの条件付きアクセス ポリシーを作成します。
 
-  - [Exchange Online の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Exchange On-premises の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [古い Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [SharePoint Online の条件付きアクセス ポリシーを作成する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Skype for Business Online の条件付きアクセス ポリシーを作成する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Dynamics CRM Online の条件付きアクセス ポリシーを作成する](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Exchange Online の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Exchange On-premises の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [古い Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [SharePoint Online の条件付きアクセス ポリシーを作成する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Skype for Business Online の条件付きアクセス ポリシーを作成する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Dynamics CRM Online の条件付きアクセス ポリシーを作成する](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

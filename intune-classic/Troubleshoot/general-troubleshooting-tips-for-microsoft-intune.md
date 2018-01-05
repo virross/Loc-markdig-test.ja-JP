@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 02c3fae9bbf4e9933c9c366b550d232aa2113166
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f2a3f3b0fbc5df391dae957ddbabbfdbd5f82724
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune の一般的なトラブルシューティングのヒント
 
@@ -50,13 +50,13 @@ Microsoft Intune を展開した後、構成やクライアントのデバイス
 
 ## <a name="collect-available-data"></a>利用可能なデータの収集
 
--   次のリソースは、デバイスのログを収集する方法を理解するのに役立ちます。
+- 次のリソースは、デバイスのログを収集する方法を理解するのに役立ちます。
   - [USB ケーブルを使用して Android の診断データのログを IT 管理者に送信する](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [IT 管理者に Android の登録に関するエラーを送信する](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載されている説明に従って、目的のポリシーとその状態を調べます。
+- 管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載されている説明に従って、目的のポリシーとその状態を調べます。
 
 ## <a name="research-the-solution"></a>ソリューションの調査
 
@@ -79,7 +79,7 @@ Microsoft Intune を展開した後、構成やクライアントのデバイス
 
 -   [Intune フォーラム](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 以下のトピックには、特定の問題に関するトラブルシューティングのヘルプが含まれています。 この情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 [Microsoft Intune におけるエンドポイント保護のトラブルシューティング](troubleshoot-endpoint-protection-in-microsoft-intune.md)

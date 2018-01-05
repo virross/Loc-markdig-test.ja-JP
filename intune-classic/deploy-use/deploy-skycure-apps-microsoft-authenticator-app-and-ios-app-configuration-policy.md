@@ -43,7 +43,7 @@ ms.lasthandoff: 12/19/2017
 
 2.  次のアプリを選択します。
 
-    a.  Microsoft Authenticator
+    」を参照します。  Microsoft Authenticator
 
     b.  Android 向け Skycure アプリ
 
@@ -63,6 +63,6 @@ ms.lasthandoff: 12/19/2017
 
     ![Intune クラシック ポータルのモバイル アプリ構成](../media/mtp/skycure-deploy-app-3.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure と Intune の統合をセットアップする](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)

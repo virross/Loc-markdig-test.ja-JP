@@ -102,6 +102,6 @@ Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会�
 | セルフサービス |  |  |  | 人事、財務 |
 | ホワイト グローブ |  |  |  | 役員 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のセクションは、[Intune ロールアウトの情報伝達計画を立てる](planning-guide-communication-plan.md)場合のガイダンスです。

@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef0f754980a9bc2823129c62f7100edbcdc7524
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ed5b883b335bc3755f1bd4947d341c89fbda2dda
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin コンポーネント
 
@@ -75,7 +75,7 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS モバイル アプリで Intune アプリ保護ポリシーを有効にする
-1.  Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 たとえば、
+1.  Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 次に例を示します。
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -112,16 +112,16 @@ UI フレームワークを利用しない Xamarin 基盤の Android アプリ�
 
 Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。 このツールは、ユーザーに代わってクラス置換を実行します。 ただし、次の手順を実行する必要があります。
 
-1.  `Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージ バージョン 0.1.0.0 以降の参照を追加します。
+1. `Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージ バージョン 0.1.0.0 以降の参照を追加します。
 
-2.  Android csproj に次の行を追加します。
-  ```xml
-  <Import
-  Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
-  ```
+2. Android csproj に次の行を追加します。
+   ```xml
+   <Import
+   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
+   ```
 
-3.  追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。
+3. 追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。

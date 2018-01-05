@@ -58,7 +58,7 @@ __エンド ユーザーに不便な点__ アプリのインストール、デ�
   * [Android デバイスを Intune で使用する](/intune-user-help/using-your-android-device-with-intune)
   * [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
-* **iOS**
+* **Android**
   * [iOS デバイスを Intune で使用する](/intune-user-help/using-your-ios-device-with-intune)
   * [iOS ユーザーがアプリを入手する方法](end-user-apps-ios.md)
 

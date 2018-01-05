@@ -35,7 +35,7 @@ Microsoft Intune では、このプログラムを通して購入したブック
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>iOS デバイス用のボリューム購入ブックの管理
 iOS ブックの複数のライセンスを購入するには、[ビジネス向け Apple Volume Purchase Program](http://www.apple.com/business/vpp/) または [教育向け Apple Volume Purchase Program](http://volume.itunes.apple.com/us/store) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune に同期し、ボリューム購入ブックの使用状況を追跡することができます。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 開始する前に、Apple から VPP トークンを取得し、これを Intune アカウントにアップロードします。 補足:
 
 * Intune アカウントに関連付けられる VPP トークンは、最大 256 個です。
@@ -52,9 +52,9 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 1.  **[Mobile Apps]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
 2.  VPP トークンの一覧ブレードで、**[追加]** をクリックします。
 3.  **[新しい VPP トークン]** ブレードで、次の情報を指定します。
@@ -77,7 +77,7 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 割り当て操作として **[利用可能]** または **[必須]** を選択します。 
 5. 完了したら、**[保存]** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ブックの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事をご覧ください。
 

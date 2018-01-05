@@ -82,7 +82,7 @@ Android 管理で使用できるものと同じ証明書プロファイルの構
 
 デバイスが Intune のインベントリから削除され、仕事用プロファイルが削除されると、Android for Work が管理する Wi-Fi プロファイルが削除されます。 詳細については、「[デバイスを構成すると、会社の Wi-Fi ネットワークに接続できます](wi-fi-connections-in-microsoft-intune.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Android for Work の登録を有効にする](/intune-classic/deploy-use/set-up-android-for-work)
 
 [Android for Work 用アプリの展開](/intune-classic/deploy-use/android-for-work-apps)

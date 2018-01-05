@@ -58,7 +58,7 @@ ms.lasthandoff: 12/19/2017
 **[制限対象のユーザー グループ]** 一覧から**ユーザー グループを削除**するには、**[制限対象のユーザー グループ]** ブレードを開き、削除するユーザー グループを選択し、**省略記号 (...)** をクリックします。**[削除]** が表示されます。 **[削除]** を選択すると、一覧からユーザー グループが削除されます。 手順は、**[制限対象のユーザー グループ]** 一覧からユーザー グループを削除する手順と同じです。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>関連項目
 [アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

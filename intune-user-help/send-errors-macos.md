@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5864454bbd4461ab50e95c102e0b572088980dec
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: cac2f46b99fd735a0a4dc2070ddeffd146f5a860
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>管理対象の macOS デバイスの適切なユーザーにエラーを送信する
 

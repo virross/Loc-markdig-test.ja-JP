@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e77c069128b00d94d057cb7514e1e9ca62e299fc
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 12/19/2017
 | 17 |AndroidForWork |Android デバイス - Android for Work Profile Owner により管理 |
 | 100 |Blackberry |Blackberry デバイス |
 | 101 |Palm |Palm デバイス |
-| 255 |不明 |デバイスの種類が不明 |
+| 255 |Unknown |デバイスの種類が不明 |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 12/19/2017
 | 5 |ApprovalPending |承認保留中 |
 | 6 |ResetCert |証明書のリセット |
 | 7 |NotRegisteredPendingEnrollment |未登録で登録保留中 |
-| 8 |不明 |状態が不明 |
+| 8 |Unknown |状態が不明 |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 12/19/2017
 
 | enrollmentTypeID  | 名前 | 説明 |
 |---------|------------|--------|
-| 0 |不明 |登録の種類が収集されませんでした |
+| 0 |Unknown |登録の種類が収集されませんでした |
 | 1 |UserEnrollment |ユーザーが開始した登録 |
 | 2 |DeviceEnrollment |ユーザーなしのプロファイルによるデバイス登録 |
 | 3 |DeviceEnrollmentWithUDA |UDA プロファイルによるデバイス登録 |
@@ -141,7 +141,7 @@ ms.lasthandoff: 12/19/2017
 
 | MdmStatusID  | ComplianceStatus | 説明 |
 |---------|------------|--------|
-| 0 |不明 |デバイスのコンプライアンスの状態は不明です。 |
+| 0 |Unknown |デバイスのコンプライアンスの状態は不明です。 |
 | 1 |準拠 |デバイスは準拠しています。 |
 | 2 |非準拠 |デバイスは準拠していません。 |
 | 3 |競合 |デバイスのコンプライアンスで競合が発生しました。 |
@@ -189,7 +189,7 @@ ms.lasthandoff: 12/19/2017
 
 | workPlaceJoinStateID  | 名前 | 説明 |
 |---------|------------|--------|
-| 0 |不明 |デバイスが社内参加していない場合、状態は不明となります。 |
+| 0 |Unknown |デバイスが社内参加していない場合、状態は不明となります。 |
 | 1 |成功 |社内参加に成功しました |
 | 2 |FailureToGetScepMetadata |SCEP メタデータを取得できませんでした |
 | 3 |FailureToGetScepChallenge |SCEP チャレンジを取得できませんでした |
@@ -219,7 +219,7 @@ ms.lasthandoff: 12/19/2017
 | 4 |IntuneClient | デバイスが Intune PC エージェントで管理されます |
 | 5 |EasIntuneClient | デバイスが Exchange Active Sync と Intune PC エージェントの両方で管理されます |
 | 8 |ConfigManagerClient | デバイスが System Center Configuration Manager エージェントで管理されます |
-| 16 |不明 | 管理エージェントの種類が不明です |
+| 16 |Unknown | 管理エージェントの種類が不明です |
 
 ## <a name="devices"></a>[デバイス]
 
@@ -412,6 +412,7 @@ ms.lasthandoff: 12/19/2017
 
 **ApplicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリが一覧表示されます。
 
+
 | プロパティ  | 説明 |
 |---------|------------|
 | DeviceKey |デバイス テーブルの参照。 |
@@ -419,3 +420,4 @@ ms.lasthandoff: 12/19/2017
 | ApplicationName |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
 | ApplicationVersion |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
 | BundleSize |? (ExchangeDeviceService\DeviceApplication からコピーされます)。 |
+

@@ -59,7 +59,7 @@ API を使用するには Azure AD による承認が必要です。 Azure AD �
 
 OData で抽象データ モデルとプロトコルを定義し、任意のデータ ソースが公開している情報に任意のクライアントがアクセスできるようにします。 データ モデルのドキュメント トピックでは、Intune データ ウェアハウス データ モデルの名前空間、エンティティ、リターン オブジェクトについて説明しています。 詳細については、「[Data Warehouse Data Model](reports-ref-data-model.md)」(データ ウェアハウスのデータ モデル) を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」を読んで、Azure AD の操作についてさらに詳しく学習します。
 

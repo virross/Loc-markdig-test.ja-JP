@@ -37,5 +37,5 @@ Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理
 以上で、Intune 管理者コンソールでの Lookout と Intune の統合のセットアップは完了です。  このソリューションを実装するこの後の手順では、[Lookout for Work アプリ](/intune-classic/deploy-use/device-threat-protection-policy)ポリシーを展開する必要があります。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Lookout for Work アプリを構成する](/intune-classic/deploy-use/device-threat-protection-apps)

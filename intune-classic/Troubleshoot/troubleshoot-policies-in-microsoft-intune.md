@@ -97,5 +97,5 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

@@ -141,6 +141,6 @@ iPhone にポリシーを割り当てると、結果は次のスクリーンシ�
 |天気|com.apple.weather|
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。

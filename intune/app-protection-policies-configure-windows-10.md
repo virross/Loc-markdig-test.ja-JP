@@ -54,6 +54,6 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
 
 5.  **[Save]**(保存) をクリックします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [WIP アプリ保護ポリシーを作成する](windows-information-protection-policy-create.md)

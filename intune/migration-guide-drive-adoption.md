@@ -70,6 +70,6 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   [先進認証 (ADAL) を使用していないアプリをブロックする](app-modern-authentication-block.md)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [一般的な移行サイクル](migration-guide-cycle.md)について学習します。

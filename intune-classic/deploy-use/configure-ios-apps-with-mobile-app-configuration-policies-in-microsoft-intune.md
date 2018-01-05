@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 014b97fdb900c0fc163a5f98d5c4e2a5bdaa237d
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: aa6a8f2a7e039118d88e9d5079d7a898ffa4ea04
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成
 
@@ -77,14 +77,14 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 ## <a name="information-about-the-xml-file-format"></a>XML ファイル形式に関する情報
 
 Intune は、プロパティ リストで次のデータ型をサポートします。
-    
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; または &lt;false /&gt;
-     
+
 データ型の詳細については、iOS 開発者ライブラリの [プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) に関するページを参照してください。
 
 また、Intune は次のトークンの種類をプロパティ リストでサポートしています。
@@ -97,7 +97,7 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 - \{\{username\}\} - (例: **John Doe**)
 - \{\{serialnumber\}\} - (例: **F4KN99ZUG5V2**) iOS デバイスの場合
 - \{\{serialnumberlast4digits\}\} - (例: **G5V2**) iOS デバイスの場合
-    
+
 \{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>モバイル アプリ構成ポリシーをアプリに関連付ける
@@ -139,5 +139,4 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

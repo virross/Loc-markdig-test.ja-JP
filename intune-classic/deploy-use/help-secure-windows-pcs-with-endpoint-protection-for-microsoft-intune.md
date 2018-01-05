@@ -14,11 +14,11 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b9ac6158c897c739c6b80dbddb26c6abca4d0ed8
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 62fa8de9bbbff2cd9746dfba93efd5362bdf3fed
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
 
@@ -33,11 +33,13 @@ Endpoint Protection を構成、展開、監視するときに、次のセクシ
 ## <a name="choose-when-to-use-endpoint-protection"></a>Endpoint Protection を使用するタイミングの選択
 IT 管理者として最も優先度が高い事項の 1 つは、管理するコンピューターをマルウェアやウイルスのない状態に保つことです。 Intune を Windows PC に展開する前に、次のオプションのいずれかを選択し、関連するポリシー設定を構成して、コンピューターを保護する方法を決定する必要があります。
 
-|目的|Endpoint Protection のポリシー設定|説明|
+
+|目的|Endpoint Protection のポリシー設定|詳細情報|
 |--------------|---------------------------------------|--------------------|
 |サード パーティ製エンドポイント保護アプリケーションがインストールされていない場合のみ Microsoft Intune Endpoint Protection を使用します。<br /><br />サード パーティ製エンドポイント保護アプリケーションがインストールされていないすべてのコンピューターで Microsoft Intune Endpoint Protection を使用できます。|[Endpoint Protection のインストール] = **はい**<br /><br />[Endpoint Protection を有効にする] = **はい**<br /><br />[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする] = **いいえ**|サード パーティ製エンドポイント保護アプリケーションが検出された場合、Microsoft Intune Endpoint Protection はインストールされません。既にインストール済みの場合はアンインストールされます。|
 |サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Microsoft Intune Endpoint Protection を使用します。<br /><br />この方法では、Microsoft Intune Endpoint Protection とサード パーティ製エンドポイント保護アプリケーションを同時に実行します。 この構成は、パフォーマンスの問題が発生する可能性があるため、推奨されません。 |[Endpoint Protection のインストール] = **はい**<br /><br />[Endpoint Protection を有効にする] = **はい**<br /><br />[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする] = **はい**|次の場合に使用します。<br /><br />- Microsoft Intune Endpoint Protection を使用するように切り替える必要がある場合<br />- Microsoft Intune Endpoint Protection を使用する新しいクライアントを展開する場合<br />- Microsoft Intune Endpoint Protection を使用するクライアントをアップグレードする場合|
 |Microsoft Intune Endpoint Protection なしで Intune を使用します。 代わりに、サード パーティ製のエンドポイント保護アプリケーションを使用します。|[Endpoint Protection のインストール] = **いいえ**|サード パーティ製のエンドポイント保護アプリケーションを使用しない場合、組織のコンピューターがマルウェアまたはその他の攻撃にさらされる可能性があるため、この構成は推奨されません。<br /><br />Microsoft Intune Endpoint Protection はインストールされず、以前にインストール済みの場合は、アンインストールされます。|
+
 現在のエンドポイント保護アプリケーションから Microsoft Intune Endpoint Protection に切り替えるには、次の手順を実行します。
 
 1.  現在のエンドポイント保護アプリケーションを実行しながら、Intune クライアント ソフトウェアをコンピューターに展開します。
@@ -77,6 +79,7 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 |**サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする**|サード パーティ製エンドポイント保護アプリケーションが検出された場合でも Microsoft Intune Endpoint Protection を強制的にインストールするには **[はい]** に設定します。<br /><br />推奨値: **[いいえ]**|
 |**マルウェアを駆除する前にシステムの復元ポイントを作成する**|マルウェアを駆除する前に、Windows システムの復元ポイントを作成するには、**[はい]** に設定します。<br /><br />推奨値: **○**|
 |**解決されたマルウェアを追跡する (日数)**|以前に感染したコンピューターを手動で確認できるように、指定した期間、解決したマルウェアを Endpoint Protection で追跡できるようにします。<br /><br />0 ～ 30 日の値を指定できます。<br /><br />推奨値: **[7 日間]**|
+
 **[Endpoint Protection のインストール]** と **[Endpoint Protection を有効にする]** のポリシー値を **[はい]** に設定し、**[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする]** のポリシー値を **[いいえ]** に設定している場合、Microsoft Intune Endpoint Protection は別のエンドポイント保護アプリケーションがインストールされていることを検出します。 つまり、Endpoint Protection はインストールされず、既に存在する場合はアンインストールされます。 ただし、Microsoft Intune Endpoint Protection は他のエンドポイント保護アプリケーションの Intune での正常性について報告します。
 
   ウイルスやスパイウェアなどの潜在的な脅威が PC 上でインストールまたは実行を試みると、Microsoft Security Essentials がリアルタイム保護でアラートを通知します。 これが発生すると、タスク バーの右側の通知領域にメッセージが直ちに表示されます。
@@ -145,10 +148,10 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
 
 ## <a name="choose-management-tasks-for-endpoint-protection"></a>Endpoint Protection の管理タスクを選択する
 次のタスクは、Endpoint Protection を実行する管理対象コンピューターのさまざまな管理タスクの実行に役立ちます。
- - マルウェア定義の更新
+- マルウェア定義の更新
   - Intune コンソール - **[グループ]** ワークスペースから、更新するコンピューターを選択します。 **[リモート タスク]** &gt; **[マルウェア定義の更新]** の順に選択します。
   - 管理されたコンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[更新]** タブを選択して、**[更新]** をクリックします。
- - マルウェア スキャンの実行
+- マルウェア スキャンの実行
   - Intune コンソール - **[グループ]** ワークスペースから、スキャンするコンピューターを選択します。 **[マルウェアのフル スキャンの実行]** または **[マルウェアのクイック スキャンの実行]** を選択します。
   - 管理されたコンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[クイック]**、**[フル]**、または **[カスタム]** を選択し、**[今すぐスキャン]** を選択します。
 
@@ -156,12 +159,12 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
 
 ## <a name="monitor-endpoint-protection"></a>エンドポイント保護の監視
 コンピューターのマルウェアの状態を監視するには、 [Microsoft Intune 管理コンソール](https://manage.microsoft.com/) の **[保護]**ワークスペースを使用します。 このワークスペースには次の 2 つのページがあります。
- - **保護の概要** - 重要な問題のリンクが表示されます。リンクを選択すると詳細情報が表示されます。 表示される問題には次のようなものがあります。
+- **保護の概要** - 重要な問題のリンクが表示されます。リンクを選択すると詳細情報が表示されます。 表示される問題には次のようなものがあります。
   - **n 個のマルウェア インスタンスのフォローアップが必要です** - このリンクをクリックすると、マルウェア問題の一覧と、問題を解決するために必要な対応策が表示されます。 この一覧を詳しく調べると、影響を受けているコンピューターが分かります。
   - **n 台のコンピューターにフォローアップが必要なマルウェアがあります** - このリンクをクリックすると、マルウェア問題が解決していないすべてのコンピューター、問題を解決するために必要な対応策が表示されます。
   - **保護されていないデバイス** - このリンクをクリックすると、ソフトウェアがインストールされていないか、エラーが原因で、エンドポイント保護ソフトウェアで保護されていないコンピューターが表示されます。 コンピューターを選択すると、詳細情報が表示されます。
   - **別のエンドポイント保護アプリケーションが実行されているデバイス** - このリンクをクリックすると、サードパーティ製のエンドポイント保護アプリケーションを実行しているコンピューターが表示されます。
- - **すべてのマルウェア** - コンピューターで検出されたすべてのアクティブなマルウェアの一覧が表示されます。 この一覧を詳しく調べると、各マルウェアの影響を受けているコンピューターが分かります。また、次のいずれかのタスクを選択することができます。
+- **すべてのマルウェア** - コンピューターで検出されたすべてのアクティブなマルウェアの一覧が表示されます。 この一覧を詳しく調べると、各マルウェアの影響を受けているコンピューターが分かります。また、次のいずれかのタスクを選択することができます。
   - **プロパティの表示** - 選択したマルウェアの詳細情報ページが開きます。
   - **このマルウェアの詳細** - Microsoft マルウェア プロテクション センターに掲載されているマルウェアの詳細情報のトピックが開きます。
 
@@ -190,5 +193,5 @@ Intune では、Intune クライアントがインストールされているリ
 ## <a name="need-more-help"></a>さらにヘルプが必要な場合
 さらにヘルプやサポートが必要な場合は、「[Microsoft Intune におけるエンドポイント保護のトラブルシューティング](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)」を参照してください。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)

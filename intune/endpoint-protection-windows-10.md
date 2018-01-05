@@ -34,7 +34,7 @@ Endpoint Protection プロファイルを使用すると、Windows 10 デバイ�
 
 ## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection プロファイルを作成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -118,6 +118,6 @@ Endpoint Protection プロファイルを使用すると、Windows 10 デバイ�
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。

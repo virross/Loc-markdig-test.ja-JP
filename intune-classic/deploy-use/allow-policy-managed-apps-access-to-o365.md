@@ -58,7 +58,7 @@ ms.lasthandoff: 12/19/2017
 アプリ ベースの条件付きアクセス ポリシーが設定されたアプリのユーザー エクスペリエンスの詳細については、[アプリと MAM CA を使用する場合の結果](use-apps-with-mam-ca.md)に関するページをご覧ください。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [MAM アプリ用の Exchange Online ポリシーを作成する](mam-ca-for-exchange-online.md)
 
 [MAM アプリ用の SharePoint Online ポリシーを作成する](mam-ca-for-sharepoint-online.md)

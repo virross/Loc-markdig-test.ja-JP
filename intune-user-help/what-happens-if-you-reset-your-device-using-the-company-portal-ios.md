@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7275e740ff2eb23af268ad9b281f3268e1bb16a2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 38e78850ebf70117059e4287677511855b3a10bd
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>ポータル サイトを使用して iOS デバイスをリセットするとどうなりますか。
 

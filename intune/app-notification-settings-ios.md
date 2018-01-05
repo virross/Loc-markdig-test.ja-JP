@@ -93,6 +93,6 @@ ms.lasthandoff: 12/19/2017
 |視聴する|com.apple.Bridge|
 |天気|com.apple.weather|
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。

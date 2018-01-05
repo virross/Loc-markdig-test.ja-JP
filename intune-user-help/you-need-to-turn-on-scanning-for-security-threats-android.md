@@ -14,11 +14,11 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2eaa2da79f8ce85cef8c258dd17828f6639bba71
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4d9298fe3879260efa4afeb3a181e8c59e6a37de
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>セキュリティ上の脅威に対してデバイスがスキャンできるようにする必要がある
 

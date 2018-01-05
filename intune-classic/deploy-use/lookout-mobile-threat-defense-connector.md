@@ -73,7 +73,7 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 **WiFi 経由でネットワークにアクセスする行為のブロック:**
 ![ネットワークの脅威に基づいて WiFi アクセスをブロックする条件付きアクセスを示す図](../media/mtp/network-wifi-blocked.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![脅威の修復時にアクセスを許可する条件付きアクセスを示す図](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
@@ -85,11 +85,11 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 ![検出した脅威に基づいて SharePoint Online へのデバイスのアクセスをブロックする条件付きアクセスを示す図](../media/mtp/network-spo-blocked.png)
 
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![ネットワークの脅威が修復された後でアクセスを許可する条件付きアクセスを示す図](../media/mtp/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
 1.  [Lookout サブスクリプションを設定する](setup-your-lookout-mtd-subscription.md)
 2.  [Intune で Lookout Mobile Threat Defense を有効にする](enable-lookout-mtd-connection.md)

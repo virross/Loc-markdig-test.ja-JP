@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cab13a21b2fb0c904f04e3287b91c79fca7be841
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b75471c1fbf0a070dd68fd25675e654c00f14d89
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune の登録済みデバイス管理機能
 
@@ -69,3 +69,4 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 |機能|説明|詳細情報|
 |--------------|-----------|--------------------|
 |インベントリとレポート|管理対象のデバイスと、デバイスが使用しているソフトウェアの詳細が記載されています。|[Microsoft Intune でインベントリを使用してデバイスを把握する](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+

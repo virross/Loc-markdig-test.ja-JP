@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0686b3ece3a929cb06a29f4e58046872b70ec926
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 941a7d17a672f9315d1d99812494650f8247b4c1
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -29,18 +29,18 @@ IT 管理者はデータをリスクから保護しながら、エンド ユー�
 
 **[デバイス]** ワークロードでは、管理対象のデバイスについての情報が得られ、そのデバイスでリモート タスクを実行できます。 このワークロードにアクセスするには、以下の手順に従います。
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** で、**[デバイス]** を選択します。
 4. 次のデバイスに関する情報を確認して、リモート デバイスの操作を実行することができます。
-    - **[概要]** - 管理可能な登録済みデバイスのスナップショット。
-    - **[すべてのデバイス]** - 管理する登録済みデバイスの一覧。 表示する情報を絞り込むには、**[フィルター]** または **[列]** を選択します。 [デバイス インベントリを表示する](device-inventory.md)には、デバイスを選択します。
-    - **[Azure AD デバイス]** - Azure Active Directory (AD) に登録されている、または参加しているデバイスの一覧。 Azure AD のデバイス管理の概要については、[こちら](https://docs.microsoft.com/azure/active-directory/device-management-introduction)を参照してください。
-    - **[デバイス アクション]** - アクション、その状態、アクションを開始したユーザー、時刻などの、デバイスに実行されたリモート アクションの履歴。
+   - **[概要]** - 管理可能な登録済みデバイスのスナップショット。
+   - **[すべてのデバイス]** - 管理する登録済みデバイスの一覧。 表示する情報を絞り込むには、**[フィルター]** または **[列]** を選択します。 [デバイス インベントリを表示する](device-inventory.md)には、デバイスを選択します。
+   - **[Azure AD デバイス]** - Azure Active Directory (AD) に登録されている、または参加しているデバイスの一覧。 Azure AD のデバイス管理の概要については、[こちら](https://docs.microsoft.com/azure/active-directory/device-management-introduction)を参照してください。
+   - **[デバイス アクション]** - アクション、その状態、アクションを開始したユーザー、時刻などの、デバイスに実行されたリモート アクションの履歴。
 
-    ![デバイス アクションの監視](./media/monitor-device-actions.png)
+     ![デバイス アクションの監視](./media/monitor-device-actions.png)
 
-    - **[TeamViewer]** - TeamViewer サービスを使用すると、Intune で管理されている Android デバイスのユーザーが、IT 管理者からリモート アシスタンスを受けられるようになります。 TeamViewer については、[こちら](device-profile-android-teamviewer.md)を参照してください。
+   - **[TeamViewer]** - TeamViewer サービスを使用すると、Intune で管理されている Android デバイスのユーザーが、IT 管理者からリモート アシスタンスを受けられるようになります。 TeamViewer については、[こちら](device-profile-android-teamviewer.md)を参照してください。
 
 ## <a name="available-device-actions"></a>行えるデバイス アクション
 表示されるアクションは、デバイス プラットフォームやデバイスの構成によって異なります。
@@ -61,6 +61,6 @@ IT 管理者はデータをリスクから保護しながら、エンド ユー�
     - [同期デバイス](device-sync.md)
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - 管理しているデバイスで実行されているアクションの状態を確認するには、**[デバイス アクション]** を選びます。

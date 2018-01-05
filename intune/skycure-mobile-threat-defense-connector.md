@@ -67,7 +67,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![検出された悪意のあるアプリ](./media/skycure-arch-1.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![悪意のあるアプリの検出、アクセス権](./media/skycure-arch-2.png)
 
@@ -79,7 +79,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![Wi-Fi 経由のネットワーク アクセスをブロックする](./media/skycure-arch-3.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![修復するとアクセス権が付与される](./media/skycure-arch-4.png)
 
@@ -91,7 +91,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![ネットワークの脅威が検出されたときに SharePoint Online をブロック](./media/skycure-arch-5.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![SharePoint で修復時にアクセス権を付与する例](./media/skycure-arch-6.png)
 
@@ -111,7 +111,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 詳細については、[Skycure Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune と Skycure の統合は次の手順で行います。
 

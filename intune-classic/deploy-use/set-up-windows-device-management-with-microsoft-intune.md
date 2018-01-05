@@ -38,7 +38,7 @@ Windows デバイスの登録を簡略化する方法は、次の 2 つの要素
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>自動登録なしの Windows 登録を有効にする
-Azure AD Premium の自動登録なしで、ユーザー自身にデバイスを登録させることができます。 ライセンスを割り当てると、ユーザーは、職場のアカウントを個人所有のデバイスに追加するか、会社所有のデバイスを Azure AD に参加させた後に登録を行うことができます。 DNS エイリアス (CNAME レコード タイプ) を作成すると、ユーザーがデバイスを簡単に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーは Intune サーバー名を入力することなく Intune に接続して登録できるようになります。
+Azure AD Premium の自動登録なしで、ユーザー自身にデバイスを登録させることができます。 ライセンスを割り当てると、ユーザーは、職場のアカウントを個人所有のデバイスに追加するか、会社所有のデバイスを Azure AD に参加させた後に登録を行うことができます。 DNS エイリアス (CNAME レコード タイプ) を作成すると、ユーザーは自分のデバイスを簡単に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーは Intune サーバー名を入力することなく Intune に接続して登録できるようになります。
 
 **手順 1: CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。

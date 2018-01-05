@@ -111,7 +111,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 1. 会社所有デバイスの分布を表示するには **Company** を選択します。
 2. 個人所有デバイスを表示するには **Personal** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
  - Power BI のドキュメントで、Power BI Desktop での[リレーションシップの作成と管理](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)についてさらに学習してください。
  - [Intune データ ウェアハウス モデル](https://docs.microsoft.com/intune/reports-ref-data-model)を確認してください。

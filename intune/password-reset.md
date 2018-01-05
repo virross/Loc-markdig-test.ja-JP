@@ -32,7 +32,7 @@ ms.lasthandoff: 12/19/2017
 3. 今後の参照のために、[パスワードのリセット方法や変更方法](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)を社員や学生に伝えます。
 4. [セルフサービスのパスワード リセットを有効にします](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のトピックについて学習します。
 * [パスワードのベスト プラクティス](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 

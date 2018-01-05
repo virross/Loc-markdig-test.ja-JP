@@ -14,11 +14,11 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a33ba281ed4277f1b1ed0968cb6e959580a89a20
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Android デバイスのオペレーティング システムを更新する必要がある
 

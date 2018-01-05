@@ -64,6 +64,6 @@ ms.lasthandoff: 12/19/2017
 > [!IMPORTANT]
 > Exchange や SharePoint Online などのリソースへのアクセス制御を適用するために、Intune と既存のサードパーティ MDM ソリューションの両方を構成しないでください。 また、同時に複数のソリューションにデバイスを登録しないでください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [情報伝達計画](migration-guide-communication-plan.md)を作成します。

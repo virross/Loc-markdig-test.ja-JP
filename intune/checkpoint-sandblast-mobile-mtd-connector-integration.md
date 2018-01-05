@@ -79,6 +79,6 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 8.  **[Verify\(確認\)]** を選択し、Azure AD セキュリティ グループが正常に検証された後、**[保存]** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Check Point SandBlast Mobile アプリをセットアップする](mtd-apps-ios-app-configuration-policy-add-assign.md)

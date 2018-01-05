@@ -49,5 +49,5 @@ Intune ソフトウェア クライアントによって管理されている PC
 さらに、Intune のサポート事例を開く必要がある場合は、これらのログを Microsoft に送信することも効果的です。
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

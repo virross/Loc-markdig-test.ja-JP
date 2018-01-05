@@ -35,7 +35,7 @@ Microsoft Intune では、このプログラムを通じて購入したアプリ
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS デバイス用のボリューム購入アプリの管理
 iOS アプリの複数のライセンスを購入するには、[Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンの Intune へのアップロードを行います。  その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 開始する前に、Apple から VPP トークンを取得し、これを Intune アカウントにアップロードする必要があります。 さらに、次の点を理解する必要があります。
 
 * Intune は最大 256 VPP トークンの追加をサポートしています。

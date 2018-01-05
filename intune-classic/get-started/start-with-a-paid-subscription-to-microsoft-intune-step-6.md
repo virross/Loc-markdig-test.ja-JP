@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9068e9462226f70150f06cd65e9ba044dc96ac99
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 2d63450736391b5064a7e20ac57588cdc82f9068
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>ポリシーを作成してアプリを発行する
 
@@ -35,7 +35,7 @@ Intune へのアプリの登録を開始する前に、ポリシー設定とア�
 
  デバイス ポリシー設定は、プラットフォームごとに構成され、管理されます。 次のリンクは、それぞれのプラットフォームで使用できる設定の一覧を提供します。
 
-- [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android および Samsung KNOX Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
 - [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
 - [Windows 10 (PC とモバイル)](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
@@ -63,12 +63,12 @@ Intune にアプリを追加した後で、次の 2 つの方法で管理対象�
 これで、アプリが Intune で使用できるようになりました。管理対象デバイスに展開できます。
 - [デバイスにアプリを展開する](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - 以下のボリューム購入アプリを展開します。
-    - [iOS - ボリューム購入プログラム](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [ビジネス向け Microsoft ストア](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS - ボリューム購入プログラム](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [ビジネス向け Microsoft ストア](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     展開用にアプリを構成したら、[アプリを構成](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)できます。
 
->[!div class="step-by-step"]
-
->[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  

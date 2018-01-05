@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 059665094379435381d62a2c45af189bef0289d2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 61bdce15c5f81a3fd0469572feebf171e5847167
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Windows ポリシー設定
 
@@ -52,6 +52,7 @@ Microsoft Intune の **Windows 全般構成ポリシー (Windows 8.1 以降)** �
 |設定の名前|説明|
 |----------------|-----|
 |**モバイル デバイスの暗号化を要求する**<sup>1</sup>|デバイス上のファイルを必ず暗号化するようにします。|
+
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
 
 -   Windows 8.1 が実行されているデバイスで暗号化を適用するには、 [Windows の 2014 年 12 月付け MDM クライアント更新プログラム](http://support.microsoft.com/kb/3013816) を各デバイスにインストールする必要があります。

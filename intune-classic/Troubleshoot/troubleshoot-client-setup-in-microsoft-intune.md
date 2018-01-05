@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7e3b2cff16cd96e714329c82e0dcbc516e765ae9
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 653d0a76e83eb35289114f71413925f1b26bc5d4
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune でのクライアント セットアップのトラブルシューティング
 
@@ -103,6 +103,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 ## <a name="client-installation-error-codes"></a>クライアント インストール エラー コード
 次の表で、クライアント ソフトウェアのインストールが失敗した場合に、 **[アラート]** に表示されるエラー コードについて説明します。 エラー コードごとに、問題を解決する上での推奨事項が記載されています。
 
+
 |エラー コード|問題|推奨される解決策|
 |--------------|--------------------|------------------------|
 |**0x80CF0437**|クライアント コンピューターのクロックが正しい時刻に設定されていません。|クライアント コンピューターのクロックおよびタイム ゾーンが正しく設定されていることを確認してください。|
@@ -125,6 +126,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 |**0xAB2**|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255)」 (Microsoft サポート技術情報 198038: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
 |**0x8004300f**|System Center Configuration Manager クライアントが既にインストールされているため、ソフトウェアをインストールすることはできません。|Configuration Manager クライアントを削除してから、クライアント ソフトウェアをもう一度インストールしてください。|
 |**0x80043010**|Open Mobile Alliance Device Management (OMADM) が既にインストールされているため、このソフトウェアはインストールできません。|OMADM クライアントの登録を解除してから、クライアント ソフトウェアをもう一度インストールしてください。|
+
 インストールの問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って、サポートにお問い合わせください。 このとき、クライアント コンピューターの登録ログ (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log と %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log)、および Windows Update ログ (%*windir*%\windowsupdate.log) を手元に用意してください。
 
 ## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>クライアントのアンインストール時に Endpoint Protection がアンインストールされない場合の対処方法
@@ -136,5 +138,5 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
     ```
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

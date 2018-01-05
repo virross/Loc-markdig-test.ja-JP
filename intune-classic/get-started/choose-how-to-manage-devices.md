@@ -49,7 +49,7 @@ Windows PC を管理するには、2 つの選択肢があります。
 それぞれの方法での管理機能の詳細については、モバイル デバイスの管理に関するページを参照してください (/intune/supported-devices-browserssoft-intune)。
 Intune がサポートしているデバイスと PC については、「[サポートされるモバイル デバイスとコンピューター](/intune/supported-devices-browsers#intune-supported-devices)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [モバイル デバイスの登録方法の選択](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Intune PC クライアント ソフトウェアを使用して Windows PC を管理する](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)

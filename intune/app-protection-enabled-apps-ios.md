@@ -63,7 +63,7 @@ iOS デバイスを使用している場合は、同じデバイスに 2 つ目�
 
 ![ブロック メッセージと、[はい] と [いいえ] オプショを表示しているダイアログ ボックスのスクリーンショット](./media/ios-switch-user.PNG)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でのアプリ保護ポリシーの作成と展開](app-protection-policies.md)

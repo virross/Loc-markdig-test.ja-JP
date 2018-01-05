@@ -59,6 +59,6 @@ Intune での条件付きアクセスの使用方法
 
 -   **アプリベースの条件付きアクセス**
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)

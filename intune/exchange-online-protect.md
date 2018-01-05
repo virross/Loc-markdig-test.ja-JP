@@ -38,7 +38,7 @@ ms.lasthandoff: 12/19/2017
 * Microsoft Outlook または Microsoft SharePoint をダウンロードしてインストールするように社員や学生に伝えます。iOS の場合は Apple App Store を、Android の場合は Google Play Store をご利用ください。 
 * 最新の認証方法を利用しないアプリへのアクセスを禁止する場合、社員や学生にこの制限のことを知らせます。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリベースの条件付きアクセスを利用し、会社データのセキュリティを強化しました。 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 

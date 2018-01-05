@@ -52,7 +52,7 @@ Intune App SDK をアプリに組み込むか、アプリの開発後にラッ�
 
 アプリ構成タスクは、Graph API でも実行することができます。 詳細については、[Graph API のリファレンスの MAM を対象とした構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページを参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ### <a name="managed-devices"></a>管理対象デバイス
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 710f91f72d9cf97acd0ac117b003eeb542449515
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4a24498bb3cad8b30eee88edf7446ddf0c917714
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Intune から Windows デバイスの登録を解除するとどうなりますか。
 

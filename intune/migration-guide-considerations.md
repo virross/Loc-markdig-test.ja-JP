@@ -30,6 +30,6 @@ Apple の Device Enrollment Program (DEP) のデバイス構成は、エンド �
 DEP の使用を続行して Intune でデバイスを管理するには、[Device Enrollment Program で iOS デバイスの登録をセットアップします](device-enrollment-program-enroll-ios.md)。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [フェーズ 2: 移行のキャンペーン](migration-guide-campaign.md)

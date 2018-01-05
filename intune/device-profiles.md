@@ -85,5 +85,5 @@ Windows 情報保護はデータ漏えいの防止に役立ち、それ以外の
 カスタム設定により、Intune に組み込まれていないデバイス設定を割り当てることができます。 たとえば、Android デバイスでは、デバイスを構成する OMA-URI 値を指定できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
 詳細については、[カスタム設定の構成方法](custom-settings-configure.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows Phone 8.1。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 一覧からいずれかの種類のプロファイルを選択して、デバイスの構成を開始します。

@@ -65,6 +65,6 @@ Intune への移行を成功させるには、まず現在のモバイル デバ
 
 -   [Intune の一般的な使用方法](common-scenarios.md)を確認してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [フェーズ 1: モバイル デバイス管理の Intune を準備する](migration-guide-prepare.md)

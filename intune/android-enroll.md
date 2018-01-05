@@ -54,7 +54,7 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 2. **Android for Work のバインディングを構成する**<br>
     Intune 管理者として Azure Portal で **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-   a. **[Intune]** ブレードで、**[デバイスの登録]** > **[Android for Work への登録]** の順に選択し、**[構成]** を選択して Google Play の Android for Work の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
+   」を参照します。 **[Intune]** ブレードで、**[デバイスの登録]** > **[Android for Work への登録]** の順に選択し、**[構成]** を選択して Google Play の Android for Work の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
    ![Android for Work バインディングを構成するためのリンクを示すスクリーンショット](./media/android-work-bind.png)
 
    b. **Google にサインインする**<br>

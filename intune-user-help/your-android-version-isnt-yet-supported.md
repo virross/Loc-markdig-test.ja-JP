@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 528b5b3b36b8d688175747ea50cf717111eb2fc8
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b3617e101893a55414dabf8dade040ffe237c8d0
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>使用している Android デバイスのオペレーティング システムのバージョンがまだサポートされていない
 

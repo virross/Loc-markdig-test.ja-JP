@@ -84,7 +84,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
     ただし、メンバーが親グループから除外された場合は、そのメンバーを子グループに追加することはできません。
 
-- グループ メンバーシップは再帰的です。 たとえば、
+- グループ メンバーシップは再帰的です。 次に例を示します。
 
     * **佐藤** さんは、 **Laptop Users** セキュリティ グループというグループにのみ属するメンバーです。
 
@@ -214,5 +214,5 @@ Android、iOS、Windows などの特定のオペレーティング システム�
 
 ![Intune ポリシー一覧](../media/Intune_planning_policy_view_small.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [グループの作成](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

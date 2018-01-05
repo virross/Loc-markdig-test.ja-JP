@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf5953aa59dca5247eef7d49b8f17b26a745ce69
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fbf71a5c4dac56204886d27daa2be3392ed6356c
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>カスタム ポリシーを使用して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
 
@@ -39,21 +39,21 @@ ms.lasthandoff: 12/19/2017
 3. ポリシーの名前と説明 (オプション) を指定し、**[OMA-URI 設定]** セクションで **[追加]** を選びます。
 4. **[OMA-URI 設定の追加または編集]** ダイアログ ボックスで以下を指定します。デバイスでの実行をブロックするアプリの一覧の場合:
     
-    - **設定の名前。** 「**PreventStartPackages**」と入力します。
-    - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
-    -   **データ型。** ドロップダウン リストで **[文字列]** を選びます。
-    -   **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   - **設定の名前。** 「**PreventStartPackages**」と入力します。
+   - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
+   - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
+   - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
+   - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
-    他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
+     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 
-    - **設定の名前。** 「**AllowInstallPackages**」と入力します。
-    - **設定の説明。** "ユーザーが Google Play からインストールできるアプリの一覧" といったオプションの説明を入力します。
-    - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
-    - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します。
-    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   - **設定の名前。** 「**AllowInstallPackages**」と入力します。
+   - **設定の説明。** "ユーザーが Google Play からインストールできるアプリの一覧" といったオプションの説明を入力します。
+   - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
+   - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します。
+   - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
-4. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
+5. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
 
 >[!TIP]
 > Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。

@@ -46,28 +46,28 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   はい |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| はい |   省略可能 |  [いいえ]| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| [いいえ] |    [いいえ]  | [いいえ]|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows の登録方法**
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ |   ○ |   いいえ | [詳細情報](windows-enroll.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](device-enrollment-manager-enroll.md)|
-|**自動登録** | いいえ |○ |いいえ | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**一括登録** |いいえ |いいえ |いいえ | [詳細情報](./windows-bulk-enroll.md) |
+|**[BYOD](#byod)** | [いいえ] |   はい |   [いいえ] | [詳細情報](windows-enroll.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](device-enrollment-manager-enroll.md)|
+|**自動登録** | [いいえ] |はい |[いいえ] | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**一括登録** |[いいえ] |[いいえ] |[いいえ] | [詳細情報](./windows-bulk-enroll.md) |
 
 **Android の登録方法**
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./android-enroll.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| いいえ | ○ | いいえ| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./android-enroll.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| [いいえ] | はい | [いいえ]| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD

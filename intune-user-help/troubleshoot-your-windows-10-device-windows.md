@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 8724983e268582db80f0e6c70042b25981e7e633
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 デバイスの登録に関するトラブルシューティング
 「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」の手順を完了しても職場または学校の電子メールやファイルにアクセスできない場合は、次のトラブルシューティング手順を試してください。
@@ -37,15 +37,15 @@ ms.lasthandoff: 12/19/2017
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>[職場または学校にアクセスする] が表示される場合のトラブルシューティング手順
 
-1.  上記の手順を実行しても職場または学校の電子メールやファイルにアクセスできない場合は、**[Access work or school (職場または学校へのアクセス)]** に戻ります。
+1. 上記の手順を実行しても職場または学校の電子メールやファイルにアクセスできない場合は、**[Access work or school (職場または学校へのアクセス)]** に戻ります。
 
 2. 以下のいずれかを実行します。
 
-    - 次の画像のような接続が表示される場合は、その接続をタップして、[管理]、[情報]、[切断] の各オプションが表示されることを確認します。 これらのオプションが表示される場合は、登録および接続は完了しています。
+   - 次の画像のような接続が表示される場合は、その接続をタップして、[管理]、[情報]、[切断] の各オプションが表示されることを確認します。 これらのオプションが表示される場合は、登録および接続は完了しています。
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - 上に示した接続情報が表示されない場合、または接続情報は表示されるが一部のオプションが表示されない場合は、**[接続]** をタップし、職場または学校の資格情報でサインインします。 これで接続が完了します。
+   - 上に示した接続情報が表示されない場合、または接続情報は表示されるが一部のオプションが表示されない場合は、**[接続]** をタップし、職場または学校の資格情報でサインインします。 これで接続が完了します。
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>[お使いのアカウント] が表示される場合のトラブルシューティング手順
 

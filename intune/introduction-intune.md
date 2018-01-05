@@ -47,7 +47,7 @@ Intune は Enterprise Mobility + Security (EMS) に含まれ、モバイル デ�
 
 [ここ](./media/intunearchitecture.svg)をクリックすると、Intune アーキテクチャ ダイアグラムが大きな画像で表示されます。
 
-Intune のデバイス/アプリ管理機能と EMS データ保護の利用方法は、[解決しようとしているビジネス上の問題](#common-business-problems-that-intune-helps-solve)によって異なります。 たとえば、
+Intune のデバイス/アプリ管理機能と EMS データ保護の利用方法は、[解決しようとしているビジネス上の問題](#common-business-problems-that-intune-helps-solve)によって異なります。 次に例を示します。
 * 小売店の交代勤務従業員に共有させる一時使用デバイスのプールを作成する場合、デバイス管理をかなり利用することになります。
 * 個人のデバイスで企業データにアクセスすること (BYOD) を社員に許可する場合、アプリ管理とデータ保護に頼ります。  
 * 情報作業者に会社の電話を与える場合、この技術のすべてに依存します。
@@ -111,7 +111,7 @@ Intune がモバイル アプリ セキュリティを提供する方法の 1 �
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 * [Intune の一般的な使用方法](common-scenarios.md)を読む
 * [Intune の 30 日間の評価版](free-trial-sign-up.md)を使用して製品の理解を深める
 * Intune の[技術的要件と機能](supported-devices-browsers.md)を調べる

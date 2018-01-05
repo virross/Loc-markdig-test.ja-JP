@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75fd3f0c79c1137fd2d42a6185995bd323544879
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0cbfe0292b57806a3f91b784b1bbee5d18b2b5e8
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune のネットワーク帯域幅の使用
 
@@ -57,11 +57,13 @@ ms.lasthandoff: 12/19/2017
 
 Intune クライアント用にコンテンツをキャッシュするプロキシ サーバーの一般的な設定を以下に示します。
 
-|設定|推奨される値|説明|
+
+|Setting|推奨される値|説明|
 |-----------|---------------------|-----------|
 |キャッシュ サイズ|5 ～ 30 GB|この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。|
 |キャッシュする個々のファイルのサイズ|950 MB|キャッシュ機能付きサーバーによっては、この設定がないものがあります。|
 |キャッシュするオブジェクトの種類|HTTP<br /><br />HTTPS<br /><br />BITS|Intune パッケージは、HTTP 経由でバックグラウンド インテリジェント転送サービス (BITS) のダウンロードで取得される CAB ファイルです。|
+
 コンテンツをキャッシュするプロキシ サーバーの仕様に関する詳細については、使用するプロキシ サーバー ソリューションのドキュメントを参照してください。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>コンピューターで、バック グラウンド インテリジェント転送サービスを使用する
@@ -157,6 +159,7 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
+
 | ホスト名  | URL (IP アドレス/サブネット) | プロトコル | ポート | デバイス |
 | --- | --- | --- | --- | --- |
 |  管理コンソール  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS と macOS |
@@ -168,3 +171,4 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 | デバイス サービス  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
 | デバイス (インターネット/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
 | デバイス (インターネット/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 または 443 | Apple のみ |
+

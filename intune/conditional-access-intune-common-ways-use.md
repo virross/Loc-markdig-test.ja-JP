@@ -141,7 +141,7 @@ Intune と Azure Active Directory が連携することで、管理対象アプ�
 
 -   Intune を使用したアプリ ベースの条件付きアクセスについて詳しくは、[こちら](app-based-conditional-access-intune.md)をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Azure Active Directory で条件付きアクセスを構成する方法](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 

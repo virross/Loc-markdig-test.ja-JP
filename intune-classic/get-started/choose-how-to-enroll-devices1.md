@@ -14,11 +14,11 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 3a01f495ea5e0b9ca92d8adaf75ebe8db8279570
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fc79727453d2ed918a052e91fee2aa8fa1431ed4
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 12/19/2017
 ## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a>**社員が自分のデバイスを持ち込みますか (BYOD)。それとも、会社が提供しますか (COD)。**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md)
+> [BYOD >](choose-how-to-enroll-devices2.md)
 > [!div class="button"]
-[COD >](choose-how-to-enroll-devices3.md)
+> [COD >](choose-how-to-enroll-devices3.md)
 
 - **ユーザーが所有するデバイス** - "BYOD” (Bring Your Own Device) 登録 – ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。  
 

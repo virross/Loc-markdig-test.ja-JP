@@ -70,7 +70,7 @@ ms.lasthandoff: 12/19/2017
 > [!NOTE] 
 > 手順は、**[制限対象のユーザー グループ]** 一覧からユーザー グループを削除する手順と同じです。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 

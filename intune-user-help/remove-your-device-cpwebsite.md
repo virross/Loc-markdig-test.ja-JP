@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: adfce4c7b62181f5874f44f62f4b820b061538b0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 6c778df96d6f76cc16d9976878d63477975f51bd
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
@@ -28,17 +28,17 @@ ms.lasthandoff: 12/19/2017
 
 デバイスを削除するには:
 
-1.  [ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1. [ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
-  ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
+   ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
 
 2. __[デバイス]__ ページで、削除するデバイスの名前を選択します。
 
     ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  デバイスがポップアップ ウィンドウに開きます。 **[削除]** ボタンをタップします。
+3. デバイスがポップアップ ウィンドウに開きます。 **[削除]** ボタンをタップします。
 
-    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+   ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
 
 4. ポータル サイトからデバイスを削除するには、警告メッセージを確認し、**[削除]** をタップします。
 

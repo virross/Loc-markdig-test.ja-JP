@@ -15,11 +15,11 @@ ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92bff99fb05b4c5693f0533d9d8c520b68cf8520
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 44141afc53b422d21f73035de166af4739129ceb
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune での macOS デバイス向けの Wi-Fi 設定
 
@@ -77,3 +77,4 @@ ms.lasthandoff: 12/19/2017
 |--------------|-------------|----------|
 |**クライアント認証に使用するクライアント証明書 (ID 証明書)**|接続の認証に使用される SCEP または PKCS 証明書プロファイルを選択します。|EAP の種類が **EAP-TLS**|
 |**認証方法**|次の中から、接続の認証方法を選択します。<br>- **証明書**: ID 証明書であるクライアント証明書がサーバーに提供した、SCEP または PKCS を選択します。<br><br>- **ユーザー名とパスワード**: 認証用の別の方法を指定します。 <br><br>**[ユーザー名とパスワード]** を選択した場合は、次を構成します。<br><br>-  **EAP 以外の方法 (内部 ID)**: 次の中から接続を認証する方法を選択します。<br>- **なし**<br>- **暗号化されていないパスワード (PAP)**<br>- **チャレンジ ハンドシェイク認証プロトコル (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP バージョン 2 (MS-CHAP v2)**<br>使用できるオプションは、選択した EAP の種類によって異なります。<br><br>**および**<br><br>- **[ID プライバシー (外部 ID)]** - EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。|EAP の種類が **EAP-TTLS** または **PEAP**|
+

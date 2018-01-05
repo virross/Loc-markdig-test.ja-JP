@@ -30,7 +30,7 @@ Microsoft Intune では、管理するデバイスを保護するための機能
 ## <a name="general-ways-to-protect-all-devices"></a>すべてのデバイスを保護する一般的な方法
 
 ### <a name="device-configuration"></a>デバイス構成
-Intune [構成ポリシー](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)は、さまざまな設定と機能を制御することでデバイスを保護および構成する際に役立ちます。 たとえば、
+Intune [構成ポリシー](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)は、さまざまな設定と機能を制御することでデバイスを保護および構成する際に役立ちます。 次に例を示します。
 - カメラや Bluetooth などのデバイス上のハードウェア機能の使用を制限できます。
 - 準拠アプリと非準拠アプリを構成できます。 非準拠アプリがインストールされている場合に警告します (一部のプラットフォームでは、インストールを実際にブロックできます)。
 

@@ -58,6 +58,6 @@ Intune を正常に展開するには、まず、適切に計画し、設計す�
 
 -   Intune とその機能について、既によく理解している。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 最初のセクションの「[展開の目標、目的、課題を決定する](planning-guide-deployment-goals.md)」に取りかかりましょう。

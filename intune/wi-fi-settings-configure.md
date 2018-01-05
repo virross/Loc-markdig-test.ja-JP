@@ -46,7 +46,7 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi 設定を含むデバイス プロファイルの作成
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。

@@ -65,7 +65,7 @@ ms.lasthandoff: 12/19/2017
 
 -   複数の準拠ポリシーを展開した場合、Intune ではその中で最も安全なポリシーが使用されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 条件付きアクセス ポリシーと共にコンプライアンス ポリシーを使用して、組織内のサービスへのアクセスを制御する方法については、「[電子メールと O365 サービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)」を参照してください。
 
 

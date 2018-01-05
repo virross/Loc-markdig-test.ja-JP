@@ -86,6 +86,6 @@ ms.lasthandoff: 12/19/2017
    > [!Note]  
    > この設定は、Android O 以降のデバイスでのみ機能します。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 「[Microsoft Intune でデバイスの制限設定を構成する方法](device-restrictions-configure.md)」のトピックにある情報を使って、プロファイルを保存し、ユーザーとデバイスに割り当てます。

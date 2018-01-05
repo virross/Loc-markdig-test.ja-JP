@@ -44,7 +44,7 @@ Microsoft Intune は Azure Portal に含まれるようになり、これまで�
 - Azure Active Directory (AD) グループによってすべての Azure アプリケーション間での互換性を提供
 - 最新の Web ブラウザーの大部分に対応
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 Azure Portal で Intune を使用するには、Intune の管理者およびテナント アカウントが必要です。 まだお持ちでない場合は、[アカウントにサインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)してください。
 

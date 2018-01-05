@@ -47,6 +47,6 @@ ms.lasthandoff: 12/19/2017
 
 ![Skycure 統合セットアップ ファイル](./media/skycure-ios-app-2.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)

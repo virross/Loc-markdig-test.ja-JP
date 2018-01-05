@@ -14,11 +14,11 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 776fffed98a7fb8c9d38547f8782a2e25f562eff
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f8cddd66d1defaf7f6840d4e5642bf550cfd3e93
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC のリモート アシスタンス要求と提供
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/19/2017
 Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用し、Intune ソフトウェア クライアントを実行するユーザーにリモート アシスタンス ヘルプを与えます。 ユーザーが Microsoft Intune Center のヘルプを要求すると、通知が届きます。要求を承諾し、アシスタンスを提供できます。 この機能は Intune の既存の Windows リモート アシスタンス機能に換わるものです。
 
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 リモート アシスタンス要求の確立または応答を開始する前に、次の前提条件が満たされていることを確認します。
 
@@ -59,8 +59,8 @@ Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウ�
 
 ## <a name="respond-to-a-remote-assistance-request"></a>リモート アシスタンス要求に応答する
 
-1. ユーザーがリモート アシスタンス要求を送信すると、**[アラート]** ワークスペースの **[管理]**  >  **[リモート アシスタンス]** に要求が表示されます。 たとえば、
-> ![リモート アシスタンス要求のスクリーンショット](./media/team-viewer.png)
+1. ユーザーがリモート アシスタンス要求を送信すると、**[アラート]** ワークスペースの **[管理]**  >  **[リモート アシスタンス]** に要求が表示されます。 次に例を示します。
+   > ![リモート アシスタンス要求のスクリーンショット](./media/team-viewer.png)
 
 <br>未応答のまま 4 時間以上経過すると、要求は削除されます。
 2. 要求を承諾するには、**[要求を承認してリモート アシスタンスを開始する]** を選択します。

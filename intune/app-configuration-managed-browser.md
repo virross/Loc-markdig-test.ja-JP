@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 8794964a517f36970bf631f4f3b22e4a9fe98f9d
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -63,7 +63,7 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Managed Browser アプリの構成を作成する
 
-1.  Azure ポータルにサインインします。
+1.  Azure Portal にサインインします。
 2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
@@ -120,6 +120,7 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 この設定では、ユーザーが Managed Browser を開始するか、新しいタブを作成したときに表示するホームページを構成することができます。Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
+
 |||
 |-|-|
 |キー|値|
@@ -136,6 +137,7 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
+
 |||
 |-|-|
 |キー|値|
@@ -144,6 +146,7 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser で許可する URL とブロックする URL を指定する方法
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+
 
 |||
 |-|-|
@@ -157,19 +160,19 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>許可される URL とブロックされる URL の形式
 許可リストとブロック リストで URL を指定するときに使用できる形式とワイルドカードについて説明します。
 
--   ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
+- ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
 
--   リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
+- リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
 
--   アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。
+- アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。
 
-    -   http の場合はポート 80
+  -   http の場合はポート 80
 
-    -   https の場合はポート 443
+  -   https の場合はポート 443
 
-    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
+  ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
 
--   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
+- URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
 |[URL]|説明|［一致する］|［次の値に一致しない］|
 |-------|---------------|-----------|------------------|
@@ -182,27 +185,27 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 |https://www.contoso.com|セキュリティで保護された単一のページと一致する|https://www.contoso.com|http://www.contoso.com|
 |http://www.contoso.com/images/&#42;|1 つのフォルダーおよびすべてのサブフォルダーと一致する|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
--   指定することができない入力例を次に示します。
+- 指定することができない入力例を次に示します。
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP アドレス
+  - IP アドレス
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS で Managed Browser を使用し、管理対象アプリ ログにアクセスする方法
 

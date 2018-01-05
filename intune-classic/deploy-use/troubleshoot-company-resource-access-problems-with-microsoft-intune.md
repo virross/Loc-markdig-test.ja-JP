@@ -372,5 +372,5 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016345912|0x87D100C8|SyncML コマンドが正常に完了しました。|
 |-2016346011|0x87D10065|指定された SyncML コマンドは実行されていますが、まだ完了していません。|
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
