@@ -14,11 +14,11 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 26926a1591969ae97e62991faf207899de1c1861
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: e5bcf1b8066fcb9e2a6d16d125229f03ee13bf0a
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 01/03/2018
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**企業所有の専用デバイスはどのような方法で管理しますか。**
 
+  > [!div class="button"]
+[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
+[iOS のセットアップ アシスタント >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
 > [!div class="button"]
-> [iOS のセットアップ アシスタント >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-> [!div class="button"]
-> [IMEI によるタグ付け >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[IMEI によるタグ付け >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   次のようにして、会社が所有するデバイスを専用ユーザーに登録できます。
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 01/03/2018
   - **IMEI 番号でのタグ付け** - 会社所有デバイスの IMEI (携帯機器の国際的な識別番号) をインポートすることで、Intune でデバイスに会社所有のタグを付けることができます。 これは、専用の ("シングル ユーザー" の) Windows および Android デバイスを会社所有として識別する唯一の方法です。 Apple のデバイス登録プログラムまたは Apple Configurator に登録されない iOS デバイスを、IMEI 番号でタグ付けすることもできます。 デバイスを事前宣言することで "会社" としてタグ付けした後で、ユーザーに配布できます。 その後、ユーザーがポータル サイトをインストールすることで自分のデバイスを専用デバイスとして登録し、電子メール、アプリ、データなど、会社のリソースにアクセスできます。
 
 > [!div class="button"]
-> [< 戻る](choose-how-to-enroll-devices3.md)
+[< 戻る](choose-how-to-enroll-devices3.md)

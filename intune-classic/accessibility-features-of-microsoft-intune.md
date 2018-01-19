@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8b4cc133ecb1af8268ccda8240ce8f9c0c955a5
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 58a9ad9a50ea9a88a6d2bbc98d0475038b340281
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune のユーザー補助機能
 Microsoft Windows のアクセシビリティ機能と各種ツールに加え、Microsoft Intune には、障碍のある方に快適にご利用いただけるように、次のような機能が組み込まれています。ショートカット キーの使用
@@ -42,6 +42,5 @@ Microsoft Windows のアクセシビリティ機能と各種ツールに加え�
 |メニューのリストを折りたたむ|Alt キー + 上向き矢印|
 |次のアプリケーション グループに移動する|上向き矢印|
 |選択されたデバイスのアクションを表示する|右向きの矢印|
-
 > [!NOTE]
 > Microsoft Intune ポータルは、Internet Explorer の標準ショートカット キーで操作できます。

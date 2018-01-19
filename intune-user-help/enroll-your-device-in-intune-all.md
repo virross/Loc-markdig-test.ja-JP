@@ -14,11 +14,11 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 05912e9af9f7025ad181a6233ac31985d4fc06e4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 6d6b1addbc03664e5eeaff34eef3042503a1470e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-device-in-intune"></a>Intune にデバイスを登録する
 

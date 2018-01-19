@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c0fd638fe486c3ff253dd239012ce1d99a9eca82
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 4d8bf1304d0a7b1f007c85befa3565b519719dbd
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>通信費管理サービスに Android デバイスを登録する
 
@@ -38,11 +38,11 @@ ms.lasthandoff: 01/03/2018
 
 1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
-   ![Datalert アプリの [設定] 画面の画像。Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面の上半分でデバイスを登録するための [電話番号] フィールドが提供され、画面の下半分で "Microsoft アカウントでの登録" が提供されます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+  ![Datalert アプリの [設定] 画面の画像。Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面の上半分でデバイスを登録するための [電話番号] フィールドが提供され、画面の下半分で "Microsoft アカウントでの登録" が提供されます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. 利用可能なアカウントから職場または学校のアカウントを選択します。 自分のアカウントが一覧にない場合は、**[アカウントの追加]** ボタンを使用してアカウントにサインインできます。
 
-   ![サンプル アカウントと [アカウントの追加] ボタンを示す "アカウントの選択" 画面のスクリーンショット。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+  ![サンプル アカウントと [アカウントの追加] ボタンを示す "アカウントの選択" 画面のスクリーンショット。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. しばらくの間 Datalert セットアップが実行され、完了します。 完了したら __[完了]__ をタップします。
 
@@ -50,15 +50,15 @@ ms.lasthandoff: 01/03/2018
 
 1. デバイスの電話番号を提供します。
 
-   ![Datalert アプリが電話番号を要求している画面のスクリーンショット。](./media/and-enroll-13-tem-datalert-phone-number.png)
+  ![Datalert アプリが電話番号を要求している画面のスクリーンショット。](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. 次に SMS メッセージで確認コードを受信します。 コードを入力して __[OK]__ をタップします。
 
-   ![Datalert アプリが SMS 確認コードを要求している画面のスクリーンショット。](./media/and-enroll-14-tem-datalert-sms.png)
+  ![Datalert アプリが SMS 確認コードを要求している画面のスクリーンショット。](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. 確認コードを入力すると、Datalert のセットアップが完了します。 __[完了]__ をタップすると、Datalert アプリからデータを監視できるようになります。
 
-   ![Datalert アプリが当日分のデータ使用状況を監視している画面のスクリーンショット。](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+  ![Datalert アプリが当日分のデータ使用状況を監視している画面のスクリーンショット。](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 

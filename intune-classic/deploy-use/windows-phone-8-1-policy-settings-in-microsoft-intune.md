@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 257ddad44af6a6f83303c486ec5bdb3a3f01a690
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 059e3cb7034c64e61ad3b7a23877ad6813812da3
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Windows Phone 8.1 ポリシー設定
 
@@ -52,7 +52,7 @@ Microsoft Intune の **Windows Phone 全般構成ポリシー (Windows Phone 8.1
 |**単純なパスワードを許可する**|"0000" や "1234" などの単純なパスワードを使用できることを指定します。|
 |**デバイスをワイプするまでの連続サインイン エラーの数**|間違ったパスワードをユーザーが何回入力すると、そのデバイスをワイプするかを指定します。|
 |**画面がオフになるまでの非アクティブな時間 (分)**|デバイスがどれだけの時間アイドル状態であると、画面が自動的にロックされるかを指定します。|
-|**パスワードの有効期限 (日)**|デバイスのパスワードの変更が必要になるまでの日数を指定します。|はい|はい|
+|**パスワードの有効期限 (日)**|デバイスのパスワードの変更が必要になるまでの日数を指定します。|○|Yes|
 |**パスワードの履歴を記憶する**|ユーザーが同じパスワードを再度使用できないよう、過去に使用されたパスワードを記憶するかどうかを指定します。|
 |**パスワードの履歴を保存する** - **前のパスワードを再利用できないようにする**|過去に使用されたパスワードの記憶件数を指定します。|
 
@@ -127,7 +127,6 @@ Microsoft Intune の **Windows Phone 全般構成ポリシー (Windows Phone 8.1
 |**アプリをインポートする**|コンマ区切り値ファイルで指定したアプリの一覧をインポートします。 ファイルの形式、アプリケーション名、発行者、およびアプリの URL を使用します。|
 |**編集**|選択したアプリの名前、発行者、および URL を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
-
 > [!IMPORTANT]
 > Windows Phone 8.1 のデバイス向けに許可されているアプリの一覧を指定する場合、この一覧にポータル サイトのアプリを追加する必要があります。追加しない場合はブロックされます。
 

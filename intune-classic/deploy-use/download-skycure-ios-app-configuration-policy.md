@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 321ba7500605c66588cf9bacf7041934647fd6a0
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: f6224d35dfa85cba89083d6a12f5490b994e558b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Skycure iOS アプリ構成ポリシーをダウンロードする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="before-you-begin"></a>始める前に
+##<a name="before-you-begin"></a>始める前に
 
 次の手順を実行するには、Skycure 管理コンソールにログインする必要があります。
 
@@ -49,6 +49,6 @@ ms.lasthandoff: 01/03/2018
 
 ![Skycure 統合セットアップ ファイル](../media/mtp/skycure-ios-app-2.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーの追加](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)

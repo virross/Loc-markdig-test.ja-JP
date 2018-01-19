@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2051491da49d0293279543d0d2464f642a25ade9
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 2f4dda4b4972b2a715ce956c0212a8ff06dc9c0f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して管理する
 
@@ -53,9 +53,9 @@ VPN、WiFi、およびその他のリソースの認証には、各デバイス�
 2. コマンド プロンプトを管理者として開きます。
 3. あとでアクセスできる場所にルート CA 証明書をエクスポートします。
 
-   次に例を示します。
+   たとえば、
 
-4. ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
+4.  ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
 
    `certutil -ca.cert certnew.cer`
 
@@ -92,7 +92,7 @@ VPN、WiFi、およびその他のリソースの認証には、各デバイス�
     * 上記の手順で作成したテンプレートを選択して、**[OK]** をクリックします。
 15. Intune に登録されたデバイスとユーザーに代わって証明書を管理するサーバーの場合、次の手順を実行します。
 
-    」を参照します。 証明機関を右クリックして、**[プロパティ]** を選択します。
+    a. 証明機関を右クリックして、**[プロパティ]** を選択します。
 
     b. [セキュリティ] タブで、Microsoft Intune Certificate Connector を実行するサーバーのコンピューター アカウントを追加します。
       * このコンピューター アカウントに、**証明書の発行と管理**と**証明書の要求**のアクセス許可を付与します。

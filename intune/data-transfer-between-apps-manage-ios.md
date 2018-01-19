@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbc1ae638b4e18d3b8bf0614da4016e5be1f2cf8
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 961f59dbadfb4ddd5c087497f787d6ee30c46a87
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS アプリ間のデータ転送を管理する方法
 ## <a name="manage-ios-apps"></a>iOS アプリを管理する
@@ -63,9 +63,9 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 2. [アプリケーションの構成] セクションで、次の設定を入力します。
 
-   **キー** = IntuneMAMUPN、**値** = <username@company.com>
+  **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
-   キー/値ペアの正確な構文は、サード パーティ MDM プロバイダーによって異なります。 次の表は、サードパーティ MDM プロバイダーの例と、キー/値ペアに入力する必要のある正確な値を示します。
+  キー/値ペアの正確な構文は、サード パーティ MDM プロバイダーによって異なります。 次の表は、サードパーティ MDM プロバイダーの例と、キー/値ペアに入力する必要のある正確な値を示します。
 
 |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
 | ------- | ---- | ---- | ---- |

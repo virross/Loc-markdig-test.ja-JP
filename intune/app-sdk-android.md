@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53107b7a900a5003de985cd6f43ebb86603ffb89
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -278,6 +278,7 @@ boolean diagnosticIsFileEncryptionInUse();
 String toString();
 
 }
+
 ```
 
 > [!NOTE]
@@ -398,6 +399,7 @@ public interface MAMNotificationReceiver {
      */
     boolean onReceive(MAMNotification notification);
 }
+
 ```
 
 ### <a name="types-of-notifications"></a>通知の種類
@@ -524,6 +526,7 @@ APP-WE 統合を実装するには、アプリが MAM SDK にユーザー アカ
 MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 
 // make use of mgr
+
 ```
 
 返された `MAMEnrollmentManager` インスタンスは、null ではないことが保証されます。 API メソッドは、**認証**と**アカウント登録**という 2 つのカテゴリに分類されます。
@@ -651,6 +654,7 @@ Result getRegisteredAccountStatus(String upn);
 public interface MAMEnrollmentNotification extends MAMUserNotification {
     MAMEnrollmentManager.Result getEnrollmentResult();
 }
+
 ```
 
 `getEnrollmentResult()` メソッドは、登録要求の結果を返します。  `MAMEnrollmentNotification` は、`MAMUserNotification` を拡張するので、登録が試行されたユーザーの ID も利用できます。 アプリは、これらの通知を受信するために `MAMNotificationReceiver` インターフェイスを実装する必要があります。詳細については、「[SDK からの通知の登録](#Register-for-notifications-from-the-SDK)」セクションを参照してください。
@@ -673,7 +677,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
 1. アプリで専用のカスタム BackupAgent を使用**しない**場合、既定の MAMBackupAgent を使用して、Intune ポリシー準拠の自動完全バックアップを可能にすることができます。 これを行う場合は、このバックアップ エージェントには適用されない `android:fullBackupOnly` マニフェスト属性を無視することができます。 アプリのマニフェストに次を配置します。
 
     ```xml
-   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
@@ -824,6 +828,7 @@ ID は文字列として簡単に定義されることに注意してくださ�
   public static AppPolicy getPolicyForIdentity(final String identity);
 
   public static boolean getIsIdentityManaged(final String identity);
+
   ```
 
 >[!NOTE]
@@ -919,9 +924,9 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
 `MAMService.onMAMBind` から返される Binder によるものを除く、すべての暗黙的な ID 変更に対してメソッド `onMAMIdentitySwitchRequired` が呼び出されます。 `onMAMIdentitySwitchRequired` の既定の実装は次のメソッドを直ちに呼び出します。
 
-* 理由が RESUME_CANCELLED の場合は `reportIdentitySwitchResult(FAILURE)`。
+*  理由が RESUME_CANCELLED の場合は `reportIdentitySwitchResult(FAILURE)`。
 
-* 他のすべての場合は `reportIdentitySwitchResult(SUCCESS)`。
+*  他のすべての場合は `reportIdentitySwitchResult(SUCCESS)`。
 
   ほとんどのアプリでは別の方法で ID 切り替えをブロックしたり、遅延させたりする必要はありませんが、アプリで必要な場合は次の点を考慮する必要があります。
 
@@ -942,7 +947,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 UI スレッドに対する操作は、バック グラウンド タスクを別のスレッドにディスパッチするのが一般的です。 マルチ ID アプリでは、このようなバック グラウンド タスクが適切な ID で動作していることを確認する必要があります。多くの場合は、バック グラウンド タスクをディスパッチしたアクティビティで使用される ID と同じものになります。 MAM SDK では、ID を保持するのに便利な機能として `MAMAsyncTask` と `MAMIdentityExecutors` を提供しています。
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` の上書きを `doInBackgroundMAM` に、`onPreExecute` の上書きを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
+`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` の上書きを `doInBackgroundMAM` に、`onPreExecute` の上書きを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 たとえば、
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -951,7 +956,7 @@ UI スレッドに対する操作は、バック グラウンド タスクを別
     protected Object doInBackgroundMAM(final Object[] params) {
         // Do operations.
     }
-
+    
     @Override
     protected void onPreExecuteMAM() {
         // Do setup.
@@ -985,7 +990,7 @@ UI スレッドに対する操作は、バック グラウンド タスクを別
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
-
+        
         /**
         * Protect a file obtained from a content provider. This is intended to be used for
         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
@@ -1027,6 +1032,7 @@ UI スレッドに対する操作は、バック グラウンド タスクを別
     public interface MAMFileProtectionInfo {
         String getIdentity();
     }
+
   ```
 #### <a name="app-responsibility"></a>アプリの責任
 MAM では、読み取られているファイルと `Activity` に表示されているデータの関係を自動的に推測することはできません。 アプリは、企業データを表示する前に、UI ID を適切に設定する*必要があります*。 これには、ファイルから読み取られたデータが含まれます。 ファイルがアプリの外部 (`ContentProvider` または公開されている書き込み可能な場所のいずれか) からのものである場合、アプリはファイルから読み取った情報を表示する前に、(`MAMFileProtectionManager.getProtectionInfo` を使用して) ファイル ID の判断を試みる*必要があります*。 `getProtectionInfo` が null 以外 (空ではない ID) をレポートする場合は、UI ID を (`MAMActivity.switchMAMIdentity` または `MAMPolicyManager.setUIPolicyIdentity` を使用して) この ID に一致するように設定する*必要があります*。 ID の切り替えが失敗した場合、ファイルのデータは表示*できません*。
@@ -1151,6 +1157,7 @@ public final class MAMDataProtectionManager {
      */
     public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
+
 ```
 
 ### <a name="content-providers"></a>コンテンツ プロバイダー
@@ -1332,6 +1339,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
         name="logo_image"
         resource="@drawable/app_logo"/>
 </styleOverrides>
+
 ```
 
 アプリ内に既に存在するリソースを再利用する必要があります。 たとえば、colors.xml ファイルで緑の色を定義し、ここで参照する必要があります。 16 進カラー コード "#0000ff" を使用することはできません。 アプリのロゴの最大サイズは、110 dip (dp) です。 小さなロゴの画像を使用することができますが、最大サイズに準拠すると、最適な結果が得られます。 110 dip の制限を超えると、画像は縮小され、ぼやけた画像になる可能性があります。
@@ -1369,7 +1377,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
     ```
 
     この 2 番目のケースでは、複数の ID のアプリは、スレッド ID を適切に設定する (または、明示的に ID を `getPolicy` 呼び出しに渡す) 必要があります。
-
+    
 ### <a name="exported-services"></a>エクスポートされたサービス
 
  Intune アプリ SDK に含まれる AndroidManifest.xml ファイルには **MAMNotificationReceiverService** が含まれます。これは、ポータル サイト アプリから対応のアプリに通知を送信できるようにする、エクスポートされたサービスである必要があります。 このサービスでは、ポータル サイト アプリのみが通知の送信を許可されるように、呼び出し元を確認します。

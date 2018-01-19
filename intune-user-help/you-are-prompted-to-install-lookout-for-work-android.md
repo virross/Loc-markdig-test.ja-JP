@@ -14,11 +14,11 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c2828007b074fef05766e0e0a5617a34cdb821b8
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: c4e0eb3832114c83539025af9d7afebe38e68d81
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work をインストールする
 
@@ -28,47 +28,47 @@ ms.lasthandoff: 01/03/2018
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
+1.  画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
-   ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
+  ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
 
-2. Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、**[同意する]** をタップして Lookout for Work によるデバイスへのアクセスを許可します。
+2.  Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、**[同意する]** をタップして Lookout for Work によるデバイスへのアクセスを許可します。
 
-   ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
+  ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 
 3. Lookout for Work を開いて **[有効化する]** をタップします
 
-   ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
+  ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
 
 4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
-   ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-azure-android.png)
+  ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-azure-android.png)
 
 5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから **[アカウントの追加]** をタップします。
 
-   ![職場または学校のアカウントを選択して [アカウントの追加] をタップします](./media/lookout-pick-account-android.png)
+  ![職場または学校のアカウントを選択して [アカウントの追加] をタップします](./media/lookout-pick-account-android.png)
 
 6. **[同意する]** をタップして Lookout for Work による自分のアカウントでのサインインと自分のプロフィールの読み取りを許可します。 Lookout for Work が Lookout セキュリティ クラウドに接続していることを示す画面が表示されます。
 
-   ![[同意する] をタップして Lookout for Work による自分のプロフィールの読み取りを許可します](./media/lookout-needs-permission-to-view-profile-android.png)
+  ![[同意する] をタップして Lookout for Work による自分のプロフィールの読み取りを許可します](./media/lookout-needs-permission-to-view-profile-android.png)
 
 7. Lookout がこのデバイスをどのように保護するかを確認してから **[OK]** をタップします。
 
-   ![Lookout for Work がデバイスをどのように保護するかを確認します](./media/lookout-how-it-protects-your-device-android.png)
+  ![Lookout for Work がデバイスをどのように保護するかを確認します](./media/lookout-how-it-protects-your-device-android.png)
 
-   次に示す画面が表示されたら、Lookout のセットアップが完了し、接続した状態になっています。
+  次に示す画面が表示されたら、Lookout のセットアップが完了し、接続した状態になっています。
 
-   ![Lookout for Work に接続している状態になりました](./media/lookout-you-are-now-connected-android.png)
+  ![Lookout for Work に接続している状態になりました](./media/lookout-you-are-now-connected-android.png)
 
-   Lookout for Work がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。 脅威が見つからなかった場合は、次に示す画面が表示されます。
+  Lookout for Work がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。 脅威が見つからなかった場合は、次に示す画面が表示されます。
 
-   ![セキュリティ上の脅威はありませんでした](./media/lookout-scan-no-threats-found-android.png)
+  ![セキュリティ上の脅威はありませんでした](./media/lookout-scan-no-threats-found-android.png)
 
-   ポータル サイトの [デバイスの詳細] 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
+  ポータル サイトの [デバイスの詳細] 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
 
     ![このデバイスはポリシーに準拠している状態になりました](./media/mtd-device-now-compliant-android.png)
 
-   Lookout for Work がこのデバイスでセキュリティ上の脅威を検出した場合は、問題を解決する手順が表示されます。
+  Lookout for Work がこのデバイスでセキュリティ上の脅威を検出した場合は、問題を解決する手順が表示されます。
 
 ## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 

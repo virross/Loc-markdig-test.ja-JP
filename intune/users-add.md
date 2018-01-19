@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3fbc3a79186a8e77a95a45aed9e23767b09d89fc
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 4efc8be824acc3db869529d39617f376327b3193
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理権限を付与する
 
@@ -36,16 +36,16 @@ ms.lasthandoff: 01/03/2018
 2. Office 365 メニューで、**[管理者]** を選択します。
 3. 管理センターで、**[ユーザーの追加]** を選択します。
 
-   ![Office 365 管理のスクリーンショット](media/office-add-user.png)
+  ![Office 365 管理のスクリーンショット](media/office-add-user.png)
 
 4. 次のユーザー詳細を指定します。
-   - **名**
-   - **姓**
-   - **表示名**
-   - **ユーザー名** - Azure Active Directory に格納されている、サービスへのアクセスに使われるユニバーサル プリンシパル名 (UPN)
-   - **場所**
-   - **連絡先の情報** (任意)
-   - **パスワード** - 自動生成または指定
+  - **名**
+  - **姓**
+  - **表示名**
+  - **ユーザー名** - Azure Active Directory に格納されている、サービスへのアクセスに使われるユニバーサル プリンシパル名 (UPN)
+  - **場所**
+  - **連絡先の情報** (任意)
+  - **パスワード** - 自動生成または指定
 
      ![Office 365 管理のスクリーンショット](media/office-add-user-details.png)
 
@@ -56,16 +56,16 @@ ms.lasthandoff: 01/03/2018
 1. [Azure Portal](https://portal.azure.com) にサインインし、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
 2. **[ユーザー]** を選択します。
 3. 管理センターで、**[新しいユーザー]** を選びます。
-   ![Office 365 管理のスクリーンショット](media/intune-add-user.png)
+  ![Office 365 管理のスクリーンショット](media/intune-add-user.png)
 4. 次のユーザー詳細を指定します。
-   - **名前**
-   - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![Office 365 管理のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
+  - **名前**
+  - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![Office 365 管理のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
 5. 必要に応じて、次のユーザー プロパティを指定できます。
-   - **プロファイル** - **役職**や**部署**などの仕事情報
-   -  **グループ** - ユーザーに追加するグループを選択します
-   - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
+  - **プロファイル** - **役職**や**部署**などの仕事情報
+  -  **グループ** - ユーザーに追加するグループを選択します
+  - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
 
-   **[作成]** を選択し、新しいユーザーを Intune に追加します。
+  **[作成]** を選択し、新しいユーザーを Intune に追加します。
 6. **[プロファイル]** を選択し、新しいユーザーの **[利用場所]** を選択します。 新しいユーザーに Intune ライセンスを割り当てるには利用場所が必要です。 **[保存]** を選択して続行します。
     ![Office 365 管理のスクリーンショット](media/intune-add-user-loc.png)
 7. **[ライセンス]** を選択し、**[割り当て]** を選択してこのユーザーの Intune ライセンスを割り当てます。 デバイスを登録したり、会社のリソースにアクセスしたりするには、Intune ライセンスが必要です。 **[製品]** を選択し、ライセンスの種類を選択し、**[選択]** を選択し、**[割り当て]** を選択します。

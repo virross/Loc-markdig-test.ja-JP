@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf37c6929040b12592776a9f40f63223ad2ef101
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 2d494dd0270cddac8ec449689357616c3ac7c48b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -49,8 +49,8 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 
 |**アプリ ラッピング ツール** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**Android** |はい|はい|
-|**Android**| [いいえ] |はい|
+|**iOS** |Yes|Yes|
+|**Android**| いいえ |Yes|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
@@ -69,7 +69,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**Android**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
+|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 |**Android**| はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 
 ## <a name="feature-comparison"></a>機能の比較
@@ -102,8 +102,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |対象となるアプリケーションの構成 |○||
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b9a71006bb78ee58db5d55deb59e10bb7280309e
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 5f2717a48943c28c8e3a56d50f71d43df456db80
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Intune での Lookout デバイス コンプライアンス ポリシーの作成
 
@@ -36,13 +36,13 @@ Lookout Mobile Threat Defense を含むコンプライアンス ポリシーに�
 Lookout Mobile Threat Defense をセットアップするときに、[Lookout コンソール](https://aad.lookout.com)で、さまざまな脅威を高、中、低として分類するポリシーを作成しました。 Intune のコンプライアンス ポリシーでは、許容される最大脅威レベルを設定します。
 
 1. [Intune 管理者コンソール](https://manage.microsoft.com)で、**[コンプライアンス ポリシー]** ページに移動します。 既存のコンプライアンス ポリシーを使用することも、新たに作成することもできます。 **[デバイスのヘルス]** に移動して、**[デバイス脅威保護]** を有効にします。
-   ![デバイス脅威防御ルールの設定を示すスクリーンショット ](../media/mtp/mtp-compliance-policy-rule.png)
+  ![デバイス脅威防御ルールの設定を示すスクリーンショット ](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. **[許容される驚異の最大レベル]** を選択します。
-   * **[なし (セキュリティ保護)]**: これはセキュリティ上最も安全です。  デバイスにいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。  いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。  
-   * **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠しています。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
-   * **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
-   * **[High]** (高): 最も安全性の低い状態です。 この場合、すべての脅威レベルが許可され、レポート目的のみで Lookout Mobile Threat Protection が使用されます。
+  * **[なし (セキュリティ保護)]**: これはセキュリティ上最も安全です。  デバイスにいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。  いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。  
+  * **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠しています。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
+  * **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
+  * **[High]** (高): 最も安全性の低い状態です。 この場合、すべての脅威レベルが許可され、レポート目的のみで Lookout Mobile Threat Protection が使用されます。
 
 ![デバイス脅威防御ルール設定の脅威レベル オプションを示すスクリーンショット](../media/mtp/mtp-compliance-policy-setting.png)
 
@@ -53,7 +53,7 @@ Office 365 またはその他のサービスに対する条件付きアクセス
 
 ![デバイスのコンプライアンス状態が表示されている Intune 管理者コンソールのデバイス ページのスクリーンショット](../media/mtp/mtp-device-status-intune-console.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 * 条件付きアクセス ポリシーを作成します
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b80d52cec4be8b57dee88f608ad9ffd31cedbeda
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 2cee93afcae8e68482224cbd18ab213b3b19aff0
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 01/03/2018
 
 その他のプラットフォームに関する情報を探している場合は、次のいずれかを選択します。
 > [!div class="op_single_selector"]
-> - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-> - [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
-> - [作業用 Android デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [作業用 Android デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone デバイス向けのコンプライアンス ポリシー設定
 このセクションに記載されている設定は、Windows Phone 8.1 以降でサポートされます。
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/03/2018
   > Windows デバイスでは、デバイス正常性構成証明書の一部としてインストールされた、サードパーティ製の **Early Launch Anti Malware** (ELAM) ソフトウェアはサポートされません。
 
   HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。
-  ###  <a name="device-property-settings"></a>デバイスのプロパティの設定
+###  <a name="device-property-settings"></a>デバイスのプロパティの設定
 - **必要な最小 OS バージョン**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。
     アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
@@ -153,4 +153,4 @@ ms.lasthandoff: 01/03/2018
 - Windows 8.1 PC の場合、バージョン **6.3** が返されます。 Windows に関して OS バージョンのルールを Windows 8.1 に設定した場合、デバイスに Windows 8.1 がインストールされていても、そのデバイスは非準拠として報告されます。
 
 - Windows 10 を実行する PC の場合は、**10.0** に続けて、**winver** コマンドから返される OS ビルド番号を指定する必要があります。 たとえば、10.0.10586 などになります。
-  > ![[Windows のバージョン情報] ダイアログ ボックスの強調表示された OS ビルド バージョン](./media/ca_win10-os-version.png)
+> ![[Windows のバージョン情報] ダイアログ ボックスの強調表示された OS ビルド バージョン](./media/ca_win10-os-version.png)

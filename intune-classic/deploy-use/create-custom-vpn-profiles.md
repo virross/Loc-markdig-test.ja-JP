@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52204ebdb7045f6080adce546ee8f4e00c0b7022
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3c04fcdadbc3ec2e121b4718b950a7e5e58700fe
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Microsoft Intune VPN プロファイルのカスタム構成
 
@@ -39,13 +39,13 @@ Intune のカスタム構成ポリシーを使用して、以下の VPN プロ�
 
 ## <a name="to-create-a-custom-configuration-policy"></a>カスタム構成ポリシーを作成するには:
 
-1. [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[ポリシーの追加]** > *<プラットフォームを展開>* > **[カスタム構成]** > **[ポリシーの作成]** の順に選択します。
-2. ポリシーの名前を入力します。
-3. 指定する必要がある URI の設定ごとに、**[追加]** を選択し、必要な情報を指定します。 次に例を示します。
+   1. [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[ポリシーの追加]** > *<プラットフォームを展開>* > **[カスタム構成]** > **[ポリシーの作成]** の順に選択します。
+   2. ポリシーの名前を入力します。
+   3. 指定する必要がある URI の設定ごとに、**[追加]** を選択し、必要な情報を指定します。 次に例を示します。
 
    ![VPN プロファイルのカスタム構成ダイアログ ボックス](./media/Intune_Add_VPN_URI.png)
 
-4. すべての URI 設定を入力したら、**[ポリシーの保存]** を選択した後、ポリシーを展開します。
+   4.  すべての URI 設定を入力したら、**[ポリシーの保存]** を選択した後、ポリシーを展開します。
 
 その後、通常どおり[ポリシーを展開](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)します。
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dd1afe5175e6e40adf3672950965b2eae10af90
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 18e0608c28a6a292da7fc766fb50edfd27e5a138
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-your-android-device-with-intune"></a>Android デバイスを Intune で使用する
 
@@ -43,11 +43,11 @@ ms.lasthandoff: 01/03/2018
 - [PIN またはパスワードを設定する](set-your-pin-or-password-android.md)
 - [会社の仮想プライベート ネットワーク (VPN) をインストールする](install-your-companys-virtual-private-network-VPN-android.md)
 - [デバイスがロックされるまでの時間を設定する](set-the-amount-of-time-before-your-device-is-locked-android.md)
-  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-android.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-android.md)
 - [利用規約を拒否した場合にデバイスの登録を解除する](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

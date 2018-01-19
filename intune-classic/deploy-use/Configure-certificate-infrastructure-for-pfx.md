@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ff3a035f82be7d13b80ac5b7a2db039cc004e4f
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: ae3c53339ee50b0f007c7ab6d28371a0435eebd4
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>証明書インフラストラクチャを構成する
 
@@ -38,21 +38,21 @@ ms.lasthandoff: 01/03/2018
 ## <a name="on-premises-infrastructure-description"></a>オンプレミス インフラストラクチャの説明
 
 
-- **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
+-    **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
 
-- **証明機関**: Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 証明機関をセットアップする方法の詳細については、 [証明機関のインストールに関するページ](http://technet.microsoft.com/library/jj125375.aspx)を参照してください。
-   CA が Windows Server 2008 R2 を搭載している場合は、 [KB2483564 の修正プログラムをインストール](http://support.microsoft.com/kb/2483564/)する必要があります。
+-  **証明機関**: Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 証明機関をセットアップする方法の詳細については、 [証明機関のインストールに関するページ](http://technet.microsoft.com/library/jj125375.aspx)を参照してください。
+    CA が Windows Server 2008 R2 を搭載している場合は、 [KB2483564 の修正プログラムをインストール](http://support.microsoft.com/kb/2483564/)する必要があります。
 
-- **証明機関と通信できるコンピューター**: 証明機関コンピューター自体を使用することもできます。
-- **Microsoft Intune 証明書コネクタ**: Intune 管理コンソールを使用して**証明書コネクタ** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 これにより、証明書コネクタをインストールするコンピューターで **ndesconnectorssetup.exe** を実行できます。 .PFX 証明書プロファイルの場合は、証明機関と通信するコンピューターに証明書コネクタをインストールします。
-- **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用できます。 この構成は:
-   -  デバイスはインターネット接続を使用して証明書を受信できます。
-   -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
+-  **証明機関と通信できるコンピューター**: 証明機関コンピューター自体を使用することもできます。
+-  **Microsoft Intune 証明書コネクタ**: Intune 管理コンソールを使用して**証明書コネクタ** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 これにより、証明書コネクタをインストールするコンピューターで **ndesconnectorssetup.exe** を実行できます。 .PFX 証明書プロファイルの場合は、証明機関と通信するコンピューターに証明書コネクタをインストールします。
+-  **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用できます。 この構成は:
+    -  デバイスはインターネット接続を使用して証明書を受信できます。
+    -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
 
-  > [!NOTE]           
-  > -    WAP をホストするサーバーは、ネットワーク デバイス登録サービス (NDES) で使用される長い URL のサポートを有効にする[更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。
-  >-  また、WAP をホストするサーバーが、外部クライアントに公開される名前と一致する SSL 証明書を持ち、NDES サーバーで使用される SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーはクライアントからの SSL 接続を終了し、NDES サーバーへの新しい SSL 接続を作成できます。
-   WAP の証明書については、「[内部アプリケーションの公開のために Web アプリケーション プロキシをインストールおよび構成する](https://technet.microsoft.com/library/dn383650.aspx)」の**証明書の計画**に関するセクションを参照してください。 WAP サーバーの一般的な情報については、「[Web アプリケーション プロキシの使用](http://technet.microsoft.com/library/dn584113.aspx)」を参照してください。|
+ > [!NOTE]           
+> -    WAP をホストするサーバーは、ネットワーク デバイス登録サービス (NDES) で使用される長い URL のサポートを有効にする[更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。
+>-  また、WAP をホストするサーバーが、外部クライアントに公開される名前と一致する SSL 証明書を持ち、NDES サーバーで使用される SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーはクライアントからの SSL 接続を終了し、NDES サーバーへの新しい SSL 接続を作成できます。
+    WAP の証明書については、「[内部アプリケーションの公開のために Web アプリケーション プロキシをインストールおよび構成する](https://technet.microsoft.com/library/dn383650.aspx)」の**証明書の計画**に関するセクションを参照してください。 WAP サーバーの一般的な情報については、「[Web アプリケーション プロキシの使用](http://technet.microsoft.com/library/dn584113.aspx)」を参照してください。|
 
 
 ### <a name="certificates-and-templates"></a>証明書とテンプレート
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/03/2018
 
     要求元が有効期間を指定できるように CA を構成するには、CA で次のコマンドを実行します。
 
-    」を参照します。  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
     b.  **net stop certsvc**
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 01/03/2018
 
 3.  発行元 CA で、証明機関スナップインを使用して証明書テンプレートを発行します。
 
-    」を参照します。  **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
+    a.  **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
 
     b.  **[証明書テンプレート]** フォルダーに表示されることで、テンプレートが発行されたことを確認します。
 
@@ -123,37 +123,37 @@ ms.lasthandoff: 01/03/2018
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
 
-1. [Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理者]** &gt; **[モバイル デバイス管理]** &gt; **[証明書コネクタ]** &gt; **[証明書コネクタのダウンロード]** を選択します。
+1.  [Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理者]** &gt; **[モバイル デバイス管理]** &gt; **[証明書コネクタ]** &gt; **[証明書コネクタのダウンロード]** を選択します。
 
-2. ダウンロードが完了したら、ダウンロードされたインストーラー (**ndesconnectorssetup.exe**) を実行します。
+2.  ダウンロードが完了したら、ダウンロードされたインストーラー (**ndesconnectorssetup.exe**) を実行します。
 
-   証明機関と接続できるコンピューターでインストーラーを実行します。 [.PFX の配布] オプションを選択し、**[インストール]** を選択します。 インストールが完了したら、「[Configure certificate profiles](configure-intune-certificate-profiles.md)」 (証明書プロファイルを構成する) の説明に従って、証明書プロファイルを作成して続行します。
+  証明機関と接続できるコンピューターでインストーラーを実行します。 [.PFX の配布] オプションを選択し、**[インストール]** を選択します。 インストールが完了したら、「[Configure certificate profiles](configure-intune-certificate-profiles.md)」 (証明書プロファイルを構成する) の説明に従って、証明書プロファイルを作成して続行します。
 
    <!-- Not sure about step 3 below -->
 
-3. 証明書コネクタのクライアント証明書の入力を求められたら、**[選択]** を選択し、タスク 3 でインストールした**クライアント認証**証明書を選択します。
+3.  証明書コネクタのクライアント証明書の入力を求められたら、**[選択]** を選択し、タスク 3 でインストールした**クライアント認証**証明書を選択します。
 
-   クライアント認証証明書を選択した後、**[Microsoft Intune 証明書コネクタのクライアント証明書]** 画面に戻ります。 選択した証明書は表示されませんが、**[次へ]** を選択してその証明書のプロパティを表示します。 **[次へ]** を選択して、**[インストール]** を選択します。
+    クライアント認証証明書を選択した後、**[Microsoft Intune 証明書コネクタのクライアント証明書]** 画面に戻ります。 選択した証明書は表示されませんが、**[次へ]** を選択してその証明書のプロパティを表示します。 **[次へ]** を選択して、**[インストール]** を選択します。
 
-4. ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
+4.  ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
 
-   > [!TIP]
-   > 証明書コネクタの UI を起動する前にウィザードを閉じた場合は、次のコマンドを実行して再び開くことができます。
-   >
-   > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+    > [!TIP]
+    > 証明書コネクタの UI を起動する前にウィザードを閉じた場合は、次のコマンドを実行して再び開くことができます。
+    >
+    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5. **証明書コネクタ** UI で:
+5.  **証明書コネクタ** UI で:
 
-   」を参照します。 **[サインイン]** を選択し、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
+    a. **[サインイン]** を選択し、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
 
-   b. **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を指定します。
+    b. **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を指定します。
 
-   c. **[適用]** を選択します。
+    c. **[適用]** を選択します。
 
-   これで、証明書コネクタ UI を閉じることができます。
+    これで、証明書コネクタ UI を閉じることができます。
 
-6. コマンド プロンプトを開き、**services.msc** を入力します。 **[Enter]** キーを押し、**[Intune コネクタ サービス]** を右クリックして、**[再起動]** を選択します。
+6.  コマンド プロンプトを開き、**services.msc** を入力します。 **[Enter]** キーを押し、**[Intune コネクタ サービス]** を右クリックして、**[再起動]** を選択します。
 
 
-### <a name="next-steps"></a>次の手順
+### <a name="next-steps"></a>次のステップ
 これで、「[Configure certificate profiles (証明書プロファイルを構成する)](Configure-Intune-certificate-profiles.md)」の説明に従って証明書プロファイルを構成する準備が整いました。

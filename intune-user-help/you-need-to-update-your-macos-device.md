@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 529f2c8a5a27b14f11135bbd7b2d34e8449d6f95
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 27e115421e455b2d9bef2a601501889d55ac4273
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-macos-device-doesnt-have-the-required-minimum-operating-system-version"></a>macOS デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない
 

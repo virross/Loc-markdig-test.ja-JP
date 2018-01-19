@@ -14,16 +14,15 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbc6502ce7e0d7b3c8aaa49c0fd084bfda43dea
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 4c47455b0139f7451796257a77859cbd9899a7dd
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="user-device-association"></a>ユーザー デバイスの関連付け
 
 **UserDeviceAssociation** エンティティには、組織内のユーザー デバイスの関連付けが含まれています。
-
 
 | 名前               | 説明                                                                                      | 例                |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
@@ -32,4 +31,3 @@ ms.lasthandoff: 01/03/2018
 | CreatedDateTimeUTC | ユーザー デバイスの関連付けが作成されたときの日時。 UTC 形式を使用します。                                | 11/23/2016 12:00:00 AM |
 | IsDeleted          | ユーザーがそのデバイスを登録解除し、その関連付けが最新でなくなったことを示します。 | 真/偽             |
 | EndedDateTimeUTC   | IsDeleted が **True** に変更されたときの日時 (UTC)。                                              | 06/23/2017 12:00:00 AM |
-

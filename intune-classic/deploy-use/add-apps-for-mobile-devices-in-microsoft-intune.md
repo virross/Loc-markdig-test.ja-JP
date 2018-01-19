@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b71e74e273a81e4a9b4d8e884d9d63bd0b289540
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 6581dd645e51596413faa1976b0cbf49e76369f1
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Intune に登録されたデバイスのアプリを追加する
 
@@ -34,32 +34,32 @@ ms.lasthandoff: 01/03/2018
 ## <a name="add-the-app"></a>アプリを追加する
 Intune ソフトウェア パブリッシャーを利用し、アプリのプロパティを構成し、該当する場合、それをクラウド ストレージ領域にアップロードします。 次の手順を実行します。
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリの追加]** を選択し、Intune ソフトウェア パブリッシャーを開始します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリの追加]** を選択し、Intune ソフトウェア パブリッシャーを開始します。
 
-   > [!TIP]
-   > パブリッシャーを開始する前に、場合によっては、Intune のユーザー名とパスワードを入力する必要があります。
+    > [!TIP]
+    > パブリッシャーを開始する前に、場合によっては、Intune のユーザー名とパスワードを入力する必要があります。
 
-2. パブリッシャーの **[ソフトウェア セットアップ]** ページで、**[このソフトウェアをデバイスに配布する方法]** に、以下のいずれかのオプションを選択します。
-   - **ソフトウェアのインストーラー**: アプリの拡張子が **.msi** の場合:
-       - **ソフトウェア インストーラー ファイルの種類を選択する**。 これは展開するソフトウェアの種類を示します。 たとえば、iOS アプリをインストールする場合、**App Package for iOS (&#42;.ipa ファイル)** を選択します。
-       - **ソフトウェア セットアップ ファイルの場所の指定**。 インストール ファイルの場所を入力するか、**[参照]** を選択して一覧から場所を選択します。
-       - **追加のファイルおよび同じフォルダーのサブフォルダーを含める**。 このオプションは、ファイルの種類が **[Windows インストーラー]** の場合のみ有効です。<br>Windows インストーラーを使用する一部のソフトウェアは、通常、インストール ファイルと同じフォルダーにあるサポート ファイルを必要とします。 これらのファイルも展開する場合、このオプションを選択します。<br>このインストールの種類では、クラウド ストレージ領域がいくらか使用されます。
+2.  パブリッシャーの **[ソフトウェア セットアップ]** ページで、**[このソフトウェアをデバイスに配布する方法]** に、以下のいずれかのオプションを選択します。
+    - **ソフトウェアのインストーラー**: アプリの拡張子が **.msi** の場合:
+        - **ソフトウェア インストーラー ファイルの種類を選択する**。 これは展開するソフトウェアの種類を示します。 たとえば、iOS アプリをインストールする場合、**App Package for iOS (&#42;.ipa ファイル)** を選択します。
+        - **ソフトウェア セットアップ ファイルの場所の指定**。 インストール ファイルの場所を入力するか、**[参照]** を選択して一覧から場所を選択します。
+        - **追加のファイルおよび同じフォルダーのサブフォルダーを含める**。 このオプションは、ファイルの種類が **[Windows インストーラー]** の場合のみ有効です。<br>Windows インストーラーを使用する一部のソフトウェアは、通常、インストール ファイルと同じフォルダーにあるサポート ファイルを必要とします。 これらのファイルも展開する場合、このオプションを選択します。<br>このインストールの種類では、クラウド ストレージ領域がいくらか使用されます。
 
-   -   アプリ ストアへのリンクを指定して作成するアプリの場合は、**[外部リンク]** を選択し、以下のオプションを設定します。
+  -   アプリ ストアへのリンクを指定して作成するアプリの場合は、**[外部リンク]** を選択し、以下のオプションを設定します。
 
-       - **URL の指定**。 次のいずれかの URL を指定します。
-           - 展開するアプリのアプリ ストア URL。 たとえば、Android 向けの Microsoft リモート デスクトップ アプリを展開する場合は、「**https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**」と指定します。<br>アプリの URL を確認するには、検索エンジンを使用してアプリが含まれるストア ページを検索します。 たとえば、リモート デスクトップ アプリを検索するには、「**Microsoft Remote Desktop Android**」を検索します。
-           - Web サイト。 このサイトへのショートカット アイコンが Intune によってデバイスに展開されます (Web クリップと呼ばれます)。
-           - Web 上のアプリ。 このアプリへのショートカット アイコンが Intune によってデバイスに展開されます。
-       - **このリンクを開くには管理対象ブラウザーが必要 (Android および iOS のみ)**。 Web サイトまたは Web アプリへのリンクをユーザーに展開すると、ユーザーは Intune Managed Browser でのみリンクを開くことができるようになります。 このブラウザーをデバイスにインストールする必要があります。<br>Managed Browser の詳細については、「[Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理](manage-internet-access-using-managed-browser-policies.md)」を参照してください。<br>このインストールの種類では、クラウド ストレージ領域を使用しません。
+        - **URL の指定**。 次のいずれかの URL を指定します。
+            - 展開するアプリのアプリ ストア URL。 たとえば、Android 向けの Microsoft リモート デスクトップ アプリを展開する場合は、「**https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**」と指定します。<br>アプリの URL を確認するには、検索エンジンを使用してアプリが含まれるストア ページを検索します。 たとえば、リモート デスクトップ アプリを検索するには、「**Microsoft Remote Desktop Android**」を検索します。
+            - Web サイト。 このサイトへのショートカット アイコンが Intune によってデバイスに展開されます (Web クリップと呼ばれます)。
+            - Web 上のアプリ。 このアプリへのショートカット アイコンが Intune によってデバイスに展開されます。
+        - **このリンクを開くには管理対象ブラウザーが必要 (Android および iOS のみ)**。 Web サイトまたは Web アプリへのリンクをユーザーに展開すると、ユーザーは Intune Managed Browser でのみリンクを開くことができるようになります。 このブラウザーをデバイスにインストールする必要があります。<br>Managed Browser の詳細については、「[Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理](manage-internet-access-using-managed-browser-policies.md)」を参照してください。<br>このインストールの種類では、クラウド ストレージ領域を使用しません。
 
-   -   **アプリ ストアの管理されている iOS アプリ**: モバイル アプリケーション管理 (MAM) ポリシーで管理する iTunes ストアの無料アプリの場合:
+  -   **アプリ ストアの管理されている iOS アプリ**: モバイル アプリケーション管理 (MAM) ポリシーで管理する iTunes ストアの無料アプリの場合:
 
-       - **URL の指定**。 展開するアプリのアプリ ストア URL を入力します。 たとえば、iOS 向けの Microsoft ワーク フォルダー アプリを展開する場合、「**https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**」と指定します。<br>このインストールの種類では、クラウド ストレージ領域を使用しません。
+        - **URL の指定**。 展開するアプリのアプリ ストア URL を入力します。 たとえば、iOS 向けの Microsoft ワーク フォルダー アプリを展開する場合、「**https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**」と指定します。<br>このインストールの種類では、クラウド ストレージ領域を使用しません。
 
-       たとえば、Microsoft Word アプリを iTunes ストアからデバイスに展開する場合は、次のようになります。
+        たとえば、Microsoft Word アプリを iTunes ストアからデバイスに展開する場合は、次のようになります。
 
-       ![Intune ソフトウェア パブリッシャー](./media/publisher-for-mobile.png)
+        ![Intune ソフトウェア パブリッシャー](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > ストアからアプリを追加し、展開するとき、エンド ユーザーがそのアプリをインストールするには、そのストアのアカウントをエンド ユーザーが用意する必要があります。
@@ -100,6 +100,6 @@ Intune ソフトウェア パブリッシャーを利用し、アプリのプロ
 
 <iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリを作成したら、次はアプリを展開します。 詳細については、「[Microsoft Intune でアプリを展開する](deploy-apps.md)」を参照してください。

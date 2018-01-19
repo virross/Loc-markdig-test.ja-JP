@@ -14,11 +14,11 @@ ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3889d9772784322659a73ea2f0996b7b8a699b55
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 30908e4dbb55e16db0e253330175f65fb127d523
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 管理拡張のリファレンス
 
@@ -49,7 +49,6 @@ ms.lasthandoff: 01/03/2018
 
 **IntuneManagementExtension** は、1 日あたりの各 Windows 10 デバイスでの IntuneManagementExtension ヘルスを一覧表示します。
 過去 60 日間のデータが保持されます。 
-
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8968453d309b88f57de0c534b2698011d8c9515
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: d7c9f6d5421065b36ba78d4d9aa02c91996e60d6
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune のサポートの電話番号
 
@@ -117,5 +117,4 @@ ms.lasthandoff: 01/03/2018
 |米国|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 PST (UTC - 8 時間)|英語|800-865-9408||
 |ウルグアイ|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 UYST (UTC - 2 時間)|スペイン語&#42;、英語|000-411-002-7131||
 |ベネズエラ|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 VET (UTC - 4 時間 30 分)|スペイン語&#42;、英語|0-800-100-8763||
-
 &#42; 電話通訳による対応となります。

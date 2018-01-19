@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 200b86903d7cf6abe570c8c0e76354132bc73f04
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 6aeb5ca7ed25015eec7be0039280e9f4d2610df8
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-up-android-device-management"></a>Android デバイスの管理をセットアップする
 
@@ -29,19 +29,19 @@ Intune 管理者は、ポータル サイトから Samsung Knox Standard デバ�
 
 既定では、Android デバイスを Intune に登録することができます。 Android デバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](https://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、**[Android デバイスを許可する]** チェック ボックスをオフにします。
 
-1. **Intune をセットアップする**<br>
-   **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#step-2-set-mdm-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
+1.  **Intune をセットアップする**<br>
+    **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#step-2-set-mdm-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
-2. **Android の登録が有効になる**<br>
-   Android モバイル デバイスの登録を有効にするために、Intune コンソールで追加の構成を行う必要はありません。
+2.  **Android の登録が有効になる**<br>
+    Android モバイル デバイスの登録を有効にするために、Intune コンソールで追加の構成を行う必要はありません。
 
-3. **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
+3.  **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
 
-   エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+    エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
 
-   その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
-   - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](/intune/end-user-educate)
-   - [Android デバイス向けエンド ユーザー ガイダンス](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
+    その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
+  - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](/intune/end-user-educate)
+  - [Android デバイス向けエンド ユーザー ガイダンス](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからポータル サイトを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)

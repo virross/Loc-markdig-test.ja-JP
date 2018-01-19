@@ -14,11 +14,11 @@ ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 396183658c2a6953c507427b75f879af40c4f6ea
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 72f187bed4524e344cf19e68cadfc8a5fc739c56
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB デバッグを無効にする必要がある
 

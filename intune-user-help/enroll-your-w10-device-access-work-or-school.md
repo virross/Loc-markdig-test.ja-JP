@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 47d46b199f6219671c8829028368f7fe82b2ef05
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3f575797a09fb4d74c2da2a7dc6b14a9723d3f4d
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
@@ -31,30 +31,30 @@ ms.lasthandoff: 01/03/2018
 
 1. **[スタート]** メニューに移動します。
 
-   - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
-   - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
+  - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
+  - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
 
-2. 検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。
+2.  検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。
 
 3. **[アカウント]** > **[職場または学校にアクセスする]** > **[接続]** の順に選択します。
 
     ![[職場または学校にアクセスする] アカウントの選択](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-4. 職場または学校の電子メール アドレスを入力し、**[次へ]** を選択します。
+3.  職場または学校の電子メール アドレスを入力し、**[次へ]** を選択します。
 
-   ![職場または学校のアカウントを入力します。](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+    ![職場または学校のアカウントを入力します。](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-5. 職場または学校のアカウントで Intune にサインインします。
+4. 職場または学校のアカウントで Intune にサインインします。
 
     ![職場または学校のアカウントを追加する](./media/w10-enroll-rs1-enter-your-credentials.png)
 
     会社または学校がデバイスを登録していることを示すメッセージが表示されます。
 
-6. 「**準備が完了しました!**」という画面が表示されたら、 **[閉じる]** を選択します。 以上で完了です。
+5. 「**準備が完了しました!**」という画面が表示されたら、 **[閉じる]** を選択します。 以上で完了です。
 
-   !["準備が完了しました" という画面で [閉じる] を 選択する](./media/w10-enroll-rs1-youre-all-set.png)
+  !["準備が完了しました" という画面で [閉じる] を 選択する](./media/w10-enroll-rs1-youre-all-set.png)
 
-7. 接続が適切なことを再確認する場合は、**[設定]** に戻ります。すると、職場または学校のアカウントが表示されます。
+6. 接続が適切なことを再確認する場合は、**[設定]** に戻ります。すると、職場または学校のアカウントが表示されます。
 
     ![接続が正しくセットアップされたことを確認する](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 

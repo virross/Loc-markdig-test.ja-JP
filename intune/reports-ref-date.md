@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4467122ac2fd616ebf032c1337ddcb284218fd90
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 93d0f08697c8ee17ff44d599cb7b1bb262daa7ee
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="reference-for-date-entity"></a>Date エンティティのリファレンス
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 01/03/2018
 **日付**
 
 **Date** エンティティは、複数のデータ ウェアハウス エンティティ全体で参照される日付を示します。
-
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
@@ -49,4 +48,3 @@ ms.lasthandoff: 01/03/2018
 | MonthOfYear | 月 | 7 |
 | CalendarQuarter | カレンダーの四半期 | 3 |
 | CalendarYear | カレンダーの年 | 2016 |
-

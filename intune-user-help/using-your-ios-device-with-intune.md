@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7cdb89431b18cd46d54f76bce9e67f2a40f157a8
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 1a7e47b92a2b10996ba9312713234b0d0af9468e
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="using-your-ios-device-with-intune"></a>iOS デバイスを Intune で使用する
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 01/03/2018
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 - [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
-  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-ios.md)

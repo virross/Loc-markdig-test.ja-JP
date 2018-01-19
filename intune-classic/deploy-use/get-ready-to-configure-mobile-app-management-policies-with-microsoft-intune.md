@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bdbee74a2bb961c85b84e676fe22189c88804cd3
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 5426f5ee12e487786efe9550dbbfb7a3e3962fd2
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Azure ポータルでアプリ保護ポリシーを構成する準備をする
 
@@ -74,18 +74,18 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 ## <a name="prerequisites"></a>必要条件
 
-- **Microsoft Intune サブスクリプション**。 アプリ保護ポリシーが適用されているアプリを入手するには、Intune ライセンスが必要です。
-  デバイスを管理するために現在 Intune を使用している場合、既に Intune サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、Intune サブスクリプションを所有しています。 MAM 機能を調べるために Intune を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)から取得できます。
+-   **Microsoft Intune サブスクリプション**。 アプリ保護ポリシーが適用されているアプリを入手するには、Intune ライセンスが必要です。
+デバイスを管理するために現在 Intune を使用している場合、既に Intune サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、Intune サブスクリプションを所有しています。 MAM 機能を調べるために Intune を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)から取得できます。
 
-  自分が Intune サブスクリプションを所有しているかどうかを確認するには、Office ポータルの**課金情報**のページをご覧ください。  サブスクリプションを所有している場合は、Intune が **Active** になっているはずです。
+    自分が Intune サブスクリプションを所有しているかどうかを確認するには、Office ポータルの**課金情報**のページをご覧ください。  サブスクリプションを所有している場合は、Intune が **Active** になっているはずです。
 
-- **Office 365 サブスクリプション**。これは、以下で必要となります。
+-   **Office 365 サブスクリプション**。これは、以下で必要となります。
 
   - 複数の ID をサポートするアプリにアプリ保護ポリシーを適用する。
 
   - SharePoint Online および Exchange Online 作業アカウントを作成する。 Exchange On-Premises と SharePoint On-Premises はサポートされていません。
 
-- **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
+-   **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
 
 
 - ユーザーを作成するための Azure Active Directory (Azure AD)。 Azure AD では、ユーザーがアプリを開いて作業用の資格情報を入力するときに、ユーザーを認証します。
@@ -105,5 +105,5 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 全体管理者には [Azure ポータル](https://portal.azure.com)へのアクセス権があります。  グローバル管理者ではないユーザーもポリシーを構成して他のモバイル アプリ管理タスクを実行できるようにする場合は、「[Azure サブスクリプション リソースへのアクセスをロールの割り当てによって管理する](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/)」の記事をご確認ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 344768ba97339c6c1d187b31bfdb2d833f60b98b
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: a95f05bb36746acbdd4824acd27ea2320d8f0177
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-up-intune"></a>Intune をセットアップする
 
@@ -47,4 +47,3 @@ Intune サブスクリプションの設定や MDM 権限の設定など、一�
 | 8 | [デバイスを構成する](device-profiles.md) - デバイス設定を管理するプロファイルを設定します。 デバイス プロファイルでは、電子メール、VPN、Wi-Fi、デバイス機能の設定を事前構成できます。 デバイスを制限し、デバイスとデータの両方を保護することもできます。  |
 | 9 | [ポータル サイトをカスタマイズする](company-portal-app.md) - ユーザーがデバイスの登録とアプリのインストールに使用する Intune ポータル サイトをカスタマイズします。 これらの設定は、ポータル サイト アプリと Intune ポータル サイト Web サイトの両方に表示されます。 |
 | 10 | [デバイス登録を有効にする](mdm-authority-set.md) - MDM 権限を設定し、特定のプラットフォームを有効にすることで、iOS、Windows、Android、Mac デバイスの Intune 管理を有効にします。 |
-

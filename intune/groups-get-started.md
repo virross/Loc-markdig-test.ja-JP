@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: f71eb455cd20c2ac9955a3b3456ae8214b9e6ae3
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Azure Portal での Intune クラシック グループ
 
@@ -37,7 +37,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 - Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは利用できなくなります。
 - グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。 たとえば、肩書きに "Assistant" が付いているグループを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。
 
-  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
+  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`
 - Intune クラシック コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。 ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。
 
 ## <a name="how-to-get-started"></a>開始する方法

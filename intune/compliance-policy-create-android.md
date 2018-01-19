@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 50049ef0e19f821a2524e61eb6c8f61db80a9263
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -114,10 +114,10 @@ ms.lasthandoff: 01/03/2018
 | **PIN またはパスワードの構成** |  検疫済み |
 | **デバイスの暗号化** | 検疫済み |
 | **脱獄またはルート化されたデバイス** | 検疫済み (設定ではありません) |
-| **電子メールのプロファイル** | 適用できません |
+| **電子メールのプロファイル** | 該当なし |
 | **最小 OS バージョン** | 検疫済み |
 | **最大 OS バージョン** |   検疫済み |
-| **Windows 正常性構成証明書** | 適用できません |
+| **Windows 正常性構成証明書** | 該当なし |
 
 --------------------------
 

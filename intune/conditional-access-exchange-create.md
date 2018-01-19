@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0605bb94c2f9875396cdcdd74685eb8ceb3c2bdc
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 953f78de15d292346ec7d618e976fc085ba4d428
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Microsoft Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成して割り当てる方法
 
@@ -104,9 +104,9 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 12. 次の 2 つの手順に従って、**[Advanced Exchange Active Sync access settings (Exchange Active Sync アクセスの詳細設定)]** ブレードで、Intune で管理されていないデバイスからのアクセスに対して既定のグローバル ルールを設定するか、プラットフォームレベルのルールを設定します。
 
 13. 条件付きアクセスまたは他のルールの影響を受けないデバイスについては、デバイスによる Exchange へのアクセスを許可するかブロックするかを選択できます。
-    - アクセスを許可するように設定した場合、すべてのデバイスが Exchange On-premises に直ちにアクセスできます。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
-    - アクセスをブロックするように設定した場合、最初はすべてのデバイスが直ちに Exchange On-premises にアクセスできなくなります。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが Intune に登録され、準拠と評価されると許可されます。 Samsung KNOX Standard が実行されていない Android デバイスは、この設定をサポートしていないため常にブロックされます。
-    <br></br>
+  - アクセスを許可するように設定した場合、すべてのデバイスが Exchange On-premises に直ちにアクセスできます。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
+  - アクセスをブロックするように設定した場合、最初はすべてのデバイスが直ちに Exchange On-premises にアクセスできなくなります。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが Intune に登録され、準拠と評価されると許可されます。 Samsung KNOX Standard が実行されていない Android デバイスは、この設定をサポートしていないため常にブロックされます。
+<br></br>
 14. **[デバイス プラットフォームの例外]** で、**[追加]** を選択してプラットフォームを指定します。 **[管理対象外デバイス アクセス]** 設定が "**ブロック済み**" に設定されている場合は、ブロックに対してプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。 **[OK]** を選択して、設定を保存します。
 
 15. **[On-premises]** ブレードで **[保存]** をクリックして、条件付きアクセス ポリシーを保存します。

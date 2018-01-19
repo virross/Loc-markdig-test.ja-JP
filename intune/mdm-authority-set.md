@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 987b1bd37b71a7136f7f6802fa1fd62af5a9e4d4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 581cbc5ef9a6a02deb4e266b0845b95b65215c0f
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -35,21 +35,21 @@ ms.lasthandoff: 01/03/2018
 
 - **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Office 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Office 365 管理センターで MDM 機関を設定します。
 
-> [!IMPORTANT]    
-> Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存の管理されたデバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
+>[!IMPORTANT]    
+Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存の管理されたデバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
 1. [Azure Portal](https://portal.azure.com) で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 2. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。
 3. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
-   - **Intune MDM 機関**
-   - **Configuration Manager MDM 機関**
-   - **なし**
+  - **Intune MDM 機関**
+  - **Configuration Manager MDM 機関**
+  - **なし**
 
-   ![Intune のモバイル デバイス管理機関設定画面のスクリーンショット](media/set-mdm-auth.png)
+  ![Intune のモバイル デバイス管理機関設定画面のスクリーンショット](media/set-mdm-auth.png)
 
-   MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
+  MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
 
 ## <a name="enable-device-enrollment"></a>デバイスの登録を可能にする
 

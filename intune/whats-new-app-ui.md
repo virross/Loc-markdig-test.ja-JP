@@ -15,21 +15,21 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
 ## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日の週
 
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>エンド ユーザー アカウントのメッセージング<!--1573558, 1712; changes to be made for other platforms for 1801-->
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>アカウントに関するエンド ユーザーへのメッセージング<!--1573558, 1712; changes to be made for other platforms for 1801-->
 
-ポータル サイト web サイトのユーザーは、テナントへの書き込みアクセスを必要とする操作を行ってからブロックされます。 適切なエラーが表示されます、アカウントがメンテナンス期間を説明するメッセージします。 ような変更は、ポータル サイト アプリを Android、iOS、macOS、および Windows 用まもなく利用できます。
+ポータル サイトの Web サイト ユーザーによる、テナントへの書き込みアクセスを必要とする操作はブロックされます。 対象ユーザーには、使用アカウントがメンテナンス中であることを示すエラー メッセージが表示されます。 Android、iOS、macOS、Windows 向けのポータル サイト アプリにも、同様の変更がまもなく適用されます。
 
-![アカウントの移動中に発生するエラー メッセージ](./media/account-move-rom-iwp-user-1712.png)
+![アカウントの移動時に発生するエラー メッセージ](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日の週
 
@@ -253,7 +253,7 @@ Windows 10 用ポータル サイト アプリでは、Windows 10 Creators Updat
 ![Windows 10 ポータル サイト アプリの画像。自動同期が新たに行われている状態を確認できます。デバイスが同期中であり、アプリのダウンロードを試行している旨の状態メッセージが表示されています。](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Windows 10 ポータル サイトの新しいガイド機能 <!---1058938--->
-Windows 10 用のポータル サイト アプリで、特定または登録されていないデバイス向けのガイド付き Intune チュートリアルを利用できるようになります。 ユーザーは新たな段階的手順に従って、Azure Active Directory (条件付きアクセス機能のために必要) と MDM (デバイス管理機能のために必要) に登録できます。 このガイドには、ポータル サイトのホーム ページからアクセスできます。 ユーザーは登録が完了していなくても引き続きアプリを使用できますが、機能は制限されます。
+Windows 10 用のポータル サイト アプリで、特定または登録されていないデバイス向けのガイド付き Intune チュートリアルを利用できるようになります。 ユーザーは新たな段階的手順に従って、Azure Active Directory (条件付きアクセス機能のために必要) と MDM (デバイス管理機能のために必要) に登録できます。 このガイドには、ポータル サイトのホーム ページからアクセスできます。 ユーザーは、これらの登録を完了していない場合でも引き続きアプリを使用できますが、機能が制限されます。
 
 この更新は、Windows 10 Anniversary Update (ビルド 1607) 以降を実行しているデバイスのみで表示されます。
 

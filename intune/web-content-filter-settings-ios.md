@@ -15,11 +15,11 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 785260cab5b0f4dc4437d424f04c7bf4086d152c
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 89641cee439d7da9f73d56c2ab3d6d8299164700
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS デバイス用の Web コンテンツ フィルター設定
 
@@ -61,7 +61,7 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
 2. 各 Web サイトの情報を入力したら、**[追加]** をクリックします。
 3. 操作が完了したら、 **[OK]**をクリックします。
 
-> [!IMPORTANT] 
+>[!IMPORTANT] 
 > 次の URL は、Intune によって自動的に許可されます。
 > - www.microsoft.com
 > - www.microsoft.net
@@ -71,6 +71,6 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
 
 **[OK]** を選択して **[プロファイルの作成]** ブレードに戻り、**[作成]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。

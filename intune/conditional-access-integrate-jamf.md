@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d561b95c41349f50d2aca361304d561bc7ca3fb
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 8160ec67c6adf25e4a2555cc4195c26821ba070b
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -57,20 +57,20 @@ Jamf Pro で条件付きアクセスを構成するには、次のものが必�
 6. **[アプリケーションの作成]** をクリックします。
 7. 新しく作成した**アプリケーション ID** を保存し、**[設定]** を開き、**[API アクセス]** > **[キー]** に移動して、新しいアプリケーション キーを作成します。 **説明** (**期限切れ**になるまでの期間) を入力し、アプリケーション キーを保存します。
 
-   > [!IMPORTANT]
-   > アプリケーション キーは、このプロセス中 1 回のみ表示されます。 簡単に取得できる場所に保存してください。
+  > [!IMPORTANT]
+  > アプリケーション キーは、このプロセス中 1 回のみ表示されます。 簡単に取得できる場所に保存してください。
 
 8. **[設定]** を開き、**[API アクセス]** > **[必要なアクセス許可]** に移動し、すべてのアクセス許可を削除します。
 
-   > [!NOTE]
-   > 新しい必要なアクセス許可を追加します。 アプリケーションは必要なアクセス許可が 1 つの場合にのみ正しく動作します。
+  > [!NOTE]
+  > 新しい必要なアクセス許可を追加します。 アプリケーションは必要なアクセス許可が 1 つの場合にのみ正しく動作します。
 
-9. **[Microsoft Intune API]** を選択し、**[選択]** をクリックします。
+9.  **[Microsoft Intune API]** を選択し、**[選択]** をクリックします。
 10. **[Send device attributes to Microsoft Intune]\(デバイス属性を Microsoft Intune に送信する\)** を選択し、**[選択]** をクリックします。
 11. アプリケーションの必要なアクセス許可を保存した後、**[アクセス許可の付与]** をクリックします。
 
-    > [!NOTE]
-    > アプリケーション キーが期限切れになった場合は、Microsoft Azure で新しいアプリケーション キーを作成し、Jamf Pro で条件付きアクセス データを更新する必要があります。 Azure では、サービスの中断を防ぐため、古いキーと新しいキーの両方をアクティブにすることができます。
+  > [!NOTE]
+  > アプリケーション キーが期限切れになった場合は、Microsoft Azure で新しいアプリケーション キーを作成し、Jamf Pro で条件付きアクセス データを更新する必要があります。 Azure では、サービスの中断を防ぐため、古いキーと新しいキーの両方をアクティブにすることができます。
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune の Jamf Pro との統合を有効にする
 
@@ -100,7 +100,7 @@ Jamf Pro は、管理対象の macOS デバイスについてのインベント�
 * 暗号化 (FileVault 2)
 * Gatekeeper ステータス
 * パスワード: 文字セットの最小数
-* パスワードの有効期限 (日)
+* パスワードの有効期限 (日数)
 * パスワードの種類 - 簡易、英数字、または不明
 * 自動ログインの防止
 * 必要なパスコードの長さ
@@ -134,6 +134,6 @@ Jamf Pro は、管理対象の macOS デバイスについてのインベント�
 * UDID
 * ユーザーの電子メール
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)

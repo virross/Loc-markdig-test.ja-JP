@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b730470c1490e883a463637147ece9cc7eb20b4
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 3214b3f28876eeff1a22a1b687eaa4686f635011
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune でデバイスのコンプライアンス ポリシーを作成する
 
@@ -56,22 +56,21 @@ ms.lasthandoff: 01/03/2018
 次の表は、コンプライアンス ポリシー設定と、それらがサポートされるプラットフォームの一覧を示しています。
 
 -------------
-
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
 |モバイル デバイスのロックを解除するパスワードを要求する|iOS 6 以降|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降|
 |単純なパスワードを許可する|iOS 6 以降|サポートされていません|Windows Phone 8.1 以降|
 |パスワードの最小文字数|iOS 6 以降| Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降| Windows Phone 8.1 以降<br>Windows 8.1|
-|必要なパスワードの種類|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|文字セットの最小数|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|必要なパスワードの種類|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|文字セットの最小数|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |パスワードの品質|利用不可|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|利用不可|
 |パスワードが必要になるまでの非アクティブ状態の時間 (分)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
-|パスワードの有効期限 (日)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
+|パスワードの有効期限 (日数)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
 |パスワードの履歴を記憶する|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
 |前のパスワードの再利用を防止|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
-|デバイスがアイドル状態から戻るときにパスワードを必須とする| 利用不可| 利用不可|Windows 10 Mobile|
-|モバイル デバイスの暗号化を要求する|適用できません|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br> Windows 8.1|
-|デバイスが正常と報告されることを要求する| 利用不可| 利用不可|Windows <br>Windows 10 Mobile|
+|デバイスがアイドル状態から戻るときにパスワードを必須とする| 利用不可| 利用不可|[Windows] 10 Mobile|
+|モバイル デバイスの暗号化を要求する|該当なし|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br> Windows 8.1|
+|デバイスが正常と報告されることを要求する| 利用不可| 利用不可|Windows <br>[Windows] 10 Mobile|
 |デバイスは改造もルート化も行われていなければならない|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|利用不可|
 |電子メール アカウントは Intune によって管理される必要がある|iOS 6 以降|利用不可| 利用不可|
 |Intune によって管理される必要のある電子メール プロファイルを選択する|iOS 6 以降|利用不可| 利用不可|
@@ -80,12 +79,12 @@ ms.lasthandoff: 01/03/2018
 
 各プラットフォームでサポートされるコンプライアンス設定の詳細については、次のいずれかを選択してください。
 > [!div class="op_single_selector"]
-> - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-> - [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
-> - [Windows と Windows Phones 向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Windows と Windows Phones 向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [コンプライアンス ポリシーを展開して監視する](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### <a name="see-also"></a>関連項目

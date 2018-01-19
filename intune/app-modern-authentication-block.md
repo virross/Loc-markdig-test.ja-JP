@@ -14,11 +14,11 @@ ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d2e6402fc4d894902bdbdd6e1ae7248bb14468d
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: a6a7cf3b73f4be195b4e07c8c72edeae9fbc9073
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>最新の認証を使用していないアプリをブロックする (ADAL)
 
@@ -33,6 +33,7 @@ ms.lasthandoff: 01/03/2018
 
 ```
  Set-SPOTenant -LegacyAuthProtocolsEnabled $false
+
 ```
 
 

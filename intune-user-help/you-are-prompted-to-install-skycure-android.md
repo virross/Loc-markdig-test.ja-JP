@@ -14,11 +14,11 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 3d9226f4434142a57ab95eb6743549bf57a2538d
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: f5e0a4b31abac8e46913cc498173ec8f243f4d93
+ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android デバイスに Symantec Endpoint Protection Mobile をインストールする
 
@@ -44,13 +44,13 @@ ms.lasthandoff: 01/03/2018
 
 8. SEP Mobile がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。
 
-   * SEP Mobile によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
+  * SEP Mobile によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
 
-   * 脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
+  * 脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
 
-     * ポータル サイトの **[デバイスの詳細]** 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
+    * ポータル サイトの **[デバイスの詳細]** 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
 
-     ![このデバイスはポリシーに準拠している状態になりました](./media/mtd-device-now-compliant-android.png)
+    ![このデバイスはポリシーに準拠している状態になりました](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
