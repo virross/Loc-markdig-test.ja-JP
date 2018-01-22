@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 559f526898c3eb70a940b2e7c916aaf108a88021
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
 

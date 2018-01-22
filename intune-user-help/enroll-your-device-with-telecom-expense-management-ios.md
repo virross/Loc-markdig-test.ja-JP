@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1b34299070ce732334093275c835079cf9819e1b
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>通信費管理サービスに iOS デバイスを登録する
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 12/19/2017
 
 1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
-  ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための[電話番号] フィールドが提供され、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" が提供されます。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための[電話番号] フィールドが提供され、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" が提供されます。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. __"Datalert" が "Authenticator" を開こうとしている__、という通知を受け取ります。 __[開く]__ を選択します。
 
-  ![Datalert アプリの要求で認証アプリを開くことを求めるポップアップ画面のイメージ。](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
+   ![Datalert アプリの要求で認証アプリを開くことを求めるポップアップ画面のイメージ。](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 
 3. __Microsoft の学校または職場のアカウント__ でサインインします。 しばらくの間 Datalert セットアップが実行され、完了します。 完了したら __[完了]__ をタップします。
 
@@ -51,15 +51,15 @@ ms.lasthandoff: 12/19/2017
 
 1. デバイスの電話番号を提供します。
 
-  ![Datalert アプリが電話番号を要求している画面のスクリーンショット。](./media/ios-enroll-12-tem-datalert-phone-number.png)
+   ![Datalert アプリが電話番号を要求している画面のスクリーンショット。](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
 2. 次に SMS メッセージで確認コードを受信します。 コードを入力して __[OK]__ をタップします。
 
-  ![Datalert アプリが SMS 確認コードを要求している画面のスクリーンショット。](./media/ios-enroll-13-tem-datalert-sms.png)
+   ![Datalert アプリが SMS 確認コードを要求している画面のスクリーンショット。](./media/ios-enroll-13-tem-datalert-sms.png)
 
 3. 確認コードを入力すると、Datalert のセットアップが完了します。 __[完了]__ をタップすると、Datalert アプリからデータを監視できるようになります。
 
-  ![Datalert アプリが当日分のデータ使用状況を監視している画面のスクリーンショット。](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
+   ![Datalert アプリが当日分のデータ使用状況を監視している画面のスクリーンショット。](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 

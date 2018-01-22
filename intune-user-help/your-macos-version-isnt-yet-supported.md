@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dd591d058ab17be02826c041d0b7a4074ba7506f
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 8a0280a585c267378f4b9927cf8e8995c032417b
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>使用している macOS デバイスのオペレーティング システムのバージョンがまだサポートされていない
 

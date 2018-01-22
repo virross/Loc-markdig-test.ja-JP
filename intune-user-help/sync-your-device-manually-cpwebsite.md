@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce2404fd5e26c00a6a9ced83bc6501e2074bffce
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 97581932224399a7c3b15211db88ecdf97a4b0d2
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="sync-your-device-with-the-company-portal-website"></a>ポータル Web サイトを使用してデバイスを同期する
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/19/2017
 > [!Note]
 > 現在のところ、一部のデバイスでは同期機能をご利用いただけません。 デバイスが一覧にない場合、デバイスのリセットをお試しください。WiFi を 30 秒ほどオフにし、それからネットワークに再接続します。
 
-* [iOS](sync-your-device-manually-ios.md)
+* [Android](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 デスクトップ](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)

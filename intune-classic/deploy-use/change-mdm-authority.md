@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a940d6c1224f9e139c95d2e6638df82fff1ff74
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a0079bb8dd38ca2cafd1c00314ede21be16c08db
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="change-the-mdm-authority"></a>MDM 機関を変更する
 Configuration Manager バージョン 1610 以降では、Microsoft サポートに連絡しなくても、また、既存の管理対象デバイスの登録を解除してから再登録しなくても、MDM 機関を変更できます。 このトピックでは、既存の管理対象デバイスの登録解除と再登録を行わずに、Intune から構成し、MDM 機関を **Microsoft Intune** (スタンドアロン) に設定した既存の Microsoft Intune テナントを、**Configuration Manager** (ハイブリッド MDM) に変更する方法について説明します。
@@ -76,16 +76,16 @@ iOS デバイスがある場合は、Configuration Manager で APNs 証明書を
 
 1. **証明書署名要求のダウンロード**
 
-    1. Configuration Manager コンソールで、**[管理]** &gt; **[クラウド サービス]** &gt; **[Microsoft Intune サブスクリプション]** に移動し、**[APNs 証明書要求の作成]** を選択して **[Apple Push Notification Service 証明書署名要求の要求]** ダイアログ ボックスを開きます。  
-    2. **[参照]** をクリックして、新しい証明書署名要求 (.csr) ファイルの保存先のパスを指定します。 証明書署名要求 (.csr) ファイルをローカルに保存します。  
-    3. **[ダウンロード]**をクリックします。 新しい Microsoft Intune .csr ファイルがダウンロードされ、Configuration Manager によって保存されます。   
+   1. Configuration Manager コンソールで、**[管理]** &gt; **[クラウド サービス]** &gt; **[Microsoft Intune サブスクリプション]** に移動し、**[APNs 証明書要求の作成]** を選択して **[Apple Push Notification Service 証明書署名要求の要求]** ダイアログ ボックスを開きます。  
+   2. **[参照]** をクリックして、新しい証明書署名要求 (.csr) ファイルの保存先のパスを指定します。 証明書署名要求 (.csr) ファイルをローカルに保存します。  
+   3. **[ダウンロード]**をクリックします。 新しい Microsoft Intune .csr ファイルがダウンロードされ、Configuration Manager によって保存されます。   
 
-    > [!IMPORTANT]
-    > 新しい証明書署名要求をダウンロードする必要があります。 既存のファイルは使用しないでください。失敗します。  
+      > [!IMPORTANT]
+      > 新しい証明書署名要求をダウンロードする必要があります。 既存のファイルは使用しないでください。失敗します。  
 
-2.  [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) にアクセスし、以前に作成したときに使用したものと**同じ** Apple ID でサインインし、Intune スタンドアロンで使用していた APNs 証明書を更新します。
+2. [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) にアクセスし、以前に作成したときに使用したものと**同じ** Apple ID でサインインし、Intune スタンドアロンで使用していた APNs 証明書を更新します。
 
-    ![Apple Push Certificates Portal のサインイン ページ](../media/mdm-change-apns-portal.png)
+   ![Apple Push Certificates Portal のサインイン ページ](../media/mdm-change-apns-portal.png)
 
 3. Intune スタンドアロンで使用していた APNs 証明書を選択し、**[Renew]** をクリックします。
 
@@ -120,7 +120,7 @@ iOS デバイスがある場合は、Configuration Manager で APNs 証明書を
 2. 有効にするプラットフォームを選択し、**[OK]** をクリックします。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 MDM 機関の変更が完了したら、次の手順を実行します。
 - テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (これは定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、ハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
 - MDM 機関の変更中 (または変更直後) にデバイスの電源が入り、オンラインだった場合でも、デバイスが新しい MDM 機関のサービスに登録されるまでに最大 8 時間の遅れがあります (次の定期的なチェックインのタイミングによって異なります)。    

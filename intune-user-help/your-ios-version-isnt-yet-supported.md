@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2533146dcbb8261aba614c743a5220d4b693eb83
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4a701b920e0ab44e5279fc4205397bb032ae208e
+ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>使用している iOS デバイスのオペレーティング システムのバージョンがまだサポートされていない
 
