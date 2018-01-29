@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f033b01520aa047aea0a2b6c94582a454355816
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 73a2a8748f219bfc68b7e112c2003b9c31060c71
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Intune で Skycure Mobile Threat Defense を有効にする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-Skycure Mobile Threat Defense を有効にするには、[Intune Connector in the Skycure console]\(Skycure コンソールの Intune コネクタ\) が構成済みである必要があります (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
+Skycure モバイルの脅威に対する防御を有効にする必要がありますを構成しておく、 [Skycure コンソールで Intune コネクタ](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)です。
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Intune で Skycure MTD の接続を有効にする
 
@@ -40,6 +40,6 @@ Skycure Mobile Threat Defense を有効にするには、[Intune Connector in th
 
 以上で、Intune 管理者コンソールでの Skycure と Intune の統合のセットアップは完了です。 このソリューションを実装するこの後の手順では、Skycure for Work アプリを展開し、コンプライアンス ポリシーを設定します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure Mobile Threat Defense コンプライアンス ポリシーを作成する](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

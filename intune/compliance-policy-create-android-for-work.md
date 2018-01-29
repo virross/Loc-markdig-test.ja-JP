@@ -15,16 +15,16 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9a01b88708dd077f15b6e23536667f7ee752e67
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 67d2db4240d05e87f1784f32f42965527c9559a8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune で Android for Work デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 
@@ -37,10 +37,10 @@ ms.lasthandoff: 12/19/2017
 | **PIN またはパスワードの構成** |  検疫済み |
 | **デバイスの暗号化** |  検疫済み |
 | **脱獄またはルート化されたデバイス** | 検疫済み (設定ではありません) |
-| **電子メールのプロファイル** | 該当なし |
+| **電子メールのプロファイル** | 適用できません |
 | **最小 OS バージョン** | 検疫済み |
 | **最大 OS バージョン** | 検疫済み |
-| **Windows 正常性構成証明書** |該当なし |
+| **Windows 正常性構成証明書** |適用できません |
 
 **修復** = デバイス オペレーティング システムによって準拠が強制されます  (たとえば、ユーザーは PIN を設定するように強制されます)。+
 

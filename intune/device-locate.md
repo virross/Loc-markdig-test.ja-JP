@@ -14,16 +14,16 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d03555e91a9e759e62b829576a0d39f957ab430
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4cbb245a3c3ea31b262951fa3bbcb90f39e2b854
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この**[デバイスを検索する]** デバイス アクションは、紛失したまたは盗まれた iOS デバイスの場所をマップに表示します。 会社所有の iOS デバイスを DEP で登録し、監視モードに設定している必要があります。 このアクションを使用するには、デバイスが[紛失モード](/intune-azure/manage-devices/lost-mode.md)に設定されている必要があります。
 

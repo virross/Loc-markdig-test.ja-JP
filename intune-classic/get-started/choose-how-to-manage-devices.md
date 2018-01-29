@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 48bba8210c1b66f951c62bbe3a014b67b0c665f0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f28e90edd9940ea06df6504ae07c9995af6fa058
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="choose-how-to-manage-devices"></a>デバイスを管理する方法を選択する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 アプリのデプロイやデバイス設定の制御など、Intune が提供する多くの機能を活用するには、デバイスを*管理*する必要があります。 デバイスを管理する方法は、使用する Intune の機能によって異なります。 このトピックは、ニーズを満たす方法の選択に役立ちます。
 

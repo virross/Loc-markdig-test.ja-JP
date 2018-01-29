@@ -16,10 +16,10 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 0d561b95c41349f50d2aca361304d561bc7ca3fb
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 

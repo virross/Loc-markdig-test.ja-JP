@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 852c69fe1b6a718154e17a6f0a87fe6cac3c81f2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 10eda25cf715989e024075ad327414a07b46731c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して企業所有のデバイスを登録する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織所有または企業所有のデバイスを登録し、デバイスの種類、デバイスの購入方法、組織のニーズに応じて、さまざまな方法により Intune で管理することができます。 また、ポータル サイト アプリをインストールし、"Bring Your Own Device" (BYOD) シナリオのように、企業所有のデバイスを登録して管理することもできます。
 

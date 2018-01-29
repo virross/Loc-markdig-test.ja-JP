@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ffb84e4956885cbc892dec92c4687a2f8691082
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f583dba7e5ade0e06bc68589623558de0de667c8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Microsoft Intune でアプリの展開を監視する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="monitor-an-app-deployment"></a>アプリの展開を監視する
 Intune 管理コンソールで管理対象アプリの展開の状態を確認できます。 <!---App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.--->

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3fddbdee83c6ccf68b86bd2e335930683cb3267e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a085d2d67a7d1a7e81307fe55458a4ae35c61fa9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>PowerShell を使用して Intune ライセンスを管理する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、管理者が PowerShell を使用して Intune のユーザー ライセンスを管理する方法を説明します。
 
@@ -66,7 +66,7 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 これで終了です。 *Intune のクイック スタート ガイド*の手順 4 が完了しました。
->[!div class="step-by-step"]
-(/intune/custom-domain-name-configure) [&larr; **ユーザーを Intune に同期する**](/intune/custom-domain-name-configure) [**ユーザーとデバイスを整理する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+> [!div class="step-by-step"]
+> (/intune/custom-domain-name-configure) [&larr; **ユーザーを Intune に同期する**](/intune/custom-domain-name-configure) [**ユーザーとデバイスを整理する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

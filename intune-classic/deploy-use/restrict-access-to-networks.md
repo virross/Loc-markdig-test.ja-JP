@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f96ed2a203f1b0edf28bebac9f79680b046fe0dd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bd236fd7ba6d011e69c654cec0f913765c704fa1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune で Cisco ISE を使用する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune を Cisco Identity Services Engine (ISE) と統合すると、Intune のデバイス登録と準拠の状態を使用して、ISE 環境内でネットワーク ポリシーを作成することができます。 これらのポリシーを使用すると、会社のネットワークへのアクセスが、Intune で管理され Intune ポリシーに準拠しているデバイスに制限されるように処理することができます。
 
@@ -37,7 +37,7 @@ Azure Active Directory (Azure AD) のコンソールから証明書をエクス�
 #### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
-   a. 管理者として Internet Explorer を実行して、Azure AD コンソールにサインインします。
+   」を参照します。 管理者として Internet Explorer を実行して、Azure AD コンソールにサインインします。
 
    b. アドレス バーでロック アイコンを選択して、**[証明書の表示]** を選択します。
 
@@ -53,7 +53,7 @@ Azure Active Directory (Azure AD) のコンソールから証明書をエクス�
 
 #### <a name="safari"></a>Safari
 
- a. Azure AD コンソールにサインインします。
+ 」を参照します。 Azure AD コンソールにサインインします。
 
 b. ロック アイコン &gt; **[詳細]** をクリックします。
 
@@ -70,13 +70,13 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>ISE からの自己署名証明書の取得 
 
-1.  ISE コンソールで、**[Administration]** (管理)  > **[Certificates]** (証明書)  > **[System Certificates]** (システム証明書)  > **[Generate Self Signed Certificate]** (自己署名証明書の生成) の順に選択します。  
-2.       自己署名証明書をエクスポートします。
+1. ISE コンソールで、**[Administration]** (管理)  > **[Certificates]** (証明書)  > **[System Certificates]** (システム証明書)  > **[Generate Self Signed Certificate]** (自己署名証明書の生成) の順に選択します。  
+2. 自己署名証明書をエクスポートします。
 3. テキスト エディターで、次のようにエクスポートした証明書を編集します。
 
- - **-----BEGIN CERTIFICATE-----** を削除する
- - **-----END CERTIFICATE-----** を削除する
- 
+   - **-----BEGIN CERTIFICATE-----** を削除する
+   - **-----END CERTIFICATE-----** を削除する
+
 すべてのテキストが単一行であることを確認する
 
 
@@ -88,13 +88,13 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 5. 名前を変更しないで、ファイルを保存します。
 6. Microsoft Graph と Microsoft Intune API へのアクセス許可を持つアプリを指定します。
 
- a. Microsoft Graph の場合は、次のように選択します。
+   」を参照します。 Microsoft Graph の場合は、次のように選択します。
     - **アプリケーションのアクセス許可**: ディレクトリ データの読み取り
     - **委任されたアクセス許可**:
         - ユーザーのデータへの常時アクセス
         - ユーザーのサインイン
 
- b. Microsoft Intune API では、**[アプリケーションのアクセス許可]** で、**[Intune からデバイスの状態とコンプライアンスを所得する]** を選択します。
+   b. Microsoft Intune API では、**[アプリケーションのアクセス許可]** で、**[Intune からデバイスの状態とコンプライアンスを所得する]** を選択します。
 
 7. **[エンドポイントの表示]** を選択して、ISE 設定の構成で使用する次の値をコピーします。
 
@@ -105,23 +105,40 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 |クライアント ID でコードを更新する|クライアント ID|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
-1.     .cer X509 公開証明書ファイルから、base64 でエンコードされた証明書値と拇印を取得します。 この例では PowerShell を使用します。
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    次の手順で使用する $base64Thumbprint、$base64Value、および $keyid の値を格納します。
-2.       マニフェスト ファイルを介して証明書をアップロードします。 Azure [管理ポータル](https://manage.windowsazure.com)にログインする
-2.      Azure AD スナップインで、X.509 証明書を使用して構成するアプリケーションを検索します。
-3.      アプリケーション マニフェスト ファイルをダウンロードします。 
-5.      空の “KeyCredentials”: [], プロパティを次の JSON に置換します。  KeyCredentials 複合型の詳細については、「[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)」 (エンティティおよび複合型参照) を参照してください。
+1. .cer X509 公開証明書ファイルから、base64 でエンコードされた証明書値と拇印を取得します。 この例では PowerShell を使用します。
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
-たとえば、
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. マニフェスト ファイルを介して証明書をアップロードします。 Azure [管理ポータル](https://manage.windowsazure.com)にログインする
+3. Azure AD スナップインで、X.509 証明書を使用して構成するアプリケーションを検索します。
+4. アプリケーション マニフェスト ファイルをダウンロードします。 
+5. 空の “KeyCredentials”: [], プロパティを次の JSON に置換します。  KeyCredentials 複合型の詳細については、「[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)」 (エンティティおよび複合型参照) を参照してください。
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
+次に例を示します。
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      アプリケーション マニフェスト ファイルに変更を保存します。
-7.      編集したアプリケーションのマニフェスト ファイルを、Azure 管理ポータルを介してアップロードします。
-8.      省略可能: アプリケーションに X.509 証明書が存在しているかどうか確認するために、もう一度、マニフェストをダウンロードします。
+
+6. アプリケーション マニフェスト ファイルに変更を保存します。
+7. 編集したアプリケーションのマニフェスト ファイルを、Azure 管理ポータルを介してアップロードします。
+8. 省略可能: アプリケーションに X.509 証明書が存在しているかどうか確認するために、もう一度、マニフェストをダウンロードします。
 
 >[!NOTE]
 >

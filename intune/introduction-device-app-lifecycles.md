@@ -14,15 +14,15 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac8e4b03f1bb69df683efddc2ba4f287e438f46d
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ae4fffcf9d8d6a801eef1d2bb810810cb3c7047a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>デバイスとアプリのライフサイクルの概要
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 ニーズは組織ごとに異なりますが、他の運用ニーズがどのようなものであっても、すべての組織が継続的に実施する必要のある特定の一般的な手順があります。 これは 2 つの主なカテゴリにグループ化でき、**ライフサイクル**と呼ばれます。 展開ライフサイクルは、有効にしようとしているシナリオによって異なります。 たとえば、デバイス ライフサイクルとアプリ ライフサイクルのどちらか一方だけが必要なこともあれば、両方とも必要になる場合もあります。
 

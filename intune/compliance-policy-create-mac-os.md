@@ -15,16 +15,16 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 18a436f39ee20f99407cf791da3469ce5ba41042
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを作成する
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -40,14 +40,15 @@ ms.lasthandoff: 12/19/2017
 -------------------------------
 
 
-| **ポリシー設定** | **macOS 10.11 以降** |
-| --- | --- |
-| **PIN またはパスワードの構成** | 修復 |   
-| **デバイスの暗号化** | 修復 (PIN の設定による) |
-| **電子メールのプロファイル** | 検疫済み |
-|**最小 OS バージョン** | 検疫済み |
-| **最大 OS バージョン** | 検疫済み |  
-| **Windows 正常性構成証明書** | 該当なし |  
+|        <strong>ポリシー設定</strong>         | <strong>macOS 10.11 以降</strong> |
+|------------------------------------------------|----------------------------------------|
+| <strong>PIN またはパスワードの構成</strong> |               修復               |
+|       <strong>デバイスの暗号化</strong>       |      修復 (PIN の設定による)       |
+|         <strong>電子メールのプロファイル</strong>         |              検疫済み               |
+|      <strong>最小 OS バージョン</strong>       |              検疫済み               |
+|      <strong>最大 OS バージョン</strong>       |              検疫済み               |
+|  <strong>Windows 正常性構成証明書</strong>   |             適用できません             |
+
 ----------------------------
 
 
@@ -144,6 +145,6 @@ Intune に準拠したデバイスを作成するときに、選択できるさ�
     > [!TIP]
     > 既定では、デバイスは 8 時間ごとにコンプライアンスを確認しますが、ユーザーは Intune の会社ポータル アプリを使用してこのプロセスを強制できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Intune デバイスのコンプライアンス対応ポリシーを監視する方法](compliance-policy-monitor.md)

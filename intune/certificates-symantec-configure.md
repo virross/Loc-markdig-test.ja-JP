@@ -15,15 +15,15 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: de9cf4817681ddaad7840b0476fb6e55ff4e561c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector を Symantec PKI Manager Web サービス向けに設定する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Intune Certificate Connector をインストールして、Intune 管理対象デバイスに、Symantec PKI Manager Web サービスから PKCS 証明書を発行するように構成する方法について説明します。
 

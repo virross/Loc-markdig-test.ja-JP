@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
-ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
+ms.openlocfilehash: 9d41f8a64b6fefa92453ca8f89e55360f976380a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 複数のコピーを購入すると、会社でのアプリ管理を効率的に行うことができます。
 
@@ -102,7 +102,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-1.  **[Intune]** ブレードの  > [管理]** で、**[モバイル アプリ]**、**[アプリ]** の順に選択します。
+1.  **[Intune]** ブレードの  > **[管理]** で、**[モバイル アプリ]**、**[アプリ]** の順に選択します。
 2.  アプリの一覧ブレードで、割り当てるアプリを選択し、**[割り当て]** を選択します。
 3.  ***アプリの名前***  -  **[割り当て]** ブレードで **[グループの選択]** を選択し、**[グループの選択]** ブレードでアプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
 5.  選択したグループごとに、次の設定を選択します。

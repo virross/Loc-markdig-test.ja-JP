@@ -14,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d494dd0270cddac8ec449689357616c3ac7c48b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d0bd16585a64620d29e88d34731af8b76fbbd1a5
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK のどちらかを使って、アプリでアプリ保護ポリシーを使えるようにできます。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
@@ -49,8 +49,8 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 
 |**アプリ ラッピング ツール** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|Yes|
-|**Android**| いいえ |Yes|
+|**Android** |はい|はい|
+|**Android**| [いいえ] |はい|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
@@ -69,7 +69,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
+|**Android**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 |**Android**| はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 
 ## <a name="feature-comparison"></a>機能の比較
@@ -78,31 +78,32 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 > [!NOTE]
 > アプリ ラッピング ツールは、スタンドアロンの Intune または Configuration Manager と統合した Intune で使用できます。
 
-|機能|アプリ SDK|アプリ ラッピング ツール|
-|-----------|---------------------|-----------|
-|[Web コンテンツを会社の管理対象ブラウザーで表示するように制限する]|○|○|
-|[Android、iTunes、iCloud のバックアップを禁止する]|○|○|
-|[アプリで他のアプリへのデータ転送を許可する]|○|○|
-|[アプリで他のアプリからのデータの受信を許可する]|○|○|
-|他のアプリとの間で切り取り、コピー、貼り付けを制限する|○|○|
-|[アクセスには簡易暗証番号が必要]|○|○|
-|[組み込みアプリ PIN を Intune PIN で置き換える]|○||
-|[PIN をリセットするまでの試行数を指定する]|○|○|
-|PIN の代わりに指紋を要求する |○|○|
-|[アクセスには会社の資格情報が必要]|○|○|
-|[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]|○|○|
-|[アプリ データの暗号化]|○|○|
-|[指定した時間 (分) 後にアクセス要件を再確認する]|○|○|
-|[オフラインの猶予期間を指定する]|○|○|
-|[画面キャプチャをブロック (Android のみ)]|○|○|
-|デバイスの登録なしで MAM をサポート|○|○|
-|完全なワイプ|○|○|
-|選択的なワイプ <br></br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
-|[[名前を付けて保存] を禁止する] |○||
-|対象となるアプリケーションの構成 |○||
-|[マルチ ID アプリのサポート]|○||
-|カスタマイズ可能なスタイル |○|||
-## <a name="next-steps"></a>次のステップ
+|                                                         機能                                                          | アプリ SDK | アプリ ラッピング ツール |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              [Web コンテンツを会社の管理対象ブラウザーで表示するように制限する]                              |    ○    |         ○         |
+|                                        [Android、iTunes、iCloud のバックアップを禁止する]                                        |    ○    |         ○         |
+|                                         [アプリで他のアプリへのデータ転送を許可する]                                         |    ○    |         ○         |
+|                                        [アプリで他のアプリからのデータの受信を許可する]                                         |    ○    |         ○         |
+|                                      他のアプリとの間で切り取り、コピー、貼り付けを制限する                                       |    ○    |         ○         |
+|                                              [アクセスには簡易暗証番号が必要]                                               |    ○    |         ○         |
+|                                         [組み込みアプリ PIN を Intune PIN で置き換える]                                         |    ○    |                   |
+|                                     [PIN をリセットするまでの試行数を指定する]                                      |    ○    |         ○         |
+|                                             PIN の代わりに指紋を要求する                                             |    ○    |         ○         |
+|                                         [アクセスには会社の資格情報が必要]                                         |    ○    |         ○         |
+|                             [脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]                              |    ○    |         ○         |
+|                                                     [アプリ データの暗号化]                                                     |    ○    |         ○         |
+|                           [指定した時間 (分) 後にアクセス要件を再確認する]                            |    ○    |         ○         |
+|                                             [オフラインの猶予期間を指定する]                                             |    ○    |         ○         |
+|                                           [画面キャプチャをブロック (Android のみ)]                                            |    ○    |         ○         |
+|                                        デバイスの登録なしで MAM をサポート                                         |    ○    |         ○         |
+|                                                        完全なワイプ                                                         |    ○    |         ○         |
+| 選択的なワイプ <br></br><strong>注:</strong> iOS では、管理プロファイルを削除するとアプリも削除されます。 |    ○    |                   |
+|                                                    [[名前を付けて保存] を禁止する]                                                     |    ○    |                   |
+|                                            対象となるアプリケーションの構成                                            |    ○    |                   |
+|                                                [マルチ ID アプリのサポート]                                                |    ○    |                   |
+|                                                    カスタマイズ可能なスタイル                                                    |    ○    |                   |
+
+## <a name="next-steps"></a>次の手順
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 

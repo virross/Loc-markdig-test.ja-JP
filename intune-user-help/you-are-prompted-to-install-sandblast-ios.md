@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2335f92bd4755152aaae88f057f6b92481eacbdc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 30d432e97c706b25c8d51bc29890761e48a87b8a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS デバイスに SandBlast Mobile Protect をインストールする必要がある
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93fb9090a4d10e10163e9d94d23ea6bca23922ff
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 88d37763094766ce37da6b58c8426f754103a750
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Exchange ActiveSync ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange ActiveSync で管理されているデバイスのさまざまな機能を制御する設定を構成します。
 
@@ -44,10 +44,11 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 
 ## <a name="encryption-settings"></a>暗号化の設定
 
-|設定の名前|説明|
-|----------------|---|
-|**モバイル デバイスの暗号化を要求する**<sup>1</sup>|サポートされている場合にデバイス上のデータの暗号化を要求します。<br><br>Windows Phone 8 デバイスの場合、これを **[はい]**に設定する必要があります。<br /><br />iOS デバイスでの暗号化を有効にするには、**[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を有効にします。|
-|**メモリ カードの暗号化を必要とする**|(サポートされているデバイス上で) SD カードなどの外部ストレージに保存されたデータの暗号化を要求します。
+|                           設定の名前                           |                                                                                                                                    説明                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>モバイル デバイスの暗号化を要求する</strong><sup>1</sup> | サポートされている場合にデバイス上のデータの暗号化を要求します。<br><br>Windows Phone 8 デバイスの場合、これを <strong>[はい]</strong>に設定する必要があります。<br /><br />iOS デバイスでの暗号化を有効にするには、<strong>[モバイル デバイスのロック解除にパスワードを必要とする]</strong> 設定を有効にします。 |
+|       <strong>メモリ カードの暗号化を必要とする</strong>       |                                                                                  (サポートされているデバイス上で) SD カードなどの外部ストレージに保存されたデータの暗号化を要求します。                                                                                  |
+
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
 
 -   Windows 8.1 搭載デバイスで暗号化を適用する場合は、[Windows の 2014 年 12 月付け MDM クライアント更新プログラム](https://support.microsoft.com/kb/3013816)を各デバイスにインストールする必要があります。

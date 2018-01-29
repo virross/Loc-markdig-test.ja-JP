@@ -14,15 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf667af86a6e885416cdf15e0a63f6219355466e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7d1a89443ca9d5b610f869120c2f1fd7b8b0c564
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Intune の一般的な使用方法
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 実装を始める前に、自社のエンタープライズ モビリティの関係者と、ビジネス目標に関する認識を合わせておくことが重要です。  これはエンタープライズ モビリティを初めて導入する場合も、別の製品から移行する場合も、重要です。  
 

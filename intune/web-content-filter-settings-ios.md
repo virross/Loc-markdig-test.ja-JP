@@ -15,15 +15,15 @@ ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89641cee439d7da9f73d56c2ab3d6d8299164700
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fbf2fa33925e049aa1a184a09f2764df558529cd
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS デバイス用の Web コンテンツ フィルター設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 これらの設定を使用して、Web ブラウザーのエンド ユーザーが iOS デバイス上でアクセスできる、またはできない URL を構成します。 URL を構成する方法には 2 つあります。
 
@@ -61,7 +61,7 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
 2. 各 Web サイトの情報を入力したら、**[追加]** をクリックします。
 3. 操作が完了したら、 **[OK]**をクリックします。
 
->[!IMPORTANT] 
+> [!IMPORTANT]
 > 次の URL は、Intune によって自動的に許可されます。
 > - www.microsoft.com
 > - www.microsoft.net
@@ -71,6 +71,6 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
 
 **[OK]** を選択して **[プロファイルの作成]** ブレードに戻り、**[作成]** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。

@@ -15,17 +15,15 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a6d079772584c414117359317c86177daeac561
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 66896e2462e118b702ebafab98501d3dc2bff702
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの電子メール プロファイル設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[アカウント名]** - ユーザーのデバイスに表示される電子メール アカウントの表示名。

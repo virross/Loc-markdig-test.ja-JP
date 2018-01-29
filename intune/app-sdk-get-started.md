@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune アプリ SDK の概要"
+title: "Microsoft Intune App SDK の概要"
 description: "Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。"
 keywords: 
 author: erikre
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7f5433dd7d938c8b3bdef71d0e847195ab7591b3
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -66,7 +66,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 ネイティブ iOS 用および Android 用の Intune アプリ SDK は、Microsoft GitHub アカウントでホストされています。 ネイティブ iOS 用および Android 用の SDK ファイルは、それぞれ以下のパブリック リポジトリにあります。
 
-* [iOS 用 Intune アプリ SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [iOS 用 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android 用 Intune アプリ SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 アプリが Xamarin アプリまたは Cordova アプリの場合は、次の SDK バリアントを使用してください。
@@ -115,7 +115,7 @@ Microsoft Intune はアプリの利用統計データを収集します。
 
 * **Android 用 Intune アプリ SDK**: SDK によって製品利用統計情報データがログに記録されることはありません。
 
- iOS と Android の基幹業務アプリのバージョン番号が表示可能 <!-- 1380712 -->
+  iOS と Android の基幹業務アプリのバージョン番号が表示可能 <!-- 1380712 -->
 
 ## <a name="line-of-business-app-version-numbers"></a>基幹業務アプリのバージョン番号
 
@@ -147,8 +147,8 @@ Intune|iOS|Android|説明|
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    バンドルのリリース バージョン番号を指定します。 この番号でアプリのリリース バージョンが識別されます。 この番号はエンド ユーザーがアプリを参照するために使用されます。
- - **CFBundleVersion**  
+    バンドルのリリース バージョン番号を指定します。 この番号でアプリのリリース バージョンが識別されます。 この番号はエンド ユーザーがアプリを参照するために使用されます。 
+  - **CFBundleVersion**  
     バンドルのビルド バージョン。バンドルのイテレーションが識別されます。 この番号でリリース バンドルまたは未リリース バンドルが識別されます。 この番号はアプリの検出に利用されます。
 
 #### <a name="android"></a>Android

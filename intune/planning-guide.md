@@ -14,15 +14,15 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 754c38a33fa6e08a6022c726f6e1eb8088b82e94
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 81dd87a378e1bbdb2c2c814cbfa254c5ad28a6e5
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune の展開計画、設計および実装ガイド
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](./includes/note-for-both-portals.md)]
 
 Intune を正常に展開するには、まず、適切に計画し、設計する必要があります。 このガイドの目的は、展開計画の作成、設計の作成、Intune のオンボーディング、および運用環境へのロールアウトの実施プロセスを段階的に説明することです。
 

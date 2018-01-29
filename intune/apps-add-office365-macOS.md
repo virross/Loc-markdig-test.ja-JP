@@ -15,11 +15,11 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: cd071927955f5047067ba1d982e7078d89675cd0
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune を使用して Office 365 を macOS デバイスに割り当てる方法
 
@@ -65,12 +65,12 @@ ms.lasthandoff: 01/12/2018
 
 この手順では、アプリ スイートの割り当てを構成します。 使用可能なアプリの種類はまもなく公開されます。
 
-1.  アプリの一覧でアプリのスイートを選択し、**[割り当て]** を選択します。
-2.  **[グループの選択]** を選択します。
-3.  選択したグループにスイートを割り当てます。 詳細については、「[How to assign apps to groups with Microsoft Intune (Microsoft Intune を使ってアプリをグループに割り当てる方法)](/intune/apps-deploy)」を参照してください。
-4.  各グループに、**[Require Install]\(インストールが必要\)** を選択します。
-        >[!Note]
-        > You cannot uninstall Office 365 through Intune.
+1. アプリの一覧でアプリのスイートを選択し、**[割り当て]** を選択します。
+2. **[グループの選択]** を選択します。
+3. 選択したグループにスイートを割り当てます。 詳細については、「[How to assign apps to groups with Microsoft Intune (Microsoft Intune を使ってアプリをグループに割り当てる方法)](/intune/apps-deploy)」を参照してください。
+4. 各グループに、**[Require Install]\(インストールが必要\)** を選択します。
+       >[!Note]
+       > You cannot uninstall Office 365 through Intune.
 
 5. **[保存]** を選択して割り当てを確定します。
 

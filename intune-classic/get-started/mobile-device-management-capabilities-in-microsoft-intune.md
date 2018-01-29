@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cab13a21b2fb0c904f04e3287b91c79fca7be841
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 97361587f691f4bf3c6d464d7513adfc4a2cb12f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune の登録済みデバイス管理機能
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、サービスにデバイスを*登録*することによって、さまざまなデバイスを管理できます。 管理者が自分でデバイスの種類を登録することも、ユーザーが*ポータル サイト* アプリを使って登録することもできます。 ユーザーは、アプリの参照とインストール、デバイスが会社のポリシーに準拠していることの確認、IT サポートへの問い合わせなどの操作を行うこともできます。
 
@@ -66,6 +66,7 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 ## <a name="inventory-and-reporting"></a>インベントリとレポート
 
-|機能|説明|詳細情報|
-|--------------|-----------|--------------------|
-|インベントリとレポート|管理対象のデバイスと、デバイスが使用しているソフトウェアの詳細が記載されています。|[Microsoft Intune でインベントリを使用してデバイスを把握する](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       機能        |                                             説明                                              |                                                                  詳細情報                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| インベントリとレポート | 管理対象のデバイスと、デバイスが使用しているソフトウェアの詳細が記載されています。 | [Microsoft Intune でインベントリを使用してデバイスを把握する](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

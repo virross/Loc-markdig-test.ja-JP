@@ -15,15 +15,15 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e88ab829b2ced4693a804abcaf8b65a0794a84cc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d37b839bdd434c1a90d54e83f391e236205eb7d2
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での macOS デバイスの制限設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この設定を使用して、デバイスの制限プロファイルの macOS デバイスを管理します。
 

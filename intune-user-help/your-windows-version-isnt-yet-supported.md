@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: dffb56359d0f8da392e07560fe719b27aa06ce9b
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows デバイスのオペレーティング システムのバージョンがまだサポートされていない
 

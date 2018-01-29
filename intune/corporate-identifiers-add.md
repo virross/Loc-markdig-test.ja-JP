@@ -15,15 +15,15 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0312c29f0c50319850de60b9c2720baa3eec69b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 374511e9fbe9e42de09e9bac9fc3f0b0aa76db13
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 管理者は、会社所有のデバイスを特定することで、管理と識別の対象を絞り込むことができます。 Intune は追加の管理タスクを実行して、会社所有のデバイスの完全な電話番号やアプリのインベントリなどの追加情報を収集できます。 また、デバイス制限を設定し、会社所有ではないデバイスによる登録を防止できます。
 
@@ -70,7 +70,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 1. Azure Portal の Intune で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
 
- ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペースのスクリーンショット。](./media/add-corp-id.png)
+   ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペースのスクリーンショット。](./media/add-corp-id.png)
 
 2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。 以前にインポートした番号が **[既存の ID の詳細を上書きします]** を適用するかどうかを指定できます。
 
@@ -95,7 +95,7 @@ International Mobile Equipment Identifier の詳しい仕様については、�
 
 **デバイス所有権を変更するには:**
 1. Azure Portal の Intune で、**[デバイス]**、**[すべてのデバイス]** の順に進み、デバイスを選択します。
-3. **[プロパティ]** を選択します。
-4. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
+2. **[プロパティ]** を選択します。
+3. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
 
-  ![デバイス プロパティのスクリーンショット。デバイスのカテゴリと所有権のオプションを確認できます。](./media/device-properties.png)
+   ![デバイス プロパティのスクリーンショット。デバイスのカテゴリと所有権のオプションを確認できます。](./media/device-properties.png)

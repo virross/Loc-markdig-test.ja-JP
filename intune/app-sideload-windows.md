@@ -12,15 +12,15 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 27927fd08869431afc1a66f4a46ddcb557ecd14e
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (LOB) アプリを Windows および Windows 10 Mobile デバイスに展開することができます。 Windows 10 および Windows 10 Mobile デバイスに .appx または .xap アプリを展開する場合や、Windows 8.1 または Windows Phone 8.1 デバイスに LOB アプリを展開する場合は、**Symantec エンタープライズ モバイル コード署名証明書**を取得する必要があります。 これらの各 Windows デバイスのアプリで信頼されているのは Symantec 証明書のみです。 Windows 10 アプリと "ユニバーサル" アプリの場合は独自の証明機関を使用できます。 この証明書は、以下の操作を行うために必要です。
 
@@ -158,11 +158,11 @@ Intune をビジネス向け Microsoft ストアと統合していない場合�
 
 ![ダウンロードする依存関係ファイルのイメージ ](./media/Win10CP-dependent-files.png)
 5. ポータル サイト アプリを Intune にアップロードする前に、パッケージを次のように構成してフォルダー (C:&#92;ポータル サイトなど) を作成します。
-  1. C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
-  ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
-  2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
-  依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
-  ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](./media/Win10CP-error-message.png)
+   1. C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
+   ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
+   2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
+   依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
+   ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](./media/Win10CP-error-message.png)
 6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに展開します。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」ご覧ください。  
@@ -190,13 +190,14 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
-|パラメーター | 説明|
-| ------------- | ------------- |
-|InputWin10AppxBundle |ソース appxbundle ファイルが配置されるパス。 |
-|OutputWin10AppxBundle |署名された appxbundle ファイルの出力パス |
-|Win81Appx | Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス。|
-|PfxFilePath |Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス |
-|PfxPassword| Symantec エンタープライズ モバイル コード署名証明書のパスワード |
-|PublisherId |エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。|
-|SdkPath | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。|
+|       パラメーター       |                                                                    説明                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             ソース appxbundle ファイルが配置されるパス。                                              |
+| OutputWin10AppxBundle |                                                  署名された appxbundle ファイルの出力パス                                                  |
+|       Win81Appx       |                          Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス。                           |
+|      PfxFilePath      |                                   Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス                                    |
+|      PfxPassword      |                                     Symantec エンタープライズ モバイル コード署名証明書のパスワード                                      |
+|      PublisherId      |      エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。       |
+|        SdkPath        | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。 |
+
 実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で LOB アプリとして展開できます。これにより、現在展開されているバージョンがこの新しいアプリにアップグレードされます。  

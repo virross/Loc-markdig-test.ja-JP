@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f049abd260d014faa397d2f68e43d5f9d5465588
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -55,6 +55,6 @@ Intune では、ユーザーのデバイス登録を推進するその他のテ�
 
 -   「[FastTrack for EMS how to guides & emails (EMS 用 FastTrack: 方法ガイドとメール)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)」は、貴社のロゴでカスタマイズして、組織内での Intune と EMS の採用を促進できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [条件付きアクセスでエンド ユーザーの導入を推進します](migration-guide-drive-adoption.md)。

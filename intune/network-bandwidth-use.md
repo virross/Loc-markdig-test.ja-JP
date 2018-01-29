@@ -14,15 +14,15 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75fd3f0c79c1137fd2d42a6185995bd323544879
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 73b87dde737a8fbee8feaf3fb2591237288dcd91
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune のネットワーク帯域幅の使用
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 このガイダンスは、Intune 管理者が Intune サービスのネットワーク要件を理解するのに役立ちます。 帯域幅の要件およびプロキシの設定に必要な IP アドレスとポートの設定を理解できます。
 
@@ -57,11 +57,13 @@ ms.lasthandoff: 12/19/2017
 
 Intune クライアント用にコンテンツをキャッシュするプロキシ サーバーの一般的な設定を以下に示します。
 
-|設定|推奨される値|説明|
-|-----------|---------------------|-----------|
-|キャッシュ サイズ|5 ～ 30 GB|この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。|
-|キャッシュする個々のファイルのサイズ|950 MB|キャッシュ機能付きサーバーによっては、この設定がないものがあります。|
-|キャッシュするオブジェクトの種類|HTTP<br /><br />HTTPS<br /><br />BITS|Intune パッケージは、HTTP 経由でバックグラウンド インテリジェント転送サービス (BITS) のダウンロードで取得される CAB ファイルです。|
+
+|          Setting           |           推奨される値           |                                                                                                  説明                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         キャッシュ サイズ         |             5 ～ 30 GB             | この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。 |
+| キャッシュする個々のファイルのサイズ |                950 MB                 |                                                                     キャッシュ機能付きサーバーによっては、この設定がないものがあります。                                                                     |
+|   キャッシュするオブジェクトの種類    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune パッケージは、HTTP 経由でバックグラウンド インテリジェント転送サービス (BITS) のダウンロードで取得される CAB ファイルです。                                               |
+
 コンテンツをキャッシュするプロキシ サーバーの仕様に関する詳細については、使用するプロキシ サーバー ソリューションのドキュメントを参照してください。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>コンピューターで、バック グラウンド インテリジェント転送サービスを使用する
@@ -157,14 +159,16 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
-| ホスト名  | URL (IP アドレス/サブネット) | プロトコル | ポート | デバイス |
-| --- | --- | --- | --- | --- |
-|  管理コンソール  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS と macOS |
-| 管理コンソール  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS と macOS |
-| 管理コンソール  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS と macOS  |
-| PI サーバー  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195、2196 | Apple iOS および macOS クラウド メッセージング用。 |
-| デバイス サービス  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| デバイス サービス  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| デバイス サービス  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| デバイス (インターネット/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
-| デバイス (インターネット/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 または 443 | Apple のみ |
+
+|         ホスト名         |                                        URL (IP アドレス/サブネット)                                        |  プロトコル  |     ポート     |                          デバイス                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      管理コンソール       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS と macOS                    |
+|      管理コンソール       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS と macOS                    |
+|      管理コンソール       | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS と macOS                    |
+|        PI サーバー         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195、2196  |         Apple iOS および macOS クラウド メッセージング用。          |
+|     デバイス サービス      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     デバイス サービス      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     デバイス サービス      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| デバイス (インターネット/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
+| デバイス (インターネット/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 または 443   |                        Apple のみ                         |
+

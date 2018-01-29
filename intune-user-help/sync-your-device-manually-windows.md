@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c1ade50ff6a458633598d2788d176dd79cbfebd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 848545c52b641430604c954c26826fef9a1c8510
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
 
@@ -64,10 +65,10 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
 2. 職場または学校のアカウントを選択します。 会社のサポートが行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。
 
-    - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。
-    - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
+   - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。
+   - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
 
-    ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-info-button.png)
+     ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-info-button.png)
 
 3. **[情報]** ボタンを選択します。 次の例のようなダイアログ ボックスが開きます。
 
@@ -91,7 +92,7 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
    同期が完了するまで、このボタンは灰色表示になります。
 
-### <a name="windows-10-mobile"></a>[Windows] 10 Mobile
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
 アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
 
    1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。

@@ -15,15 +15,15 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 572241aad3b39c3fa57d8156b2d7bec90195239c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>仕事用プロファイル設定
 -   **[仕事用プロファイルと個人プロファイルの間でのコピー/貼り付け]** - 仕事用アプリと個人用アプリの間でのコピーと貼り付けを制御します。 ブロックを有効にするには、**[ブロック]** を選択します。 ブロックを無効にするには、**[未構成]** を選択します。

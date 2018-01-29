@@ -14,15 +14,15 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f8706c34792720224624b6d430de791e5e98608a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: fe7f116df3127e990738c1c0a37fda182e48df9f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、Intune ソフトウェア クライアントをインストールし、PC として管理するデスクトップを管理するために実行可能なタスクを示します。 このトピックでは、モバイル デバイスとしての PC の管理については説明していません。 PC にまだクライアントをコンピューターにインストールしていない場合は、[Intune ソフトウェア クライアントのインストール](install-the-windows-pc-client-with-microsoft-intune.md)に関するページを参照してください。
 

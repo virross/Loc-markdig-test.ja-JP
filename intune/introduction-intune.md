@@ -14,15 +14,15 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: cd286300752d662b251ee8e8b36d764313725146
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d45811008b21110a7ddd3634487fed9490a2eb5f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="what-is-intune"></a>Intune とは何か
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune はエンタープライズ モビリティ管理 (EMM) スペースのクラウドベース サービスであり、会社のデータを守りながら、社員に生産的に働いてもらうことができます。 Intune では次のことができます。
 * 社員が会社のデータにアクセスするために利用するモバイル デバイスを管理します。

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4eebc3c78626b9ef1ddbcef976f5b49cadc4b5ff
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a8873a300e34bd62e184b9df1727f856eac71b81
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>アプリとアプリ ベースの CA を使用する場合の結果
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 アプリ ベースの CA は、デバイス上に必ずあるブローカー アプリを利用して、承認されたアプリケーションの ID を確認します。
 *  **iOS** の場合、**Azure Authenticator アプリ**がブローカー アプリです。
@@ -40,8 +40,8 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 
 > [!NOTE]
 > Android デバイスの場合、
-  * デバイスにポータル サイト アプリがインストールされている必要がありますが、エンド ユーザーがアプリにログインする必要はありません。
-  * OneDrive または Outlook アプリを使用して、デバイスの登録を行う必要があります。
+>   * デバイスにポータル サイト アプリがインストールされている必要がありますが、エンド ユーザーがアプリにログインする必要はありません。
+>   * OneDrive または Outlook アプリを使用して、デバイスの登録を行う必要があります。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Azure AD の登録からデバイスを削除するには
 デバイスの登録は、Azure AD 管理コンソールで削除することができます。通常、IT 管理者が削除を実行します。また、エンドユーザーが自分のデバイスで削除することもできます。
@@ -52,14 +52,14 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 
 ## <a name="app-based-ca-with-device-based-ca"></a>アプリ ベースの CA とデバイス ベースの CA  
 
-[Intune 管理コンソール](https://manage.microsoft.com)または [Azure AD Premium 管理コンソール] (https://manage.windowsazure.com) で[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**デバイス CA**) を構成できます。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、アプリ ベースの CA とデバイス CA ポリシー両方の対象である 1 つまたは複数のセキュリティ グループに属している場合、ユーザーは次の 2 つの要件のうち 1 つを満たす必要があります。
+構成することができます[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(<strong>デバイス CA</strong>) で、 [Intune 管理者コンソール](https://manage.microsoft.com)または[Azure AD Premium管理コンソール](https://manage.windowsazure.com)です。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、アプリ ベースの CA とデバイス CA ポリシー両方の対象である 1 つまたは複数のセキュリティ グループに属している場合、ユーザーは次の 2 つの要件のうち 1 つを満たす必要があります。
 * サービスへのアクセスに使用されるアプリは、サポートされているモバイル アプリである。 
 * アプリを実行するデバイスには、**iOS Authenticator (iOS デバイスの場合)** または**ポータル サイト アプリ (Android デバイスの場合)** がインストールされている。
 * サービスへのアクセスに使用されるデバイスは、**Intune の管理対象で Intune のデバイス コンプライアンス ポリシーに準拠している**か、**ドメインに参加しているコンピューター**である。  わかりやすい例を示します。
   * ユーザーが**ネイティブ iOS 電子メール アプリ**から接続する場合、ネイティブ電子メール アプリは アプリ ベースの CA でサポートされていないため、**管理対象で準拠しているデバイス**を使用して接続する必要があります。
   * ユーザーが **Windows Home コンピューター**から接続する場合、**デバイス CA ポリシー**が適用されるので、ドメインに参加しているコンピューターを使用する必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [MAM アプリ用の Exchange Online ポリシーを作成する](mam-ca-for-exchange-online.md)
 
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)

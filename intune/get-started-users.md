@@ -16,10 +16,10 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 4d7ff6b4943d6cba05b9c7909882de6515ae7ce9
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="get-started-with-managing-users"></a>ユーザー管理の概要
 

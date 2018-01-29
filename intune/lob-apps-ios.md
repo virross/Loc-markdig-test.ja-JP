@@ -15,15 +15,15 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e4dd377bf878b3fb2d910df490e4fbc205f4f368
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックの情報を使って、Intune に iOS 基幹業務アプリを追加できます。
 
@@ -73,7 +73,9 @@ ms.lasthandoff: 12/19/2017
 
 ## <a name="step-5---update-a-line-of-business-app"></a>手順 5 - 基幹業務アプリの更新
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] 注: Intune サービスで新しい IPA ファイルをデバイスへ正常に展開するには、IPA パッケージの Info.plist ファイルの CFBundleVersion 文字列をインクリメントする必要があります。
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+注: 新しい IPA ファイルをデバイスに正常に展開する、Intune サービスの増やす必要があります Info.plist ファイル内の CFBundleVersion 文字列 IPA パッケージにします。
 
 ## <a name="next-steps"></a>次の手順
 

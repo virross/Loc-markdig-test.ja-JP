@@ -15,16 +15,16 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 9eb817939b2bc663ea2c28978aa64fee5f440de4
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 
@@ -36,8 +36,8 @@ ms.lasthandoff: 12/19/2017
 |----| ----| --- |
 | **PIN またはパスワードの構成** | 修復 | 修復 |   
 | **デバイスの暗号化** | 該当なし | 修復 |   
-| **脱獄またはルート化されたデバイス** | 該当なし | 該当なし |  
-| **電子メールのプロファイル** | 該当なし | 該当なし |   
+| **脱獄またはルート化されたデバイス** | 適用できません | 適用できません |  
+| **電子メールのプロファイル** | 適用できません | 適用できません |   
 | **最小 OS バージョン** | 検疫済み | 検疫済み |   
 | **最大 OS バージョン** | 検疫済み | 検疫済み |   
 | **Windows 正常性構成証明書** | 検疫済み: Windows 10 および Windows 10 Mobile|該当なし: Windows 8.1 |

@@ -11,26 +11,27 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 968360670d79d34eddd616a552672180121da44c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
   > [!NOTE]
   > Windows 10 はあらゆる種類のデバイスで動作します。 デスクトップ、スマートフォン、タブレットのいずれを使用している場合でも、このページの画像とは少し違う部分があるかもしれませんが、手順は同じです。
 
-1.  **[スタート]** メニューに移動します。
+1. **[スタート]** メニューに移動します。
 
-  - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
-  - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
+   - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
+   - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
 
 2. 検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。
 

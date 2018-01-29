@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 32816a2cde9619586afbef10d67302f5ee0fff4e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8427e2dcb8d3bc3ac4c46fd13c719aca2b3dc81
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを編成するグループを作成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、管理者が Intune でユーザーのグループを作成する方法を説明します。
 
@@ -83,5 +83,5 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 新しく作成したグループは、**[グループ]** 一覧の **[グループ]** ワークスペースにある **[すべてのユーザー]** の下に表示されます。 ここから、グループを編集または削除することもできます。
 
->[!div class="step-by-step"]
-/intune/licenses-assign [&larr; **Intune のライセンスを管理する**](/intune/licenses-assign) [**ポリシーとアプリを作成する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign [&larr; **Intune のライセンスを管理する**](/intune/licenses-assign) [**ポリシーとアプリを作成する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

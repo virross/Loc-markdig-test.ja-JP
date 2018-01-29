@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e2935404bb3f196cea61f01d1f1cf8b37b307752
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ユーザーは、Microsoft Intune の会社のポータルを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。        
 
@@ -36,14 +36,14 @@ ms.lasthandoff: 12/19/2017
 会社名は、ポータル サイトのタイトルとして表示されます。 連絡先情報と詳細は、ポータル サイトの **[IT に連絡]** 画面でユーザーに対して表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。        
 
 
-|フィールド名|最大長|詳細情報|        
-|-|-|-|     
-|**会社名**|40|ポータル サイトのタイトルとして表示される名前です。|        
-|**IT 部門の担当者名**|40|**[IT に連絡]** ページに表示される名前です。|      
-|**IT 部門の電話番号**|20|**[IT に連絡]** ページに表示される連絡先の電話番号です。|        
-|IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|     
-|**追加情報**|120|**[IT に連絡]** ページに表示されます。|      
-|**会社のプライバシーに関する声明の URL**|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 **https://www.contoso.com** の形式で有効な URL を入力します。|        
+|                   フィールド名                   | 最大長 |                                                                                                詳細情報                                                                                                |
+|------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>会社名</strong>          |     40     |                                                                           ポータル サイトのタイトルとして表示される名前です。                                                                           |
+|  <strong>IT 部門の担当者名</strong>   |     40     |                                                                        <strong>[IT に連絡]</strong> ページに表示される名前です。                                                                         |
+|  <strong>IT 部門の電話番号</strong>   |     20     |                                                                   <strong>[IT に連絡]</strong> ページに表示される連絡先の電話番号です。                                                                    |
+|          IT 部門の電子メール アドレス           |     40     |                      <strong>[IT に連絡]</strong> ページに表示される連絡先の電子メール アドレスです。 <strong>alias@domainname.com</strong> の形式で有効な電子メール アドレスを入力する必要があります。                      |
+|    <strong>追加情報</strong>     |    120     |                                                                               <strong>[IT に連絡]</strong> ページに表示されます。                                                                               |
+| <strong>会社のプライバシーに関する声明の URL</strong> |     79     | ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 <strong>https://www.contoso.com</strong> の形式で有効な URL を入力します。 |
 
 ## <a name="support-contacts"></a>サポートの連絡先     
 サポート Web サイトは、ポータル サイトに表示されます。ユーザーは、サポート サイトからオンライン サポートを利用できます。        

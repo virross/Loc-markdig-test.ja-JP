@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 946f925fa6e5f9a6003fb911c4b283d7497bf279
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 985befdd8e2ee6e93352df8431c2d4bd27f63d76
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune でデバイスを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、管理するデバイスを保護するための機能とそれらのデバイスに格納されたデータをセットで提供します。 このトピックではこれらの機能の基本とその詳細を説明します。
 

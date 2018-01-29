@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a71a7b55eafc6320787b835aa56e6e73ea7543a5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 295b442606aa8639176f45850d798a2136802ec6
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Understand Microsoft Intune operations by using reports
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックの情報を使用して、組織内のソフトウェア、ハードウェア、およびソフトウェア ライセンスに関する情報が記載された Microsoft Intune レポートを作成および管理することができます。
 

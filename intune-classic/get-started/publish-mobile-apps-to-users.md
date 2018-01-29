@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebdc5abba37cfd0e23f962434c2f654b4bc45312
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: e761b55dc6c27fa6f14360f551f5d7d0bca81307
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>クイック スタート ガイド: ユーザーにモバイル アプリを発行する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、エンド ユーザーが選択したデバイスから必要なモバイル アプリとデスクトップ アプリに簡単にアクセスできるようにすることで、エンド ユーザーの生産性を向上させることができます。 アプリを簡単に使用できるようにすることで、エンド ユーザーが適切なアプリを探してインストールする時間と労力を削減でき、ユーザーが必要なアプリを見つけられない場合のヘルプ デスクへの問い合わせを減らすことができます。   
 

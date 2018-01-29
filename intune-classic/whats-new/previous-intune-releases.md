@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c0188d855a5d5caa6aba1fd7d4a017144709a668
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 528837737ad0b05d1ecb7aaa70d56322d14772df
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="previous-intune-releases"></a>以前の Intune のリリース
 
 このページは、「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」で発表された内容の一覧です。
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>2016 年 7 月
 
@@ -54,17 +54,17 @@ __ポータル Web サイト__
 
 __Android__
 - **Android 用ポータル サイト アプリ**<br/>
-Android エンド ユーザーに自分のデバイスに必要な証明書がないことを示すエラー メッセージが表示される場合、[How to resolve this (この問題解決する方法)] ボタンをタップすると、[手順](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)を取得できます。IT 管理者が証明書の問題を解決するために利用できる手順が記載されています。
+  Android エンド ユーザーに自分のデバイスに必要な証明書がないことを示すエラー メッセージが表示される場合、[How to resolve this (この問題解決する方法)] ボタンをタップすると、[手順](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)を取得できます。IT 管理者が証明書の問題を解決するために利用できる手順が記載されています。
 
 - **登録済みデバイスへのサイド ロード アプリのインストールの制限**<br/>
-Android 用 Intune ポータル サイト アプリを使用してデバイスを Intune に登録している場合を除き、Android デバイスは、ポータル サイト Web サイトを通じてアプリケーションをインストールすることができなくなります。
-<!---TFS 1299082--->
+  Android 用 Intune ポータル サイト アプリを使用してデバイスを Intune に登録している場合を除き、Android デバイスは、ポータル サイト Web サイトを通じてアプリケーションをインストールすることができなくなります。
+  <!---TFS 1299082--->
 
-__iOS__
+__Android__
 - **iOS ポータル サイト アプリのデバイス登録マネージャー アカウントへの変更**<br/>
 パフォーマンスと拡張性を高めるために、Intune において、iOS のポータル サイト アプリの **[デバイス]** ウィンドウには今後、デバイス登録マネージャー (DEM) のデバイスの一部が表示されなくなります。 アプリを実行しているローカル デバイスのみ、ポータル サイト アプリ経由で登録されている場合にだけ表示されます。
 
-ローカル デバイスに対する操作は DEM で実行できますが、他の登録デバイスのリモート管理は、Intune 管理コンソールから実行する必要があります。 また、Apple Device Enrollment Program または Apple Configurator ツールでの DEM アカウントの使用は廃止されます。 共有 iOS デバイスに関しては、どちらの登録手段も既にユーザーレスの登録がサポートされています。
+ローカル デバイスに対する操作は DEM で実行できますが、他の登録デバイスのリモート管理は、Intune 管理コンソールから実行する必要があります。 また、Apple Device Enrollment Program または Apple Configurator ツールでの DEM アカウントの使用は廃止されます。 これらの両方の登録方法では、ユーザーを介さない共有 iOS デバイスの登録が既にサポートされています。
 
 共有デバイスのユーザーレスの登録が利用できない場合のみ DEM アカウントを使用してください。 詳細については、「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」を参照してください。
 <!---TFS 1233681--->
@@ -84,7 +84,7 @@ Intune のサービス正常性に関する情報は他の Microsoft サービ�
 
 ### <a name="device-management"></a>デバイス管理
 - **望ましくない可能性があるアプリから保護するための Windows Defender ポリシー設定。** **望ましくない可能性があるアプリケーションの検出**という名前の新しい Windows Defender 設定が、Windows 10 Desktop と Mobile の全般構成ポリシーに追加されました。 この設定を使えば、Windows Defender によって望ましくない可能性があると判断されたソフトウェアの実行から、登録済みの Windows デスクトップ コンピューターを保護することができます。 このようなアプリケーションの実行からコンピューターを保護したり、望ましくない可能性があるアプリケーションがいつインストールされたのかを監査モードでレポートしたりできます。 詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)」を参照してください。
-<!---TFS 1244478--->
+  <!---TFS 1244478--->
 
 ### <a name="conditional-access"></a>条件付きアクセス
 - **Intune の Cisco ISE ネットワーク アクセス制御ポリシー。**  Cisco Identity Service Engine (ISE) 2.1 と Microsoft Intune の両方を使用する場合、ISE でネットワーク アクセス制御ポリシーを設定できます。
@@ -94,12 +94,12 @@ Intune のサービス正常性に関する情報は他の Microsoft サービ�
     * Intune で管理されていること
     * 展開されているすべての Intune コンプライアンス ポリシーに準拠していること
 
- 準拠していないデバイスのエンド ユーザーは、アクセスを取得するために、デバイスを登録することと、コンプライアンス関連の問題を修正することを求められます。
+  準拠していないデバイスのエンド ユーザーは、アクセスを取得するために、デバイスを登録することと、コンプライアンス関連の問題を修正することを求められます。
 - **ブラウザーの条件付きアクセス。** [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイス上のサポートされる Web ブラウザーに、Exchange Online と SharePoint Online へのアクセスを限定することができます。 Outlook Web Access (OWA) や SharePoint サイトにエンド ユーザーが iOS または Android デバイスでサインインしようとすると、そのデバイスを Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を解消してから、サインインを試行するように求められます。
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online では、条件付きアクセスをサポートしています。** [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイスに、Dynamics CRM Online へのアクセスを限定することができます。 Dynamics CRM モバイル アプリにエンド ユーザーが iOS または Android でサインインしようとすると、Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を修正してから、サインインを試行するように求められます。
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Intune 会社のポータルの更新
 
@@ -180,19 +180,19 @@ Intune の通知規則では、Intune からの電子メール アラートの�
 
 ### <a name="app-management"></a>アプリ管理
 - **MAM ユーザー コンプライアンス。**
-Azure Active Directory (AAD) テナント内の任意のユーザーについて、アプリケーション管理ポリシーの[状態](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)を表示できるようになりました。 以下は、必要な操作の例です。
-   - [デバイス]
-   - デバイス上のアプリ
+  Azure Active Directory (AAD) テナント内の任意のユーザーについて、アプリケーション管理ポリシーの[状態](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)を表示できるようになりました。 以下は、必要な操作の例です。
+  - [デバイス]
+  - デバイス上のアプリ
 
-   ステータス値:
+    ステータス値:
 
-   **チェックイン**: ポリシーがユーザーに展開されていること、仕事のコンテキストでアプリが使用されていること、正常にポリシーが配信されたことを示します。
+    **チェックイン**: ポリシーがユーザーに展開されていること、仕事のコンテキストでアプリが使用されていること、正常にポリシーが配信されたことを示します。
 
     **チェックイン未**: ポリシーはユーザーに展開されましたが、それ以降にアプリが仕事のコンテキストで使用されていないことを示します。
 
 
 - **Outlook 連絡先の同期 (Android) ができないよう MAM によって制御。**
-[モバイル アプリケーション管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)の新しい設定を使用できます。ネイティブ アドレス帳に既に保存されている連絡先は削除されます。 この新しい設定は最初に、Android デバイスの Outlook アプリケーションでサポートされます。
+  [モバイル アプリケーション管理](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)の新しい設定を使用できます。ネイティブ アドレス帳に既に保存されている連絡先は削除されます。 この新しい設定は最初に、Android デバイスの Outlook アプリケーションでサポートされます。
 
 ### <a name="device-management"></a>デバイス管理
 - **会社が所有するデバイスの電話番号の識別。** 会社の所有として分類される電話は今後、完全な電話番号で識別されます (モバイル デバイスのインベントリ レポートを実行するときなど)。 BYOD デバイスの電話番号は引き続き **** でマスクされ、表示されるのは最後の 4 桁のみとなります。
@@ -212,6 +212,6 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 これらのステータスが追加されるまでは、表示されるステータスが "インストール中" のみで、これが何時間も画面に表示された状態に陥ることもあったため、アプリのインストールに時間がかかった場合にユーザーが混乱する原因となっていました。 新しくステータスが追加されることで、ユーザーはサポートに問い合わせなくても、"デバイスが同期されるのを待機しています" のリンクをタップし、画面の指示に従うことで同期処理を強制的に再開できるようになります。
 
->[!div class="step-by-step"]
-
->[&larr;**Intune の新機能**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr;**Intune の新機能**](whats-new-in-microsoft-intune.md)    

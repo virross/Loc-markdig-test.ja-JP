@@ -15,15 +15,15 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0934e9f45cfee88fe12fac2ceda963c4afc2969c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8aae532e1a782c914703fe478715cc3593e5ed3
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android および Samsung KNOX Standard デバイスの制限設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 これらの設定を Android デバイス制限ポリシーとともに使用して、組織内のデバイスを構成します。
 
@@ -153,6 +153,6 @@ ms.lasthandoff: 12/19/2017
 - **ボリューム ボタン** - デバイスのボリューム ボタンの使用を有効または無効にします。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 引き続き「[デバイスの制限設定を構成する方法](device-restrictions-configure.md)」の手順を使用して作成し、デバイスの制限プロファイルを割り当てます。

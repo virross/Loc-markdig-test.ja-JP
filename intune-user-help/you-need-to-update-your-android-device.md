@@ -11,20 +11,21 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3d16c46305ce373f30254c69cb10de08382c98b2
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 396740133428fc60fe2770715ccf8db9707d50dd
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-update-your-android-device"></a>Android デバイスを更新する必要がある
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 **[設定]** > **[タブレット情報]** の順にタップして、Android デバイスを更新します。 __[設定]__ セクションで、__[更新プログラムの確認]__ をタップし、利用可能な更新プログラムをインストールします。
 

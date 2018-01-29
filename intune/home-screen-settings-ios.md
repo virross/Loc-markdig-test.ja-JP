@@ -15,15 +15,15 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0dcc8f5509afa5308f8ae91a3d60ee081d5daa0b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 6fe58c81c9854ec8a703308fa1b9223d9603d212
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けのホーム画面のレイアウト設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 これらの設定を使用すると、iOS の Dock とホーム画面で、アプリとフォルダーのレイアウトを構成できます。
 

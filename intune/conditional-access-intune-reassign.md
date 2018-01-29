@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1bf047b37ee49fc632ee0aecda96d389e67d68b9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
@@ -183,8 +183,8 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 
 Azure Portal で条件付きアクセス ポリシーの再割り当てを行った後は、Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを段階的に無効にすることが重要です。 さらに、同じセキュリティ グループを使って、Azure Portal で作成した条件付きアクセス ポリシーを適用することが必要な場合があります。
 
-> [!NOTE] 
-    > Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする前に、このトピックの「[始める前に](#before-you-begin)」セクションを参照してください。
+> [!NOTE]
+> Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする前に、このトピックの「[始める前に](#before-you-begin)」セクションを参照してください。
 
 ### <a name="to-disable-the-conditional-access-policies"></a>条件付きアクセス ポリシーを無効にするには
 

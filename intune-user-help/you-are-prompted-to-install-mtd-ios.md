@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: be1dada5a33db5053c7a0ad783aa0827edd9295f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d7943b42289aea984bb0366acc71282f7daccc89
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS デバイスに Mobile Threat Defense をインストールする
 

@@ -15,15 +15,15 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24ec619a2e11a81c5988f6c95a268222a454360e
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0ceedc19e562f2b5467de1b5096d7446e1b74799
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 [今後の変更](#whats-coming)、サービスに関する[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)に関する情報も確認できます。
 
@@ -61,7 +61,7 @@ IT 管理者は、ユーザーが受け取る通知をカスタマイズする�
 
 #### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755---"></a>SCEP の複数コネクタ サポートと PFX 証明書処理 <!-- 1361755 -->
 
-内部設置型 NDES のコネクタを使用して証明書をデバイスに配信するユーザーでは、1 つのテナントに複数のコネクタを構成できます。
+オンプレミス NDES コネクタを使用してデバイスに証明書を配信するお客様は、1 つのテナントに複数のコネクタを構成できるようになりました。
 
 この新しい機能では、次のシナリオがサポートされています。
 
@@ -69,27 +69,27 @@ IT 管理者は、ユーザーが受け取る通知をカスタマイズする�
 
 各 NDES コネクタは、Intune から証明書の要求を取得します。  1 つの NDES コネクタがオフラインになっても、その他のコネクタは要求の処理を続行できます。
 
-#### <a name="customer-subject-name-can-use-aaddeviceid-variable-----1468599---"></a>顧客のサブジェクト名が AAD_DEVICE_ID 変数を使用できます。<!-- 1468599 -->
+#### <a name="customer-subject-name-can-use-aaddeviceid-variable-----1468599---"></a>カスタム サブジェクト名で AAD_DEVICE_ID 変数が使用可能に<!-- 1468599 -->
 
-Intune の SCEP 証明書プロファイルを作成するときに、カスタムのサブジェクト名をビルドするときに AAD_DEVICE_ID 変数を使用できますようになりました。   この SCEP プロファイルを使用して、証明書が要求されると、変数が、AAD デバイス ID、デバイス証明書要求を行うに置き換えられます。
+Intune で SCEP 証明書プロファイルを作成する際、カスタム サブジェクト名の作成時に AAD_DEVICE_ID 変数を使用できるようになりました。   この SCEP プロファイルを使用して証明書が要求されると、証明書の要求を行っているデバイスの AAD デバイス ID が、この変数に置き換わります。
 
 
 ### <a name="device-management"></a>デバイス管理
 
 #### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747---"></a>Intune のデバイス コンプライアンス エンジンを使用した Jamf に登録された macOS デバイスの管理 <!-- 1592747 -->
-Intune コンソールで定義されているポリシーに準拠するための評価を設定し、Intune に macOS デバイスの状態情報を送信する Jamf を使えるようになりました。 条件付きアクセスでは、デバイスのコンプライアンス対応状態や、その他の条件 (場所やユーザー リスクなど) に基づいて、Azure AD に接続されたクラウド アプリケーションやオンプレミス アプリケーション (Office 365 など) にアクセスする macOS デバイスにコンプライアンスを適用します。 について詳しく調べます[Jamf 統合を設定する](conditional-access-integrate-jamf.md)と[Jamf で管理されたデバイスのコンプライアンスを適用する](conditional-access-assign-jamf.md)です。
+Jamf を使って、macOS デバイスの状態情報を Intune に送信できるようになりました。情報はその後、Intune コンソールで定義されたポリシーに準拠しているかどうかが評価されます。 条件付きアクセスでは、デバイスのコンプライアンス対応状態や、その他の条件 (場所やユーザー リスクなど) に基づいて、Azure AD に接続されたクラウド アプリケーションやオンプレミス アプリケーション (Office 365 など) にアクセスする macOS デバイスにコンプライアンスを適用します。 [Jamf 統合の設定](conditional-access-integrate-jamf.md)と [Jamf で管理されたデバイスのコンプライアンスの強制](conditional-access-assign-jamf.md)について、詳細をご覧ください。
 
 #### <a name="new-ios-device-action------1424701---"></a>新しい iOS デバイス アクション <!-- 1424701 -->
 
-今すぐシャット ダウンできます iOS 10.3 監視対象のデバイス。 このアクションでは、エンド ユーザーへの警告なしにデバイスが即時シャットダウンされます。 **シャット ダウン (監視モードのみ)** アクションは、**デバイス** ワークロードでデバイスを選択した場合に、デバイス プロパティに表示されます。
+iOS 10.3 監視下のデバイスをシャット ダウンできるようになりました。 このアクションでは、エンド ユーザーへの警告なしにデバイスが即時シャットダウンされます。 **シャット ダウン (監視モードのみ)** アクションは、**デバイス** ワークロードでデバイスを選択した場合に、デバイス プロパティに表示されます。
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>Samsung KNOX デバイスに日付/時刻の変更を禁止します。<!-- 1468103 -->
 
-使用すると、ブロックの日付と時刻の Samsung KNOX デバイスでの変更を新しい機能が追加されました。 これを見つけることができます**デバイス構成プロファイル** > **デバイス制限 (Android)** > **全般**です。
+使用すると、ブロックの日付と時刻の Samsung KNOX デバイスでの変更を新しい機能が追加されました。 この機能は、**[デバイス構成プロファイル]** > **[デバイスの制限 (Android)]** > **[全般]** にあります。
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>サポートされる Surface Hub リソース アカウント <!-- 1566442  -->
 
-新しいデバイスの操作は、管理者が定義し、Surface Hub に関連付けられているリソース アカウントを更新できるように追加されています。
+Surface Hub に関連付けられたリソース アカウントを、管理者が定義、更新できる新しいデバイス アクションが追加されました。
 
 このリソース アカウントは、Skype または Exchange でミーティングに参加できるように認証する場合に Surface Hub で使用されます。 Surface Hub がミーティングで会議室として表示されるように、一意のリソース アカウントを作成できます。 たとえば、リソース アカウントは*会議室 B41/6233* と表示されます。 Surface Hub のリソース アカウント (デバイス アカウントと呼ばれる) は通常、会議室の場所や、他のリソース アカウントのパラメーターをいつ変更するかを構成するのに必要となります。
 
@@ -109,7 +109,7 @@ Intune コンソールで定義されているポリシーに準拠するため�
 
 - **オプションのリソース アカウント パラメーター** (指定されたリソース アカウントを使用して設定する必要があります)
 
-   - **パスワードの回転の期間**
+   - **パスワードのローテーション期間**
 
      アカウントのパスワードは、セキュリティ上の理由から、毎週 Surface Hub によって自動的に更新されます。 これを有効にした後にパラメーターを構成するには、最初に Azure Active Directory のアカウントのパスワードをリセットする必要があります。
 
@@ -121,7 +121,7 @@ Intune コンソールで定義されているポリシーに準拠するため�
 
      デバイス アカウントまたはリソース アカウントの電子メール アドレス。
 
-   - **Exchange server**
+   - **Exchange サーバー**
 
      自動検出が失敗した場合のみ必要です。
 
@@ -130,18 +130,18 @@ Intune コンソールで定義されているポリシーに準拠するため�
      予定表の同期と他の Exchange サーバー サービスが有効かどうかを指定します。 たとえば、ミーティングの同期などです。
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>macOS デバイスでの Office アプリのインストール <!-- 1494311 -->
-今すぐことができます macOS デバイスに Office アプリケーションをインストールします。 この新しい種類のアプリでは、Word、Excel、PowerPoint、Outlook、OneNote をインストールできます。 これらのアプリで、Microsoft の自動更新 (MAU)、アプリを安全かつ最新に保つためにも付属しています。
+macOS デバイスで Office アプリをインストールできるようになりました。 この新しい種類のアプリでは、Word、Excel、PowerPoint、Outlook、OneNote をインストールできます。 これらのアプリには Microsoft AutoUpdate (MAU) も付属しており、アプリを安全かつ最新に保つことができます。
 
 ### <a name="app-management"></a>アプリ管理
 
 #### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>iOS Volume Purchasing Program トークンのライセンスの削除 <!-- 820879 -->
-コンソールを使用して iOS ボリューム購入プログラム (VPP) トークンを削除することができます。 VPP トークンのインスタンスが重複している場合に、これが必要になることがあります。
+コンソールを使用して、iOS Volume Purchasing Program (VPP) トークンを削除できます。 VPP トークンのインスタンスが重複している場合に、これが必要になることがあります。
 
 ### <a name="intune-apps"></a>Intune アプリ
 
-#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>エンド ユーザー アカウントのメッセージング<!--1573558 for 1712-->
+#### <a name="end-user-messaging-for-accounts---1573558-for-1712--"></a>アカウントに関するエンド ユーザーへのメッセージング<!--1573558 for 1712-->
 
-ポータル サイト web サイトのユーザーは、テナントへの書き込みアクセスを必要とする操作を行ってからブロックされます。 適切なエラーが表示されます、アカウントがメンテナンス期間を説明するメッセージします。 ような変更は、ポータル サイト アプリを Android、iOS、macOS、および Windows 用まもなく利用できます。 このエラーを表示することができます、[アプリ UI の新機能](whats-new-app-ui.md)します。 
+ポータル サイトの Web サイト ユーザーによる、テナントへの書き込みアクセスを必要とする操作はブロックされます。 対象ユーザーには、使用アカウントがメンテナンス中であることを示すエラー メッセージが表示されます。 Android、iOS、macOS、Windows 向けのポータル サイト アプリにも、同様の変更がまもなく適用されます。 詳細については、[アプリの UI の新機能](whats-new-app-ui.md)に関するページをご覧ください。 
 
 
 
@@ -149,14 +149,14 @@ Intune コンソールで定義されているポリシーに準拠するため�
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>現在のユーザーという名前の新しいエンティティ コレクションは、現在アクティブなユーザー データに限られています <!-- 1667026 -->
 
-**ユーザー**エンティティのコレクションには、社内で割り当てられたライセンスを持つすべての Azure Active Directory (Azure AD) ユーザーが含まれています。 たとえば、ユーザーが Intune に追加され、過去 1 か月の過程で削除されたとします。 このユーザーがレポートの時点では存在しない一方で、ユーザーと状態はデータに存在します。 データ内のユーザーの履歴における存在の期間を示すレポートを作成できます。
+**ユーザー** エンティティ コレクションには、社内のすべての Azure Active Directory (Azure AD) ユーザーと割り当てられているライセンスが表示されます。 たとえば、ユーザーが Intune に追加され、過去 1 か月の過程で削除されたとします。 このユーザーがレポートの時点では存在しない一方で、ユーザーと状態はデータに存在します。 データ内のユーザーの履歴における存在の期間を示すレポートを作成できます。
 
 これに対し、新しい**現在のユーザー** エンティティ コレクションには、削除されていないユーザーのみが含まれています。 **現在のユーザー** エンティティ コレクションには、現在アクティブなユーザーのみが含まれています。 **現在のユーザー** エンティティ コレクションの詳細については、「[現在のユーザー エンティティのリファレンス](reports-ref-current-user.md)」をご覧ください。
 
 
-### <a name="updated-graph-apis----1736360---"></a>更新されたグラフ Api<!-- 1736360 -->
+### <a name="updated-graph-apis----1736360---"></a>Graph API の変更 <!-- 1736360 -->
 
-このリリースでいくつかの Graph API のベータ版では、Intune に更新されました。 毎月を確認してください[Graph API の変更ログ](https://developer.microsoft.com/graph/docs/concepts/changelog)詳細についてはします。
+このリリースでは、Intune のベータ版の Graph API にいくつか変更を加えました。 詳細については、[Graph API の変更ログ](https://developer.microsoft.com/graph/docs/concepts/changelog)のページ (毎月更新) をご覧ください。
 
 
 ## <a name="week-of-december-4-2017"></a>2017 年 12 月 4 日の週
@@ -252,7 +252,7 @@ iOS 11 以降を内蔵した会社所有デバイスと個人所有デバイス�
 詳しくは、「[ハイブリッド MDM のユーザーとデバイスを Intune スタンドアロンに移行する](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)」を参照してください。
 
 #### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>オンプレミスの Exchange Connector の高可用性のサポート  <!-- 676614 -->
-Exchange connector には、指定された CA を使用して Exchange への接続が作成されたら、コネクタようになりましたを検出する機能の他の CASs です。 プライマリの CA が使用できなくなった場合、コネクタはフェールオーバー別の CA に場合は、使用可能なプライマリ CA までできるようになります。 詳細については、「[内部設置型 Exchange connector の高可用性のサポート](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support)です。
+Exchange Connector によって、指定の CAS で Exchange への接続が作成された後、コネクタで別の CAS も検出できるようになりました。 メインの CAS が利用できなくなった場合、再度利用可能になるまで、コネクタが別の CAS (ある場合) にフェールオーバーします。 詳細については、「[オンプレミスの Exchange Connector の高可用性のサポート](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support)」をご覧ください。
 
 #### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>iOS デバイスをリモート再起動する (監視モードのみ) <!-- 1424595 -->
 
@@ -539,7 +539,7 @@ The Company Portal app for Android can now use geofencing to protect access to c
 #### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Android 向けポータル サイト アプリに関してユーザーの自己解決をサポートする <!-- 1573324, 1573150, 1558616, 1564878 -->
 
 Android 向けポータル サイト アプリでは、エンド ユーザーへの指示が追加されています。それは新しいユース ケースの理解や、可能な場合にはその自己解決にも役立ちます。
-- エンドユーザーを紹介する、 [Azure Active Directory ポータル](https://account.activedirectory.windowsazure.com/r/#/profile)を追加することが許可されているデバイスの最大数に達している場合は、デバイスを削除します。
+- 追加が許されているデバイスの最大数に到達した場合、デバイスを削除するように、エンド ユーザーは [Azure Active Directory ポータル](https://account.activedirectory.windowsazure.com/r/#/profile)に誘導されます。
 - [Samsung KNOX デバイスのアクティベーション エラーを解消する](https://go.microsoft.com/fwlink/?linkid=859718)か、[節電モードをオフにする](/intune-user-help/power-saving-mode-android)ための手順がエンド ユーザーに表示されます。 いずれの解決策でも問題が解消されない場合、[Microsoft にログを送信する](/intune-user-help/send-logs-to-microsoft-ios)方法を説明します。
 
 #### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Android デバイスで利用できる新しい '解決' アクション <!-- 1583480 -->
@@ -730,8 +730,8 @@ Windows 10 向けのポータル サイト アプリでは、ユーザーがプ�
 
 ## <a name="notices"></a>通知
 
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>変更を計画します Easy Assist の終了。<!-- 1556480 -->
-Microsoft Easy Assist を使用して PC 管理のリモート アシスタンスの Intune です。 知らなくても 1 つの点では、Microsoft Easy Assist が Office Live Meeting、2017 年 12 月 31 日は推奨されているサービスのコンポーネントであることです。 そのため、Intune の Easy Assist サービスでは、2017 年 12 月 31 日の寿命が到達はも。
+### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>予定されている変更: Easy Assist のサービス終了<!-- 1556480 -->
+Intune では、PC 管理のリモート アシスタンスに Microsoft Easy Assist を使用しています。 ご存知ないとは思いますが、Microsoft Easy Assist は、2017 年 12 月 31 日にサービスを終了する Office Live Meeting のコンポーネントの 1 つです。 そのため、Intune の Easy Assist サービスも、2017 年 12 月 31 日をもって終了いたします。
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Android デバイスとは別に Android for Work デバイスを管理する <!-- 1490731 EEready-->    
 **注**: 以下の変更は 11 月の更新をもってロールアウトが開始されます。ただし、自分のアカウントでは実行に時間がかかることがあります。 変更が自分のアカウントに適用されると、Office 365 ポータルで確認通知が届きます。 ロールアウト後、管理機能の追加のオプションを使用できるようになります。 ロールアウト中、エンド ユーザーのエクスペリエンスに対する変更はありません。

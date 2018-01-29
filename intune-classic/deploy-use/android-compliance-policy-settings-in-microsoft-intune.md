@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: af33c565094014bda046ec9add6f7b02023c649c
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3d28bfa6430cf22d9fa6b1c89f6af1071217a4b1
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けのコンプライアンス ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックで説明するポリシー設定は、Android 4.0 以降または Samsung KNOX 4.0 を実行しているデバイスに適用されます。
 
 その他のプラットフォームに関する情報を探している場合は、次のいずれかを選択します。
 > [!div class="op_single_selector"]
-- [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
-- [Android for Work デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android for Work デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 ### <a name="password"></a>パスワード

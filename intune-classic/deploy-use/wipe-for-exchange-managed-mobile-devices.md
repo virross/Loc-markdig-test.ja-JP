@@ -15,20 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00baa49411221ec520d03bb651b1b90d539e1bdc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 753e5e9dac7199dff18d110808524f05aa669036
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for [Exchange]-managed mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、Exchange ActiveSync (EAS) と Intune Exchange Connector を使って管理されているモバイル デバイスをワイプまたはリセットすることができます。 次の表に、Exchange ActiveSync で利用できるインベントリからのワイプ機能を説明します。
 
-|ワイプの種類|Windows 8.1 および Windows RT 8.1|iOS|Android|
-|----------------|----------------------------------|--------------|-------------------|-------|-----------|
-|フル ワイプ|メール アカウントとキャッシュ済みメールを削除します。|出荷時の設定に戻します。|出荷時の設定に戻します。|
-|選択的なワイプ/電子メール|電子メール アカウントを削除します。|サポートされていません。|サポートされていません。|
-|選択的なワイプ/ポリシー|ポリシーの強制は削除されますが、設定は変更されません|ポリシーの強制は削除されますが、設定は変更されません。|ポリシーの強制は削除されますが、設定は変更されません|
+
+|      ワイプの種類       |              Windows 8.1 および Windows RT 8.1              |                            iOS                             |                          Android                          |
+|-------------------------|----------------------------------------------------------|------------------------------------------------------------|-----------------------------------------------------------|
+|        フル ワイプ        |          メール アカウントとキャッシュ済みメールを削除します。           |                      出荷時の設定に戻します。                       |                      出荷時の設定に戻します。                       |
+|  選択的なワイプ/電子メール   |                  電子メール アカウントを削除します。                  |                       サポートされていません。                       |                      サポートされていません。                       |
+| 選択的なワイプ/ポリシー | ポリシーの強制は削除されますが、設定は変更されません | ポリシーの強制は削除されますが、設定は変更されません。 | ポリシーの強制は削除されますが、設定は変更されません |
+

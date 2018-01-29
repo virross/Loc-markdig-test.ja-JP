@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93d0f08697c8ee17ff44d599cb7b1bb262daa7ee
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d515a05d55cb579a8f775f2ee6397d490bcbd335
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reference-for-date-entity"></a>Date エンティティのリファレンス
 
@@ -28,23 +28,25 @@ ms.lasthandoff: 12/19/2017
 
 **Date** エンティティは、複数のデータ ウェアハウス エンティティ全体で参照される日付を示します。
 
-| プロパティ  | 説明 | 例 |
-|---------|------------|--------|
-| DateKey | データ ウェアハウス内のこの日付を示す一意識別子。 | 20160703 |
-| FullDate | この日付を完全な日時形式で表した日付。 | 7/3/2016 12:00:00 AM |
-| DayOfWeek | 曜日 | 1 |
-| DayOfMonth | 月の日付 | 3 |
-| DayOfYear | 年の通算日 | 185 |
-| WeekOfYear | 年の通算週 | 28 |
-| MonthOfYear | 月 | 7 |
-| CalendarQuarter | カレンダーの四半期 | 3 |
-| CalendarYear | カレンダーの年 | 2016 |
-| DateKey | データ ウェアハウス内のこの日付を示す一意識別子。 | 20160703 |
-| FullDate | この日付を完全な日時形式で表した日付。 | 7/3/2016 12:00:00 AM |
-| DayOfWeek | 曜日 | 1 |
-| DayOfMonth | 月の日付 | 3 |
-| DayOfYear | 年の通算日 | 185 |
-| WeekOfYear | 年の通算週 | 28 |
-| MonthOfYear | 月 | 7 |
-| CalendarQuarter | カレンダーの四半期 | 3 |
-| CalendarYear | カレンダーの年 | 2016 |
+
+|    プロパティ     |                      説明                       |       例        |
+|-----------------|--------------------------------------------------------|----------------------|
+|     DateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
+|    FullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
+|    DayOfWeek    |                      曜日                       |          1           |
+|   DayOfMonth    |                      月の日付                      |          3           |
+|    DayOfYear    |                      年の通算日                       |         185          |
+|   WeekOfYear    |                      年の通算週                      |          28          |
+|   MonthOfYear   |                   月                    |          7           |
+| CalendarQuarter |                    カレンダーの四半期                    |          3           |
+|  CalendarYear   |                     カレンダーの年                      |         2016         |
+|     DateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
+|    FullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
+|    DayOfWeek    |                      曜日                       |          1           |
+|   DayOfMonth    |                      月の日付                      |          3           |
+|    DayOfYear    |                      年の通算日                       |         185          |
+|   WeekOfYear    |                      年の通算週                      |          28          |
+|   MonthOfYear   |                   月                    |          7           |
+| CalendarQuarter |                    カレンダーの四半期                    |          3           |
+|  CalendarYear   |                     カレンダーの年                      |         2016         |
+

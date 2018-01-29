@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: ec7f634db265e8f656539cd10c8605c8b283d8c8
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Windows のポータル サイト アプリが古い
 

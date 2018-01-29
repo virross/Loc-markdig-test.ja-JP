@@ -15,15 +15,15 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 242c8542582286208cd9f8f2b030f7e824b0f0f3
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 1704 リリース以降では、Windows 10 でアプリ保護ポリシーを使用して、デバイスを登録せずにアプリを保護できます。
 
@@ -39,11 +39,11 @@ WIP ポリシーを追加するときのいくつかの概念について説明�
 
 ### <a name="types-of-apps"></a>アプリの種類
 
--   **おすすめのアプリ:** ポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。 <!---I really don't know what you mean by "easily import into policy"--->
+- <strong>おすすめのアプリ:</strong> ポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。 <!---I really don't know what you mean by "easily import into policy"--->
 
--   **ストア アプリ:** Windows ストアからポリシーに任意のアプリを追加できます。
+- **ストア アプリ:** Windows ストアからポリシーに任意のアプリを追加できます。
 
--   **Windows デスクトップ アプリ:** 従来の Windows デスクトップ アプリをポリシーに追加できます (exe、dll など)。
+- **Windows デスクトップ アプリ:** 従来の Windows デスクトップ アプリをポリシーに追加できます (exe、dll など)。
 
 ## <a name="pre-requisites"></a>前提条件
 
@@ -56,7 +56,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 > [!IMPORTANT]
 > WIP は複数の ID をサポートしていません。存在できる管理対象 ID は一度に 1 つだけです。
-<!---Should you be linking to a topic that explains what multi-identity is?--->
+> <!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>WIP ポリシーを追加するには
 
@@ -66,7 +66,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 2.  **[アプリに関するポリシー]** ブレードで **[ポリシーの追加]** を選び、次の値を入力します。
 
-    a.  **[名前]:** (必須) 新しいポリシーの名前を入力します。
+    」を参照します。  **[名前]:** (必須) 新しいポリシーの名前を入力します。
 
     b.  **[説明]:** 必要に応じて説明を入力します。
 

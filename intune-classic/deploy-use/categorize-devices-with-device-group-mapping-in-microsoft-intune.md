@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5076f04d55bf6561eab5b06607810f56431cd549
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3021efd07d4051de3a204eff7118758eebbee5eb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune の**デバイス グループ マッピング**を使用して、ユーザー定義のカテゴリに基づいてデバイスを自動的にグループに追加することで、デバイスの管理が容易になります。 
 
@@ -67,10 +67,10 @@ Azure Active Directory ベースのセキュリティ グループは段階的�
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>手順 1 - Intune 管理コンソールでデバイス カテゴリを作成する
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
-3. **[管理]** ワークスペースで、**[モバイル デバイス管理]** を展開してから、**[デバイス カテゴリ]** を選択します。
-4. **[デバイス カテゴリ]** ページには、デバイス カテゴリを構成できる一覧が表示されます。 
-- 名前を入力し、**[追加]** をクリックすると、新しいデバイス カテゴリとして追加されます。
-- カテゴリを選択し、**[削除]** をクリックして削除することもできます。
+2. **[管理]** ワークスペースで、**[モバイル デバイス管理]** を展開してから、**[デバイス カテゴリ]** を選択します。
+3. **[デバイス カテゴリ]** ページには、デバイス カテゴリを構成できる一覧が表示されます。 
+4. 名前を入力し、**[追加]** をクリックすると、新しいデバイス カテゴリとして追加されます。
+5. カテゴリを選択し、**[削除]** をクリックして削除することもできます。
 
 デバイス カテゴリ名は、手順 2 で Azure Active Directory セキュリティ グループを作成するときに使用します。
 

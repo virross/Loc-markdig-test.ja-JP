@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 96b0c2f10f5fec1f8c80b7510ba5bfa231e45739
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Azure AD を使用して Intune Graph API にアクセスする方法
 
@@ -113,17 +113,19 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
     <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
+
 - テナントの外部ユーザーがアプリを使用できるようにします。  (これは通常、複数のテナント/組織をサポートするパートナーにのみ必要です。)  
 
     これを実行するには、次のようにします。
 
-    1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
+  1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. `availableToOtherTenants` 設定の値を `true` に変更します。
 
-    3. 変更を保存します。
+  2. `availableToOtherTenants` 設定の値を `true` に変更します。
+
+  3. 変更を保存します。
 
 ## <a name="intune-permission-scopes"></a>Intune のアクセス許可スコープ
 
@@ -557,7 +559,7 @@ catch {
 
     そのためには、次のいずれかを実行します。
 
-    a. [Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。
+    」を参照します。 [Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。
 
     b. ユーザーを招待して、テナントのゲストにします。
 
@@ -576,6 +578,7 @@ catch {
 これにより、ユーザーに招待状が送信されます。
 
    <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
+
 
    ユーザーは **[開始]** リンクを選択して、招待を承諾する必要があります。
 

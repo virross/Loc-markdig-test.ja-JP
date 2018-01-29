@@ -15,16 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b0fdb06b072c325d30b3e5ee72f1982c5f61849
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 2f91f03831fc848d91adca26d4fd817977df2a78
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 
@@ -33,15 +33,16 @@ ms.lasthandoff: 12/19/2017
 -------------------------------
 
 
-| **ポリシー設定** | **iOS 8.0 以降** |
-| --- | --- |
-| **PIN またはパスワードの構成** | 修復 |   
-| **デバイスの暗号化** | 修復 (PIN の設定による) |
-| **脱獄またはルート化されたデバイス** | 検疫済み (設定ではありません)
-| **電子メールのプロファイル** | 検疫済み |
-|**最小 OS バージョン** | 検疫済み |
-| **最大 OS バージョン** | 検疫済み |  
-| **Windows 正常性構成証明書** | 該当なし |  
+|        <strong>ポリシー設定</strong>         | <strong>iOS 8.0 以降</strong> |
+|------------------------------------------------|------------------------------------|
+| <strong>PIN またはパスワードの構成</strong> |             修復             |
+|       <strong>デバイスの暗号化</strong>       |    修復 (PIN の設定による)     |
+|  <strong>脱獄またはルート化されたデバイス</strong>  |    検疫済み (設定ではありません)     |
+|         <strong>電子メールのプロファイル</strong>         |            検疫済み             |
+|      <strong>最小 OS バージョン</strong>       |            検疫済み             |
+|      <strong>最大 OS バージョン</strong>       |            検疫済み             |
+|  <strong>Windows 正常性構成証明書</strong>   |           適用できません           |
+
 ----------------------------
 
 

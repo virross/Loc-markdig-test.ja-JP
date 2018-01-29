@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 77c87d24834066c6ed58eaf004422490fcb81aa4
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a6fe34da779c61de442790ead44c8776a9c9e7a6
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 12/19/2017
 
 2. 職場や学校のアカウントで会社のポータル Web サイトにログインします。
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 3. ログインした後、ページの左上隅の **[メニュー]** をクリックして、**[デバイス]** を選びます。
 
@@ -53,8 +54,8 @@ ms.lasthandoff: 12/19/2017
 
 8. **"CompanyPortal" がインターネットからダウンロードしたアプリケーションであることを伝え、これを開くかどうかを確認するメッセージ**が Mac に表示されます。 **[開く]** をクリックします。
 
-  > [!NOTE]
-  > Intune は、ユーザーのコンピューターにアクセスして、そのデバイスが組織のリソースにアクセスしても十分に安全であることを確認する必要があります。 ポータル サイト アプリの起動をコンピューターが拒否した場合、[Gatekeeper をオフに](https://support.apple.com/HT202491)してからアプリを開いてみてください。
+   > [!NOTE]
+   > Intune は、ユーザーのコンピューターにアクセスして、そのデバイスが組織のリソースにアクセスしても十分に安全であることを確認する必要があります。 ポータル サイト アプリの起動をコンピューターが拒否した場合、[Gatekeeper をオフに](https://support.apple.com/HT202491)してからアプリを開いてみてください。
 
 9. ポータル サイト アプリの最初の画面で、ポータル Web サイトへのログインに使用したものと同じ職場または学校のアカウントで**サインイン**するように求められます。
 

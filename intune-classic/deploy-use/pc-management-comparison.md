@@ -14,15 +14,15 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b3050193c2f36f4092285686935a410fb6baf5b5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1de4aa5264d3d89c06029c49246159f7091a3ac9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織では Microsoft Intune を使用して、モバイル デバイス管理 (MDM) によりモバイル デバイスとして、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。  Microsoft では、可能な場合は常に MDM 管理ソリューションを使用することをお勧めします。 これらのオプションの相違点を理解するために、次の表で 2 つの管理オプションを比較しています。
 
@@ -50,4 +50,4 @@ ms.lasthandoff: 12/19/2017
 - **スケーラビリティ** - MDM 管理は Intune クラウド管理とともに拡張します。 Intune ソフトウェア クライアントの制限は、PC 7,000 台までです。
 - **簡単** - ダウンロード済みのソフトウェア クライアントに依存せず、オペレーティング システムに含まれる最新の管理機能を使用します。
 - **整合性** - お使いの Windows PC は組織内の他のすべてのモバイル デバイスと同様に管理されます。
-<!-- - **Cloud optimization** - -->
+  <!-- - **Cloud optimization** - -->

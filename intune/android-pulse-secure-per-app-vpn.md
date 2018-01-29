@@ -15,15 +15,15 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5319913c16710d9a2076e629d8ff57894f95f139
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4151280509f225a4434d5813ac0405653b8929b6
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。
 
@@ -63,7 +63,7 @@ VPN プロファイルの作成時に指定した**接続名**の値を書き留
 3. **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
     - 設定の名前を入力します。
     - **[データ型]** に **[文字列]** を指定します。
-    - **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
+    - **OMA-URI**、この文字列を指定: **./Vendor/MSFT/VPN/Profile/*名前*/PackageList**ここで、*名前*は、VPN プロファイル名手順 1. で説明します。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
     - **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
@@ -74,7 +74,7 @@ VPN プロファイルの作成時に指定した**接続名**の値を書き留
   1.    **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
   2.    設定の名前を入力します。
   3.    **[データ型]** に **[文字列]** を指定します。
-  4.    **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/Mode** の文字列を使用します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
+  4.    **OMA-URI**、この文字列を使用して: **./Vendor/MSFT/VPN/Profile/*名前*/Mode**ここで、*名前*手順でメモした VPN プロファイル名を指定1。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
   5.    **[値]** には、「**BLACKLIST**」または「**WHITELIST**」と入力します。
 
 

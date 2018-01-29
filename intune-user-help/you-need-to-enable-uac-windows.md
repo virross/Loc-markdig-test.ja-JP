@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e3ebea03-bd06-4b5e-8709-0a504c5d7bf7
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8f24629cbf6768e49c244ee6dfe31f0035d052a
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 317cf77f27597f460826cc13572761923df34508
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-enable-user-access-control"></a>ユーザー アクセス制御を有効にする方法
 

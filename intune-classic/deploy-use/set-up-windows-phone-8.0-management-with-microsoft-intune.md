@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5190a07d4aa2e3e7619f98fb1c8a129847d91958
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 08b16418181f809cc39fc13e767858543223978f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 #  <a name="windows-phone-80-company-portal-app-deprecated"></a>使用されていない Windows Phone 8.0 ポータル サイト アプリ
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 2016 年 9 月の時点で、Windows 8.0 ポータル サイト アプリは使用されていません。 登録されている Window 8.0 デバイスは管理されますが、新しいデバイスは登録できません。

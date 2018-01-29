@@ -14,15 +14,15 @@ ms.assetid: 531b09bb-ddfd-498f-8ee3-6675d2466208
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.openlocfilehash: 9d16da3bbbeaaa768d5e2a01b403c227bb194354
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 2a85caee417e766712f48c78278ad6608c7332a3
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online"></a>SharePoint Online のアプリベースの条件付きアクセス (CA) ポリシーを設定する
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 ここでは、SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定する方法のガイダンスを提供します。 管理者は、アプリベースの CA を使用して、Intune App 保護ポリシーが適用されているモバイル アプリのみを許可することができます。
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5628dcdf35aef4c208e7a1150c21df4891f81852
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: df528e03abfd2ce2d70938567c108f9aacbc3d83
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>障碍のある方のためのアクセシビリティ
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 次のトピックでは、障碍のある方に Microsoft Intune をより簡単にお使いいただくための機能、製品、サービスについて説明します。

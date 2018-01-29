@@ -14,15 +14,15 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1e48effd28d1e0598abbdfbf1c48298366c07a4f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>アプリベースの条件付きアクセス ポリシーの設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、承認済みアプリに含まれるアプリにアプリベースの条件付きアクセス ポリシーを設定する方法を紹介します。 承認済みのアプリの一覧は、Microsoft によってテストされたアプリで構成されます。
 

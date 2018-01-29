@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ea284120a4b1b31e96a606c7f04c3da8c312d6ed
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 1b349de6fe6cc8e0360ec39482a2c354a3f1a083
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>管理するデバイスを Intune に登録する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Windows PC などのデバイスを登録し、Microsoft Intune によるモバイル デバイス管理 (MDM) を有効にできます。 このトピックでは、Intune の管理にモバイル デバイスを登録するさまざまな方法について説明します。 デバイスの登録方法は、デバイスの種類、所有権、および必要な管理レベルによって決まります。 "Bring Your Own Device" (BYOD) の登録では、ユーザーは個人で所有するスマートフォン、タブレット、PC を登録できます。 会社が所有しているデバイス (COD) の登録では、自動登録、共有デバイス、事前承認された登録要件などの管理シナリオが有効になります。
 
@@ -124,7 +124,7 @@ Intune クライアント ソフトウェアを利用して管理される PC �
 
 Intune では、次のデバイス プラットフォームを管理できます。
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## <a name="next-steps"></a>次の手順
 - [デバイス登録の前提条件](prerequisites-for-enrollment.md)

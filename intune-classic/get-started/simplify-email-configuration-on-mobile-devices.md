@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e2ef770a531043c2479683f09be3b2309e792b87
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ce3edb95bcb4211c4592887f9654ab77800e907e
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>クイック スタート ガイド: モバイル デバイスでの電子メールの構成を簡略化する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune は、Intune サービスによって管理される Windows、iOS、および Android モバイル デバイスに電子メール (および VPN と WiFi の) プロファイルを展開できるようにすることで、会社の時間とリソースを節約します。 電子メール プロファイルを自動的に構成することで、エンド ユーザー エクスペリエンスを大幅に向上させて満足度レベルを上昇させながら、ヘルプデスクのコストを削減することができます。
 

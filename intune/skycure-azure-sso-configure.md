@@ -15,11 +15,11 @@ ms.assetid: e0466ac4-4942-4c4c-b8af-996b597c701d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93e7f1a21c9badb3cc3ccdf02432267b271e6e94
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 90e12cc2ad2a36e2ef34e6c53c16d1206934f1bc
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する
 

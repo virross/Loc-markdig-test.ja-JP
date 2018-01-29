@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b25e1c40473ac3c37c9122386611a1a23fb62cb
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4c9010093f41ad30d781e5975b2d0946eb7327a9
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Android デバイスのオペレーティング システムを更新する必要がある
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"KNOX" という単語が画面上に表示されるかを確認します。 表示される場合は、以下の Samsung KNOX の手順を実行します。
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 ## <a name="for-most-android-devices-non-samsung-knox"></a>ほとんどの Android デバイスの場合 (Samsung KNOX 以外)
 

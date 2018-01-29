@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d80ec63cd501ebb4b6779a54002a98c65e851cc5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 3aae57892dcde2e33c30ede918817ecb6f423d63
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="get-started-enrolling-devices"></a>デバイス登録の概要
 
@@ -35,7 +35,7 @@ Microsoft Intune は、会社のデータを保護した状態で、従業員が
 | 個人アカウントのパスワード | デバイス名 |
 | 予定表のイベント | 製造元 (Apple 製以外のデバイスの場合) |
 | フォト アプリやカメラ ロールの内容を含む、画像 | 電話番号 (仕事用デバイスの場合は全桁。 個人のデバイスの場合は下 4 桁のみ。) |
-
+ 
 ## <a name="how-do-i-enroll-a-device"></a>デバイスはどのように登録しますか。
 
 多くのエンド ユーザーにとって、企業リソースへのアクセスにあたり、最初にデバイス登録が求められます。 [この過程を理解](end-user-educate.md)しておけば、面倒な操作が楽になります。
@@ -57,7 +57,7 @@ Microsoft Intune は、会社のデータを保護した状態で、従業員が
 15. “デバイスの登録中” メッセージが画面に表示され、続いてデバイスが正常に登録されたことが表示されます。 ポータル サイトでページを開くように求めるポップアップが表示されます。 **[開く]** をタップします。
 16. **[会社アクセスのセットアップ]** 画面に戻ります。 テスト ポリシーを設定していない場合、デバイスがポリシー準拠として表示されるはずです。 テスト ポリシーがない場合、**[デバイスのポリシー準拠]** をタップすると、デバイスを安全にするために行わなければならないことがあると表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [アプリ追加の概要](get-started-apps.md) - 社員が仕事を行えるように、アプリを見つけ、デバイスに追加します。
 

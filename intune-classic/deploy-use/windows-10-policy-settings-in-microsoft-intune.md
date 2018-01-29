@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d0ddcb4b8b5f554f988b029a1b382af45b81db6
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: a608ea9c4e6c15e7e97079dd0e5bdfca7bb56b4a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックには、Windows 10 デバイスの管理に使用できる Intune ポリシー設定を理解するのに役立つ情報が含まれています。 このトピックと一緒に「[Manage settings and features on your-devices with Microsoft Intune policies](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)」(Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する) の手順も読んでください。
 

@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e80758f0fc96394a4f1c474037b7584fa39b1678
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 09778d0b7ec208b64f9575713123c725dcd63695
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reference-for-application-entities"></a>アプリケーション エンティティのリファレンス
 
@@ -115,23 +115,25 @@ ms.lasthandoff: 12/19/2017
 
 ## <a name="mobileappinstallstate"></a>MobileAppInstallState
 
-**MobileAppInstallState**エンティティは、デバイス、ユーザーまたはその両方を含むグループに割り当てられた後に、モバイル アプリケーションのインストール状態を表します。
+**MobileAppInstallState** エンティティは、デバイス、ユーザーまたはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。
 
 | プロパティ | 説明 |
 |---|---|
-| AppInstallStateKey | アプリの一意の ID は、アカウントの状態をインストールします。 |
-| AppInstallState | アプリの列挙値は、状態をインストールします。 |
-| AppInstallStateName | アプリのインストール状態の名前です。 |
+| AppInstallStateKey | アカウントにおけるアプリのインストール状態の一意の ID。 |
+| AppInstallState | アプリのインストール状態の列挙値。 |
+| AppInstallStateName | アプリのインストール状態の名前。 |
 
 ## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-**MobileAppDeviceUserInstallStatus**特定のデバイスとユーザーのモバイル アプリのインストール状態を表します。
+**MobileAppDeviceUserInstallStatus** は、特定のデバイスとユーザーのモバイル アプリのインストール状態を表します。
 
-| プロパティ | 説明 |
-|---|---|
-| DateKey | アプリが状態をインストールするときに日付のキーが記録されます。 |
-| AppKey | AppRevision のインスタンスを識別するために使用するモバイル アプリのキー。 |
-| DeviceKey | デバイスのインスタンスを識別するための対象となるデバイスのキー。 |
-| UserKey | ユーザーのインスタンスを識別するために使用する対象となるユーザーのキー。 |
-|AppInstallStateKey | アプリのキーは、MobileAppInstallState のインスタンスを識別するために使用状態をインストールします。 |
-| エラー コード | アプリのインストーラー、モバイル プラットフォームまたはアプリのインストールに関連するサービスによって返されたエラー コード。 |
+
+|      プロパティ      |                                                         説明                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  アプリのインストール状態が記録されたときの日付のキー。                                  |
+|       AppKey       |                             AppRevision のインスタンスの識別に使用する、モバイル アプリのキー。                              |
+|     DeviceKey      |                              Device のインスタンスの識別に使用する、対象デバイスのキー。                               |
+|      UserKey       |                                User のインスタンスの識別に使用する、対象ユーザーのキー。                                 |
+| AppInstallStateKey |                     MobileAppInstallState のインスタンスの識別に使用する、アプリのインストール状態のキー。                     |
+|     エラー コード      | アプリのインストーラー、モバイル プラットフォーム、またはアプリのインストールと関わりがあるサービスによって返されるエラー コード。 |
+

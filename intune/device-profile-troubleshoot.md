@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cec910d21d7ab6a75f1b879a613fd943bc2086e0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 4aaa25bb36b0125350e3ab8b25e7e8ba89626c3f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune のデバイス プロファイルに関するトラブルシューティング
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックに記載されている情報は、Intune デバイス プロファイルに関する一般的な問題のトラブルシューティングに活用できます。
 

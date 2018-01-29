@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0d469a52c10a3c6080a3e900d55d18d7798bb534
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 7627a936d89b5081582ad8d06d74a4ed3a3f366c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Intune で iOS デバイスを Device Enrollment Program に登録する
 

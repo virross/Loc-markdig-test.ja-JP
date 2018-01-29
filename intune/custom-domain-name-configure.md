@@ -14,15 +14,15 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ddfa40800bcb0d671ea492ea365bf54ad5fb342
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: af2789f14af0cd981c0e1c61265a63805c12580b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>カスタムのドメイン名を構成する
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 このトピックでは、管理者が DNS CNAME を作成して、ログオン エクスペリエンスの簡略化とカスタマイズを行う方法を説明します。
 

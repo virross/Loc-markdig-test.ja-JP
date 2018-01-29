@@ -14,15 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aa9ded5afca09eb03e41fa029153842917919456
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 580f6d66fa81308896823c8bcdebe853eb69127a
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune は、モバイル デバイス管理するための組織向けの包括的なソリューションを提供します。 Intune は、Windows 10 オペレーティング システムに組み込まれている最新のデバイス管理機能を使用して、モバイル デバイスとして Windows PC を管理できます。 組織の管理ニーズを満たすため、Intune は、Intune ソフトウェア クライアントでコンピューターとして Windows PC を管理することもできます。 この管理方法は、従来の Windows オペレーティング システムでのコンピューター管理機能を使います。
 

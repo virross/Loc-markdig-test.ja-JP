@@ -14,15 +14,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 134971bfa9a4f4f5b74e5a4c014ab3e465721f1f
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 5ad660a18c8617351808af9b0b16b4757f997dd0
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 この記事は、企業でデバイス管理を担当するシステム管理者を対象としています。 電話への Intune インストールについては、[管理デバイスでの作業](/intune-user-help/company-portal-frequently-asked-questions)に関するページを参照してください。
 
@@ -37,7 +37,7 @@ Microsoft Intune のセットアップを開始する前に、次の要件を確
 
 次のデバイスを Intune モバイル デバイス管理を使用して管理できます。
 
-[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Samsung KNOX Standard デバイスのサポート
 

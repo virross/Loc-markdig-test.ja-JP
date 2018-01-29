@@ -11,20 +11,21 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e27e1bbe9b48b24e02b9b77a93ddc10f7a1d9b0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ad4f816e901ef224d6510a00144ec1e960a39414
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Windows デバイスを更新する必要がある
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 Windows を実行しているモバイル デバイスの場合は、**[設定]** > **[電話の更新]** > **[更新プログラムの確認]** の順に移動して、デバイスを更新します。
 

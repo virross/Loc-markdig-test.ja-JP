@@ -15,17 +15,15 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1785c18ab1c61465c230b615eebc2f74fed2413
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ff590506f1549b42554f75dc6f9f1ef29e7f728c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの電子メール プロファイル設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[アカウント名]** - ユーザーのデバイスに表示される電子メール アカウントの表示名。

@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0224238f4f84c0731f27469e03f16eece313ec60
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>iOS 用 Intune のデバイス シングル サインオンを構成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ほとんどの基幹業務 (LOB) アプリでは、セキュリティに対応するために、何らかのレベルのユーザー認証が必要です。 多くの場合、ユーザーはそのために同じ資格情報を何回も入力する必要があり、ストレスを感じることがあります。 ユーザーの操作環境を改善するため、開発者はシングル サインオンを使うアプリを作成し、ユーザーが資格情報を入力する必要のある回数を減らすことができます。
 

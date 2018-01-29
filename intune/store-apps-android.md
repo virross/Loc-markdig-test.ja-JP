@@ -15,18 +15,17 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5e409501dc983f26cfe8d74c98b06d4dce76b3
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b1fcff95225985a4eb2524f0d16d0ceb529c13ec
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android ストア アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. Intune ブレードで、**[アプリの管理]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
@@ -35,7 +34,7 @@ ms.lasthandoff: 12/19/2017
 7. **[アプリの編集]** ブレードで、以下の情報を構成します。 構成が終わったら、**[追加]** をクリックします。 選択したアプリによっては、このブレード内の一部の値が自動的に入力されている場合があります。
     - **[アプリ名]** - アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **[アプリの説明]** - アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
-    - **発行元** - アプリの発行元の名前を入力します。
+    - **[発行元]** - アプリの発行元の名前を入力します。
     - **[アプリ ストア URL]** - 作成するアプリのアプリ ストア URL を入力します。
     - **[オペレーティング システムの最小要件]** - アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
     - **[カテゴリ]** (省略可能) - 1 つ以上の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 会社のポータルを閲覧するとき、ユーザーにとってアプリを探すのが簡単になります。

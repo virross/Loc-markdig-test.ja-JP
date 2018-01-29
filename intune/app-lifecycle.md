@@ -14,15 +14,15 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08ff917de1029abefa1598a69dd668f1bf4dafe
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8d82d8b29ae3992e3520df693194fe0f7e8d98e
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="overview-of-the-app-lifecycle"></a>アプリのライフサイクルの概要
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune のアプリのライフサイクルは、アプリが追加されると開始し、アプリを削除するまで以降のフェーズに従って進行します。
 

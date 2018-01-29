@@ -10,7 +10,7 @@ Managed Browser での Microsoft MyApps のサポートが向上します。 管
 
 Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。 Managed Browser 用の新しいアイコンは、[Intune アプリ UI の新機能に関するページ](/intune/whats-new-app-ui)でご覧いただけます。
 
-Android、iOS、Windows でのポータル サイト アプリのアイコンも更新されて、EM+S での他のアプリとの一貫性が向上します。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
+ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
 
@@ -331,6 +331,6 @@ __Intune アプリ SDK Xamarin コンポーネントで登録なしの MAM の�
 
 __Symantec 署名証明書のアップロードで署名済みの Windows Phone 8 ポータル サイトが不要に__ Symantec 署名証明書のアップロード時に、署名済みの Windows Phone 8 ポータル サイト アプリが不要になりました。 証明書は単独でアップロードできます。
 
-###<a name="deprecations"></a>廃止予定
+### <a name="deprecations"></a>廃止予定
 
 __Windows Phone 8 ポータル サイトのサポート__ Windows Phone 8 ポータル サイトのサポートは廃止されます。 2016 年 10 月に Windows Phone 8 プラットフォームおよび Windows RT プラットフォームのサポートが廃止されました。 また、2016 年 10 月に Windows Phone 8 ポータル サイトのサポートも廃止されました。

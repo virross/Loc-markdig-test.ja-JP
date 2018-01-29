@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: b3e69357ddc0cdcb8982d7168af12d3115a6f620
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Outlook アプリをインストールするにはデバイスをアップグレードする必要がある
 

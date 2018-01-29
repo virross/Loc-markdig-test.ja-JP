@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2b8d6e09aa2fad00bf72842649c15d692cf2e5bd
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d43fb00980a518f9ce62b3dd75bd1f09ba64c95c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
@@ -81,9 +81,9 @@ ms.lasthandoff: 12/19/2017
 8.  使用されなくなったデバイスや、定義が不正確なデバイスなど、目的のデバイスを削除します。
 
 > [!NOTE]
-
+> 
 > デバイスの登録上限を超えないように、デバイス登録マネージャー アカウントを使用します (「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」をご覧ください)。
->
+> 
 > デバイス登録マネージャー アカウントに追加されているユーザー アカウントのユーザー ログインについて条件付きアクセス ポリシーが適用されている場合、そのアカウントは登録を完了できません。
 
 ### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
@@ -148,7 +148,7 @@ ms.lasthandoff: 12/19/2017
 **問題:** ADFS に 2 番目の確認済みドメインを追加すると、2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
 
 
-**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+<strong>解決方法:</strong> AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを <strong>SupportMultipleDomain</strong> スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
 ## <a name="android-issues"></a>Android の問題
@@ -157,7 +157,7 @@ ms.lasthandoff: 12/19/2017
 
 次の表は、Intune に Android デバイスを登録しているときに、エンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br><br>[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign.md)方法に関する情報を参照してください。
 |**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set.md)方法に関する情報を参照してください。|
@@ -189,27 +189,27 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 1. デバイスで Smart Manager アプリを起動します。
 
-  ![デバイスの Smart Manager アイコンを選択する](./media/smart-manager-app-icon.png)
+   ![デバイスの Smart Manager アイコンを選択する](./media/smart-manager-app-icon.png)
 
 2. **[バッテリ]** タイルを選択します。
 
-  ![[バッテリ] タイルを選択する](./media/smart-manager-battery-tile.png)
+   ![[バッテリ] タイルを選択する](./media/smart-manager-battery-tile.png)
 
 3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
 
-  ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
+   ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
 
 4. アプリのリストから **[ポータル サイト]** を選択します。
 
-  ![アプリ リストから [ポータル サイト] を選択する](./media/smart-manager-company-portal.png)
+   ![アプリ リストから [ポータル サイト] を選択する](./media/smart-manager-company-portal.png)
 
 5. **[オフ]** を選択します。
 
-  ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
+   ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
 
 6. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、ポータル サイトがオフになっていることを確認します。
 
-  ![ポータル サイトがオフになっていることを確認する](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![ポータル サイトがオフになっていることを確認する](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
@@ -266,7 +266,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 ### <a name="ios-enrollment-errors"></a>iOS の登録エラー
 次の表は、Intune に iOS デバイスを登録している最中にエンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」を参照してください。|
 |DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順 ([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
@@ -306,7 +306,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3 が有効になっていることを確認する
 **問題** Device Enrollment Program (DEP) iOS デバイスを登録できません
 
-ユーザー アフィニティが設定された DEP デバイスでユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 Get-AdfsEndpoint PowerShell コマンドレットを利用し、trust/13/UsernameMixed エンドポイントを探すと、有効なエンドポイントの一覧が見つかります。 たとえば、
+ユーザー アフィニティが設定された DEP デバイスでユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 Get-AdfsEndpoint PowerShell コマンドレットを利用し、trust/13/UsernameMixed エンドポイントを探すと、有効なエンドポイントの一覧が見つかります。 次に例を示します。
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
@@ -374,7 +374,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 ## <a name="pc-issues"></a>PC の問題
 
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br>[ユーザー アカウントに Intune のライセンスを割り当てる](https://docs.microsoft.com/intune/licenses-assign)方法に関する情報を参照してください。|
 
@@ -427,5 +427,5 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

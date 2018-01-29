@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: f98d2cd0c678bebcaa743a88992dc6dba64d9dec
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 252f7fccbbb78561778264a756e50cc6b8a40bfc
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>モバイル アプリケーション管理に関するトラブルシューティング
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune モバイル アプリケーション管理に関して問題がある場合は、まずこのトピックを読んでください。 このトピックではユーザーが一般的に遭遇する問題や疑問を取り上げ、解決策と回答を提供します。
 

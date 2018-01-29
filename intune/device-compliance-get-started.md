@@ -15,15 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa78383233950e342c5ab0f83095bba3c8fda1f9
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 0462601eeaf9499b75cd2cdfc14fa0c910be5459
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="what-is-device-compliance-in-intune"></a>Intune でのデバイス コンプライアンスとは
 
@@ -130,12 +130,12 @@ Azure Portal での新しいデバイス コンプライアンス ポリシー�
 
 Azure Portal の新しいデバイス コンプライアンスに関連した機能を活用するには、Azure Portal で新しいデバイス コンプライアンス ポリシーを作成する必要があります。 Intune クラシック ポータルのデバイス コンプライアンス ポリシーが既に割り当てられているユーザーに Azure Portal の新しいデバイス コンプライアンス ポリシーを割り当てると、Intune クラシック ポータルで作成されたポリシーよりも Intune Azure Portal のデバイス コンプライアンス ポリシーが優先されます。
 
-##  <a name="next-steps"></a>次のステップ
+##  <a name="next-steps"></a>次の手順
 
 以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。
 
 - [Android](compliance-policy-create-android.md)
 - [Android for Work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
+- [Android](compliance-policy-create-ios.md)
 - [macOS](compliance-policy-create-mac-os.md)
 - [Windows](compliance-policy-create-windows.md)

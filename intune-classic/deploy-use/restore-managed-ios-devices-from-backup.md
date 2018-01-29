@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7f451e5ce8ddd3943dcd043046889a2fe72dc256
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: dc1c81ab3291d5b895c6e81e89d8891d35ee6b1c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Intune の管理対象 iOS デバイスをバックアップから復元する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ユーザーが新しいデバイスを入手した場合など、管理者またはユーザーがバックアップから iOS デバイスを復元する状況があります。 このトピックでは、デバイスの復元後に必要になる可能性がある Intune 管理のセットアップについて説明します。
 

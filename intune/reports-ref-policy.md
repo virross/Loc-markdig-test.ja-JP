@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: d378703f8aaf14d3976080f3c939b24a2ea76da8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
 
@@ -82,12 +82,14 @@ ms.lasthandoff: 12/19/2017
 
 **PolicyTypeActivity** エンティティには、成功、保留中、失敗、またはエラー状態のデバイスの累積数が表示されます。 デバイス構成プロファイル、アプリ構成プロファイル、またはコンプライアンス ポリシーについて、これらの状態が 1 日単位で表示されます。
 
-| プロパティ  | 説明 | 例 |
-|---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
-| PolicyKey |ポリシー キーとポリシーを結合して、policyName を取得できます。 |Windows 10 baseline |
-| PolicyTypeKey |ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます。 |Windows10 のコンプライアンス ポリシー |
-| Pending |保留状態の一意のデバイス数。 |123 |
-| 成功 |成功状態の一意のデバイス数。 |12 |
-| エラー |エラー状態の一意のデバイス数。 |10 |
-| Fail- |失敗状態の一意のデバイス数。 |2 |
+
+|   プロパティ    |                                         説明                                         |           例           |
+|---------------|---------------------------------------------------------------------------------------------|-----------------------------|
+|    DateKey    | デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |          20160703           |
+|   PolicyKey   |                ポリシー キーとポリシーを結合して、policyName を取得できます。                 |     Windows 10 baseline     |
+| PolicyTypeKey |      ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます。       | Windows10 のコンプライアンス ポリシー |
+|    Pending    |                         保留状態の一意のデバイス数。                          |             123             |
+|   成功   |                         成功状態の一意のデバイス数。                          |             12              |
+|     エラー     |                          エラー状態の一意のデバイス数。                           |             10              |
+|     Fail-     |                          失敗状態の一意のデバイス数。                          |              2              |
+

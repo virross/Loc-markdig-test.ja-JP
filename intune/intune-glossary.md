@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 5d094e59b374ca306482cd1cb87f8a950df7fe14
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 023ddf464d64c414184384e7d982818121d432a8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
@@ -38,11 +38,13 @@ ms.lasthandoff: 12/19/2017
 |Azure Portal|Intune の新しいコンソールです。詳しくは[こちら](/intune/what-is-intune)をご覧ください。|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring Your Own Device](/intune/device-enrollment)。 ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |証明書プロファイル|Wi-Fi、電子メール、または VPN プロファイルを使用するときに証明書で[企業リソースへのアクセスを保護する](/intune/certificates-configure)ためのポリシーの種類です。|
@@ -54,6 +56,7 @@ ms.lasthandoff: 12/19/2017
 |カスタム ポリシー|全般構成ポリシーに含まれる組み込み設定ではニーズを満たすことができない場合は、[カスタム ポリシーを使用](/intune/custom-settings-configure)します。 カスタム ポリシーを使用すると、Apple Configurator や OMA-URI などの他の方法で設定を作成できる場合があります。|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |展開|管理対象のデバイスまたはユーザーにアプリまたはポリシーを送信することです。 このアクションは、*割り当て*と呼ばれるようになりました。|
@@ -61,6 +64,7 @@ ms.lasthandoff: 12/19/2017
 |デバイス プロファイル|[これらのプロファイル](/intune/device-profile-create)では、管理するデバイスのセキュリティ、機能、アクセス設定を幅広く構成できます。|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の[電子メール アクセス設定](/intune/email-settings-configure)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
@@ -69,21 +73,25 @@ ms.lasthandoff: 12/19/2017
 |登録|Microsoft Intune は、[登録](/intune/device-enrollment)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|対象となるプランで 150 のライセンスを持つ Intune ユーザー向けの [Microsoft サービス](https://technet.microsoft.com/library/mt228265.aspx)です。 このサービスを利用すると、Microsoft スペシャリストが Intune の使用開始をお手伝いします。|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |[グループ]|グループを使用すると、[ユーザーまたはデバイスを論理的にまとめる](/intune/groups-get-started)ことができます。 たとえば、すべての Windows PC のグループを作成できます。 その後、これらのグループにアプリとプロファイルを割り当てることができます。|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |ハイブリッド|System Center Configuration Manager コンソールから Intune に登録されたデバイスを管理できる構成です。|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Azure ポータル|ほとんどの Intune 管理操作に使用できる Azure Portal です。|
@@ -92,11 +100,13 @@ ms.lasthandoff: 12/19/2017
 |インベントリ|管理対象デバイスの[ハードウェアとインストールされているソフトウェア](/intune/device-inventory)を表示するために使用します。|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |キオスク モード|[デバイスの制限プロファイル](/intune/device-restrictions-configure)の一部として構成されます。このモードを使用すると、デバイスをロック ダウンできます。 たとえば、一部のアプリだけを実行できるようにリテール デバイスを構成できます。|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|[Web を参照するためのアプリケーション](/intune/app-configuration-managed-browser)です。Intune を使用して組織内で割り当てることができます。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。|
@@ -109,17 +119,20 @@ ms.lasthandoff: 12/19/2017
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management。 モバイル デバイスと PC の機能を制御できるようにするために多くのハードウェア メーカーによって使用される業界標準のデバイス管理プロトコルです。|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier。 OMA-DM 標準に準拠する個々のデバイス設定を識別します。 ニーズを満たす組み込み設定がない場合は、これらの設定を [Intune カスタム プロファイル](/intune/custom-settings-configure)で使用できます。|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |パスコードのリセット|サポートされているデバイスでエンド ユーザーに[パスコードのリセット](/intune/device-passcode-reset)を強制できる Intune の機能です。|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |リモート ロック|デバイスを所有していない場合でも[サポートされているデバイスをロック](/intune/device-remote-lock)できる Intune の機能です。|
@@ -127,6 +140,7 @@ ms.lasthandoff: 12/19/2017
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |選択的ワイプ|[選択的ワイプ](/intune/device-company-data-remove)は、デバイスの設定および電子メールのプロファイルを含め、アプリの保護ポリシーで保護されている会社データのみを削除します。 選択的ワイプでは、ユーザーの個人データはデバイス上にそのまま保持されます。|
@@ -134,6 +148,7 @@ ms.lasthandoff: 12/19/2017
 |Subscription|Intune テナントへのアクセスを許可することを示す同意。|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Intune で管理される Android デバイスの[リモート アシスタンス機能](/intune/device-profile-android-teamviewer)を提供するために Intune と連携するサード パーティ製アプリケーションです。|
@@ -141,12 +156,15 @@ ms.lasthandoff: 12/19/2017
 |Intune の登録および会社アクセスに関する使用条件|ユーザーに割り当てられ、ユーザーがポータル サイトを使用して作業を登録およびアクセスする前に[読んで同意](/intune/terms-and-conditions-create)する必要のある情報を含むポリシーの種類です。|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |ボリューム購入アプリとブック|一部のアプリ ストアでは、社内で使用するアプリやブックの複数のライセンスを購入できます。 Intune を使用すれば、[このようなプログラムを通じて購入した](/intune/vpp-apps)アプリとブックを管理できます。 アプリ ストアからライセンス情報をインポートし、使用したライセンスの数を追跡し、所有しているライセンス数よりも多くのアプリをインストールしないようにすることができます。|
 |VPN プロファイル|エンド ユーザーが必要なセットアップを最小限に抑えるために、管理されたデバイスに [VPN 設定](/intune/vpn-settings-configure)を割り当てるポリシーです。|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi プロファイル|ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune/wi-fi-settings-configure)をデバイスに割り当てるポリシーです。
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi プロファイル | ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune/wi-fi-settings-configure)をデバイスに割り当てるポリシーです。 |
+

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 82462587c6d3bc7280277cc74da85759f8df6da0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: bf5a52477f578327e91b3035f9cc00e589ddfe78
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 多くのモバイル プラットフォームには、オペレーティング システムに付属のネイティブ電子メール クライアントが含まれています。 このトピックで説明するように、一部のクライアントは電子メール プロファイルを使用して設定できます。
 

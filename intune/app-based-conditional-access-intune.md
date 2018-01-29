@@ -14,15 +14,15 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: afc24faf135927a5f78c52a4087c0b1522b8bcf7
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Intune アプリ保護ポリシー](app-protection-policy.md)を使用すると、Intune に登録されているデバイス上の会社のデータを保護できます。 Intune での管理対象に登録されていない従業員所有のデバイスでも、アプリ保護ポリシーを使用できます。 この場合、会社はデバイスを管理しなくても、会社のデータとリソースが保護されるようにする必要はあります。
 
@@ -56,31 +56,31 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 ![Intune フローチャートを使用したアプリ ベースの条件付きアクセス](./media/ca-intune-common-ways-3.png)
 
-1.  ユーザーは、Outlook アプリから Azure AD の認証を試みます。
+1. ユーザーは、Outlook アプリから Azure AD の認証を試みます。
 
-2.  ユーザーは、初回認証時、ブローカー アプリのインストールのためにアプリ ストアにリダイレクトされます。 ブローカー アプリは、iOS の場合は Microsoft Authenticator、Android デバイスの場合は Microsoft ポータル サイトになります。
+2. ユーザーは、初回認証時、ブローカー アプリのインストールのためにアプリ ストアにリダイレクトされます。 ブローカー アプリは、iOS の場合は Microsoft Authenticator、Android デバイスの場合は Microsoft ポータル サイトになります。
 
- ユーザーがネイティブの電子メール アプリを使おうとすると、アプリ ストアにリダイレクトされ、その後 Outlook アプリのインストールにリダイレクトされます。
+   ユーザーがネイティブの電子メール アプリを使おうとすると、アプリ ストアにリダイレクトされ、その後 Outlook アプリのインストールにリダイレクトされます。
 
-3.  ブローカー アプリがデバイスにインストールされます。
+3. ブローカー アプリがデバイスにインストールされます。
 
-4.  ブローカー アプリが、Azure AD にデバイス レコードを作成する Azure AD 登録プロセスを開始します。 これは、モバイル デバイス管理 (MDM) の登録プロセスとは異なりますが、条件付きアクセス ポリシーをデバイスに適用するためにこのレコードが必要となります。
+4. ブローカー アプリが、Azure AD にデバイス レコードを作成する Azure AD 登録プロセスを開始します。 これは、モバイル デバイス管理 (MDM) の登録プロセスとは異なりますが、条件付きアクセス ポリシーをデバイスに適用するためにこのレコードが必要となります。
 
-5.  ブローカー アプリがアプリの ID を確認します。 セキュリティ層があるため、ブローカー アプリはユーザーによるアプリの使用が認証されているかどうかを検証できます。
+5. ブローカー アプリがアプリの ID を確認します。 セキュリティ層があるため、ブローカー アプリはユーザーによるアプリの使用が認証されているかどうかを検証できます。
 
-6.  ブローカー アプリが、ポリシーの承認済みリストに登録されているかどうかをチェックするユーザー認証プロセスの一部として、App Client ID を Azure AD に送信します。
+6. ブローカー アプリが、ポリシーの承認済みリストに登録されているかどうかをチェックするユーザー認証プロセスの一部として、App Client ID を Azure AD に送信します。
 
-7.  Azure AD が、ポリシーの承認済みリストに基づいて、ユーザーによるアプリの認証と使用を許可します。 アプリがリストに登録されていない場合、Azure AD はそのアプリへのアクセスを拒否します。
+7. Azure AD が、ポリシーの承認済みリストに基づいて、ユーザーによるアプリの認証と使用を許可します。 アプリがリストに登録されていない場合、Azure AD はそのアプリへのアクセスを拒否します。
 
-8.  Outlook アプリが Outlook クラウド サービスと通信して、Exchange Online との通信を開始します。
+8. Outlook アプリが Outlook クラウド サービスと通信して、Exchange Online との通信を開始します。
 
-9.  Outlook クラウド サービスが Azure AD と通信して、ユーザーの Exchange Online サービス アクセス トークンを取得します。
+9. Outlook クラウド サービスが Azure AD と通信して、ユーザーの Exchange Online サービス アクセス トークンを取得します。
 
-10.  Outlook アプリが Exchange Online と通信して、ユーザーの会社の電子メールを取得します。
+10. Outlook アプリが Exchange Online と通信して、ユーザーの会社の電子メールを取得します。
 
-11.  会社の電子メールは、ユーザーのメールボックスに配信されています。
+11. 会社の電子メールは、ユーザーのメールボックスに配信されています。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [アプリベースの条件付きアクセス ポリシーを作成する](app-based-conditional-access-intune-create.md)
 
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)

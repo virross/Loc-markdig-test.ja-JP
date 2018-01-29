@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d3240a79aacf08d3dd0f1145542f84f09614c751
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f4be56ef4aa4bb6f1fc585096cfb8368fd5eb64f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune のモバイル アプリケーション管理 (MAM) ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。 たとえば、管理対象アプリでの切り取り、コピー、および貼り付け操作を制限することや、管理対象ブラウザー内ですべての Web リンクを開くようにアプリを構成することができます。
 

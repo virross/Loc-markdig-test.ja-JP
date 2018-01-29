@@ -11,16 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 733a590e-836f-4941-bfd9-6ae53ba25e06
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 082acce8d82d50be28e0328c76e63c4440608983
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: f1790b5955aa4c90447f49d2b39f5c1aa7ecf813
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>ログを iOS デバイス向けポータル サイトの開発者に送信する | Microsoft Docs
 

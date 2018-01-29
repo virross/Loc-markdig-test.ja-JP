@@ -15,14 +15,14 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 571118896c54237a3128ff6e35ce425e1b09f078
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: af69568df461d992a02800a7e188bf0ca71e51d5
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert とは、Intune で管理されているデバイスの通信データ使用量を管理し、コストのかかる予想外のデータ超過やローミング超過を防止することができる、リアルタイム通信費管理ソフトウェアです。
 
@@ -72,7 +72,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
-  ![接続が成功したことを示している Datalert ページ](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![接続が成功したことを示している Datalert ページ](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>手順 2: 通信費管理機能が Intune でアクティブであることを確認する
 
@@ -88,7 +88,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
    ページの上部に表示されている接続状態が**[アクティブ]** になっていることを確認します。
 
-  ![Datalert との接続状態がアクティブであることを示している Azure Portal](./media/tem-azure-portal-enable-service.png)
+   ![Datalert との接続状態がアクティブであることを示している Azure Portal](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>手順 3: Datalert アプリを企業登録デバイスにデプロイする
 
@@ -118,11 +118,11 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 6. **Datalert** アプリを選択し、**[OK]**を選択します。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-select-app-from-apple-app-store.png)
+   ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-select-app-from-apple-app-store.png)
 
 7. 残りの手順を完了して、IOS 用アプリを作成します。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-steps-to-create-the-app.png)
+   ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-steps-to-create-the-app.png)
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Datalert アプリを企業のデバイス グループに割り当てる
 
@@ -134,7 +134,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 4. グループにとってアプリのインストールが必須であるか省略可能であるかを選択します。 次の例のスクリーンショットは、インストールが必須であることを示しています。つまり、ユーザーは、自分のデバイスを登録した後、Datalert アプリをインストールする必要があります。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-assign-datalert-app-to-device-group.png)
+   ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4: 企業が料金を支払う電話回線をDatalert コンソールに追加する
 

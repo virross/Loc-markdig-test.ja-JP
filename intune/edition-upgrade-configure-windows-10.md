@@ -15,21 +15,21 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 408cb88cabe96ad1226c4189bd1337ec95ba8d37
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 979bae8fffff211b869e73bf39ae3552fbad9d6d
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Microsoft Intune で Windows 10 エディションのアップグレードを構成する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、Windows 10 エディションのアップグレード プロファイルを構成する方法について説明します。 このプロファイルを使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に別のエディションにアップグレードできます。
 
 - Windows 10 Home
 - Windows 10 Holographic
-- [Windows] 10 Mobile
+- Windows 10 Mobile
 
 
 次のアップグレード パスがサポートされます。
@@ -40,7 +40,7 @@ ms.lasthandoff: 12/19/2017
 - Windows 10 Holographic windows 10 Holographic for Business
 
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 デバイスを最新バージョンにアップグレードし始める前に、次のいずれかを用意する必要があります。
 
 - ポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするための有効なプロダクト キー (Windows 10 Desktop エディションの場合)。 マルティプル アクティベーション キー (MAK)、キー マネジメント サーバー (KMS) キー、またはポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするためのライセンス情報を含む、Microsoft からのライセンス ファイル (Windows 10 Mobile エディションと Windows 10 Holographic エディションの場合) を使うことができます。
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/19/2017
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/19/2017
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 

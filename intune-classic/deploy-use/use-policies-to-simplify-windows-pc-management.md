@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d67bf344be7a20853e21cf580939f1156d1a723
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 479656b54c98e673e11066305da2440da53a802b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>ポリシーを使用して Windows PC 管理を簡略化する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune ソフトウェア クライアントを実行することにより Windows デスクトップを PC として管理するには、Intune 管理コンソールの **[コンピューターの管理]** ポリシーにあるポリシーだけを使用できます。 管理コンソールに表示される他のすべてのポリシーは、モバイル デバイス専用です。 **[コンピューターの管理]** のポリシーを使用して、Microsoft Intune Center で設定を構成し、PC の更新を制御し、PC の Windows ファイアウォールを構成できます。
 

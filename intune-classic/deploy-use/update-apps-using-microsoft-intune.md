@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0974d2cc4298b617d8246190d3ae116238e07fd5
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b8495c50a040e6c6a7fe7777b9e415333088b5ac
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="update-apps-using-microsoft-intune"></a>Microsoft Intune を使用してアプリを更新する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune は、アプリの更新プログラムを管理するのに役立ちます。 新しいバージョンが必要な場合は、このトピックに含まれるアプリを更新する方法を参照してください。
 

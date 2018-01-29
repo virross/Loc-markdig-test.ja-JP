@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: db38b3861a6ffbc88c796f4294242411131e051b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: b704cb944340f7d53baf26ceec34d9d53d06f77f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>アラートを使用して Microsoft Intune から通知を受ける
 
-[!INCLUDE[classic portal](../includes/classic-portal.md)]
+[!INCLUDE [classic portal](../includes/classic-portal.md)]
 
 アラートを使用すると、Microsoft Intune で何が起こっているかを常に把握しておくことができます。 たとえば、アラートによって次のようなイベントを通知できます。
 - モバイル デバイスの管理に影響を与える Exchange Connector の問題

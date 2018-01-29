@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f7bfca5f17d663461f778ce270989b8971ca1bc
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 97e8c89101a4e14d83216102ac6178b2d127e949
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>クイック スタート ガイド: データの暗号化により会社のデータを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune は、次のようなさまざまな方法で Office モバイル アプリからデータ損失を防ぐのに役立ちます。
 - IOS および Android で提供される最高レベルのデバイス暗号化で企業のデータを暗号化。

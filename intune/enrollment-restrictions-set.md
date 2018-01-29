@@ -15,15 +15,15 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d882cc4d5d5141eda28d90292f1a8f7acaaf2e6b
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: ef3ef89edd3d433575287d2338f7eb37ba22297c
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ユーザーは Intune 管理者として、Intune での管理に登録できるデバイスの数と種類を定義した登録の制限を作成し管理することができます。 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 12/19/2017
 
 ## <a name="create-a-restriction"></a>制限を作成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索し、**[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. **[制限の作成]** を選択します。
@@ -70,17 +70,17 @@ ms.lasthandoff: 12/19/2017
 
 デバイスの種類の制限に対する設定は、次の手順で変更することができます。
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索し、**[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. **[デバイスの種類の制限]** で、設定する制限を選択します。
 5. 制限の名前 (既定の制限の場合は**[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
 6. **[Save]**(保存) をクリックします。
 7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択し、一覧されたプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされているバージョンは次のとおりです。
-  - Android および Android for Work は、major.minor.rev.build をサポートします。
-  - iOS では major.minor.rev がサポートされます。
-  - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
-  オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。 
+   - Android および Android for Work は、major.minor.rev.build をサポートします。
+   - iOS では major.minor.rev がサポートされます。
+   - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
+   オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。 
 8. 一覧されているプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを指定します。
 
     ![個人所有設定の構成を示す既定デバイス プラットフォーム構成のデバイス制限ワークスペースのスクリーンショット。](media/device-restrictions-platform-configurations.png)
@@ -95,7 +95,7 @@ ms.lasthandoff: 12/19/2017
 
 デバイス数の制限の設定は、次の手順に従って変更できます。
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索し、**[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. **[デバイス数の制限]** で、設定する制限を選択します。
@@ -115,7 +115,7 @@ ms.lasthandoff: 12/19/2017
 
 **制限の優先度を変更するには**
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索し、**[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. 優先度リスト内の制限にマウス ポインタを移動させます。
