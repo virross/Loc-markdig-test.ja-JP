@@ -11,31 +11,32 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: db46af1a7e600a745903e3bdf83cf23a87f4ec6c
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="how-to-unenroll-your-android-device-from-intune"></a><span data-ttu-id="9ecb0-103">Intune から Android デバイスの登録を解除する方法</span><span class="sxs-lookup"><span data-stu-id="9ecb0-103">How to unenroll your Android device from Intune</span></span>
+# <a name="how-to-unenroll-your-android-device-from-intune"></a><span data-ttu-id="ef0f2-103">Intune から Android デバイスの登録を解除する方法</span><span class="sxs-lookup"><span data-stu-id="ef0f2-103">How to unenroll your Android device from Intune</span></span>
 
-<span data-ttu-id="9ecb0-104">Intune から Android デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-104">When you unenroll your Android device from Intune, your device can no longer access company resources.</span></span>  <span data-ttu-id="9ecb0-105">登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-105">For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)</span></span>
+<span data-ttu-id="ef0f2-104">Intune から Android デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-104">When you unenroll your Android device from Intune, your device can no longer access company resources.</span></span>  <span data-ttu-id="ef0f2-105">登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-105">For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)</span></span>
 
-<span data-ttu-id="9ecb0-106">Intune からデバイスの登録を解除し、ポータル サイト アプリを削除するには、以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-106">To unenroll your device from Intune and remove the Company Portal app, follow these steps:</span></span>
+<span data-ttu-id="ef0f2-106">Intune からデバイスの登録を解除し、ポータル サイト アプリを削除するには、以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-106">To unenroll your device from Intune and remove the Company Portal app, follow these steps:</span></span>
 
-1. <span data-ttu-id="9ecb0-107">ポータル サイト アプリの右上隅にある垂直に並んだ 3 つのドットをタップして、**アクション メニュー**を開きます。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-107">Open the **action menu** by tapping the three vertical dots at the top right corner of the Company Portal app.</span></span> 
+1. <span data-ttu-id="ef0f2-107">ポータル サイト アプリの右上隅にある垂直に並んだ 3 つのドットをタップして、**アクション メニュー**を開きます。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-107">Open the **action menu** by tapping the three vertical dots at the top right corner of the Company Portal app.</span></span> 
 
    ![右上隅にアクション メニューが開いた Android 用ポータル サイト アプリの画像です。](./media/android_remove_cp_menu_action_after_1705.png)
 
-2. <span data-ttu-id="9ecb0-110">**[ポータル サイトの削除]** をタップします。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-110">Tap **Remove Company Portal**.</span></span>
+2. <span data-ttu-id="ef0f2-110">**[ポータル サイトの削除]** をタップします。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-110">Tap **Remove Company Portal**.</span></span>
 
-3. <span data-ttu-id="9ecb0-111">ポータル サイトを削除してよいかを確認する確認メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-111">A confirmation will pop up, asking you if you're sure that you want to remove the Company Portal.</span></span> <span data-ttu-id="9ecb0-112">デバイスを登録解除するとどうなるかについての情報も表示されます。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-112">It will provide some information about what happens when you unenroll your device.</span></span> <span data-ttu-id="9ecb0-113">このメッセージを確認したら、**[OK]** をタップしてアプリを削除します。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-113">After reading over this message, tap **OK** to remove the app.</span></span> 
+3. <span data-ttu-id="ef0f2-111">ポータル サイトを削除してよいかを確認する確認メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-111">A confirmation will pop up, asking you if you're sure that you want to remove the Company Portal.</span></span> <span data-ttu-id="ef0f2-112">デバイスを登録解除するとどうなるかについての情報も表示されます。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-112">It will provide some information about what happens when you unenroll your device.</span></span> <span data-ttu-id="ef0f2-113">このメッセージを確認したら、**[OK]** をタップしてアプリを削除します。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-113">After reading over this message, tap **OK** to remove the app.</span></span> 
 
    ![アクション メニューから新しい [ポータル サイトの削除] オプションを選択した後に表示される確認ダイアログの画像です。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-<span data-ttu-id="9ecb0-117">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="9ecb0-117">Still need help?</span></span> <span data-ttu-id="9ecb0-118">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-118">Contact your company support.</span></span> <span data-ttu-id="9ecb0-119">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="9ecb0-119">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="ef0f2-117">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="ef0f2-117">Still need help?</span></span> <span data-ttu-id="ef0f2-118">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-118">Contact your company support.</span></span> <span data-ttu-id="ef0f2-119">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="ef0f2-119">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

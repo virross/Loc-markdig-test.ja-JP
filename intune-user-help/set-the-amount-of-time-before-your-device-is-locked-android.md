@@ -11,23 +11,24 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 16c0f4b3deee21ef814e512c2b988bb6fb3cec42
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a><span data-ttu-id="fd13b-102">デバイスがロックされるまでの時間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="fd13b-102">How to set the amount of time before your device is locked</span></span>
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a><span data-ttu-id="3b491-102">デバイスがロックされるまでの時間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="3b491-102">How to set the amount of time before your device is locked</span></span>
 
-<span data-ttu-id="fd13b-103">Android デバイスに保存されているデータのセキュリティを高めるために、会社のサポートは、指定した時間にわたってアイドル状態であるとデバイスが自動的にロックされるようにするポリシーを設定できます。</span><span class="sxs-lookup"><span data-stu-id="fd13b-103">To keep the data on your Android device more secure, your company support can set a policy that requires you to set the amount of time that your device can be idle before it is automatically locked.</span></span> <span data-ttu-id="fd13b-104">デバイスがロックするまでの時間を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="fd13b-104">Follow these steps to set the amount of time before your device will be locked.</span></span>
+<span data-ttu-id="3b491-103">Android デバイスに保存されているデータのセキュリティを高めるために、会社のサポートは、指定した時間にわたってアイドル状態であるとデバイスが自動的にロックされるようにするポリシーを設定できます。</span><span class="sxs-lookup"><span data-stu-id="3b491-103">To keep the data on your Android device more secure, your company support can set a policy that requires you to set the amount of time that your device can be idle before it is automatically locked.</span></span> <span data-ttu-id="3b491-104">デバイスがロックするまでの時間を設定するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="3b491-104">Follow these steps to set the amount of time before your device will be locked.</span></span>
 
-1.  <span data-ttu-id="fd13b-105">デバイスで、**[設定]** から、**[セキュリティ]** &gt; **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** として表示されます) の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="fd13b-105">In **Settings** on your device, click **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).</span></span>
+1.  <span data-ttu-id="3b491-105">デバイスで、**[設定]** から、**[セキュリティ]** &gt; **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** として表示されます) の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="3b491-105">In **Settings** on your device, click **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).</span></span>
 
-2.  <span data-ttu-id="fd13b-106">パスワードのタイムアウト値を指定します。</span><span class="sxs-lookup"><span data-stu-id="fd13b-106">Specify the password timeout value.</span></span>
+2.  <span data-ttu-id="3b491-106">パスワードのタイムアウト値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3b491-106">Specify the password timeout value.</span></span>
 
-<span data-ttu-id="fd13b-107">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="fd13b-107">Still need help?</span></span> <span data-ttu-id="fd13b-108">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="fd13b-108">Contact your company support.</span></span> <span data-ttu-id="fd13b-109">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="fd13b-109">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="3b491-107">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="3b491-107">Still need help?</span></span> <span data-ttu-id="3b491-108">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="3b491-108">Contact your company support.</span></span> <span data-ttu-id="3b491-109">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="3b491-109">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

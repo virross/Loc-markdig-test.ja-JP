@@ -11,19 +11,20 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 528f2b32-6802-42f7-af30-b3d1397f689a
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: d2edf02b94db6a557c58a7baf7ba3561617a5b4c
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="how-do-i-find-the-serial-number-on-my-device"></a><span data-ttu-id="7c5cc-103">デバイスのシリアル番号を検索する方法</span><span class="sxs-lookup"><span data-stu-id="7c5cc-103">How do I find the serial number on my device?</span></span>
+# <a name="how-do-i-find-the-serial-number-on-my-device"></a><span data-ttu-id="100f9-103">デバイスのシリアル番号を検索する方法</span><span class="sxs-lookup"><span data-stu-id="100f9-103">How do I find the serial number on my device?</span></span>
 
-<span data-ttu-id="7c5cc-104">デバイスのシリアル番号はデバイスを一意に識別し、会社のサポートがデバイスを既存のものから新しいものに置き換える場合などに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="7c5cc-104">The serial number for your device uniquely identifies it, and can help your company support with certain tasks, like replacing your device with a new one.</span></span> <span data-ttu-id="7c5cc-105">シリアル番号を確認するには、**Apple メニュー** > **[この Mac について]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="7c5cc-105">To locate the serial number, go to the **Apple menu** > **About This Mac**.</span></span>
+<span data-ttu-id="100f9-104">デバイスのシリアル番号はデバイスを一意に識別し、会社のサポートがデバイスを既存のものから新しいものに置き換える場合などに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="100f9-104">The serial number for your device uniquely identifies it, and can help your company support with certain tasks, like replacing your device with a new one.</span></span> <span data-ttu-id="100f9-105">シリアル番号を確認するには、**Apple メニュー** > **[この Mac について]** の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="100f9-105">To locate the serial number, go to the **Apple menu** > **About This Mac**.</span></span>
 
-<span data-ttu-id="7c5cc-106">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="7c5cc-106">Still need help?</span></span> <span data-ttu-id="7c5cc-107">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="7c5cc-107">Contact your company support.</span></span> <span data-ttu-id="7c5cc-108">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="7c5cc-108">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>
+<span data-ttu-id="100f9-106">サポートが必要な場合は、</span><span class="sxs-lookup"><span data-stu-id="100f9-106">Still need help?</span></span> <span data-ttu-id="100f9-107">社内サポートに問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="100f9-107">Contact your company support.</span></span> <span data-ttu-id="100f9-108">連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。</span><span class="sxs-lookup"><span data-stu-id="100f9-108">For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).</span></span>

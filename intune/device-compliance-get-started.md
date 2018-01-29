@@ -15,39 +15,39 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8fbf0d1b9229dc62a4ab412a03c6adfd94f07cb
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: 0462601eeaf9499b75cd2cdfc14fa0c910be5459
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a><span data-ttu-id="196e2-103">Intune のデバイス コンプライアンス ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="196e2-103">Get started with Intune device compliance policies</span></span>
+# <a name="get-started-with-intune-device-compliance-policies"></a><span data-ttu-id="af322-103">Intune のデバイス コンプライアンス ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="af322-103">Get started with Intune device compliance policies</span></span>
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a><span data-ttu-id="196e2-104">Intune でのデバイス コンプライアンスとは</span><span class="sxs-lookup"><span data-stu-id="196e2-104">What is device compliance in Intune?</span></span>
+## <a name="what-is-device-compliance-in-intune"></a><span data-ttu-id="af322-104">Intune でのデバイス コンプライアンスとは</span><span class="sxs-lookup"><span data-stu-id="af322-104">What is device compliance in Intune?</span></span>
 
-<span data-ttu-id="196e2-105">Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune によって "準拠している" と見なされるために遵守する必要がある規則および設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="196e2-105">Intune device compliance policies define the rules and settings that a device must comply with in order to be considered compliant by Intune.</span></span>
+<span data-ttu-id="af322-105">Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune によって "準拠している" と見なされるために遵守する必要がある規則および設定を定義します。</span><span class="sxs-lookup"><span data-stu-id="af322-105">Intune device compliance policies define the rules and settings that a device must comply with in order to be considered compliant by Intune.</span></span>
 
-<span data-ttu-id="196e2-106">この規則には次のようなものがあります。</span><span class="sxs-lookup"><span data-stu-id="196e2-106">These rules include the following:</span></span>
+<span data-ttu-id="af322-106">この規則には次のようなものがあります。</span><span class="sxs-lookup"><span data-stu-id="af322-106">These rules include the following:</span></span>
 
-- <span data-ttu-id="196e2-107">パスワードを使用したデバイスへのアクセス</span><span class="sxs-lookup"><span data-stu-id="196e2-107">Use a password to access devices</span></span>
+- <span data-ttu-id="af322-107">パスワードを使用したデバイスへのアクセス</span><span class="sxs-lookup"><span data-stu-id="af322-107">Use a password to access devices</span></span>
 
-- <span data-ttu-id="196e2-108">暗号化</span><span class="sxs-lookup"><span data-stu-id="196e2-108">Encryption</span></span>
+- <span data-ttu-id="af322-108">暗号化</span><span class="sxs-lookup"><span data-stu-id="af322-108">Encryption</span></span>
 
-- <span data-ttu-id="196e2-109">デバイスが脱獄またはルート化されているかどうか</span><span class="sxs-lookup"><span data-stu-id="196e2-109">Whether the device is jail-broken or rooted</span></span>
+- <span data-ttu-id="af322-109">デバイスが脱獄またはルート化されているかどうか</span><span class="sxs-lookup"><span data-stu-id="af322-109">Whether the device is jail-broken or rooted</span></span>
 
-- <span data-ttu-id="196e2-110">必要な最小 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="196e2-110">Minimum OS version required</span></span>
+- <span data-ttu-id="af322-110">必要な最小 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="af322-110">Minimum OS version required</span></span>
 
-- <span data-ttu-id="196e2-111">許可される最大 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="196e2-111">Maximum OS version allowed</span></span>
+- <span data-ttu-id="af322-111">許可される最大 OS バージョン</span><span class="sxs-lookup"><span data-stu-id="af322-111">Maximum OS version allowed</span></span>
 
-- <span data-ttu-id="196e2-112">デバイスが Mobile Threat Defense レベル以下であることが必要</span><span class="sxs-lookup"><span data-stu-id="196e2-112">Require the device to be at or under the Mobile Threat Defense level</span></span>
+- <span data-ttu-id="af322-112">デバイスが Mobile Threat Defense レベル以下であることが必要</span><span class="sxs-lookup"><span data-stu-id="af322-112">Require the device to be at or under the Mobile Threat Defense level</span></span>
 
-<span data-ttu-id="196e2-113">デバイス コンプライアンス ポリシーを使用して、デバイス コンプライアンスの状態を監視することもできます。</span><span class="sxs-lookup"><span data-stu-id="196e2-113">You can also use device compliance policies to monitor the compliance status in your devices.</span></span>
+<span data-ttu-id="af322-113">デバイス コンプライアンス ポリシーを使用して、デバイス コンプライアンスの状態を監視することもできます。</span><span class="sxs-lookup"><span data-stu-id="af322-113">You can also use device compliance policies to monitor the compliance status in your devices.</span></span>
 
-### <a name="device-compliance-requirements"></a><span data-ttu-id="196e2-114">デバイス コンプライアンスの要件</span><span class="sxs-lookup"><span data-stu-id="196e2-114">Device compliance requirements</span></span>
+### <a name="device-compliance-requirements"></a><span data-ttu-id="af322-114">デバイス コンプライアンスの要件</span><span class="sxs-lookup"><span data-stu-id="af322-114">Device compliance requirements</span></span>
 
-<span data-ttu-id="196e2-115">コンプライアンス要件とは、基本的にはデバイスの PIN または暗号化を要求するようなルールであり、コンプライアンス ポリシーに対して必要か不要かを指定できます。</span><span class="sxs-lookup"><span data-stu-id="196e2-115">Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.</span></span>
+<span data-ttu-id="af322-115">コンプライアンス要件とは、基本的にはデバイスの PIN または暗号化を要求するようなルールであり、コンプライアンス ポリシーに対して必要か不要かを指定できます。</span><span class="sxs-lookup"><span data-stu-id="af322-115">Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.</span></span>
 
 <!---### Actions for noncompliance
 
@@ -72,70 +72,70 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a><span data-ttu-id="196e2-116">前提条件</span><span class="sxs-lookup"><span data-stu-id="196e2-116">Pre-requisites</span></span>
+##  <a name="pre-requisites"></a><span data-ttu-id="af322-116">前提条件</span><span class="sxs-lookup"><span data-stu-id="af322-116">Pre-requisites</span></span>
 
-<span data-ttu-id="196e2-117">Intune でデバイス コンプライアンス ポリシーを使用するには、次のサブスクリプションが必要です。</span><span class="sxs-lookup"><span data-stu-id="196e2-117">You need to have the following subscriptions to use device compliance policies with Intune:</span></span>
+<span data-ttu-id="af322-117">Intune でデバイス コンプライアンス ポリシーを使用するには、次のサブスクリプションが必要です。</span><span class="sxs-lookup"><span data-stu-id="af322-117">You need to have the following subscriptions to use device compliance policies with Intune:</span></span>
 
-- <span data-ttu-id="196e2-118">Intune EMS</span><span class="sxs-lookup"><span data-stu-id="196e2-118">Intune EMS</span></span>
+- <span data-ttu-id="af322-118">Intune EMS</span><span class="sxs-lookup"><span data-stu-id="af322-118">Intune EMS</span></span>
 
-- <span data-ttu-id="196e2-119">Azure AD プレミアム</span><span class="sxs-lookup"><span data-stu-id="196e2-119">Azure AD Premium</span></span>
+- <span data-ttu-id="af322-119">Azure AD プレミアム</span><span class="sxs-lookup"><span data-stu-id="af322-119">Azure AD Premium</span></span>
 
-###  <a name="supported-platforms"></a><span data-ttu-id="196e2-120">サポートされているプラットフォーム:</span><span class="sxs-lookup"><span data-stu-id="196e2-120">Supported Platforms:</span></span>
+###  <a name="supported-platforms"></a><span data-ttu-id="af322-120">サポートされているプラットフォーム:</span><span class="sxs-lookup"><span data-stu-id="af322-120">Supported Platforms:</span></span>
 
--   <span data-ttu-id="196e2-121">Android</span><span class="sxs-lookup"><span data-stu-id="196e2-121">Android</span></span>
+-   <span data-ttu-id="af322-121">Android</span><span class="sxs-lookup"><span data-stu-id="af322-121">Android</span></span>
 
--   <span data-ttu-id="196e2-122">iOS</span><span class="sxs-lookup"><span data-stu-id="196e2-122">iOS</span></span>
+-   <span data-ttu-id="af322-122">iOS</span><span class="sxs-lookup"><span data-stu-id="af322-122">iOS</span></span>
 
--   <span data-ttu-id="196e2-123">macOS (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="196e2-123">macOS (preview)</span></span>
+-   <span data-ttu-id="af322-123">macOS (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="af322-123">macOS (preview)</span></span>
 
--   <span data-ttu-id="196e2-124">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="196e2-124">Windows 8.1</span></span>
+-   <span data-ttu-id="af322-124">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="af322-124">Windows 8.1</span></span>
 
--   <span data-ttu-id="196e2-125">Windows Phone 8。1</span><span class="sxs-lookup"><span data-stu-id="196e2-125">Windows Phone 8.1</span></span>
+-   <span data-ttu-id="af322-125">Windows Phone 8。1</span><span class="sxs-lookup"><span data-stu-id="af322-125">Windows Phone 8.1</span></span>
 
--   <span data-ttu-id="196e2-126">Windows 10</span><span class="sxs-lookup"><span data-stu-id="196e2-126">Windows 10</span></span>
+-   <span data-ttu-id="af322-126">Windows 10</span><span class="sxs-lookup"><span data-stu-id="af322-126">Windows 10</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="196e2-127">デバイス コンプライアンスの状態をレポートするには、Intune にデバイスを登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="196e2-127">Devices must be enrolled into Intune to report their compliance statuses.</span></span>
+> <span data-ttu-id="af322-127">デバイス コンプライアンスの状態をレポートするには、Intune にデバイスを登録する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af322-127">Devices must be enrolled into Intune to report their compliance statuses.</span></span>
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a><span data-ttu-id="196e2-128">Azure AD で Intune のデバイス コンプライアンス ポリシーを操作する方法</span><span class="sxs-lookup"><span data-stu-id="196e2-128">How Intune device compliance policies work with Azure AD</span></span>
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a><span data-ttu-id="af322-128">Azure AD で Intune のデバイス コンプライアンス ポリシーを操作する方法</span><span class="sxs-lookup"><span data-stu-id="af322-128">How Intune device compliance policies work with Azure AD</span></span>
 
-<span data-ttu-id="196e2-129">デバイスが Intune に登録されると、Azure AD の登録プロセスが発生し、デバイスの属性が Azure AD への詳細な情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="196e2-129">When a device is enrolled into Intune, the Azure AD registration process happens, which updates the device atributes with more information into Azure AD.</span></span> <span data-ttu-id="196e2-130">キーのデバイス情報の 1 つは、デバイス コンプライアンスの状態で、電子メールと他の企業リソースへのアクセスをブロックまたは許可するための条件付きアクセス ポリシーによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="196e2-130">One of the key device information is the device compliance status, which is used by conditional access policies to block or allow access to e-mail and other corporate resources.</span></span>
+<span data-ttu-id="af322-129">デバイスが Intune に登録されると、Azure AD の登録プロセスが発生し、デバイスの属性が Azure AD への詳細な情報で更新されます。</span><span class="sxs-lookup"><span data-stu-id="af322-129">When a device is enrolled into Intune, the Azure AD registration process happens, which updates the device atributes with more information into Azure AD.</span></span> <span data-ttu-id="af322-130">キーのデバイス情報の 1 つは、デバイス コンプライアンスの状態で、電子メールと他の企業リソースへのアクセスをブロックまたは許可するための条件付きアクセス ポリシーによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="af322-130">One of the key device information is the device compliance status, which is used by conditional access policies to block or allow access to e-mail and other corporate resources.</span></span>
 
-- <span data-ttu-id="196e2-131">詳細については、[Azure Active Directory の登録プロセス](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="196e2-131">Learn more about [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).</span></span>
+- <span data-ttu-id="af322-131">詳細については、[Azure Active Directory の登録プロセス](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="af322-131">Learn more about [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).</span></span>
 
-##  <a name="ways-to-use-device-compliance-policies"></a><span data-ttu-id="196e2-132">デバイス コンプライアンス ポリシーを使用する方法</span><span class="sxs-lookup"><span data-stu-id="196e2-132">Ways to use device compliance policies</span></span>
+##  <a name="ways-to-use-device-compliance-policies"></a><span data-ttu-id="af322-132">デバイス コンプライアンス ポリシーを使用する方法</span><span class="sxs-lookup"><span data-stu-id="af322-132">Ways to use device compliance policies</span></span>
 
-### <a name="with-conditional-access"></a><span data-ttu-id="196e2-133">条件付きアクセスあり</span><span class="sxs-lookup"><span data-stu-id="196e2-133">With conditional access</span></span>
-<span data-ttu-id="196e2-134">コンプライアンス ポリシーは、条件付きアクセスと一緒に使用することで、1 つ以上のデバイス コンプライアンス ポリシー ルールに準拠しているデバイスにのみ電子メールや他の企業リソースへのアクセスを許可することができます。</span><span class="sxs-lookup"><span data-stu-id="196e2-134">You can use compliance policy with conditional access to allow only devices that comply with one or more device compliance policy rules to access email and other corporate resources.</span></span>
+### <a name="with-conditional-access"></a><span data-ttu-id="af322-133">条件付きアクセスあり</span><span class="sxs-lookup"><span data-stu-id="af322-133">With conditional access</span></span>
+<span data-ttu-id="af322-134">コンプライアンス ポリシーは、条件付きアクセスと一緒に使用することで、1 つ以上のデバイス コンプライアンス ポリシー ルールに準拠しているデバイスにのみ電子メールや他の企業リソースへのアクセスを許可することができます。</span><span class="sxs-lookup"><span data-stu-id="af322-134">You can use compliance policy with conditional access to allow only devices that comply with one or more device compliance policy rules to access email and other corporate resources.</span></span>
 
-### <a name="without-conditional-access"></a><span data-ttu-id="196e2-135">条件付きアクセスなし</span><span class="sxs-lookup"><span data-stu-id="196e2-135">Without conditional access</span></span>
-<span data-ttu-id="196e2-136">条件付きアクセスと独立してデバイス コンプライアンス ポリシーを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="196e2-136">You can also use device compliance policies independently of conditional access.</span></span> <span data-ttu-id="196e2-137">コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。</span><span class="sxs-lookup"><span data-stu-id="196e2-137">When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status.</span></span> <span data-ttu-id="196e2-138">たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。</span><span class="sxs-lookup"><span data-stu-id="196e2-138">For example, you can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted.</span></span> <span data-ttu-id="196e2-139">ただし、コンプライアンス ポリシーを単独で使用した場合、会社のリソースへのアクセス制限が設定されません。</span><span class="sxs-lookup"><span data-stu-id="196e2-139">But when you use compliance policies independently, no access restrictions to company resources are in place.</span></span>
+### <a name="without-conditional-access"></a><span data-ttu-id="af322-135">条件付きアクセスなし</span><span class="sxs-lookup"><span data-stu-id="af322-135">Without conditional access</span></span>
+<span data-ttu-id="af322-136">条件付きアクセスと独立してデバイス コンプライアンス ポリシーを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="af322-136">You can also use device compliance policies independently of conditional access.</span></span> <span data-ttu-id="af322-137">コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。</span><span class="sxs-lookup"><span data-stu-id="af322-137">When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status.</span></span> <span data-ttu-id="af322-138">たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。</span><span class="sxs-lookup"><span data-stu-id="af322-138">For example, you can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted.</span></span> <span data-ttu-id="af322-139">ただし、コンプライアンス ポリシーを単独で使用した場合、会社のリソースへのアクセス制限が設定されません。</span><span class="sxs-lookup"><span data-stu-id="af322-139">But when you use compliance policies independently, no access restrictions to company resources are in place.</span></span>
 
-<span data-ttu-id="196e2-140">コンプライアンス ポリシーはユーザーに展開して使用します。</span><span class="sxs-lookup"><span data-stu-id="196e2-140">You deploy compliance policy to users.</span></span> <span data-ttu-id="196e2-141">コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。</span><span class="sxs-lookup"><span data-stu-id="196e2-141">When a compliance policy is deployed to a user, the user's devices are checked for compliance.</span></span> <span data-ttu-id="196e2-142">ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでにかかる時間については、デバイスでの設定と機能の管理に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="196e2-142">To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.</span></span>
+<span data-ttu-id="af322-140">コンプライアンス ポリシーはユーザーに展開して使用します。</span><span class="sxs-lookup"><span data-stu-id="af322-140">You deploy compliance policy to users.</span></span> <span data-ttu-id="af322-141">コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。</span><span class="sxs-lookup"><span data-stu-id="af322-141">When a compliance policy is deployed to a user, the user's devices are checked for compliance.</span></span> <span data-ttu-id="af322-142">ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでにかかる時間については、デバイスでの設定と機能の管理に関するページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="af322-142">To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.</span></span>
 
-##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a><span data-ttu-id="196e2-143">Intune のクラシック ポータルとAzure Portal を比較してデバイス コンプライアンス ポリシーを使用する</span><span class="sxs-lookup"><span data-stu-id="196e2-143">Using device compliance policies in the Intune classic portal vs. Azure portal</span></span>
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a><span data-ttu-id="af322-143">Intune のクラシック ポータルとAzure Portal を比較してデバイス コンプライアンス ポリシーを使用する</span><span class="sxs-lookup"><span data-stu-id="af322-143">Using device compliance policies in the Intune classic portal vs. Azure portal</span></span>
 
-<span data-ttu-id="196e2-144">Azure Portal での新しいデバイス コンプライアンス ポリシーのワーク フローへの移行に役立つ主な相違点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="196e2-144">Note the main differences to help you transition to the new device compliance policy work-flow in the Azure portal.</span></span>
+<span data-ttu-id="af322-144">Azure Portal での新しいデバイス コンプライアンス ポリシーのワーク フローへの移行に役立つ主な相違点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="af322-144">Note the main differences to help you transition to the new device compliance policy work-flow in the Azure portal.</span></span>
 
-- <span data-ttu-id="196e2-145">Azure Portal では、コンプライアンス ポリシーがサポート対象のプラットフォームごとに個別に作成されます。</span><span class="sxs-lookup"><span data-stu-id="196e2-145">In the Azure portal, the compliance policies are created separately for each supported platform.</span></span>
-- <span data-ttu-id="196e2-146">Intune クラシック ポータルでは、すべてのサポート対象プラットフォームで 1 つのデバイス コンプライアンス ポリシーが共有されていました。</span><span class="sxs-lookup"><span data-stu-id="196e2-146">In the Intune classic portal, one device compliance policy was common to all supported platforms.</span></span>
+- <span data-ttu-id="af322-145">Azure Portal では、コンプライアンス ポリシーがサポート対象のプラットフォームごとに個別に作成されます。</span><span class="sxs-lookup"><span data-stu-id="af322-145">In the Azure portal, the compliance policies are created separately for each supported platform.</span></span>
+- <span data-ttu-id="af322-146">Intune クラシック ポータルでは、すべてのサポート対象プラットフォームで 1 つのデバイス コンプライアンス ポリシーが共有されていました。</span><span class="sxs-lookup"><span data-stu-id="af322-146">In the Intune classic portal, one device compliance policy was common to all supported platforms.</span></span>
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a><span data-ttu-id="196e2-147">デバイス コンプライアンス ポリシーを Intune クラシック ポータルから Azure Portal に移行する</span><span class="sxs-lookup"><span data-stu-id="196e2-147">Migrate device compliance policies from the Intune classic portal to the Azure portal</span></span>
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a><span data-ttu-id="af322-147">デバイス コンプライアンス ポリシーを Intune クラシック ポータルから Azure Portal に移行する</span><span class="sxs-lookup"><span data-stu-id="af322-147">Migrate device compliance policies from the Intune classic portal to the Azure portal</span></span>
 
-<span data-ttu-id="196e2-148">[Intune クラシック ポータル](https://manage.microsoft.com)で作成したデバイス コンプライアンス ポリシーは、新しい [Intune Azure Portal](https://portal.azure.com) では表示されません。</span><span class="sxs-lookup"><span data-stu-id="196e2-148">Device compliance policies created in the [Intune classic portal](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com).</span></span> <span data-ttu-id="196e2-149">ただし、これらのポリシーは引き続きユーザーを対象とし、Intune クラシック ポータルで管理できます。</span><span class="sxs-lookup"><span data-stu-id="196e2-149">However, they’re still targeted to users and manageable via the Intune classic portal.</span></span>
+<span data-ttu-id="af322-148">[Intune クラシック ポータル](https://manage.microsoft.com)で作成したデバイス コンプライアンス ポリシーは、新しい [Intune Azure Portal](https://portal.azure.com) では表示されません。</span><span class="sxs-lookup"><span data-stu-id="af322-148">Device compliance policies created in the [Intune classic portal](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com).</span></span> <span data-ttu-id="af322-149">ただし、これらのポリシーは引き続きユーザーを対象とし、Intune クラシック ポータルで管理できます。</span><span class="sxs-lookup"><span data-stu-id="af322-149">However, they’re still targeted to users and manageable via the Intune classic portal.</span></span>
 
-<span data-ttu-id="196e2-150">Azure Portal の新しいデバイス コンプライアンスに関連した機能を活用するには、Azure Portal で新しいデバイス コンプライアンス ポリシーを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="196e2-150">If you want to take advantage of the new device compliance related features in the Azure portal, you need to create new device compliance policies in the Azure portal itself.</span></span> <span data-ttu-id="196e2-151">Intune クラシック ポータルのデバイス コンプライアンス ポリシーが既に割り当てられているユーザーに Azure Portal の新しいデバイス コンプライアンス ポリシーを割り当てると、Intune クラシック ポータルで作成されたポリシーよりも Intune Azure Portal のデバイス コンプライアンス ポリシーが優先されます。</span><span class="sxs-lookup"><span data-stu-id="196e2-151">If you assign a new device compliance policy in the Azure portal to a user who also has been assigned with a device compliance policy from the Intune classic portal, the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic portal.</span></span>
+<span data-ttu-id="af322-150">Azure Portal の新しいデバイス コンプライアンスに関連した機能を活用するには、Azure Portal で新しいデバイス コンプライアンス ポリシーを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af322-150">If you want to take advantage of the new device compliance related features in the Azure portal, you need to create new device compliance policies in the Azure portal itself.</span></span> <span data-ttu-id="af322-151">Intune クラシック ポータルのデバイス コンプライアンス ポリシーが既に割り当てられているユーザーに Azure Portal の新しいデバイス コンプライアンス ポリシーを割り当てると、Intune クラシック ポータルで作成されたポリシーよりも Intune Azure Portal のデバイス コンプライアンス ポリシーが優先されます。</span><span class="sxs-lookup"><span data-stu-id="af322-151">If you assign a new device compliance policy in the Azure portal to a user who also has been assigned with a device compliance policy from the Intune classic portal, the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic portal.</span></span>
 
-##  <a name="next-steps"></a><span data-ttu-id="196e2-152">次の手順</span><span class="sxs-lookup"><span data-stu-id="196e2-152">Next steps</span></span>
+##  <a name="next-steps"></a><span data-ttu-id="af322-152">次の手順</span><span class="sxs-lookup"><span data-stu-id="af322-152">Next steps</span></span>
 
-<span data-ttu-id="196e2-153">以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="196e2-153">Create a device compliance policy for the following platforms:</span></span>
+<span data-ttu-id="af322-153">以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="af322-153">Create a device compliance policy for the following platforms:</span></span>
 
-- [<span data-ttu-id="196e2-154">Android</span><span class="sxs-lookup"><span data-stu-id="196e2-154">Android</span></span>](compliance-policy-create-android.md)
-- [<span data-ttu-id="196e2-155">Android for Work</span><span class="sxs-lookup"><span data-stu-id="196e2-155">Android for work</span></span>](compliance-policy-create-android-for-work.md)
-- [<span data-ttu-id="196e2-156">Android</span><span class="sxs-lookup"><span data-stu-id="196e2-156">iOS</span></span>](compliance-policy-create-ios.md)
-- [<span data-ttu-id="196e2-157">macOS</span><span class="sxs-lookup"><span data-stu-id="196e2-157">macOS</span></span>](compliance-policy-create-mac-os.md)
-- [<span data-ttu-id="196e2-158">Windows</span><span class="sxs-lookup"><span data-stu-id="196e2-158">Windows</span></span>](compliance-policy-create-windows.md)
+- [<span data-ttu-id="af322-154">Android</span><span class="sxs-lookup"><span data-stu-id="af322-154">Android</span></span>](compliance-policy-create-android.md)
+- [<span data-ttu-id="af322-155">Android for Work</span><span class="sxs-lookup"><span data-stu-id="af322-155">Android for work</span></span>](compliance-policy-create-android-for-work.md)
+- [<span data-ttu-id="af322-156">Android</span><span class="sxs-lookup"><span data-stu-id="af322-156">iOS</span></span>](compliance-policy-create-ios.md)
+- [<span data-ttu-id="af322-157">macOS</span><span class="sxs-lookup"><span data-stu-id="af322-157">macOS</span></span>](compliance-policy-create-mac-os.md)
+- [<span data-ttu-id="af322-158">Windows</span><span class="sxs-lookup"><span data-stu-id="af322-158">Windows</span></span>](compliance-policy-create-windows.md)

@@ -15,54 +15,54 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eddabdd8f0588d6f27b5ddcc6b959d3203a7cf44
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: cf38fd8aabfc81ba420c0f04546a5bb1d7419983
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a><span data-ttu-id="b3c78-103">Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーの展開</span><span class="sxs-lookup"><span data-stu-id="b3c78-103">Deploy Skycure apps, Microsoft Authenticator app and iOS app configuration policy</span></span>
+# <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a><span data-ttu-id="5b74d-103">Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーの展開</span><span class="sxs-lookup"><span data-stu-id="5b74d-103">Deploy Skycure apps, Microsoft Authenticator app and iOS app configuration policy</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-## <a name="before-you-begin"></a><span data-ttu-id="b3c78-104">始める前に</span><span class="sxs-lookup"><span data-stu-id="b3c78-104">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="5b74d-104">始める前に</span><span class="sxs-lookup"><span data-stu-id="5b74d-104">Before you begin</span></span>
 
--   <span data-ttu-id="b3c78-105">[Intune クラシック ポータル](https://manage.microsoft.com/)で以下の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3c78-105">The below steps need to be completed in the [Intune classic portal](https://manage.microsoft.com/).</span></span>
+-   <span data-ttu-id="5b74d-105">[Intune クラシック ポータル](https://manage.microsoft.com/)で以下の手順を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b74d-105">The below steps need to be completed in the [Intune classic portal](https://manage.microsoft.com/).</span></span>
 
--   <span data-ttu-id="b3c78-106">Skycure 管理コンソールで以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3c78-106">Use the same Azure AD account previously configured in the Skycure Management console, which should be the same account used to log in into the Intune classic portal.</span></span>
+-   <span data-ttu-id="5b74d-106">Skycure 管理コンソールで以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b74d-106">Use the same Azure AD account previously configured in the Skycure Management console, which should be the same account used to log in into the Intune classic portal.</span></span>
 
--   <span data-ttu-id="b3c78-107">次のプロセスをよく理解している必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3c78-107">Make sure you’re familiar with the process of:</span></span>
+-   <span data-ttu-id="5b74d-107">次のプロセスをよく理解している必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b74d-107">Make sure you’re familiar with the process of:</span></span>
 
-    -   <span data-ttu-id="b3c78-108">[Intune でアプリを展開する](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)。</span><span class="sxs-lookup"><span data-stu-id="b3c78-108">[Deploying an app with Intune](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune).</span></span>
+    -   <span data-ttu-id="5b74d-108">[Intune でアプリを展開する](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)。</span><span class="sxs-lookup"><span data-stu-id="5b74d-108">[Deploying an app with Intune](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune).</span></span>
 
-    -   <span data-ttu-id="b3c78-109">[iOS アプリ構成ポリシーを展開する](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。</span><span class="sxs-lookup"><span data-stu-id="b3c78-109">[Deploying an iOS app configuration policy](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).</span></span>
+    -   <span data-ttu-id="5b74d-109">[iOS アプリ構成ポリシーを展開する](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。</span><span class="sxs-lookup"><span data-stu-id="5b74d-109">[Deploying an iOS app configuration policy](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).</span></span>
 
-## <a name="to-deploy-skycure-apps-microsoft-authenticator-app-and-the-ios-app-configuration-policy"></a><span data-ttu-id="b3c78-110">Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーを展開するには</span><span class="sxs-lookup"><span data-stu-id="b3c78-110">To deploy Skycure apps, Microsoft Authenticator app and the iOS app configuration policy</span></span>
+## <a name="to-deploy-skycure-apps-microsoft-authenticator-app-and-the-ios-app-configuration-policy"></a><span data-ttu-id="5b74d-110">Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーを展開するには</span><span class="sxs-lookup"><span data-stu-id="5b74d-110">To deploy Skycure apps, Microsoft Authenticator app and the iOS app configuration policy</span></span>
 
-1.  <span data-ttu-id="b3c78-111">Intune クラシック ポータルで **[アプリ]** &gt; **[アプリ]** の順に選び、管理できるアプリの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="b3c78-111">In the Intune classic portal, choose **Apps** &gt; **Apps** to view the list of apps that you can manage.</span></span>
+1.  <span data-ttu-id="5b74d-111">Intune クラシック ポータルで **[アプリ]** &gt; **[アプリ]** の順に選び、管理できるアプリの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="5b74d-111">In the Intune classic portal, choose **Apps** &gt; **Apps** to view the list of apps that you can manage.</span></span>
 
-2.  <span data-ttu-id="b3c78-112">次のアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="b3c78-112">Select the following apps:</span></span>
+2.  <span data-ttu-id="5b74d-112">次のアプリを選択します。</span><span class="sxs-lookup"><span data-stu-id="5b74d-112">Select the following apps:</span></span>
 
-    <span data-ttu-id="b3c78-113">」を参照します。</span><span class="sxs-lookup"><span data-stu-id="b3c78-113">a.</span></span>  <span data-ttu-id="b3c78-114">Microsoft Authenticator</span><span class="sxs-lookup"><span data-stu-id="b3c78-114">Microsoft Authenticator</span></span>
+    <span data-ttu-id="5b74d-113">」を参照します。</span><span class="sxs-lookup"><span data-stu-id="5b74d-113">a.</span></span>  <span data-ttu-id="5b74d-114">Microsoft Authenticator</span><span class="sxs-lookup"><span data-stu-id="5b74d-114">Microsoft Authenticator</span></span>
 
-    <span data-ttu-id="b3c78-115">b.</span><span class="sxs-lookup"><span data-stu-id="b3c78-115">b.</span></span>  <span data-ttu-id="b3c78-116">Android 向け Skycure アプリ</span><span class="sxs-lookup"><span data-stu-id="b3c78-116">Skycure app for Android</span></span>
+    <span data-ttu-id="5b74d-115">b.</span><span class="sxs-lookup"><span data-stu-id="5b74d-115">b.</span></span>  <span data-ttu-id="5b74d-116">Android 向け Skycure アプリ</span><span class="sxs-lookup"><span data-stu-id="5b74d-116">Skycure app for Android</span></span>
 
-    <span data-ttu-id="b3c78-117">c.</span><span class="sxs-lookup"><span data-stu-id="b3c78-117">c.</span></span>  <span data-ttu-id="b3c78-118">iOS 向け Skycure アプリ</span><span class="sxs-lookup"><span data-stu-id="b3c78-118">Skycure app for iOS</span></span>
+    <span data-ttu-id="5b74d-117">c.</span><span class="sxs-lookup"><span data-stu-id="5b74d-117">c.</span></span>  <span data-ttu-id="5b74d-118">iOS 向け Skycure アプリ</span><span class="sxs-lookup"><span data-stu-id="5b74d-118">Skycure app for iOS</span></span>
 
        ![Intune クラシック ポータルの展開するすべてのアプリ](../media/mtp/skycure-deploy-app-1.png)
 
-3.  <span data-ttu-id="b3c78-120">**[展開の管理]** を選択し、Skycure ユーザーが含まれる Azure AD セキュリティ グループを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b3c78-120">Choose **Manage Deployments,** select the Azure AD security group that has the Skycure users, then click **Next**.</span></span>
+3.  <span data-ttu-id="5b74d-120">**[展開の管理]** を選択し、Skycure ユーザーが含まれる Azure AD セキュリティ グループを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b74d-120">Choose **Manage Deployments,** select the Azure AD security group that has the Skycure users, then click **Next**.</span></span>
 
-4.  <span data-ttu-id="b3c78-121">**[展開アクション]** ページで、**[承認]** ドロップダウン リストから **[必須のインストール]** オプションを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b3c78-121">On the **Deployment Action** page, select the option **Required Install** from the **Approval** drop-down list, then click **Next**.</span></span>
+4.  <span data-ttu-id="5b74d-121">**[展開アクション]** ページで、**[承認]** ドロップダウン リストから **[必須のインストール]** オプションを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b74d-121">On the **Deployment Action** page, select the option **Required Install** from the **Approval** drop-down list, then click **Next**.</span></span>
 
     ![Intune クラシック ポータルの展開アクション](../media/mtp/skycure-deploy-app-2.png)
 
-5.  <span data-ttu-id="b3c78-123">**[VPN プロファイル]** ページで、**[VPN ポリシー]** ドロップダウン リストから **[なし]** オプションを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b3c78-123">On the **VPN profile** page, select the option **None** from the **VPN Policy** drop-down list, then click **Next**.</span></span>
+5.  <span data-ttu-id="5b74d-123">**[VPN プロファイル]** ページで、**[VPN ポリシー]** ドロップダウン リストから **[なし]** オプションを選択し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b74d-123">On the **VPN profile** page, select the option **None** from the **VPN Policy** drop-down list, then click **Next**.</span></span>
 
-6.  <span data-ttu-id="b3c78-124">**[モバイル アプリ構成]** ページで、**[アプリ構成ポリシー]** ドロップダウン リストから、前に作成した iOS アプリ構成ポリシーを選択し、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b3c78-124">On the **Mobile App Configuration** page, select the iOS App Configuration Policy previously created from the **App Configuration Policy** drop-down list, then click **Finish**.</span></span>
+6.  <span data-ttu-id="5b74d-124">**[モバイル アプリ構成]** ページで、**[アプリ構成ポリシー]** ドロップダウン リストから、前に作成した iOS アプリ構成ポリシーを選択し、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5b74d-124">On the **Mobile App Configuration** page, select the iOS App Configuration Policy previously created from the **App Configuration Policy** drop-down list, then click **Finish**.</span></span>
 
     ![Intune クラシック ポータルのモバイル アプリ構成](../media/mtp/skycure-deploy-app-3.png)
 
-## <a name="next-steps"></a><span data-ttu-id="b3c78-126">次の手順</span><span class="sxs-lookup"><span data-stu-id="b3c78-126">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="5b74d-126">次の手順</span><span class="sxs-lookup"><span data-stu-id="5b74d-126">Next steps</span></span>
 
-[<span data-ttu-id="b3c78-127">Skycure と Intune の統合をセットアップする</span><span class="sxs-lookup"><span data-stu-id="b3c78-127">Set up the Skycure integration with Intune</span></span>](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
+[<span data-ttu-id="5b74d-127">Skycure と Intune の統合をセットアップする</span><span class="sxs-lookup"><span data-stu-id="5b74d-127">Set up the Skycure integration with Intune</span></span>](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)

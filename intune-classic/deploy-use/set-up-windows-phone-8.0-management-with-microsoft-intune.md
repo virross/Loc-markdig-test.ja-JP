@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5190a07d4aa2e3e7619f98fb1c8a129847d91958
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.openlocfilehash: 08b16418181f809cc39fc13e767858543223978f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/22/2018
 ---
-#  <a name="windows-phone-80-company-portal-app-deprecated"></a><span data-ttu-id="aea47-103">使用されていない Windows Phone 8.0 ポータル サイト アプリ</span><span class="sxs-lookup"><span data-stu-id="aea47-103">Windows Phone 8.0 Company Portal app deprecated</span></span>
+#  <a name="windows-phone-80-company-portal-app-deprecated"></a><span data-ttu-id="6775e-103">使用されていない Windows Phone 8.0 ポータル サイト アプリ</span><span class="sxs-lookup"><span data-stu-id="6775e-103">Windows Phone 8.0 Company Portal app deprecated</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="aea47-104">2016 年 9 月の時点で、Windows 8.0 ポータル サイト アプリは使用されていません。</span><span class="sxs-lookup"><span data-stu-id="aea47-104">As of September 2016, the Windows 8.0 Company Portal app has been deprecated.</span></span> <span data-ttu-id="aea47-105">登録されている Window 8.0 デバイスは管理されますが、新しいデバイスは登録できません。</span><span class="sxs-lookup"><span data-stu-id="aea47-105">Enrolled Window 8.0 devices will remain in management but no new devices can be enrolled.</span></span>
+<span data-ttu-id="6775e-104">2016 年 9 月の時点で、Windows 8.0 ポータル サイト アプリは使用されていません。</span><span class="sxs-lookup"><span data-stu-id="6775e-104">As of September 2016, the Windows 8.0 Company Portal app has been deprecated.</span></span> <span data-ttu-id="6775e-105">登録されている Window 8.0 デバイスは管理されますが、新しいデバイスは登録できません。</span><span class="sxs-lookup"><span data-stu-id="6775e-105">Enrolled Window 8.0 devices will remain in management but no new devices can be enrolled.</span></span>

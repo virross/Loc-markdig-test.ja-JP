@@ -15,52 +15,52 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ccc31a4f999c0d78256fec44dd54cc4a519df9ea
-ms.sourcegitcommit: e37e916e2bf14f092d3a767bc90d68c181d739fb
+ms.openlocfilehash: c6f107c13ead314d5681b15dd218b8ac777b5c01
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="azure-portal-for-intune-app-protection-policies"></a><span data-ttu-id="7a1b2-104">Intune アプリ保護ポリシーの Azure ポータル</span><span class="sxs-lookup"><span data-stu-id="7a1b2-104">Azure portal for Intune app protection policies</span></span>
+# <a name="azure-portal-for-intune-app-protection-policies"></a><span data-ttu-id="946bc-104">Intune アプリ保護ポリシーの Azure ポータル</span><span class="sxs-lookup"><span data-stu-id="946bc-104">Azure portal for Intune app protection policies</span></span>
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-<span data-ttu-id="7a1b2-105">Azure ポータルを使用して、次のようなアプリに対してアプリ保護ポリシー作成して管理できます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-105">The Azure portal is used to create and manage app protection policies for:</span></span>
+<span data-ttu-id="946bc-105">Azure ポータルを使用して、次のようなアプリに対してアプリ保護ポリシー作成して管理できます。</span><span class="sxs-lookup"><span data-stu-id="946bc-105">The Azure portal is used to create and manage app protection policies for:</span></span>
 
-- <span data-ttu-id="7a1b2-106">**Intune で登録および管理されている**デバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="7a1b2-106">Apps running on devices that are **enrolled and managed in Intune**.</span></span>
+- <span data-ttu-id="946bc-106">**Intune で登録および管理されている**デバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="946bc-106">Apps running on devices that are **enrolled and managed in Intune**.</span></span>
 
-- <span data-ttu-id="7a1b2-107">どの MDM ソリューションにも**登録していない**デバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="7a1b2-107">Apps running on devices that are **not enrolled** in any MDM solution.</span></span>
-- <span data-ttu-id="7a1b2-108">**サード パーティの MDM ソリューションに登録済み**のデバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="7a1b2-108">Apps running on devices that are **enrolled in a third-party MDM solution**.</span></span>
+- <span data-ttu-id="946bc-107">どの MDM ソリューションにも**登録していない**デバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="946bc-107">Apps running on devices that are **not enrolled** in any MDM solution.</span></span>
+- <span data-ttu-id="946bc-108">**サード パーティの MDM ソリューションに登録済み**のデバイスで実行中のアプリ</span><span class="sxs-lookup"><span data-stu-id="946bc-108">Apps running on devices that are **enrolled in a third-party MDM solution**.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="7a1b2-109">Azure ポータルはアプリ保護ポリシーを作成するための新しい管理コンソールです。ただし、MDM シナリオの [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用し、Intune に登録したデバイスのアプリをサポートするアプリ保護ポリシーを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-109">The Azure portal is the new admin console for creating app protection policies, but you can also create an app protection policy that supports apps for devices enrolled into Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for MDM scenarios.</span></span>
+> <span data-ttu-id="946bc-109">Azure ポータルはアプリ保護ポリシーを作成するための新しい管理コンソールです。ただし、MDM シナリオの [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用し、Intune に登録したデバイスのアプリをサポートするアプリ保護ポリシーを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="946bc-109">The Azure portal is the new admin console for creating app protection policies, but you can also create an app protection policy that supports apps for devices enrolled into Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for MDM scenarios.</span></span>
 > 
-> <span data-ttu-id="7a1b2-110">Intune 管理コンソールでは、アプリ保護ポリシー設定の一部が利用できない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-110">You might not see all the app protection policy settings available on the Intune admin console.</span></span> <span data-ttu-id="7a1b2-111">また、Intune 管理コンソールと Azure ポータルの両方でアプリ保護ポリシーを作成した場合、Azure ポータルで作成されたポリシーは、Intune 管理コンソールで作成されたポリシーに優先します。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-111">Additionally, if you create app protection policies both on the Intune admin console and in the Azure portal, the policies created in the Azure portal will override the ones created on the Intune admin console.</span></span> <span data-ttu-id="7a1b2-112">このシナリオでは、Azure ポータルアプリ保護ポリシーはアプリに適用され、ユーザーにデプロイされます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-112">In this scenario, the Azure portal app protection policies will be applied to the apps and deployed to users.</span></span>
+> <span data-ttu-id="946bc-110">Intune 管理コンソールでは、アプリ保護ポリシー設定の一部が利用できない可能性があります。</span><span class="sxs-lookup"><span data-stu-id="946bc-110">You might not see all the app protection policy settings available on the Intune admin console.</span></span> <span data-ttu-id="946bc-111">また、Intune 管理コンソールと Azure ポータルの両方でアプリ保護ポリシーを作成した場合、Azure ポータルで作成されたポリシーは、Intune 管理コンソールで作成されたポリシーに優先します。</span><span class="sxs-lookup"><span data-stu-id="946bc-111">Additionally, if you create app protection policies both on the Intune admin console and in the Azure portal, the policies created in the Azure portal will override the ones created on the Intune admin console.</span></span> <span data-ttu-id="946bc-112">このシナリオでは、Azure ポータルアプリ保護ポリシーはアプリに適用され、ユーザーにデプロイされます。</span><span class="sxs-lookup"><span data-stu-id="946bc-112">In this scenario, the Azure portal app protection policies will be applied to the apps and deployed to users.</span></span>
 
 
-## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a><span data-ttu-id="7a1b2-113">Azure ポータルにサインインし、スタート ページをカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="7a1b2-113">Sign in to the Azure portal and customize your start page</span></span>
+## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a><span data-ttu-id="946bc-113">Azure ポータルにサインインし、スタート ページをカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="946bc-113">Sign in to the Azure portal and customize your start page</span></span>
 
-1.  <span data-ttu-id="7a1b2-114">[Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-114">Go to the [Azure portal](https://portal.azure.com) and sign in with your Intune credentials.</span></span>
+1.  <span data-ttu-id="946bc-114">[Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="946bc-114">Go to the [Azure portal](https://portal.azure.com) and sign in with your Intune credentials.</span></span>
 
     ![Azure ポータルのサインイン ページのスクリーンショット](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  <span data-ttu-id="7a1b2-116">正常にサインインすると、**ダッシュボード**が開きます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-116">After you've successfully signed in, you see the **Dashboard**.</span></span> <span data-ttu-id="7a1b2-117">**ダッシュボード** ページはカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-117">The **Dashboard** page can be customized.</span></span>
+2.  <span data-ttu-id="946bc-116">正常にサインインすると、**ダッシュボード**が開きます。</span><span class="sxs-lookup"><span data-stu-id="946bc-116">After you've successfully signed in, you see the **Dashboard**.</span></span> <span data-ttu-id="946bc-117">**ダッシュボード** ページはカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="946bc-117">The **Dashboard** page can be customized.</span></span>
 
     ![Azure ポータルのダッシュボードのスクリーンショット](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  <span data-ttu-id="7a1b2-119">左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-119">Choose **More services** from the left menu, then type **Intune** in the text box filter.</span></span>
+3.  <span data-ttu-id="946bc-119">左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="946bc-119">Choose **More services** from the left menu, then type **Intune** in the text box filter.</span></span>
 
     ![[参照] メニューのスクリーンショット、[Intune] が強調表示されています](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-4.  <span data-ttu-id="7a1b2-121">**[Intune アプリ保護]** > **[Intune モバイル アプリケーション管理]** > **[すべての設定]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-121">Choose **Intune App Protection** > **Intune mobile application management** > **All Settings**.</span></span>
+4.  <span data-ttu-id="946bc-121">**[Intune アプリ保護]** > **[Intune モバイル アプリケーション管理]** > **[すべての設定]** の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="946bc-121">Choose **Intune App Protection** > **Intune mobile application management** > **All Settings**.</span></span>
 
     ![[Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-5. <span data-ttu-id="7a1b2-123">(任意): ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-123">(Optional): To pin a blade to the **Start** page, you can use the **pin** option on the blade.</span></span> <span data-ttu-id="7a1b2-124">**[Intune モバイル アプリケーション管理ブレード]**のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。</span><span class="sxs-lookup"><span data-stu-id="7a1b2-124">Click the pin icon on the **Intune mobile application management blade** to pin that blade to the **Start** page.</span></span>
+5. <span data-ttu-id="946bc-123">(任意): ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="946bc-123">(Optional): To pin a blade to the **Start** page, you can use the **pin** option on the blade.</span></span> <span data-ttu-id="946bc-124">**[Intune モバイル アプリケーション管理ブレード]**のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。</span><span class="sxs-lookup"><span data-stu-id="946bc-124">Click the pin icon on the **Intune mobile application management blade** to pin that blade to the **Start** page.</span></span>
 
     ![ピン アイコンが強調表示されている [Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Intune タイルが固定されているダッシュボードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
-## <a name="next-steps"></a><span data-ttu-id="7a1b2-127">次の手順</span><span class="sxs-lookup"><span data-stu-id="7a1b2-127">Next steps</span></span>
-[<span data-ttu-id="7a1b2-128">アプリ保護ポリシーを構成する準備をする</span><span class="sxs-lookup"><span data-stu-id="7a1b2-128">Get ready to configure app protection policies</span></span>](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+## <a name="next-steps"></a><span data-ttu-id="946bc-127">次の手順</span><span class="sxs-lookup"><span data-stu-id="946bc-127">Next steps</span></span>
+[<span data-ttu-id="946bc-128">アプリ保護ポリシーを構成する準備をする</span><span class="sxs-lookup"><span data-stu-id="946bc-128">Get ready to configure app protection policies</span></span>](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
